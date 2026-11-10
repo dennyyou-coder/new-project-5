@@ -52,3 +52,30 @@ export function money(value: number, currency: Currency = "USD", digits = 0) {
 export function fixed(value: number, digits = 1) {
   return value.toLocaleString("en-US", { minimumFractionDigits: digits, maximumFractionDigits: digits });
 }
+
+/** Trackers: lists WCB keeps up to date from official sources, shown with the tools on /tools. */
+export type WcbTracker = { id: "recalls" | "launch-radar" | "rules-calendar"; href: string; title: string; summary: string; cadence: string };
+
+export const WCB_TRACKERS: WcbTracker[] = [
+  {
+    id: "recalls",
+    href: "/recalls",
+    title: "Product recall tracker",
+    summary: "US and EU recalls of cleaning appliances, home appliances and power tools, with the hazard, the units and where they were made.",
+    cadence: "Updated weekly"
+  },
+  {
+    id: "launch-radar",
+    href: "/launch-radar",
+    title: "Launch radar: FCC filings",
+    summary: "New FCC authorizations from robot, appliance and tool makers, often the first public sign of a product coming to the US.",
+    cadence: "Updated weekly"
+  },
+  {
+    id: "rules-calendar",
+    href: "/rules-calendar",
+    title: "Trade and product rules calendar",
+    summary: "Tariff deadlines, FCC rules and EU regulations coming into force, with days to go.",
+    cadence: "Updated as rules change"
+  }
+];

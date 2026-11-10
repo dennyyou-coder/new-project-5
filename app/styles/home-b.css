@@ -1048,3 +1048,20 @@
   .home-b-tool-icon { width: 44px; height: 44px; border-radius: 12px; }
   .home-b-tool .home-b-biz-kicker { display: none; }
 }
+
+/* Industry radar: latest recalls, FCC filings and rule dates */
+.home-b-radar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.home-b-radar-col { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px; border: 1px solid var(--hb-line); border-radius: 12px; background: #ffffff; }
+.home-b-radar-list { display: grid; margin: 0; padding: 0; list-style: none; }
+.home-b-radar-list li { display: grid; gap: 3px; padding: 10px 0; border-top: 1px solid var(--hb-line); min-width: 0; }
+.home-b-radar-list li:first-child { border-top: 0; padding-top: 2px; }
+.home-b-radar-list a { font-size: 15px; font-weight: 700; line-height: 1.35; overflow-wrap: anywhere; }
+.home-b-radar-list .home-b-meta { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--hb-subtle); }
+.home-b-radar-note { font-size: 13px; line-height: 1.45; color: var(--hb-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.home-b-radar-tag { display: inline-grid; place-items: center; min-width: 24px; height: 18px; padding: 0 4px; border-radius: 4px; font-size: 10px; font-weight: 800; color: #ffffff; background: #3a4357; }
+.home-b-radar-tag.is-us { background: #b42318; }
+.home-b-radar-tag.is-eu { background: #1f4fc4; }
+.home-b-radar-tag.is-uk { background: #5b3cc4; }
+@media (max-width: 1080px) {
+  .home-b-radar { grid-template-columns: minmax(0, 1fr); }
+}

@@ -1,0 +1,1497 @@
+{
+  "updated": "2026-11-10",
+  "from": "2026-01-01",
+  "companies": [
+    {
+      "name": "Roborock",
+      "sector": "cleaning",
+      "profile": "roborock",
+      "robotMaker": true,
+      "search": [
+        "Roborock"
+      ]
+    },
+    {
+      "name": "Ecovacs",
+      "sector": "cleaning",
+      "profile": "ecovacs",
+      "robotMaker": true,
+      "search": [
+        "Ecovacs"
+      ]
+    },
+    {
+      "name": "Tineco",
+      "sector": "cleaning",
+      "profile": "tineco",
+      "robotMaker": false,
+      "search": [
+        "Tineco"
+      ]
+    },
+    {
+      "name": "SharkNinja",
+      "sector": "cleaning",
+      "robotMaker": true,
+      "profile": "shark",
+      "search": [
+        "SharkNinja"
+      ]
+    },
+    {
+      "name": "Dyson",
+      "sector": "cleaning",
+      "profile": "dyson",
+      "robotMaker": false,
+      "search": [
+        "Dyson"
+      ]
+    },
+    {
+      "name": "Bissell",
+      "sector": "cleaning",
+      "profile": "bissell",
+      "robotMaker": false,
+      "search": [
+        "Bissell"
+      ]
+    },
+    {
+      "name": "Aiper",
+      "sector": "cleaning",
+      "profile": "aiper",
+      "robotMaker": false,
+      "search": [
+        "Aiper"
+      ]
+    },
+    {
+      "name": "Wybotics (WYBOT)",
+      "sector": "cleaning",
+      "profile": "wybot",
+      "robotMaker": false,
+      "search": [
+        "Wybot"
+      ]
+    },
+    {
+      "name": "Maytronics",
+      "sector": "cleaning",
+      "profile": "maytronics",
+      "robotMaker": false,
+      "search": [
+        "Maytronics"
+      ]
+    },
+    {
+      "name": "Nilfisk",
+      "sector": "cleaning",
+      "profile": "nilfisk",
+      "robotMaker": false,
+      "search": [
+        "Nilfisk"
+      ]
+    },
+    {
+      "name": "Brain Corp",
+      "sector": "cleaning",
+      "robotMaker": true,
+      "search": [
+        "Brain Corp"
+      ]
+    },
+    {
+      "name": "Pudu Robotics",
+      "sector": "cleaning",
+      "robotMaker": true,
+      "profile": "pudu-robotics",
+      "search": [
+        "Pudu"
+      ]
+    },
+    {
+      "name": "Keenon Robotics",
+      "sector": "cleaning",
+      "robotMaker": true,
+      "search": [
+        "Keenon"
+      ]
+    },
+    {
+      "name": "Mammotion",
+      "sector": "tools",
+      "profile": "mammotion",
+      "robotMaker": true,
+      "search": [
+        "Mammotion"
+      ]
+    },
+    {
+      "name": "Segway-Ninebot",
+      "sector": "tools",
+      "robotMaker": true,
+      "profile": "segway-navimow",
+      "search": [
+        "Ninebot",
+        "Segway"
+      ]
+    },
+    {
+      "name": "Husqvarna",
+      "sector": "tools",
+      "profile": "husqvarna",
+      "robotMaker": true,
+      "search": [
+        "Husqvarna"
+      ]
+    },
+    {
+      "name": "Positec (Worx)",
+      "sector": "tools",
+      "profile": "worx",
+      "robotMaker": true,
+      "search": [
+        "Positec"
+      ]
+    },
+    {
+      "name": "Sunseeker",
+      "sector": "tools",
+      "profile": "sunseeker",
+      "robotMaker": true,
+      "search": [
+        "Sunseeker"
+      ]
+    },
+    {
+      "name": "Greenworks",
+      "sector": "tools",
+      "profile": "greenworks",
+      "robotMaker": false,
+      "search": [
+        "Greenworks"
+      ]
+    },
+    {
+      "name": "Milwaukee Tool",
+      "sector": "tools",
+      "profile": "milwaukee",
+      "robotMaker": false,
+      "search": [
+        "Milwaukee"
+      ]
+    },
+    {
+      "name": "Hilti",
+      "sector": "tools",
+      "profile": "hilti",
+      "robotMaker": false,
+      "search": [
+        "Hilti"
+      ]
+    },
+    {
+      "name": "Festool",
+      "sector": "tools",
+      "profile": "festool",
+      "robotMaker": false,
+      "search": [
+        "Festool"
+      ]
+    },
+    {
+      "name": "EcoFlow",
+      "sector": "tools",
+      "robotMaker": false,
+      "search": [
+        "EcoFlow"
+      ]
+    },
+    {
+      "name": "Whirlpool",
+      "sector": "appliances",
+      "profile": "whirlpool",
+      "robotMaker": false,
+      "search": [
+        "Whirlpool"
+      ]
+    },
+    {
+      "name": "GE Appliances (Haier)",
+      "sector": "appliances",
+      "profile": "ge-appliances",
+      "robotMaker": false,
+      "search": [
+        "Haier US Appliance"
+      ]
+    },
+    {
+      "name": "Midea",
+      "sector": "appliances",
+      "profile": "midea",
+      "robotMaker": false,
+      "search": [
+        "Midea"
+      ]
+    },
+    {
+      "name": "Gree",
+      "sector": "appliances",
+      "robotMaker": false,
+      "search": [
+        "Gree Electric"
+      ]
+    },
+    {
+      "name": "Breville",
+      "sector": "appliances",
+      "robotMaker": false,
+      "profile": "breville-sage",
+      "search": [
+        "Breville"
+      ]
+    }
+  ],
+  "filings": [
+    {
+      "fccId": "2BD5N-ACS2",
+      "company": "Aiper",
+      "date": "2026-11-09",
+      "type": "new",
+      "bands": [
+        "NFC / 13.56 MHz"
+      ]
+    },
+    {
+      "fccId": "2ADAP-GRJWB05JA",
+      "company": "Gree",
+      "date": "2026-10-26",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2AV7A-SW25",
+      "company": "Tineco",
+      "date": "2026-10-15",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AV7A-FW0B",
+      "company": "Tineco",
+      "date": "2026-10-14",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2SLPY",
+      "company": "Whirlpool",
+      "date": "2026-09-29",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2FHWP2",
+      "company": "Whirlpool",
+      "date": "2026-09-28",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2SLPX",
+      "company": "Whirlpool",
+      "date": "2026-09-24",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2FHWP2Y",
+      "company": "Whirlpool",
+      "date": "2026-09-24",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2FHP2",
+      "company": "Whirlpool",
+      "date": "2026-09-24",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2AF",
+      "company": "Whirlpool",
+      "date": "2026-09-24",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2FHP2Y",
+      "company": "Whirlpool",
+      "date": "2026-09-23",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO2AFY",
+      "company": "Whirlpool",
+      "date": "2026-09-23",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4BITANGO2Y",
+      "company": "Whirlpool",
+      "date": "2026-09-23",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4BITANGO2X",
+      "company": "Whirlpool",
+      "date": "2026-09-23",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "P36-3018",
+      "company": "Milwaukee Tool",
+      "date": "2026-09-16",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2BTHJ-AX210NG",
+      "company": "Brain Corp",
+      "date": "2026-09-16",
+      "type": "change",
+      "bands": [
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "ZKJ-239D8341",
+      "company": "GE Appliances (Haier)",
+      "date": "2026-09-03",
+      "type": "new",
+      "bands": [
+        "NFC / 13.56 MHz"
+      ]
+    },
+    {
+      "fccId": "P36-219220",
+      "company": "Milwaukee Tool",
+      "date": "2026-08-25",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A2P9-PD763764-PD",
+      "company": "EcoFlow",
+      "date": "2026-08-24",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "SDL-PMA50",
+      "company": "Hilti",
+      "date": "2026-08-21",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "SDL-PM50A",
+      "company": "Hilti",
+      "date": "2026-08-21",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "ZAS-HP100BT1",
+      "company": "Husqvarna",
+      "date": "2026-08-17",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOLPTKY",
+      "company": "Whirlpool",
+      "date": "2026-08-12",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOLPTKX",
+      "company": "Whirlpool",
+      "date": "2026-08-12",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "QVHHS09002",
+      "company": "Dyson",
+      "date": "2026-08-05",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "NFC / 13.56 MHz"
+      ]
+    },
+    {
+      "fccId": "2BTHJ-AX210NG",
+      "company": "Brain Corp",
+      "date": "2026-07-30",
+      "type": "rebrand",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "UWB",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-ZJ2576",
+      "company": "Ecovacs",
+      "date": "2026-07-28",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2ASC3KR804",
+      "company": "Positec (Worx)",
+      "date": "2026-07-25",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AAOD-A900",
+      "company": "Breville",
+      "date": "2026-07-24",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2BD5N-SKB30D",
+      "company": "Aiper",
+      "date": "2026-07-21",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "NFC / 13.56 MHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-ZJ2622",
+      "company": "Ecovacs",
+      "date": "2026-07-21",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A2P9-EFTT5PG1",
+      "company": "EcoFlow",
+      "date": "2026-07-20",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2A2P9-EFTT5CG1",
+      "company": "EcoFlow",
+      "date": "2026-07-20",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0BES02",
+      "company": "Roborock",
+      "date": "2026-07-17",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0BES01",
+      "company": "Roborock",
+      "date": "2026-07-17",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "VG8TM034DYY",
+      "company": "Midea",
+      "date": "2026-07-16",
+      "type": "change",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A64B-ZJ2618",
+      "company": "Ecovacs",
+      "date": "2026-07-16",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOEBLY",
+      "company": "Whirlpool",
+      "date": "2026-07-15",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOEBLX",
+      "company": "Whirlpool",
+      "date": "2026-07-15",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "VG8XM9P03YYY",
+      "company": "Midea",
+      "date": "2026-07-09",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2AV7T-P4QMINI",
+      "company": "Pudu Robotics",
+      "date": "2026-07-09",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "VG8TM934DYY",
+      "company": "Midea",
+      "date": "2026-07-06",
+      "type": "change",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO3230Y",
+      "company": "Whirlpool",
+      "date": "2026-06-30",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO3230X",
+      "company": "Whirlpool",
+      "date": "2026-06-30",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2BFD7-ESP32C51U",
+      "company": "Sunseeker",
+      "date": "2026-06-23",
+      "type": "rebrand",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A2P9-EFSD006",
+      "company": "EcoFlow",
+      "date": "2026-06-18",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BFWS-S1P",
+      "company": "Mammotion",
+      "date": "2026-06-17",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Sub-GHz (LoRa, 900 MHz)",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "PR4DRAGONRENEWY",
+      "company": "Whirlpool",
+      "date": "2026-06-11",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO35011Y",
+      "company": "Whirlpool",
+      "date": "2026-06-09",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4DRAGONRENEWX",
+      "company": "Whirlpool",
+      "date": "2026-06-09",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO35011X",
+      "company": "Whirlpool",
+      "date": "2026-06-08",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2AV7A-FW72",
+      "company": "Tineco",
+      "date": "2026-06-08",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BGR3-OR0003",
+      "company": "Segway-Ninebot",
+      "date": "2026-06-05",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2ASV9RVA100",
+      "company": "SharkNinja",
+      "date": "2026-06-05",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2ALS8-KS0022",
+      "company": "Segway-Ninebot",
+      "date": "2026-05-29",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "QVHSV53A01",
+      "company": "Dyson",
+      "date": "2026-05-28",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2ASC3KR238",
+      "company": "Positec (Worx)",
+      "date": "2026-05-27",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AL2E-DUOHI",
+      "company": "Festool",
+      "date": "2026-05-27",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOLP55011Y",
+      "company": "Whirlpool",
+      "date": "2026-05-26",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2AVNE-P36",
+      "company": "Nilfisk",
+      "date": "2026-05-23",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOFLUSH330X",
+      "company": "Whirlpool",
+      "date": "2026-05-22",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2AZLQ-A2501",
+      "company": "Keenon Robotics",
+      "date": "2026-05-22",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BVPU-LUBA3SH",
+      "company": "Mammotion",
+      "date": "2026-05-19",
+      "type": "rebrand",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Sub-GHz (LoRa, 900 MHz)"
+      ]
+    },
+    {
+      "fccId": "2AAODCSV750",
+      "company": "Breville",
+      "date": "2026-05-18",
+      "type": "change",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A64B-WE005V01",
+      "company": "Ecovacs",
+      "date": "2026-05-13",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A64B-WD008V02",
+      "company": "Ecovacs",
+      "date": "2026-05-12",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOLP55011X",
+      "company": "Whirlpool",
+      "date": "2026-05-11",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4TANGOFLUSH330Y",
+      "company": "Whirlpool",
+      "date": "2026-05-11",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2BVPU-RTK300",
+      "company": "Mammotion",
+      "date": "2026-05-10",
+      "type": "rebrand",
+      "bands": [
+        "Sub-GHz (LoRa, 900 MHz)"
+      ]
+    },
+    {
+      "fccId": "2BVPU-LUBAMN2",
+      "company": "Mammotion",
+      "date": "2026-05-10",
+      "type": "rebrand",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BUQBOC01001",
+      "company": "Dyson",
+      "date": "2026-05-10",
+      "type": "new",
+      "bands": [
+        "NFC / 13.56 MHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BB85-GWRLM0506",
+      "company": "Greenworks",
+      "date": "2026-05-08",
+      "type": "new",
+      "bands": [
+        "Sub-GHz (LoRa, 900 MHz)",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AZLQMLC4-A2502",
+      "company": "Keenon Robotics",
+      "date": "2026-05-07",
+      "type": "new",
+      "bands": []
+    },
+    {
+      "fccId": "2AN2O-RRE0VIF02",
+      "company": "Roborock",
+      "date": "2026-04-30",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0VIF01",
+      "company": "Roborock",
+      "date": "2026-04-30",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2ALS8-PS0007",
+      "company": "Segway-Ninebot",
+      "date": "2026-04-23",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A2P9-REEFWM36",
+      "company": "EcoFlow",
+      "date": "2026-04-22",
+      "type": "new",
+      "bands": []
+    },
+    {
+      "fccId": "2ADAP-GRJWB05J12",
+      "company": "Gree",
+      "date": "2026-04-21",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-DEX96",
+      "company": "Ecovacs",
+      "date": "2026-04-19",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BB85-GWREA0506",
+      "company": "Greenworks",
+      "date": "2026-04-17",
+      "type": "new",
+      "bands": [
+        "Sub-GHz (LoRa, 900 MHz)"
+      ]
+    },
+    {
+      "fccId": "2ASV9-MW101",
+      "company": "SharkNinja",
+      "date": "2026-04-17",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2BASI-OS600",
+      "company": "Wybotics (WYBOT)",
+      "date": "2026-04-16",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "QVHHS09001",
+      "company": "Dyson",
+      "date": "2026-04-14",
+      "type": "change",
+      "bands": [
+        "Bluetooth",
+        "NFC / 13.56 MHz"
+      ]
+    },
+    {
+      "fccId": "QVHHS08001",
+      "company": "Dyson",
+      "date": "2026-04-14",
+      "type": "change",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0QUI02",
+      "company": "Roborock",
+      "date": "2026-04-13",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0QUI01",
+      "company": "Roborock",
+      "date": "2026-04-13",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "ZASHCM200A",
+      "company": "Husqvarna",
+      "date": "2026-04-09",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2ASC3WA0935",
+      "company": "Positec (Worx)",
+      "date": "2026-04-07",
+      "type": "new",
+      "bands": []
+    },
+    {
+      "fccId": "2ASC3WA0935",
+      "company": "Positec (Worx)",
+      "date": "2026-04-06",
+      "type": "new",
+      "bands": []
+    },
+    {
+      "fccId": "2BGR3-GW588",
+      "company": "Segway-Ninebot",
+      "date": "2026-03-30",
+      "type": "new",
+      "bands": []
+    },
+    {
+      "fccId": "VG8TM034DYYM",
+      "company": "Midea",
+      "date": "2026-03-27",
+      "type": "change",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A2P9-AP6275S",
+      "company": "EcoFlow",
+      "date": "2026-03-25",
+      "type": "change",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "VG8XM245AYY-PV5",
+      "company": "Midea",
+      "date": "2026-03-24",
+      "type": "change",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A8QJ-RTK300",
+      "company": "Mammotion",
+      "date": "2026-03-23",
+      "type": "rebrand",
+      "bands": [
+        "Sub-GHz (LoRa, 900 MHz)"
+      ]
+    },
+    {
+      "fccId": "2A64B-DEX69",
+      "company": "Ecovacs",
+      "date": "2026-03-18",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO130Y",
+      "company": "Whirlpool",
+      "date": "2026-03-17",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2BFWS-RTK300N",
+      "company": "Mammotion",
+      "date": "2026-03-17",
+      "type": "new",
+      "bands": [
+        "Sub-GHz (LoRa, 900 MHz)"
+      ]
+    },
+    {
+      "fccId": "2A8QJ-LUBA3SH",
+      "company": "Mammotion",
+      "date": "2026-03-17",
+      "type": "rebrand",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Sub-GHz (LoRa, 900 MHz)",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "QVHAM15001",
+      "company": "Dyson",
+      "date": "2026-03-16",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2ASV9-HP060",
+      "company": "SharkNinja",
+      "date": "2026-03-16",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2BFWS-LUBA3SH",
+      "company": "Mammotion",
+      "date": "2026-03-12",
+      "type": "change",
+      "bands": [
+        "Sub-GHz (LoRa, 900 MHz)",
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A8QJ-LUBAMN2",
+      "company": "Mammotion",
+      "date": "2026-03-10",
+      "type": "rebrand",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2ASC3RBT202501",
+      "company": "Positec (Worx)",
+      "date": "2026-03-05",
+      "type": "change",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "ZASIRIS03",
+      "company": "Husqvarna",
+      "date": "2026-03-04",
+      "type": "change",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4TANGO130X",
+      "company": "Whirlpool",
+      "date": "2026-03-03",
+      "type": "new",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2ALS8-OP0004",
+      "company": "Segway-Ninebot",
+      "date": "2026-03-03",
+      "type": "new",
+      "bands": [
+        "NFC / 13.56 MHz"
+      ]
+    },
+    {
+      "fccId": "P36-2931",
+      "company": "Milwaukee Tool",
+      "date": "2026-02-27",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2BD5N-PRX30SE",
+      "company": "Aiper",
+      "date": "2026-02-23",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "QVHAM12001",
+      "company": "Dyson",
+      "date": "2026-02-13",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz",
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AKK5-3222",
+      "company": "Bissell",
+      "date": "2026-02-13",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2ASC3KA0197",
+      "company": "Positec (Worx)",
+      "date": "2026-02-12",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "WCHSKIM2",
+      "company": "Maytronics",
+      "date": "2026-02-10",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4FLUSHP2MTY",
+      "company": "Whirlpool",
+      "date": "2026-02-03",
+      "type": "change",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "PR4FLUSHP2MT",
+      "company": "Whirlpool",
+      "date": "2026-02-03",
+      "type": "change",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "QVHSV50001",
+      "company": "Dyson",
+      "date": "2026-02-02",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "PR4SMARTLPKA",
+      "company": "Whirlpool",
+      "date": "2026-01-30",
+      "type": "change",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2A64B-FZD11",
+      "company": "Ecovacs",
+      "date": "2026-01-30",
+      "type": "new",
+      "bands": [
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "PR4SMARTLPKAY",
+      "company": "Whirlpool",
+      "date": "2026-01-29",
+      "type": "change",
+      "bands": [
+        "Microwave (ISM)"
+      ]
+    },
+    {
+      "fccId": "2BD5N-PRN30",
+      "company": "Aiper",
+      "date": "2026-01-28",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-DEX35",
+      "company": "Ecovacs",
+      "date": "2026-01-28",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0VPC02",
+      "company": "Roborock",
+      "date": "2026-01-26",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2AN2O-RRE0VPC01",
+      "company": "Roborock",
+      "date": "2026-01-26",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A2P9-RE306",
+      "company": "EcoFlow",
+      "date": "2026-01-23",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-WG853",
+      "company": "Ecovacs",
+      "date": "2026-01-13",
+      "type": "new",
+      "bands": [
+        "Bluetooth"
+      ]
+    },
+    {
+      "fccId": "2A64B-DEX62",
+      "company": "Ecovacs",
+      "date": "2026-01-13",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2BFWS-LUBAMN2",
+      "company": "Mammotion",
+      "date": "2026-01-06",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz"
+      ]
+    },
+    {
+      "fccId": "2BFWS-LUBA3SH",
+      "company": "Mammotion",
+      "date": "2026-01-06",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz",
+        "Wi-Fi 5 GHz",
+        "Sub-GHz (LoRa, 900 MHz)"
+      ]
+    },
+    {
+      "fccId": "2ASC3RBT202502",
+      "company": "Positec (Worx)",
+      "date": "2026-01-06",
+      "type": "change",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-WG858",
+      "company": "Ecovacs",
+      "date": "2026-01-05",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    },
+    {
+      "fccId": "2A64B-DEX95",
+      "company": "Ecovacs",
+      "date": "2026-01-05",
+      "type": "new",
+      "bands": [
+        "Bluetooth",
+        "Wi-Fi 2.4 GHz"
+      ]
+    }
+  ]
+}

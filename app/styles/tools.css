@@ -154,3 +154,6 @@
   .tool-dialog-icon, .tool-dialog-full, .tool-dialog-head p { display: none; }
   .tool-dialog-body { padding: 14px 12px 24px; }
 }
+
+.tool-page .tool-hub-title { margin: 8px 0 14px; font-size: 22px; color: #202b35; }
+.tool-page .tool-hub-title:not(:first-child) { margin-top: 36px; }
