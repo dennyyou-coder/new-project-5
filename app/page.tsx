@@ -232,6 +232,16 @@ export default function HomePage() {
         </section>
       ) : null}
 
+      {/* Phones: jump to a zone instead of scrolling the whole page. */}
+      <nav className="home-zone-nav" aria-label="Homepage sections">
+        <a href="#zone-news">News</a>
+        <a href="#zone-analysis">Analysis</a>
+        <a href="#zone-business">Tools</a>
+        <a href="#radar">Radar</a>
+        <a href="#zone-directory">Directory</a>
+      </nav>
+
+      <div className="home-zone home-zone--news" id="zone-news">
       {watch.length ? (
         <section className="home-b-section home-b-watch" aria-labelledby="home-watch-title">
           <div className="home-b-container">
@@ -255,10 +265,7 @@ export default function HomePage() {
                     {topic.shortLabel ? <span className="home-b-watch-label" aria-hidden="true">{topic.shortLabel}</span> : null}
                   </span>
                   <span className="home-b-watch-body">
-                    <span className="home-b-watch-badge">WCB Topic</span>
                     <span className="home-b-watch-title">{topic.title}</span>
-                    <span className="home-b-watch-dek">{topic.dek}</span>
-                    <span className="home-b-watch-open">Follow the topic →</span>
                   </span>
                 </Link>
               ))}
@@ -270,7 +277,10 @@ export default function HomePage() {
       <section className="home-b-section" id="feed" aria-labelledby="home-feed-title">
         <div className="home-b-container">
           <div className="home-b-head">
-            <h2 id="home-feed-title">Across the industry this week</h2>
+            <div className="home-b-title">
+              <span className="home-b-eyebrow">News</span>
+              <h2 id="home-feed-title">Across the industry this week</h2>
+            </div>
             <Link className="wcb-more" href="/news">All news</Link>
           </div>
           <div className={leadNews ? "home-b-feed" : undefined}>
@@ -313,15 +323,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </div>
 
       {dennyCards.length > 0 ? (
-        <section className="home-b-section home-b-soft" id="from-denny" aria-labelledby="home-denny-title">
+        <div className="home-zone home-zone--analysis" id="zone-analysis">
+        <section className="home-b-section" id="from-denny" aria-labelledby="home-denny-title">
           <div className="home-b-container">
             <div className="home-b-head">
-              <h2 id="home-denny-title">From Denny You</h2>
+              <div className="home-b-title">
+                <span className="home-b-eyebrow">Analysis</span>
+                <h2 id="home-denny-title">From Denny You</h2>
+              </div>
               <Link className="wcb-more" href="/blog/archive">All analysis</Link>
             </div>
-            <p className="home-b-sub">Analysis, the founder’s journal and video from the founder of World Clean Biz.</p>
             <div className="home-b-cards home-b-denny">
               {dennyCards.map((card) => (
                 <Link key={card.key} className="home-b-card home-b-denny-card" href={card.href}>
@@ -340,12 +354,17 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        </div>
       ) : null}
 
+      <div className="home-zone home-zone--business" id="zone-business">
       <section className="home-b-section" id="business" aria-labelledby="home-business-title">
         <div className="home-b-container">
           <div className="home-b-head">
-            <h2 id="home-business-title">For your business</h2>
+            <div className="home-b-title">
+              <span className="home-b-eyebrow">For business</span>
+              <h2 id="home-business-title">Tools, reports and sourcing</h2>
+            </div>
             <Link className="wcb-more" href="/tools">All tools</Link>
           </div>
           <div className="home-b-business">
@@ -355,7 +374,7 @@ export default function HomePage() {
               <div className="home-b-biz-body">
                 <span className="home-b-biz-kicker">Free report · {FEATURED_REPORT.pages} pages</span>
                 <h3>{FEATURED_REPORT.title}</h3>
-                <p>How growth is spreading from indoor appliances to yard, pool and commercial cleaning robots, with checklists for buyers and suppliers.</p>
+                <p>Where growth goes next: yard, pool and commercial cleaning robots.</p>
                 <div className="home-b-biz-actions">
                   <TallyReportButton className="home-b-biz-button" ctaLocation="home_business_report" reportId={FEATURED_REPORT.id}>
                     Get the free PDF
@@ -368,7 +387,7 @@ export default function HomePage() {
               <div className="home-b-biz-body">
                 <span className="home-b-biz-kicker">Sourcing</span>
                 <h3>Looking for a supplier or factory?</h3>
-                <p>Tell us the product and your market. The WCB team knows the factories behind the brands and replies within two working days.</p>
+                <p>Tell us the product and market. We reply within two working days.</p>
                 <div className="home-b-biz-actions">
                   <TallyButton className="home-b-biz-button" ctaLocation="home_business_sourcing" form="sourcing">
                     Send a sourcing request
@@ -415,7 +434,7 @@ export default function HomePage() {
 
       <section className="home-b-section" id="radar" aria-labelledby="home-radar-title">
         <div className="home-b-container">
-          <div className="home-b-head">
+          <div className="home-b-head home-b-head--sub">
             <h2 id="home-radar-title">Industry radar</h2>
             <Link className="wcb-more" href="/tools">All trackers</Link>
           </div>
@@ -432,7 +451,7 @@ export default function HomePage() {
                       <span className={`home-b-radar-tag is-${recall.source === "CPSC" ? "us" : "eu"}`}>{recall.source === "CPSC" ? "US" : "EU"}</span> {shortDate(recall.date)}
                     </span>
                     <a href={recall.url} target="_blank" rel="noopener noreferrer">{recallName(recall)}</a>
-                    <span className="home-b-radar-note">{recall.risk ?? recall.hazard}</span>
+                    {recall.risk ? <span className="home-b-radar-note">{recall.risk}</span> : null}
                   </li>
                 ))}
               </ul>
@@ -471,11 +490,16 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </div>
 
+      <div className="home-zone home-zone--directory" id="zone-directory">
       <section className="home-b-section" aria-labelledby="home-categories-title">
         <div className="home-b-container">
           <div className="home-b-head">
-            <h2 id="home-categories-title">Browse by category</h2>
+            <div className="home-b-title">
+              <span className="home-b-eyebrow">Directory</span>
+              <h2 id="home-categories-title">Browse by category</h2>
+            </div>
             <Link className="wcb-more" href="/categories">All categories</Link>
           </div>
           <div className="home-b-categories">
@@ -511,9 +535,9 @@ export default function HomePage() {
       </section>
 
       {newModels.length > 0 ? (
-        <section className="home-b-section home-b-soft" id="products" aria-labelledby="home-products-title">
+        <section className="home-b-section" id="products" aria-labelledby="home-products-title">
           <div className="home-b-container">
-            <div className="home-b-head">
+            <div className="home-b-head home-b-head--sub">
               <h2 id="home-products-title">New products</h2>
               <Link className="wcb-more" href="/products">All {featuredProductModels.length} new {productSelectionYear} models</Link>
             </div>
@@ -536,7 +560,7 @@ export default function HomePage() {
         <div className="home-b-container">
           <div className="home-b-companies-wrap">
             <div className="home-b-companies-main">
-              <div className="home-b-head">
+              <div className="home-b-head home-b-head--sub">
                 <h2 id="home-companies-title">Companies</h2>
                 <Link className="wcb-more" href="/brands">All {brands.length} profiles</Link>
               </div>
@@ -596,6 +620,7 @@ export default function HomePage() {
           ) : null}
         </div>
       </section>
+      </div>
 
       <section className="home-b-subscribe" id="subscribe" aria-labelledby="home-subscribe-title">
         <div className="home-b-container home-b-subscribe-inner">

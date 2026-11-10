@@ -1065,3 +1065,54 @@
 @media (max-width: 1080px) {
   .home-b-radar { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ===== Zones: four groups with their own background, so the page has a rhythm =====
+   News (white) · Analysis (soft grey) · For business (deep navy) · Directory (white) */
+.home-b .home-zone { padding: 40px 0; }
+.home-b .home-zone .home-b-section { padding: 28px 0; }
+.home-b .home-zone--analysis { background: #eef2f7; border-top: 1px solid #dfe5ee; border-bottom: 1px solid #dfe5ee; }
+.home-b .home-zone--business { background: #0f1f3d; padding: 56px 0; }
+.home-b .home-zone--directory { padding-top: 56px; }
+
+/* Zone heading: small coloured label over the title */
+.home-b-title { display: grid; gap: 6px; }
+.home-b .home-b-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--hb-link); }
+.home-b .home-b-eyebrow::before { content: ""; width: 18px; height: 3px; border-radius: 2px; background: currentColor; }
+.home-b .home-zone .home-b-head h2 { font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.02em; }
+.home-b .home-zone .home-b-head.home-b-head--sub h2 { font-size: clamp(20px, 2.2vw, 24px); }
+.home-b .home-zone .home-b-head--sub { margin-bottom: 14px; }
+
+/* Business zone on navy: light headings, white cards */
+.home-b .home-zone.home-zone--business .home-b-head h2 { color: #ffffff; }
+.home-b .home-zone--business .home-b-eyebrow { color: #8fb4ff; }
+.home-b .home-zone--business .home-b-head .wcb-more { color: #b9cdff; }
+.home-b .home-zone--business .home-b-section + .home-b-section { margin-top: 12px; padding-top: 36px; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.home-b .home-zone--business .home-b-tool { background: #ffffff; border-color: transparent; }
+.home-b .home-zone--business .home-b-tool:hover { box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25); }
+.home-b .home-zone--business .home-b-biz, .home-b .home-zone--business .home-b-radar-col { border-color: transparent; }
+
+/* News zone: topics become a slim "tracking" strip */
+.home-b .home-zone--news .home-b-watch { padding: 4px 0 8px; }
+.home-b .home-zone--news .home-b-watch-grid { gap: 12px; }
+.home-b .home-zone--news .home-b-watch-card { display: grid; grid-template-columns: 96px minmax(0, 1fr); align-items: center; border-radius: 10px; }
+.home-b .home-zone--news .home-b-watch-card:hover { transform: none; }
+.home-b .home-zone--news .home-b-watch-image { aspect-ratio: auto; height: 100%; min-height: 72px; }
+.home-b .home-zone--news .home-b-watch-image::after { background: rgba(14, 21, 38, 0.35); }
+.home-b .home-zone--news .home-b-watch-label { left: 8px; right: 8px; bottom: auto; top: 50%; transform: translateY(-50%); font-size: 12px; line-height: 1.1; text-align: center; }
+.home-b .home-zone--news .home-b-watch-body { padding: 10px 12px; gap: 0; }
+.home-b .home-zone--news .home-b-watch-title { font-size: 14px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Phones: a sticky row of zone links */
+.home-zone-nav { display: none; }
+.home-b [id^="zone-"], .home-b #radar { scroll-margin-top: 112px; }
+@media (max-width: 720px) {
+  .home-b .home-zone-nav { position: sticky; top: 60px; z-index: 20; display: flex; gap: 6px; padding: 10px 16px; overflow-x: auto; background: rgba(255, 255, 255, 0.96); border-bottom: 1px solid var(--hb-line); backdrop-filter: blur(6px); scrollbar-width: none; }
+  .home-b .home-zone-nav::-webkit-scrollbar { display: none; }
+  .home-b .home-zone-nav a { flex: none; padding: 6px 12px; border: 1px solid var(--hb-line); border-radius: 16px; background: #ffffff; font-size: 13px; font-weight: 700; color: var(--hb-ink); }
+  .home-b .home-zone { padding: 24px 0; }
+  .home-b .home-zone .home-b-section { padding: 20px 0; }
+  .home-b .home-zone--business { padding: 36px 0; }
+  .home-b .home-zone--news .home-b-watch-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-b .home-zone--news .home-b-watch-card { grid-template-columns: 1fr; }
+  .home-b .home-zone--news .home-b-watch-image { min-height: 56px; aspect-ratio: 16 / 7; }
+}
