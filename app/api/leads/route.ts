@@ -1,3 +1,4 @@
+import { brevo } from "@/lib/brevo";
 import { getInsights } from "@/lib/content";
 import { reportDownloadUrl } from "@/lib/reports";
 import { getEditorialInsights } from "@/lib/insightCollections";
@@ -8,7 +9,6 @@ import { brevoAttributes, directListFor, looksAutomated, validateLead, wantsNews
 
 export const runtime = "nodejs";
 
-const BREVO = "https://api.brevo.com/v3";
 const num = (value: string | undefined) => (value && /^\d+$/.test(value) ? Number(value) : undefined);
 
 function config() {
@@ -23,18 +23,6 @@ function config() {
     sender: process.env.BREVO_SENDER_EMAIL,
     notify: process.env.LEAD_NOTIFY_EMAIL
   };
-}
-
-async function brevo(key: string, path: string, body: unknown) {
-  const response = await fetch(`${BREVO}${path}`, {
-    method: "POST",
-    headers: { "api-key": key, "content-type": "application/json", accept: "application/json" },
-    body: JSON.stringify(body)
-  });
-  if (!response.ok && response.status !== 204) {
-    const text = await response.text().catch(() => "");
-    throw new Error(`Brevo ${path} ${response.status} ${text.slice(0, 300)}`);
-  }
 }
 
 const escape = (value = "") => value.replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[char]!);
