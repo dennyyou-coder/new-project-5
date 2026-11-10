@@ -21,7 +21,7 @@ export function BrandArticles({
 }) {
   const primarySlugs = new Set(primaryArticles.map((article) => article.slug));
   const articles = [...primaryArticles, ...relatedArticles.filter((article) => !primarySlugs.has(article.slug))].slice(0, 3);
-  const headlines = [...news].sort((a, b) => b.eventDate.localeCompare(a.eventDate)).slice(0, 8);
+  const headlines = [...news].sort((a, b) => b.eventDate.localeCompare(a.eventDate)).slice(0, 5);
   if (!articles.length && !headlines.length) return null;
 
   return (

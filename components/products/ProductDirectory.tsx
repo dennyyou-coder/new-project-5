@@ -17,6 +17,11 @@ type Card = {
   image: ImgHTMLAttributes<HTMLImageElement>;
 };
 
+/** Cards shown per category before "Show all"; the rest stay in the page for crawlers, just hidden. */
+const PER_GROUP = 8;
+/** Phones show four per category: the rest are one tap away. */
+const PER_GROUP_PHONE = 4;
+
 const categoryId = (category: string) => `products-${category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
 function ProductCard({ model, showCategory }: { model: Card; showCategory: boolean }) {
@@ -26,10 +31,9 @@ function ProductCard({ model, showCategory }: { model: Card; showCategory: boole
       <span className="pv-card-copy">
         <small>{model.brand}{showCategory ? ` · ${model.category}` : ""}</small>
         <b>{model.name}</b>
-        <span className="pv-card-summary">{model.summary}</span>
         {model.facts.length ? (
           <span className="pv-card-facts">
-            {model.facts.slice(0, 3).map((fact) => (
+            {model.facts.slice(0, 2).map((fact) => (
               <span key={fact.label}><i>{fact.label}</i>{fact.value}</span>
             ))}
           </span>
@@ -45,6 +49,7 @@ export function ProductDirectory({ models, aliases = {} }: { models: Card[]; ali
   const [category, setCategory] = useState("");
   const [brand, setBrand] = useState("");
   const [sort, setSort] = useState("selected");
+  const [expanded, setExpanded] = useState<string[]>([]);
   const categories = [...new Set(models.map((model) => model.category))];
   // A category page links here with ?category=… so the library opens already filtered.
   useEffect(() => {
@@ -73,6 +78,10 @@ export function ProductDirectory({ models, aliases = {} }: { models: Card[]; ali
     setBrand("");
     setSort("selected");
   }
+  function pick(value: string) {
+    setCategory(value);
+    document.getElementById("model-directory")?.scrollIntoView({ block: "start" });
+  }
 
   return (
     <section id="model-directory" className="product-directory pv-directory" aria-label="Browse product models">
@@ -85,17 +94,26 @@ export function ProductDirectory({ models, aliases = {} }: { models: Card[]; ali
 
       {isFiltered ? (
         <>
+          {category ? (
+            <div className="pv-jump" role="group" aria-label="Show one category">
+              <button type="button" aria-pressed="false" onClick={() => setCategory("")}>All<span>{models.length}</span></button>
+              {categories.map((value) => (
+                <button key={value} type="button" className={value === category ? "is-on" : undefined} aria-pressed={value === category} onClick={() => setCategory(value)}>{value}<span>{models.filter((model) => model.category === value).length}</span></button>
+              ))}
+            </div>
+          ) : null}
           <div className="product-result-bar"><p role="status" aria-live="polite">{filtered.length} of {models.length} models</p><button type="button" onClick={reset}>Clear filters</button></div>
           <div className="pv-grid" id="product-model-grid">{filtered.map((model) => <ProductCard key={model.slug} model={model} showCategory={!category} />)}</div>
           {!filtered.length && <div className="product-empty"><h2>No matching models yet</h2><p>Try another model name, brand or category.</p><button type="button" onClick={reset}>Show all models</button></div>}
         </>
       ) : (
         <>
-          <nav className="pv-jump" aria-label="Product categories">
+          <div className="pv-jump" role="group" aria-label="Show one category">
+            <button type="button" className="is-on" aria-pressed="true">All<span>{models.length}</span></button>
             {categories.map((value) => (
-              <a key={value} href={`#${categoryId(value)}`}>{value}<span>{models.filter((model) => model.category === value).length}</span></a>
+              <button key={value} type="button" aria-pressed="false" onClick={() => pick(value)}>{value}<span>{models.filter((model) => model.category === value).length}</span></button>
             ))}
-          </nav>
+          </div>
           {categories.map((value) => {
             const group = models.filter((model) => model.category === value);
             return (
@@ -104,7 +122,16 @@ export function ProductDirectory({ models, aliases = {} }: { models: Card[]; ali
                   <h2 id={`${categoryId(value)}-title`}>{value}</h2>
                   <span>{group.length} models</span>
                 </div>
-                <div className="pv-grid">{group.map((model) => <ProductCard key={model.slug} model={model} showCategory={false} />)}</div>
+                <div className={`pv-grid${expanded.includes(value) ? " is-expanded" : ""}`}>
+                  {group.map((model, index) => (
+                    <div key={model.slug} className={index >= PER_GROUP ? "pv-extra" : index >= PER_GROUP_PHONE ? "pv-extra-phone" : undefined}><ProductCard model={model} showCategory={false} /></div>
+                  ))}
+                </div>
+                {group.length > PER_GROUP_PHONE && !expanded.includes(value) ? (
+                  <button type="button" className={`pv-show-all${group.length <= PER_GROUP ? " pv-show-all--phone" : ""}`} onClick={() => setExpanded((list) => [...list, value])}>
+                    Show all {group.length} {value.toLowerCase()}
+                  </button>
+                ) : null}
               </section>
             );
           })}

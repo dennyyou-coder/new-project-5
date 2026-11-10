@@ -78,6 +78,7 @@ export function BrandHero({
           <a href="#product-portfolio">Products</a>
           <a href="#manufacturing-channels">Operations</a>
           <a href="#competitive-position">Competition</a>
+          <a href="#results-and-history">Results</a>
           <a href="#timeline">Timeline</a>
           {hasAnalysis ? <a href="#analysis">News &amp; analysis</a> : null}
           <a href="#sources">Sources</a>

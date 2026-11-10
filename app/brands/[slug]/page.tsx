@@ -37,6 +37,7 @@ import { getBrandCategoryForProfile } from "@/lib/brandCategories";
 import { productCover, productModels } from "@/lib/products";
 import { findParentProfile } from "@/lib/brandProfileView";
 import "../../styles/brand-profile.css";
+import "../../styles/page-zones.css";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -196,6 +197,7 @@ export default async function BrandPage({ params }: PageProps) {
       <BrandHero profile={profile} modelCount={models.length} hasAnalysis={true} />
       <div className="insights-page-container bp-body">
         <div className="bp-main brand-content-sections">
+          <p className="page-zone-label page-zone-label--first">Company profile</p>
           <BrandSections
             profile={profile}
             brandMark={markIndex.get(profile.slug) ?? { name: profile.name, logo: profile.logoImage }}
@@ -206,8 +208,8 @@ export default async function BrandPage({ params }: PageProps) {
             latest={<BrandLatest name={profile.name} items={latestItems} />}
           />
           <BrandComparisons name={profile.name} guides={comparisons} />
-          <BrandPhotos profile={profile} />
-          <BrandFaq profile={profile} />
+          {/* Three groups: the company (above), its results and history, then reference material. */}
+          <p className="page-zone-label" id="results-and-history">Results and history</p>
           <BrandFinancials brand={profile.slug} />
           <BrandTimeline profile={profile} />
           <BrandArticles
@@ -217,6 +219,9 @@ export default async function BrandPage({ params }: PageProps) {
             primaryArticles={data.primaryArticles}
             relatedArticles={data.relatedArticles}
           />
+          <p className="page-zone-label" id="reference">Reference</p>
+          <BrandPhotos profile={profile} />
+          <BrandFaq profile={profile} />
           <BrandSources profile={profile} />
         </div>
         <BrandFactRail profile={profile} competitors={competitors.map((competitor) => competitor.mark)} />
