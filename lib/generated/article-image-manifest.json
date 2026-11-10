@@ -4141,6 +4141,96 @@
       "sourceHash": "sha256:c2d9d48ff8eb14404faa5d98c86c03e1719e9e03eee6cb116bbd870ec6ae4807",
       "outputHash": "sha256:9db3e8d204bbcf5ec2321a286a867e27d2459e0622afe5894525239ff0a571cb"
     },
+    "/images/articles/cleaning-industry-2026-year-in-review/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 158864,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:304d7a8539e0bd3392a59608701f539202c216cb93b5680b0667f7091347b855",
+      "outputHash": "sha256:79f805fec25c3dc4878dcb6e47ffb6899fd171be21779480ec384f603b2b4a67",
+      "mobile": {
+        "src": "/images/articles/cleaning-industry-2026-year-in-review/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45404,
+        "outputHash": "sha256:f0c6f181241057cffc3d87bedd7314e546a472193762d085784241f3b464c12f"
+      }
+    },
+    "/images/articles/cleaning-industry-2026-year-in-review/02-timeline.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 77238,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b0735336088cf7bd4a3366f5fd130bbea3267b5beaccb8aebaedd165a852278f",
+      "outputHash": "sha256:09e7450702b10cc5dd1fd7b30d563abe7e2a53f395bba06a3355e69296122cd5",
+      "mobile": {
+        "src": "/images/articles/cleaning-industry-2026-year-in-review/02-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29090,
+        "outputHash": "sha256:a6079fe10ccf7675459a83c6b45669f449d4edb1b5eaed1b90cb63e2dfcca0a7"
+      }
+    },
+    "/images/articles/cleaning-industry-2026-year-in-review/03-capital-moves.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 70260,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:03f79a93caac743b9e829a2aff27fce35a111db6039ea819bb67651c932c4e23",
+      "outputHash": "sha256:ea5db20397b1969f8bd08256cd48fff0974f0188c92d96aabee9f9c7fdf596bb",
+      "mobile": {
+        "src": "/images/articles/cleaning-industry-2026-year-in-review/03-capital-moves-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26826,
+        "outputHash": "sha256:7bc723ccc8d1064349baff991d417e0230e173a0cbf8ec810011a2f32b0e4ca6"
+      }
+    },
+    "/images/articles/cleaning-industry-2026-year-in-review/04-policy-tracks.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 64622,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:85df90f067f9e54e7b12b1a50afc8d0b8dced145e940c10353a3ff7f9b48724d",
+      "outputHash": "sha256:8385b20e4274b1b03b8f8c4a63486f974e7329d8db0fd71fcbc4a455feaaf853",
+      "mobile": {
+        "src": "/images/articles/cleaning-industry-2026-year-in-review/04-policy-tracks-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24522,
+        "outputHash": "sha256:2badba8ccfb8aa43eddc70bec51a004be00832f9ee6d7703ac9cd77e07c55244"
+      }
+    },
+    "/images/articles/cleaning-industry-2026-year-in-review/05-results.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37792,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:62e36112a1cef9933ded27166a12c6afcbab9634071099d7326f3e42edc5a95b",
+      "outputHash": "sha256:724f3791adef90c8c93e52e68185f6ed97c6941744e93890c104feccad37faec",
+      "mobile": {
+        "src": "/images/articles/cleaning-industry-2026-year-in-review/05-results-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14608,
+        "outputHash": "sha256:ceb08d3e8f727730cb78767f50c323140c2f5228e003f0f449de016c975422ac"
+      }
+    },
     "/images/articles/commercial-cleaning-robots-next/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -41550,6 +41640,16 @@
         "/images/blog/cleaning-appliance-hidden-cost-checklist.webp"
       ]
     },
+    "cleaning-industry-2026-year-in-review": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/cleaning-industry-2026-year-in-review/01-cover.webp",
+      "body": [
+        "/images/articles/cleaning-industry-2026-year-in-review/02-timeline.webp",
+        "/images/articles/cleaning-industry-2026-year-in-review/03-capital-moves.webp",
+        "/images/articles/cleaning-industry-2026-year-in-review/04-policy-tracks.webp",
+        "/images/articles/cleaning-industry-2026-year-in-review/05-results.webp"
+      ]
+    },
     "cleaning-industry-news-roundup-2026-06-20": {
       "budgetClass": "standard",
       "cover": "/images/insights/cleaning-industry-news-roundup-2026-06-20-cover-imagegen.webp",
@@ -47763,6 +47863,35 @@
           "status": "matched",
           "primary": "/images/articles/cleaning-appliance-companies-at-awe/19-cleaning-appliance-companies-at-awe-image-018.webp",
           "hash": "sha256:c2d9d48ff8eb14404faa5d98c86c03e1719e9e03eee6cb116bbd870ec6ae4807"
+        }
+      }
+    },
+    "cleaning-industry-2026-year-in-review": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/cleaning-industry-2026-year-in-review/01-cover.webp",
+          "hash": "sha256:304d7a8539e0bd3392a59608701f539202c216cb93b5680b0667f7091347b855"
+        },
+        "02-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/cleaning-industry-2026-year-in-review/02-timeline.webp",
+          "hash": "sha256:b0735336088cf7bd4a3366f5fd130bbea3267b5beaccb8aebaedd165a852278f"
+        },
+        "03-capital-moves.png": {
+          "status": "matched",
+          "primary": "/images/articles/cleaning-industry-2026-year-in-review/03-capital-moves.webp",
+          "hash": "sha256:03f79a93caac743b9e829a2aff27fce35a111db6039ea819bb67651c932c4e23"
+        },
+        "04-policy-tracks.png": {
+          "status": "matched",
+          "primary": "/images/articles/cleaning-industry-2026-year-in-review/04-policy-tracks.webp",
+          "hash": "sha256:85df90f067f9e54e7b12b1a50afc8d0b8dced145e940c10353a3ff7f9b48724d"
+        },
+        "05-results.png": {
+          "status": "matched",
+          "primary": "/images/articles/cleaning-industry-2026-year-in-review/05-results.webp",
+          "hash": "sha256:62e36112a1cef9933ded27166a12c6afcbab9634071099d7326f3e42edc5a95b"
         }
       }
     },
