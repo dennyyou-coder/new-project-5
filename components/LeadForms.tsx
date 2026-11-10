@@ -1,5 +1,6 @@
 "use client";
 
+import { WcbLeadDialog, WcbLeadForm, useNativeLeads } from "@/components/leads/WcbLeadForms";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { TallyFallbackDialog } from "./TallyFallbackDialog";
@@ -147,6 +148,8 @@ export function TallyButton({
   const submissionIdsRef = useRef(new Set<string>());
   const openingRef = useRef(false);
   const [fallbackAttribution, setFallbackAttribution] = useState<LeadAttribution | null>(null);
+  const native = useNativeLeads();
+  const [nativeOpen, setNativeOpen] = useState(false);
   const tallyForm = getTallyForm(form);
   const fallbackUrl = buildContactFallbackUrl({
     conversion_group: getConversionGroup(tallyForm.formType),
@@ -239,6 +242,13 @@ export function TallyButton({
 
     onOpen?.();
 
+    if (native) {
+      openingRef.current = false;
+      setNativeOpen(true);
+      trackLeadEvent("form_open", { ...attribution, ...eventContext, open_method: "wcb_dialog" });
+      return;
+    }
+
     if (!tallyForm.id || !tallyForm.url) {
       openingRef.current = false;
       setStatus("unavailable");
@@ -288,6 +298,11 @@ export function TallyButton({
         {status === "success" &&
           "Thank you. Your information was received successfully."}
       </span>
+      {nativeOpen && (
+        <WcbLeadDialog onClose={() => setNativeOpen(false)}>
+          <WcbLeadForm form={form} ctaLocation={ctaLocation} reportId={reportId} inquiryType={inquiryType} />
+        </WcbLeadDialog>
+      )}
       {fallbackAttribution && (
         <TallyFallbackDialog
           formId={tallyForm.id}
@@ -332,6 +347,7 @@ export function TallyInlineEmbed({
   const frameRef = useRef<HTMLIFrameElement>(null);
   const submittedRef = useRef(new Set<string>());
   const openedRef = useRef(false);
+  const native = useNativeLeads();
 
   useEffect(() => {
     if (!tallyForm.id || !tallyForm.url) return;
@@ -369,6 +385,13 @@ export function TallyInlineEmbed({
     return () => window.removeEventListener("message", handleTallyMessage);
   }, [ctaLocation, inquiryIntent, inquiryType, productCategory, sourcePage, tallyForm.formType, tallyForm.id, tallyForm.url]);
 
+  if (native) {
+    return (
+      <div className="wcb-lead-inline">
+        <WcbLeadForm form={form} ctaLocation={ctaLocation} inquiryType={inquiryType} />
+      </div>
+    );
+  }
   if (!tallyForm.id || !tallyForm.url) {
     return <p>The form is temporarily unavailable. Please use the Contact page.</p>;
   }
