@@ -97,6 +97,7 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "/sourcing/commercial-cleaning",
     "/sourcing/vacuum-cleaners",
     "/reports",
+    "/events",
     "/wcb-expo",
     "/about",
     "/contact",

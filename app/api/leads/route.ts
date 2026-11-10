@@ -1,4 +1,5 @@
 import { getInsights } from "@/lib/content";
+import { reportDownloadUrl } from "@/lib/reports";
 import { getEditorialInsights } from "@/lib/insightCollections";
 import { createConfirmToken } from "@/lib/leadConfirm";
 import { getNews } from "@/lib/news";
@@ -111,7 +112,7 @@ export async function POST(request: Request) {
           htmlContent: welcomeEmailHtml({
             ...welcomeItems(origin),
             unsubscribeUrl,
-            reportUrl: lead.reportId ? `${origin}/reports` : undefined
+            reportUrl: reportDownloadUrl(lead.reportId, origin)
           }),
           headers: {
             "List-Unsubscribe": `<${origin}/api/leads/unsubscribe?token=${encodeURIComponent(token)}>, <mailto:news@worldcleanbiz.com?subject=unsubscribe>`,
