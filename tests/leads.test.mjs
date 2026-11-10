@@ -45,28 +45,42 @@ test("honeypot and instant submissions are treated as automated", () => {
   assert.equal(looksAutomated({ startedAt: 1000 }, 9000), false);
 });
 
-test("newsletter confirmation tokens are signed and expire after 7 days", async () => {
-  const { createConfirmToken, readConfirmToken, CONFIRM_MAX_AGE_MS, confirmEmailHtml } = await import("../lib/leadConfirm.ts");
+test("email link tokens are signed and expire", async () => {
+  const { createConfirmToken, readConfirmToken, CONFIRM_MAX_AGE_MS } = await import("../lib/leadConfirm.ts");
   const now = Date.UTC(2026, 10, 9);
-  const token = createConfirmToken("a@b.co", { SOURCE_PAGE: "/news" }, "secret", now);
+  const token = createConfirmToken("a@b.co", {}, "secret", now);
   const ok = readConfirmToken(token, "secret", now + 1000);
   assert.ok(ok.ok);
   assert.equal(ok.payload.email, "a@b.co");
-  assert.deepEqual(ok.payload.attributes, { SOURCE_PAGE: "/news" });
   assert.deepEqual(readConfirmToken(token, "other-secret", now), { ok: false, reason: "invalid" });
-  const [body] = token.split(".");
   const forged = Buffer.from(JSON.stringify({ email: "x@y.co", attributes: {}, issuedAt: now })).toString("base64url");
   assert.equal(readConfirmToken(`${forged}.${token.split(".")[1]}`, "secret", now).ok, false);
-  assert.equal(readConfirmToken(`${body}`, "secret", now).ok, false);
   assert.deepEqual(readConfirmToken(token, "secret", now + CONFIRM_MAX_AGE_MS + 1), { ok: false, reason: "expired" });
-  assert.match(confirmEmailHtml("https://worldcleanbiz.com/subscribe/confirm?token=a&b"), /token=a&amp;b/);
+  const year = 365 * 24 * 60 * 60 * 1000;
+  assert.ok(readConfirmToken(token, "secret", now + CONFIRM_MAX_AGE_MS + 1, year).ok);
 });
 
-test("confirmation link lands on a page that confirms with a POST button, not on GET", async () => {
+test("welcome email carries content and a one-click unsubscribe, escaped", async () => {
+  const { welcomeEmailHtml } = await import("../lib/welcomeEmail.ts");
+  const html = welcomeEmailHtml({
+    analysis: [{ title: "A <b>story</b>", url: "https://worldcleanbiz.com/blog/a", summary: "Why & how" }],
+    news: [{ title: "News one", url: "https://worldcleanbiz.com/news/n" }],
+    unsubscribeUrl: "https://worldcleanbiz.com/unsubscribed?token=a&b"
+  });
+  assert.match(html, /A &lt;b&gt;story&lt;\/b&gt;/);
+  assert.match(html, /Why &amp; how/);
+  assert.match(html, /unsubscribed\?token=a&amp;b/);
+  assert.match(html, /Unsubscribe in one click/);
+  assert.doesNotMatch(html, /Get your report/);
+});
+
+test("unsubscribe works by POST only, so mail scanners cannot unsubscribe readers", async () => {
   const { readFile } = await import("node:fs/promises");
-  const page = await readFile(new URL("../app/subscribe/confirm/page.tsx", import.meta.url), "utf8");
-  assert.match(page, /method="post" action="\/api\/leads\/confirm"/);
-  const api = await readFile(new URL("../app/api/leads/confirm/route.ts", import.meta.url), "utf8");
+  const page = await readFile(new URL("../app/unsubscribed/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /method="post" action="\/api\/leads\/unsubscribe"/);
+  const api = await readFile(new URL("../app/api/leads/unsubscribe/route.ts", import.meta.url), "utf8");
   assert.match(api, /export async function POST/);
   assert.doesNotMatch(api, /export async function GET/);
+  const lead = await readFile(new URL("../app/api/leads/route.ts", import.meta.url), "utf8");
+  assert.match(lead, /List-Unsubscribe-Post/);
 });

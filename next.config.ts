@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname),
+  // The lead API reads articles and news for the welcome email at runtime.
+  outputFileTracingIncludes: {
+    "/api/leads": ["./content/insights/**/*", "./content/news/**/*"]
+  },
   async headers() {
     // Report PDFs stay downloadable (report emails link to them) but are
     // kept out of search results, so the PDF is reached via the reports form.

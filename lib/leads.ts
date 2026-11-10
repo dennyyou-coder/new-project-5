@@ -124,7 +124,7 @@ export function brevoAttributes(lead: Lead): Record<string, string> {
 
 export type LeadLists = { newsletter?: number; inquiry?: number; expoVisitor?: number; expoExhibitor?: number };
 
-/** The non-marketing list a submission belongs to; the newsletter list is joined only through double opt-in. */
+/** The non-marketing list a submission belongs to; the newsletter list is added separately when the reader opts in. */
 export function directListFor(lead: Lead, lists: LeadLists) {
   if (lead.kind === "inquiry") return lists.inquiry;
   if (lead.kind === "expo") return lead.expoRole === "exhibitor" ? lists.expoExhibitor : lists.expoVisitor;

@@ -1,4 +1,8 @@
-import { confirmEmailHtml, createConfirmToken } from "@/lib/leadConfirm";
+import { getInsights } from "@/lib/content";
+import { getEditorialInsights } from "@/lib/insightCollections";
+import { createConfirmToken } from "@/lib/leadConfirm";
+import { getNews } from "@/lib/news";
+import { welcomeEmailHtml } from "@/lib/welcomeEmail";
 import { brevoAttributes, directListFor, looksAutomated, validateLead, wantsNewsletter, type Lead } from "@/lib/leads";
 
 export const runtime = "nodejs";
@@ -15,7 +19,6 @@ function config() {
       expoVisitor: num(process.env.BREVO_LIST_EXPO_VISITOR),
       expoExhibitor: num(process.env.BREVO_LIST_EXPO_EXHIBITOR)
     },
-    doiTemplate: num(process.env.BREVO_DOI_TEMPLATE_ID),
     sender: process.env.BREVO_SENDER_EMAIL,
     notify: process.env.LEAD_NOTIFY_EMAIL
   };
@@ -51,6 +54,18 @@ function notificationHtml(lead: Lead) {
   return `<table>${rows.map(([label, value]) => `<tr><td><b>${label}</b></td><td>${escape(String(value))}</td></tr>`).join("")}</table>`;
 }
 
+/** The newest WCB analysis and news for the welcome email. */
+function welcomeItems(origin: string) {
+  const analysis = getEditorialInsights(getInsights())
+    .filter((article) => !article.series)
+    .slice(0, 3)
+    .map((article) => ({ title: article.title, url: `${origin}/blog/${article.slug}`, summary: article.excerpt }));
+  const news = getNews()
+    .slice(0, 3)
+    .map((story) => ({ title: story.title, url: `${origin}/news/${story.slug}` }));
+  return { analysis, news };
+}
+
 export async function POST(request: Request) {
   let input: Record<string, unknown>;
   try {
@@ -77,28 +92,33 @@ export async function POST(request: Request) {
       await brevo(settings.key, "/contacts", { email: lead.email, attributes, listIds: [list], updateEnabled: true });
     }
     if (wantsNewsletter(lead) && settings.lists.newsletter) {
-      if (settings.doiTemplate) {
-        // Double opt-in with a Brevo template: Brevo sends the email and adds the contact once they click it.
-        await brevo(settings.key, "/contacts/doubleOptinConfirmation", {
-          email: lead.email,
-          attributes,
-          includeListIds: [settings.lists.newsletter],
-          templateId: settings.doiTemplate,
-          redirectionUrl: "https://worldcleanbiz.com/subscribed"
-        });
-      } else if (settings.sender) {
-        // Double opt-in run by the site: a signed link to /subscribe/confirm; the list is added on confirmation.
-        const token = createConfirmToken(lead.email, attributes, process.env.LEAD_CONFIRM_SECRET || settings.key);
-        const confirmUrl = `${new URL(request.url).origin}/subscribe/confirm?token=${encodeURIComponent(token)}`;
+      // Single opt-in: subscribed straight away, then a welcome email with real
+      // content and a one-click unsubscribe link (also in List-Unsubscribe).
+      await brevo(settings.key, "/contacts", {
+        email: lead.email,
+        attributes: { ...attributes, OPT_IN: true },
+        listIds: [settings.lists.newsletter],
+        updateEnabled: true
+      });
+      if (settings.sender) {
+        const origin = new URL(request.url).origin;
+        const token = createConfirmToken(lead.email, {}, process.env.LEAD_CONFIRM_SECRET || settings.key);
+        const unsubscribeUrl = `${origin}/unsubscribed?token=${encodeURIComponent(token)}`;
         await brevo(settings.key, "/smtp/email", {
           sender: { email: settings.sender, name: "World Clean Biz" },
           to: [{ email: lead.email, ...(lead.name ? { name: lead.name } : {}) }],
-          subject: "Confirm your WCB weekly brief subscription",
-          htmlContent: confirmEmailHtml(confirmUrl),
-          tags: ["newsletter-confirm"]
+          subject: "Welcome to the WCB weekly brief",
+          htmlContent: welcomeEmailHtml({
+            ...welcomeItems(origin),
+            unsubscribeUrl,
+            reportUrl: lead.reportId ? `${origin}/reports` : undefined
+          }),
+          headers: {
+            "List-Unsubscribe": `<${origin}/api/leads/unsubscribe?token=${encodeURIComponent(token)}>, <mailto:news@worldcleanbiz.com?subject=unsubscribe>`,
+            "List-Unsubscribe-Post": "List-Unsubscribe=One-Click"
+          },
+          tags: ["newsletter-welcome"]
         });
-      } else {
-        await brevo(settings.key, "/contacts", { email: lead.email, attributes, listIds: [settings.lists.newsletter], updateEnabled: true });
       }
     }
     if (lead.kind !== "subscribe" && settings.sender && settings.notify) {
@@ -115,5 +135,5 @@ export async function POST(request: Request) {
     return Response.json({ ok: false, error: "Something went wrong. Please try again or email us." }, { status: 502 });
   }
 
-  return Response.json({ ok: true, doubleOptIn: wantsNewsletter(lead) && Boolean(settings.doiTemplate || settings.sender) });
+  return Response.json({ ok: true });
 }

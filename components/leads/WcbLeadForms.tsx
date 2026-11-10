@@ -114,8 +114,8 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
 
   if (status.state === "done") {
     return (
-      <Done title="Check your inbox">
-        We&apos;ve sent a confirmation link to {email}. Click it to start receiving the brief{reportId ? " and your report" : ""}.
+      <Done title="You're subscribed">
+        Welcome! A first email with this week&apos;s WCB stories is on its way to {email}{reportId ? ", with your report link" : ""}. The brief arrives every Friday.
       </Done>
     );
   }
