@@ -148,3 +148,17 @@
   .topic-event-thumb { width: 100%; max-width: 280px; }
   .topic-companies .topic-container { flex-direction: column; align-items: stretch; gap: 8px; }
 }
+
+/* Long topics: earlier timeline events and the source list fold. */
+.topic-page .topic-earlier { margin: 0 0 12px; }
+.topic-page .topic-earlier > summary,
+.topic-page .topic-sources details > summary { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 700; color: #245cc4; }
+.topic-page .topic-earlier > summary::-webkit-details-marker,
+.topic-page .topic-sources details > summary::-webkit-details-marker { display: none; }
+.topic-page .topic-earlier > summary { padding: 8px 14px; border: 1px solid #d6dfe7; border-radius: 16px; font-size: 14px; }
+.topic-page .topic-earlier > summary::after,
+.topic-page .topic-sources details > summary::after { content: "▾"; font-size: 12px; }
+.topic-page .topic-earlier[open] > summary::after,
+.topic-page .topic-sources details[open] > summary::after { content: "▴"; }
+.topic-page .topic-earlier[open] > .topic-timeline { margin-top: 12px; }
+.topic-page .topic-sources details > summary h2 { margin: 0; }

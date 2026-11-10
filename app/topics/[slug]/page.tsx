@@ -109,6 +109,28 @@ export default async function TopicPage({ params }: { params: PageParams }) {
     }
   ];
 
+  // The timeline runs oldest to newest: the latest events stay open, earlier ones fold above them.
+  const TIMELINE_OPEN = 5;
+  const timelineItem = (event: (typeof topic.timeline)[number]) => (
+      <li key={`${event.date}-${event.title}`}>
+                  <time dateTime={event.date}>{topicDate(event.date)}</time>
+                  <div className="topic-event">
+                    <div>
+                      <h3>{event.href ? <Link href={event.href}>{event.title}</Link> : event.title}</h3>
+                      <p>{event.text}</p>
+                    </div>
+                    {(() => {
+                      const thumb = thumbFor(event.href);
+                      return thumb && event.href ? (
+                        <Link className={`topic-event-thumb${thumb.contain ? " is-contain" : ""}`} href={event.href} tabIndex={-1} aria-hidden="true">
+                          <img src={thumb.src} alt="" loading="lazy" decoding="async" />
+                        </Link>
+                      ) : null;
+                    })()}
+                  </div>
+                </li>
+  );
+
   return (
     <article className="topic-page">
       <header className="topic-hero">
@@ -184,25 +206,15 @@ export default async function TopicPage({ params }: { params: PageParams }) {
 
           <section aria-labelledby="topic-timeline">
             <h2 id="topic-timeline">Timeline</h2>
+            {topic.timeline.length > TIMELINE_OPEN ? (
+              <details className="topic-earlier">
+                <summary>Earlier events ({topic.timeline.length - TIMELINE_OPEN})</summary>
+                <ol className="topic-timeline">{topic.timeline.slice(0, -TIMELINE_OPEN).map(timelineItem)}</ol>
+              </details>
+            ) : null}
             <ol className="topic-timeline">
-              {topic.timeline.map((event) => (
-                <li key={`${event.date}-${event.title}`}>
-                  <time dateTime={event.date}>{topicDate(event.date)}</time>
-                  <div className="topic-event">
-                    <div>
-                      <h3>{event.href ? <Link href={event.href}>{event.title}</Link> : event.title}</h3>
-                      <p>{event.text}</p>
-                    </div>
-                    {(() => {
-                      const thumb = thumbFor(event.href);
-                      return thumb && event.href ? (
-                        <Link className={`topic-event-thumb${thumb.contain ? " is-contain" : ""}`} href={event.href} tabIndex={-1} aria-hidden="true">
-                          <img src={thumb.src} alt="" loading="lazy" decoding="async" />
-                        </Link>
-                      ) : null;
-                    })()}
-                  </div>
-                </li>
+              {topic.timeline.slice(-TIMELINE_OPEN).map((event) => (
+                timelineItem(event)
               ))}
             </ol>
           </section>
@@ -272,7 +284,6 @@ export default async function TopicPage({ params }: { params: PageParams }) {
                     ) : null}
                     <span className="topic-card-copy">
                       <strong>{article.title}</strong>
-                      <span>{article.excerpt}</span>
                     </span>
                   </Link>
                 </li>
@@ -283,7 +294,8 @@ export default async function TopicPage({ params }: { params: PageParams }) {
       ) : null}
 
       <footer className="topic-container topic-sources">
-        <h2>Sources</h2>
+        <details>
+        <summary><h2>Sources ({topic.sources.length})</h2></summary>
         <ul>
           {topic.sources.map((source) => (
             <li key={source.url}>
@@ -296,6 +308,7 @@ export default async function TopicPage({ params }: { params: PageParams }) {
             </li>
           ) : null}
         </ul>
+        </details>
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

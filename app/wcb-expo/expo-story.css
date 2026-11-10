@@ -313,3 +313,11 @@
 #wcb-expo-story .v7-session:not(.v7-empty){align-items:start}
 #wcb-expo-story .v7-day .v7-session:last-child{flex:1 0 auto}
 }
+
+/* Alternate a soft full-width band behind every other white section, so the page reads in steps. */
+#wcb-expo-story #origins,
+#wcb-expo-story #exhibitors {
+  background: #f4f7fa;
+  box-shadow: 0 0 0 100vmax #f4f7fa;
+  clip-path: inset(0 -100vmax);
+}
