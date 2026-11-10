@@ -62,10 +62,11 @@ const FEATURED_BRANDS = [
 const CONFIRMED_EXHIBITORS = ["华盛电机", "欣扬科技", "宏伟电器", "德宇鑫科技", "东裕华芯电子", "英斐逊环境", "摩路新材料", "莫之比智能", "精锐昌科技", "清洋流体科技（苏州）", "纽莱克电子", "舍孚勒轴承", "德欣电机", "铱鑫电子", "佳音机电", "纳声电子设备", "韬略科技", "弈博智能", "洽洁电子", "蓝体半导体", "春桥电子", "莱恩科技", "多密特密封", "本末动力（广东）", "锐科兰电器", "赋贵荣科技", "成就智能", "实隆轴承", "米多", "东海电器", "德晟智能", "荣采创新", "绍鼎密封", "斯卫浦", "创源", "晨光电机", "冠宇达电源", "德良齐科技", "力佳隆毛刷", "高斯贝金属软管", "巨腾电子", "乾泰翔科技", "华瑷科技", "量能科技", "润英联新材料", "瑞莱达电器", "恩牧必精密轴承制造", "普沃特净化器材", "汇龙电器", "兆力电机集团", "永捷电机", "西腾毛刷", "罗素科技", "施奈仕实业", "捷宝金属集团", "固辉胶粘制品", "舟水电器", "的家电器", "凯航电机", "索瑞达电子", "湛华传感", "长锦成智能制造", "畅彻电器", "中驱电机", "壹洁智能", "恒讯电器（苏州）", "科维津宏环保", "中科芯亿达电子", "宏联电子", "小科清洁", "璟博方精密电子", "奕雅达生物", "普力生连接", "长曜创新", "宏鹏传动", "凯豪电器", "康沃特变频电机", "旭益达无刷电机", "钜泰泵业", "北醒（北京）光子", "荣亿电器", "梵凯刀具", "东亿磁业", "元晶光电", "虹光新材料", "好易捷电器", "速能达电机", "日讯新材料", "景腾精工橡塑制品", "新鼎泰智能", "乐宝电机", "征承科技", "德威控制系统", "华昀电子", "科宏轴承", "精微科（苏州）电子", "点石驱动", "倍增电子", "闪联电气", "合泰电机电器", "馨源（深圳）电子", "密姆科技", "凯艺美净化", "顺都印刷", "时达创马达", "清水智能机器人", "富迪电子", "兴邦维科", "西格传动智能", "国梦电机", "鑫华煦橡胶制品"];
 
 const WHY_VISIT = [
-  { title: "Hear where the industry is going, for free", text: "Entrepreneurs and industry experts share their view of what comes next for cleaning appliances." },
-  { title: "See leading brands’ new products", text: "Navimow (Segway-Ninebot), Roborock, ECOVACS, BISSELL, Midea and WYBOT in one place in Suzhou, without travelling to IFA." },
-  { title: "Meet more than ten finished-product makers", text: "Robot vacuums, floor washers, vacuum cleaners, window robots, robotic mowers and pool cleaners, all on one visit." },
-  { title: "Talk to dozens of component suppliers", text: "Motors, pumps, moulds and other core components on show, with suppliers ready to discuss projects on the spot." }
+  // Photos from the March 2026 Shenzhen exhibition, one per reason to visit.
+  { title: "Hear where the industry is going, for free", text: "Entrepreneurs and industry experts share their view of what comes next for cleaning appliances.", image: "/images/articles/about-denny-expo-2026/10-photo-89.webp", alt: "Technology presentation at the March 2026 Shenzhen exhibition" },
+  { title: "See leading brands’ new products", text: "Navimow (Segway-Ninebot), Roborock, ECOVACS, BISSELL, Midea and WYBOT in one place in Suzhou, without travelling to IFA.", image: "/images/articles/about-denny-expo-2026/16-photo-92.webp", alt: "Product and supplier discussions at a booth in Shenzhen, March 2026" },
+  { title: "Meet more than ten finished-product makers", text: "Robot vacuums, floor washers, vacuum cleaners, window robots, robotic mowers and pool cleaners, all on one visit.", image: "/images/articles/about-denny-expo-2026/13-photo-90.webp", alt: "Exhibition aisles at the March 2026 Shenzhen exhibition" },
+  { title: "Talk to dozens of component suppliers", text: "Motors, pumps, moulds and other core components on show, with suppliers ready to discuss projects on the spot.", image: "/images/articles/about-denny-expo-2026/17-photo-95.webp", alt: "Visitors examining components with a supplier in Shenzhen, March 2026" }
 ];
 
 export default function WcbExpoPage() {
@@ -159,6 +160,9 @@ export default function WcbExpoPage() {
   <ol className="v9-why">
    {WHY_VISIT.map((item, index) => (
     <li key={item.title}>
+     <span className="v9-why-photo">
+      <img src={item.image.replace(/\.webp$/, "-800.webp")} alt={item.alt} width={680} height={510} loading="lazy" decoding="async" />
+     </span>
      <span className="v9-why-number">{String(index + 1).padStart(2, "0")}</span>
      <h3>{item.title}</h3>
      <p>{item.text}</p>
@@ -190,6 +194,7 @@ export default function WcbExpoPage() {
     <p>
      WCB expects the market for finished cleaning appliances to grow from under CNY 300 billion today, mainly household cleaning appliances, to about CNY 1 trillion in retail sales within ten years, driven by new categories, robotics and global expansion.
     </p>
+    <img className="v9-view-visual" src="/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en-800.webp" alt="WCB Expo 2026 key visual: The Road to a Trillion-Yuan Cleaning Industry" width={800} height={450} loading="lazy" decoding="async" />
    </div>
    <dl>
     <div><dt>CNY 1 trillion</dt><dd>Brand retail sales of finished products</dd></div>

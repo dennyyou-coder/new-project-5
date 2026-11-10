@@ -313,3 +313,12 @@
 #wcb-expo-story .v7-session:not(.v7-empty){align-items:start}
 #wcb-expo-story .v7-day .v7-session:last-child{flex:1 0 auto}
 }
+
+/* Why visit: a photo from the last show above each reason. */
+#wcb-expo-story .v9-why li{display:flex;flex-direction:column}
+#wcb-expo-story .v9-why-photo{display:block;margin:0 0 14px;border-radius:6px;overflow:hidden;aspect-ratio:4/3;background:var(--pale)}
+#wcb-expo-story .v9-why-photo img{width:100%;height:100%;object-fit:cover}
+/* WCB's view: the key visual fills the space under the text. */
+#wcb-expo-story .v9-view-visual{margin-top:18px;width:100%;border-radius:6px;aspect-ratio:16/9;object-fit:cover}
+#wcb-expo-story .v9-view dl{align-content:start}
+@media(max-width:760px){#wcb-expo-story .v9-why-photo{aspect-ratio:16/9}}
