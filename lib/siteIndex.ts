@@ -82,6 +82,7 @@ export function getSiteIndexOverview() {
         { href: "/reports", label: "Reports" },
         { href: "/videos", label: "Videos" },
         { href: "/sourcing", label: "Sourcing" },
+        { href: "/events", label: "Industry events" },
         { href: "/wcb-expo", label: "WCB Expo" }
       ]
     },

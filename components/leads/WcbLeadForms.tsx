@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { createLeadAttribution, trackLeadEvent, type LeadFormType } from "@/lib/leadTracking";
 import { INTERESTS, NEEDS, ROLES, leadKindForForm, type ExpoRole, type LeadKind } from "@/lib/leads";
+import { getReport } from "@/lib/reports";
 
 const ENV_FLAG = process.env.NEXT_PUBLIC_LEAD_FORMS === "wcb";
 
@@ -99,6 +100,7 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
   const [interests, setInterests] = useState<string[]>([]);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
+  const report = getReport(reportId);
 
   function next(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -115,19 +117,19 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
   if (status.state === "done") {
     return (
       <Done title="You're subscribed">
-        Welcome! A first email with this week&apos;s WCB stories is on its way to {email}{reportId ? ", with your report link" : ""}. The brief arrives every Friday.
+        Welcome! A first email with this week&apos;s WCB stories is on its way to {email}{report?.file ? ", with your report link" : ""}.{report && !report.file ? " We'll email you when the report is ready." : ""} The brief arrives every Friday.
       </Done>
     );
   }
   if (step === "email") {
     return (
       <form className="wcb-lead-form" onSubmit={next} noValidate>
-        <p className="wcb-lead-title">{heading}</p>
-        <p className="wcb-lead-note">Five stories and one analysis every Friday. Free, and you can unsubscribe any time.</p>
+        <p className="wcb-lead-title">{report?.file ? `Get the free report: ${report.title}` : heading}</p>
+        <p className="wcb-lead-note">{report?.file ? "We'll email you the PDF link right away, then the WCB weekly brief every Friday. Free, and you can unsubscribe any time." : "Five stories and one analysis every Friday. Free, and you can unsubscribe any time."}</p>
         <div className="wcb-lead-row">
           <label className="wcb-lead-sr" htmlFor={`sub-email-${ctaLocation}`}>Work email</label>
           <input id={`sub-email-${ctaLocation}`} type="email" autoComplete="email" placeholder="name@company.com" value={email} onChange={(event) => setEmail(event.target.value)} aria-invalid={status.field === "email"} />
-          <button className="wcb-lead-primary" type="submit">Subscribe</button>
+          <button className="wcb-lead-primary" type="submit">{report?.file ? "Email me the report" : "Subscribe"}</button>
         </div>
         <FieldError status={status} field="email" />
         <label className="wcb-lead-check">

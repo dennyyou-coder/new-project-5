@@ -10,7 +10,9 @@ import { CompanyMark } from "@/components/ui/CompanyMark";
 import { FigureChip } from "@/components/ui/FigureChip";
 import { buildBrandMarkIndex, resolveBrandMark } from "@/lib/brandMarks";
 import { findParentProfile, shortParentName } from "@/lib/brandProfileView";
-import { TallyButton } from "@/components/LeadForms";
+import { TallyButton, TallyReportButton } from "@/components/LeadForms";
+import { eventBadge, upcomingEvents } from "@/lib/industryEvents";
+import { FEATURED_REPORT } from "@/lib/reports";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
@@ -30,6 +32,15 @@ export const revalidate = 21600;
 
 const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 const founderCoverFallback = "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp";
+// Supplier requests by category: each links to that category's sourcing page.
+const sourcingLinks = [
+  { label: "Robot vacuums", href: "/sourcing/robotic-vacuums" },
+  { label: "Vacuum cleaners", href: "/sourcing/vacuum-cleaners" },
+  { label: "Floor washers", href: "/sourcing/floor-washers" },
+  { label: "Pool robots", href: "/sourcing/pool-robots" },
+  { label: "Robotic mowers", href: "/sourcing/lawn-robots" },
+  { label: "Commercial cleaning", href: "/sourcing/commercial-cleaning" }
+];
 const resultsPattern = /\b(revenue|results|profit|sales|earnings)\b/i;
 
 function hubOf(slugs: HubCategorySlug[]) {
@@ -56,6 +67,7 @@ export default function HomePage() {
   const latestFounderSeries = getLatestSeriesInsight(articles, founderSeries);
   const marks = buildBrandMarkIndex(brands);
   const expoUpcoming = isExpoUpcoming();
+  const nextEvents = upcomingEvents(new Date(), 5);
 
   // The industry's running stories: each WCB topic as an image card under the hero.
   const watch = getTopics().map((topic) => ({ topic }));
@@ -321,6 +333,75 @@ export default function HomePage() {
           </div>
         </section>
       ) : null}
+
+      <section className="home-b-section" id="business" aria-labelledby="home-business-title">
+        <div className="home-b-container">
+          <div className="home-b-head">
+            <h2 id="home-business-title">For your business</h2>
+          </div>
+          <div className="home-b-business">
+            <article className="home-b-biz home-b-biz-report">
+              <span className="home-b-biz-kicker">Free report · {FEATURED_REPORT.pages} pages</span>
+              <div className="home-b-biz-report-row">
+                <img className="home-b-biz-cover" src={FEATURED_REPORT.cover} alt={`${FEATURED_REPORT.title} report cover`} loading="lazy" decoding="async" />
+                <div>
+                  <h3>{FEATURED_REPORT.title}</h3>
+                  <p>How growth is spreading from indoor appliances to yard, pool and commercial cleaning robots, with checklists for buyers and suppliers.</p>
+                </div>
+              </div>
+              <div className="home-b-biz-actions">
+                <TallyReportButton className="home-b-biz-button" ctaLocation="home_business_report" reportId={FEATURED_REPORT.id}>
+                  Get the free PDF
+                </TallyReportButton>
+                <Link href="/reports">All reports</Link>
+              </div>
+            </article>
+            <article className="home-b-biz home-b-biz-sourcing">
+              <span className="home-b-biz-kicker">Sourcing</span>
+              <h3>Looking for a supplier or factory?</h3>
+              <p>Tell us the product and your market. The WCB team knows the factories behind the brands and replies within two working days.</p>
+              <ul className="home-b-biz-pills" aria-label="Sourcing by category">
+                {sourcingLinks.map((link) => (
+                  <li key={link.href}><Link href={link.href}>{link.label}</Link></li>
+                ))}
+              </ul>
+              <div className="home-b-biz-actions">
+                <TallyButton className="home-b-biz-button" ctaLocation="home_business_sourcing" form="sourcing">
+                  Send a sourcing request
+                </TallyButton>
+                <Link href="/sourcing">How it works</Link>
+              </div>
+            </article>
+            <article className="home-b-biz home-b-biz-events">
+              <div className="home-b-biz-events-head">
+                <span className="home-b-biz-kicker">Industry events</span>
+                <Link href="/events">Full calendar</Link>
+              </div>
+              <ul className="home-b-events">
+                {nextEvents.map((event) => {
+                  const badge = eventBadge(event);
+                  return (
+                    <li key={event.slug} className={event.wcb ? "is-wcb" : undefined}>
+                      <span className="home-b-event-date" aria-hidden="true">
+                        <span>{badge.month}</span>
+                        <strong>{badge.day}</strong>
+                      </span>
+                      <span className="home-b-event-copy">
+                        {event.url.startsWith("/") ? (
+                          <Link href={event.url}>{event.name}</Link>
+                        ) : (
+                          <a href={event.url} target="_blank" rel="noopener noreferrer">{event.name}</a>
+                        )}
+                        <span className="home-b-meta">{event.city}, {event.country}</span>
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section className="home-b-section" aria-labelledby="home-categories-title">
         <div className="home-b-container">

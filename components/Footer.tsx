@@ -38,6 +38,7 @@ export function Footer() {
             <h2>WCB</h2>
             <ul>
               <li><Link href="/wcb-expo">WCB Expo</Link></li>
+              <li><Link href="/events">Industry events</Link></li>
               <li><Link href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">Founder Series</Link></li>
               <li>
                 <TallyButton className="wcb-footer-button" ctaLocation="footer_updates" form="newsletter">
