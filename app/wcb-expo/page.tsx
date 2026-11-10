@@ -188,19 +188,21 @@ export default function WcbExpoPage() {
    </ul>
   </div>
   <div className="v9-view">
-   <div>
+   <img className="v9-view-visual" src="/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en-800.webp" alt="WCB Expo 2026 key visual: The Road to a Trillion-Yuan Cleaning Industry" width={800} height={450} loading="lazy" decoding="async" />
+   <div className="v9-view-body">
+    <div>
     <span className="eyebrow">WCB’S VIEW</span>
     <h3>The road to a trillion-yuan cleaning industry</h3>
     <p>
      WCB expects the market for finished cleaning appliances to grow from under CNY 300 billion today, mainly household cleaning appliances, to about CNY 1 trillion in retail sales within ten years, driven by new categories, robotics and global expansion.
     </p>
-    <img className="v9-view-visual" src="/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en-800.webp" alt="WCB Expo 2026 key visual: The Road to a Trillion-Yuan Cleaning Industry" width={800} height={450} loading="lazy" decoding="async" />
    </div>
    <dl>
     <div><dt>CNY 1 trillion</dt><dd>Brand retail sales of finished products</dd></div>
     <div><dt>About CNY 250 billion</dt><dd>OEM and ODM manufacturing</dd></div>
     <div><dt>About CNY 185 billion</dt><dd>Core components: motors, batteries, pumps, sensors</dd></div>
    </dl>
+   </div>
    <p className="v9-view-note">
     WCB scenario estimate, not verified industry statistics or a third-party forecast. Segments: household, commercial and pool cleaning, and robotic mowing.
    </p>

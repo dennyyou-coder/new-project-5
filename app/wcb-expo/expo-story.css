@@ -318,7 +318,16 @@
 #wcb-expo-story .v9-why li{display:flex;flex-direction:column}
 #wcb-expo-story .v9-why-photo{display:block;margin:0 0 14px;border-radius:6px;overflow:hidden;aspect-ratio:4/3;background:var(--pale)}
 #wcb-expo-story .v9-why-photo img{width:100%;height:100%;object-fit:cover}
-/* WCB's view: the key visual fills the space under the text. */
-#wcb-expo-story .v9-view-visual{margin-top:18px;width:100%;border-radius:6px;aspect-ratio:16/9;object-fit:cover}
-#wcb-expo-story .v9-view dl{align-content:start}
 @media(max-width:760px){#wcb-expo-story .v9-why-photo{aspect-ratio:16/9}}
+
+/* WCB's view: key visual on the left; title, text and the three figures in a row on the right,
+   so both columns end at the same height. */
+#wcb-expo-story .v9-view{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:32px}
+#wcb-expo-story .v9-view-visual{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px}
+#wcb-expo-story .v9-view-body{display:grid;gap:20px;align-content:center}
+#wcb-expo-story .v9-view-body dl{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#wcb-expo-story .v9-view-body dl div{display:flex;flex-direction:column;justify-content:flex-start}
+#wcb-expo-story .v9-view-body dt{font-size:18px;line-height:1.25}
+#wcb-expo-story .v9-view-body dd{font-size:13px;line-height:1.45}
+@media(max-width:1200px){#wcb-expo-story .v9-view{grid-template-columns:1fr}#wcb-expo-story .v9-view-visual{max-width:560px;margin:0 auto}}
+@media(max-width:560px){#wcb-expo-story .v9-view-body dl{grid-template-columns:1fr}}
