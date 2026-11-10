@@ -19,7 +19,7 @@
     "test:inquiry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/inquiryConversion.test.mjs",
     "test:insights": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/insightCollections.test.mjs",
     "test:blog-landing": "node --test tests/blogLanding.test.mjs",
-    "test:news": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/news.test.mjs tests/topics.test.mjs tests/markets.test.mjs tests/feeds.test.mjs tests/rankings.test.mjs tests/queryRoute.test.mjs tests/siteIndex.test.mjs tests/leads.test.mjs tests/homeBusiness.test.mjs tests/industryTools.test.mjs",
+    "test:news": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/news.test.mjs tests/topics.test.mjs tests/markets.test.mjs tests/feeds.test.mjs tests/rankings.test.mjs tests/queryRoute.test.mjs tests/siteIndex.test.mjs tests/leads.test.mjs tests/homeBusiness.test.mjs tests/industryTools.test.mjs tests/industryRadar.test.mjs",
     "test:guides": "node --test tests/guidesExperience.test.mjs",
     "test:ui": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/uiKit.test.mjs",
     "test:categories": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/hubCategories.test.mjs",

@@ -41,7 +41,7 @@ export function ToolPage({
       <section className="tool-hero">
         <div className="container">
           <p className="tool-crumbs">
-            <Link href="/tools">Industry tools</Link> <span aria-hidden="true">/</span> {tool.audience}
+            <Link href="/tools">Tools and trackers</Link> <span aria-hidden="true">/</span> {tool.audience}
           </p>
           <h1>{title}</h1>
           <p className="tool-hero-lead">{lead}</p>

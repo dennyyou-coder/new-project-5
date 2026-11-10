@@ -14,6 +14,10 @@ import { TallyButton, TallyReportButton } from "@/components/LeadForms";
 import { eventBadge, upcomingEvents } from "@/lib/industryEvents";
 import { FEATURED_REPORT } from "@/lib/reports";
 import { HomeToolCards } from "@/components/tools/HomeToolCards";
+import { recallName, shortDate } from "@/lib/radar/classify";
+import { getFccFilings, getRecalls } from "@/lib/radar/data";
+import { fccIdUrl } from "@/lib/radar/fcc";
+import { daysUntil, upcomingRules } from "@/lib/radar/rules";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
@@ -69,6 +73,9 @@ export default function HomePage() {
   const marks = buildBrandMarkIndex(brands);
   const expoUpcoming = isExpoUpcoming();
   const nextEvents = upcomingEvents(new Date(), 5);
+  const radarRecalls = getRecalls().slice(0, 4);
+  const radarFilings = getFccFilings().filter((filing) => filing.type === "new").slice(0, 4);
+  const radarRules = upcomingRules(new Date(), 4);
 
   // The industry's running stories: each WCB topic as an image card under the hero.
   const watch = getTopics().map((topic) => ({ topic }));
@@ -400,6 +407,65 @@ export default function HomePage() {
                     </li>
                   );
                 })}
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-b-section" id="radar" aria-labelledby="home-radar-title">
+        <div className="home-b-container">
+          <div className="home-b-head">
+            <h2 id="home-radar-title">Industry radar</h2>
+            <Link className="wcb-more" href="/tools">All trackers</Link>
+          </div>
+          <div className="home-b-radar">
+            <article className="home-b-radar-col">
+              <div className="home-b-biz-events-head">
+                <span className="home-b-biz-kicker">Latest recalls</span>
+                <Link href="/recalls">All recalls</Link>
+              </div>
+              <ul className="home-b-radar-list">
+                {radarRecalls.map((recall) => (
+                  <li key={recall.id}>
+                    <span className="home-b-meta">
+                      <span className={`home-b-radar-tag is-${recall.source === "CPSC" ? "us" : "eu"}`}>{recall.source === "CPSC" ? "US" : "EU"}</span> {shortDate(recall.date)}
+                    </span>
+                    <a href={recall.url} target="_blank" rel="noopener noreferrer">{recallName(recall)}</a>
+                    <span className="home-b-radar-note">{recall.risk ?? recall.hazard}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+            <article className="home-b-radar-col">
+              <div className="home-b-biz-events-head">
+                <span className="home-b-biz-kicker">New FCC filings</span>
+                <Link href="/launch-radar">Launch radar</Link>
+              </div>
+              <ul className="home-b-radar-list">
+                {radarFilings.map((filing) => (
+                  <li key={`${filing.fccId}-${filing.date}`}>
+                    <span className="home-b-meta">{shortDate(filing.date)}</span>
+                    <a href={fccIdUrl(filing.fccId)} target="_blank" rel="noopener noreferrer">{filing.company}: {filing.fccId}</a>
+                    <span className="home-b-radar-note">{filing.bands.join(", ") || "New product"}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+            <article className="home-b-radar-col">
+              <div className="home-b-biz-events-head">
+                <span className="home-b-biz-kicker">Rules coming up</span>
+                <Link href="/rules-calendar">Calendar</Link>
+              </div>
+              <ul className="home-b-radar-list">
+                {radarRules.map((rule) => (
+                  <li key={rule.id}>
+                    <span className="home-b-meta">
+                      <span className={`home-b-radar-tag is-${rule.region.toLowerCase()}`}>{rule.region}</span> {shortDate(rule.date)} · in {daysUntil(rule.date)} days
+                    </span>
+                    <Link href={rule.href ?? "/rules-calendar"}>{rule.title}</Link>
+                  </li>
+                ))}
               </ul>
             </article>
           </div>
