@@ -187,7 +187,7 @@ export function BrandSections({
       >
         {models.length ? (
           <div className="bp-models">
-            {models.slice(0, 8).map((model) => (
+            {models.slice(0, 4).map((model) => (
               <Link key={model.slug} className="bp-model" href={`/products/${model.slug}`}>
                 <span className="bp-model-image"><img src={model.cover} alt="" loading="lazy" decoding="async" /></span>
                 <span className="bp-model-copy">
@@ -200,14 +200,19 @@ export function BrandSections({
           </div>
         ) : null}
         {portfolioVisual ? <div className="bp-ops-visual"><BrandVisual visual={portfolioVisual} /></div> : null}
-        <ul className="bp-lines">
-          {profile.productPortfolio.map((line) => (
-            <li key={line.name}>
-              <b>{line.name}</b>
-              <span>{firstSentence(line.positioning)}</span>
-            </li>
-          ))}
-        </ul>
+        {models.length > 4 ? <Link className="bp-models-all" href="/products">All {models.length} {profile.name} models in the product library →</Link> : null}
+        {/* Product lines are reference detail: folded, still in the page. */}
+        <details className="pv-collapse pv-collapse--inline">
+          <summary>{profile.productPortfolio.length} product lines</summary>
+          <ul className="bp-lines">
+            {profile.productPortfolio.map((line) => (
+              <li key={line.name}>
+                <b>{line.name}</b>
+                <span>{firstSentence(line.positioning)}</span>
+              </li>
+            ))}
+          </ul>
+        </details>
       </Card>
 
       <Card id="manufacturing-channels" title="Operations" icon="factory">
