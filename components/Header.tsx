@@ -44,7 +44,7 @@ const NAV: NavItem[] = [
     kind: "menu",
     id: "insights",
     label: "Insights",
-    current: ["/blog", "/guides", "/videos", "/reports"],
+    current: ["/blog", "/guides", "/videos", "/reports", "/tools"],
     columns: [
       {
         links: [
@@ -52,7 +52,8 @@ const NAV: NavItem[] = [
           { href: "/guides", label: "Guides" },
           { href: "/blog/series/building-worlds-no-1-cleaning-show-from-scratch", label: "Founder’s Journal" },
           { href: "/videos", label: "Videos" },
-          { href: "/reports", label: "Reports" }
+          { href: "/reports", label: "Reports" },
+          { href: "/tools", label: "Industry tools" }
         ]
       }
     ]

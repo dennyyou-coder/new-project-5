@@ -80,6 +80,7 @@ export function getSiteIndexOverview() {
         { href: "/rankings", label: "Rankings" },
         { href: "/markets", label: "Markets" },
         { href: "/reports", label: "Reports" },
+        { href: "/tools", label: "Industry tools" },
         { href: "/videos", label: "Videos" },
         { href: "/sourcing", label: "Sourcing" },
         { href: "/events", label: "Industry events" },
