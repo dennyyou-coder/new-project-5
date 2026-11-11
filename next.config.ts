@@ -75,6 +75,11 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/blog/sharkninja-road-to-10-billion-dollar-sales",
+        destination: "/blog/sharkninja-road-to-10-billion-dollars",
+        permanent: true
+      },
+      {
         source: "/insights/sharkninja-road-to-ten-billion-dollars",
         destination: "/blog/sharkninja-road-to-10-billion-dollars",
         permanent: true
