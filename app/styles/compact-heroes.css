@@ -2,10 +2,10 @@
    These headers had grown to 250–475px with 46–52px titles, pushing the content below the fold.
    One size for all: about 150–200px tall, 34px title, 16px lead. The homepage, article pages,
    company and product detail headers and the About page keep their own designs.
-   !important is used on purpose: each page's own stylesheet sets these values with long, very
-   specific selectors, and this file is the single place that overrides them. */
+   Selectors start with #main-content so they outrank each page's own class-only rules
+   without !important. */
 
-:is(
+#main-content :is(
   .company-directory-hero,
   .blog-home-intro,
   .product-library-hero,
@@ -23,12 +23,12 @@
   .contact-hero,
   .topic-hero
 ) {
-  min-height: 0 !important;
-  padding-top: 28px !important;
-  padding-bottom: 26px !important;
+  min-height: 0;
+  padding-top: 28px;
+  padding-bottom: 26px;
 }
 
-:is(
+#main-content :is(
   .company-directory-hero,
   .blog-home-intro,
   .product-library-hero,
@@ -46,14 +46,14 @@
   .contact-hero,
   .topic-hero
 ) h1 {
-  margin-top: 6px !important;
-  margin-bottom: 8px !important;
-  font-size: clamp(28px, 2.6vw, 34px) !important;
-  line-height: 1.18 !important;
-  letter-spacing: -0.02em !important;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  font-size: clamp(28px, 2.6vw, 34px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
 }
 
-:is(
+#main-content :is(
   .company-directory-hero,
   .blog-home-intro,
   .product-library-hero,
@@ -71,24 +71,24 @@
   .contact-hero,
   .topic-hero
 ) p:not([class*="eyebrow"]):not([class*="breadcrumb"]):not([class*="kicker"]):not([class*="crumbs"]):not([class*="updated"]):not([class*="meta"]):not([class*="note"]) {
-  margin-top: 0 !important;
-  font-size: 16px !important;
-  line-height: 1.55 !important;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 /* Filter chips inside the companies header. */
-.company-directory-categories {
-  gap: 8px !important;
-  margin-top: 14px !important;
+#main-content .company-directory-categories {
+  gap: 8px;
+  margin-top: 14px;
 }
-.company-directory-categories a {
-  min-height: 0 !important;
-  padding: 6px 12px !important;
-  font-size: 13px !important;
+#main-content .company-directory-categories a {
+  min-height: 0;
+  padding: 6px 12px;
+  font-size: 13px;
 }
 
 @media (max-width: 640px) {
-  :is(
+  #main-content :is(
     .company-directory-hero,
     .blog-home-intro,
     .product-library-hero,
@@ -106,10 +106,10 @@
     .contact-hero,
     .topic-hero
   ) {
-    padding-top: 20px !important;
-    padding-bottom: 18px !important;
+    padding-top: 20px;
+    padding-bottom: 18px;
   }
-  :is(
+  #main-content :is(
     .company-directory-hero,
     .blog-home-intro,
     .product-library-hero,
@@ -127,10 +127,10 @@
     .contact-hero,
     .topic-hero
   ) h1 {
-    font-size: 26px !important;
+    font-size: 26px;
   }
 }
 
 /* Breadcrumb links keep a normal line height inside compact headers. */
-.company-directory-breadcrumb a { min-height: 0 !important; }
-.company-directory-hero .company-directory-container { padding-top: 0 !important; padding-bottom: 0 !important; }
+#main-content .company-directory-breadcrumb a { min-height: 0; }
+#main-content .company-directory-hero .company-directory-container { padding-top: 0; padding-bottom: 0; }

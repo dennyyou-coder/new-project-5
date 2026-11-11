@@ -30,7 +30,6 @@
 .markets-table tbody th { font-weight: 800; white-space: nowrap; }
 .markets-page .markets-table tbody th a { display: inline-flex; align-items: center; min-height: 44px; margin: -12px 0; color: var(--mk-ink); }
 .markets-num { font-weight: 700; color: var(--mk-ink); white-space: nowrap; }
-.markets-summary { min-width: 260px; color: var(--mk-muted); line-height: 1.5; }
 .markets-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--mk-line); }
 .markets-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; padding: 4px 0; border-bottom: 1px solid var(--mk-line); }
 .markets-page .markets-list a { display: flex; align-items: center; min-height: 44px; font-weight: 650; color: var(--mk-ink); }
