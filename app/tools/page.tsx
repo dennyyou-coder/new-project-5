@@ -7,7 +7,7 @@ import "../styles/tools.css";
 export const metadata: Metadata = {
   title: "Free Tools and Trackers for Appliance and Power Tool Companies",
   description:
-    "Free WCB tools and trackers for appliance, cleaning and power tool companies: a landed cost and tariff calculator, an export compliance checklist, a robot payback calculator, a recall tracker, FCC launch radar and a trade rules calendar.",
+    "Free tools for appliance, cleaning and power tool companies: a landed cost and tariff calculator, export compliance checklist, recall tracker and FCC radar.",
   alternates: { canonical: "/tools" }
 };
 

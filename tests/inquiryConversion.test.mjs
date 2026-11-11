@@ -25,7 +25,7 @@ test("defines six unique tracked sourcing categories", () => {
       "Vacuum Cleaners",
       "Commercial Cleaning Equipment",
       "Outdoor Cleaning Products",
-      "New & Emerging Products"
+      "Pool Cleaning Robots"
     ]
   );
   assert.equal(new Set(SOURCING_CATEGORIES.map((item) => item.value)).size, 6);
