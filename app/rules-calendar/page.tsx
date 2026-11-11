@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { CiteNote } from "@/components/radar/DatasetSchema";
+import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import { RadarHero } from "@/components/radar/RadarHero";
 import { SECTORS, shortDate } from "@/lib/radar/classify";
 import { daysUntil, recentRules, upcomingRules, type RuleDate } from "@/lib/radar/rules";
@@ -81,6 +82,7 @@ export default function RulesCalendarPage() {
           </aside>
         </div>
       </section>
+      <CollectionSchema name="Trade and product rules calendar" description="Dates that change what it costs to sell appliances, cleaning machines and power tools in the US and Europe." path="/rules-calendar" items={[...upcoming, ...recent].map((rule) => ({ name: `${rule.date}: ${rule.title}`, url: rule.href }))} />
     </div>
   );
 }
