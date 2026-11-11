@@ -3,7 +3,7 @@ import type { NewsArticle } from "./news";
 import type { ProductModel } from "./products";
 import type { WcbVideo } from "./wcbVideos";
 
-type ArticleRelation = Pick<Insight, "slug" | "content" | "primaryBrands" | "series">;
+type ArticleRelation = Pick<Insight, "slug" | "content" | "primaryBrands" | "series"> & Partial<Pick<Insight, "tags" | "sortDate">>;
 
 // Read only actual internal links; words in a title are not model relationships.
 function linkedSlugs(content: string, route: "blog" | "products") {
@@ -37,7 +37,43 @@ export function getArticleReading(article: ArticleRelation, articles: readonly I
     selected.push(item);
     if (selected.length >= limit) break;
   }
+  if (selected.length >= limit) return selected;
+  // Fill remaining slots only from articles that share a specific tag, never from a broad category.
+  const counts = tagCounts(articles);
+  const mine = specificTags(article, counts);
+  if (!mine.size) return selected;
+  const time = Date.parse(article.sortDate || "");
+  const byTag = articles.filter((item) => item.slug !== article.slug && !selected.includes(item) && (!article.series || item.series !== article.series))
+    .map((item) => ({ item, shared: [...specificTags(item, counts)].filter((tag) => mine.has(tag)).length, distance: Math.abs(Date.parse(item.sortDate) - time) }))
+    .filter(({ shared }) => shared > 0)
+    .sort((a, b) => b.shared - a.shared || a.distance - b.distance || a.item.slug.localeCompare(b.item.slug));
+  for (const { item } of byTag) {
+    if (item.series && selected.some((entry) => entry.series === item.series)) continue;
+    selected.push(item);
+    if (selected.length >= limit) break;
+  }
   return selected;
+}
+
+// A tag is specific when 2 to 15 articles carry it; wider tags such as "Manufacturing" are too broad to relate two articles.
+const SPECIFIC_TAG_MAX = 15;
+const normalizeTag = (tag: string) => tag.trim().toLowerCase();
+function tagCounts(articles: readonly Partial<Pick<Insight, "tags">>[]) {
+  const counts = new Map<string, number>();
+  for (const item of articles) for (const tag of new Set((item.tags || []).map(normalizeTag))) counts.set(tag, (counts.get(tag) || 0) + 1);
+  return counts;
+}
+function specificTags(article: Partial<Pick<Insight, "tags">>, counts: Map<string, number>) {
+  return new Set((article.tags || []).map(normalizeTag).filter((tag) => { const n = counts.get(tag) || 0; return n >= 2 && n <= SPECIFIC_TAG_MAX; }));
+}
+
+// Chronological neighbours in the same category: labelled as earlier/later, not as related.
+export function getCategoryNeighbours(article: Pick<Insight, "slug" | "category" | "sortDate">, articles: readonly Insight[]) {
+  const ordered = articles.filter((item) => item.category === article.category)
+    .sort((a, b) => a.sortDate.localeCompare(b.sortDate) || a.slug.localeCompare(b.slug));
+  const index = ordered.findIndex((item) => item.slug === article.slug);
+  if (index < 0) return {};
+  return { earlier: ordered[index - 1], later: ordered[index + 1] };
 }
 
 export function getNewsReading(news: Pick<NewsArticle, "content" | "relatedArticles" | "brandSlugs" | "productSlugs">, articles: readonly Insight[], products: readonly ProductModel[], limit = 3) {

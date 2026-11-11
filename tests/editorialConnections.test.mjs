@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { getArticleProducts, getArticleReading, getArticleNews, getNewsReading, getArticleVideos } from "../lib/editorialConnections.ts";
+import { getArticleProducts, getArticleReading, getArticleNews, getNewsReading, getArticleVideos, getCategoryNeighbours } from "../lib/editorialConnections.ts";
 import { getInsights } from "../lib/content.ts";
 import { productModels, productCover } from "../lib/products.ts";
 import { getNews } from "../lib/news.ts";
@@ -76,4 +76,21 @@ test("published corpus relationships resolve and exact-model boundary examples s
     assert.deepEqual(getArticleProducts(article, productModels), [], `${slug}: never substitute another model based on brand`);
   }
   assert.equal(getArticleProducts(articles.find(a => a.slug === "ifa-2026-cleaning-products-company-roundup"), productModels).length, 23);
+});
+
+test("empty reading slots fill only from articles sharing a specific tag, nearest in date first", () => {
+  const broad = Array.from({ length: 16 }, (_, i) => insight(`broad-${i}`, { tags: ["Manufacturing"] }));
+  const current = insight("current", { tags: ["Anker", "Manufacturing"], sortDate: "2026-05-01" });
+  const pool = [current, ...broad, insight("near", { tags: ["anker"], sortDate: "2026-04-20" }), insight("far", { tags: ["Anker"], sortDate: "2024-01-01" }), insight("two-tags", { tags: ["Anker", "LiDAR"], sortDate: "2020-01-01" }), insight("lidar", { tags: ["LiDAR"] })];
+  current.tags.push("LiDAR");
+  assert.deepEqual(getArticleReading(current, pool, []).map(a => a.slug), ["two-tags", "near", "lidar"]);
+  assert.deepEqual(getArticleReading(insight("only-broad", { tags: ["Manufacturing"] }), pool, []), []);
+});
+
+test("category neighbours are the earlier and later article in the same category", () => {
+  const pool = [insight("a", { sortDate: "2026-01-01" }), insight("b", { sortDate: "2026-02-01" }), insight("other", { sortDate: "2026-02-15", category: "Vacuum" }), insight("c", { sortDate: "2026-03-01" })];
+  const middle = getCategoryNeighbours(pool[1], pool);
+  assert.equal(middle.earlier.slug, "a"); assert.equal(middle.later.slug, "c");
+  assert.equal(getCategoryNeighbours(pool[0], pool).earlier, undefined);
+  assert.deepEqual(getCategoryNeighbours(pool[2], pool), { earlier: undefined, later: undefined });
 });
