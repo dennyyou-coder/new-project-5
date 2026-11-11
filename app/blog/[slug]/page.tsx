@@ -5,7 +5,7 @@ import { ArticleProductLinks, ArticleVideoLinks } from "@/components/editorial/E
 import { TallyButton } from "@/components/LeadForms";
 import { getBlogCta } from "@/lib/blogConversion";
 import { getHubCategory, hubCategoriesForInsight } from "@/lib/hubCategories";
-import { getArticleProducts, getArticleReading, getArticleNews, getArticleVideos } from "@/lib/editorialConnections";
+import { getArticleProducts, getArticleReading, getArticleNews, getArticleVideos, getCategoryNeighbours } from "@/lib/editorialConnections";
 import { productModels } from "@/lib/products";
 import { videoLibrary } from "@/lib/wcbVideos";
 import type { Metadata } from "next";
@@ -162,6 +162,7 @@ export default async function InsightDetailPage({ params }: Props) {
   const publishedBrandProfiles = getPublishedBrandProfiles(articles);
   const relatedCompanies = publishedBrandProfiles.filter((profile) => article.primaryBrands.includes(profile.slug));
   const relatedNews = getArticleNews(article, getNews(), productModels);
+  const categoryNeighbours = getCategoryNeighbours(article, articles);
   const seriesArticles = article.series
     ? orderSeriesInsights(
         articles.filter((item) => item.series === article.series),
@@ -494,6 +495,13 @@ export default async function InsightDetailPage({ params }: Props) {
         ) : null}
 
           <ArticleVideoLinks videos={relatedVideos} />
+
+          {categoryNeighbours.earlier || categoryNeighbours.later ? (
+            <nav className="blog-category-adjacent" aria-label={`Earlier and later in ${article.category}`}>
+              {categoryNeighbours.earlier ? <Link href={`/blog/${categoryNeighbours.earlier.slug}`} rel="prev"><span>Earlier in {article.category}</span>{categoryNeighbours.earlier.title}</Link> : <span />}
+              {categoryNeighbours.later ? <Link href={`/blog/${categoryNeighbours.later.slug}`} rel="next"><span>Later in {article.category}</span>{categoryNeighbours.later.title}</Link> : null}
+            </nav>
+          ) : null}
 
           <nav className="blog-topic-paths" aria-label="Explore industry resources">
             <strong>Keep exploring</strong>

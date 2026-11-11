@@ -14,7 +14,7 @@
     "test:blog": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/blogConversion.test.mjs tests/articleTemplate.test.mjs",
     "test:brands": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/brandIntelligence.test.mjs tests/brandExperience.test.mjs tests/brandDirectory.test.mjs",
     "test:equipment": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/equipmentIntelligence.test.mjs tests/equipmentExperience.test.mjs",
-    "test:components": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/componentIntelligence.test.mjs tests/componentExperience.test.mjs",
+    "test:components": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/componentIntelligence.test.mjs tests/componentExperience.test.mjs tests/componentLinks.test.mjs",
     "test:homepage": "node --test tests/homepageStructure.test.mjs",
     "test:inquiry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/inquiryConversion.test.mjs",
     "test:insights": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/insightCollections.test.mjs",

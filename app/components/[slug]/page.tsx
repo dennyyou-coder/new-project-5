@@ -12,6 +12,7 @@ import { ComponentServiceSections } from "@/components/component-intelligence/Co
 import { ComponentSources } from "@/components/component-intelligence/ComponentSources";
 import { ComponentSystemRole } from "@/components/component-intelligence/ComponentSystemRole";
 import { ComponentTechnicalSections } from "@/components/component-intelligence/ComponentTechnicalSections";
+import { ComponentRelatedLinks } from "@/components/component-intelligence/ComponentLinkBlocks";
 import { ComponentTimeline } from "@/components/component-intelligence/ComponentTimeline";
 import { buildComponentPageSchemas, buildComponentPageTitle, buildComponentStaticParams, getComponentPageData, getPublishedComponentProfiles, isComponentDraftVisible } from "@/lib/componentProfiles";
 import { buildWebsiteMetadata } from "@/lib/seo";
@@ -42,5 +43,5 @@ export default async function ComponentPage({ params }: PageProps) {
   const profile = loadProfile(slug);
   if (!profile) notFound();
   const schemas = buildComponentPageSchemas(profile, siteUrl);
-  return <div className="guides-hub component-intelligence-hub component-intelligence-detail"><ComponentHero profile={profile} isDraft={profile.status === "draft"} /><ComponentSectionNav /><OpenDetailsOnHash /><ComponentSystemRole profile={profile} /><ComponentArchitecture profile={profile} /><ComponentTechnicalSections profile={profile} /><ComponentCompatibility profile={profile} /><ComponentServiceSections profile={profile} /><ComponentRelationships profile={profile} /><ComponentDecisionSections profile={profile} /><ComponentTimeline profile={profile} /><ComponentSources profile={profile} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} /></div>;
+  return <div className="guides-hub component-intelligence-hub component-intelligence-detail"><ComponentHero profile={profile} isDraft={profile.status === "draft"} /><ComponentSectionNav /><OpenDetailsOnHash /><ComponentSystemRole profile={profile} /><ComponentArchitecture profile={profile} /><ComponentTechnicalSections profile={profile} /><ComponentCompatibility profile={profile} /><ComponentServiceSections profile={profile} /><ComponentRelationships profile={profile} /><ComponentDecisionSections profile={profile} /><ComponentTimeline profile={profile} /><ComponentSources profile={profile} /><ComponentRelatedLinks slug={profile.slug} components={getPublishedComponentProfiles()} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} /></div>;
 }

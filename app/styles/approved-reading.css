@@ -87,3 +87,11 @@
 .blog-industry-view li { margin: 6px 0; line-height: 1.6; }
 .blog-industry-view-links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 10px 0 0; }
 .blog-industry-view-links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+
+/* A1: earlier and later article in the same category */
+.blog-category-adjacent { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 32px 0 0; }
+.blog-category-adjacent a { display: block; min-width: 0; padding: 14px 16px; border: 1px solid var(--line, #D8E3F0); border-radius: 4px; color: #0B2140; font-size: 15px; font-weight: 700; line-height: 1.4; text-decoration: none; overflow-wrap: anywhere; }
+.blog-category-adjacent a:hover { border-color: #1F57E0; }
+.blog-category-adjacent a[rel="next"] { text-align: right; }
+.blog-category-adjacent a span { display: block; margin-bottom: 6px; color: #1F57E0; font-family: var(--font-label); font-size: 12px; font-weight: 500; letter-spacing: .04em; }
+@media (max-width: 640px) { .blog-category-adjacent { grid-template-columns: 1fr; } .blog-category-adjacent a[rel="next"] { text-align: left; } .blog-category-adjacent > span:empty { display: none; } }
