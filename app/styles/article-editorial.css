@@ -164,7 +164,7 @@
 .structure-refresh .article-reading-experience .blog-article-cover {
   border: 0;
   border-radius: 3px;
-  background: #f4f6f8;
+  background: #F3F7FC;
   margin-bottom: 32px;
   aspect-ratio: auto;
 }
@@ -252,7 +252,7 @@
   .article-reading-experience
   .blog-reading-body
   :is(table, figcaption) {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit;
 }
 .structure-refresh .article-reading-experience .article-inline-image {
   border-radius: 3px;
@@ -534,7 +534,7 @@
   background: #f6faff;
   border: 1px solid #d8e5f3;
   border-left: 4px solid #1F57E0;
-  border-radius: 14px;
+  border-radius: 4px;
 }
 .structure-refresh .article-reading-experience .article-company-card__head {
   display: flex;
@@ -549,7 +549,7 @@
   flex: none;
   background: #fff;
   border: 1px solid #d8e5f3;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .structure-refresh .article-reading-experience .article-company-card__logo img {
   max-width: 82%;
@@ -591,7 +591,7 @@
   padding: 10px 12px;
   background: #fff;
   border: 1px solid #d8e5f3;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .structure-refresh .article-reading-experience .article-company-card__icon {
   grid-row: span 2;
@@ -599,7 +599,7 @@
   place-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #e6eeff;
   color: #1F57E0;
 }

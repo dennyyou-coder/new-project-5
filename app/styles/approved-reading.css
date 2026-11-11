@@ -5,14 +5,14 @@
   padding:34px 0 26px;
 }
 .structure-refresh.design-a.approved-design .approved-editorial .article-reading-experience .blog-article-hero>.blog-article-container {
-  width:min(800px,calc(100% - 64px));
-  max-width:800px;
+  width:min(720px,calc(100% - 2 * var(--page-gutter)));
+  max-width:720px;
   margin-inline:auto;
   padding-inline:0;
 }
 .structure-refresh.design-a.approved-design .approved-editorial .article-reading-experience .blog-article-main {
   width:100%;
-  max-width:800px;
+  max-width:720px;
   margin-inline:auto;
 }
 .structure-refresh.design-a.approved-design .approved-editorial .article-reading-experience .blog-visible-breadcrumb {
@@ -76,11 +76,11 @@
 }
 
 /* PR-15: subscribe bar and guide Industry view */
-.blog-subscribe-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-top: 20px; padding: 18px 20px; border: 1px solid #e3e7ee; border-radius: 12px; background: #f5f7fa; }
+.blog-subscribe-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-top: 20px; padding: 18px 20px; border: 1px solid #e3e7ee; border-radius: 4px; background: #f5f7fa; }
 .blog-subscribe-bar p { margin: 0; flex: 1 1 280px; font-size: 15px; line-height: 1.5; color: #2a3245; }
 .blog-subscribe-bar strong { color: #0B2140; }
-.blog-subscribe-bar .blog-subscribe-button { min-height: 44px; padding: 0 22px; border: 0; border-radius: 8px; background: #1F57E0; color: #fff; font: inherit; font-weight: 700; cursor: pointer; box-shadow: none; }
-.blog-industry-view { margin: 40px 0 8px; padding: 22px 24px; border: 1px solid #1F57E0; border-radius: 14px; }
+.blog-subscribe-bar .blog-subscribe-button { min-height: 44px; padding: 0 22px; border: 0; border-radius: 4px; background: #1F57E0; color: #fff; font: inherit; font-weight: 700; cursor: pointer; box-shadow: none; }
+.blog-industry-view { margin: 40px 0 8px; padding: 22px 24px; border: 1px solid #1F57E0; border-radius: 4px; }
 .blog-industry-view .eyebrow { margin: 0 0 6px; }
 .blog-industry-view h2 { margin: 0 0 10px; font-size: 22px; }
 .blog-industry-view ul { margin: 0; padding-left: 20px; }

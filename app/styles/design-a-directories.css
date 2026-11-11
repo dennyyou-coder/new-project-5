@@ -1,26 +1,26 @@
 /* Design A — directory and collection pages only. Detail templates are excluded. */
 .structure-refresh.design-a :is(.news-page:has(> .news-intro), .blog-home-intro, .blog-home-main, .blog-series-page, .content-directory, .refresh-videos, .brand-hub:not(.brand-detail), .products-page:not(.product-detail), .reports-library-page, .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) {
-  --dir-canvas: #e3ecf3;
+  --dir-canvas: #F3F7FC;
   --dir-ink: #0B2140;
   --dir-muted: #52677D;
   --dir-blue: #1F57E0;
-  --dir-line: #cbd8e2;
-  --dir-soft: #f3f7fa;
+  --dir-line: #D8E3F0;
+  --dir-soft: #F3F7FC;
   --rl-ink: #0B2140;
   --rl-blue: #1F57E0;
   --rl-muted: #52677D;
-  --rl-line: #cbd8e2;
+  --rl-line: #D8E3F0;
   --product-ink: #0B2140;
   --product-blue: #1F57E0;
   --equipment-ink: #0B2140;
   --equipment-muted: #52677D;
   --equipment-accent: #1F57E0;
-  --equipment-soft: #f3f7fa;
+  --equipment-soft: #F3F7FC;
   --component-ink: #0B2140;
   --component-muted: #52677D;
   --component-accent: #1F57E0;
-  --component-soft: #f3f7fa;
-  background: var(--dir-canvas);
+  --component-soft: #F3F7FC;
+  background: #fff;
   color: var(--dir-ink);
 }
 .structure-refresh.design-a :is(.news-page:has(> .news-intro), .blog-home-intro, .blog-home-main, .blog-series-page, .content-directory, .refresh-videos, .brand-hub:not(.brand-detail), .products-page:not(.product-detail), .reports-library-page, .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) :is(.insights-page-container, .news-container, .blog-series-page-container, .product-container, .reports-container, .container) {
@@ -46,8 +46,8 @@
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) > .guides-hero {
   padding: 42px 0 36px;
   color: #0B2140;
-  background: #e3ecf3;
-  border-bottom: 1px solid #cbd8e2;
+  background: #F3F7FC;
+  border-bottom: 1px solid #D8E3F0;
 }
 .structure-refresh.design-a :is(.blog-home-intro, .blog-series-page-hero, .content-directory-hero, .product-library-hero, .reports-library-hero, .refresh-videos > .refresh-page-intro) h1,
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) > .guides-hero h1 {
@@ -73,7 +73,7 @@
 }
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) .guides-hero-stat {
   padding: 20px;
-  border: 1px solid #cbd8e2;
+  border: 1px solid #D8E3F0;
   border-radius: 6px;
   background: #fff;
   color: #52677D;
@@ -188,7 +188,7 @@
 }
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-expo-link:hover {
   color: #123C9E;
-  background: #f3f7fa;
+  background: #F3F7FC;
   border-color: #1F57E0;
 }
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-expo-link:focus-visible {
@@ -216,7 +216,7 @@
   display: flex;
   gap: 10px;
   padding-block: 18px;
-  border-color: #cbd8e2;
+  border-color: #D8E3F0;
 }
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-filters a,
 .structure-refresh.design-a .content-directory .content-directory-filters a,
@@ -241,13 +241,13 @@
   color: #fff;
 }
 .structure-refresh.design-a .content-directory .content-directory-filters {
-  background: #f3f7fa;
-  border-color: #cbd8e2;
+  background: #F3F7FC;
+  border-color: #D8E3F0;
 }
 .structure-refresh.design-a .content-directory .content-directory-hero-inner > strong {
   flex-shrink: 0;
   padding: 10px 15px;
-  border: 1px solid #cbd8e2;
+  border: 1px solid #D8E3F0;
   border-radius: 4px;
   color: #52677D;
   background: #fff;
@@ -261,22 +261,26 @@
   gap: 30px;
 }
 .structure-refresh.design-a .content-directory .content-directory-feed {
-  gap: 18px;
+  gap: 0;
 }
 .structure-refresh.design-a .content-directory .content-directory-feed-item {
-  grid-template-columns: minmax(190px, 30%) minmax(0, 1fr);
+  /* A design: a ruled list like the news page, not boxed cards. */
+  grid-template-columns: 200px minmax(0, 1fr);
   gap: 24px;
-  padding: 24px;
-  border: 1px solid var(--dir-line);
-  border-radius: 4px;
+  padding: 24px 0;
+  border: 0;
+  border-bottom: 1px solid var(--dir-line);
+  border-radius: 0;
   background: #fff;
 }
+.structure-refresh.design-a .content-directory .content-directory-feed-item:first-child {
+  padding-top: 0;
+}
 .structure-refresh.design-a .content-directory .content-directory-feed-image {
-  /* Centred against the text column so a long excerpt doesn't leave the image stranded at the top. */
-  align-self: center;
-  border: 1px solid #dce5ec;
+  align-self: start;
+  border: 1px solid #D8E3F0;
   border-radius: 4px;
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .content-directory .content-directory-feed-copy h2 {
   font-size: 23px;
@@ -342,7 +346,7 @@
 }
 .structure-refresh.design-a .content-directory .content-directory-series-actions a:first-child:hover {
   border-color: #1F57E0;
-  background: #f3f7fa;
+  background: #F3F7FC;
   color: #123C9E;
 }
 .structure-refresh.design-a .content-directory .content-directory-series-actions a + a {
@@ -390,7 +394,7 @@
 }
 .structure-refresh.design-a .blog-home-main .blog-home-series-image {
   min-height: 300px;
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .blog-home-main .blog-home-series-copy {
   padding: 32px;
@@ -406,7 +410,7 @@
 }
 .structure-refresh.design-a .blog-home-main .blog-home-series-all {
   color: var(--dir-blue);
-  background: #f3f7fa;
+  background: #F3F7FC;
   border-top: 1px solid var(--dir-line);
 }
 .structure-refresh.design-a .blog-home-main .blog-home-section {
@@ -428,7 +432,7 @@
 .structure-refresh.design-a .blog-home-main .blog-home-card-image {
   aspect-ratio: 16 / 9;
   border: 0;
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .blog-home-main .blog-home-card-copy {
   padding: 23px;
@@ -484,7 +488,7 @@
 }
 .structure-refresh.design-a .blog-series-page .blog-series-page-card-image {
   min-height: 0;
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .blog-series-page .blog-series-page-card-copy {
   padding: 30px;
@@ -508,7 +512,7 @@
   background: transparent;
 }
 .structure-refresh.design-a .brand-hub:not(.brand-detail) .brand-category-list--soft {
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .brand-hub:not(.brand-detail) .brand-category-list__intro {
   max-width: none;
@@ -523,7 +527,7 @@
   gap: 24px;
 }
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) :is(.brand-directory-card, .equipment-directory-card, .component-intelligence-directory-card, .equipment-directory-empty, .component-intelligence-directory-empty) {
-  border: 1px solid #cbd8e2;
+  border: 1px solid #D8E3F0;
   border-radius: 4px;
   background: #fff;
   box-shadow: none;
@@ -555,8 +559,8 @@
 .structure-refresh.design-a :is(.equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) :is(.equipment-directory-card, .component-intelligence-directory-card) img {
   aspect-ratio: 16 / 10;
   object-fit: contain;
-  background: #f3f7fa;
-  border-bottom: 1px solid #dce5ec;
+  background: #F3F7FC;
+  border-bottom: 1px solid #D8E3F0;
 }
 .structure-refresh.design-a :is(.equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) :is(.equipment-directory-card, .component-intelligence-directory-card) > div {
   padding: 24px;
@@ -719,7 +723,7 @@
 }
 .structure-refresh.design-a .reports-library-page .reports-library-featured-cover {
   min-height: 0;
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .reports-library-page .reports-library-featured-cover img {
   object-fit: contain;
@@ -786,7 +790,7 @@
   background: var(--dir-line);
 }
 .structure-refresh.design-a .reports-library-page .reports-library-benefit-grid article {
-  background: #f3f7fa;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .reports-library-page :is(.reports-library-heading-light > p, .reports-library-benefit-grid p, .reports-library-author-row p) {
   color: var(--dir-muted);

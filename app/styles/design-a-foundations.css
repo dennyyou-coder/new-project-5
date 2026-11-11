@@ -5,10 +5,10 @@
   --muted: #52677D;
   --line: #c5d6e4;
   --line-strong: #adc6da;
-  --soft: #f3f7fa;
-  --soft-blue: #e3ecf3;
+  --soft: #F3F7FC;
+  --soft-blue: #F3F7FC;
   --background: #ffffff;
-  --section-background: #e3ecf3;
+  --section-background: #F3F7FC;
   --accent-light: #85bdea;
   --accent-soft: #e2eef8;
   --paper: #ffffff;
@@ -20,8 +20,8 @@
   --orange: #1F57E0;
   --navy: #0B2140;
   --navy-2: #1F57E0;
-  --teal-soft: #e3ecf3;
-  --blue-soft: #e3ecf3;
+  --teal-soft: #F3F7FC;
+  --blue-soft: #F3F7FC;
   --cta-blue: #1F57E0;
   --cta-hover: #123C9E;
   --cta-border: #adc6da;
@@ -184,7 +184,7 @@
 /* Footer is an open grid on the approved canvas, without nested panels. */
 .structure-refresh.design-a .refresh-footer {
   padding: 56px 0 28px;
-  background: #e3ecf3;
+  background: #F3F7FC;
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
