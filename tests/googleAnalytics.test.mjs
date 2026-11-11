@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 import {
   cleanInternalTrafficUrl,
+  isAutomatedVisitor,
   getGoogleAnalyticsBootstrapScript,
   getInternalTrafficControl,
   GOOGLE_ANALYTICS_MEASUREMENT_ID,
@@ -15,10 +16,14 @@ import {
   shouldLoadGoogleAnalytics
 } from "../lib/googleAnalytics.ts";
 
+const REAL_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36";
+
 function createBootstrapRuntime({
   href = "https://worldcleanbiz.com/",
   storedInternal = false,
   webdriver = false,
+  userAgent = REAL_USER_AGENT,
+  screen = { width: 1440, height: 900 },
   storageThrows = false,
   visibilityState = "visible"
 } = {}) {
@@ -80,7 +85,8 @@ function createBootstrapRuntime({
       pathname: url.pathname,
       search: url.search
     },
-    navigator: { webdriver },
+    navigator: { webdriver, userAgent },
+    screen,
     localStorage: {
       getItem(key) {
         if (storageThrows) throw new Error("storage unavailable");
@@ -161,6 +167,8 @@ function createRuntime({
   href,
   storedInternal = false,
   webdriver = false,
+  userAgent = REAL_USER_AGENT,
+  screen = { width: 1440, height: 900 },
   storageThrows = false
 }) {
   const url = new URL(href);
@@ -215,8 +223,10 @@ function createRuntime({
       search: url.search
     },
     navigator: {
-      webdriver
+      webdriver,
+      userAgent
     },
+    screen,
     localStorage: storage,
     history: {
       replaceState(_state, _unused, nextUrl) {
@@ -506,7 +516,10 @@ test("excluded bootstrap visits never queue or schedule GA4", () => {
   for (const options of [
     { href: "https://preview.vercel.app/" },
     { webdriver: true },
-    { storedInternal: true }
+    { storedInternal: true },
+    { screen: { width: 1366, height: 1366 } },
+    { screen: { width: 1280, height: 1200 } },
+    { userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.0.0 Safari/537.36" }
   ]) {
     const runtime = createBootstrapRuntime(options);
     runtime.dispatchWindow("pointerdown");
@@ -516,4 +529,29 @@ test("excluded bootstrap visits never queue or schedule GA4", () => {
     assert.deepEqual(runtime.dataLayerCommands(), []);
     assert.equal(runtime.timers.size, 0);
   }
+});
+
+test("automated visitors are recognised by flag, user agent or bot screen size", () => {
+  assert.equal(isAutomatedVisitor({ webdriver: true }), true);
+  assert.equal(isAutomatedVisitor({ userAgent: "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" }), true);
+  assert.equal(isAutomatedVisitor({ userAgent: "Mozilla/5.0 HeadlessChrome/130.0.0.0" }), true);
+  assert.equal(isAutomatedVisitor({ userAgent: REAL_USER_AGENT, screenWidth: 1366, screenHeight: 1366 }), true);
+  assert.equal(isAutomatedVisitor({ userAgent: REAL_USER_AGENT, screenWidth: 1280, screenHeight: 1200 }), true);
+  assert.equal(isAutomatedVisitor({ userAgent: REAL_USER_AGENT, screenWidth: 1920, screenHeight: 1920 }), true);
+});
+
+test("real desktop, phone and tablet visitors are not treated as automated", () => {
+  for (const [width, height] of [[1440, 900], [1920, 1080], [1366, 768], [390, 844], [768, 1024], [1280, 800], [820, 820]]) {
+    assert.equal(isAutomatedVisitor({ userAgent: REAL_USER_AGENT, screenWidth: width, screenHeight: height }), false, `${width}x${height}`);
+  }
+  assert.equal(isAutomatedVisitor({ userAgent: "Mozilla/5.0 (Linux; Android 13; Cubot X30) Chrome/130 Mobile Safari/537.36", screenWidth: 393, screenHeight: 873 }), false);
+  assert.equal(isAutomatedVisitor({ userAgent: REAL_USER_AGENT }), false);
+});
+
+test("bot screen sizes never inject GA4 through the typed initializer", () => {
+  const bot = createRuntime({ href: "https://worldcleanbiz.com/news", screen: { width: 1366, height: 1366 } });
+  const reader = createRuntime({ href: "https://worldcleanbiz.com/news" });
+  assert.equal(initializeGoogleAnalytics(bot.window, bot.document).reason, "automated");
+  assert.equal(initializeGoogleAnalytics(reader.window, reader.document).reason, "allowed");
+  assert.equal(bot.appendedScripts.length, 0);
 });
