@@ -10,6 +10,29 @@ const PRODUCTION_ANALYTICS_HOSTS = new Set([
   "www.worldcleanbiz.com"
 ]);
 
+// Automated visitors seen in Analytics: headless browsers that hide navigator.webdriver
+// but report square or unusual desktop screens (e.g. 1366x1366, 1280x1200) and never engage.
+export const AUTOMATED_SCREEN_SIZES = ["1366x1366", "1280x1200"];
+export const AUTOMATED_USER_AGENT_PATTERN = /HeadlessChrome|PhantomJS|Lighthouse|Puppeteer|Playwright|bot\/|crawler|spider/i;
+
+export function isAutomatedVisitor({
+  webdriver,
+  userAgent = "",
+  screenWidth,
+  screenHeight
+}: {
+  webdriver?: boolean;
+  userAgent?: string;
+  screenWidth?: number;
+  screenHeight?: number;
+}): boolean {
+  if (webdriver === true) return true;
+  if (AUTOMATED_USER_AGENT_PATTERN.test(userAgent)) return true;
+  if (!screenWidth || !screenHeight) return false;
+  if (AUTOMATED_SCREEN_SIZES.includes(`${screenWidth}x${screenHeight}`)) return true;
+  return screenWidth === screenHeight && screenWidth >= 1000;
+}
+
 export function isProductionAnalyticsHost(hostname: string): boolean {
   return PRODUCTION_ANALYTICS_HOSTS.has(hostname.toLowerCase());
 }
@@ -56,12 +79,16 @@ export function getGoogleAnalyticsBootstrapScript(): string {
   const internalParam = JSON.stringify(INTERNAL_TRAFFIC_PARAM);
   const storageKey = JSON.stringify(INTERNAL_TRAFFIC_STORAGE_KEY);
   const productionHosts = JSON.stringify([...PRODUCTION_ANALYTICS_HOSTS]);
+  const automatedScreens = JSON.stringify(AUTOMATED_SCREEN_SIZES);
+  const automatedUserAgent = AUTOMATED_USER_AGENT_PATTERN.toString();
 
   return `
 (function () {
   var measurementId = ${measurementId};
   var disableKey = "ga-disable-" + measurementId;
   var productionHosts = ${productionHosts};
+  var automatedScreens = ${automatedScreens};
+  var automatedUserAgent = ${automatedUserAgent};
   var params = new URLSearchParams(window.location.search);
   var control = params.get(${internalParam});
   var isInternal = control === "1";
@@ -93,7 +120,14 @@ export function getGoogleAnalyticsBootstrapScript(): string {
 
   var isProduction =
     productionHosts.indexOf(window.location.hostname.toLowerCase()) !== -1;
-  var isAutomated = window.navigator.webdriver === true;
+  var screenInfo = window.screen || {};
+  var screenWidth = screenInfo.width || 0;
+  var screenHeight = screenInfo.height || 0;
+  var isAutomated =
+    window.navigator.webdriver === true ||
+    automatedUserAgent.test(window.navigator.userAgent || "") ||
+    automatedScreens.indexOf(screenWidth + "x" + screenHeight) !== -1 ||
+    (screenWidth > 0 && screenWidth === screenHeight && screenWidth >= 1000);
 
   if (!isProduction || isAutomated || isInternal) {
     window[disableKey] = true;
@@ -172,6 +206,11 @@ export type GoogleAnalyticsWindow = {
   };
   navigator: {
     webdriver?: boolean;
+    userAgent?: string;
+  };
+  screen?: {
+    width?: number;
+    height?: number;
   };
   localStorage: {
     getItem(key: string): string | null;
@@ -249,7 +288,12 @@ export function initializeGoogleAnalytics(
   documentLike: GoogleAnalyticsDocument
 ): AnalyticsInitializationResult {
   const isInternal = readInternalBrowserState(windowLike);
-  const isAutomated = windowLike.navigator.webdriver === true;
+  const isAutomated = isAutomatedVisitor({
+    webdriver: windowLike.navigator.webdriver,
+    userAgent: windowLike.navigator.userAgent,
+    screenWidth: windowLike.screen?.width,
+    screenHeight: windowLike.screen?.height
+  });
   const disableKey = `ga-disable-${GOOGLE_ANALYTICS_MEASUREMENT_ID}`;
 
   let exclusionReason:
