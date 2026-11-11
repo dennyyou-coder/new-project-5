@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
+import { CiteNote } from "@/components/radar/DatasetSchema";
 import { RadarHero } from "@/components/radar/RadarHero";
 import { SECTORS, shortDate } from "@/lib/radar/classify";
 import { daysUntil, recentRules, upcomingRules, type RuleDate } from "@/lib/radar/rules";
@@ -69,6 +70,13 @@ export default function RulesCalendarPage() {
               <Link href="/tools/landed-cost-calculator">Landed cost and tariff calculator →</Link>
               <Link href="/tools/export-compliance-checklist">Export compliance checklist →</Link>
               <Link href="/recalls">Product recall tracker →</Link>
+            </div>
+            <div className="radar-card radar-method">
+              <h2>How this calendar is kept</h2>
+              <p>
+                Dates come from the official texts: USTR and Federal Register notices, FCC orders and EU regulations on EUR-Lex. A date that has been reported but not yet published officially is marked as such. WCB checks the calendar every week and whenever a rule changes.
+              </p>
+              <CiteNote name="WCB Trade and Product Rules Calendar" path="/rules-calendar" />
             </div>
           </aside>
         </div>
