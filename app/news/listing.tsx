@@ -1,3 +1,4 @@
+import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { NewsSidebar } from "@/components/news/NewsSidebar";
@@ -26,7 +27,8 @@ export async function newsListingMetadata({ searchParams }: Props): Promise<Meta
     description: "Cleaning industry news from World Clean Biz: product launches, company developments and market updates, with related company and product profiles.",
     alternates: { canonical },
     robots: { index: !topic && !category, follow: true },
-    openGraph: { title, type: "website", url: canonical }
+    openGraph: { title, type: "website", url: canonical, images: [DEFAULT_SOCIAL_IMAGE] },
+    twitter: { card: "summary_large_image", title, images: [DEFAULT_SOCIAL_IMAGE] }
   };
 }
 

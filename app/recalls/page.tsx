@@ -12,7 +12,7 @@ import "../styles/radar.css";
 export const metadata: Metadata = {
   title: "Product Recall Tracker: Appliances, Cleaning and Power Tools (US and EU)",
   description:
-    "Every 2026 US CPSC and EU Safety Gate recall of vacuums, pressure washers, kitchen and home appliances, heaters, hair dryers, power tools and garden machinery, with hazards, units and country of manufacture.",
+    "Every 2026 US CPSC and EU Safety Gate recall of vacuums, appliances, power tools and garden machinery, with hazards, units and country of manufacture.",
   alternates: { canonical: "/recalls" }
 };
 
