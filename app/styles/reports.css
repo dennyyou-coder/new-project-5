@@ -23,7 +23,7 @@
 
 .reports-library-hero {
   border-bottom: 1px solid var(--rl-line);
-  background: linear-gradient(135deg, #eef5ff 0%, #f8fbff 55%, #fff 100%);
+  background: linear-gradient(135deg, #E3ECFB 0%, #F3F7FC 55%, #fff 100%);
   padding: 68px 0;
 }
 
@@ -58,14 +58,14 @@
   align-items: center;
   justify-content: center;
   border: 0;
-  border-radius: 7px;
+  border-radius: 4px;
   background: var(--rl-blue);
   color: #fff;
   padding: 0 24px;
   font-size: 14px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 0 12px 28px rgba(23, 98, 246, 0.2);
+  box-shadow: none;
 }
 
 .reports-library-primary-button {
@@ -104,8 +104,8 @@
   width: 100%;
   display: block;
   border: 1px solid var(--rl-line);
-  border-radius: 10px;
-  box-shadow: 0 28px 64px rgba(11, 31, 58, 0.17);
+  border-radius: 4px;
+  box-shadow: none;
 }
 
 .reports-library-section {
@@ -148,11 +148,11 @@
   grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
   gap: 0;
   border: 1px solid rgba(23, 98, 246, 0.25);
-  border-radius: 12px;
-  background: #eef5ff;
+  border-radius: 4px;
+  background: #E3ECFB;
   margin-top: 36px;
   overflow: hidden;
-  box-shadow: 0 22px 56px rgba(11, 31, 58, 0.09);
+  box-shadow: none;
 }
 
 .reports-library-featured-cover {
@@ -180,7 +180,7 @@
   display: inline-flex;
   border: 1px solid rgba(23, 98, 246, 0.2);
   border-radius: 999px;
-  background: #e8f1ff;
+  background: #E3ECFB;
   color: var(--rl-blue);
   padding: 6px 10px;
   font-size: 11px;
@@ -263,16 +263,16 @@
   min-width: 0;
   flex-direction: column;
   border: 1px solid var(--rl-line);
-  border-radius: 10px;
+  border-radius: 4px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 16px 38px rgba(11, 31, 58, 0.06);
+  box-shadow: none;
 }
 
 .reports-library-card-media {
   position: relative;
   height: 185px;
-  background: #dce8f6;
+  background: #E3ECFB;
 }
 
 .reports-library-card-media img {
@@ -332,7 +332,7 @@
   width: 100%;
   min-height: 46px;
   border: 1px solid rgba(23, 98, 246, 0.25);
-  background: #eef5ff;
+  background: #E3ECFB;
   color: var(--rl-blue);
   padding: 0 14px;
   box-shadow: none;
@@ -360,7 +360,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 10px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.16);
   margin-top: 36px;
   overflow: hidden;
@@ -424,7 +424,7 @@
 }
 
 .reports-library-final-cta {
-  background: #eef5ff;
+  background: #E3ECFB;
   padding: 76px 0;
   text-align: center;
 }
