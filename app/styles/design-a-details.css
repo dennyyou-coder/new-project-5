@@ -82,7 +82,7 @@
 .structure-refresh.design-a .article-reading-experience .blog-article-hero h1 {
   max-width: 1000px;
   margin-bottom: 20px;
-  font-family: inherit;
+  font-family: var(--font-heading);
   font-size: clamp(32px, 3.4vw, 48px);
   line-height: 1.18;
   letter-spacing: -.035em;
