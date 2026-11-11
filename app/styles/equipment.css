@@ -25,12 +25,6 @@
   align-items: end;
 }
 
-.equipment-directory-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .equipment-directory-card,
 .equipment-directory-empty {
   min-width: 0;
@@ -703,7 +697,6 @@
     grid-template-columns: 1fr;
   }
 
-  .equipment-directory-grid,
   .equipment-system-flow,
   .equipment-type-grid,
   .equipment-component-grid,
@@ -723,7 +716,6 @@
 }
 
 @media (max-width: 760px) {
-  .equipment-directory-grid,
   .equipment-system-flow,
   .equipment-type-grid,
   .equipment-component-grid,

@@ -13,7 +13,6 @@
   color: var(--component-ink);
 }
 .component-intelligence-directory-hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(230px, .5fr); gap: 48px; align-items: end; }
-.component-intelligence-directory-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .component-intelligence-directory-card,
 .component-intelligence-directory-empty { min-width: 0; overflow: hidden; border: 1px solid var(--component-line); border-radius: 4px; background: #fff; }
 .component-intelligence-directory-card img { display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; }
@@ -109,13 +108,11 @@
   .component-intelligence-hero-grid,
   .component-intelligence-visual,
   .component-intelligence-assessments > article { grid-template-columns: 1fr; }
-  .component-intelligence-directory-grid,
   .component-intelligence-flow,
   .component-intelligence-grid,
   .component-intelligence-source-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
-  .component-intelligence-directory-grid,
   .component-intelligence-flow,
   .component-intelligence-grid,
   .component-intelligence-source-list,

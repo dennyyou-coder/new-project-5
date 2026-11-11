@@ -51,7 +51,6 @@
   line-height: 1.65;
 }
 
-.reports-library-primary-button,
 .reports-library-card-button {
   min-height: 50px;
   display: inline-flex;
@@ -65,46 +64,6 @@
   font-size: 14px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: none;
-}
-
-.reports-library-primary-button {
-  margin-top: 30px;
-}
-
-.reports-library-trust-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 22px;
-  margin: 24px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.reports-library-trust-list li {
-  color: var(--rl-muted);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.reports-library-trust-list li::before {
-  content: "✓";
-  margin-right: 7px;
-  color: var(--rl-blue);
-  font-weight: 900;
-}
-
-.reports-library-hero-visual {
-  position: relative;
-  width: min(390px, 100%);
-  justify-self: end;
-}
-
-.reports-library-hero-visual img {
-  width: 100%;
-  display: block;
-  border: 1px solid var(--rl-line);
-  border-radius: 4px;
   box-shadow: none;
 }
 
@@ -478,11 +437,6 @@
     grid-template-columns: 1fr;
   }
 
-  .reports-library-hero-visual {
-    width: min(360px, 88%);
-    justify-self: start;
-  }
-
   .reports-library-featured-cover {
     max-height: 540px;
   }
@@ -505,10 +459,6 @@
 
   .reports-library-hero-grid {
     gap: 44px;
-  }
-
-  .reports-library-trust-list {
-    display: grid;
   }
 
   .reports-library-featured-cover {

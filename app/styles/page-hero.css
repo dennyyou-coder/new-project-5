@@ -2,39 +2,43 @@
  * One page-header look across the listing pages (Nov 2026 site review).
  * Each page keeps its own markup; this file aligns the band colour, the small label above the title,
  * the title size and the filter rows, which had drifted apart across page stylesheets.
- * !important is used deliberately: several older page stylesheets set these with higher specificity.
+ * Rules that must beat older page stylesheets start with #main-content instead of using !important.
  */
 :is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero, .rankings-hero) {
-  background: #f5f7fa !important;
   border-bottom: 1px solid #e3e7ee;
 }
-
-:is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero, .rankings-hero) h1 {
-  font-size: clamp(32px, 4vw, 46px) !important;
-  line-height: 1.12 !important;
-  letter-spacing: -0.02em !important;
-  font-weight: 700 !important;
+#main-content :is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero, .rankings-hero) {
+  background: #f5f7fa;
 }
 
-:is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero, .rankings-hero)
+#main-content :is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero, .rankings-hero) h1 {
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+#main-content :is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero, .rankings-hero)
   :is(.news-eyebrow, .eyebrow, .product-eyebrow, .reports-kicker, .topic-eyebrow, .company-directory-breadcrumb, .hub-breadcrumb, .markets-breadcrumb, .rankings-breadcrumb) {
-  margin: 0 0 10px !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.06em !important;
-  text-transform: uppercase !important;
-  color: #1F57E0 !important;
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1F57E0;
 }
 
-:is(.company-directory-breadcrumb, .hub-breadcrumb, .markets-breadcrumb, .rankings-breadcrumb) a {
-  color: inherit !important;
+#main-content :is(.company-directory-breadcrumb, .hub-breadcrumb, .markets-breadcrumb, .rankings-breadcrumb) a {
+  color: inherit;
 }
 
 /* Filter rows stay on one line and scroll sideways when they run out of room, instead of leaving one item on a second line. */
 .news-page .news-filters {
-  flex-wrap: nowrap !important;
   overflow-x: auto;
   scrollbar-width: none;
+}
+#main-content .news-page .news-filters {
+  flex-wrap: nowrap;
 }
 
 .news-page .news-filters::-webkit-scrollbar {
@@ -46,60 +50,46 @@
   white-space: nowrap;
 }
 
-.news-page .news-category-filters {
-  gap: 4px 14px !important;
-}
-
 /* News: a compact header so the stories start near the top of the screen. */
-.news-page .news-intro {
-  padding-top: 22px !important;
-  padding-bottom: 18px !important;
+#main-content .news-page .news-intro {
+  padding-top: 22px;
+  padding-bottom: 18px;
 }
-.news-page .news-intro h1 {
-  margin: 0 0 6px !important;
-  font-size: clamp(26px, 2.8vw, 34px) !important;
+#main-content .news-page .news-intro h1 {
+  margin: 0 0 6px;
+  font-size: clamp(26px, 2.8vw, 34px);
 }
-.news-page .news-intro > p:last-child {
-  font-size: 15px !important;
-  line-height: 1.5 !important;
-  margin: 0 !important;
+#main-content .news-page .news-intro > p:last-child {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
 }
-.news-page .news-filters {
-  padding: 0 !important;
-  min-height: 0 !important;
+#main-content .news-page .news-filters {
+  padding: 0;
+  min-height: 0;
 }
-.news-page .news-filters a {
-  min-height: 40px !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  font-size: 14px !important;
+#main-content .news-page .news-filters a {
+  min-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
 }
-.news-page .news-category-filters {
-  padding: 0 !important;
+#main-content .news-page .news-columns {
+  margin-top: 20px;
 }
-.news-page .news-category-filters a,
-.news-page .news-filter-label {
-  min-height: 36px !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  font-size: 13px !important;
-}
-.news-page .news-columns {
-  margin-top: 20px !important;
-}
-.news-page .news-list-heading {
-  margin-top: 0 !important;
+#main-content .news-page .news-list-heading {
+  margin-top: 0;
 }
 @media (max-width: 640px) {
-  .news-page .news-intro {
-    padding-top: 16px !important;
-    padding-bottom: 14px !important;
+  #main-content .news-page .news-intro {
+    padding-top: 16px;
+    padding-bottom: 14px;
   }
-  .news-page .news-intro h1 {
-    font-size: 26px !important;
+  #main-content .news-page .news-intro h1 {
+    font-size: 26px;
   }
-  .news-page .news-intro > p:last-child {
-    font-size: 14px !important;
+  #main-content .news-page .news-intro > p:last-child {
+    font-size: 14px;
   }
 }
 
@@ -114,7 +104,9 @@
 .news-page .news-filter-bar .news-filters {
   flex: 1 1 auto;
   min-width: 0;
-  border: 0 !important;
+}
+#main-content .news-page .news-filter-bar .news-filters {
+  border: 0;
 }
 .news-page .news-category-menu {
   position: relative;
@@ -127,7 +119,7 @@
   min-height: 36px;
   padding: 0 14px;
   border: 1px solid #d5dbe5;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -156,7 +148,7 @@
   min-width: 230px;
   padding: 6px;
   border: 1px solid #e3e7ee;
-  border-radius: 10px;
+  border-radius: 4px;
   background: #fff;
   box-shadow: 0 14px 30px rgba(14, 21, 38, 0.12);
 }

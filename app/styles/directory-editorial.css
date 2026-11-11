@@ -94,19 +94,6 @@
   letter-spacing: 0.13em;
   margin: 0 0 10px;
 }
-.structure-refresh :is(.brand-detail) .brand-category-link {
-  padding: 0;
-  margin: 0 0 10px;
-  color: #c8daf4;
-  background: none;
-  border: 0;
-  border-radius: 0;
-  font-size: 11px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-decoration: underline;
-  text-decoration-color: #7893b0;
-}
 .structure-refresh :is(.brand-detail) .brand-detail-hero h1 {
   margin: 0 0 12px;
   color: #fff;
@@ -129,42 +116,6 @@
   font-size: 12px;
   line-height: 1.6;
   color: #aec2d9;
-}
-.structure-refresh :is(.brand-detail) .brand-hero-media {
-  padding: 0;
-  margin: 0;
-  align-self: center;
-  background: #fff;
-  border: 1px solid #43607b;
-  border-radius: 4px;
-  box-shadow: none;
-}
-.structure-refresh :is(.brand-detail) .brand-hero-media__eyebrow {
-  position: static;
-  padding: 12px 16px;
-  color: #596e81;
-  background: #f3f6fa;
-  border: 0;
-  border-bottom: 1px solid var(--detail-line);
-  border-radius: 0;
-  font-size: 9px;
-  letter-spacing: 0.11em;
-}
-.structure-refresh :is(.brand-detail) .brand-hero-media img {
-  width: 100%;
-  height: 280px;
-  aspect-ratio: auto;
-  padding: 16px;
-  object-fit: contain;
-  background: #fff;
-}
-.structure-refresh :is(.brand-detail) .brand-hero-media figcaption {
-  border-top: 1px solid var(--detail-line);
-  padding: 11px 16px;
-  background: #f3f6fa;
-  color: #5a6f83;
-  font-size: 11px;
-  line-height: 1.6;
 }
 .structure-refresh :is(.brand-detail) .brand-key-facts {
   margin-top: 0;
@@ -272,13 +223,6 @@
   border-radius: 4px;
   box-shadow: none;
 }
-.structure-refresh :is(.brand-detail) .brand-table-group h3 {
-  padding: 13px 16px;
-  background: var(--detail-soft);
-  color: var(--detail-navy);
-  font-size: 15px;
-  letter-spacing: -0.01em;
-}
 .structure-refresh :is(.brand-detail) .brand-data-table :is(th, td) {
   padding: 13px 16px;
   border-color: var(--detail-line);
@@ -358,9 +302,6 @@
   > div:last-child
   > a {
   border-radius: 3px;
-}
-.structure-refresh :is(.brand-detail) .guides-section-heading {
-  margin-bottom: 25px;
 }
 .structure-refresh
   :is(.brand-detail)
@@ -540,37 +481,6 @@
   font-size: 12px;
   line-height: 1.75;
 }
-.structure-refresh :is(.product-detail) .product-key-facts {
-  gap: 0;
-  margin: 20px 0;
-  padding: 0;
-  border: 1px solid #d9e3ec;
-  border-radius: 4px;
-  overflow: hidden;
-  background: #fff;
-}
-.structure-refresh :is(.product-detail) .product-key-facts > div {
-  min-width: 0;
-  padding: 14px 16px;
-  border-bottom: 1px solid #e6ecf2;
-}
-.structure-refresh
-  :is(.product-detail)
-  .product-key-facts
-  > div:nth-child(odd) {
-  border-right: 1px solid #e6ecf2;
-}
-.structure-refresh :is(.product-detail) .product-key-facts dt {
-  color: #637a8e;
-  font-size: 10px;
-  margin: 0 0 7px;
-}
-.structure-refresh :is(.product-detail) .product-key-facts dd {
-  color: var(--detail-navy);
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 700;
-}
 .structure-refresh :is(.product-detail) .product-actions {
   gap: 14px 20px;
 }
@@ -592,17 +502,6 @@
   min-height: 44px;
   font-size: 12px;
 }
-.structure-refresh :is(.product-detail) .refresh-product-contents {
-  margin-top: 22px;
-  padding: 0;
-  border-block: 1px solid var(--detail-line);
-}
-.structure-refresh :is(.product-detail) .refresh-product-contents summary {
-  padding: 17px 0;
-  font-size: 13px;
-  color: var(--detail-navy);
-  cursor: pointer;
-}
 .structure-refresh :is(.product-detail) .product-section-nav {
   padding: 0 0 14px;
   gap: 6px 24px;
@@ -613,37 +512,6 @@
   align-items: center;
   min-height: 38px;
   color: #205dcd;
-}
-.structure-refresh :is(.product-detail) .refresh-resource-links {
-  padding-bottom: 18px;
-  color: #205dcd;
-  font-size: 12px;
-}
-.structure-refresh :is(.product-detail) .product-fit-grid {
-  gap: 22px;
-  padding: 30px 0 36px;
-}
-.structure-refresh :is(.product-detail) .product-fit-grid > div {
-  padding: 24px 26px;
-  border: 1px solid #d9e4ef;
-  border-left: 3px solid #5e8dda;
-  border-radius: 4px;
-  background: #f3f7fc;
-}
-.structure-refresh :is(.product-detail) .product-fit-grid > div + div {
-  border-color: #e0e5e9;
-  border-left-color: #7b8b9a;
-  background: #f7f8f9;
-}
-.structure-refresh :is(.product-detail) .product-fit-grid h2 {
-  font-size: 23px;
-  line-height: 1.25;
-  color: var(--detail-navy);
-}
-.structure-refresh :is(.product-detail) .product-fit-grid p:last-child {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #496277;
 }
 
 /* Specification reading area and evidence-linked next steps. */
@@ -917,10 +785,6 @@
   .structure-refresh :is(.brand-detail) .brand-detail-hero {
     gap: 24px;
   }
-  .structure-refresh :is(.brand-detail) .brand-hero-media {
-    width: 100%;
-    max-width: 560px;
-  }
   .structure-refresh
     :is(.brand-detail)
     > section[aria-label="Product model profiles"] {
@@ -931,9 +795,6 @@
   }
   .structure-refresh :is(.product-detail) .product-model-cover img {
     height: 290px;
-  }
-  .structure-refresh :is(.product-detail) .product-fit-grid {
-    gap: 16px;
   }
   .structure-refresh :is(.product-detail) .product-sources {
     grid-template-columns: minmax(0, 1fr);
@@ -1039,10 +900,6 @@
   .structure-refresh :is(.brand-detail) .brand-detail-hero p {
     font-size: 13px;
   }
-  .structure-refresh :is(.brand-detail) .brand-hero-media img {
-    height: 230px;
-    padding: 12px;
-  }
   .structure-refresh :is(.brand-detail) .brand-section-nav {
     gap: 0 20px;
   }
@@ -1116,15 +973,6 @@
   .structure-refresh :is(.product-detail) .product-lead {
     font-size: 15px;
   }
-  .structure-refresh :is(.product-detail) .product-key-facts > div {
-    padding: 12px;
-  }
-  .structure-refresh :is(.product-detail) .product-key-facts dd {
-    font-size: 14px;
-  }
-  .structure-refresh :is(.product-detail) .product-key-facts dt {
-    line-height: 1.5;
-  }
   .structure-refresh :is(.product-detail) .product-actions {
     gap: 9px;
   }
@@ -1137,14 +985,6 @@
   }
   .structure-refresh :is(.product-detail) .product-model-cover img {
     height: 250px;
-  }
-  .structure-refresh :is(.product-detail) .product-fit-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 14px;
-    padding-block: 25px 30px;
-  }
-  .structure-refresh :is(.product-detail) .product-fit-grid > div {
-    padding: 22px;
   }
   .structure-refresh
     :is(.product-detail)
