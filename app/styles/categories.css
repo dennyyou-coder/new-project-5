@@ -24,14 +24,14 @@
 .hub-page h1,
 .hub-page h2,
 .hub-page h3 {
-  font-family: var(--font-manrope), Arial, sans-serif;
+  font-family: var(--font-heading);
   color: var(--hub-ink);
 }
 
 .hub-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--page-gutter);
   box-sizing: border-box;
 }
 
@@ -43,11 +43,6 @@
 .hub-hero > .hub-container {
   padding-top: 36px;
   padding-bottom: 36px;
-}
-
-.hub-color-bar {
-  height: 6px;
-  background: var(--hub-color);
 }
 
 .hub-breadcrumb {
@@ -80,18 +75,12 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font-label);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--hub-ink);
-}
-
-.hub-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--hub-color);
+  color: var(--primary);
 }
 
 .hub-page h1 {
@@ -114,7 +103,7 @@
 .hub-page .hub-subscribe-button {
   min-height: 44px;
   padding: 11px 18px;
-  border-radius: 8px;
+  border-radius: 4px;
   font: inherit;
   font-size: 15px;
   font-weight: 600;
@@ -141,13 +130,13 @@
   gap: 4px;
   padding: 18px 20px;
   border: 1px solid var(--hub-line);
-  border-radius: 12px;
+  border-radius: 4px;
   background: #ffffff;
   color: var(--hub-ink);
 }
 
 .hub-metric-value {
-  font-family: var(--font-manrope), Arial, sans-serif;
+  font-family: var(--font-heading);
   font-size: 34px;
   font-weight: 800;
   line-height: 1.1;
@@ -284,7 +273,7 @@
 .hub-model-image {
   display: block;
   aspect-ratio: 4 / 3;
-  border-radius: 10px;
+  border-radius: 4px;
   background: #f1f3f7;
   overflow: hidden;
 }
@@ -328,7 +317,7 @@
   gap: 8px;
   padding: 20px;
   border: 1px solid var(--hub-line);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .hub-essential-meta {
@@ -361,7 +350,7 @@
   padding: 8px 12px;
   box-sizing: border-box;
   border: 1px solid var(--hub-line);
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
   color: var(--hub-ink);
@@ -389,7 +378,7 @@
   gap: 10px;
   padding: 20px;
   border: 1px solid var(--hub-line);
-  border-radius: 12px;
+  border-radius: 4px;
   background: var(--hub-soft);
 }
 
@@ -422,7 +411,9 @@
 
 .hub-overview h2 {
   margin: 0 0 18px;
-  font-size: 24px;
+  padding-top: 14px;
+  border-top: 3px solid #0B2140;
+  font-size: clamp(24px, 2.4vw, 30px);
   font-weight: 800;
 }
 
@@ -438,8 +429,7 @@
   gap: 10px;
   padding: 20px 20px 22px;
   border: 1px solid var(--hub-line);
-  border-top: 6px solid var(--hub-color);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .hub-card h3 {

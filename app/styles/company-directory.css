@@ -20,14 +20,20 @@
 
 .company-directory-page h1,
 .company-directory-page h2 {
-  font-family: var(--font-manrope), Arial, sans-serif;
+  font-family: var(--font-heading);
   color: var(--cd-ink);
 }
 
+.company-directory-body > section > h2 {
+  padding-top: 14px;
+  border-top: 3px solid #0B2140;
+  font-size: clamp(24px, 2.4vw, 30px);
+}
+
 .company-directory-container {
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--page-gutter);
   box-sizing: border-box;
 }
 
@@ -117,15 +123,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-  gap: 12px;
+  /* Columns, not a grid: groups differ in height, so columns pack them and end level. */
+  columns: 4 260px;
+  column-gap: 12px;
 }
 
 .company-owners-grid li {
   padding: 14px 16px;
+  break-inside: avoid;
+  margin-bottom: 12px;
   border: 1px solid var(--cd-line);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .company-owner-parent {
@@ -168,7 +176,7 @@
   min-height: 44px;
   padding: 0 12px;
   border: 1px solid #c9d0dc;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #ffffff;
   color: var(--cd-ink);
   font: inherit;
@@ -180,7 +188,7 @@
   min-height: 44px;
   padding: 0 16px;
   border: 1px solid var(--cd-line);
-  border-radius: 8px;
+  border-radius: 4px;
   background: #ffffff;
   color: var(--cd-ink);
   font: inherit;
@@ -216,7 +224,7 @@
   padding: 14px;
   box-sizing: border-box;
   border: 1px solid var(--cd-line);
-  border-radius: 12px;
+  border-radius: 4px;
   background: #ffffff;
   color: var(--cd-ink);
 }
@@ -233,7 +241,7 @@
   height: 56px;
   margin-bottom: 4px;
   padding: 6px;
-  border-radius: 8px;
+  border-radius: 4px;
   background: var(--cd-soft);
 }
 
@@ -271,10 +279,6 @@
 }
 
 @media (max-width: 760px) {
-  .company-directory-container {
-    padding: 0 16px;
-  }
-
   .company-dir-filters {
     grid-template-columns: 1fr 1fr;
   }
@@ -330,7 +334,7 @@
   flex: none;
   background: #fff;
   border: 1px solid #d8e5f3;
-  border-radius: 7px;
+  border-radius: 4px;
   font-size: 11px;
   font-weight: 800;
   color: #14345C;
@@ -347,7 +351,7 @@
 .company-owner-mark--small {
   width: 52px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .company-owner-brands {
   display: flex;

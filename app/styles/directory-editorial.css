@@ -32,7 +32,7 @@
 }
 .structure-refresh :is(.brand-detail) .insights-page-container,
 .structure-refresh :is(.product-detail) .product-container {
-  width: min(1200px, calc(100% - 64px));
+  width: var(--page-width);
   margin-inline: auto;
 }
 
@@ -136,7 +136,7 @@
   align-self: center;
   background: #fff;
   border: 1px solid #43607b;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: none;
 }
 .structure-refresh :is(.brand-detail) .brand-hero-media__eyebrow {
@@ -170,7 +170,7 @@
   margin-top: 0;
   background: #fff;
   border: 1px solid #dae3ed;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .structure-refresh
   :is(.brand-detail)
@@ -344,7 +344,7 @@
 .structure-refresh
   :is(.brand-detail)
   > section[aria-label="Product model profiles"] {
-  width: min(1200px, calc(100% - 64px));
+  width: var(--page-width);
   margin: 6px auto 0;
   padding: 26px;
   border: 1px solid var(--detail-line);
@@ -473,7 +473,7 @@
   padding: 28px;
   border: 1px solid var(--detail-line);
   border-top: 4px solid var(--detail-navy);
-  border-radius: 5px;
+  border-radius: 4px;
   background: var(--detail-soft);
 }
 .structure-refresh :is(.product-detail) .product-model-cover {
@@ -908,7 +908,7 @@
 @media (max-width: 800px) {
   .structure-refresh :is(.brand-detail) .insights-page-container,
   .structure-refresh :is(.product-detail) .product-container {
-    width: calc(100% - 40px);
+    width: var(--page-width);
   }
   .structure-refresh :is(.brand-detail) .brand-detail-hero,
   .structure-refresh :is(.product-detail) .product-detail-hero {
@@ -924,7 +924,7 @@
   .structure-refresh
     :is(.brand-detail)
     > section[aria-label="Product model profiles"] {
-    width: calc(100% - 40px);
+    width: var(--page-width);
   }
   .structure-refresh :is(.product-detail) .product-detail-intro {
     order: -1;

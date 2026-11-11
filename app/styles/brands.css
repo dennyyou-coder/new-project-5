@@ -17,7 +17,7 @@
 }
 
 .brand-directory-hero {
-  width: min(100% - 48px, 1360px);
+  width: var(--page-width);
   margin-inline: auto;
 }
 
@@ -70,7 +70,7 @@
 .brand-category-card {
   min-width: 0;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 4px;
   background: var(--soft);
   overflow: hidden;
 }
@@ -126,7 +126,7 @@
 
 .brand-directory-card {
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 4px;
   background: #fff;
   overflow: hidden;
 }
@@ -175,9 +175,9 @@
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 14px;
+  border-radius: 4px;
   background: rgba(7, 26, 58, 0.28);
-  box-shadow: 0 18px 42px rgba(4, 18, 42, 0.18);
+  box-shadow: none;
 }
 
 .brand-hero-media img {
@@ -245,7 +245,7 @@
   width: min(280px, 100%);
   min-height: 80px;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 4px;
   background: #fff;
 }
 
@@ -280,7 +280,7 @@
   margin-top: 20px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -380,7 +380,7 @@
   min-width: 0;
   scroll-margin-top: 92px;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 4px;
   padding: clamp(20px, 2.2vw, 26px);
   background: #fff;
 }
@@ -454,7 +454,7 @@
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .brand-table-group h3 {
@@ -557,7 +557,7 @@
 .brand-section-main > .brand-data-table,
 .brand-section-main > .brand-table-group {
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .brand-section-main > .brand-data-table {
@@ -576,7 +576,7 @@
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 4px;
   background: var(--soft);
 }
 
@@ -739,7 +739,7 @@
   }
 
   .brand-directory-hero {
-    width: min(100% - 32px, 1360px);
+    width: var(--page-width);
   }
 
   .brand-detail-hero img {
@@ -895,7 +895,7 @@
 .brand-latest { padding: 24px 0 8px; }
 .brand-latest h2 { margin: 0 0 8px; font-size: 20px; }
 .brand-latest ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
-.brand-latest li { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1px solid #e3e7ee; border-radius: 12px; }
+.brand-latest li { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1px solid #e3e7ee; border-radius: 4px; }
 .brand-latest-meta { font-size: 12px; font-weight: 650; color: #4a5367; }
 .brand-latest a { display: flex; align-items: center; min-height: 44px; font-weight: 700; line-height: 1.35; }
 .brand-correction { margin: 12px 0 0; font-size: 14px; color: #4a5367; }

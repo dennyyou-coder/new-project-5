@@ -1378,7 +1378,7 @@ h3 {
 }
 
 .insights-page-container {
-  width: min(100% - 48px, 1360px);
+  width: var(--page-width);
   margin-inline: auto;
 }
 
