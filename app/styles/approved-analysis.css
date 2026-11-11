@@ -1,10 +1,10 @@
 /* Deep Analysis archive: the existing company filter stays within editorial articles. */
 body.structure-refresh.design-a .approved-analysis .content-directory-company-index {
   min-width: 0;
-  border: 1px solid #D6DFE7;
+  border: 1px solid #D8E3F0;
   border-radius: 6px;
   padding: 24px;
-  background: #F4F6F8;
+  background: #F3F7FC;
   box-shadow: none;
 }
 body.structure-refresh.design-a .approved-analysis .content-directory-company-index h2 {
@@ -27,7 +27,7 @@ body.structure-refresh.design-a .approved-analysis .content-directory-company-in
   max-width: 100%;
   min-height: 40px;
   padding: 8px 11px;
-  border: 1px solid #D6DFE7;
+  border: 1px solid #D8E3F0;
   border-radius: 4px;
   background: #fff;
   color: #52677D;

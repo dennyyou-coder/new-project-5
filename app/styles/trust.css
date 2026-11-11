@@ -113,10 +113,10 @@
 .trust-next-grid > a,
 .trust-responsibility-grid article {
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 4px;
   padding: 28px;
   background: #fff;
-  box-shadow: 0 14px 36px rgba(22, 59, 103, .065);
+  box-shadow: none;
 }
 
 .trust-process-grid article > span,
@@ -155,7 +155,7 @@
 .trust-next-grid > a:hover {
   transform: translateY(-3px);
   border-color: #a9c4e5;
-  box-shadow: 0 20px 42px rgba(22, 59, 103, .1);
+  box-shadow: none;
 }
 
 .trust-next-grid strong {
@@ -211,7 +211,7 @@
   gap: 48px;
   align-items: center;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 4px;
   padding: 40px;
   background: #f5f9fe;
 }
@@ -234,7 +234,7 @@
 
 .trust-content article {
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 4px;
   padding: 30px 34px;
   background: #fff;
 }
@@ -354,10 +354,10 @@ button.contact-help-card {
   display: grid;
   gap: 18px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 4px;
   background: #fff;
   padding: 24px;
-  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.05);
+  box-shadow: none;
 }
 
 @media (max-width: 640px) {

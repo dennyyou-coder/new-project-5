@@ -3,14 +3,14 @@
    Same label style as the homepage zones: small coloured label with a short rule. */
 body.structure-refresh.design-a .approved-catalog .page-zone-label {
   display: flex; align-items: center; gap: 10px;
-  margin: 40px 0 14px; padding-top: 22px; border-top: 2px solid #d6dfe7;
+  margin: 40px 0 14px; padding-top: 22px; border-top: 2px solid #D8E3F0;
   font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #1F57E0;
 }
 body.structure-refresh.design-a .approved-catalog .page-zone-label::before { content: ""; width: 18px; height: 3px; border-radius: 2px; background: currentColor; }
 body.structure-refresh.design-a .approved-catalog .page-zone-label--first { margin-top: 0; padding-top: 0; border-top: 0; }
 
 /* Folded sections: the heading is the button. */
-body.structure-refresh.design-a .approved-catalog .pv-collapse { margin: 12px 0; border: 1px solid #d6dfe7; border-radius: 4px; background: #fff; }
+body.structure-refresh.design-a .approved-catalog .pv-collapse { margin: 12px 0; border: 1px solid #D8E3F0; border-radius: 4px; background: #fff; }
 body.structure-refresh.design-a .approved-catalog .pv-collapse > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; cursor: pointer; list-style: none; }
 body.structure-refresh.design-a .approved-catalog .pv-collapse > summary::-webkit-details-marker { display: none; }
 body.structure-refresh.design-a .approved-catalog .pv-collapse > summary h2 { margin: 0; font-size: 20px; line-height: 1.3; }
@@ -34,7 +34,7 @@ body.structure-refresh.design-a .approved-catalog.products-page .pv-grid.is-expa
 body.structure-refresh.design-a .approved-catalog.products-page .pv-show-all { margin-top: 14px; min-height: 40px; padding: 0 18px; border: 1px solid #c9d1de; border-radius: 4px; background: #fff; font: inherit; font-size: 14px; font-weight: 700; color: #1F57E0; cursor: pointer; }
 body.structure-refresh.design-a .approved-catalog.products-page .pv-show-all:hover { border-color: #1F57E0; }
 body.structure-refresh.design-a .approved-catalog.products-page .pv-group + .pv-group { margin-top: 36px; }
-body.structure-refresh.design-a .approved-catalog.products-page .pv-jump button { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; font: inherit; font-size: 13.5px; font-weight: 700; color: #14345C; background: #fff; border: 1px solid #D6DFE7; border-radius: 999px; cursor: pointer; }
+body.structure-refresh.design-a .approved-catalog.products-page .pv-jump button { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; font: inherit; font-size: 13.5px; font-weight: 700; color: #14345C; background: #fff; border: 1px solid #D8E3F0; border-radius: 999px; cursor: pointer; }
 body.structure-refresh.design-a .approved-catalog.products-page .pv-jump button:hover { border-color: #1F57E0; color: #1F57E0; }
 body.structure-refresh.design-a .approved-catalog.products-page .pv-jump button.is-on { border-color: #1F57E0; background: #1F57E0; color: #fff; }
 body.structure-refresh.design-a .approved-catalog.products-page .pv-jump button.is-on span { background: rgba(255, 255, 255, 0.2); color: #fff; }

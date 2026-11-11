@@ -5,7 +5,7 @@
   --v9-blue: #1F57E0;
   --v9-muted: #52677D;
   --v9-line: #c5d6e4;
-  --v9-soft: #e3ecf3;
+  --v9-soft: #F3F7FC;
   --cta-border: #adc6da;
   color: #0B2140;
   background: #fff;
@@ -52,7 +52,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.button-secondary, .editorial-hero-secondary, .home-v9-series-actions a + a):hover {
   border-color: #1F57E0;
-  background: #f3f7fa;
+  background: #F3F7FC;
   color: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(a, button):focus-visible {
@@ -116,7 +116,7 @@
 .structure-refresh.design-a .site-shell .home-videos .home-video-copy a.youtube-action svg { color: #e60000; flex-shrink: 0; }
 .structure-refresh.design-a .site-shell .home-videos .home-video-copy a.youtube-action:hover { background: transparent; color: #8f0000; text-decoration-thickness: 2px; }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero {
-  background: #e3ecf3;
+  background: #F3F7FC;
   color: #0B2140;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero::before {
@@ -295,7 +295,7 @@
   padding-block: 72px;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.editorial-focus, .refresh-section.refresh-soft, .editorial-founder) {
-  background: #e3ecf3;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .site-shell .home-editorial > .refresh-soft,
 .structure-refresh.design-a .site-shell .home-editorial #business-cooperation {
@@ -465,7 +465,7 @@
   padding: 24px;
   border: 1px solid #d6e2ec;
   border-radius: 8px;
-  background: #e3ecf3;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .refresh-expo-date strong {
   display: inline-block;
@@ -528,7 +528,7 @@
 .structure-refresh.design-a .home-videos .home-video-media {
   overflow: hidden;
   border-radius: 8px;
-  background: #e3ecf3;
+  background: #F3F7FC;
 }
 .structure-refresh.design-a .home-videos .home-video-play {
   width: 52px;
@@ -633,7 +633,7 @@
   padding: 30px 32px 32px;
   border: 1px solid #c5d6e4;
   border-radius: 9px;
-  background: #f3f7fa;
+  background: #F3F7FC;
   box-shadow: none;
 }
 .structure-refresh.design-a .business-service-top {

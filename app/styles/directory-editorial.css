@@ -5,7 +5,7 @@
   --detail-ink: #17354e;
   --detail-blue: #2563eb;
   --detail-muted: #5d7183;
-  --detail-line: #dce4eb;
+  --detail-line: #F3F7FC;
   --detail-soft: #f4f7fa;
   --product-ink: var(--detail-navy);
   --product-blue: var(--detail-blue);
@@ -1006,7 +1006,7 @@
     letter-spacing: 0.06em;
   }
   .structure-refresh :is(.brand-detail) .brand-data-table tbody tr + tr {
-    border-top: 1px solid #dce4eb;
+    border-top: 1px solid #F3F7FC;
   }
 }
 @media (max-width: 540px) {
