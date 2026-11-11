@@ -76,8 +76,11 @@ test("landing pages carry company logos, the ownership card and guide ordering",
   assert.match(article, /\{glanceCompany \? <ArticleCompanyCard profile=\{glanceCompany\} \/> : null\}/);
   assert.match(read("components/ArticleCompanyCard.tsx"), /buildBrandQuickAnswer\(profile\)/);
   assert.match(read("components/ArticleBrandLinks.tsx"), /className="article-brand-logo"/);
-  assert.match(read("app/categories/[slug]/page.tsx"), /<CategoryIcon slug=\{hub\.slug\} color=\{hub\.color\} size="lg" \/>/);
-  assert.match(read("app/categories/page.tsx"), /<CategoryIcon slug=\{data\.hub\.slug\}/);
+  // A design: one blue for every category, so no per-category colour bar or title icon; icons remain as thumbnail fallbacks.
+  const hubPage = read("app/categories/[slug]/page.tsx");
+  assert.doesNotMatch(hubPage, /hub-color-bar|--hub-color/);
+  assert.match(hubPage, /<CategoryIcon slug=\{hub\.slug\} color=\{hub\.color\} size="sm" \/>/);
+  assert.doesNotMatch(read("app/categories/page.tsx"), /--hub-color/);
   assert.match(read("app/markets/page.tsx"), /figure-chip figure-chip--\$\{figureDirection\(growth\)\}/);
   assert.match(read("app/brands/page.tsx"), /brandMonogram\(group\.parent\)/);
   const guides = read("app/guides/listing.tsx");

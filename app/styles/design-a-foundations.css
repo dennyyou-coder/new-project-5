@@ -222,7 +222,7 @@
   .structure-refresh.design-a .footer-grid { gap: 40px; }
 }
 @media (max-width: 760px) {
-  .structure-refresh.design-a .container { width: calc(100% - 40px); }
+  .structure-refresh.design-a .container { width: var(--page-width); }
   .structure-refresh.design-a .refresh-header .header-inner { min-height: 74px; gap: 12px; }
   .structure-refresh.design-a .refresh-header .brand-name { font-size: 17px; }
   .structure-refresh.design-a .brand-tagline { font-size: 8px; }

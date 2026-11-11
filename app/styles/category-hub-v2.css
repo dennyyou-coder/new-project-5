@@ -7,7 +7,7 @@
 .hub-page.ch .ch-quick { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .hub-page.ch .ch-quick a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; font-size: 14px; font-weight: 700; color: var(--hub-ink); background: #fff; border: 1px solid var(--hub-line); border-radius: 999px; text-decoration: none; }
 .hub-page.ch .ch-quick a:hover, .hub-page.ch .ch-quick a:focus-visible { border-color: var(--hub-link); color: var(--hub-link); }
-.hub-page.ch .ch-hero-visual { position: relative; margin: 0; overflow: hidden; border-radius: 16px; background: #fff; border: 1px solid var(--hub-line); aspect-ratio: 3 / 2; }
+.hub-page.ch .ch-hero-visual { position: relative; margin: 0; overflow: hidden; border-radius: 4px; background: #fff; border: 1px solid var(--hub-line); aspect-ratio: 3 / 2; }
 .hub-page.ch .ch-hero-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hub-page.ch .ch-hero-visual--product img { object-fit: contain; padding: 18px; box-sizing: border-box; }
 
@@ -15,13 +15,13 @@
 .hub-page.ch .ch-body > .ch-section { padding: 36px 0; border-bottom: 1px solid var(--hub-line); scroll-margin-top: 80px; }
 .hub-page.ch .ch-body > .ch-section:last-of-type { border-bottom: 0; }
 .hub-page.ch .ch-body > .ch-subscribe { margin-top: 12px; }
-.hub-page.ch .ch-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
-.hub-page.ch .ch-head h2 { margin: 0; font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; }
+.hub-page.ch .ch-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; padding-top: 14px; border-top: 3px solid #0B2140; }
+.hub-page.ch .ch-head h2 { margin: 0; font-size: clamp(24px, 2.4vw, 30px); line-height: 1.25; letter-spacing: -0.01em; }
 .hub-page.ch .ch-head a { font-size: 14px; font-weight: 700; white-space: nowrap; }
 .hub-page.ch .ch-meta { display: block; font-size: 12.5px; color: var(--hub-subtle); }
 
 .hub-page.ch .ch-top { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: start; }
-.hub-page.ch .ch-lead-image { display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px; background: #e9edf4; }
+.hub-page.ch .ch-lead-image { display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 4px; background: #e9edf4; }
 .hub-page.ch .ch-lead-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hub-page.ch .ch-lead .ch-meta { margin-top: 12px; }
 .hub-page.ch .ch-lead h2 { margin: 6px 0 0; font-size: 24px; line-height: 1.25; }
@@ -31,13 +31,13 @@
 .hub-page.ch .ch-latest li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--hub-line); }
 .hub-page.ch .ch-latest li:first-child { padding-top: 0; }
 .hub-page.ch .ch-latest li a { display: block; margin-top: 3px; font-size: 15px; font-weight: 700; line-height: 1.4; color: var(--hub-ink); }
-.hub-page.ch .ch-thumb { display: grid; place-items: center; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 8px; background: #e9edf4; }
+.hub-page.ch .ch-thumb { display: grid; place-items: center; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 4px; background: #e9edf4; }
 .hub-page.ch .ch-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hub-page.ch .ch-thumb--contain { background: #fff; border: 1px solid var(--hub-line); }
 .hub-page.ch .ch-thumb--contain img { object-fit: contain; padding: 4px; box-sizing: border-box; }
 
 .hub-page.ch .ch-companies { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
-.hub-page.ch .ch-companies a { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 10px 12px; background: #fff; border: 1px solid var(--hub-line); border-radius: 12px; text-decoration: none; }
+.hub-page.ch .ch-companies a { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 10px 12px; background: #fff; border: 1px solid var(--hub-line); border-radius: 4px; text-decoration: none; }
 .hub-page.ch .ch-companies a:hover { border-color: #9DB4CC; }
 .hub-page.ch .ch-company-logo { display: grid; place-items: center; width: 74px; height: 36px; flex: none; }
 .hub-page.ch .ch-company-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
@@ -45,7 +45,7 @@
 
 .hub-page.ch .ch-grid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .hub-page.ch .ch-grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.hub-page.ch .ch-model, .hub-page.ch .ch-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: #fff; border: 1px solid var(--hub-line); border-radius: 12px; text-decoration: none; color: inherit; }
+.hub-page.ch .ch-model, .hub-page.ch .ch-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: #fff; border: 1px solid var(--hub-line); border-radius: 4px; text-decoration: none; color: inherit; }
 .hub-page.ch .ch-model:hover, .hub-page.ch .ch-card:hover { border-color: #9DB4CC; text-decoration: none; }
 .hub-page.ch .ch-model-image { position: relative; display: block; aspect-ratio: 3 / 2; border-bottom: 1px solid #EDF1F5; background: #fff; }
 .hub-page.ch .ch-model-image img { position: absolute; inset: 10px; width: calc(100% - 20px); height: calc(100% - 20px); object-fit: contain; }
@@ -55,7 +55,7 @@
 .hub-page.ch .ch-model-facts { display: grid; gap: 3px; margin-top: 6px; padding-top: 8px; border-top: 1px solid #EDF1F5; }
 .hub-page.ch .ch-model-facts > span { display: flex; justify-content: space-between; gap: 10px; font-size: 12.5px; font-weight: 700; color: #0B2140; text-align: right; }
 .hub-page.ch .ch-model-facts i { font-style: normal; font-weight: 500; color: #6B7A86; white-space: nowrap; text-align: left; }
-.hub-page.ch .ch-more { display: grid; place-content: center; gap: 6px; padding: 18px; text-align: center; background: var(--hub-soft); border: 1px dashed #B9C9DA; border-radius: 12px; text-decoration: none; }
+.hub-page.ch .ch-more { display: grid; place-content: center; gap: 6px; padding: 18px; text-align: center; background: var(--hub-soft); border: 1px dashed #B9C9DA; border-radius: 4px; text-decoration: none; }
 .hub-page.ch .ch-more b { font-size: 15px; color: var(--hub-link); }
 .hub-page.ch .ch-more span { font-size: 13px; color: var(--hub-subtle); }
 .hub-page.ch .ch-card-image { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #e9edf4; }
@@ -65,13 +65,13 @@
 
 .hub-page.ch .ch-bottom { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: end; }
 .hub-page.ch .ch-bottom .ch-grid3 { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-.hub-page.ch .ch-sourcing { display: grid; gap: 12px; padding: 20px; color: #fff; background: #14345C; border-radius: 14px; text-decoration: none; }
+.hub-page.ch .ch-sourcing { display: grid; gap: 12px; padding: 20px; color: #fff; background: #14345C; border-radius: 4px; text-decoration: none; }
 .hub-page.ch .ch-sourcing b { display: block; font-size: 17px; color: #fff; }
 .hub-page.ch .ch-sourcing span span { display: block; margin-top: 4px; font-size: 14px; line-height: 1.5; color: #C9D8EA; }
-.hub-page.ch .ch-sourcing i { font-style: normal; justify-self: start; padding: 8px 14px; font-size: 14px; font-weight: 800; color: #14345C; background: #fff; border-radius: 8px; }
+.hub-page.ch .ch-sourcing i { font-style: normal; justify-self: start; padding: 8px 14px; font-size: 14px; font-weight: 800; color: #14345C; background: #fff; border-radius: 4px; }
 .hub-page.ch .ch-sourcing:hover { text-decoration: none; background: #1D4A80; }
 
-.hub-page.ch .ch-subscribe { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 24px; background: var(--hub-soft); border: 1px solid var(--hub-line); border-radius: 14px; }
+.hub-page.ch .ch-subscribe { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 24px; background: var(--hub-soft); border: 1px solid var(--hub-line); border-radius: 4px; }
 .hub-page.ch .ch-subscribe h2 { margin: 0; font-size: 20px; }
 .hub-page.ch .ch-subscribe p { margin: 4px 0 0; color: var(--hub-muted); font-size: 14px; }
 
@@ -136,7 +136,7 @@
 .hub-page.ch .ch-equipment ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .hub-page.ch .ch-equipment a { display: inline-block; padding: 7px 12px; border: 1px solid var(--hub-line); border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--hub-ink); text-decoration: none; }
 .hub-page.ch .ch-equipment a:hover { border-color: var(--hub-link); color: var(--hub-link); }
-.hub-page.ch .ch-archive summary { display: inline-block; margin-bottom: 12px; padding: 8px 14px; border: 1px solid var(--hub-line); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--hub-ink); cursor: pointer; list-style: none; }
+.hub-page.ch .ch-archive summary { display: inline-block; margin-bottom: 12px; padding: 8px 14px; border: 1px solid var(--hub-line); border-radius: 4px; font-size: 14px; font-weight: 700; color: var(--hub-ink); cursor: pointer; list-style: none; }
 .hub-page.ch .ch-archive summary::-webkit-details-marker { display: none; }
 .hub-page.ch .ch-archive summary:hover { color: var(--hub-link); border-color: var(--hub-link); }
 .hub-page.ch .ch-archive li { padding: 7px 0; }

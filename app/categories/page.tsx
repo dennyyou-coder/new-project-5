@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import type { CSSProperties } from "react";
 import "../styles/categories.css";
 import "../styles/category-hub-v2.css";
 import { HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
 import { getAllHubCategoryData } from "@/lib/hubCategoryContent";
 import { hubVisual } from "@/lib/hubPresentation";
 import { buildWebsiteMetadata } from "@/lib/seo";
-import { CategoryIcon } from "@/components/ui/CategoryIcon";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -67,14 +65,13 @@ export default function CategoriesPage() {
                 const latest = data.feed[0];
                 const visual = hubVisual(data);
                 return (
-                  <article key={data.hub.slug} className="hub-card ch-hubcard" style={{ "--hub-color": data.hub.color } as CSSProperties}>
+                  <article key={data.hub.slug} className="hub-card ch-hubcard">
                     {visual ? (
                       <Link className={`ch-hubcard-image ch-hubcard-image--${visual.kind}`} href={`/categories/${data.hub.slug}`} tabIndex={-1} aria-hidden="true">
                         <img src={visual.src} alt="" loading="lazy" decoding="async" />
                       </Link>
                     ) : null}
                     <div className="hub-card-title">
-                      <CategoryIcon slug={data.hub.slug} color={data.hub.color} />
                       <h3><Link href={`/categories/${data.hub.slug}`}>{data.hub.name}</Link></h3>
                     </div>
                     <p className="hub-card-intro">{data.hub.intro}</p>

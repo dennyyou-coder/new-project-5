@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { CSSProperties } from "react";
 import "../../styles/categories.css";
 import "../../styles/category-hub-v2.css";
 import { TallyButton } from "@/components/LeadForms";
@@ -113,17 +112,15 @@ export default async function CategoryHubPage({ params }: Props) {
   ];
 
   return (
-    <div className="hub-page ch" style={{ "--hub-color": hub.color } as CSSProperties}>
+    <div className="hub-page ch">
       <section className="ch-hero">
-        <div className="hub-color-bar" aria-hidden="true" />
         <div className="hub-container ch-hero-grid">
           <div className="ch-hero-copy">
             <nav className="hub-breadcrumb" aria-label="Breadcrumb">
               <Link href="/">Home</Link> / <Link href="/categories">Categories</Link> / <span aria-current="page">{hub.name}</span>
             </nav>
-            <p className="hub-eyebrow"><span className="hub-dot" aria-hidden="true" />{groupLabel}</p>
+            <p className="hub-eyebrow">{groupLabel}</p>
             <div className="hub-title-row">
-              <CategoryIcon slug={hub.slug} color={hub.color} size="lg" />
               <h1>{hub.name}</h1>
             </div>
             <p className="hub-intro">{hub.intro}</p>

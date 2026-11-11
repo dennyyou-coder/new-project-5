@@ -11,9 +11,12 @@
   --shadow-soft: none; --shadow-lift: none;
   --font-heading: var(--font-archivo), Arial, Helvetica, sans-serif;
   --font-label: var(--font-plex-mono), ui-monospace, Menlo, monospace;
+  /* Page content lines up with the header: 1280px box minus its side padding. */
+  --page-gutter: clamp(16px, 4vw, 40px);
+  --page-width: min(1200px, calc(100% - 2 * var(--page-gutter)));
   color: var(--ink); background: #fff;
 }
-.structure-refresh.design-a.approved-design .container { width: min(1280px, calc(100% - 80px)); margin-inline: auto; }
+.structure-refresh.design-a.approved-design .container { width: var(--page-width); margin-inline: auto; }
 .structure-refresh.design-a.approved-design :is(h1,h2,h3,h4) { color: var(--ink); font-family: var(--font-heading); }
 .structure-refresh.design-a.approved-design .eyebrow { font-family: var(--font-label); font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); }
 .structure-refresh.design-a.approved-design :is(a,button,input,select,textarea):focus-visible { outline-color: var(--primary); }
@@ -62,7 +65,7 @@
   .structure-refresh.design-a .glacier-service img { margin-bottom: 12px; }
 }
 @media (max-width:760px) {
-  .structure-refresh.design-a.approved-design .container { width: calc(100% - 40px); }
+  .structure-refresh.design-a.approved-design .container { width: var(--page-width); }
   .structure-refresh.design-a.approved-design .refresh-header .header-inner { min-height: 72px; gap: 12px; }
   .structure-refresh.design-a.approved-design .refresh-header .brand-name { font-size: 17px; }
   .structure-refresh.design-a.approved-design .brand-tagline { font-size: 8px; }
