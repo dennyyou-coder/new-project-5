@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
+import { CiteNote, DatasetSchema } from "@/components/radar/DatasetSchema";
 import { RadarHero } from "@/components/radar/RadarHero";
 import { RecallList } from "@/components/radar/RecallList";
 import { SECTORS } from "@/lib/radar/classify";
@@ -57,11 +58,24 @@ export default function RecallsPage() {
                 <p>
                   Each week WCB pulls the US Consumer Product Safety Commission recalls and the EU Safety Gate weekly report, keeps cleaning appliances, home appliances and power tools, and checks each one before it is published. Every entry links to the official notice. Hazards are quoted from the notice.
                 </p>
+                <CiteNote name="WCB Product Recall Tracker" path="/recalls" />
               </div>
             </aside>
           </div>
         </div>
       </section>
+      <DatasetSchema
+        name="WCB Product Recall Tracker: appliances, cleaning machines and power tools (US and EU)"
+        description="US CPSC recalls and EU Safety Gate alerts for cleaning appliances, home appliances, power tools and garden machinery, with product, brand, hazard, units, country of manufacture and a link to the official notice."
+        path="/recalls"
+        updated={RECALLS_UPDATED}
+        from="2026-01-01"
+        sources={[
+          { name: "US Consumer Product Safety Commission recalls", url: "https://www.cpsc.gov/Recalls" },
+          { name: "EU Safety Gate", url: "https://ec.europa.eu/safety-gate-alerts/screen/webReport" }
+        ]}
+        keywords={["product recalls", "CPSC", "EU Safety Gate", "vacuum cleaners", "home appliances", "power tools", "product safety"]}
+      />
     </div>
   );
 }

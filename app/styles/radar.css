@@ -7,6 +7,7 @@
 .radar-card p { margin: 0; font-size: 14px; line-height: 1.55; color: #52677D; }
 .radar-card a { font-size: 14px; font-weight: 700; color: #1F57E0; }
 .radar-method { margin-top: 24px; }
+.radar-card .radar-cite { padding-top: 8px; border-top: 1px solid #D8E3F0; font-size: 13px; color: #0B2140; overflow-wrap: anywhere; }
 .radar-page .radar-button { justify-self: start; min-height: 40px; padding: 0 16px; border: 0; border-radius: 4px; background: #1F57E0; color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
 
 /* Stats strip */

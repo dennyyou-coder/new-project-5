@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CiteNote, DatasetSchema } from "@/components/radar/DatasetSchema";
 import { FccFilingList } from "@/components/radar/FccFilingList";
 import { RadarHero } from "@/components/radar/RadarHero";
 import { SECTORS, shortDate } from "@/lib/radar/classify";
@@ -78,9 +79,19 @@ export default function LaunchRadarPage() {
             <p>
               A new product filing is a new FCC ID; changes and new IDs are updates to products already authorized. The FCC record shows the company and the radios, but usually not the product name, and photos and manuals can stay confidential until launch. Companies sometimes file under a subsidiary or a module maker, so a quiet company is not proof that nothing is coming. Brands whose filings are mostly phones, chargers or TVs are left out. Each ID links to its public record on fccid.io.
             </p>
+            <CiteNote name="WCB Launch Radar" path="/launch-radar" />
           </div>
         </div>
       </section>
+      <DatasetSchema
+        name="WCB Launch Radar: FCC filings from robot, appliance and power tool makers"
+        description="FCC equipment authorizations filed by the main robot vacuum, robot mower, pool robot, home appliance and power tool makers, with company, FCC ID, grant date and filing type."
+        path="/launch-radar"
+        updated={FCC_UPDATED}
+        from={FCC_FROM}
+        sources={[{ name: "FCC Equipment Authorization System", url: "https://www.fcc.gov/oet/ea/fccid" }]}
+        keywords={["FCC ID", "FCC equipment authorization", "robot vacuum", "robot lawn mower", "home appliances", "power tools", "product launches"]}
+      />
     </div>
   );
 }
