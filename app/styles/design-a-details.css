@@ -329,7 +329,7 @@
   .structure-refresh.design-a .product-detail .product-container,
   .structure-refresh.design-a .article-reading-experience .blog-article-hero > .blog-article-container,
   .structure-refresh.design-a .article-reading-experience .blog-article-section > .blog-article-container,
-  .structure-refresh.design-a .news-page .news-article { width: calc(100% - 40px); max-width: none; }
+  .structure-refresh.design-a .news-page .news-article { width: var(--page-width); max-width: none; }
   .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .guides-category-hero,
   .structure-refresh.design-a .article-reading-experience .blog-article-hero,
   .structure-refresh.design-a .page-hero-contact,
