@@ -202,3 +202,14 @@ export function pickComparisonGuides<T extends { slug: string; guideType?: strin
     .sort((a, b) => String(b.sortDate || b.date || "").localeCompare(String(a.sortDate || a.date || "")))
     .slice(0, limit);
 }
+
+/** The corporate group a brand belongs to: its parent company, else its own legal name or name. */
+export function corporateGroupKey(profile: Pick<BrandProfile, "name" | "legalName" | "ownership">): string | undefined {
+  return parentGroupKey(profile.ownership.parentCompany) ?? parentGroupKey(profile.legalName) ?? parentGroupKey(profile.name);
+}
+
+/** True when two brands sit in the same corporate group, so one is not presented as the other's competitor. */
+export function sameCorporateGroup(a: Pick<BrandProfile, "name" | "legalName" | "ownership">, b: Pick<BrandProfile, "name" | "legalName" | "ownership">): boolean {
+  const key = corporateGroupKey(a);
+  return Boolean(key && key === corporateGroupKey(b));
+}

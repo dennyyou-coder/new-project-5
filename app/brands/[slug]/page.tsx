@@ -35,7 +35,7 @@ import { buildWebsiteMetadata } from "@/lib/seo";
 import { buildBrandMarkIndex } from "@/lib/brandMarks";
 import { getBrandCategoryForProfile } from "@/lib/brandCategories";
 import { productCover, productModels } from "@/lib/products";
-import { findParentProfile } from "@/lib/brandProfileView";
+import { findParentProfile, sameCorporateGroup } from "@/lib/brandProfileView";
 import "../../styles/brand-profile.css";
 import "../../styles/page-zones.css";
 
@@ -138,6 +138,11 @@ export default async function BrandPage({ params }: PageProps) {
   // Competitors: logo, category and the comparison article when one covers both companies.
   const competitors: BrandCompetitorCard[] = profile.competitivePosition.competitorSlugs
     .filter((competitorSlug) => publishedSlugs.has(competitorSlug))
+    // A brand in the same corporate group is a sister brand, not a competitor; the ownership section covers it.
+    .filter((competitorSlug) => {
+      const competitor = profiles.find((item) => item.slug === competitorSlug);
+      return !competitor || !sameCorporateGroup(profile, competitor);
+    })
     .slice(0, 4)
     .map((competitorSlug) => {
       const mark = markIndex.get(competitorSlug)!;

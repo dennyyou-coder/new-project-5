@@ -12,7 +12,7 @@
     "test:analytics": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/googleAnalytics.test.mjs",
     "test:lead": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/leadTracking.test.mjs tests/tallyTransport.test.cjs",
     "test:blog": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/blogConversion.test.mjs tests/articleTemplate.test.mjs",
-    "test:brands": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/brandIntelligence.test.mjs tests/brandExperience.test.mjs tests/brandDirectory.test.mjs",
+    "test:brands": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/brandIntelligence.test.mjs tests/brandExperience.test.mjs tests/brandDirectory.test.mjs tests/brandCompetitors.test.mjs",
     "test:equipment": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/equipmentIntelligence.test.mjs tests/equipmentExperience.test.mjs",
     "test:components": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/componentIntelligence.test.mjs tests/componentExperience.test.mjs tests/componentLinks.test.mjs",
     "test:homepage": "node --test tests/homepageStructure.test.mjs",
