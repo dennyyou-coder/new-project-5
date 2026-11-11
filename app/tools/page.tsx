@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import Link from "next/link";
 import { WCB_TOOLS, WCB_TRACKERS } from "@/lib/tools/catalog";
 import "../styles/tools.css";
@@ -49,6 +50,7 @@ export default function ToolsPage() {
           </div>
         </div>
       </section>
+      <CollectionSchema name="Tools and trackers" description="Free calculators, checklists and trackers for appliance, cleaning and power tool companies." path="/tools" items={[...WCB_TOOLS, ...WCB_TRACKERS].map((item) => ({ name: item.title, url: item.href }))} />
     </div>
   );
 }

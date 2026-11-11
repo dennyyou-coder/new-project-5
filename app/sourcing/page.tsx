@@ -4,6 +4,7 @@ import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { SourcingOpportunityCard } from "@/components/SourcingOpportunityCard";
 import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
+import { CollectionSchema } from "@/components/seo/CollectionSchema";
 
 export const metadata: Metadata = {
   title: "Cleaning Product Sourcing",
@@ -123,6 +124,7 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-faq"><div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Before you start</p><h2>Frequently asked questions</h2></div><div className="sourcing-opportunity-faq-list">{faqs.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></div></section>
+      <CollectionSchema name="China sourcing for cleaning products" description="Product directions and sourcing support for robotic, floor care, vacuum, commercial and outdoor cleaning products." path="/sourcing" items={SOURCING_CATEGORIES.map((item) => ({ name: item.title, url: item.href }))} />
     </div>
   );
 }

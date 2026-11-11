@@ -23,7 +23,7 @@
     "test:guides": "node --test tests/guidesExperience.test.mjs",
     "test:ui": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/uiKit.test.mjs",
     "test:categories": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/hubCategories.test.mjs",
-    "test:seo-audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/seoPerformanceAudit.test.mjs",
+    "test:seo-audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/seoPerformanceAudit.test.mjs tests/collectionSchema.test.mjs",
     "test:asset-performance": "node --test tests/assetPerformanceAudit.test.mjs",
     "verify:asset-budgets": "node scripts/verify-built-asset-budgets.mjs",
     "prepare:article-images": "node scripts/prepare-article-images.mjs",

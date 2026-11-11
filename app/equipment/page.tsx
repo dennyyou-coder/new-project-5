@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import { CatalogGroupedGrid } from "@/components/ui/CatalogGroupedGrid";
 import { EQUIPMENT_GROUPS, groupCatalog } from "@/lib/catalogGroups";
 import "../styles/catalog-groups.css";
@@ -49,6 +50,7 @@ export default function EquipmentDirectoryPage() {
           )}
         </div>
       </section>
+      <CollectionSchema name="Cleaning Equipment Technical Intelligence" description="Evidence-backed technical profiles for commercial cleaning equipment, systems, specifications, components and buyer verification." path="/equipment" items={profiles.map((profile) => ({ name: profile.name, url: `/equipment/${profile.slug}` }))} />
     </div>
   );
 }

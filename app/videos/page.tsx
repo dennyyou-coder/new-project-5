@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import { buildWebsiteMetadata } from "@/lib/seo";
 import { HomeVideos } from "@/components/HomeVideos";
 import "../styles/approved-platform.css";
 import Link from "next/link";
 import { getInsights } from "@/lib/content";
 import { responsiveImageProps } from "@/lib/articleImages";
+import { videoLibrary } from "@/lib/wcbVideos";
 export const metadata: Metadata = buildWebsiteMetadata({
   title: "Cleaning Industry Videos | World Clean Biz",
   description:
@@ -33,6 +35,7 @@ export default function VideosPage() {
           })}</div>
         </div>
       </section>
+      <CollectionSchema name="Cleaning Industry Videos" description="Company stories, product strategy and cleaning industry analysis with Denny You." path="/videos" items={videoLibrary.map((video) => ({ name: video.title, url: `https://www.youtube.com/watch?v=${video.videoId}` }))} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import Link from "next/link";
 import { getTopics, topicDate } from "@/lib/topics";
 
@@ -36,6 +37,7 @@ export default function TopicsPage() {
           ))}
         </ul>
       </div>
+      <CollectionSchema name="Topics" description="Running files on the trade and regulatory stories reshaping the cleaning appliance industry." path="/topics" items={topics.map((topic) => ({ name: topic.title, url: `/topics/${topic.slug}` }))} />
     </div>
   );
 }
