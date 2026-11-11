@@ -1,11 +1,11 @@
 /* /brands directory */
 .company-directory-page {
-  --cd-ink: #0e1526;
+  --cd-ink: #0B2140;
   --cd-text: #2a3245;
   --cd-muted: #4a5367;
   --cd-line: #e3e7ee;
   --cd-soft: #f5f7fa;
-  --cd-link: #2b50c8;
+  --cd-link: #1F57E0;
   color: var(--cd-text);
 }
 
@@ -333,7 +333,7 @@
   border-radius: 7px;
   font-size: 11px;
   font-weight: 800;
-  color: #163b67;
+  color: #14345C;
 }
 .company-owner-mark img {
   max-width: 82%;

@@ -467,7 +467,7 @@
    variable differs between page families. */
 html body.structure-refresh .site-shell .wcb-more,
 html body.structure-refresh .site-shell .wcb-more-label {
-  color: #245cc4;
+  color: #1F57E0;
   font-weight: 700;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
@@ -478,7 +478,7 @@ html body.structure-refresh .site-shell .wcb-more {
 }
 html body.structure-refresh .site-shell a.wcb-more:hover,
 html body.structure-refresh .site-shell a:hover .wcb-more-label {
-  color: #1c4a9d;
+  color: #123C9E;
   text-decoration-thickness: 2px;
 }
 html body.structure-refresh .site-shell .wcb-more:focus-visible {

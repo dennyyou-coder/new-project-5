@@ -1,13 +1,13 @@
 /* Category hubs: /categories and /categories/[slug] */
 .hub-page {
-  --hub-ink: #0e1526;
+  --hub-ink: #0B2140;
   --hub-text: #2a3245;
   --hub-muted: #4a5367;
   --hub-subtle: #5a6378;
   --hub-line: #e3e7ee;
   --hub-soft: #f5f7fa;
-  --hub-link: #2b50c8;
-  --hub-color: #2b50c8;
+  --hub-link: #1F57E0;
+  --hub-color: #1F57E0;
   color: var(--hub-text);
   background: #ffffff;
 }

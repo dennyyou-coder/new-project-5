@@ -100,18 +100,18 @@
 #denny-about .media-feature>img{object-fit:contain;background:#e8eef2}
 /* PR-16: platform first, then the founder */
 #denny-about .about-platform{background:#f5f7fa;border-bottom:1px solid #e3e7ee;padding:48px 0 40px}
-#denny-about .about-platform h1{font-size:48px;line-height:1.1;max-width:900px;color:#0e1526;margin-bottom:16px}
+#denny-about .about-platform h1{font-size:48px;line-height:1.1;max-width:900px;color:#0B2140;margin-bottom:16px}
 #denny-about .about-platform-lead{max-width:720px;font-size:18px}
 #denny-about .about-platform-counts{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:4px 28px}
 #denny-about .about-platform-counts a{display:inline-flex;align-items:baseline;gap:6px;min-height:44px;align-items:center;font-size:15px;color:#4a5367}
-#denny-about .about-platform-counts strong{font-size:24px;font-weight:800;color:#0e1526}
+#denny-about .about-platform-counts strong{font-size:24px;font-weight:800;color:#0B2140}
 #denny-about .about-platform-what{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
 #denny-about .about-platform-what a{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #e3e7ee;border-radius:12px;background:#fff}
-#denny-about .about-platform-what strong{font-size:17px;color:#0e1526}
+#denny-about .about-platform-what strong{font-size:17px;color:#0B2140}
 #denny-about .about-platform-what span{font-size:15px;line-height:1.5;color:#4a5367}
 #denny-about .about-platform-what a:hover strong{color:#245cca}
 #denny-about .about-how{padding:44px 0}
-#denny-about .about-how h2{font-size:32px;margin-bottom:14px;color:#0e1526}
+#denny-about .about-how h2{font-size:32px;margin-bottom:14px;color:#0B2140}
 #denny-about .about-how ul{margin:0;padding-left:22px;max-width:860px}
 #denny-about .about-how li{margin:8px 0;line-height:1.6}
 #denny-about .about-how li a{color:#245cc3;text-decoration:underline;text-underline-offset:4px}

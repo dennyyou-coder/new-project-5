@@ -434,7 +434,7 @@ button.contact-help-card {
 
 .contact-response-copy {
   align-content: center;
-  background: #163b67;
+  background: #14345C;
   display: grid;
   padding: clamp(34px, 5vw, 68px);
 }

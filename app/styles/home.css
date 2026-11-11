@@ -4,9 +4,9 @@
 .home-v9 {
   --v9-navy: #082a52;
   --v9-deep: #061a34;
-  --v9-blue: #2f6bff;
+  --v9-blue: #1F57E0;
   --v9-sky: #82bbff;
-  --v9-text: #163b67;
+  --v9-text: #14345C;
   --v9-muted: #5b7087;
   --v9-line: #dbe7f5;
   --v9-soft: #f5f9fe;
@@ -292,7 +292,7 @@
 }
 
 .home-v9-expo-campaign-mark span {
-  color: #2f6bff;
+  color: #1F57E0;
   font-size: 0.78rem;
   font-weight: 850;
   letter-spacing: 0.18em;
@@ -300,7 +300,7 @@
 
 .home-v9-expo-campaign-copy > p {
   margin: 0 0 6px;
-  color: #2f6bff;
+  color: #1F57E0;
   font-size: 0.74rem;
   font-weight: 850;
   letter-spacing: 0.1em;
@@ -577,7 +577,7 @@
 }
 
 .home-v9 .home-v9-expo-campaign-copy > p {
-  color: #2f6bff;
+  color: #1F57E0;
 }
 
 .home-v9 .home-v9-expo-campaign-copy > div {
@@ -682,7 +682,7 @@
 .home-v9-product-entry { display: flex; flex-direction: column; border: 1px solid #c6d9f3; border-top: 3px solid var(--v9-blue); border-radius: 12px; background: #f0f6ff; box-shadow: 0 6px 18px rgba(8,42,82,.05); overflow: hidden; }
 .home-v9-product-entry > a { border: 0; border-radius: 0; box-shadow: none; }
 .home-v9-product-entry > a:first-child { flex: 1; padding-top: 24px; }
-.home-v9-product-entry > .home-v9-sourcing-entry { margin: 0 26px 20px; padding: 14px 0 0; border-top: 1px solid #c6d9f3; color: #245cc4; font-size: 12px; font-weight: 700; background: transparent; }
+.home-v9-product-entry > .home-v9-sourcing-entry { margin: 0 26px 20px; padding: 14px 0 0; border-top: 1px solid #c6d9f3; color: #1F57E0; font-size: 12px; font-weight: 700; background: transparent; }
 .home-v9-product-entry > a:focus-visible { outline-offset: -4px; }
 
 /* Homepage videos: posters first; only the selected player is mounted. */
@@ -705,7 +705,7 @@
 .home-video-copy { padding: 20px; }
 .home-video-copy h3 { margin-bottom: 10px; color: var(--v9-navy); font-size: 20px; line-height: 1.3; letter-spacing: -.02em; }
 .home-video-copy p { margin-bottom: 16px; color: var(--v9-muted); font-size: 14px; line-height: 1.6; }
-.home-video-copy a { color: #245cc4; font-size: 13px; font-weight: 700; }
+.home-video-copy a { color: #1F57E0; font-size: 13px; font-weight: 700; }
 .home-video-copy a:focus-visible, .home-videos-header > a:focus-visible { outline: 3px solid var(--v9-blue); outline-offset: 4px; }
 .home-v9 .home-videos-language { margin: 16px 0 0; color: var(--v9-muted); font-size: 12px; line-height: 1.5; }
 @media (max-width: 720px) {

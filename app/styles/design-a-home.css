@@ -1,13 +1,13 @@
 /* Confirmed Figma A homepage with the approved mist-blue module refinements. */
 .structure-refresh.design-a .site-shell .home-editorial {
-  --v9-navy: #202b35;
-  --v9-deep: #202b35;
-  --v9-blue: #1762c4;
-  --v9-muted: #526471;
+  --v9-navy: #0B2140;
+  --v9-deep: #0B2140;
+  --v9-blue: #1F57E0;
+  --v9-muted: #52677D;
   --v9-line: #c5d6e4;
   --v9-soft: #e3ecf3;
   --cta-border: #adc6da;
-  color: #202b35;
+  color: #0B2140;
   background: #fff;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.container, .home-v9-container) {
@@ -16,7 +16,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.eyebrow, .home-v9-eyebrow, .home-v9-series-label),
 .structure-refresh.design-a .home-videos .home-v9-eyebrow {
-  color: #1762c4;
+  color: #1F57E0;
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
   font-size: 10px;
   font-weight: 600;
@@ -30,9 +30,9 @@
   justify-content: center;
   min-height: 52px;
   padding: 13px 23px;
-  border: 1px solid #1762c4;
+  border: 1px solid #1F57E0;
   border-radius: 6px;
-  background: #1762c4;
+  background: #1F57E0;
   box-shadow: none;
   color: #fff;
   font-size: 13px;
@@ -43,20 +43,20 @@
 .structure-refresh.design-a .site-shell .home-editorial :is(.button-secondary, .editorial-hero-secondary, .home-v9-series-actions a + a) {
   border-color: #adc6da;
   background: #fff;
-  color: #202b35;
+  color: #0B2140;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.button, .home-v9-series-actions a:first-child):hover {
-  border-color: #1255aa;
-  background: #1255aa;
+  border-color: #123C9E;
+  background: #123C9E;
   color: #fff;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.button-secondary, .editorial-hero-secondary, .home-v9-series-actions a + a):hover {
-  border-color: #1762c4;
+  border-color: #1F57E0;
   background: #f3f7fa;
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(a, button):focus-visible {
-  outline: 3px solid #1762c4;
+  outline: 3px solid #1F57E0;
   outline-offset: 5px;
 }
 /* Browsing and secondary actions stay recognizable without repeating button boxes. */
@@ -72,7 +72,7 @@
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #1762c4;
+  color: #1F57E0;
   box-shadow: none;
   font-size: 13px;
   font-weight: 600;
@@ -117,7 +117,7 @@
 .structure-refresh.design-a .site-shell .home-videos .home-video-copy a.youtube-action:hover { background: transparent; color: #8f0000; text-decoration-thickness: 2px; }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero {
   background: #e3ecf3;
-  color: #202b35;
+  color: #0B2140;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero::before {
   content: none;
@@ -136,14 +136,14 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero .eyebrow {
   margin: 0 0 28px;
-  color: #1762c4;
+  color: #1F57E0;
   font-size: 10px;
   letter-spacing: .08em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero h1 {
   max-width: 540px;
   margin: 0 0 24px;
-  color: #202b35;
+  color: #0B2140;
   font-size: clamp(46px, 4.45vw, 64px);
   font-weight: 700;
   line-height: 1.09;
@@ -151,14 +151,14 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-lead {
   margin: 0 0 20px;
-  color: #202b35;
+  color: #0B2140;
   font-size: 21px;
   line-height: 1.5;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-description {
   max-width: 550px;
   margin: 0;
-  color: #526471;
+  color: #52677D;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -191,24 +191,24 @@
   margin: 0;
   border: 0;
   padding: 24px;
-  color: #202b35;
+  color: #0B2140;
   text-shadow: none;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-caption > span {
-  color: #1762c4;
+  color: #1F57E0;
   font: 600 10px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: .08em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-caption p {
   display: block;
   margin: 8px 0;
-  color: #202b35;
+  color: #0B2140;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.45;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-caption small {
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-foot {
@@ -218,11 +218,11 @@
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-foot > .container {
   border-top: 1px solid #c5d6e4;
   padding-block: 24px 30px;
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero-foot a {
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-journal {
   padding: 56px 0;
@@ -246,7 +246,7 @@
   content: "";
   width: 28px;
   height: 2px;
-  background: #1762c4;
+  background: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial .home-v9-series-media {
   order: 0;
@@ -263,14 +263,14 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .home-v9-series-copy h2 {
   margin: 0;
-  color: #202b35;
+  color: #0B2140;
   font-size: 34px;
   line-height: 1.25;
   letter-spacing: -.035em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .home-v9-series-copy h3 {
   margin: 18px 0 0;
-  color: #1762c4;
+  color: #1F57E0;
   font-size: 17px;
   font-weight: 600;
   line-height: 1.5;
@@ -278,7 +278,7 @@
 .structure-refresh.design-a .site-shell .home-editorial .home-v9-series-excerpt {
   max-width: none;
   margin: 16px 0 0;
-  color: #526471;
+  color: #52677D;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -311,7 +311,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.refresh-section-head h2, .home-videos-header h2) {
   margin: 8px 0 0;
-  color: #202b35;
+  color: #0B2140;
   font-size: 36px;
   line-height: 1.22;
   letter-spacing: -.032em;
@@ -323,7 +323,7 @@
   font-size: 13px;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.refresh-section-head > a:not(.button), .home-videos-header > a:not(.button), .refresh-card-link) {
-  color: #1762c4;
+  color: #1F57E0;
   font-size: 14px;
   font-weight: 700;
 }
@@ -338,19 +338,19 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-featured h3 {
   margin: 10px 0 17px;
-  color: #202b35;
+  color: #0B2140;
   font-size: 29px;
   line-height: 1.28;
   letter-spacing: -.025em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-featured p {
   margin: 0 0 18px;
-  color: #526471;
+  color: #52677D;
   font-size: 15px;
   line-height: 1.7;
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-meta {
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -363,7 +363,7 @@
   margin: 0 0 15px;
   padding: 2px 0 0;
   border: 0;
-  color: #1762c4;
+  color: #1F57E0;
   font: 600 10px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: .08em;
 }
@@ -418,7 +418,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-news-copy h3 {
   margin: 7px 0 9px;
-  color: #202b35;
+  color: #0B2140;
   font-size: 17px;
   font-weight: 600;
   line-height: 1.4;
@@ -426,7 +426,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-news-copy p {
   margin: 0 0 10px;
-  color: #526471;
+  color: #52677D;
   font-size: 13px;
   line-height: 1.6;
 }
@@ -435,7 +435,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo {
   background: #fff;
-  color: #202b35;
+  color: #0B2140;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .refresh-expo {
   grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
@@ -449,16 +449,16 @@
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo h2 {
   max-width: 550px;
   margin: 0 0 24px;
-  color: #202b35;
+  color: #0B2140;
   font-size: 44px;
   line-height: 1.18;
   letter-spacing: -.035em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .eyebrow {
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo p:not(.eyebrow) {
-  color: #526471;
+  color: #52677D;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .refresh-expo-date {
   margin-block: 24px;
@@ -470,7 +470,7 @@
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .refresh-expo-date strong {
   display: inline-block;
   margin-bottom: 8px;
-  color: #1762c4;
+  color: #1F57E0;
   font-size: 24px;
   line-height: 1.4;
 }
@@ -480,7 +480,7 @@
   margin: 24px 0;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .refresh-card-link {
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-analysis-grid {
   gap: 24px;
@@ -501,19 +501,19 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-analysis-card h3 {
   margin: 12px 0;
-  color: #202b35;
+  color: #0B2140;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: -.025em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-analysis-card p {
   margin: 0;
-  color: #526471;
+  color: #52677D;
   font-size: 15px;
   line-height: 1.7;
 }
 .structure-refresh.design-a .home-videos .home-videos-intro {
-  color: #526471;
+  color: #52677D;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -535,29 +535,29 @@
   height: 52px;
   border-color: #ffffffd9;
   border-radius: 50%;
-  background: #1762c4;
+  background: #1F57E0;
 }
 .structure-refresh.design-a .home-videos .home-video-copy {
   padding: 20px 0 0;
 }
 .structure-refresh.design-a .home-videos .home-video-copy h3 {
-  color: #202b35;
+  color: #0B2140;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: -.025em;
 }
 .structure-refresh.design-a .home-videos .home-video-copy p {
-  color: #526471;
+  color: #52677D;
   font-size: 15px;
   line-height: 1.7;
 }
 .structure-refresh.design-a .home-videos .home-video-copy a {
-  color: #1762c4;
+  color: #1F57E0;
   font-size: 14px;
 }
 .structure-refresh.design-a .home-videos .home-videos-language {
   margin-top: 24px;
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-founder-grid {
@@ -577,7 +577,7 @@
   position: static;
   padding: 14px 0 0;
   background: transparent;
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.6;
@@ -590,13 +590,13 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-founder h2 {
   margin-bottom: 24px;
-  color: #202b35;
+  color: #0B2140;
   font-size: 36px;
   line-height: 1.22;
   letter-spacing: -.03em;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-founder-copy > p:not(.eyebrow) {
-  color: #526471;
+  color: #52677D;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -607,11 +607,11 @@
   margin-block: 28px;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-founder-facts strong {
-  color: #1762c4;
+  color: #1F57E0;
   font-size: 20px;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-founder-facts span {
-  color: #526471;
+  color: #52677D;
   font-size: 13px;
   line-height: 1.6;
 }
@@ -620,7 +620,7 @@
   font-size: 13px;
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-founder-actions > a:not(.button) {
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-business-grid {
   gap: 24px;
@@ -652,7 +652,7 @@
   border: 1px solid #1762c40f;
   border-radius: 10px;
   background: #e2eef8;
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .business-service-icon svg {
   display: block;
@@ -664,7 +664,7 @@
   stroke: none;
 }
 .structure-refresh.design-a .business-service-icon .play {
-  fill: #1762c4;
+  fill: #1F57E0;
   stroke-width: 1.5;
 }
 .structure-refresh.design-a .business-service-number {
@@ -675,7 +675,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-business-card h3 {
   margin: 0 0 12px;
-  color: #202b35;
+  color: #0B2140;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.35;
@@ -683,7 +683,7 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-business-card p {
   margin: 0 0 24px;
-  color: #526471;
+  color: #52677D;
   font-size: 15px;
   line-height: 1.7;
 }

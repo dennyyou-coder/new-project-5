@@ -533,7 +533,7 @@
   padding: 20px 22px;
   background: #f6faff;
   border: 1px solid #d8e5f3;
-  border-left: 4px solid #2f6bff;
+  border-left: 4px solid #1F57E0;
   border-radius: 14px;
 }
 .structure-refresh .article-reading-experience .article-company-card__head {
@@ -563,7 +563,7 @@
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #2f6bff;
+  color: #1F57E0;
 }
 .structure-refresh .article-reading-experience .article-company-card h2 {
   margin: 2px 0 0;
@@ -575,7 +575,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
-  color: #163b67;
+  color: #14345C;
 }
 .structure-refresh .article-reading-experience .article-company-card__facts {
   display: grid;
@@ -601,7 +601,7 @@
   height: 30px;
   border-radius: 8px;
   background: #e6eeff;
-  color: #2f6bff;
+  color: #1F57E0;
 }
 .structure-refresh .article-reading-experience .article-company-card__icon .ui-icon {
   width: 16px;
@@ -619,14 +619,14 @@
   font-size: 13.5px;
   font-weight: 700;
   line-height: 1.4;
-  color: #163b67;
+  color: #14345C;
   overflow-wrap: anywhere;
 }
 .structure-refresh .article-reading-experience .article-company-card__link {
   justify-self: start;
   font-size: 14px;
   font-weight: 800;
-  color: #245cc4;
+  color: #1F57E0;
   text-decoration: none;
 }
 @media (max-width: 640px) {

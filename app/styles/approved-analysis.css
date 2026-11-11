@@ -8,7 +8,7 @@ body.structure-refresh.design-a .approved-analysis .content-directory-company-in
   box-shadow: none;
 }
 body.structure-refresh.design-a .approved-analysis .content-directory-company-index h2 {
-  color: #232C35;
+  color: #0B2140;
   font-size: 20px;
   line-height: 1.35;
   margin: 0 0 18px;
@@ -30,7 +30,7 @@ body.structure-refresh.design-a .approved-analysis .content-directory-company-in
   border: 1px solid #D6DFE7;
   border-radius: 4px;
   background: #fff;
-  color: #52606B;
+  color: #52677D;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.4;
@@ -38,12 +38,12 @@ body.structure-refresh.design-a .approved-analysis .content-directory-company-in
   overflow-wrap: anywhere;
 }
 body.structure-refresh.design-a .approved-analysis .content-directory-company-index .content-directory-keywords a:is(:hover,.active) {
-  border-color: #245CC4;
-  background: #245CC4;
+  border-color: #1F57E0;
+  background: #1F57E0;
   color: #fff;
 }
 body.structure-refresh.design-a .approved-analysis .content-directory-keywords a:focus-visible {
-  outline: 3px solid #245CC4;
+  outline: 3px solid #1F57E0;
   outline-offset: 3px;
 }
 @media (max-width: 900px) {

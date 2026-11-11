@@ -1,5 +1,5 @@
 /* Site search (/search) */
-.search-page { --s-ink: #0e1526; --s-text: #2a3245; --s-muted: #4a5367; --s-line: #e3e7ee; --s-soft: #f5f7fa; --s-accent: #2b50c8; color: var(--s-text); }
+.search-page { --s-ink: #0B2140; --s-text: #2a3245; --s-muted: #4a5367; --s-line: #e3e7ee; --s-soft: #f5f7fa; --s-accent: #1F57E0; color: var(--s-text); }
 .search-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; }
 .search-hero { padding: 28px 0 24px; background: var(--s-soft); border-bottom: 1px solid var(--s-line); }
 .search-hero h1 { margin: 0 0 14px; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.15; letter-spacing: -0.02em; color: var(--s-ink); overflow-wrap: anywhere; }

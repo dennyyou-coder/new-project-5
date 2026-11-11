@@ -1,11 +1,11 @@
 /* /markets */
 .markets-page {
-  --mk-ink: #0e1526;
+  --mk-ink: #0B2140;
   --mk-text: #2a3245;
   --mk-muted: #4a5367;
   --mk-line: #e3e7ee;
   --mk-soft: #f5f7fa;
-  --mk-link: #2b50c8;
+  --mk-link: #1F57E0;
   color: var(--mk-text);
 }
 .markets-page a { color: var(--mk-link); text-decoration: none; }

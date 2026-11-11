@@ -2,7 +2,7 @@
 .share-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 16px; }
 .share-bar-label { margin-right: 4px; color: #4a5367; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
 .share-bar-button { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 1px solid #d5dbe5; border-radius: 50%; background: #fff; color: #2a3245; cursor: pointer; text-decoration: none; transition: border-color 0.15s ease, color 0.15s ease; }
-.share-bar-button:hover { border-color: #2b50c8; color: #2b50c8; }
+.share-bar-button:hover { border-color: #1F57E0; color: #1F57E0; }
 .share-bar-button svg { width: 15px; height: 15px; }
 .share-bar-native { display: none; }
 .share-bar-status { margin-left: 6px; font-size: 13px; color: #1f7a45; }
