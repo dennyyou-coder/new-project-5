@@ -30,7 +30,7 @@ test("home order: hero, news, WCB Expo, radar, From Denny, directory, business, 
   assert.match(home, /action="\/search"/);
   assert.match(home, /getTopics\(\)/);
   assert.match(home, /\{expoUpcoming \? \(\s*<section className="ha-expo"/);
-  const body = home.slice(home.indexOf("  return (\n    <div className={`home-a"));
+  const body = home.slice(home.indexOf("  return (\n    <div className=\"home-a\">"));
   const order = [
     'id="home-title"',
     'id="home-feed-title"',

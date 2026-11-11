@@ -15,6 +15,7 @@ import "./styles/page-hero.css";
 import "./styles/lead-forms.css";
 import "./styles/share.css";
 import "./styles/compact-heroes.css";
+import { archivo, plexMono } from "./fonts-a";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
@@ -93,7 +94,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`structure-refresh design-a approved-design ${manrope.variable}`}>
+      <body className={`structure-refresh design-a approved-design ${manrope.variable} ${archivo.variable} ${plexMono.variable}`}>
         <link rel="alternate" type="application/rss+xml" title="World Clean Biz" href="/rss.xml" />
         <a className="skip-link" href="#main-content">
           Skip to content

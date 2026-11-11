@@ -149,19 +149,19 @@
 .news-page .news-category-filters a { gap: 6px; font-size: 13px; font-weight: 650; }
 .news-page .news-category-dot { width: 8px; height: 8px; border-radius: 50%; }
 .news-page .news-row-figure { aspect-ratio: 4 / 3; border: 1px solid var(--line); background: #fff; }
-.news-key-thumb { display: flex; flex-direction: column; justify-content: center; gap: 2px; height: 100%; padding: 0 16px; box-sizing: border-box; color: #0e1526; }
+.news-key-thumb { display: flex; flex-direction: column; justify-content: center; gap: 2px; height: 100%; padding: 0 16px; box-sizing: border-box; color: #0B2140; }
 .news-key-thumb-label { font-size: 11px; font-weight: 700; color: #4a5367; }
 .news-key-thumb-value { font-size: 20px; white-space: nowrap; font-weight: 800; line-height: 1.15; }
 .news-key-figures { margin: 24px 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 .news-key-figures-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; padding: 14px 18px; background: var(--soft); border-bottom: 1px solid var(--line); }
-.news-key-figures-head h2 { margin: 0; font-size: 16px; font-weight: 800; color: #0e1526; }
+.news-key-figures-head h2 { margin: 0; font-size: 16px; font-weight: 800; color: #0B2140; }
 .news-key-figures-head span { font-size: 12px; color: var(--muted); }
 .news-key-figures dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); margin: 0; }
 .news-key-figures dl > div { padding: 16px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 0 -1px -1px 0; }
 .news-key-figures dt { display: flex; flex-direction: column; gap: 2px; font-size: 13px; font-weight: 650; color: #2a3245; }
 .news-key-figures dt span { font-size: 12px; font-weight: 500; color: var(--muted); }
 .news-key-figures dd { display: flex; flex-direction: column; gap: 2px; margin: 8px 0 0; }
-.news-key-figures dd strong { font-size: 22px; font-weight: 800; line-height: 1.2; color: #0e1526; }
+.news-key-figures dd strong { font-size: 22px; font-weight: 800; line-height: 1.2; color: #0B2140; }
 .news-key-figures dd span { font-size: 13px; font-weight: 650; color: #2a3245; }
 
 /* Company logos in news lists and key-figure thumbs */

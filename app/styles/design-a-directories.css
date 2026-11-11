@@ -1,24 +1,24 @@
 /* Design A — directory and collection pages only. Detail templates are excluded. */
 .structure-refresh.design-a :is(.news-page:has(> .news-intro), .blog-home-intro, .blog-home-main, .blog-series-page, .content-directory, .refresh-videos, .brand-hub:not(.brand-detail), .products-page:not(.product-detail), .reports-library-page, .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) {
   --dir-canvas: #e3ecf3;
-  --dir-ink: #202b35;
-  --dir-muted: #526471;
-  --dir-blue: #1762c4;
+  --dir-ink: #0B2140;
+  --dir-muted: #52677D;
+  --dir-blue: #1F57E0;
   --dir-line: #cbd8e2;
   --dir-soft: #f3f7fa;
-  --rl-ink: #202b35;
-  --rl-blue: #1762c4;
-  --rl-muted: #526471;
+  --rl-ink: #0B2140;
+  --rl-blue: #1F57E0;
+  --rl-muted: #52677D;
   --rl-line: #cbd8e2;
-  --product-ink: #202b35;
-  --product-blue: #1762c4;
-  --equipment-ink: #202b35;
-  --equipment-muted: #526471;
-  --equipment-accent: #1762c4;
+  --product-ink: #0B2140;
+  --product-blue: #1F57E0;
+  --equipment-ink: #0B2140;
+  --equipment-muted: #52677D;
+  --equipment-accent: #1F57E0;
   --equipment-soft: #f3f7fa;
-  --component-ink: #202b35;
-  --component-muted: #526471;
-  --component-accent: #1762c4;
+  --component-ink: #0B2140;
+  --component-muted: #52677D;
+  --component-accent: #1F57E0;
   --component-soft: #f3f7fa;
   background: var(--dir-canvas);
   color: var(--dir-ink);
@@ -45,7 +45,7 @@
 .structure-refresh.design-a :is(.blog-home-intro, .blog-series-page-hero, .content-directory-hero, .product-library-hero, .reports-library-hero),
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) > .guides-hero {
   padding: 42px 0 36px;
-  color: #202b35;
+  color: #0B2140;
   background: #e3ecf3;
   border-bottom: 1px solid #cbd8e2;
 }
@@ -53,7 +53,7 @@
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) > .guides-hero h1 {
   max-width: 980px;
   margin: 8px 0 16px;
-  color: #202b35;
+  color: #0B2140;
   font-size: clamp(32px, 3.6vw, 46px);
   line-height: 1.16;
   letter-spacing: -.035em;
@@ -62,7 +62,7 @@
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) .guides-hero p:not(.eyebrow) {
   max-width: 880px;
   margin: 0;
-  color: #526471;
+  color: #52677D;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -76,21 +76,21 @@
   border: 1px solid #cbd8e2;
   border-radius: 6px;
   background: #fff;
-  color: #526471;
+  color: #52677D;
   box-shadow: none;
 }
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) .guides-hero-stat strong {
-  color: #202b35;
+  color: #0B2140;
   font-size: 36px;
 }
 .structure-refresh.design-a :is(.brand-hub:not(.brand-detail), .equipment-hub:not(.equipment-detail), .component-intelligence-hub:not(.component-intelligence-detail)) .guides-hero-stat :is(span, a) {
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
   line-height: 1.6;
 }
 .structure-refresh.design-a .brand-hub:not(.brand-detail) .blog-visible-breadcrumb,
 .structure-refresh.design-a .brand-hub:not(.brand-detail) .blog-visible-breadcrumb a {
-  color: #526471;
+  color: #52677D;
   font-size: 12px;
 }
 
@@ -187,12 +187,12 @@
   background: #fff;
 }
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-expo-link:hover {
-  color: #1255aa;
+  color: #123C9E;
   background: #f3f7fa;
-  border-color: #1762c4;
+  border-color: #1F57E0;
 }
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-expo-link:focus-visible {
-  outline: 3px solid #1762c4;
+  outline: 3px solid #1F57E0;
   outline-offset: 4px;
 }
 /* Repeated reading links stay lightweight, with a full touch target. */
@@ -236,8 +236,8 @@
 }
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-filters a[aria-current="page"],
 .structure-refresh.design-a .content-directory .content-directory-filters a.active {
-  background: #1762c4;
-  border-color: #1762c4;
+  background: #1F57E0;
+  border-color: #1F57E0;
   color: #fff;
 }
 .structure-refresh.design-a .content-directory .content-directory-filters {
@@ -249,7 +249,7 @@
   padding: 10px 15px;
   border: 1px solid #cbd8e2;
   border-radius: 5px;
-  color: #526471;
+  color: #52677D;
   background: #fff;
   font-size: 12px;
 }
@@ -338,18 +338,18 @@
   border: 1px solid #adc6da;
   border-radius: 5px;
   background: #fff;
-  color: #1762c4;
+  color: #1F57E0;
 }
 .structure-refresh.design-a .content-directory .content-directory-series-actions a:first-child:hover {
-  border-color: #1762c4;
+  border-color: #1F57E0;
   background: #f3f7fa;
-  color: #1255aa;
+  color: #123C9E;
 }
 .structure-refresh.design-a .content-directory .content-directory-series-actions a + a {
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #1762c4;
+  color: #1F57E0;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .22em;
@@ -367,8 +367,8 @@
 .structure-refresh.design-a .news-page:has(> .news-intro) .news-pagination a[aria-current="page"],
 .structure-refresh.design-a .content-directory .content-directory-pagination strong[aria-current="page"] {
   color: #fff;
-  background: #1762c4;
-  border-color: #1762c4;
+  background: #1F57E0;
+  border-color: #1F57E0;
 }
 .structure-refresh.design-a .content-directory .content-directory-pagination span[aria-disabled] {
   color: #687a89;

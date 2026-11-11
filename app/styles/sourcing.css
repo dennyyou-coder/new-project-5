@@ -728,7 +728,7 @@
   place-items: center;
   border-radius: 50%;
   margin-bottom: 14px;
-  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(135deg, #1F57E0 0%, #6FA8FF 100%);
   color: white;
   font-size: 14px;
   font-weight: 900;
@@ -920,7 +920,7 @@
   right: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(90deg, #1F57E0 0%, #6FA8FF 100%);
   content: "";
 }
 
@@ -1284,7 +1284,7 @@
   right: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(90deg, #1F57E0 0%, #6FA8FF 100%);
   content: "";
 }
 
@@ -2635,7 +2635,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #2f6bff;
+  background: #1F57E0;
   content: "";
   box-shadow: 0 0 0 5px rgba(47, 107, 255, 0.12);
 }
@@ -2665,7 +2665,7 @@
 
 .about-v1-journey-card span {
   display: block;
-  color: #2f6bff;
+  color: #1F57E0;
   font-size: 24px;
   line-height: 1;
   font-weight: 900;
@@ -3531,7 +3531,7 @@
 }
 
 .sourcing-action-cta .button {
-  background: #2f6bff;
+  background: #1F57E0;
   color: #ffffff;
 }
 
@@ -5594,7 +5594,7 @@
 
 .sourcing-v3-cta .sourcing-v3-button {
   min-width: 230px;
-  background: #2f6bff;
+  background: #1F57E0;
 }
 
 @media (max-width: 1100px) {
@@ -8193,7 +8193,7 @@
   min-height: 54px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
-  background: linear-gradient(135deg, #4F8BFF 0%, #2F6BFF 58%, #1F4FD6 100%);
+  background: linear-gradient(135deg, #4F8BFF 0%, #1F57E0 58%, #1F4FD6 100%);
   box-shadow: 0 14px 34px rgba(47, 107, 255, 0.36);
   font-size: 15px;
 }
@@ -10789,7 +10789,7 @@
 
 .sourcing-v4-final button.sourcing-v3-button {
   min-width: 240px;
-  background: #2f6bff;
+  background: #1F57E0;
 }
 
 @media (max-width: 900px) {
@@ -10938,7 +10938,7 @@
 .sourcing-selector-fit dt { font-size: .74rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #5b6f82; }
 .sourcing-selector-fit dd { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; font-size: .92rem; font-weight: 700; color: #0f2747; }
 .sourcing-selector-fit dd i { padding: 4px 10px; font-style: normal; font-size: .8rem; font-weight: 700; color: #8496a8; background: rgba(255,255,255,.55); border: 1px dashed #c3d0dc; border-radius: 999px; }
-.sourcing-selector-fit dd i.is-on { color: #fff; background: #1762c4; border: 1px solid #1762c4; }
+.sourcing-selector-fit dd i.is-on { color: #fff; background: #1F57E0; border: 1px solid #1F57E0; }
 .sourcing-selector-thumbnails strong { margin-top: 0; }
 .sourcing-lawn-page .sourcing-lawn-success-image { aspect-ratio: auto; min-height: 0; background: linear-gradient(135deg, #eef4fa 0%, #dfe9f3 100%); }
 .sourcing-lawn-page .sourcing-lawn-success-image span { position: static; display: inline-block; margin: 18px 20px 14px; padding: 0; background: none; font-size: 1.7rem; line-height: 1; }

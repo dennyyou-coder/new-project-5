@@ -6,14 +6,14 @@
   flex: none;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 6px;
   overflow: hidden;
 }
 .company-mark img { display: block; max-width: 84%; max-height: 62%; object-fit: contain; }
-.company-mark--xs { width: 40px; height: 26px; border-radius: 6px; }
-.company-mark--sm { width: 56px; height: 36px; border-radius: 8px; }
+.company-mark--xs { width: 40px; height: 26px; border-radius: 4px; }
+.company-mark--sm { width: 56px; height: 36px; border-radius: 4px; }
 .company-mark--md { width: 96px; height: 52px; }
-.company-mark--lg { width: 148px; height: 76px; border-radius: 14px; }
+.company-mark--lg { width: 148px; height: 76px; border-radius: 6px; }
 .company-mark--monogram {
   background: var(--soft-blue);
   border-color: var(--soft-blue);
@@ -38,7 +38,7 @@
 .company-mark-name { font-weight: 800; color: var(--navy); }
 .company-mark-caption { font-size: 0.82rem; color: var(--muted); }
 a.company-mark-link:hover .company-mark { border-color: var(--accent); }
-a.company-mark-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 10px; }
+a.company-mark-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
 .category-icon {
   --category-color: var(--accent);
@@ -47,19 +47,19 @@ a.company-mark-link:focus-visible { outline: 2px solid var(--accent); outline-of
   flex: none;
   color: var(--category-color);
   background: color-mix(in srgb, var(--category-color) 12%, #fff);
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .category-icon svg { width: 60%; height: 60%; }
-.category-icon--sm { width: 30px; height: 30px; border-radius: 8px; }
+.category-icon--sm { width: 30px; height: 30px; border-radius: 4px; }
 .category-icon--md { width: 44px; height: 44px; }
-.category-icon--lg { width: 60px; height: 60px; border-radius: 14px; }
+.category-icon--lg { width: 60px; height: 60px; border-radius: 6px; }
 
 .figure-chip {
   display: inline-flex;
   align-items: baseline;
   gap: 4px;
   padding: 3px 8px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 0.78rem;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
@@ -89,7 +89,7 @@ body.structure-refresh.design-a .approved-catalog.products-page .product-company
   flex: none;
   background: #fff;
   border: 1px solid #d8e5f3;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 body.structure-refresh.design-a .approved-catalog.products-page .product-company-logo img {
   object-fit: contain;

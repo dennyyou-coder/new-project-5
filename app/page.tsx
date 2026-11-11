@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import "./styles/home-a.css";
-import { archivo, plexMono } from "./home-fonts";
 import { TallyButton, TallyReportButton } from "@/components/LeadForms";
 import { HomeToolCards } from "@/components/tools/HomeToolCards";
 import { buildBrandMarkIndex, figureDirection, resolveBrandMark, type BrandMark } from "@/lib/brandMarks";
@@ -276,7 +275,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className={`home-a ${archivo.variable} ${plexMono.variable}`}>
+    <div className="home-a">
       {/* Hero: what WCB is, a search box and what it tracks. */}
       <section className="ha-hero" aria-labelledby="home-title">
         <div className="ha-wrap">

@@ -1,5 +1,5 @@
 /* Company rankings (/rankings) */
-.rankings-page { --r-ink: #0e1526; --r-text: #2a3245; --r-muted: #4a5367; --r-line: #e3e7ee; --r-soft: #f5f7fa; --r-accent: #2b50c8; color: var(--r-text); }
+.rankings-page { --r-ink: #0B2140; --r-text: #2a3245; --r-muted: #4a5367; --r-line: #e3e7ee; --r-soft: #f5f7fa; --r-accent: #1F57E0; color: var(--r-text); }
 .rank-container { max-width: 1180px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; }
 .rankings-hero { padding: 32px 0 28px; }
 .rankings-hero p { max-width: 820px; margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: var(--r-muted); }

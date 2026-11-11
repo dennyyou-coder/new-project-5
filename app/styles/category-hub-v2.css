@@ -53,7 +53,7 @@
 .hub-page.ch .ch-model-copy small { font-size: 11.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--hub-subtle); }
 .hub-page.ch .ch-model-copy b, .hub-page.ch .ch-card b { font-size: 15px; line-height: 1.35; color: var(--hub-ink); }
 .hub-page.ch .ch-model-facts { display: grid; gap: 3px; margin-top: 6px; padding-top: 8px; border-top: 1px solid #EDF1F5; }
-.hub-page.ch .ch-model-facts > span { display: flex; justify-content: space-between; gap: 10px; font-size: 12.5px; font-weight: 700; color: #232C35; text-align: right; }
+.hub-page.ch .ch-model-facts > span { display: flex; justify-content: space-between; gap: 10px; font-size: 12.5px; font-weight: 700; color: #0B2140; text-align: right; }
 .hub-page.ch .ch-model-facts i { font-style: normal; font-weight: 500; color: #6B7A86; white-space: nowrap; text-align: left; }
 .hub-page.ch .ch-more { display: grid; place-content: center; gap: 6px; padding: 18px; text-align: center; background: var(--hub-soft); border: 1px dashed #B9C9DA; border-radius: 12px; text-decoration: none; }
 .hub-page.ch .ch-more b { font-size: 15px; color: var(--hub-link); }
@@ -65,10 +65,10 @@
 
 .hub-page.ch .ch-bottom { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: end; }
 .hub-page.ch .ch-bottom .ch-grid3 { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-.hub-page.ch .ch-sourcing { display: grid; gap: 12px; padding: 20px; color: #fff; background: #163B67; border-radius: 14px; text-decoration: none; }
+.hub-page.ch .ch-sourcing { display: grid; gap: 12px; padding: 20px; color: #fff; background: #14345C; border-radius: 14px; text-decoration: none; }
 .hub-page.ch .ch-sourcing b { display: block; font-size: 17px; color: #fff; }
 .hub-page.ch .ch-sourcing span span { display: block; margin-top: 4px; font-size: 14px; line-height: 1.5; color: #C9D8EA; }
-.hub-page.ch .ch-sourcing i { font-style: normal; justify-self: start; padding: 8px 14px; font-size: 14px; font-weight: 800; color: #163B67; background: #fff; border-radius: 8px; }
+.hub-page.ch .ch-sourcing i { font-style: normal; justify-self: start; padding: 8px 14px; font-size: 14px; font-weight: 800; color: #14345C; background: #fff; border-radius: 8px; }
 .hub-page.ch .ch-sourcing:hover { text-decoration: none; background: #1D4A80; }
 
 .hub-page.ch .ch-subscribe { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 24px; background: var(--hub-soft); border: 1px solid var(--hub-line); border-radius: 14px; }

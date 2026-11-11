@@ -1,8 +1,8 @@
 /* Approved A design: mist blue-grey canvas and white reading surfaces. */
 .structure-refresh.design-a {
-  --ink: #202b35;
-  --text: #202b35;
-  --muted: #526471;
+  --ink: #0B2140;
+  --text: #0B2140;
+  --muted: #52677D;
   --line: #c5d6e4;
   --line-strong: #adc6da;
   --soft: #f3f7fa;
@@ -13,17 +13,17 @@
   --accent-soft: #e2eef8;
   --paper: #ffffff;
   --surface: #ffffff;
-  --primary: #1762c4;
-  --accent: #1762c4;
-  --blue: #1762c4;
-  --teal: #1762c4;
-  --orange: #1762c4;
-  --navy: #202b35;
-  --navy-2: #1762c4;
+  --primary: #1F57E0;
+  --accent: #1F57E0;
+  --blue: #1F57E0;
+  --teal: #1F57E0;
+  --orange: #1F57E0;
+  --navy: #0B2140;
+  --navy-2: #1F57E0;
   --teal-soft: #e3ecf3;
   --blue-soft: #e3ecf3;
-  --cta-blue: #1762c4;
-  --cta-hover: #1255aa;
+  --cta-blue: #1F57E0;
+  --cta-hover: #123C9E;
   --cta-border: #adc6da;
   --shadow-soft: 0 4px 16px #20354a06;
   --shadow-lift: 0 8px 24px #20354a0b;
@@ -49,7 +49,7 @@
 .structure-refresh.design-a :is(h3, h4) { letter-spacing: -0.018em; }
 .structure-refresh.design-a :is(p, li, h1, h2, h3, td, th) { overflow-wrap: break-word; }
 .structure-refresh.design-a :is(a, button, input, select, textarea):focus-visible {
-  outline: 3px solid #1762c4;
+  outline: 3px solid #1F57E0;
   outline-offset: 4px;
 }
 .structure-refresh.design-a :is(section[id], h2[id], h3[id], div[id]) { scroll-margin-top: 110px; }
@@ -63,8 +63,8 @@
 }
 .structure-refresh.design-a .site-shell
   :is(.home-editorial, .article-reading-experience, .product-detail, .wcb-expo-page) {
-  --cta-blue: #1762c4;
-  --cta-hover: #1255aa;
+  --cta-blue: #1F57E0;
+  --cta-hover: #123C9E;
   --cta-border: #adc6da;
 }
 .structure-refresh.design-a .site-shell :is(.button, .button-secondary, .product-button) {
@@ -88,8 +88,8 @@
 }
 .structure-refresh.design-a .site-shell :is(.button, .product-button):hover {
   color: #fff;
-  background: #1255aa;
-  border-color: #1255aa;
+  background: #123C9E;
+  border-color: #123C9E;
   transform: none;
 }
 .structure-refresh.design-a .site-shell .button-secondary {
@@ -179,7 +179,7 @@
   font-size: 12px;
   font-weight: 600;
 }
-.structure-refresh.design-a .site-shell .refresh-header .nav .nav-business:hover { background: #1255aa; border-color: #1255aa; }
+.structure-refresh.design-a .site-shell .refresh-header .nav .nav-business:hover { background: #123C9E; border-color: #123C9E; }
 
 /* Footer is an open grid on the approved canvas, without nested panels. */
 .structure-refresh.design-a .refresh-footer {

@@ -1,6 +1,6 @@
 :root {
-  --ink: #163B67;
-  --text: #163B67;
+  --ink: #14345C;
+  --text: #14345C;
   --muted: #52677D;
   --line: #D8E5F3;
   --line-strong: #C9D9EA;
@@ -13,12 +13,12 @@
   --paper: #ffffff;
   --surface: #F6FAFF;
   --primary: var(--accent);
-  --accent: #2F6BFF;
-  --blue: #2F6BFF;
+  --accent: #1F57E0;
+  --blue: #1F57E0;
   --teal: #6FA8FF;
-  --orange: #2F6BFF;
-  --navy: #163B67;
-  --navy-2: #2F6BFF;
+  --orange: #1F57E0;
+  --navy: #14345C;
+  --navy-2: #1F57E0;
   --teal-soft: #DCEBFF;
   --blue-soft: #DCEBFF;
   --shadow-soft: 0 16px 40px rgba(22, 59, 103, 0.08);
@@ -106,7 +106,7 @@ img {
   place-items: center;
   border: 1px solid rgba(216, 229, 243, 0.72);
   border-radius: 10px;
-  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(135deg, #1F57E0 0%, #6FA8FF 100%);
   color: white;
   box-shadow: 0 12px 26px rgba(47, 107, 255, 0.18);
 }
@@ -292,7 +292,7 @@ img {
   justify-content: center;
   border-radius: 8px;
   border: 1px solid rgba(47, 107, 255, 0.28);
-  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(135deg, #1F57E0 0%, #6FA8FF 100%);
   color: white;
   padding: 0 18px;
   font-size: 14px;
@@ -409,7 +409,7 @@ img {
 
 .button {
   border: 1px solid var(--accent);
-  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(135deg, #1F57E0 0%, #6FA8FF 100%);
   color: white;
   box-shadow: 0 12px 28px rgba(47, 107, 255, 0.25);
 }
@@ -481,7 +481,7 @@ img {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #2F6BFF;
+  background: #1F57E0;
   box-shadow:
     -110px 70px 0 rgba(47, 107, 255, 0.44),
     80px 118px 0 rgba(47, 107, 255, 0.36),
@@ -600,7 +600,7 @@ h3 {
   right: 0;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, #2F6BFF, rgba(111, 168, 255, 0.28));
+  background: linear-gradient(90deg, #1F57E0, rgba(111, 168, 255, 0.28));
   content: "";
 }
 
@@ -850,7 +850,7 @@ h3 {
   right: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(90deg, #1F57E0 0%, #6FA8FF 100%);
   content: "";
 }
 
@@ -867,7 +867,7 @@ h3 {
   place-items: center;
   border-radius: 12px;
   margin-bottom: 18px;
-  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(135deg, #1F57E0 0%, #6FA8FF 100%);
   color: white;
   box-shadow: 0 12px 24px rgba(47, 107, 255, 0.22);
   font-weight: 900;
@@ -1229,7 +1229,7 @@ h3 {
   flex: 0 0 auto;
   border-radius: 50%;
   margin-top: 9px;
-  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(135deg, #1F57E0 0%, #6FA8FF 100%);
   content: "";
 }
 
@@ -1251,7 +1251,7 @@ h3 {
   bottom: 0;
   left: 0;
   width: 4px;
-  background: linear-gradient(180deg, #2F6BFF 0%, #6FA8FF 100%);
+  background: linear-gradient(180deg, #1F57E0 0%, #6FA8FF 100%);
   content: "";
 }
 

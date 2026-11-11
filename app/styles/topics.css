@@ -121,7 +121,7 @@
 .topic-chart-track { position: relative; height: 14px; border-radius: 7px; background: #eef1f6; overflow: hidden; }
 .topic-chart-zero { position: absolute; top: 0; bottom: 0; width: 1px; background: #9aa3b5; }
 .topic-chart-seg { position: absolute; top: 0; bottom: 0; }
-.topic-chart-seg.is-0, .topic-chart-swatch.is-0 { background: #2b50c8; }
+.topic-chart-seg.is-0, .topic-chart-swatch.is-0 { background: #1F57E0; }
 .topic-chart-seg.is-1, .topic-chart-swatch.is-1 { background: #c8352b; }
 .topic-chart-seg.is-negative { background: #c8352b; }
 .topic-chart-value { font-weight: 800; font-variant-numeric: tabular-nums; color: var(--ink); }
@@ -152,7 +152,7 @@
 /* Long topics: earlier timeline events and the source list fold. */
 .topic-page .topic-earlier { margin: 0 0 12px; }
 .topic-page .topic-earlier > summary,
-.topic-page .topic-sources details > summary { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 700; color: #245cc4; }
+.topic-page .topic-sources details > summary { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 700; color: #1F57E0; }
 .topic-page .topic-earlier > summary::-webkit-details-marker,
 .topic-page .topic-sources details > summary::-webkit-details-marker { display: none; }
 .topic-page .topic-earlier > summary { padding: 8px 14px; border: 1px solid #d6dfe7; border-radius: 16px; font-size: 14px; }
