@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import "./styles/home-a.css";
 import { TallyButton, TallyReportButton } from "@/components/LeadForms";
 import { HomeToolCards } from "@/components/tools/HomeToolCards";
@@ -91,6 +91,18 @@ function Logo({ mark, className = "" }: { mark: BrandMark | undefined; className
   if (!mark) return null;
   if (!mark.logo) return <span className={`ha-logo ha-logo--name ${className}`}>{mark.name}</span>;
   return <img className={`ha-logo${mark.logoLight ? " ha-logo--light" : ""} ${className}`} src={mark.logo} alt={mark.name} loading="lazy" decoding="async" />;
+}
+
+/** A row that scrolls sideways on a loop. The second copy is only there to close the loop, so it is hidden from screen readers and keyboard. */
+function Marquee({ children, seconds, label }: { children: ReactNode; seconds: number; label: string }) {
+  return (
+    <div className="ha-marquee" role="region" aria-label={label} style={{ "--ha-marquee-seconds": `${seconds}s` } as CSSProperties}>
+      <div className="ha-marquee-track">
+        <div className="ha-marquee-set">{children}</div>
+        <div className="ha-marquee-set" aria-hidden="true" inert>{children}</div>
+      </div>
+    </div>
+  );
 }
 
 function SectionHead({ id, kicker, title, more, children }: { id: string; kicker: string; title: string; more?: { href: string; label: string }; children?: ReactNode }) {
@@ -195,6 +207,8 @@ export default function HomePage() {
       a.name.localeCompare(b.name)
   );
   const topCompanies = byCoverage.slice(0, 12);
+  // The scrolling logo row: the most-covered companies that have a logo.
+  const coveredCompanies = byCoverage.filter((brand) => marks.get(brand.slug)?.logo).slice(0, 20);
   // Caption each company with the hub where it has the most product models, else its first hub.
   const hubOfBrand = new Map<string, string>();
   const productWeight = new Map<string, number>();
@@ -222,7 +236,7 @@ export default function HomePage() {
     .filter((item) => item.category === "Financial Results" || resultsPattern.test(item.title))
     .map((item) => ({ item, mark: resolveBrandMark(marks, item.brandSlugs[0]), figure: item.keyFigures.find((entry) => entry.change) }))
     .filter((entry) => entry.mark && entry.figure)
-    .slice(0, 4);
+    .slice(0, 8);
 
   // This week's news: one lead story with a picture, then a list. The picture is the story's own photo,
   // else an official image of the company it names (credited below), else the story's product shot.
@@ -331,11 +345,13 @@ export default function HomePage() {
 
           <div className="ha-covered">
             <span className="ha-label">Companies covered</span>
-            {topCompanies.slice(0, 10).map((brand) => (
-              <Link key={brand.slug} href={`/brands/${brand.slug}`} className="ha-covered-logo">
-                <Logo mark={marks.get(brand.slug)} />
-              </Link>
-            ))}
+            <Marquee label="Companies covered" seconds={coveredCompanies.length * 3}>
+              {coveredCompanies.map((brand) => (
+                <Link key={brand.slug} href={`/brands/${brand.slug}`} className="ha-covered-logo">
+                  <Logo mark={marks.get(brand.slug)} />
+                </Link>
+              ))}
+            </Marquee>
             <Link className="ha-more" href="/brands">All {brands.length} →</Link>
           </div>
         </div>
@@ -345,18 +361,20 @@ export default function HomePage() {
         <section className="ha-results" aria-label="Latest company results">
           <div className="ha-wrap ha-results-row">
             <span className="ha-label">Latest results</span>
-            {results.map(({ item, mark, figure }) => {
-              const direction = figureDirection(figure!.change);
-              const change = figure!.change!.replace(/\s*(YoY|year[- ]on[- ]year)\b.*$/i, "").replace(/\s*\(.*\)\s*$/, "").trim();
-              return (
-                <Link key={item.slug} href={`/news/${item.slug}`} className="ha-result">
-                  <strong>{mark!.name}</strong> <span className="ha-result-label">{figure!.label}</span>{" "}
-                  <span className={`ha-change ha-change--${direction}`}>
-                    {direction === "flat" ? null : icon(direction === "up" ? ICONS.up : ICONS.down, 13)} {change}
-                  </span>
-                </Link>
-              );
-            })}
+            <Marquee label="Latest results" seconds={results.length * 7}>
+              {results.map(({ item, mark, figure }) => {
+                const direction = figureDirection(figure!.change);
+                const change = figure!.change!.replace(/\s*(YoY|year[- ]on[- ]year)\b.*$/i, "").replace(/\s*\(.*\)\s*$/, "").trim();
+                return (
+                  <Link key={item.slug} href={`/news/${item.slug}`} className="ha-result">
+                    <strong>{mark!.name}</strong> <span className="ha-result-label">{figure!.label}</span>{" "}
+                    <span className={`ha-change ha-change--${direction}`}>
+                      {direction === "flat" ? null : icon(direction === "up" ? ICONS.up : ICONS.down, 13)} {change}
+                    </span>
+                  </Link>
+                );
+              })}
+            </Marquee>
             <Link className="ha-more ha-results-all" href="/markets">All results →</Link>
           </div>
         </section>
