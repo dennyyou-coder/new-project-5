@@ -118,8 +118,8 @@
 #main-content .home-a .ha-change--down { color: #A63A12; }
 #main-content .home-a .ha-results-all { margin-left: auto; }
 
-/* Scrolling rows (logos, results): label and "All" link stay put, the middle loops. */
-#main-content .home-a .ha-covered > .ha-label, #main-content .home-a .ha-results-row > .ha-label, #main-content .home-a .ha-covered > .ha-more, #main-content .home-a .ha-results-row > .ha-more { flex: none; }
+/* Scrolling rows (logos, results): the row loops, the "All" link stays put. */
+#main-content .home-a .ha-covered > .ha-more, #main-content .home-a .ha-results-row > .ha-more { flex: none; }
 #main-content .home-a .ha-marquee { flex: 1 1 auto; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent); mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent); }
 #main-content .home-a .ha-marquee-track { display: flex; width: max-content; animation: ha-marquee var(--ha-marquee-seconds, 40s) linear infinite; }
 #main-content .home-a .ha-marquee:hover .ha-marquee-track, #main-content .home-a .ha-marquee:focus-within .ha-marquee-track { animation-play-state: paused; }
@@ -329,9 +329,5 @@
   #main-content .home-a .ha-track { padding: 14px 14px; }
   #main-content .home-a .ha-track .ha-icon-tile { display: none; }
   #main-content .home-a .ha-expo-stats > div { padding: 12px 8px; }
-  #main-content .home-a .ha-covered, #main-content .home-a .ha-results-row { flex-wrap: wrap; }
-  #main-content .home-a .ha-covered > .ha-label, #main-content .home-a .ha-results-row > .ha-label { flex: 1 1 auto; }
-  #main-content .home-a .ha-covered > .ha-more, #main-content .home-a .ha-results-row > .ha-more { order: 1; margin-left: auto; }
-  #main-content .home-a .ha-marquee { order: 2; flex-basis: 100%; }
   #main-content .home-a .ha-search button { flex: 1 1 100%; }
 }
