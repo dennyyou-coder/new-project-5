@@ -3583,6 +3583,114 @@
       "sourceHash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f",
       "outputHash": "sha256:f218121d1e814c86fbc120bbb686456c15fb7d1d6ef6fb59956166ae30e35762"
     },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 106048,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:46cc8582ac14153e45d7007a422a526bc4ce56133f3098019466fef5a182886d",
+      "outputHash": "sha256:b8e8cecf5467b91c83774aaf0970e1b75c5776e8ca180d4cc114b4c0f19b9c62",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 41608,
+        "outputHash": "sha256:47a1bbaad086a1af6ca43f41aa307e6fae598a9b7a6849fda63ea3f7141543c2"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/02-booths-and-space.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 54116,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:10781074bff744ca8810f48f77a10d230e8b52a7e4512028d97ccd518fb3d0e1",
+      "outputHash": "sha256:7093c8d776a1b7c7dd1fc936410c43232243eb20523cdb7e4bdfb5ea949dc719",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/02-booths-and-space-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22760,
+        "outputHash": "sha256:d0aef18ac09493a81c8af5dad7709683d71e03d44f24861d922bafa5b0ad410c"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/03-full-supply-chain.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 57296,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:14b6328a218ee419ac3a1724f5067e782d76321518d1199a1ecda6129c283200",
+      "outputHash": "sha256:761cc18f9cc2941c28ed0f05df3329a629874509eb35d12009831766d5f300c6",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/03-full-supply-chain-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23802,
+        "outputHash": "sha256:d214b34ed719b76ab316da45ca9cbbd7452b410ae2c0c440896e5d95eede2d74"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/04-three-day-programme.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 62712,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ce51da39dba6e2d112e74880a3af2c79dd68c3d4ca7fa8c1be468a9575836265",
+      "outputHash": "sha256:90a9f800806a54492697973896b01b3c0c23ed87a615a1a68d7e6eaf9d158a1f",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/04-three-day-programme-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24926,
+        "outputHash": "sha256:ff52ac96f840083b7604955675dbf3448dcf5a0429eec62a4ca2c9d3eec88daf"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/05-shenzhen-expo-march-2026.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 113362,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6c46de59f2bab2c63b7c79201becc3d56213f2873fc73d051ec47e060216126e",
+      "outputHash": "sha256:ed1c54da6712cdc05b3eca75c2c20ac7832bde38024e1e9d133eb518c9de57c6",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/05-shenzhen-expo-march-2026-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43614,
+        "outputHash": "sha256:bf2da1ecb1dc8fffa1fc3cdce057eb5b923c679a9ce7e8b1170368678dd32824"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/06-road-to-a-trillion.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 52734,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b3cf79433ca3e2a95dc0cd16bc201552e26bc777b295ce88b345804590f835b3",
+      "outputHash": "sha256:188b22969cd9fd6ab18a6e5b73ed9c681e4f388c45abd8a0a183ba549b50ca2d",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/06-road-to-a-trillion-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21660,
+        "outputHash": "sha256:f1a001a56f48a078561514f31727dd1fa6746a23fde4261b84feb1cef0d38951"
+      }
+    },
     "/images/articles/camsense-from-tv-vision-to-robot-lidar/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -41416,6 +41524,17 @@
         "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp"
       ]
     },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-07": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/01-cover.webp",
+      "body": [
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/02-booths-and-space.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/03-full-supply-chain.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/04-three-day-programme.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/05-shenzhen-expo-march-2026.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/06-road-to-a-trillion.webp"
+      ]
+    },
     "camsense-from-tv-vision-to-robot-lidar": {
       "budgetClass": "standard",
       "cover": "/images/articles/camsense-from-tv-vision-to-robot-lidar/01-cover.webp",
@@ -47703,6 +47822,40 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp",
           "hash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f"
+        }
+      }
+    },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-07": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/01-cover.webp",
+          "hash": "sha256:46cc8582ac14153e45d7007a422a526bc4ce56133f3098019466fef5a182886d"
+        },
+        "02-booths-and-space.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/02-booths-and-space.webp",
+          "hash": "sha256:10781074bff744ca8810f48f77a10d230e8b52a7e4512028d97ccd518fb3d0e1"
+        },
+        "03-full-supply-chain.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/03-full-supply-chain.webp",
+          "hash": "sha256:14b6328a218ee419ac3a1724f5067e782d76321518d1199a1ecda6129c283200"
+        },
+        "04-three-day-programme.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/04-three-day-programme.webp",
+          "hash": "sha256:ce51da39dba6e2d112e74880a3af2c79dd68c3d4ca7fa8c1be468a9575836265"
+        },
+        "05-shenzhen-expo-march-2026.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/05-shenzhen-expo-march-2026.webp",
+          "hash": "sha256:6c46de59f2bab2c63b7c79201becc3d56213f2873fc73d051ec47e060216126e"
+        },
+        "06-road-to-a-trillion.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-07/06-road-to-a-trillion.webp",
+          "hash": "sha256:b3cf79433ca3e2a95dc0cd16bc201552e26bc777b295ce88b345804590f835b3"
         }
       }
     },
