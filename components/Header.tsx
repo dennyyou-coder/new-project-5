@@ -63,7 +63,7 @@ const NAV: NavItem[] = [
     kind: "menu",
     id: "insights",
     label: "Insights",
-    current: ["/blog", "/guides", "/videos", "/reports", "/tools", "/recalls", "/launch-radar", "/rules-calendar"],
+    current: ["/blog", "/guides", "/videos", "/reports", "/recalls", "/launch-radar", "/rules-calendar"],
     columns: [
       {
         links: [
@@ -72,13 +72,13 @@ const NAV: NavItem[] = [
           { href: "/blog/series/building-worlds-no-1-cleaning-show-from-scratch", label: "Founder’s Journal" },
           { href: "/videos", label: "Videos" },
           { href: "/reports", label: "Reports" },
-          { href: "/tools", label: "Tools & trackers" },
           { href: "/recalls", label: "Recall tracker" },
           { href: "/launch-radar", label: "Launch radar" }
         ]
       }
     ]
   },
+  { kind: "link", href: "/tools", label: "Tools" },
   { kind: "link", href: "/markets", label: "Markets" },
   {
     kind: "menu",
