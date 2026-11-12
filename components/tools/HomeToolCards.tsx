@@ -16,7 +16,7 @@ const RoiCalculator = dynamic(() => import("./RoiCalculator").then((m) => m.RoiC
 const stroke = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" } as const;
 
 /** Each tool has its own colour and a picture of what it is about: a container ship, a certification shield, money coming back. */
-const TOOL_LOOK: Record<ToolId, { title: string; line: string; color: string; icon: ReactNode }> = {
+const TOOL_LOOK: Partial<Record<ToolId, { title: string; line: string; color: string; icon: ReactNode }>> = {
   "landed-cost": {
     title: "Landed cost calculator",
     line: "US, EU and UK duties, fees and VAT on your shipment",
@@ -85,8 +85,9 @@ export function HomeToolCards() {
 
   return (
     <>
-      {WCB_TOOLS.map((item) => {
+      {WCB_TOOLS.filter((item) => item.home).map((item) => {
         const look = TOOL_LOOK[item.id];
+        if (!look) return null;
         return (
           <a key={item.id} className="home-b-tool" href={item.href} onClick={(event) => launch(event, item.id)} aria-haspopup="dialog">
             <span className="home-b-tool-icon" style={{ background: look.color }} aria-hidden="true">{look.icon}</span>
@@ -111,7 +112,7 @@ export function HomeToolCards() {
         {tool ? (
           <div className="tool-dialog-inner">
             <div className="tool-dialog-head">
-              <span className="tool-dialog-icon" style={{ background: TOOL_LOOK[tool.id].color }} aria-hidden="true">{TOOL_LOOK[tool.id].icon}</span>
+              <span className="tool-dialog-icon" style={{ background: TOOL_LOOK[tool.id]?.color }} aria-hidden="true">{TOOL_LOOK[tool.id]?.icon}</span>
               <div>
                 <h2 id="tool-dialog-title">{tool.title}</h2>
                 <p>{tool.summary}</p>

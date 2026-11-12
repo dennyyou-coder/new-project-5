@@ -23,7 +23,8 @@ export function ToolPage({
   sources: ToolSource[];
 }) {
   const tool = WCB_TOOLS.find((item) => item.id === id)!;
-  const others = WCB_TOOLS.filter((item) => item.id !== id);
+  // Four other tools keep the two-column grid even.
+  const others = WCB_TOOLS.filter((item) => item.id !== id).slice(0, 4);
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",

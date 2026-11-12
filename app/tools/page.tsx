@@ -7,7 +7,7 @@ import "../styles/tools.css";
 export const metadata: Metadata = {
   title: "Free Tools and Trackers for Appliance and Power Tool Companies",
   description:
-    "Free tools for appliance, cleaning and power tool companies: a landed cost and tariff calculator, export compliance checklist, recall tracker and FCC radar.",
+    "Free tools for appliance and power tool companies: landed cost, container loading, retail-to-FOB pricing, battery shipping, compliance, recalls and FCC radar.",
   alternates: { canonical: "/tools" }
 };
 
