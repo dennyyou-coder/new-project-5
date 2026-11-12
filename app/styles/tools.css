@@ -157,3 +157,38 @@
 
 .tool-page .tool-hub-title { margin: 8px 0 14px; padding-top: 14px; border-top: 3px solid #0B2140; font-size: clamp(24px, 2.4vw, 30px); color: #0B2140; }
 .tool-page .tool-hub-title:not(:first-child) { margin-top: 36px; }
+
+/* Container loading table */
+.tool-table-wrap { overflow-x: auto; }
+.tool-table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.tool-table th, .tool-table td { padding: 9px 8px; border-bottom: 1px solid #D8E3F0; text-align: right; white-space: nowrap; }
+.tool-table th:first-child, .tool-table td:first-child { padding-left: 0; text-align: left; }
+.tool-table th:last-child, .tool-table td:last-child { padding-right: 0; }
+.tool-table thead th { font-size: 12px; font-weight: 700; color: #52677D; border-bottom-color: #0B2140; }
+.tool-table tbody th { font-weight: 800; color: #0B2140; }
+.tool-table small { margin-left: 4px; font-size: 11px; font-weight: 700; color: #8A5300; }
+
+/* Battery verdicts */
+.tool-verdict { display: grid; gap: 8px; padding: 14px 16px; border: 1px solid #D8E3F0; border-left-width: 4px; border-radius: 4px; }
+.tool-verdict.is-ok { border-left-color: #0A6847; }
+.tool-verdict.is-restricted { border-left-color: #C27A00; }
+.tool-verdict.is-forbidden { border-left-color: #B3261E; }
+.tool-verdict-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.tool-verdict-head strong { font-size: 16px; color: #0B2140; }
+.tool-verdict-tag { font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.is-ok .tool-verdict-tag { color: #0A6847; }
+.is-restricted .tool-verdict-tag { color: #8A5300; }
+.is-forbidden .tool-verdict-tag { color: #B3261E; }
+.tool-verdict p { margin: 0; font-size: 14px; line-height: 1.55; color: #0B2140; }
+
+.tool-battery-modes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; align-items: start; }
+.tool-battery-docs { margin-top: 16px; padding: 20px 24px; border: 1px solid #D8E3F0; border-radius: 4px; background: #F3F7FC; }
+.tool-battery-docs .tool-notes { font-size: 14px; color: #3C546F; }
+@media (max-width: 960px) {
+  .tool-battery-modes { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .tool-table th, .tool-table td { padding: 8px 4px; font-size: 13px; }
+  .tool-table .tool-col-space { display: none; }
+  .tool-battery-docs { padding: 16px; }
+}

@@ -7,6 +7,9 @@ import { CERT_MARKETS, CERT_PRODUCTS, CHECKLIST_AS_OF, LEVEL_LABELS, checklistFo
 import { getTool, money, fixed, CURRENCIES, type Currency, type ToolId } from "@/lib/tools/catalog";
 import { EU_VAT, ORIGINS, PRODUCTS, RATES_AS_OF, calculateLanded, cleanLandedInputs, insuranceAmount } from "@/lib/tools/landedCost";
 import { calculateRoi, cleanRoiInputs } from "@/lib/tools/roi";
+import { calculateContainer, cleanContainerInputs } from "@/lib/tools/container";
+import { PRICING_CHANNELS, PRICING_MARKETS, calculatePricing, cleanPricingInputs } from "@/lib/tools/pricing";
+import { BATTERY_PACKINGS, BATTERY_RULES_AS_OF, calculateBattery, cleanBatteryInputs } from "@/lib/tools/battery";
 
 const escapeHtml = (value: string) => value.replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[char]!);
 
@@ -112,9 +115,91 @@ export function roiEmail(raw: Record<string, unknown>): ToolEmail {
   return { subject: `Your cleaning robot payback: ${summary}`, body, summary };
 }
 
+export function containerEmail(raw: Record<string, unknown>): ToolEmail {
+  const inputs = cleanContainerInputs(raw);
+  const result = calculateContainer(inputs);
+  const carton = `${inputs.cartonLength} × ${inputs.cartonWidth} × ${inputs.cartonHeight} cm`;
+  const summary = `${carton} carton, ${inputs.orderUnits.toLocaleString("en-US")} units`;
+  const body = [
+    heading("Your carton"),
+    block(table([
+      ["Carton size", carton],
+      ["Carton volume", `${fixed(result.cartonCbm, 3)} m³`],
+      ["Gross weight per carton", `${fixed(inputs.cartonWeight)} kg`],
+      ["Units per carton", String(inputs.unitsPerCarton)],
+      ["Can be laid on its side", inputs.allowTipping ? "Yes" : "No, this side up"],
+      ["Order", `${inputs.orderUnits.toLocaleString("en-US")} units, ${result.orderCartons.toLocaleString("en-US")} cartons, ${fixed(result.orderCbm)} m³`]
+    ])),
+    ...result.fits.flatMap((fit) => [
+      heading(fit.label),
+      block(table([
+        ["Cartons per container", `${fit.cartons.toLocaleString("en-US")} (limited by ${fit.limit})`],
+        ["Units per container", fit.units.toLocaleString("en-US")],
+        ["Volume used", `${fixed(fit.volumeUsed, 0)}%`],
+        ["Cargo weight", `${Math.round(fit.cargoWeight).toLocaleString("en-US")} kg`],
+        ...(fit.freightPerUnit !== null ? ([["Sea freight per unit", money(fit.freightPerUnit, "USD", 2)]] as Row[]) : []),
+        ["Containers for the order", `${fit.containersForOrder}${fit.freight > 0 ? `, ${money(fit.freightForOrder)} freight` : ""}`]
+      ]))
+    ]),
+    para("Counts assume cartons loaded by hand with 10 cm kept free at the doors. A loader usually gets a few cartons more or fewer: ask the forwarder for a load plan before you confirm the order quantity.")
+  ].join("");
+  return { subject: `Your container load: ${summary}`, body, summary };
+}
+
+export function pricingEmail(raw: Record<string, unknown>): ToolEmail {
+  const inputs = cleanPricingInputs(raw);
+  const result = calculatePricing(inputs);
+  const market = PRICING_MARKETS[inputs.market];
+  const currency = market.currency;
+  const summary = inputs.mode === "toFob"
+    ? `${money(inputs.retailPrice, currency, 2)} shelf price, ${PRICING_CHANNELS[inputs.channel].toLowerCase()}, ${market.label}`
+    : `${money(inputs.fobPrice, currency, 2)} FOB, ${PRICING_CHANNELS[inputs.channel].toLowerCase()}, ${market.label}`;
+  const body = [
+    heading(inputs.mode === "toFob" ? "Highest FOB price" : "Retail price needed"),
+    block(table([
+      ["Shelf price", result.impossible ? "Not workable" : money(result.retailPrice, currency, 2)],
+      ...result.ladder.map((step): Row => [step.label, money(step.amount, currency, 2)]),
+      ["FOB price per unit", result.impossible ? "Not workable" : money(result.fobPrice, currency, 2)]
+    ], true)),
+    block(table([
+      ["Brand revenue per unit", money(result.brandRevenue, currency, 2)],
+      ["Landed cost per unit", money(result.landedCost, currency, 2)],
+      ["Shelf price over FOB", result.multiple ? `${fixed(result.multiple)}×` : "n/a"]
+    ])),
+    para("Fees, margins and duty are the figures you entered. A planning guide only: check marketplace fees for your size tier and confirm duty with your customs broker.")
+  ].join("");
+  return { subject: `Your price ladder: ${summary}`, body, summary };
+}
+
+export function batteryEmail(raw: Record<string, unknown>): ToolEmail {
+  const inputs = cleanBatteryInputs(raw);
+  const result = calculateBattery(inputs);
+  const summary = `${fixed(result.wh)} Wh battery, ${BATTERY_PACKINGS[inputs.packing].label.toLowerCase()}`;
+  const modes = [result.passengerAir, result.cargoAir, result.sea];
+  const body = [
+    heading("Your battery"),
+    block(table([
+      ["Battery", `${fixed(inputs.voltage)} V × ${inputs.capacity.toLocaleString("en-US")} mAh = ${fixed(result.wh)} Wh`],
+      ["Cell", `${fixed(inputs.cellVoltage)} V × ${inputs.cellCapacity.toLocaleString("en-US")} mAh = ${fixed(result.cellWh)} Wh`],
+      ["UN number", `${result.un}, ${result.properName}`],
+      ["Packing instruction (air)", result.instruction],
+      ["Batteries per package", `${inputs.batteriesPerPackage} (${fixed(result.packageBatteryKg, 2)} kg)`]
+    ])),
+    ...modes.flatMap((mode) => [heading(mode.title), para(mode.headline), ...mode.points.map((point) => para(`• ${point}`))]),
+    heading("Documents"),
+    ...result.documents.map((item) => para(`• ${item}`)),
+    para(result.handCarry),
+    para(`Rules as of ${BATTERY_RULES_AS_OF}. A guide only: airlines and couriers add their own limits, so confirm with your forwarder before you book.`)
+  ].join("");
+  return { subject: `Your battery shipping check: ${summary}`, body, summary };
+}
+
 export function toolEmail(tool: ToolId, inputs: Record<string, unknown>) {
   if (tool === "landed-cost") return landedEmail(inputs);
   if (tool === "export-compliance") return complianceEmail(inputs);
+  if (tool === "container-loading") return containerEmail(inputs);
+  if (tool === "retail-to-fob") return pricingEmail(inputs);
+  if (tool === "battery-shipping") return batteryEmail(inputs);
   return roiEmail(inputs);
 }
 
