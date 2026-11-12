@@ -344,7 +344,6 @@ export default function HomePage() {
           </div>
 
           <div className="ha-covered">
-            <span className="ha-label">Companies covered</span>
             <Marquee label="Companies covered" seconds={coveredCompanies.length * 3}>
               {coveredCompanies.map((brand) => (
                 <Link key={brand.slug} href={`/brands/${brand.slug}`} className="ha-covered-logo">
@@ -360,7 +359,6 @@ export default function HomePage() {
       {results.length > 0 ? (
         <section className="ha-results" aria-label="Latest company results">
           <div className="ha-wrap ha-results-row">
-            <span className="ha-label">Latest results</span>
             <Marquee label="Latest results" seconds={results.length * 7}>
               {results.map(({ item, mark, figure }) => {
                 const direction = figureDirection(figure!.change);
