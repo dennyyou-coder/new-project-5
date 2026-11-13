@@ -18,7 +18,7 @@ export default function ToolsPage() {
       <section className="tool-hero">
         <div className="container">
           <p className="tool-crumbs">World Clean Biz</p>
-          <h1>Tools and trackers</h1>
+          <h1>Tools</h1>
           <p className="tool-hero-lead">
             Free calculators for the decisions appliance, cleaning and power tool companies make every week, and trackers that keep watch on recalls, new FCC filings and the trade rules that change what it costs to sell.
           </p>
@@ -52,7 +52,7 @@ export default function ToolsPage() {
           </div>
         </div>
       </section>
-      <CollectionSchema name="Tools and trackers" description="Free calculators, checklists and trackers for appliance, cleaning and power tool companies." path="/tools" items={[...WCB_TOOLS, ...WCB_TRACKERS].map((item) => ({ name: item.title, url: item.href }))} />
+      <CollectionSchema name="Tools" description="Free calculators, checklists and trackers for appliance, cleaning and power tool companies." path="/tools" items={[...WCB_TOOLS, ...WCB_TRACKERS].map((item) => ({ name: item.title, url: item.href }))} />
     </div>
   );
 }
