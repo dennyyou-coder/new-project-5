@@ -12,19 +12,35 @@ import { BATTERY_DEFAULTS, calculateBattery } from "@/lib/tools/battery";
  * summary carry the meaning for screen readers, and nothing in it can be focused.
  */
 
-function Screen({ name, inputs, children }: { name: string; inputs: ReactNode; children: ReactNode }) {
+/** The object each tool's screen sits in, so the kind of tool reads at a glance. */
+type Shell = "calculator" | "clipboard" | "container" | "battery";
+
+const KEYS = ["C", "%", "÷", "×", "−", "+", "="];
+
+function Screen({ name, shell, inputs, children }: { name: string; shell: Shell; inputs: ReactNode; children: ReactNode }) {
   return (
     <span className="ts" aria-hidden="true">
-      <span className="ts-window">
-        <span className="ts-bar">
-          <span className="ts-bar-name">{name}</span>
-          <span className="ts-bar-tag">Example</span>
+      <span className={`ts-shell ts-shell--${shell}`}>
+        {shell === "clipboard" ? <span className="ts-clip" /> : null}
+        <span className="ts-window">
+          <span className="ts-bar">
+            <span className="ts-bar-name">{name}</span>
+            <span className="ts-bar-tag">Example</span>
+          </span>
+          <span className="ts-body">
+            <span className="ts-inputs">{inputs}</span>
+            <span className="ts-flow">→</span>
+            <span className="ts-result">{children}</span>
+          </span>
         </span>
-        <span className="ts-body">
-          <span className="ts-inputs">{inputs}</span>
-          <span className="ts-flow">→</span>
-          <span className="ts-result">{children}</span>
-        </span>
+        {shell === "calculator" ? (
+          <span className="ts-keys">
+            {KEYS.map((key) => (
+              <span key={key} className={key === "=" ? "is-equals" : undefined}>{key}</span>
+            ))}
+          </span>
+        ) : null}
+        {shell === "container" ? <span className="ts-doors"><i /><i /><i /><i /></span> : null}
       </span>
     </span>
   );
@@ -67,6 +83,7 @@ function LandedScreen() {
   return (
     <Screen
       name="Landed cost"
+      shell="calculator"
       inputs={
         <>
           <Field label="Product" value="Robot vacuum" select />
@@ -103,6 +120,7 @@ function ComplianceScreen() {
   return (
     <Screen
       name="Export compliance"
+      shell="clipboard"
       inputs={
         <>
           <Field label="Product" value="Robot vacuum" select />
@@ -143,6 +161,7 @@ function RoiScreen() {
   return (
     <Screen
       name="Cleaning robot payback"
+      shell="calculator"
       inputs={
         <>
           <Field label="Robot price" value={money(ROI_DEFAULTS.price)} />
@@ -191,6 +210,7 @@ function ContainerScreen() {
   return (
     <Screen
       name="Container loading"
+      shell="container"
       inputs={
         <>
           <Field label="Carton (cm)" value={`${cartonLength}×${cartonWidth}×${cartonHeight}`} />
@@ -238,6 +258,7 @@ function PricingScreen() {
   return (
     <Screen
       name="Retail price to FOB"
+      shell="calculator"
       inputs={
         <>
           <Field label="Sell on" value="Amazon US" select />
@@ -273,6 +294,7 @@ function BatteryScreen() {
   return (
     <Screen
       name="Battery shipping"
+      shell="battery"
       inputs={
         <>
           <Field label="Pack voltage" value={fixed(inputs.voltage)} unit="V" />

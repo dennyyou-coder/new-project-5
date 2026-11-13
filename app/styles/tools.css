@@ -115,10 +115,36 @@
 
 /* Hub cards: a miniature of each tool's own screen, inputs on the left and the result on the right. */
 .tool-card--preview { padding-top: 14px; }
-.ts { display: block; container-type: inline-size; margin: 0 -8px 10px; padding: 10px; border-radius: 6px; background: #F3F7FC; color: #0B2140; font-size: 11px; line-height: 1.25; font-variant-numeric: tabular-nums; pointer-events: none; user-select: none; }
-.ts-window { display: flex; flex-direction: column; height: max(204px, 62.5cqi); border: 1px solid #D8E3F0; border-radius: 5px; background: #fff; overflow: hidden; box-shadow: 0 1px 2px rgba(11, 33, 64, .05); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
-.tool-card--preview:hover .ts-window { transform: translateY(-2px); border-color: #BCD0EA; box-shadow: 0 8px 20px rgba(11, 33, 64, .09); }
-@media (prefers-reduced-motion: reduce) { .ts-window { transition: none; } .tool-card--preview:hover .ts-window { transform: none; } }
+.ts { display: block; container-type: inline-size; margin: 0 -10px 10px; padding: 12px 8px; border-radius: 6px; background: #F3F7FC; color: #0B2140; font-size: 11px; line-height: 1.25; font-variant-numeric: tabular-nums; pointer-events: none; user-select: none; }
+.ts-window { display: flex; flex-direction: column; flex: 1; min-height: 0; border: 1px solid #D8E3F0; border-radius: 5px; background: #fff; overflow: hidden; box-shadow: 0 1px 2px rgba(11, 33, 64, .05); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.tool-card--preview:hover .ts-shell { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(11, 33, 64, .16); }
+@media (prefers-reduced-motion: reduce) { .ts-shell { transition: none; } .tool-card--preview:hover .ts-shell { transform: none; } }
+/* Shells: the object the tool's screen sits in. */
+.ts-shell { position: relative; display: flex; flex-direction: column; height: max(232px, 68cqi); transition: transform .2s ease, box-shadow .2s ease; }
+.ts-shell .ts-window { box-shadow: none; }
+/* Calculator: dark body, the screen set into it, a row of keys below. */
+.ts-shell--calculator { padding: 8px 8px 7px; border-radius: 12px; background: linear-gradient(180deg, #1C3456, #0B2140); box-shadow: 0 6px 14px rgba(11, 33, 64, .18), inset 0 1px 0 rgba(255, 255, 255, .12); }
+.ts-shell--calculator .ts-window { border: 0; border-radius: 6px; box-shadow: inset 0 0 0 2px #081a33; }
+.ts-keys { flex: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)) minmax(0, 2fr); gap: 5px; margin-top: 8px; }
+.ts-keys span { display: block; height: 19px; border-radius: 5px; background: #2B4568; box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25); color: #C9D6E8; font-size: 11px; font-weight: 700; line-height: 18px; text-align: center; }
+.ts-keys span.is-equals { background: #1F57E0; color: #fff; }
+/* Clipboard: a board with a metal clip holding the sheet. */
+.ts-shell--clipboard { padding: 14px 9px 9px; border-radius: 10px; background: linear-gradient(180deg, #33496A, #22385A); box-shadow: 0 6px 14px rgba(11, 33, 64, .18); }
+.ts-shell--clipboard .ts-window { border: 0; border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, .25); }
+.ts-clip { position: absolute; z-index: 1; top: 4px; left: 50%; width: 76px; height: 18px; margin-left: -38px; border-radius: 5px 5px 3px 3px; background: linear-gradient(180deg, #E7EDF5, #A9B7C9); box-shadow: 0 2px 3px rgba(0, 0, 0, .3), inset 0 1px 0 #fff; }
+.ts-clip::before { content: ""; position: absolute; top: -5px; left: 50%; width: 26px; height: 10px; margin-left: -13px; border: 3px solid #A9B7C9; border-bottom: 0; border-radius: 8px 8px 0 0; }
+.ts-shell--clipboard .ts-bar { padding-top: 10px; }
+/* Container: corrugated steel walls and the door bars on the right. */
+.ts-shell--container { padding: 9px 26px 9px 9px; border-radius: 3px; background: repeating-linear-gradient(90deg, #24477A 0 5px, #1B3A66 5px 8px); box-shadow: 0 6px 14px rgba(11, 33, 64, .18), inset 0 0 0 2px #10284A; }
+.ts-shell--container .ts-window { border: 0; border-radius: 2px; }
+.ts-doors { position: absolute; top: 9px; right: 5px; bottom: 9px; display: flex; gap: 3px; }
+.ts-doors i { position: relative; width: 2px; border-radius: 1px; background: linear-gradient(180deg, #C9D6E8, #8DA0B6); }
+.ts-doors i::before, .ts-doors i::after { content: ""; position: absolute; width: 5px; height: 3px; margin-left: -1.5px; border-radius: 1px; background: #C9D6E8; }
+.ts-doors i::before { top: 30%; } .ts-doors i::after { top: 65%; }
+/* Battery: a pack with a terminal on the right and a charge strip. */
+.ts-shell--battery { margin-right: 10px; padding: 7px; border-radius: 10px; background: #0B2140; box-shadow: 0 6px 14px rgba(11, 33, 64, .18), inset 0 1px 0 rgba(255, 255, 255, .12); }
+.ts-shell--battery::after { content: ""; position: absolute; top: 50%; right: -10px; width: 10px; height: 34%; transform: translateY(-50%); border-radius: 0 4px 4px 0; background: linear-gradient(180deg, #2B4568, #0B2140); }
+.ts-shell--battery .ts-window { border: 0; border-radius: 5px; border-top: 4px solid #1F57E0; }
 .ts-bar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 10px; border-bottom: 1px solid #E3EAF3; }
 .ts-bar-name { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; font-weight: 700; }
 .ts-bar-tag { flex: none; padding: 1px 6px; border-radius: 10px; background: #EEF3FA; color: #52677D; font-size: 9.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
