@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import Link from "next/link";
 import { WCB_TOOLS, WCB_TRACKERS } from "@/lib/tools/catalog";
+import { ToolScreen } from "@/components/tools/ToolScreen";
 import "../styles/tools.css";
 
 export const metadata: Metadata = {
@@ -28,7 +29,8 @@ export default function ToolsPage() {
           <h2 className="tool-hub-title">Calculators and checklists</h2>
           <div className="tool-cards tool-cards--hub">
             {WCB_TOOLS.map((tool, index) => (
-              <Link key={tool.id} className="tool-card" href={tool.href}>
+              <Link key={tool.id} className="tool-card tool-card--preview" href={tool.href}>
+                <ToolScreen id={tool.id} />
                 <span className="tool-card-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
                 <span className="tool-card-audience">{tool.audience}</span>
                 <strong>{tool.title}</strong>
