@@ -80,7 +80,7 @@ export function getSiteIndexOverview() {
         { href: "/rankings", label: "Rankings" },
         { href: "/markets", label: "Markets" },
         { href: "/reports", label: "Reports" },
-        { href: "/tools", label: "Tools and trackers" },
+        { href: "/tools", label: "Tools" },
         { href: "/recalls", label: "Product recall tracker" },
         { href: "/launch-radar", label: "Launch radar: FCC filings" },
         { href: "/rules-calendar", label: "Trade and product rules calendar" },

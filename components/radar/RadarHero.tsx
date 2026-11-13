@@ -5,7 +5,7 @@ export function RadarHero({ title, lead, updated, sources }: { title: string; le
     <section className="tool-hero">
       <div className="container">
         <p className="tool-crumbs">
-          <Link href="/tools">Tools and trackers</Link> <span aria-hidden="true">/</span> Industry radar
+          <Link href="/tools">Tools</Link> <span aria-hidden="true">/</span> Industry radar
         </p>
         <h1>{title}</h1>
         <p className="tool-hero-lead">{lead}</p>
