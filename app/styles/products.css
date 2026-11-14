@@ -110,3 +110,4 @@
 .product-reading-layout > div, .product-content-section { min-width: 0; }
 .product-faq[open] { background: #f6f9fc; }
 @media (max-width: 540px) { .product-price-card { padding: 20px; } .product-price-card h3 { font-size: 20px; } .product-editorial h3 { font-size: 20px; } }
+.product-hero-line a { margin-left: 4px; color: #1F57E0; font-weight: 700; white-space: nowrap; }
