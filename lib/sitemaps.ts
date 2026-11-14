@@ -1,4 +1,5 @@
 import { getTopics } from "@/lib/topics";
+import { MONTHLY_ISSUES } from "@/lib/radar/monthly";
 import { productModels } from "@/lib/products";
 import { getNews } from "@/lib/news";
 import type { MetadataRoute } from "next";
@@ -108,6 +109,7 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "/recalls",
     "/launch-radar",
     "/rules-calendar",
+    ...MONTHLY_ISSUES.map(({ month }) => `/radar/${month}`),
     "/wcb-expo",
     "/about",
     "/contact",

@@ -6,6 +6,7 @@ import { RadarHero } from "@/components/radar/RadarHero";
 import { SECTORS, shortDate } from "@/lib/radar/classify";
 import { FCC_FROM, FCC_UPDATED, getFccCompanies, getFccFilings, lastFilingByCompany } from "@/lib/radar/data";
 import { fccIdUrl } from "@/lib/radar/fcc";
+import { LATEST_ISSUE, monthLabel } from "@/lib/radar/monthly";
 import "../styles/tools.css";
 import "../styles/radar.css";
 
@@ -79,6 +80,7 @@ export default function LaunchRadarPage() {
             <p>
               A new product filing is a new FCC ID; changes and new IDs are updates to products already authorized. The FCC record shows the company and the radios, but usually not the product name, and photos and manuals can stay confidential until launch. Companies sometimes file under a subsidiary or a module maker, so a quiet company is not proof that nothing is coming. Brands whose filings are mostly phones, chargers or TVs are left out. Each ID links to its public record on fccid.io.
             </p>
+            <p><Link href={`/radar/${LATEST_ISSUE.month}`}>Monthly report: {monthLabel(LATEST_ISSUE.month)} →</Link></p>
             <CiteNote name="WCB Launch Radar" path="/launch-radar" />
           </div>
         </div>
