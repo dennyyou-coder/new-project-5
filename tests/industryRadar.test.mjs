@@ -57,3 +57,21 @@ test("rule dates are valid and count down", () => {
   assert.equal(upcomingRules(now)[0].id, "us-301-exclusions");
   assert.ok(upcomingRules(new Date("2027-01-11T00:00:00Z")).every((rule) => rule.date >= "2027-01-11"));
 });
+
+test("monthly radar report sums up one month", async () => {
+  const { MONTHLY_ISSUES, buildMonthlyRadar, monthLabel, shiftMonth } = await import("../lib/radar/monthly.ts");
+  assert.equal(monthLabel("2026-10"), "October 2026");
+  assert.equal(shiftMonth("2026-01", -1), "2025-12");
+  assert.equal(shiftMonth("2026-12", 1), "2027-01");
+  const report = buildMonthlyRadar("2026-10", { recalls, filings: fcc.filings, companies: fcc.companies, rules: RULE_DATES });
+  assert.equal(report.recalls.length, recalls.filter((recall) => recall.date.startsWith("2026-10")).length);
+  assert.equal(report.us + report.eu, report.recalls.length);
+  assert.equal(Object.values(report.bySector).reduce((a, b) => a + b, 0), report.recalls.length);
+  assert.equal(report.robotTrend.length, 10);
+  assert.equal(report.robotTrend.at(-1).month, "2026-10");
+  for (const rule of report.ahead) assert.ok(rule.date >= "2026-11-01" && rule.date < "2027-02-01", rule.id);
+  for (const issue of MONTHLY_ISSUES) {
+    assert.match(issue.month, /^\d{4}-\d{2}$/);
+    assert.ok(issue.published > `${issue.month}-31`, `${issue.month} is published after the month ends`);
+  }
+});

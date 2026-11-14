@@ -6,6 +6,7 @@ import { RadarHero } from "@/components/radar/RadarHero";
 import { RecallList } from "@/components/radar/RecallList";
 import { SECTORS } from "@/lib/radar/classify";
 import { RECALLS_UPDATED, getRecalls, shortDate } from "@/lib/radar/data";
+import { LATEST_ISSUE, monthLabel } from "@/lib/radar/monthly";
 import "../styles/tools.css";
 import "../styles/radar.css";
 
@@ -52,6 +53,7 @@ export default function RecallsPage() {
                 <p>Check the certifications your product needs and the deadlines coming up.</p>
                 <Link href="/tools/export-compliance-checklist">Export compliance checklist →</Link>
                 <Link href="/rules-calendar">Trade and product rules calendar →</Link>
+                <Link href={`/radar/${LATEST_ISSUE.month}`}>Monthly report: {monthLabel(LATEST_ISSUE.month)} →</Link>
               </div>
               <div className="radar-card radar-method">
                 <h2>How this list is built</h2>
