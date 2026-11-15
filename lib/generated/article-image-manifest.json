@@ -26231,6 +26231,78 @@
         "outputHash": "sha256:7da24d4e30be082d114239475c47d62189a6a0683e1b7b1145425067b5a97f89"
       }
     },
+    "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 47362,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9e4e4a8cdeaf9823f431a65b5fd7b4deff678fc897258da646b078cb768b162b",
+      "outputHash": "sha256:30ae2aba21abe61cd50f0ebbcea7498eb42239fab3cb75dfbb0603ca990b05a9",
+      "mobile": {
+        "src": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18724,
+        "outputHash": "sha256:7490a5579d5a03907e08c75871d8573680bbe246df3ebf2084c5125f1cc302f4"
+      }
+    },
+    "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/02-comparable-cases.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 79142,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1d9eb696efcc29e873ac4028c0201f72e9b53197d6ff9afd702efa1d6a705da8",
+      "outputHash": "sha256:6af157015affad59e9fbf0120e98b9876af1e9d217725a779d7bce8d667c1caf",
+      "mobile": {
+        "src": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/02-comparable-cases-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30776,
+        "outputHash": "sha256:ce904724177f01513cf0a3c15dab130d67e63ba2014245002c162e26a55bb642"
+      }
+    },
+    "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/03-chervon-options.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60528,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cec0b630b76a4a7dfb1bb73f40421074448f5065853d7b053de5f81e8143ea32",
+      "outputHash": "sha256:305925b0fa06b8d4d01ecf9b3b9180dda555a5a66aced29bf55c5a6f234dd204",
+      "mobile": {
+        "src": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/03-chervon-options-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22604,
+        "outputHash": "sha256:6c8f4367fec43a097a70b70e41504a393d85e44f1ecb12d488510704949d74dd"
+      }
+    },
+    "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/04-possible-endings.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60688,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4ac82fd9595daea7d32e4571f4473488451d90ecf2ef4ca51ea63dafc7f7a374",
+      "outputHash": "sha256:0339d60e762621134f018609a08b66987b3bc8376dc5da90dc07135fca2141be",
+      "mobile": {
+        "src": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/04-possible-endings-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23562,
+        "outputHash": "sha256:322592aa6f2741b68ae71afc24539baab08b5c7fcc49af3a04b9eea768921e19"
+      }
+    },
     "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -49591,6 +49663,15 @@
         "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png"
       ]
     },
+    "tti-strikes-back-chervon-lawsuit-analysis": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/01-cover.webp",
+      "body": [
+        "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/02-comparable-cases.webp",
+        "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/03-chervon-options.webp",
+        "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/04-possible-endings.webp"
+      ]
+    },
     "tti-sues-chervon-galli-trade-secrets": {
       "budgetClass": "standard",
       "cover": "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover.webp",
@@ -60393,6 +60474,30 @@
           "status": "matched",
           "primary": "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png",
           "hash": "sha256:c106a7030396ce7fd901c415490958441897939fe734b9fd656bd3e96cd1636b"
+        }
+      }
+    },
+    "tti-strikes-back-chervon-lawsuit-analysis": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/01-cover.webp",
+          "hash": "sha256:9e4e4a8cdeaf9823f431a65b5fd7b4deff678fc897258da646b078cb768b162b"
+        },
+        "02-comparable-cases.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/02-comparable-cases.webp",
+          "hash": "sha256:1d9eb696efcc29e873ac4028c0201f72e9b53197d6ff9afd702efa1d6a705da8"
+        },
+        "03-chervon-options.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/03-chervon-options.webp",
+          "hash": "sha256:cec0b630b76a4a7dfb1bb73f40421074448f5065853d7b053de5f81e8143ea32"
+        },
+        "04-possible-endings.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-strikes-back-chervon-lawsuit-analysis/04-possible-endings.webp",
+          "hash": "sha256:4ac82fd9595daea7d32e4571f4473488451d90ecf2ef4ca51ea63dafc7f7a374"
         }
       }
     },
