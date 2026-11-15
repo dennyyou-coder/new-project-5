@@ -91,7 +91,7 @@ export const newsStoryVisuals: Record<string, NewsVisual> = {
     "alt": "WCB topic card: 15 approved, none Chinese. Companies with FCC robot approvals as of November 6, 2026",
     "kind": "coverage",
     "label": "WCB topic card",
-    "caption": "Regulation: U.S. FCC. Companies with FCC robot approvals as of November 6, 2026. Card: World Clean Biz.",
+    "caption": "Regulation: U.S. FCC. Companies with FCC robot approvals as of November 6, 2026. FCC seal: public domain. Card: World Clean Biz.",
     "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
     "sourceLabel": "Story source: FCC — Covered List and conditional approvals (updated November 6, 2026)",
     "fit": "cover",

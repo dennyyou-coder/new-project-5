@@ -29,3 +29,7 @@ Use the first one that exists:
 ## WCB topic card
 
 1600×900, light blue-grey background, blue top band; kicker (IBM Plex Mono, uppercase), title (Archivo 800, at most three lines), one detail line, company logo tiles, a line icon in a white circle, "WORLD CLEAN BIZ" footer. Render with `scripts/news-topic-cards/render.py` (card text in a JSON file, e.g. `batch-1.json`), then prepare as `kind: "chart"`. In `lib/newsVisuals.ts` use `kind: "coverage"`, `label: "WCB topic card"`, caption ending "Card: World Clean Biz."
+
+### Logo-led card (key-figure stories)
+
+For results, deals and other stories built on key figures, the card leads with the company: the company logo fills the left two-thirds on white (trimmed `logo.webp`, scaled to fill), and the kicker, headline number and one detail line sit in a narrower light panel on the right. Set `"layout": "logo"` in the card JSON (`scripts/news-topic-cards/key-figures.json`). A policy story uses the regulator's mark instead of a company logo (e.g. the public-domain FCC seal in `scripts/news-topic-cards/assets/`). The card is the article cover, share image and list thumbnail; on the article page it sits above the Key figures box.

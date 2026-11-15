@@ -7,7 +7,8 @@
   "icon": "deal",
   "logos": [
    "russell-hobbs"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "electrolux-q3-2026-results-and-midea-jvs",
@@ -18,7 +19,8 @@
   "logos": [
    "electrolux",
    "midea"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "ecovacs-third-quarter-results-october-2026",
@@ -28,7 +30,8 @@
   "icon": "chart",
   "logos": [
    "ecovacs"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "electrolux-italy-restructuring-agreement-november-2026",
@@ -38,7 +41,8 @@
   "icon": "factory",
   "logos": [
    "electrolux"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "fluidra-nine-month-results-october-2026",
@@ -48,7 +52,8 @@
   "icon": "chart",
   "logos": [
    "fluidra"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "haier-third-quarter-results-october-2026",
@@ -58,7 +63,8 @@
   "icon": "decline",
   "logos": [
    "haier-home-appliances"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "fcc-robot-conditional-approvals-reach-15-november-2026",
@@ -66,7 +72,11 @@
   "title": "15 approved, none Chinese",
   "detail": "Companies with FCC robot approvals as of November 6, 2026",
   "icon": "scales",
-  "logos": []
+  "logos": [],
+  "layout": "logo",
+  "logoFiles": [
+   "scripts/news-topic-cards/assets/fcc-seal.svg"
+  ]
  },
  {
   "slug": "groupe-seb-nine-month-sales-october-2026",
@@ -76,7 +86,8 @@
   "icon": "chart",
   "logos": [
    "groupe-seb"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "karcher-ceo-europe-perfect-storm-november-2026",
@@ -86,7 +97,8 @@
   "icon": "person",
   "logos": [
    "karcher"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "hayward-third-quarter-results-october-2026",
@@ -96,7 +108,8 @@
   "icon": "chart",
   "logos": [
    "hayward"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "makita-interim-results-october-2026",
@@ -106,6 +119,10 @@
   "icon": "chart",
   "logos": [
    "makita"
+  ],
+  "layout": "logo",
+  "logoFiles": [
+   "scripts/news-topic-cards/assets/makita.svg"
   ]
  },
  {
@@ -116,7 +133,8 @@
   "icon": "decline",
   "logos": [
    "midea"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "pentair-third-quarter-results-october-2026",
@@ -126,7 +144,8 @@
   "icon": "decline",
   "logos": [
    "pentair"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "roborock-third-quarter-results-october-2026",
@@ -136,7 +155,8 @@
   "icon": "chart",
   "logos": [
    "roborock"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "sharkninja-third-quarter-results-november-2026",
@@ -146,7 +166,8 @@
   "icon": "chart",
   "logos": [
    "shark"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "tennant-third-quarter-2026-results",
@@ -156,7 +177,8 @@
   "icon": "chart",
   "logos": [
    "tennant"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "stanley-black-decker-third-quarter-november-2026",
@@ -166,7 +188,8 @@
   "icon": "chart",
   "logos": [
    "dewalt"
-  ]
+  ],
+  "layout": "logo"
  },
  {
   "slug": "whirlpool-third-quarter-results-october-2026",
@@ -177,6 +200,7 @@
   "logos": [
    "whirlpool",
    "kitchenaid"
-  ]
+  ],
+  "layout": "logo"
  }
 ]

@@ -9366,17 +9366,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 42220,
+      "bytes": 36004,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:d97c83127f4b5d267ae18931bea78f0f1165b9605fc4f6ebe0df28df20402011",
-      "outputHash": "sha256:ef53e7a7119aa52f7abe260b54ae1efa8fa170fcdaecf63f355ed9128133ec85",
+      "sourceHash": "sha256:e1b58f7eec74fc76937a7fe00ca717003be602c98815e90850aa4d5275c5f966",
+      "outputHash": "sha256:a9321f31cd3b4db788c27e9469deb1fc1ba331e7b88d45a4fcb8a1c88ec92e6e",
       "mobile": {
         "src": "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 20516,
-        "outputHash": "sha256:24190198279ef767ddf024d1c46c516cbd5dc16ef9406e1311259223be934e79"
+        "bytes": 17156,
+        "outputHash": "sha256:ed64f43348c33d481c6925fd0dc36827836097d2e13421b237c074ca82228a0c"
       }
     },
     "/images/articles/ecovacs-ultramarine-p1/01-cover.webp": {
@@ -9662,17 +9662,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 44992,
+      "bytes": 36812,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:4770c0e460428ed9aff70e86d44dc990f78ee60d2f6e0422fa8ce175e62d9051",
-      "outputHash": "sha256:12b3e8f644ea2a9f4fe21dba5f5f01c558ccf2694f2252f280ed579187edadae",
+      "sourceHash": "sha256:60352170c7fca3df5176f42587b32ae411f4a004a0e591b419436da0165b20e9",
+      "outputHash": "sha256:8c9ba04778b1b300f2971a70516bd5ec4faac2904e9046c355004e225700b2f5",
       "mobile": {
         "src": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21678,
-        "outputHash": "sha256:df791214e558f9038df13d54973240ac3d9c8db078f2b896be77d93abdf0a3b8"
+        "bytes": 17870,
+        "outputHash": "sha256:d802f80cc7c74deedcc66d03d2043a426e85f6751c4dd7cbb61ec1cbf193db7b"
       }
     },
     "/images/articles/electrolux-midea-joint-venture-agreement-april-2026/01-cover.webp": {
@@ -9698,17 +9698,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 43152,
+      "bytes": 40640,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:a24e3a022d1e10275c9b9f5b1a3336559c57fd2249769792a562746ed3d2aded",
-      "outputHash": "sha256:8fa7a51a8776845c8eaac6cf44b82ff1b0c4f7ad8f521cefc1ed01aefd3f5588",
+      "sourceHash": "sha256:52d5376bee3fb5074e8880b0adccf85e309af0b8c4f1a01cbdbe56de3a2403e6",
+      "outputHash": "sha256:0dc9e11ed0489792348423af8f6db58269e79e25603550f3b1bc5af38739adad",
       "mobile": {
         "src": "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21028,
-        "outputHash": "sha256:7e1eb0551c3a282b3c544b5771bd3f0932ed082ec4d5c12745038017590ac931"
+        "bytes": 19904,
+        "outputHash": "sha256:654bd8078fc982fcd113c0cfa3615fc2999f67f52ab8669586a8dee8089503d1"
       }
     },
     "/images/articles/electrolux-second-quarter-results-july-2026/01-cover.webp": {
@@ -9752,17 +9752,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 39290,
+      "bytes": 36322,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:c0fe9feb6dc94421aeb0b307763613c98a8d73b59284033c6a23d071b3051c42",
-      "outputHash": "sha256:fdcf443dbceed3dbc8c14aca5bbda88c64989bcf7cdd615ce086e8d52aa88ed0",
+      "sourceHash": "sha256:3c8acf874743a6e01d1791399e46fa2bfdd4780c5ba8756ce41574f1ea00dfda",
+      "outputHash": "sha256:d1265a83803b6f5ba54e0f2348d860c3a10c8ec34ec882d3b5b6fa82f1b9f987",
       "mobile": {
         "src": "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 18408,
-        "outputHash": "sha256:6ad202294b1a17b861b3a312f6b8bc8fa3303c794367490813cf9cf924d70145"
+        "bytes": 16546,
+        "outputHash": "sha256:77197454eb47b6e49d8842ad7e70b18c97c34e149ab9c359fa954e85399b18ba"
       }
     },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
@@ -10764,17 +10764,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 40576,
+      "bytes": 68162,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:e5413f2bb0c95b85b92c5e4aa31585ee605b92f1a37d31bafd6ed281453cdce8",
-      "outputHash": "sha256:6949de3ec0bf1ada6f1b5fcf4bf8ef73e367cced661a0cbc565e73d989b1472c",
+      "sourceHash": "sha256:067971463bd5a5a5d505105835191220f9a4705e4270c7088e2d345cdcb50a8b",
+      "outputHash": "sha256:a34b70e965152b70bdefffabcf0e70fb8159b9589b2a9dcca2f1e8019f71ffbb",
       "mobile": {
         "src": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19506,
-        "outputHash": "sha256:f46cfb3f63c34885e170b9f4636e3b3c8ac59e818476df254343da36a827c477"
+        "bytes": 28762,
+        "outputHash": "sha256:f6fa3ca4423e76b8386052c1c1156ea40e92f77602945c48fee90c5626b2faec"
       }
     },
     "/images/articles/flex-history-chervon-galli/01-cover.webp": {
@@ -11070,17 +11070,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 40922,
+      "bytes": 31840,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:31f2543ed294a271bad89abaa1df69d1b2cb0cb2313b4b70741fc7036c64211d",
-      "outputHash": "sha256:1ca944742fcfbcc81e103bae42eb30818105ed49628d07f14fd5afe5a2765b9c",
+      "sourceHash": "sha256:a0c7f6ffa1345b5efea6226f0a5965a42726ebd9cbb6719104b0a3583b56e2b6",
+      "outputHash": "sha256:37caa8934fd0892a74325b297d269122730c10f013c361f5eb2ead59ec9414da",
       "mobile": {
         "src": "/images/articles/fluidra-nine-month-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 20526,
-        "outputHash": "sha256:88e663f78c9c61a5c71def108ac6153828fec536c7e7b40523a449893ea05361"
+        "bytes": 15410,
+        "outputHash": "sha256:87846a839e1d419b1df76b8aa04a9c60b32ed4553c9c7871f99870a87fd5f8c8"
       }
     },
     "/images/articles/freudenberg-acquires-nilfisk/01-cover.webp": {
@@ -12669,17 +12669,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 37250,
+      "bytes": 31872,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:667fc08d2582023c364859749b88936b7f6a0ac844afdb101bf466506ad94c32",
-      "outputHash": "sha256:1363d4642b6ba380bb287b18c58dfee39f170239b6fe17a71d371314adabbd38",
+      "sourceHash": "sha256:16907a7fc88258ba17183f2228a8ba75e48ab55f4c8282d376ea5e455a2b9b94",
+      "outputHash": "sha256:705a561239238462824cfabf1bb02c9cc42418b6c55dd60b13b394322fd66bda",
       "mobile": {
         "src": "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 18478,
-        "outputHash": "sha256:541ce3ba516270aaa20914084eaf040af3b12c0d9f892c95695939d981ffd48f"
+        "bytes": 15730,
+        "outputHash": "sha256:5a3b54e5618de28abb64283c083a401f8842c2c7d8d0a3759af858cc22360935"
       }
     },
     "/images/articles/haier-first-half-results-august-2026/01-cover.webp": {
@@ -12723,17 +12723,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 42740,
+      "bytes": 43524,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:817d4f731fce0215d480beeec9a9aba0f2f980df1e7254aa48708211ba3535cc",
-      "outputHash": "sha256:31c22ff44be776d288cc695f5becd37aced5458c7e30cab201d42a8d65db4d4d",
+      "sourceHash": "sha256:7ad34784a2752f96931c3ae83c199d652c46106e85d21d298a4b14c749a3bf8a",
+      "outputHash": "sha256:967eec6437b632588eb6ff7a8586ca940b54ed6614fdf037c97b3f5a8faa8460",
       "mobile": {
         "src": "/images/articles/haier-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 20158,
-        "outputHash": "sha256:b5201c65b03f3a96b70583e6d946e04262863502e7d4d0989977e274e7a8fa5d"
+        "bytes": 20606,
+        "outputHash": "sha256:50cfc108e33c4a0bfbabff18751b095b246e6bd9f9457675d897243aacfe155c"
       }
     },
     "/images/articles/hamilton-beach-2018-annual-report-faithful-translation/01-cover.webp": {
@@ -13051,17 +13051,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 37930,
+      "bytes": 30204,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:6d03a9d1f496f88227f93e33d1db973e91271b951bf01f1252df58bf81a68b0c",
-      "outputHash": "sha256:2434598daec4a49e07d54978d97a6f54c06ea2f01ffdf2a01fb63a394a5052b1",
+      "sourceHash": "sha256:8f72cd958444b37ec8c89f2f3f71d67e37574652672e449ab14f6b238425649b",
+      "outputHash": "sha256:5561a33402abc6c9ffaa7d7da095fcea21f7a525ad9eea497007115225e2885d",
       "mobile": {
         "src": "/images/articles/hayward-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 18466,
-        "outputHash": "sha256:df8542d8597392c4b9210672166389da144823337909e62969bb89b0c5e2f23b"
+        "bytes": 14222,
+        "outputHash": "sha256:99f66da1e2af548b1eea33a6819e009136356fd9a48a1f493634dddf117dd690"
       }
     },
     "/images/articles/hayward-vs-pentair-vs-fluidra/01-cover.webp": {
@@ -15639,17 +15639,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 40772,
+      "bytes": 32596,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:8e602cb24ced66b539a5f61d56cf5eaed94761193758d9eff91356f4b9543962",
-      "outputHash": "sha256:6e28995d3fd57398de267cb5d52e265418e5f5821a2096f19db9b2a9a864cfc6",
+      "sourceHash": "sha256:0255e6303fef195f79e539da93cac195668025e51c465e33f68cdc386607381f",
+      "outputHash": "sha256:2448ebdd6fbcee207d869b93351576308226158842a24214d405c981b305160d",
       "mobile": {
         "src": "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19814,
-        "outputHash": "sha256:27e69a58a3f23b58d1d2eca382e6a5f0ed8f3ca86fb0a6b84bba5cf49e1f490c"
+        "bytes": 15340,
+        "outputHash": "sha256:54a138efc0ec7c08a6761e2af15afe7beb21b42a1aa05adbaad8a8f2f877de8c"
       }
     },
     "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp": {
@@ -16770,17 +16770,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 41446,
+      "bytes": 38334,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:72ff53df32a8d5b2c49e17b56cb8af0172f18a9ccf46efd523bcee333e871588",
-      "outputHash": "sha256:9153d81dcb72d4916077824ce6c050e2f3dda28ba2c48eeeba4ef0366d2b6feb",
+      "sourceHash": "sha256:d1fbbbe96f4586256d24dd5777e998526405362085db38b869f491b0c7a05fe9",
+      "outputHash": "sha256:846f4e25754a27af5c87221416eb80860376e120ca12b62b459851609db487cf",
       "mobile": {
         "src": "/images/articles/makita-interim-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 20432,
-        "outputHash": "sha256:0181b26c45895b1a97b77ef9f6f2fda147d8b1b4fbe8270cec086901bc04d22c"
+        "bytes": 18422,
+        "outputHash": "sha256:fa8bdba2185b9a936213434ca8fa682f0712c3bfb872bfded148438d15a35387"
       }
     },
     "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp": {
@@ -17351,17 +17351,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 42602,
+      "bytes": 37802,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:adb73872c1bcd76a46a2134c0222765fa1a3818e1e72aae1ba7ac22aad7ae67f",
-      "outputHash": "sha256:0d796bb6545898679bc5c478f71042fb92a6d9924bbf9b714381875026b5e807",
+      "sourceHash": "sha256:46ba85a9bac15accaa66e41070fc989ba0b787b58a9fcc1246c226d316d728bb",
+      "outputHash": "sha256:d2a90cf1ff5606a0e427dd0ce5a330b8427a605334850ec2dd7b46c5a8f721e3",
       "mobile": {
         "src": "/images/articles/midea-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21290,
-        "outputHash": "sha256:b4abca646b6bef7dfdb7e70254b6fbd935abaf19ee7fd2abe042b23e8120047f"
+        "bytes": 17532,
+        "outputHash": "sha256:7ea9442e22f1d1e930c820d7993c9132de358719c76b322078897d7eddf29b71"
       }
     },
     "/images/articles/miele-duoflex-hx2-floor-washer/01-cover.webp": {
@@ -19700,17 +19700,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 37000,
+      "bytes": 30842,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:79919abed671649e5a1d70901c6f6ff56f1036bb0f18e0d4955443b5a3e94e3d",
-      "outputHash": "sha256:642d3493c6236d6c564bef1a9cabe0fe8946ce1742f38c1c3d11636f7e2b9a92",
+      "sourceHash": "sha256:eec2f0b4b871231bcda5fd4630cec2e82c525bf502e7ecd2e51332dbd9d08236",
+      "outputHash": "sha256:e5d30375450c0acff2b511d177c52eb72843de0b514dc3cebe29013b64949816",
       "mobile": {
         "src": "/images/articles/pentair-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 17828,
-        "outputHash": "sha256:9b058ee6a671941c84c5d736b372f27ef5d35173df1492bc8504fbbf94beb563"
+        "bytes": 15372,
+        "outputHash": "sha256:09e044d9a7996db047271f04a1d204ac971fa65e9364230691ac40315a0cafa3"
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
@@ -21770,17 +21770,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 40326,
+      "bytes": 34666,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:959ec5053e388eeaed602738132f2b3f3e7e2038a74375b0d6c37a93786dfbf6",
-      "outputHash": "sha256:485dfd6979364677f37a89863125313a39f8b65fbc7dfb41590ae722ae659741",
+      "sourceHash": "sha256:9a7c47a25faa6320cd0bfa2d59e576bb6a340421dc5ca36d1361405dd985c8e3",
+      "outputHash": "sha256:8331e87d6f2723bc6277d333248e563f0010ff46499f7f4244cc50141c2c71e4",
       "mobile": {
         "src": "/images/articles/roborock-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19750,
-        "outputHash": "sha256:c4617660ae438d5a5a61cf015547811dead9b4d187acd139e66278744092f6b8"
+        "bytes": 16822,
+        "outputHash": "sha256:894e8ce895ec05e8db999da7fccce83927b710f1d1454de3a72f774213fd9a9d"
       }
     },
     "/images/articles/roborock-vs-dreame-global-strategies/01-cover.webp": {
@@ -24420,17 +24420,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 39040,
+      "bytes": 35340,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:e8cb44929075020c4e1137aa81bdcd8b44dff26e7bf16ad97cc1d3b6906f3825",
-      "outputHash": "sha256:264683a158a016b2a1e9b25b7bd4ede137233c09411034f7d593d9cf806ca5bd",
+      "sourceHash": "sha256:b9292f4645e14b49a73496456ae4f75207f383110c903a726b88b4dc1729acb2",
+      "outputHash": "sha256:c9688ab9d142c1df955142452be6f8b9da35daa9bb458461f38f1443e33e4d6c",
       "mobile": {
         "src": "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19082,
-        "outputHash": "sha256:1a55ee0490c0d679bfecd370fb4fdd92954335dc49170b51ea2778a5b4c44d5a"
+        "bytes": 16836,
+        "outputHash": "sha256:04d6391a994db6c1ba03838e683d415ffcc23ee37c91acc34532e6f0e7173c61"
       }
     },
     "/images/articles/sky-001-engineering-world-model/01-cover.webp": {
@@ -24737,17 +24737,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 38316,
+      "bytes": 33238,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:a0dbefcc0fffc0f59db117d20d6d9c2e1923d8583f26ec5303bdedd677c753ed",
-      "outputHash": "sha256:14af9e39ed8bdadda9a6a9ea0ab6a810bd9eda208d7b7b8fe12f33aa12384409",
+      "sourceHash": "sha256:e49ef305520ec79e0943a7c218e0e36099c4fe14c07e68558b0b8e9a080e5a56",
+      "outputHash": "sha256:4dd7fafac24ffa3e527077b6b310c8383c31b98419243270cfb00aec95ab27d9",
       "mobile": {
         "src": "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 18668,
-        "outputHash": "sha256:b180c296ea0b704e79bf20baa6bf96691b7a98e2b4faddea57a42287919fb31c"
+        "bytes": 16136,
+        "outputHash": "sha256:7c53e2300b2de6f251dcb09ac2271a94e8c9a9ab850fbe5d312706686fe2def1"
       }
     },
     "/images/articles/stanley-cam-sale-agreement-december-2025/01-cover.webp": {
@@ -25144,17 +25144,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 36956,
+      "bytes": 39596,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:569111d33fd381488ebc50e57f9e3818aaca4d3da7b25d2488e2646a4a1b2891",
-      "outputHash": "sha256:ded5f81451a3b92142e4d05f8b9dcbfacb69b12e9d9803668e5b1ba55e26cd0a",
+      "sourceHash": "sha256:1e4aa3e135cd621572e4dee5058b714a4f4df67e8ea0cd09b4415b07639be983",
+      "outputHash": "sha256:1e6a88f564eb8e43fc33867df6102e8b2e65fe1ced1985b1bb9fb5346ae2053e",
       "mobile": {
         "src": "/images/articles/tennant-third-quarter-2026-results/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 18220,
-        "outputHash": "sha256:e4ac6541a74a771782172c91e40d14947c8ffb1c3f38af3f67e0ba39aa89ac74"
+        "bytes": 19728,
+        "outputHash": "sha256:91c6a50820df84d999c677071ef3b459fdffcd5d965b3f0a2184a85b74b7d4a8"
       }
     },
     "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp": {
@@ -27478,17 +27478,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 42072,
+      "bytes": 42880,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:7c17a105d7f2bd7562df4633f09a990d152054501513de31ace69f7f81915740",
-      "outputHash": "sha256:287a7e5347496ac7b16b6782f20d4f4194e055ece4e336a48a885f4493b99ab1",
+      "sourceHash": "sha256:dc21f71171d2aa8d15206c59bfa348f0660bfbdb45dd15c9d729e505c0979b5c",
+      "outputHash": "sha256:0b22840bc828f655188a02d7b4453f2be13fa9f4a0ffb5a452436ef8c35f74bc",
       "mobile": {
         "src": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19776,
-        "outputHash": "sha256:2b4dcbfb3fb6323989c88ab5f4fb9b4dadb70f90afcdfe630ae25678a5fd7a90"
+        "bytes": 20750,
+        "outputHash": "sha256:b227e3b239f90f0ed0ef547d7c1da2b9a0ac7c64372f580bce260f28c94b3188"
       }
     },
     "/images/articles/who-makes-aquabot-pool-cleaners-bwt-aquatron/01-cover.webp": {
@@ -54058,7 +54058,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:d97c83127f4b5d267ae18931bea78f0f1165b9605fc4f6ebe0df28df20402011"
+          "hash": "sha256:e1b58f7eec74fc76937a7fe00ca717003be602c98815e90850aa4d5275c5f966"
         }
       }
     },
@@ -54200,7 +54200,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover.webp",
-          "hash": "sha256:4770c0e460428ed9aff70e86d44dc990f78ee60d2f6e0422fa8ce175e62d9051"
+          "hash": "sha256:60352170c7fca3df5176f42587b32ae411f4a004a0e591b419436da0165b20e9"
         }
       }
     },
@@ -54218,7 +54218,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover.webp",
-          "hash": "sha256:a24e3a022d1e10275c9b9f5b1a3336559c57fd2249769792a562746ed3d2aded"
+          "hash": "sha256:52d5376bee3fb5074e8880b0adccf85e309af0b8c4f1a01cbdbe56de3a2403e6"
         }
       }
     },
@@ -54245,7 +54245,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover.webp",
-          "hash": "sha256:c0fe9feb6dc94421aeb0b307763613c98a8d73b59284033c6a23d071b3051c42"
+          "hash": "sha256:3c8acf874743a6e01d1791399e46fa2bfdd4780c5ba8756ce41574f1ea00dfda"
         }
       }
     },
@@ -54578,7 +54578,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
-          "hash": "sha256:e5413f2bb0c95b85b92c5e4aa31585ee605b92f1a37d31bafd6ed281453cdce8"
+          "hash": "sha256:067971463bd5a5a5d505105835191220f9a4705e4270c7088e2d345cdcb50a8b"
         }
       }
     },
@@ -54695,7 +54695,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/fluidra-nine-month-results-october-2026/01-cover.webp",
-          "hash": "sha256:31f2543ed294a271bad89abaa1df69d1b2cb0cb2313b4b70741fc7036c64211d"
+          "hash": "sha256:a0c7f6ffa1345b5efea6226f0a5965a42726ebd9cbb6719104b0a3583b56e2b6"
         }
       }
     },
@@ -55217,7 +55217,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover.webp",
-          "hash": "sha256:667fc08d2582023c364859749b88936b7f6a0ac844afdb101bf466506ad94c32"
+          "hash": "sha256:16907a7fc88258ba17183f2228a8ba75e48ab55f4c8282d376ea5e455a2b9b94"
         }
       }
     },
@@ -55244,7 +55244,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/haier-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:817d4f731fce0215d480beeec9a9aba0f2f980df1e7254aa48708211ba3535cc"
+          "hash": "sha256:7ad34784a2752f96931c3ae83c199d652c46106e85d21d298a4b14c749a3bf8a"
         }
       }
     },
@@ -55390,7 +55390,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/hayward-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:6d03a9d1f496f88227f93e33d1db973e91271b951bf01f1252df58bf81a68b0c"
+          "hash": "sha256:8f72cd958444b37ec8c89f2f3f71d67e37574652672e449ab14f6b238425649b"
         }
       }
     },
@@ -56309,7 +56309,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover.webp",
-          "hash": "sha256:8e602cb24ced66b539a5f61d56cf5eaed94761193758d9eff91356f4b9543962"
+          "hash": "sha256:0255e6303fef195f79e539da93cac195668025e51c465e33f68cdc386607381f"
         }
       }
     },
@@ -56775,7 +56775,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/makita-interim-results-october-2026/01-cover.webp",
-          "hash": "sha256:72ff53df32a8d5b2c49e17b56cb8af0172f18a9ccf46efd523bcee333e871588"
+          "hash": "sha256:d1fbbbe96f4586256d24dd5777e998526405362085db38b869f491b0c7a05fe9"
         }
       }
     },
@@ -57014,7 +57014,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/midea-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:adb73872c1bcd76a46a2134c0222765fa1a3818e1e72aae1ba7ac22aad7ae67f"
+          "hash": "sha256:46ba85a9bac15accaa66e41070fc989ba0b787b58a9fcc1246c226d316d728bb"
         }
       }
     },
@@ -57880,7 +57880,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/pentair-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:79919abed671649e5a1d70901c6f6ff56f1036bb0f18e0d4955443b5a3e94e3d"
+          "hash": "sha256:eec2f0b4b871231bcda5fd4630cec2e82c525bf502e7ecd2e51332dbd9d08236"
         }
       }
     },
@@ -58607,7 +58607,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/roborock-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:959ec5053e388eeaed602738132f2b3f3e7e2038a74375b0d6c37a93786dfbf6"
+          "hash": "sha256:9a7c47a25faa6320cd0bfa2d59e576bb6a340421dc5ca36d1361405dd985c8e3"
         }
       }
     },
@@ -59520,7 +59520,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover.webp",
-          "hash": "sha256:e8cb44929075020c4e1137aa81bdcd8b44dff26e7bf16ad97cc1d3b6906f3825"
+          "hash": "sha256:b9292f4645e14b49a73496456ae4f75207f383110c903a726b88b4dc1729acb2"
         }
       }
     },
@@ -59646,7 +59646,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover.webp",
-          "hash": "sha256:a0dbefcc0fffc0f59db117d20d6d9c2e1923d8583f26ec5303bdedd677c753ed"
+          "hash": "sha256:e49ef305520ec79e0943a7c218e0e36099c4fe14c07e68558b0b8e9a080e5a56"
         }
       }
     },
@@ -59792,7 +59792,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/tennant-third-quarter-2026-results/01-cover.webp",
-          "hash": "sha256:569111d33fd381488ebc50e57f9e3818aaca4d3da7b25d2488e2646a4a1b2891"
+          "hash": "sha256:1e4aa3e135cd621572e4dee5058b714a4f4df67e8ea0cd09b4415b07639be983"
         }
       }
     },
@@ -60565,7 +60565,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover.webp",
-          "hash": "sha256:7c17a105d7f2bd7562df4633f09a990d152054501513de31ace69f7f81915740"
+          "hash": "sha256:dc21f71171d2aa8d15206c59bfa348f0660bfbdb45dd15c9d729e505c0979b5c"
         }
       }
     },
