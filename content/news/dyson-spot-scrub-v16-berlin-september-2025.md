@@ -12,6 +12,7 @@ product_slugs: ["dyson-v16-piston-animal"]
 source_titles: ["Dyson Presents Spot+Scrub Ai and V16 Piston Animal in Berlin — original source"]
 source_urls: ["https://www.dyson.co.uk/discover/news/latest/James-Dyson-unveils-problem-solving-products-in-Berlin"]
 updatedAt: "2026-10-07T12:00:00+08:00"
+image_product: "dyson-v16-piston-animal"
 ---
 [Dyson](/brands/dyson) presented new and updated appliances at a Berlin event on September 4, 2025, with floorcare spanning robot cleaning, wet washing and cordless vacuuming. The [company presentation](https://www.dyson.co.uk/discover/news/latest/James-Dyson-unveils-problem-solving-products-in-Berlin) included Spot+Scrub Ai, Clean+Wash Hygiene and the [V16 Piston Animal](/products/dyson-v16-piston-animal).
 

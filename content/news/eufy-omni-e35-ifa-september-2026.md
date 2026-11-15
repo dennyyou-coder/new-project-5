@@ -13,6 +13,7 @@ related_articles: []
 source_titles: ["Engadget — eufy IFA 2026 announcements"]
 source_urls: ["https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/"]
 updatedAt: "2026-10-07T12:00:00+08:00"
+image_product: "eufy-omni-e35"
 ---
 eufy presented the Omni E35 robot vacuum at IFA 2026, adding another roller-mop model to its cleaning range. Engadget's September 3 report described the product as combining a self-cleaning roller with a multi-cyclone filtration system.
 

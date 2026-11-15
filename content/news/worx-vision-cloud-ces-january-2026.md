@@ -13,6 +13,7 @@ related_articles: []
 source_titles: ["Worx — Vision Cloud CES announcement"]
 source_urls: ["https://www.prnewswire.com/news-releases/worx-unveils-landroid-vision-cloud-redefining-autonomous-lawn-care-with-ai-and-rtk-cloud-precision-302654336.html"]
 updatedAt: "2026-10-07T12:00:00+08:00"
+image_product: "worx-landroid-vision-cloud-4wd-wr344"
 ---
 Worx introduced its Landroid Vision Cloud robotic mowing platform at CES on January 6, 2026. The company combined stereo-camera perception with cloud-based RTK positioning, aiming to simplify installation by removing the need for boundary wire or a dedicated positioning antenna on the property.
 
