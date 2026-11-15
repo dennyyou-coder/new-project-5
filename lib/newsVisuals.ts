@@ -20,6 +20,138 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "husqvarna-automower-dew-removal-golf-november-2026": {
+    "src": "/images/articles/husqvarna-automower-dew-removal-golf-november-2026/01-cover.webp",
+    "alt": "Husqvarna Automower 580L EPOS with the dew removal attachment on a golf green",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Automower 580L EPOS with the dew removal attachment. Official image from Husqvarna's press release, November 2026.",
+    "sourceUrl": "https://www.husqvarna.com/de/lernen-und-entdecken/presseraum/2026/husqvarna-launches-autonomous-dew-removal-solution/",
+    "sourceLabel": "Husqvarna press room",
+    "fit": "cover",
+    "prepared": true
+  },
+  "eufy-omni-s2-pro-us-launch-november-2026": {
+    "src": "/images/articles/eufy-omni-s2-pro-us-launch-november-2026/01-cover.webp",
+    "alt": "eufy Robot Vacuum Omni S2 Pro with its station",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "eufy Robot Vacuum Omni S2 Pro. Official product image from eufy's U.S. product page.",
+    "sourceUrl": "https://www.eufy.com/products/t210t111-eufy-robot-vacuum-omni-s2-pro",
+    "sourceLabel": "eufy",
+    "fit": "contain",
+    "prepared": true
+  },
+  "pudu-european-headquarters-neuss-october-2026": {
+    "src": "/images/articles/pudu-european-headquarters-neuss-october-2026/01-cover.webp",
+    "alt": "Pudu Robotics European headquarters building in Neuss, Germany",
+    "kind": "event",
+    "label": "Official company image",
+    "caption": "Pudu Robotics' new European headquarters in Neuss. Official image from the company's October 30, 2026 release.",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/pudu-robotics-opens-european-headquarters-in-germany-to-support-continued-growth-across-the-region-302923863.html",
+    "sourceLabel": "Pudu Robotics via PR Newswire",
+    "fit": "cover",
+    "prepared": true
+  },
+  "karcher-comfort-pressure-washers-october-2026": {
+    "src": "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp",
+    "alt": "Kärcher K 5 Comfort Premium pressure washer with accessories",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Kärcher K 5 Comfort Premium, one of the Comfort models. Official product image.",
+    "sourceUrl": "https://www.kaercher.com/int/home-garden/pressure-washers/k-5-comfort-premium-13248000.html",
+    "sourceLabel": "Kärcher",
+    "fit": "contain",
+    "prepared": true
+  },
+  "gausium-tianan-shenzhen-deployment-october-2026": {
+    "src": "/images/articles/gausium-tianan-shenzhen-deployment-october-2026/01-cover.webp",
+    "alt": "Gausium cleaning robot in a lobby at TianAn Cyber Park, Shenzhen",
+    "kind": "event",
+    "label": "Official case image",
+    "caption": "Gausium robot at TianAn Cyber Park, Shenzhen. Official image from the company's case study, October 2026.",
+    "sourceUrl": "https://gausium.com/case/tianan-cyber-park-shenzhen-cleaning-robots/",
+    "sourceLabel": "Gausium",
+    "fit": "contain",
+    "prepared": true
+  },
+  "shark-corded-stick-vacuums-october-2026": {
+    "src": "/images/articles/shark-corded-stick-vacuums-october-2026/01-cover.webp",
+    "alt": "Shark corded stick vacuum in use on a carpet",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "One of Shark's new corded stick vacuums in use. Official image from the October 7, 2026 release.",
+    "sourceUrl": "https://newsroom.sharkninja.com/shark-introduces-two-lightweight-stick-vacuums-with-nonstop-corded-power/",
+    "sourceLabel": "SharkNinja newsroom",
+    "fit": "cover",
+    "prepared": true
+  },
+  "stihl-sean-mcginnis-us-president-october-2026": {
+    "src": "/images/articles/stihl-sean-mcginnis-us-president-october-2026/01-cover.webp",
+    "alt": "Sean McGinnis, president of STIHL Inc.",
+    "kind": "company",
+    "label": "Official portrait",
+    "caption": "Sean McGinnis, named president of STIHL Inc. Official photo from the company's announcement.",
+    "sourceUrl": "https://www.stihlusa.com/en/support-events/about-stihl/press/stihl-inc-names-sean-mcginnis-president",
+    "sourceLabel": "STIHL Inc.",
+    "fit": "contain",
+    "prepared": true
+  },
+  "gausium-latvia-robot-deployments-september-2026": {
+    "src": "/images/articles/gausium-latvia-robot-deployments-september-2026/01-cover.webp",
+    "alt": "Gausium Beetle Pro scrubber in a Maxima supermarket in Latvia",
+    "kind": "event",
+    "label": "Official case image",
+    "caption": "Gausium Beetle Pro at a Maxima store in Latvia. Official image from the company's case study, September 2026.",
+    "sourceUrl": "https://gausium.com/case/floor-cleaning-robots-latvia/",
+    "sourceLabel": "Gausium",
+    "fit": "contain",
+    "prepared": true
+  },
+  "shark-navigator-two-in-one-september-2026": {
+    "src": "/images/articles/shark-navigator-two-in-one-september-2026/01-cover.webp",
+    "alt": "Shark Navigator 2-in-1 Robot Vacuum and Mop with its base",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Shark Navigator 2-in-1 Robot Vacuum and Mop. Official product image from SharkNinja.",
+    "sourceUrl": "https://www.sharkninja.com/shark-navigator-2-in-1-robot-vacuum-and-mop/RVA120E2.html",
+    "sourceLabel": "SharkNinja",
+    "fit": "contain",
+    "prepared": true
+  },
+  "bsh-vacuum-factory-mellrichstadt-september-2026": {
+    "src": "/images/articles/bsh-vacuum-factory-mellrichstadt-september-2026/01-cover.webp",
+    "alt": "Groundbreaking for the BSH vacuum cleaner factory in Mellrichstadt",
+    "kind": "event",
+    "label": "Official event image",
+    "caption": "Groundbreaking for the new BSH vacuum cleaner factory in Mellrichstadt. Official image from the BSH press release.",
+    "sourceUrl": "https://presse.bsh-group.com/pressreleases/bsh-staubsaugerfabrik-zieht-von-bad-neustadt-ins-benachbarte-mellrichstadt-3468815",
+    "sourceLabel": "BSH press room",
+    "fit": "cover",
+    "prepared": true
+  },
+  "mammotion-japan-shingu-distributor-september-2026": {
+    "src": "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp",
+    "alt": "Mammotion robotic mowers in a Japanese garden with Mount Fuji behind",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Mammotion robotic mowers. Official image from the company's Japanese release, September 2026.",
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000002.000183827.html",
+    "sourceLabel": "Mammotion via PR TIMES",
+    "fit": "cover",
+    "prepared": true
+  },
+  "hilti-eight-month-results-september-2026": {
+    "src": "/images/articles/hilti-eight-month-results-september-2026/01-cover.webp",
+    "alt": "Hilti headquarters in Schaan, Liechtenstein",
+    "kind": "company",
+    "label": "Official company image",
+    "caption": "Hilti headquarters. Official image from the January–August 2026 results release.",
+    "sourceUrl": "https://www.hilti.group/content/hilti/CP/XX/de/company/media-relations/media-releases/2026_1_8_umsatz.html",
+    "sourceLabel": "Hilti Group",
+    "fit": "cover",
+    "prepared": true
+  },
   "pudu-bg1-issa-awards-october-2026": {
     "src": "https://cdn.pudutech.com/1184_752_4230d9196f.png",
     "alt": "PUDU BG1 Series scrubber-dryer robots in the official launch graphic",

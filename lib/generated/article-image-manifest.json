@@ -3213,6 +3213,24 @@
       "sourceHash": "sha256:cf46629d2f9313718f80ac4288b324f4f82e2205103add5137964fe1551552c4",
       "outputHash": "sha256:07fab5f14723077ab37620e0b7c175323277dc5c2ca1dab923f488972d48bbf9"
     },
+    "/images/articles/bsh-vacuum-factory-mellrichstadt-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1120,
+      "height": 630,
+      "bytes": 144318,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f1d9491cc1180473ea1199009e97d96d3dc2893ddff065267fd920a99d3ba9a8",
+      "outputHash": "sha256:adc84619a981394aa604324f2738a7e768aa83e15e37c29e657554bd808608e3",
+      "mobile": {
+        "src": "/images/articles/bsh-vacuum-factory-mellrichstadt-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 74250,
+        "outputHash": "sha256:0c694e248ce2ae62e000d19b814d8e640d441bfb244237cd109c9d43a4828f02"
+      }
+    },
     "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -9052,6 +9070,24 @@
         "outputHash": "sha256:cccab6ebe1fe03ffbbfb453784efb745236805a69a5ac5f4e2f1485d79235257"
       }
     },
+    "/images/articles/eufy-omni-s2-pro-us-launch-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 16524,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:68769e8d2da2f7b7a29b8461ebbfc6edcaf24444a6e465a60bbabb6a4757bb3b",
+      "outputHash": "sha256:7cac1897e2258947b8a829df0a8eb6047debdda80f10e7664161c44fcc507d19",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-s2-pro-us-launch-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 5638,
+        "outputHash": "sha256:a71e28be6d22001bd15533c17190236627e8a68f45a9fd104193857f2e87ab6b"
+      }
+    },
     "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10287,6 +10323,24 @@
         "outputHash": "sha256:d16995cc9420faec790bc655125a6720fd8eddf888133a28028b4f193ce7fcbe"
       }
     },
+    "/images/articles/gausium-latvia-robot-deployments-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 190900,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8ed0a42ef93af149c9bdd262a0794d54610e5f99b6e0c171c0f55b7206e7fc5f",
+      "outputHash": "sha256:7350e6f695aa2b16ead6579afbfde2c477d27d2e8d4e0de15dc7bbafd45b3e1c",
+      "mobile": {
+        "src": "/images/articles/gausium-latvia-robot-deployments-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 66154,
+        "outputHash": "sha256:232d05976052947e744f2bfb8422c84e3c5411711023dbe10dd4adef812d2b2b"
+      }
+    },
     "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10303,6 +10357,24 @@
         "height": 450,
         "bytes": 28262,
         "outputHash": "sha256:9a7a2796dc63d84e05f3105159412357637fe6f5a73b6a23d09ff24dc3022d66"
+      }
+    },
+    "/images/articles/gausium-tianan-shenzhen-deployment-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 947,
+      "height": 533,
+      "bytes": 60902,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:23beb86e3b657a17b689f69917da8b016beb9f5ffaaf108ef3a0f89978d5f2f5",
+      "outputHash": "sha256:0f49aa593e8452a7f9793488932cf15ae23f7129206d31e36505ed7b02bbe1de",
+      "mobile": {
+        "src": "/images/articles/gausium-tianan-shenzhen-deployment-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44588,
+        "outputHash": "sha256:e8bd18b1ad6defe5b5e62d3f0ab56f62d6ca3dcec014ecbdb09dd3d5fb3b5207"
       }
     },
     "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp": {
@@ -11926,6 +11998,24 @@
         "outputHash": "sha256:d2c6bccc5f0ee2df28cccd30ac54718c56cec925a644f4c4032e96c44e6cc206"
       }
     },
+    "/images/articles/hilti-eight-month-results-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 247714,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6f10dbcffc7eaafa07be37c7ca2ddc44d57982e1520ff4a30863b6a858ac40de",
+      "outputHash": "sha256:222a95b3deb625fa952c048ece6be6d4e41d6ed171247fdc0a03890bd2533224",
+      "mobile": {
+        "src": "/images/articles/hilti-eight-month-results-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 64822,
+        "outputHash": "sha256:6865f55ae8e38f4a303af211ceb64600cd2b7a7364c1d5c0bd08f5b7d616be58"
+      }
+    },
     "/images/articles/hisense-savvy-awe-robots-march-2026/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -12163,6 +12253,24 @@
       "quality": 90,
       "sourceHash": "sha256:67d2d11f9abbc766d2190cd74751a26c44e04781bf6d2ab3412efc24e0cd8236",
       "outputHash": "sha256:058972ef5a3bb5ca52e2321a668e6ed480334a409536dc1a77b71d65777a326e"
+    },
+    "/images/articles/husqvarna-automower-dew-removal-golf-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1120,
+      "height": 630,
+      "bytes": 69130,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6ee2c1dabc40f3902f249e768b91e2465db8ebdd78a90857fc62aae47da214aa",
+      "outputHash": "sha256:b843456d34c028251551d5db92f68e6055adc156b5958fee422da0c288dc62d8",
+      "mobile": {
+        "src": "/images/articles/husqvarna-automower-dew-removal-golf-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 33860,
+        "outputHash": "sha256:26771ef704f3fc1870022e7e84fb461d726049c677f9dc35bb9d901d435b38f4"
+      }
     },
     "/images/articles/husqvarna-automower-vs-mammotion-luba/01-cover.webp": {
       "role": "cover",
@@ -13945,6 +14053,24 @@
         "outputHash": "sha256:e9ebc4145b1a62fa13a7e683c20379779bf03c7fb379894d70aa8fdc351feb47"
       }
     },
+    "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33112,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7a926018343fcc17b0691727c21013db60a5714bdae488adda16720e4c99f621",
+      "outputHash": "sha256:6d7014f95240fcdf5c5d529d11a14d4d8ca043a133c9f5fcb661b83e16d9646e",
+      "mobile": {
+        "src": "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12128,
+        "outputHash": "sha256:668a99d43bcc732eb118ea1740911f3d91bdedd104c88f99bfb621d3dfb0aad0"
+      }
+    },
     "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -14948,6 +15074,24 @@
         "height": 450,
         "bytes": 62406,
         "outputHash": "sha256:1ff6dfb5cfa3be17189e590090bfcb7d105e58d5f95374db696fec346d16a1bb"
+      }
+    },
+    "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 270722,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:3f5136a8aed3adbd1e4fb489bbcea7b0d4ce73fd5a383dce0dc6af031c4127ef",
+      "outputHash": "sha256:8e8427d1439b2e13fb02c5a9a3ec23c781e4c8452a73b27a8673f351bf29cc90",
+      "mobile": {
+        "src": "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 88470,
+        "outputHash": "sha256:9426dacb6a0660afbf6653bfeedd565fa07f74638f169744ecd3e612748caaa7"
       }
     },
     "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
@@ -17759,6 +17903,24 @@
         "height": 450,
         "bytes": 15164,
         "outputHash": "sha256:ba687c37ccffa95a63dc5cbef19397e612d8cabaad8048af935d63263355cb56"
+      }
+    },
+    "/images/articles/pudu-european-headquarters-neuss-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1120,
+      "height": 630,
+      "bytes": 72796,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b8cbcb889a31cca982112b4e255aaf20f9ae9fa247e5da7dda727798698d0e73",
+      "outputHash": "sha256:1f9c86d8ef622651dc08b70f25f06000c3b04242ad09829b2cc9393779b133f0",
+      "mobile": {
+        "src": "/images/articles/pudu-european-headquarters-neuss-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 41796,
+        "outputHash": "sha256:88353230f4ef8f710974bcbf935ee5b720a32da89e3f575787aa66685d72b72d"
       }
     },
     "/images/articles/pudu-gt5/01-cover.webp": {
@@ -21163,6 +21325,17 @@
         "outputHash": "sha256:9863ab1ac3b67362ec96ef7d59b0f23bd04e662c0f613feb020d2b60f8365fb6"
       }
     },
+    "/images/articles/shark-corded-stick-vacuums-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 480,
+      "height": 270,
+      "bytes": 23228,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2979c0af23a88274ad80801c32309a6fce1e85ad9c4f1131ba47d2891df52297",
+      "outputHash": "sha256:7e3cf2ec740450fe22f4b23a3744305cba5c5d33ef54434f99dcd851fe570ebc"
+    },
     "/images/articles/shark-hydrovac-vs-bissell-crosswave/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -21197,6 +21370,24 @@
         "height": 666,
         "bytes": 13996,
         "outputHash": "sha256:678f64e0a6f18025d5a82e1accb3a058c2901d22be0ac8dd5e8c1b8a7e8de153"
+      }
+    },
+    "/images/articles/shark-navigator-two-in-one-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40028,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5a435c02c5b2c27ed8ae8e53cc33ab1f450644d55cb6d234a1bd98916070527f",
+      "outputHash": "sha256:24d97ec0faf7aacfa9ee06afdaebc2fc525c74f84ed1477aff48a6962389700d",
+      "mobile": {
+        "src": "/images/articles/shark-navigator-two-in-one-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13160,
+        "outputHash": "sha256:f042c19a220ee220f1e479162d1d1491625313f3a1f3730d97980afbbde11169"
       }
     },
     "/images/articles/shark-powerdetect-speed-ia3241/01-cover.webp": {
@@ -21946,6 +22137,24 @@
         "height": 450,
         "bytes": 33600,
         "outputHash": "sha256:73f2a95853a34078960ea89dcb6c1d99af90ce9c4e4e870dc6539b063fea7e06"
+      }
+    },
+    "/images/articles/stihl-sean-mcginnis-us-president-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42466,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f506928161d2c9fbb0f95207351438f7e4c7dfed29d566e1d4469c27355b2680",
+      "outputHash": "sha256:d4bd897cceb53203e9785174f1f084e755d1baa43766e24a628143c7057a4347",
+      "mobile": {
+        "src": "/images/articles/stihl-sean-mcginnis-us-president-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12402,
+        "outputHash": "sha256:98aad3044ce1390709f41a00ebb30deaa41a858433cefd9da95ecf80a2ab8eeb"
       }
     },
     "/images/articles/story-of-hard-floor-washers/01-cover.webp": {
@@ -41424,6 +41633,11 @@
         "/images/articles/breville-premium-kitchen-product-design/07-best-buy.webp"
       ]
     },
+    "bsh-vacuum-factory-mellrichstadt-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/bsh-vacuum-factory-mellrichstadt-september-2026/01-cover.webp",
+      "body": []
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "budgetClass": "standard",
       "cover": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
@@ -42651,6 +42865,11 @@
         "/images/articles/eufy-omni-s2/02-dust-bag-access.webp"
       ]
     },
+    "eufy-omni-s2-pro-us-launch-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-s2-pro-us-launch-november-2026/01-cover.webp",
+      "body": []
+    },
     "eufy-omni-s2-vs-roborock-saros-20-flow": {
       "budgetClass": "standard",
       "cover": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp",
@@ -42873,9 +43092,19 @@
         "/images/articles/galli-chervon-new-team/04-sales-team-portraits.webp"
       ]
     },
+    "gausium-latvia-robot-deployments-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/gausium-latvia-robot-deployments-september-2026/01-cover.webp",
+      "body": []
+    },
     "gausium-mira-issa-innovation-award-november-2025": {
       "budgetClass": "standard",
       "cover": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
+      "body": []
+    },
+    "gausium-tianan-shenzhen-deployment-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/gausium-tianan-shenzhen-deployment-october-2026/01-cover.webp",
       "body": []
     },
     "gausium-vs-pudu-cleaning-robots": {
@@ -43041,6 +43270,11 @@
         "/images/insights/hidden-risks-in-cordless-vacuum-development-image-002.jpg",
         "/images/insights/hidden-risks-in-cordless-vacuum-development-image-003.jpg"
       ]
+    },
+    "hilti-eight-month-results-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/hilti-eight-month-results-september-2026/01-cover.webp",
+      "body": []
     },
     "hisense-savvy-awe-robots-march-2026": {
       "budgetClass": "standard",
@@ -43253,6 +43487,11 @@
     "husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd": {
       "budgetClass": "standard",
       "cover": "/images/articles/husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd/01-cover.webp",
+      "body": []
+    },
+    "husqvarna-automower-dew-removal-golf-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/husqvarna-automower-dew-removal-golf-november-2026/01-cover.webp",
       "body": []
     },
     "husqvarna-automower-vs-mammotion-luba": {
@@ -43508,6 +43747,11 @@
         "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison.webp"
       ]
     },
+    "karcher-comfort-pressure-washers-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp",
+      "body": []
+    },
     "karcher-family-business-alfred-irene-hartmut-jenner": {
       "budgetClass": "standard",
       "cover": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp",
@@ -43692,6 +43936,11 @@
     "major-battle-about-to-begin": {
       "budgetClass": "standard",
       "cover": "/images/insights/major-battle-about-to-begin-cover.jpg",
+      "body": []
+    },
+    "mammotion-japan-shingu-distributor-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp",
       "body": []
     },
     "mammotion-luba-3-awd-1500": {
@@ -44168,6 +44417,11 @@
     "prulde-first-half-results-august-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/prulde-first-half-results-august-2026/01-cover.webp",
+      "body": []
+    },
+    "pudu-european-headquarters-neuss-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pudu-european-headquarters-neuss-october-2026/01-cover.webp",
       "body": []
     },
     "pudu-gt5": {
@@ -45001,6 +45255,11 @@
       "cover": "/images/articles/shark-aquareach-wd551/01-cover.webp",
       "body": []
     },
+    "shark-corded-stick-vacuums-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-corded-stick-vacuums-october-2026/01-cover.webp",
+      "body": []
+    },
     "shark-hydrovac-vs-bissell-crosswave": {
       "budgetClass": "standard",
       "cover": "/images/articles/shark-hydrovac-vs-bissell-crosswave/01-cover.webp",
@@ -45009,6 +45268,11 @@
     "shark-navigator-2-in-1": {
       "budgetClass": "standard",
       "cover": "/images/articles/shark-navigator-2-in-1/01-cover.webp",
+      "body": []
+    },
+    "shark-navigator-two-in-one-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-navigator-two-in-one-september-2026/01-cover.webp",
       "body": []
     },
     "shark-powerdetect-speed-ia3241": {
@@ -45169,6 +45433,11 @@
     "stihl-equip-expo-2026-battery-mowers-snow": {
       "budgetClass": "standard",
       "cover": "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover.webp",
+      "body": []
+    },
+    "stihl-sean-mcginnis-us-president-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/stihl-sean-mcginnis-us-president-october-2026/01-cover.webp",
       "body": []
     },
     "story-of-hard-floor-washers": {
@@ -47653,6 +47922,15 @@
         }
       }
     },
+    "bsh-vacuum-factory-mellrichstadt-september-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bsh-vacuum-factory-mellrichstadt-september-2026/01-cover.webp",
+          "hash": "sha256:f1d9491cc1180473ea1199009e97d96d3dc2893ddff065267fd920a99d3ba9a8"
+        }
+      }
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "files": {
         "building-worlds-no-1-cleaning-show-episode-01-cover.webp": {
@@ -49862,6 +50140,15 @@
         }
       }
     },
+    "eufy-omni-s2-pro-us-launch-november-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2-pro-us-launch-november-2026/01-cover.webp",
+          "hash": "sha256:68769e8d2da2f7b7a29b8461ebbfc6edcaf24444a6e465a60bbabb6a4757bb3b"
+        }
+      }
+    },
     "eufy-omni-s2-vs-roborock-saros-20-flow": {
       "files": {
         "01-cover.png": {
@@ -50245,12 +50532,30 @@
         }
       }
     },
+    "gausium-latvia-robot-deployments-september-2026": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-latvia-robot-deployments-september-2026/01-cover.webp",
+          "hash": "sha256:8ed0a42ef93af149c9bdd262a0794d54610e5f99b6e0c171c0f55b7206e7fc5f"
+        }
+      }
+    },
     "gausium-mira-issa-innovation-award-november-2025": {
       "files": {
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
           "hash": "sha256:c35f9a3cb4408aa727d7dec2c4eb58f75190cf0966035436cf12da32ae8a3440"
+        }
+      }
+    },
+    "gausium-tianan-shenzhen-deployment-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-tianan-shenzhen-deployment-october-2026/01-cover.webp",
+          "hash": "sha256:23beb86e3b657a17b689f69917da8b016beb9f5ffaaf108ef3a0f89978d5f2f5"
         }
       }
     },
@@ -50785,6 +51090,15 @@
         }
       }
     },
+    "hilti-eight-month-results-september-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/hilti-eight-month-results-september-2026/01-cover.webp",
+          "hash": "sha256:6f10dbcffc7eaafa07be37c7ca2ddc44d57982e1520ff4a30863b6a858ac40de"
+        }
+      }
+    },
     "hisense-savvy-awe-robots-march-2026": {
       "files": {
         "01-cover.jpg": {
@@ -50876,6 +51190,15 @@
           "status": "matched",
           "primary": "/images/articles/husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd/01-cover.webp",
           "hash": "sha256:8f026c8e60be998afb36bfcac5be2f71a80c034954301e6ebd46f4ffec4cd440"
+        }
+      }
+    },
+    "husqvarna-automower-dew-removal-golf-november-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-automower-dew-removal-golf-november-2026/01-cover.webp",
+          "hash": "sha256:6ee2c1dabc40f3902f249e768b91e2465db8ebdd78a90857fc62aae47da214aa"
         }
       }
     },
@@ -51420,6 +51743,15 @@
         }
       }
     },
+    "karcher-comfort-pressure-washers-october-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp",
+          "hash": "sha256:7a926018343fcc17b0691727c21013db60a5714bdae488adda16720e4c99f621"
+        }
+      }
+    },
     "karcher-family-business-alfred-irene-hartmut-jenner": {
       "files": {
         "01-cover.webp": {
@@ -51820,6 +52152,15 @@
           "status": "matched",
           "primary": "/images/articles/luba-vs-navimow-mammotion-ninebot/02-luba-navimow-procurement-verification-map.webp",
           "hash": "sha256:d3004f591fb3b8d574f5411f24dff9bfdcef4b96a69de6ef56b65431f8d01ba1"
+        }
+      }
+    },
+    "mammotion-japan-shingu-distributor-september-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp",
+          "hash": "sha256:3f5136a8aed3adbd1e4fb489bbcea7b0d4ce73fd5a383dce0dc6af031c4127ef"
         }
       }
     },
@@ -52789,6 +53130,15 @@
           "status": "matched",
           "primary": "/images/articles/prulde-first-half-results-august-2026/01-cover.webp",
           "hash": "sha256:8da7589b6843b7b90eff4d6e306607946190c4231a0e66fffd78d0277279e947"
+        }
+      }
+    },
+    "pudu-european-headquarters-neuss-october-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/pudu-european-headquarters-neuss-october-2026/01-cover.webp",
+          "hash": "sha256:b8cbcb889a31cca982112b4e255aaf20f9ae9fa247e5da7dda727798698d0e73"
         }
       }
     },
@@ -53928,6 +54278,15 @@
         }
       }
     },
+    "shark-corded-stick-vacuums-october-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-corded-stick-vacuums-october-2026/01-cover.webp",
+          "hash": "sha256:2979c0af23a88274ad80801c32309a6fce1e85ad9c4f1131ba47d2891df52297"
+        }
+      }
+    },
     "shark-hydrovac-vs-bissell-crosswave": {
       "files": {
         "01-cover.png": {
@@ -53943,6 +54302,15 @@
           "status": "matched",
           "primary": "/images/articles/shark-navigator-2-in-1/01-cover.webp",
           "hash": "sha256:03ccdaca02d4c2053cd539024b8409cfaf9324f1015574256d31b5bb71b670f2"
+        }
+      }
+    },
+    "shark-navigator-two-in-one-september-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-navigator-two-in-one-september-2026/01-cover.webp",
+          "hash": "sha256:5a435c02c5b2c27ed8ae8e53cc33ab1f450644d55cb6d234a1bd98916070527f"
         }
       }
     },
@@ -54192,6 +54560,15 @@
           "status": "matched",
           "primary": "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover.webp",
           "hash": "sha256:dafc0d84cd5d957d93d206139f78f7702f46292c6d2b8b455181c57d36e2bcec"
+        }
+      }
+    },
+    "stihl-sean-mcginnis-us-president-october-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/stihl-sean-mcginnis-us-president-october-2026/01-cover.webp",
+          "hash": "sha256:f506928161d2c9fbb0f95207351438f7e4c7dfed29d566e1d4469c27355b2680"
         }
       }
     },
