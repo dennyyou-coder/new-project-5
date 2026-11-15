@@ -165,3 +165,4 @@
 .news-key-thumb-period { display: none; }
 @container (max-width: 160px) { .news-key-thumb-logo, .news-key-thumb-company { display: none; } }
 @container (max-width: 120px) { .news-key-thumb { padding: 6px; } .news-key-thumb-label { font-size: 10px; } }
+.news-page .news-row-content > h3:first-child { margin-top: 0; }
