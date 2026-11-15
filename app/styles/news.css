@@ -132,9 +132,6 @@
 /* PR-11: category filter and key figures */
 .news-page .news-category-dot { width: 8px; height: 8px; border-radius: 50%; }
 .news-page .news-row-figure { aspect-ratio: 4 / 3; border: 1px solid var(--line); background: #fff; }
-.news-key-thumb { display: flex; flex-direction: column; justify-content: center; gap: 2px; height: 100%; padding: 0 16px; box-sizing: border-box; color: #0B2140; }
-.news-key-thumb-label { font-size: 11px; font-weight: 700; color: #4a5367; }
-.news-key-thumb-value { font-size: 20px; white-space: nowrap; font-weight: 800; line-height: 1.15; }
 .news-key-figures { margin: 24px 0; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
 .news-key-figures-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; padding: 14px 18px; background: var(--soft); border-bottom: 1px solid var(--line); }
 .news-key-figures-head h2 { margin: 0; font-size: 16px; font-weight: 800; color: #0B2140; }
@@ -150,8 +147,21 @@
 /* Company logos in news lists and key-figure thumbs */
 .news-page .news-company-logo { display: inline-grid; place-items: center; width: 40px; height: 22px; background: #fff; border-radius: 4px; flex: none; }
 .news-page .news-company-logo img { max-width: 86%; max-height: 70%; object-fit: contain; }
-.news-key-thumb-logo { display: grid; place-items: center; width: 64px; height: 30px; margin-bottom: 6px; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
-.news-key-thumb-logo img { max-width: 82%; max-height: 64%; object-fit: contain; }
 
 /* Logo tiles are sized by area inline; keep any logo inside its box. */
 .news-page .news-company-logo img { object-fit: contain; }
+
+/* Key-figure pictures in news lists: everything centred and kept inside the box. */
+.news-page .news-row-figure { container-type: inline-size; overflow: hidden; }
+.news-key-thumb { display: flex; flex-direction: column; align-items: center; justify-content: safe center; gap: 4px; height: 100%; padding: 8px 10px; box-sizing: border-box; overflow: hidden; text-align: center; color: #0B2140; }
+.news-key-thumb-logo { display: grid; place-items: center; flex: none; width: 54px; height: 24px; background: #fff; border: 1px solid var(--line); border-radius: 5px; }
+.news-key-thumb-logo img { max-width: 82%; max-height: 64%; object-fit: contain; }
+.news-key-thumb-company { max-width: 100%; overflow: hidden; font-size: 11px; font-weight: 700; color: #4a5367; white-space: nowrap; text-overflow: ellipsis; }
+.news-key-thumb-figures { display: flex; justify-content: center; gap: 8px 12%; min-width: 0; max-width: 100%; }
+.news-key-thumb-figure { display: flex; flex-direction: column; align-items: center; gap: 1px; min-width: 0; }
+.news-key-thumb-value { font-size: clamp(16px, 12cqw, 22px); font-weight: 800; line-height: 1.1; letter-spacing: -.01em; white-space: nowrap; }
+.news-key-thumb-value.is-long { font-size: clamp(13px, 8.4cqw, 18px); white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.news-key-thumb-label { max-width: 100%; overflow: hidden; font-size: 11px; font-weight: 600; line-height: 1.3; color: #4a5367; white-space: nowrap; text-overflow: ellipsis; }
+.news-key-thumb-period { display: none; }
+@container (max-width: 160px) { .news-key-thumb-logo, .news-key-thumb-company { display: none; } }
+@container (max-width: 120px) { .news-key-thumb { padding: 6px; } .news-key-thumb-label { font-size: 10px; } }
