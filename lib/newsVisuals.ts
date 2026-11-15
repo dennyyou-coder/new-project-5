@@ -20,6 +20,116 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "husqvarna-eu-mower-disclosure-october-2026": {
+    "src": "/images/articles/husqvarna-eu-mower-disclosure-october-2026/01-cover.webp",
+    "alt": "WCB topic card: EU robot-mower investigation. Disclosure stage reached; no definitive duty rate announced. October 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Trade case: European Commission. Disclosure stage reached; no definitive duty rate announced. October 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.husqvarnagroup.com/en/press/husqvarna-group-notes-eu-commissions-disclosure-robotic-mower-anti-dumping-investigation",
+    "sourceLabel": "Story source: EU Robot-Mower Investigation Reaches Disclosure Stage, Husqvarna Says — supporti",
+    "fit": "cover",
+    "prepared": true
+  },
+  "husqvarna-q3-2026-robotics-and-production-update": {
+    "src": "/images/articles/husqvarna-q3-2026-robotics-and-production-update/01-cover.webp",
+    "alt": "WCB topic card: Husqvarna Q3 loss. Weaker European mower demand; some battery-handheld production moves to Asia",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Weaker European mower demand; some battery-handheld production moves to Asia. Card: World Clean Biz.",
+    "sourceUrl": "https://www.husqvarnagroup.com/en/press/interim-report-january-september-2026-2490517",
+    "sourceLabel": "Story source: Interim report January–September 2026",
+    "fit": "cover",
+    "prepared": true
+  },
+  "maytronics-australia-papageorgiou-departure-october-2026": {
+    "src": "/images/articles/maytronics-australia-papageorgiou-departure-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Leadership change. Chris Papageorgiou departs. October 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Leadership: Maytronics Australia. Chris Papageorgiou departs. October 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.maytronics.com.au/chris-leaving-maytronics/",
+    "sourceLabel": "Story source: Chris Papageorgiou Leaves Maytronics Australia",
+    "fit": "cover",
+    "prepared": true
+  },
+  "hayward-jared-arrowood-accounting-officer-october-2026": {
+    "src": "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp",
+    "alt": "WCB topic card: New chief accounting officer. Jared Arrowood named; Eifion Jones remains CFO. October 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Leadership: Hayward Holdings. Jared Arrowood named; Eifion Jones remains CFO. October 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://investor.hayward.com/investor-news/news-details/2026/Hayward-Holdings-Names-New-Chief-Accounting-Officer/default.aspx",
+    "sourceLabel": "Story source: Hayward Holdings Names New Chief Accounting Officer",
+    "fit": "cover",
+    "prepared": true
+  },
+  "dyson-2025-dividend-report-october-2026": {
+    "src": "/images/articles/dyson-2025-dividend-report-october-2026/01-cover.webp",
+    "alt": "WCB topic card: GBP 750m dividend. Paid by Dyson Holdings in 2025, per registry filings",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Finance: 2025 accounts. Paid by Dyson Holdings in 2025, per registry filings. Card: World Clean Biz.",
+    "sourceUrl": "https://sg.finance.yahoo.com/news/dysons-us-995-mil-dividend-235950948.html",
+    "sourceLabel": "Story source: Bloomberg via Yahoo Finance — Dyson dividend filings",
+    "fit": "cover",
+    "prepared": true
+  },
+  "dyson-camerajet-production-update-september-2026": {
+    "src": "/images/articles/dyson-camerajet-production-update-september-2026/01-cover.webp",
+    "alt": "WCB topic card: CameraJet stock update. Batch issue isolated; production and shipping running. September 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Production: Dyson. Batch issue isolated; production and shipping running. September 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.dyson.co.uk/discover/inside-dyson/statements/dyson-camerajet-update",
+    "sourceLabel": "Story source: Dyson CameraJet Update",
+    "fit": "cover",
+    "prepared": true
+  },
+  "idc-robot-vacuum-q2-shipments-september-2026": {
+    "src": "/images/articles/idc-robot-vacuum-q2-shipments-september-2026/01-cover.webp",
+    "alt": "WCB topic card: 7.89m robot vacuums shipped. Roborock led with a 23.7% share of global shipments",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Market data: IDC · Q2 2026. Roborock led with a 23.7% share of global shipments. Card: World Clean Biz.",
+    "sourceUrl": "https://en.sedaily.com/finance/2026/09/29/roborock-tops-global-robot-vacuum-shipments-in-q2-with-237",
+    "sourceLabel": "Story source: Seoul Economic Daily — IDC Q2 shipment data",
+    "fit": "cover",
+    "prepared": true
+  },
+  "karcher-tineco-upc-claim-report-september-2026": {
+    "src": "/images/articles/karcher-tineco-upc-claim-report-september-2026/01-cover.webp",
+    "alt": "WCB topic card: Kärcher v Tineco. Floor-cleaning patent claim over EP 3 079 553. September 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Patent case: UPC Düsseldorf. Floor-cleaning patent claim over EP 3 079 553. September 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.juve-patent.com/cases/the-fight-for-market-share-in-the-smart-vacuum-cleaner-industry-keeps-upc-busy/",
+    "sourceLabel": "Story source: JUVE Patent — Kärcher and Tineco patent case",
+    "fit": "cover",
+    "prepared": true
+  },
+  "papst-roborock-upc-dismissal-report-september-2026": {
+    "src": "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover.webp",
+    "alt": "WCB topic card: Papst v Roborock. Claim dismissed, mid-August 2026, as reported by JUVE Patent",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Patent case: UPC Munich. Claim dismissed, mid-August 2026, as reported by JUVE Patent. Card: World Clean Biz.",
+    "sourceUrl": "https://www.juve-patent.com/cases/the-fight-for-market-share-in-the-smart-vacuum-cleaner-industry-keeps-upc-busy/",
+    "sourceLabel": "Story source: JUVE Patent — Papst claim dismissal report",
+    "fit": "cover",
+    "prepared": true
+  },
+  "toro-edric-funk-takes-over-as-ceo-november-2026": {
+    "src": "/images/articles/toro-edric-funk-takes-over-as-ceo-november-2026/01-cover.webp",
+    "alt": "WCB topic card: New CEO at Toro. Edric Funk took over on November 1, 2026; Richard Olson becomes executive chairman",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Leadership: The Toro Company. Edric Funk took over on November 1, 2026; Richard Olson becomes executive chairman. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000737758/000073775826000025/pressrelease07222026.htm",
+    "sourceLabel": "Story source: The Toro Company — Form 8-K and succession press release (July 22, 2026)",
+    "fit": "cover",
+    "prepared": true
+  },
   "husqvarna-automower-dew-removal-golf-november-2026": {
     "src": "/images/articles/husqvarna-automower-dew-removal-golf-november-2026/01-cover.webp",
     "alt": "Husqvarna Automower 580L EPOS with the dew removal attachment on a golf green",

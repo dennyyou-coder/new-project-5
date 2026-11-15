@@ -6505,6 +6505,24 @@
         "outputHash": "sha256:5908b2ac536ad213a7adfd75b0d9877e6f380196c5736929f4cb6b2596f8cff7"
       }
     },
+    "/images/articles/dyson-2025-dividend-report-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39846,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5320df2eeb5510e32d4462b233595d216a6151ccf099270a1813953d36347f07",
+      "outputHash": "sha256:924b45545143a027a25434ca0b8e71f2a0cf5af82c28e743fcaa922137bfa4ff",
+      "mobile": {
+        "src": "/images/articles/dyson-2025-dividend-report-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19260,
+        "outputHash": "sha256:9cc5b5ff32c658b7ee66cf0e2487d837470c2a79428f4ffcfc463f68361632c5"
+      }
+    },
     "/images/articles/dyson-at-a-crossroads/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -6663,6 +6681,24 @@
         "height": 450,
         "bytes": 24586,
         "outputHash": "sha256:854127a9254b9c17a9064269ca83a2fd77706f2de2269162d8bca29374ba9550"
+      }
+    },
+    "/images/articles/dyson-camerajet-production-update-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45358,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4a30715dcc2bcf36d571d7395972eb1d1e7f2bdfa24e60943f58eda9329a4473",
+      "outputHash": "sha256:6631307b5e185e58e8887f0584d48427c6f188d30f0397e4eec7498d76bbbe57",
+      "mobile": {
+        "src": "/images/articles/dyson-camerajet-production-update-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22072,
+        "outputHash": "sha256:404775fc53be723440e6256d44cf8f5143e608568ec8b5564e6a9d6dccffe5f7"
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp": {
@@ -11962,6 +11998,24 @@
         "outputHash": "sha256:aeefcce15c5ea3fafd029d7faed2cf8f0af9753ffa370c8612abcd853974622a"
       }
     },
+    "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 49566,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:eef0c790bc1c5fd4e9e8f73af8142bcd431e0d1dd5fb569f46ff62b3b939c147",
+      "outputHash": "sha256:c020b7e1157c4822a4985b4576a6381744cb4d48ee6edfd96cfbbbcfebe54d51",
+      "mobile": {
+        "src": "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24772,
+        "outputHash": "sha256:df8971af8bc408bdd78c1d1049f591839c4af018e80a374986a7dd48c64f6970"
+      }
+    },
     "/images/articles/hayward-vs-pentair-vs-fluidra/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -12290,6 +12344,24 @@
         "outputHash": "sha256:0760b592fb0f8a7822fa4aec35fc05469ea1dd2213547f769c2b7bdb0acac265"
       }
     },
+    "/images/articles/husqvarna-eu-mower-disclosure-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 52744,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:465b242af8e0314d8c558303a61b871bfaf72ac83dce594ff6fc8a7429b976cb",
+      "outputHash": "sha256:9fa8a64eb3d57caf8d89d95650705d6e94b0923b380d97400aa45a42d867c28d",
+      "mobile": {
+        "src": "/images/articles/husqvarna-eu-mower-disclosure-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25910,
+        "outputHash": "sha256:80c50d6747ae15f920a7c04fcdd50f05783486922072319e22f6fa5c7355c56b"
+      }
+    },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -12342,6 +12414,42 @@
         "height": 450,
         "bytes": 34908,
         "outputHash": "sha256:8b16660ea1b0a9670763713c5bd0c1b992b8d5af5612fc4667ed725a2b8807d3"
+      }
+    },
+    "/images/articles/husqvarna-q3-2026-robotics-and-production-update/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43862,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5982c5e03fff1b92817ed6c2035c1c472d970d8109c6dbc68e23a53cc1f7d54b",
+      "outputHash": "sha256:f44148c02e1ff69a52bcbb65c453584c7c80137ab65c8b76a9efe735e4075c3b",
+      "mobile": {
+        "src": "/images/articles/husqvarna-q3-2026-robotics-and-production-update/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21074,
+        "outputHash": "sha256:c51e69f76727d9c4aaac5b20547dbbf1c5594a703efc4c2e52a95f9e607afa5f"
+      }
+    },
+    "/images/articles/idc-robot-vacuum-q2-shipments-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45506,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cb88efd5979f5280c1594235d627ea4eee20849f2d6259af584640626218d881",
+      "outputHash": "sha256:914c0ec0dd9f6315bd37edbd9b2dfae9f6bdd18010c06abd870420fd22029080",
+      "mobile": {
+        "src": "/images/articles/idc-robot-vacuum-q2-shipments-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23302,
+        "outputHash": "sha256:89310b2904413f4985fb8745353ac47187ab31009ea00e5f0d8d5647298f3140"
       }
     },
     "/images/articles/ifa-2019-vacuum-cleaner-new-products-by-major-brands/01-cover.webp": {
@@ -14383,6 +14491,24 @@
       "sourceHash": "sha256:148d1d3ef45bce63e7028127c8e11b41ebe651d45d9cfd5af83d9fa677a10139",
       "outputHash": "sha256:17fe54395fb85e08b3154111324b89312d689938995cf9254c204a071f07f02f"
     },
+    "/images/articles/karcher-tineco-upc-claim-report-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42148,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:33a6bb4f1354d50417c96ce393991016e75223cd7f2cf8969cb2223306b565e3",
+      "outputHash": "sha256:b140ddd8e9a512b5c4af750a4bae25e3698a41a2d7befa9a5efc4fdf42b4d6fd",
+      "mobile": {
+        "src": "/images/articles/karcher-tineco-upc-claim-report-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20476,
+        "outputHash": "sha256:0600d9687c69e0e86fe68ce667573724631b455775e26b4b2033d5fc17c50868"
+      }
+    },
     "/images/articles/karcher-vcs-7-28-infinity-signature-line/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -15176,6 +15302,24 @@
       "quality": 84,
       "sourceHash": "sha256:c7e2f34bdb0703fbfee2013f3b05cee88095bccbce15371e99b2f25e89fa71ce",
       "outputHash": "sha256:5533c2024905b9598176dcef530aaa4edcc3ebd72b833a6655c67233869a512a"
+    },
+    "/images/articles/maytronics-australia-papageorgiou-departure-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41824,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:9cfdb5520d475c716ea5e5ea6f9e76dca37ebc76c7fb7289fa65b77f29b9dd9f",
+      "outputHash": "sha256:e745814dcdeb855f6b4c9b692abfa780d22fc8bf5be6b0e1dfc2844024970e95",
+      "mobile": {
+        "src": "/images/articles/maytronics-australia-papageorgiou-departure-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19810,
+        "outputHash": "sha256:7af3aed6e4f124c2861cea0478fb7b64d90b369b7f134a732721ee2cf6068d2f"
+      }
     },
     "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp": {
       "role": "cover",
@@ -17615,6 +17759,24 @@
         "height": 450,
         "bytes": 44424,
         "outputHash": "sha256:adee6d75fabd57adcf6065d756330a16693a0f95d5f5c096a3af60f41bad2cda"
+      }
+    },
+    "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40768,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:26c7820d9a605f2fb22f8c9e416a8b4ac3401581576a806080771565bdc11da8",
+      "outputHash": "sha256:7e151725bd68532936590663bc340ca4bfa9648015f67dcb676f2f7141e4d5e5",
+      "mobile": {
+        "src": "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19374,
+        "outputHash": "sha256:4734a6b1610ec0e1b738b4d642b6dcb0ebe914f5801f3cbb0dc0da9c137d415b"
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
@@ -22914,6 +23076,24 @@
         "height": 450,
         "bytes": 14350,
         "outputHash": "sha256:7e958ab0a3cbcd23c61acd428f60eb9cbf522caf2f85c6c7f7ed3d9352fa8581"
+      }
+    },
+    "/images/articles/toro-edric-funk-takes-over-as-ceo-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44674,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4b2edf389f49cbe81e6b09a91a9679f28b2579a69c0e267b8e4e2d1944fa0a28",
+      "outputHash": "sha256:dd114d1e4ea223bec78439db14a86c42bc60d22b0f97ed052cf0d6bacc4c4195",
+      "mobile": {
+        "src": "/images/articles/toro-edric-funk-takes-over-as-ceo-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20938,
+        "outputHash": "sha256:48995e15f38362a13b6d4d30e9b8c5d9ffb183421e31b369314a2038591849b9"
       }
     },
     "/images/articles/tti-2019-interim-report/01-cover.webp": {
@@ -42457,6 +42637,11 @@
         "/images/articles/dual-wash-stations-next-cleaning-category/09-service-access.webp"
       ]
     },
+    "dyson-2025-dividend-report-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-2025-dividend-report-october-2026/01-cover.webp",
+      "body": []
+    },
     "dyson-at-a-crossroads": {
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-at-a-crossroads/01-cover.webp",
@@ -42473,6 +42658,11 @@
         "/images/articles/dyson-at-a-crossroads/11-dyson-at-a-crossroads-image-011.webp",
         "/images/articles/dyson-at-a-crossroads/12-dyson-at-a-crossroads-image-012.webp"
       ]
+    },
+    "dyson-camerajet-production-update-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-camerajet-production-update-september-2026/01-cover.webp",
+      "body": []
     },
     "dyson-camerajet-toothbrush-review": {
       "budgetClass": "standard",
@@ -43256,6 +43446,11 @@
         "/images/insights/hard-floor-washers-have-no-profit-image-002.jpg"
       ]
     },
+    "hayward-jared-arrowood-accounting-officer-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp",
+      "body": []
+    },
     "hayward-vs-pentair-vs-fluidra": {
       "budgetClass": "standard",
       "cover": "/images/articles/hayward-vs-pentair-vs-fluidra/01-cover.webp",
@@ -43499,6 +43694,11 @@
       "cover": "/images/articles/husqvarna-automower-vs-mammotion-luba/01-cover.webp",
       "body": []
     },
+    "husqvarna-eu-mower-disclosure-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/husqvarna-eu-mower-disclosure-october-2026/01-cover.webp",
+      "body": []
+    },
     "husqvarna-fcc-exemption-robotic-mowers": {
       "budgetClass": "standard",
       "cover": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp",
@@ -43506,6 +43706,11 @@
         "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp",
         "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp"
       ]
+    },
+    "husqvarna-q3-2026-robotics-and-production-update": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/husqvarna-q3-2026-robotics-and-production-update/01-cover.webp",
+      "body": []
     },
     "husqvarna-robotic-mowers-after-eu-anti-dumping": {
       "budgetClass": "standard",
@@ -43518,6 +43723,11 @@
     "i-want-to-become-an-influencer": {
       "budgetClass": "standard",
       "cover": "/images/insights/i-want-to-become-an-influencer-cover.jpg",
+      "body": []
+    },
+    "idc-robot-vacuum-q2-shipments-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/idc-robot-vacuum-q2-shipments-september-2026/01-cover.webp",
       "body": []
     },
     "ieepa-tariff-refunds-who-gets-the-money": {
@@ -43784,6 +43994,11 @@
         "/images/articles/karcher-hidden-champion-in-cleaning-appliances/15-karcher-hidden-champion-in-cleaning-appliances-image-015.webp"
       ]
     },
+    "karcher-tineco-upc-claim-report-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/karcher-tineco-upc-claim-report-september-2026/01-cover.webp",
+      "body": []
+    },
     "karcher-vcs-7-28-infinity-signature-line": {
       "budgetClass": "standard",
       "cover": "/images/articles/karcher-vcs-7-28-infinity-signature-line/01-cover.webp",
@@ -43966,6 +44181,11 @@
     "mammotion-yuka-mini-2-1000": {
       "budgetClass": "standard",
       "cover": "/images/articles/mammotion-yuka-mini-2-1000/01-cover.webp",
+      "body": []
+    },
+    "maytronics-australia-papageorgiou-departure-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/maytronics-australia-papageorgiou-departure-october-2026/01-cover.webp",
       "body": []
     },
     "maytronics-fimi-sale-pool-robot-leader": {
@@ -44342,6 +44562,11 @@
         "/images/articles/pan-longquan-joe-galli-chervon/03-ego.webp",
         "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp"
       ]
+    },
+    "papst-roborock-upc-dismissal-report-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover.webp",
+      "body": []
     },
     "philips-health-technology-versuni-home-appliances": {
       "budgetClass": "standard",
@@ -45603,6 +45828,11 @@
     "top-ten-vacuum-exporters-in-2019": {
       "budgetClass": "standard",
       "cover": "/images/insights/top-ten-vacuum-exporters-in-2019-cover.jpg",
+      "body": []
+    },
+    "toro-edric-funk-takes-over-as-ceo-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/toro-edric-funk-takes-over-as-ceo-november-2026/01-cover.webp",
       "body": []
     },
     "trade-war-scenario-analysis": {
@@ -49107,6 +49337,15 @@
         }
       }
     },
+    "dyson-2025-dividend-report-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-2025-dividend-report-october-2026/01-cover.webp",
+          "hash": "sha256:5320df2eeb5510e32d4462b233595d216a6151ccf099270a1813953d36347f07"
+        }
+      }
+    },
     "dyson-at-a-crossroads": {
       "files": {
         "01-cover.png": {
@@ -49168,6 +49407,15 @@
           "status": "matched",
           "primary": "/images/articles/dyson-at-a-crossroads/12-dyson-at-a-crossroads-image-012.webp",
           "hash": "sha256:1fcd035d882091771abe1f14383ff6c0b03400abf8e7aabf216f063bc0e33ef3"
+        }
+      }
+    },
+    "dyson-camerajet-production-update-september-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-camerajet-production-update-september-2026/01-cover.webp",
+          "hash": "sha256:4a30715dcc2bcf36d571d7395972eb1d1e7f2bdfa24e60943f58eda9329a4473"
         }
       }
     },
@@ -51076,6 +51324,15 @@
         }
       }
     },
+    "hayward-jared-arrowood-accounting-officer-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp",
+          "hash": "sha256:eef0c790bc1c5fd4e9e8f73af8142bcd431e0d1dd5fb569f46ff62b3b939c147"
+        }
+      }
+    },
     "hayward-vs-pentair-vs-fluidra": {
       "files": {
         "01-cover.png": {
@@ -51211,6 +51468,15 @@
         }
       }
     },
+    "husqvarna-eu-mower-disclosure-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-eu-mower-disclosure-october-2026/01-cover.webp",
+          "hash": "sha256:465b242af8e0314d8c558303a61b871bfaf72ac83dce594ff6fc8a7429b976cb"
+        }
+      }
+    },
     "husqvarna-fcc-exemption-robotic-mowers": {
       "files": {
         "01-cover.webp": {
@@ -51227,6 +51493,24 @@
           "status": "matched",
           "primary": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp",
           "hash": "sha256:1e64dee865506ed91af7e5a9af7fc6b95f3b049e4f367d5e38e764b773696789"
+        }
+      }
+    },
+    "husqvarna-q3-2026-robotics-and-production-update": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-q3-2026-robotics-and-production-update/01-cover.webp",
+          "hash": "sha256:5982c5e03fff1b92817ed6c2035c1c472d970d8109c6dbc68e23a53cc1f7d54b"
+        }
+      }
+    },
+    "idc-robot-vacuum-q2-shipments-september-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/idc-robot-vacuum-q2-shipments-september-2026/01-cover.webp",
+          "hash": "sha256:cb88efd5979f5280c1594235d627ea4eee20849f2d6259af584640626218d881"
         }
       }
     },
@@ -51870,6 +52154,15 @@
         }
       }
     },
+    "karcher-tineco-upc-claim-report-september-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-tineco-upc-claim-report-september-2026/01-cover.webp",
+          "hash": "sha256:33a6bb4f1354d50417c96ce393991016e75223cd7f2cf8969cb2223306b565e3"
+        }
+      }
+    },
     "karcher-vcs-7-28-infinity-signature-line": {
       "files": {
         "01-cover.jpg": {
@@ -52206,6 +52499,15 @@
           "status": "matched",
           "primary": "/images/articles/mammotion-yuka-mini-2-1000/01-cover.webp",
           "hash": "sha256:c7e2f34bdb0703fbfee2013f3b05cee88095bccbce15371e99b2f25e89fa71ce"
+        }
+      }
+    },
+    "maytronics-australia-papageorgiou-departure-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-australia-papageorgiou-departure-october-2026/01-cover.webp",
+          "hash": "sha256:9cfdb5520d475c716ea5e5ea6f9e76dca37ebc76c7fb7289fa65b77f29b9dd9f"
         }
       }
     },
@@ -53059,6 +53361,15 @@
           "status": "matched",
           "primary": "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp",
           "hash": "sha256:1903d91d33566e33420eaa863155174260fe12cae1cfbb6e60fc0e816658ec76"
+        }
+      }
+    },
+    "papst-roborock-upc-dismissal-report-september-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover.webp",
+          "hash": "sha256:26c7820d9a605f2fb22f8c9e416a8b4ac3401581576a806080771565bdc11da8"
         }
       }
     },
@@ -54852,6 +55163,15 @@
           "status": "matched",
           "primary": "/images/articles/tineco-vs-shark-hydrovac-floor-washers/01-cover.webp",
           "hash": "sha256:69181851d96c612d92bef46f7f2769ecefe0388365f63c8715f1851874de6916"
+        }
+      }
+    },
+    "toro-edric-funk-takes-over-as-ceo-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/toro-edric-funk-takes-over-as-ceo-november-2026/01-cover.webp",
+          "hash": "sha256:4b2edf389f49cbe81e6b09a91a9679f28b2579a69c0e267b8e4e2d1944fa0a28"
         }
       }
     },

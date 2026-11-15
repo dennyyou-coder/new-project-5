@@ -1,0 +1,103 @@
+[
+ {
+  "slug": "husqvarna-eu-mower-disclosure-october-2026",
+  "kicker": "Trade case · European Commission",
+  "title": "EU robot-mower investigation",
+  "detail": "Disclosure stage reached; no definitive duty rate announced. October 2026",
+  "icon": "scales",
+  "logos": [
+   "husqvarna"
+  ]
+ },
+ {
+  "slug": "husqvarna-q3-2026-robotics-and-production-update",
+  "kicker": "Results · Q3 2026",
+  "title": "Husqvarna Q3 loss",
+  "detail": "Weaker European mower demand; some battery-handheld production moves to Asia",
+  "icon": "decline",
+  "logos": [
+   "husqvarna"
+  ]
+ },
+ {
+  "slug": "maytronics-australia-papageorgiou-departure-october-2026",
+  "kicker": "Leadership · Maytronics Australia",
+  "title": "Leadership change",
+  "detail": "Chris Papageorgiou departs. October 2026",
+  "icon": "person",
+  "logos": [
+   "maytronics"
+  ]
+ },
+ {
+  "slug": "hayward-jared-arrowood-accounting-officer-october-2026",
+  "kicker": "Leadership · Hayward Holdings",
+  "title": "New chief accounting officer",
+  "detail": "Jared Arrowood named; Eifion Jones remains CFO. October 2026",
+  "icon": "person",
+  "logos": [
+   "hayward"
+  ]
+ },
+ {
+  "slug": "dyson-2025-dividend-report-october-2026",
+  "kicker": "Finance · 2025 accounts",
+  "title": "GBP 750m dividend",
+  "detail": "Paid by Dyson Holdings in 2025, per registry filings",
+  "icon": "coins",
+  "logos": [
+   "dyson"
+  ]
+ },
+ {
+  "slug": "dyson-camerajet-production-update-september-2026",
+  "kicker": "Production · Dyson",
+  "title": "CameraJet stock update",
+  "detail": "Batch issue isolated; production and shipping running. September 2026",
+  "icon": "factory",
+  "logos": [
+   "dyson"
+  ]
+ },
+ {
+  "slug": "idc-robot-vacuum-q2-shipments-september-2026",
+  "kicker": "Market data · IDC · Q2 2026",
+  "title": "7.89m robot vacuums shipped",
+  "detail": "Roborock led with a 23.7% share of global shipments",
+  "icon": "chart",
+  "logos": [
+   "roborock"
+  ]
+ },
+ {
+  "slug": "karcher-tineco-upc-claim-report-september-2026",
+  "kicker": "Patent case · UPC Düsseldorf",
+  "title": "Kärcher v Tineco",
+  "detail": "Floor-cleaning patent claim over EP 3 079 553. September 2026",
+  "icon": "gavel",
+  "logos": [
+   "karcher",
+   "tineco"
+  ]
+ },
+ {
+  "slug": "papst-roborock-upc-dismissal-report-september-2026",
+  "kicker": "Patent case · UPC Munich",
+  "title": "Papst v Roborock",
+  "detail": "Claim dismissed, mid-August 2026, as reported by JUVE Patent",
+  "icon": "gavel",
+  "logos": [
+   "roborock"
+  ]
+ },
+ {
+  "slug": "toro-edric-funk-takes-over-as-ceo-november-2026",
+  "kicker": "Leadership · The Toro Company",
+  "title": "New CEO at Toro",
+  "detail": "Edric Funk took over on November 1, 2026; Richard Olson becomes executive chairman",
+  "icon": "person",
+  "logos": [
+   "toro"
+  ]
+ }
+]

@@ -24,7 +24,7 @@ test("financial results are complete, sourced and tied to a company profile", ()
     // A derived quarter must say how it was worked out.
     if (result.derived) assert.match(result.source.label, /minus/, `${key}: derived source`);
     if (result.profit !== undefined) assert.ok(result.profitLabel, `${result.company}: profit label`);
-    if (result.news) assert.ok(existsSync(`content/news/${result.news}.md`), `${result.company}: news ${result.news}`);
+    if (result.news) assert.ok(existsSync(`content/news/${result.news}.md`) || existsSync(`content/news/${result.news}.mdx`), `${result.company}: news ${result.news}`);
   }
 });
 
