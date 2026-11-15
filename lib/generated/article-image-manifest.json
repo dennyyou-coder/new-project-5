@@ -18107,6 +18107,24 @@
       "sourceHash": "sha256:13abd2d5dcf72b8c2d6ee6e275e02bad5dfc2f62ba546c7ddd4c722255d87ecf",
       "outputHash": "sha256:76b5f3dd0ab23276aa8f8152c03ee46f95bbb97722fbf7710942f48202f3a97b"
     },
+    "/images/articles/pudu-tomo-s-self-sharpening-robot-mower-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 162236,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:57c9f606cca4d8b243d79edda76bf9d304905ac31c1542a2e7071b73e42b375a",
+      "outputHash": "sha256:40a87c79c32a03c8b2547d1736da45316dd255c6e8ad1a6671d2d27f4f073443",
+      "mobile": {
+        "src": "/images/articles/pudu-tomo-s-self-sharpening-robot-mower-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 59374,
+        "outputHash": "sha256:4deebc3a83eb34a9edfc26082637bd909664209d1b72713b179aca91c34a9e81"
+      }
+    },
     "/images/articles/roborock-2019-annual-report-breakout-year/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -19018,6 +19036,24 @@
         "height": 450,
         "bytes": 9368,
         "outputHash": "sha256:99f71646642fd5efd0516b0c5ebc6a58547de1766679ad1c7010850f7073a3ca"
+      }
+    },
+    "/images/articles/roborock-qrevo-2-pro-japan-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1212,
+      "height": 682,
+      "bytes": 21588,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e972d5d168c6cf19c9804220c1d8e2659cb8f9b8d9d17a0ed724a411b4b6fd35",
+      "outputHash": "sha256:85a317625f2e4cd9fb620923233d9165a2da2d1d19b7fdb93d5fec1fb7429162",
+      "mobile": {
+        "src": "/images/articles/roborock-qrevo-2-pro-japan-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12302,
+        "outputHash": "sha256:3495f6f4a078fd9e3484538b9b433cdc19b7c87ddc05a07cbfaa7bd940f4a8fe"
       }
     },
     "/images/articles/roborock-qrevo-2-pro/01-cover.webp": {
@@ -44659,6 +44695,11 @@
       "cover": "/images/articles/pudu-gt7/01-cover.webp",
       "body": []
     },
+    "pudu-tomo-s-self-sharpening-robot-mower-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pudu-tomo-s-self-sharpening-robot-mower-november-2026/01-cover.webp",
+      "body": []
+    },
     "quality-control-cleaning-appliances-china": {
       "budgetClass": "standard",
       "cover": "/images/blog/quality-control-cleaning-appliances-china-cover.webp",
@@ -44758,6 +44799,11 @@
     "roborock-qrevo-2-pro": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-qrevo-2-pro/01-cover.webp",
+      "body": []
+    },
+    "roborock-qrevo-2-pro-japan-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-qrevo-2-pro-japan-october-2026/01-cover.webp",
       "body": []
     },
     "roborock-qrevo-curv-2-flow": {
@@ -53471,6 +53517,15 @@
         }
       }
     },
+    "pudu-tomo-s-self-sharpening-robot-mower-november-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/pudu-tomo-s-self-sharpening-robot-mower-november-2026/01-cover.webp",
+          "hash": "sha256:57c9f606cca4d8b243d79edda76bf9d304905ac31c1542a2e7071b73e42b375a"
+        }
+      }
+    },
     "roborock-2019-annual-report-breakout-year": {
       "files": {
         "01-cover.png": {
@@ -53780,6 +53835,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-qrevo-2-pro/01-cover.webp",
           "hash": "sha256:589fd418619206383bca82665c53c4cc8f6348d89d6e9654db43fbe9c59ed634"
+        }
+      }
+    },
+    "roborock-qrevo-2-pro-japan-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-qrevo-2-pro-japan-october-2026/01-cover.webp",
+          "hash": "sha256:e972d5d168c6cf19c9804220c1d8e2659cb8f9b8d9d17a0ed724a411b4b6fd35"
         }
       }
     },

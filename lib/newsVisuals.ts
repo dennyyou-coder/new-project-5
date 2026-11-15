@@ -20,6 +20,28 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "roborock-qrevo-2-pro-japan-october-2026": {
+    "src": "/images/articles/roborock-qrevo-2-pro-japan-october-2026/01-cover.webp",
+    "alt": "Roborock Qrevo 2 Pro robot vacuum with its dock",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Roborock Qrevo 2 Pro. Official image from Roborock's Japanese release, September 2026.",
+    "sourceUrl": "https://digitalpr.jp/r/144135",
+    "sourceLabel": "Roborock Japan release",
+    "fit": "cover",
+    "prepared": true
+  },
+  "pudu-tomo-s-self-sharpening-robot-mower-november-2026": {
+    "src": "/images/articles/pudu-tomo-s-self-sharpening-robot-mower-november-2026/01-cover.webp",
+    "alt": "PUDU TOMO S robotic mower on a lawn in front of a house",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "PUDU TOMO S Series. Official image from Pudu Robotics' November 3, 2026 release.",
+    "sourceUrl": "https://technode.global/prnasia/pudu-robotics-unveils-pudu-tomo-s-series-extending-lawn-care-automation-to-blade-sharpening/",
+    "sourceLabel": "Pudu Robotics release via PR Newswire Asia",
+    "fit": "cover",
+    "prepared": true
+  },
   "husqvarna-eu-mower-disclosure-october-2026": {
     "src": "/images/articles/husqvarna-eu-mower-disclosure-october-2026/01-cover.webp",
     "alt": "WCB topic card: EU robot-mower investigation. Disclosure stage reached; no definitive duty rate announced. October 2026",
