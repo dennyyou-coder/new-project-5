@@ -6,7 +6,7 @@ See docs/operations/wcb-news-image-rules.md."""
 
 import json, sys, os, subprocess, html
 REPO = sys.argv[1]; OUT = sys.argv[2]
-LOGO_FULL = {"husqvarna"}
+LOGO_FULL = {"husqvarna", "groupe-seb", "tennant"}
 ICONS = {
  "person": '<circle cx="60" cy="40" r="20"/><path d="M22 104c4-22 20-34 38-34s34 12 38 34"/>',
  "gavel": '<path d="M44 30l28-16 14 24-28 16z"/><path d="M58 46l-36 40"/><path d="M68 96h40"/><path d="M76 86h24"/>',
@@ -37,7 +37,7 @@ h1{{margin-top:44px;max-width:1010px;font:800 124px/1.02 Archivo,Arial,sans-seri
 .foot{{margin-top:auto;display:flex;align-items:center;justify-content:space-between}}
 .logos{{display:flex;gap:18px}}
 .logo{{display:grid;place-items:center;width:210px;height:92px;background:#fff;border:2px solid #DDE5EF;border-radius:14px}}
-.logo img{{max-width:78%;max-height:62%;object-fit:contain}}
+.logo img{{max-width:164px;max-height:56px;width:auto;height:auto;object-fit:contain}}
 .brand{{font:500 24px "IBM Plex Mono",monospace;letter-spacing:.14em;color:#52677D}}
 .icon{{position:absolute;right:100px;top:200px;width:330px;height:330px;border-radius:50%;background:#fff;border:2px solid #DDE5EF;display:grid;place-items:center}}
 .icon svg{{width:190px;height:190px;fill:none;stroke:#1F57E0;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}}

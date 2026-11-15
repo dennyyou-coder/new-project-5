@@ -20,6 +20,215 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "empower-brands-helen-of-troy-proposal-november-2026": {
+    "src": "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover.webp",
+    "alt": "WCB topic card: USD 37 a share. Empower Brands raised its offer from USD 34.00. November 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Deal: Helen of Troy. Empower Brands raised its offer from USD 34.00. November 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000109177/000095010326016905/dp256289_8k.htm",
+    "sourceLabel": "Story source: Spectrum Brands Form 8-K, November 4, 2026",
+    "fit": "cover",
+    "prepared": true
+  },
+  "electrolux-q3-2026-results-and-midea-jvs": {
+    "src": "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover.webp",
+    "alt": "WCB topic card: Electrolux sales SEK 33.9bn. +3.5% organic growth; Midea venture milestones confirmed",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. +3.5% organic growth; Midea venture milestones confirmed. Card: World Clean Biz.",
+    "sourceUrl": "https://www.electroluxgroup.com/en/electrolux-group-interim-report-q3-2026-47822/",
+    "sourceLabel": "Story source: Electrolux Group Interim report Q3 2026",
+    "fit": "cover",
+    "prepared": true
+  },
+  "ecovacs-third-quarter-results-october-2026": {
+    "src": "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: ECOVACS revenue up 10.61%. Revenue CNY 4.65bn; attributable net profit down 72.43%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Revenue CNY 4.65bn; attributable net profit down 72.43%. Card: World Clean Biz.",
+    "sourceUrl": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12684664&stockid=603486",
+    "sourceLabel": "Story source: ECOVACS Q3 Revenue Grows as Net Profit Falls 72.43% — supporting announcement or",
+    "fit": "cover",
+    "prepared": true
+  },
+  "electrolux-italy-restructuring-agreement-november-2026": {
+    "src": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover.webp",
+    "alt": "WCB topic card: Job exits cut to 902. Down from 1,719 announced; all Italian plants stay open. November 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Restructuring: Electrolux Italy. Down from 1,719 announced; all Italian plants stay open. November 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://capitalist.it/electrolux-accordo-mimit-investimenti-stabilimenti-esuberi/",
+    "sourceLabel": "Story source: Capitalist — Electrolux agreement at MIMIT",
+    "fit": "cover",
+    "prepared": true
+  },
+  "fluidra-nine-month-results-october-2026": {
+    "src": "/images/articles/fluidra-nine-month-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Fluidra sales EUR 1.78bn. +4% at constant exchange rates; adjusted EBITDA EUR 428m",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Jan–Sep 2026. +4% at constant exchange rates; adjusted EBITDA EUR 428m. Card: World Clean Biz.",
+    "sourceUrl": "https://www.fluidra.com/press-room/press-release/fluidra-delivers-a-strong-nine-month-performance/",
+    "sourceLabel": "Story source: Fluidra delivers a strong nine-month performance",
+    "fit": "cover",
+    "prepared": true
+  },
+  "haier-third-quarter-results-october-2026": {
+    "src": "/images/articles/haier-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Haier revenue down 10.13%. Operating revenue CNY 69.70bn; attributable profit CNY 4.68bn",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Operating revenue CNY 69.70bn; attributable profit CNY 4.68bn. Card: World Clean Biz.",
+    "sourceUrl": "https://www.haier.com/about_haier/xinwen/20261029_296008.shtml",
+    "sourceLabel": "Story source: Haier Smart Home: 2026 third-quarter results (company announcement)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "fcc-robot-conditional-approvals-reach-15-november-2026": {
+    "src": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
+    "alt": "WCB topic card: 15 approved, none Chinese. Companies with FCC robot approvals as of November 6, 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Regulation: U.S. FCC. Companies with FCC robot approvals as of November 6, 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.fcc.gov/supplychain/coveredlist",
+    "sourceLabel": "Story source: FCC — Covered List and conditional approvals (updated November 6, 2026)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "groupe-seb-nine-month-sales-october-2026": {
+    "src": "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Groupe SEB sales EUR 1,964m. −0.1% like-for-like; operating result up 8.7%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. −0.1% like-for-like; operating result up 8.7%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.groupeseb.com/en/news/nine-month-2026-sales-and-financial-data",
+    "sourceLabel": "Story source: Groupe SEB: Nine-month 2026 sales and financial data",
+    "fit": "cover",
+    "prepared": true
+  },
+  "karcher-ceo-europe-perfect-storm-november-2026": {
+    "src": "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover.webp",
+    "alt": "WCB topic card: \"A perfect storm\" for Europe. Turnover almost EUR 3.5bn in 2025, 86% of it abroad",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Interview: Kärcher. Turnover almost EUR 3.5bn in 2025, 86% of it abroad. Card: World Clean Biz.",
+    "sourceUrl": "https://www.euronews.com/2026/11/01/karcher-ceo-warns-europe-faces-perfect-storm-as-he-calls-for-economic-reforms",
+    "sourceLabel": "Story source: Euronews — Kärcher CEO opinion piece",
+    "fit": "cover",
+    "prepared": true
+  },
+  "hayward-third-quarter-results-october-2026": {
+    "src": "/images/articles/hayward-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Hayward sales up 6%. Net sales USD 260.1m; North America up 9%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Net sales USD 260.1m; North America up 9%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0001834622/000183462226000054/a2026q3991er.htm",
+    "sourceLabel": "Story source: Hayward Holdings third-quarter fiscal 2026 results (SEC 8-K, Exhibit 99.1)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "makita-interim-results-october-2026": {
+    "src": "/images/articles/makita-interim-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Makita revenue up 9.6%. Revenue JPY 414.7bn; operating profit up 23.0%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Apr–Sep 2026. Revenue JPY 414.7bn; operating profit up 23.0%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.makita.co.jp/ir/upload_file/m005-m005_02/6586_20261019552943_P01_.pdf",
+    "sourceLabel": "Story source: Makita — interim consolidated results for the fiscal year ending March 2027",
+    "fit": "cover",
+    "prepared": true
+  },
+  "midea-third-quarter-results-october-2026": {
+    "src": "/images/articles/midea-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Midea revenue down 4.12%. Revenue CNY 107.32bn; attributable profit up 25.93%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Revenue CNY 107.32bn; attributable profit up 25.93%. Card: World Clean Biz.",
+    "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225645132.PDF",
+    "sourceLabel": "Story source: Midea Group 2026 third-quarter report (CNINFO)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "pentair-third-quarter-results-october-2026": {
+    "src": "/images/articles/pentair-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Pentair pool sales down 18%. Net sales USD 976m, down 4%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Net sales USD 976m, down 4%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000077360/000007736026000055/q32026pressrelease.htm",
+    "sourceLabel": "Story source: Pentair third-quarter 2026 results (SEC 8-K)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "roborock-third-quarter-results-october-2026": {
+    "src": "/images/articles/roborock-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Roborock revenue up 34.85%. Revenue CNY 5.61bn; attributable profit up 33.01%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Revenue CNY 5.61bn; attributable profit up 33.01%. Card: World Clean Biz.",
+    "sourceUrl": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12682146&stockid=688169",
+    "sourceLabel": "Story source: Roborock Q3 Revenue Rises 34.85% as Profit Growth Continues — supporting announc",
+    "fit": "cover",
+    "prepared": true
+  },
+  "sharkninja-third-quarter-results-november-2026": {
+    "src": "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover.webp",
+    "alt": "WCB topic card: SharkNinja sales up 21.2%. Net sales USD 1.98bn; cleaning appliances up 4.1%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Net sales USD 1.98bn; cleaning appliances up 4.1%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0001957132/000195713226000055/exhibit991pressreleaseofsh.htm",
+    "sourceLabel": "Story source: SharkNinja third-quarter 2026 results (SEC 8-K, Exhibit 99.1)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "tennant-third-quarter-2026-results": {
+    "src": "/images/articles/tennant-third-quarter-2026-results/01-cover.webp",
+    "alt": "WCB topic card: Tennant robotics sales up 71%. Net sales USD 322.3m, up 6.2%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Net sales USD 322.3m, up 6.2%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000097134/000009713426000027/tnc-20261102xexx991.htm",
+    "sourceLabel": "Story source: Tennant Company third-quarter 2026 results (SEC 8-K, Exhibit 99.1)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "stanley-black-decker-third-quarter-november-2026": {
+    "src": "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover.webp",
+    "alt": "WCB topic card: Tools & Outdoor sales up 2%. Group net sales USD 3.73bn; outlook raised",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Group net sales USD 3.73bn; outlook raised. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000036/ex991q32026.htm",
+    "sourceLabel": "Story source: Stanley Black & Decker third-quarter 2026 results (SEC 8-K, Exhibit 99.1)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "whirlpool-third-quarter-results-october-2026": {
+    "src": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover.webp",
+    "alt": "WCB topic card: Whirlpool sales down 8.8%. Net sales USD 3.68bn; organic sales down 5.4%",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q3 2026. Net sales USD 3.68bn; organic sales down 5.4%. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/106640/000010664026000070/exhibit991pressrelease0930.htm",
+    "sourceLabel": "Story source: Whirlpool third-quarter 2026 results (SEC 8-K, Exhibit 99.1)",
+    "fit": "cover",
+    "prepared": true
+  },
+  "narwal-v50-cube-us-launch-november-2026": {
+    "src": "/images/articles/narwal-v50-cube-us-launch-november-2026/01-cover.webp",
+    "alt": "Narwal V50 Cube cordless vacuum in its auto-empty base in a living room",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Narwal V50 Cube in its base station. Official image from the source release: Narwal press release via PR Newswire, November 2, 2026.",
+    "sourceUrl": "https://prnewswire.com/news-releases/narwal-launches-the-v50-cube-in-the-us-debuting-its-first-cordless-dry-vacuum-with-a-compact-auto-empty-base-station-302925955.html",
+    "sourceLabel": "Official source",
+    "fit": "cover",
+    "prepared": true
+  },
   "eufy-c30-series-regional-launch-september-2026": {
     "src": "/images/articles/eufy-c30-series-regional-launch-september-2026/01-cover.webp",
     "alt": "eufy C30 Series robot vacuum cleaning a floor beside a dog",
