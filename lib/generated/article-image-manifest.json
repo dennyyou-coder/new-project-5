@@ -27347,6 +27347,24 @@
         "outputHash": "sha256:bf2da1ecb1dc8fffa1fc3cdce057eb5b923c679a9ce7e8b1170368678dd32824"
       }
     },
+    "/images/articles/wcb-expo-2026-visitor-guide/06-booth-map.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1181,
+      "height": 1600,
+      "bytes": 138348,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:69ef0cc17340b5411dbd6da9ee72aa3e4b786774680cf88b3651a424287bcf18",
+      "outputHash": "sha256:22543843819c6017c004a283f2ebbcf5aa501ddc4be5cc00ee1f274c6811fbd1",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-2026-visitor-guide/06-booth-map-800.webp",
+        "width": 590,
+        "height": 800,
+        "bytes": 50446,
+        "outputHash": "sha256:afed00227c976c4243cd381b9cae20dacfe92d176e9727841a4a4539e38d5cdd"
+      }
+    },
     "/images/articles/wcb-expo-programme/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -49706,6 +49724,7 @@
       "cover": "/images/articles/wcb-expo-2026-visitor-guide/01-cover.webp",
       "body": [
         "/images/articles/wcb-expo-2026-visitor-guide/02-full-supply-chain.webp",
+        "/images/articles/wcb-expo-2026-visitor-guide/06-booth-map.webp",
         "/images/articles/wcb-expo-2026-visitor-guide/03-who-finds-what.webp",
         "/images/articles/wcb-expo-2026-visitor-guide/04-forum-speakers.webp",
         "/images/articles/wcb-expo-2026-visitor-guide/05-shenzhen-expo-march-2026.webp"
@@ -60635,6 +60654,11 @@
           "status": "matched",
           "primary": "/images/articles/wcb-expo-2026-visitor-guide/05-shenzhen-expo-march-2026.webp",
           "hash": "sha256:6c46de59f2bab2c63b7c79201becc3d56213f2873fc73d051ec47e060216126e"
+        },
+        "06-booth-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-2026-visitor-guide/06-booth-map.webp",
+          "hash": "sha256:69ef0cc17340b5411dbd6da9ee72aa3e4b786774680cf88b3651a424287bcf18"
         }
       }
     },
