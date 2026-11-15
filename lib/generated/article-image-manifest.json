@@ -9361,6 +9361,24 @@
         "outputHash": "sha256:512f08b742966aa6bac49bf092fc72c71f9d12a58b4c49f6deec24e6cac92ff0"
       }
     },
+    "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36004,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e1b58f7eec74fc76937a7fe00ca717003be602c98815e90850aa4d5275c5f966",
+      "outputHash": "sha256:a9321f31cd3b4db788c27e9469deb1fc1ba331e7b88d45a4fcb8a1c88ec92e6e",
+      "mobile": {
+        "src": "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17156,
+        "outputHash": "sha256:ed64f43348c33d481c6925fd0dc36827836097d2e13421b237c074ca82228a0c"
+      }
+    },
     "/images/articles/ecovacs-ultramarine-p1/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -9639,6 +9657,24 @@
         "outputHash": "sha256:89b4590d97feb2b48f35e36c433d975e00a087c7e9742bcf3e47d69ec1d99d95"
       }
     },
+    "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36812,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:60352170c7fca3df5176f42587b32ae411f4a004a0e591b419436da0165b20e9",
+      "outputHash": "sha256:8c9ba04778b1b300f2971a70516bd5ec4faac2904e9046c355004e225700b2f5",
+      "mobile": {
+        "src": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17870,
+        "outputHash": "sha256:d802f80cc7c74deedcc66d03d2043a426e85f6751c4dd7cbb61ec1cbf193db7b"
+      }
+    },
     "/images/articles/electrolux-midea-joint-venture-agreement-april-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -9655,6 +9691,24 @@
         "height": 450,
         "bytes": 23596,
         "outputHash": "sha256:5e3e0b870745f33ad1a77f0c6145e4ae7419ec79cd7363804e22eb56c39d2dc1"
+      }
+    },
+    "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40640,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:52d5376bee3fb5074e8880b0adccf85e309af0b8c4f1a01cbdbe56de3a2403e6",
+      "outputHash": "sha256:0dc9e11ed0489792348423af8f6db58269e79e25603550f3b1bc5af38739adad",
+      "mobile": {
+        "src": "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19904,
+        "outputHash": "sha256:654bd8078fc982fcd113c0cfa3615fc2999f67f52ab8669586a8dee8089503d1"
       }
     },
     "/images/articles/electrolux-second-quarter-results-july-2026/01-cover.webp": {
@@ -9691,6 +9745,24 @@
         "height": 450,
         "bytes": 18582,
         "outputHash": "sha256:62df0bdfd1c4e0ae086349b7d2a40c2a2d75ac7ebea7899bb9d7c41cfbed12c6"
+      }
+    },
+    "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36322,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3c8acf874743a6e01d1791399e46fa2bfdd4780c5ba8756ce41574f1ea00dfda",
+      "outputHash": "sha256:d1265a83803b6f5ba54e0f2348d860c3a10c8ec34ec882d3b5b6fa82f1b9f987",
+      "mobile": {
+        "src": "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16546,
+        "outputHash": "sha256:77197454eb47b6e49d8842ad7e70b18c97c34e149ab9c359fa954e85399b18ba"
       }
     },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
@@ -10687,6 +10759,24 @@
         "outputHash": "sha256:ad62d42f3850738991da610b6aef5ddba17b7bf3989eaaba3c2efb3959836b04"
       }
     },
+    "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 68162,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:067971463bd5a5a5d505105835191220f9a4705e4270c7088e2d345cdcb50a8b",
+      "outputHash": "sha256:a34b70e965152b70bdefffabcf0e70fb8159b9589b2a9dcca2f1e8019f71ffbb",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28762,
+        "outputHash": "sha256:f6fa3ca4423e76b8386052c1c1156ea40e92f77602945c48fee90c5626b2faec"
+      }
+    },
     "/images/articles/flex-history-chervon-galli/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10973,6 +11063,24 @@
         "height": 450,
         "bytes": 31686,
         "outputHash": "sha256:be153b9792bb6ee582bfd6af860afcfcb9540132dcf05b3c169de05d01c3a087"
+      }
+    },
+    "/images/articles/fluidra-nine-month-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31840,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a0c7f6ffa1345b5efea6226f0a5965a42726ebd9cbb6719104b0a3583b56e2b6",
+      "outputHash": "sha256:37caa8934fd0892a74325b297d269122730c10f013c361f5eb2ead59ec9414da",
+      "mobile": {
+        "src": "/images/articles/fluidra-nine-month-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15410,
+        "outputHash": "sha256:87846a839e1d419b1df76b8aa04a9c60b32ed4553c9c7871f99870a87fd5f8c8"
       }
     },
     "/images/articles/freudenberg-acquires-nilfisk/01-cover.webp": {
@@ -12556,6 +12664,24 @@
         "outputHash": "sha256:675cc26f5c3fe20606cc9aae49dc9c5a5ffdf60e18a12f27efbb51b0a7c1c834"
       }
     },
+    "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31872,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:16907a7fc88258ba17183f2228a8ba75e48ab55f4c8282d376ea5e455a2b9b94",
+      "outputHash": "sha256:705a561239238462824cfabf1bb02c9cc42418b6c55dd60b13b394322fd66bda",
+      "mobile": {
+        "src": "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15730,
+        "outputHash": "sha256:5a3b54e5618de28abb64283c083a401f8842c2c7d8d0a3759af858cc22360935"
+      }
+    },
     "/images/articles/haier-first-half-results-august-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -12590,6 +12716,24 @@
         "height": 450,
         "bytes": 16850,
         "outputHash": "sha256:3427ee457f7dc751fbe6b017db13c434a59cbb5c162471572fed49a573b785de"
+      }
+    },
+    "/images/articles/haier-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43524,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7ad34784a2752f96931c3ae83c199d652c46106e85d21d298a4b14c749a3bf8a",
+      "outputHash": "sha256:967eec6437b632588eb6ff7a8586ca940b54ed6614fdf037c97b3f5a8faa8460",
+      "mobile": {
+        "src": "/images/articles/haier-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20606,
+        "outputHash": "sha256:50cfc108e33c4a0bfbabff18751b095b246e6bd9f9457675d897243aacfe155c"
       }
     },
     "/images/articles/hamilton-beach-2018-annual-report-faithful-translation/01-cover.webp": {
@@ -12900,6 +13044,24 @@
         "height": 450,
         "bytes": 24772,
         "outputHash": "sha256:df8971af8bc408bdd78c1d1049f591839c4af018e80a374986a7dd48c64f6970"
+      }
+    },
+    "/images/articles/hayward-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 30204,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8f72cd958444b37ec8c89f2f3f71d67e37574652672e449ab14f6b238425649b",
+      "outputHash": "sha256:5561a33402abc6c9ffaa7d7da095fcea21f7a525ad9eea497007115225e2885d",
+      "mobile": {
+        "src": "/images/articles/hayward-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14222,
+        "outputHash": "sha256:99f66da1e2af548b1eea33a6819e009136356fd9a48a1f493634dddf117dd690"
       }
     },
     "/images/articles/hayward-vs-pentair-vs-fluidra/01-cover.webp": {
@@ -15472,6 +15634,24 @@
         "outputHash": "sha256:cfcfa3f716699c316fe5fbcc078de68c12f37cd8c808196eb3a5b357df87b3bd"
       }
     },
+    "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 32596,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0255e6303fef195f79e539da93cac195668025e51c465e33f68cdc386607381f",
+      "outputHash": "sha256:2448ebdd6fbcee207d869b93351576308226158842a24214d405c981b305160d",
+      "mobile": {
+        "src": "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15340,
+        "outputHash": "sha256:54a138efc0ec7c08a6761e2af15afe7beb21b42a1aa05adbaad8a8f2f877de8c"
+      }
+    },
     "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -16585,6 +16765,24 @@
         "outputHash": "sha256:b25ab6d5a2026a8e583d7deb100bb7e6575426365d294e62bcd0e93a1f452ea1"
       }
     },
+    "/images/articles/makita-interim-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38334,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d1fbbbe96f4586256d24dd5777e998526405362085db38b869f491b0c7a05fe9",
+      "outputHash": "sha256:846f4e25754a27af5c87221416eb80860376e120ca12b62b459851609db487cf",
+      "mobile": {
+        "src": "/images/articles/makita-interim-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18422,
+        "outputHash": "sha256:fa8bdba2185b9a936213434ca8fa682f0712c3bfb872bfded148438d15a35387"
+      }
+    },
     "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -17147,6 +17345,24 @@
       "quality": 84,
       "sourceHash": "sha256:74ad8d0a593b9691d8347000140eca7f281406e8b421defb2fde7cedefe4ccd2",
       "outputHash": "sha256:b362b2d1a2e7a994235471d1a57dcb047e8c1cd7ef591ef83c91d010fbe71af1"
+    },
+    "/images/articles/midea-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37802,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:46ba85a9bac15accaa66e41070fc989ba0b787b58a9fcc1246c226d316d728bb",
+      "outputHash": "sha256:d2a90cf1ff5606a0e427dd0ce5a330b8427a605334850ec2dd7b46c5a8f721e3",
+      "mobile": {
+        "src": "/images/articles/midea-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17532,
+        "outputHash": "sha256:7ea9442e22f1d1e930c820d7993c9132de358719c76b322078897d7eddf29b71"
+      }
     },
     "/images/articles/miele-duoflex-hx2-floor-washer/01-cover.webp": {
       "role": "cover",
@@ -18539,6 +18755,24 @@
         "outputHash": "sha256:01114629d7682d4a9baf7fdab4cdce7be52722a5120024fc27008f5bbb962b9f"
       }
     },
+    "/images/articles/narwal-v50-cube-us-launch-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1067,
+      "height": 600,
+      "bytes": 23458,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ce8a0b8e10cd1cb3b5a400c8c4b63695f86cf2db086adfefe60c96a3d23313f3",
+      "outputHash": "sha256:cf5371ac57921a90f067d1251a9b2fd33f0f82addacf7d536c0a53bc4f76ac33",
+      "mobile": {
+        "src": "/images/articles/narwal-v50-cube-us-launch-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14142,
+        "outputHash": "sha256:8cbc02509807f4af40884bd59d72aa8763b38bcf4935624ff65bcdab0a5a999d"
+      }
+    },
     "/images/articles/narwal-v50-cube/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -19459,6 +19693,24 @@
         "height": 450,
         "bytes": 19374,
         "outputHash": "sha256:4734a6b1610ec0e1b738b4d642b6dcb0ebe914f5801f3cbb0dc0da9c137d415b"
+      }
+    },
+    "/images/articles/pentair-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 30842,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:eec2f0b4b871231bcda5fd4630cec2e82c525bf502e7ecd2e51332dbd9d08236",
+      "outputHash": "sha256:e5d30375450c0acff2b511d177c52eb72843de0b514dc3cebe29013b64949816",
+      "mobile": {
+        "src": "/images/articles/pentair-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15372,
+        "outputHash": "sha256:09e044d9a7996db047271f04a1d204ac971fa65e9364230691ac40315a0cafa3"
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
@@ -21511,6 +21763,24 @@
         "height": 533,
         "bytes": 58156,
         "outputHash": "sha256:bfc15634509f4e46add463b3ea2c3f246df5c056da72fcedb8c03084bc52b8f4"
+      }
+    },
+    "/images/articles/roborock-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34666,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:9a7c47a25faa6320cd0bfa2d59e576bb6a340421dc5ca36d1361405dd985c8e3",
+      "outputHash": "sha256:8331e87d6f2723bc6277d333248e563f0010ff46499f7f4244cc50141c2c71e4",
+      "mobile": {
+        "src": "/images/articles/roborock-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16822,
+        "outputHash": "sha256:894e8ce895ec05e8db999da7fccce83927b710f1d1454de3a72f774213fd9a9d"
       }
     },
     "/images/articles/roborock-vs-dreame-global-strategies/01-cover.webp": {
@@ -24145,6 +24415,24 @@
         "outputHash": "sha256:9dbecae0e658f6c577c49eee4696f25657c17e0b34727b301d080b191206e89c"
       }
     },
+    "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35340,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b9292f4645e14b49a73496456ae4f75207f383110c903a726b88b4dc1729acb2",
+      "outputHash": "sha256:c9688ab9d142c1df955142452be6f8b9da35daa9bb458461f38f1443e33e4d6c",
+      "mobile": {
+        "src": "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16836,
+        "outputHash": "sha256:04d6391a994db6c1ba03838e683d415ffcc23ee37c91acc34532e6f0e7173c61"
+      }
+    },
     "/images/articles/sky-001-engineering-world-model/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -24442,6 +24730,24 @@
         "height": 450,
         "bytes": 18084,
         "outputHash": "sha256:632ddda8f33a8c05088ee7d58a48a8003da3f5373bbcaa642df593b28f412a1f"
+      }
+    },
+    "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33238,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e49ef305520ec79e0943a7c218e0e36099c4fe14c07e68558b0b8e9a080e5a56",
+      "outputHash": "sha256:4dd7fafac24ffa3e527077b6b310c8383c31b98419243270cfb00aec95ab27d9",
+      "mobile": {
+        "src": "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16136,
+        "outputHash": "sha256:7c53e2300b2de6f251dcb09ac2271a94e8c9a9ab850fbe5d312706686fe2def1"
       }
     },
     "/images/articles/stanley-cam-sale-agreement-december-2025/01-cover.webp": {
@@ -24831,6 +25137,24 @@
         "height": 450,
         "bytes": 20508,
         "outputHash": "sha256:76d569a4064b2e714bff772c2e521f032fdd0b3ec4c1de144496f26f2f171e7c"
+      }
+    },
+    "/images/articles/tennant-third-quarter-2026-results/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39596,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1e4aa3e135cd621572e4dee5058b714a4f4df67e8ea0cd09b4415b07639be983",
+      "outputHash": "sha256:1e6a88f564eb8e43fc33867df6102e8b2e65fe1ced1985b1bb9fb5346ae2053e",
+      "mobile": {
+        "src": "/images/articles/tennant-third-quarter-2026-results/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19728,
+        "outputHash": "sha256:91c6a50820df84d999c677071ef3b459fdffcd5d965b3f0a2184a85b74b7d4a8"
       }
     },
     "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp": {
@@ -27147,6 +27471,24 @@
         "height": 450,
         "bytes": 18784,
         "outputHash": "sha256:ad6abcd3e27ebff51748bd44aa214d9aa5544d2a42d52ed2fa99253e92b8ef65"
+      }
+    },
+    "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42880,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:dc21f71171d2aa8d15206c59bfa348f0660bfbdb45dd15c9d729e505c0979b5c",
+      "outputHash": "sha256:0b22840bc828f655188a02d7b4453f2be13fa9f4a0ffb5a452436ef8c35f74bc",
+      "mobile": {
+        "src": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20750,
+        "outputHash": "sha256:b227e3b239f90f0ed0ef547d7c1da2b9a0ac7c64372f580bce260f28c94b3188"
       }
     },
     "/images/articles/who-makes-aquabot-pool-cleaners-bwt-aquatron/01-cover.webp": {
@@ -45555,6 +45897,11 @@
       "cover": "/images/articles/ecovacs-restricted-share-cancellation-december-2025/01-cover.webp",
       "body": []
     },
+    "ecovacs-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover.webp",
+      "body": []
+    },
     "ecovacs-ultramarine-p1": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
@@ -45622,9 +45969,19 @@
       "cover": "/images/articles/electrolux-full-year-results-january-2026/01-cover.webp",
       "body": []
     },
+    "electrolux-italy-restructuring-agreement-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover.webp",
+      "body": []
+    },
     "electrolux-midea-joint-venture-agreement-april-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/electrolux-midea-joint-venture-agreement-april-2026/01-cover.webp",
+      "body": []
+    },
+    "electrolux-q3-2026-results-and-midea-jvs": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover.webp",
       "body": []
     },
     "electrolux-second-quarter-results-july-2026": {
@@ -45635,6 +45992,11 @@
     "electrolux-third-quarter-results-october-2025": {
       "budgetClass": "standard",
       "cover": "/images/articles/electrolux-third-quarter-results-october-2025/01-cover.webp",
+      "body": []
+    },
+    "empower-brands-helen-of-troy-proposal-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover.webp",
       "body": []
     },
     "eu-battery-rules-smartphones-power-tools": {
@@ -45787,6 +46149,11 @@
         "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/05-precedents.webp"
       ]
     },
+    "fcc-robot-conditional-approvals-reach-15-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
+      "body": []
+    },
     "fcc-robot-vacuum-lawn-mower-restrictions": {
       "budgetClass": "standard",
       "cover": "/images/blog/fcc-robot-restriction-cover.webp",
@@ -45887,6 +46254,11 @@
         "/images/articles/fluidra-largest-market-north-america/02-fluidra-globalization-timeline.webp",
         "/images/articles/fluidra-largest-market-north-america/03-fluidra-scale-product-speed.webp"
       ]
+    },
+    "fluidra-nine-month-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fluidra-nine-month-results-october-2026/01-cover.webp",
+      "body": []
     },
     "freudenberg-acquires-nilfisk": {
       "budgetClass": "standard",
@@ -46053,6 +46425,11 @@
         "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp"
       ]
     },
+    "groupe-seb-nine-month-sales-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover.webp",
+      "body": []
+    },
     "haier-first-half-results-august-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/haier-first-half-results-august-2026/01-cover.webp",
@@ -46061,6 +46438,11 @@
     "haier-smart-home-annual-results-march-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/haier-smart-home-annual-results-march-2026/01-cover.webp",
+      "body": []
+    },
+    "haier-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/haier-third-quarter-results-october-2026/01-cover.webp",
       "body": []
     },
     "hamilton-beach-2018-annual-report-faithful-translation": {
@@ -46112,6 +46494,11 @@
     "hayward-jared-arrowood-accounting-officer-october-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp",
+      "body": []
+    },
+    "hayward-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/hayward-third-quarter-results-october-2026/01-cover.webp",
       "body": []
     },
     "hayward-vs-pentair-vs-fluidra": {
@@ -46740,6 +47127,11 @@
       "cover": "/images/articles/karcher-b85-r-classic-ride-on-scrubber/01-cover.webp",
       "body": []
     },
+    "karcher-ceo-europe-perfect-storm-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover.webp",
+      "body": []
+    },
     "karcher-comfort-pressure-washers-october-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/karcher-comfort-pressure-washers-october-2026/01-cover.webp",
@@ -46956,6 +47348,11 @@
       "cover": "/images/articles/makita-fiscal-year-results-april-2026/01-cover.webp",
       "body": []
     },
+    "makita-interim-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/makita-interim-results-october-2026/01-cover.webp",
+      "body": []
+    },
     "mammotion-japan-shingu-distributor-september-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/mammotion-japan-shingu-distributor-september-2026/01-cover.webp",
@@ -47077,6 +47474,11 @@
         "/images/articles/midea-supplier-summit-review/02-midea-supplier-summit-review-image-002.webp",
         "/images/articles/midea-supplier-summit-review/03-midea-supplier-summit-review-image-003.webp"
       ]
+    },
+    "midea-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/midea-third-quarter-results-october-2026/01-cover.webp",
+      "body": []
     },
     "miele-duoflex-hx2-floor-washer": {
       "budgetClass": "standard",
@@ -47326,6 +47728,11 @@
       "cover": "/images/articles/narwal-v50-cube/01-cover.webp",
       "body": []
     },
+    "narwal-v50-cube-us-launch-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-v50-cube-us-launch-november-2026/01-cover.webp",
+      "body": []
+    },
     "narwal-vs-ecovacs-robot-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/articles/narwal-vs-ecovacs-robot-vacuums/01-cover.webp",
@@ -47454,6 +47861,11 @@
     "papst-roborock-upc-dismissal-report-september-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover.webp",
+      "body": []
+    },
+    "pentair-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pentair-third-quarter-results-october-2026/01-cover.webp",
       "body": []
     },
     "philips-health-technology-versuni-home-appliances": {
@@ -47846,6 +48258,11 @@
         "/images/articles/roborock-targets-70-billion-rmb-by-2029/04.webp",
         "/images/articles/roborock-targets-70-billion-rmb-by-2029/05.webp"
       ]
+    },
+    "roborock-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-third-quarter-results-october-2026/01-cover.webp",
+      "body": []
     },
     "roborock-vs-dreame-global-strategies": {
       "budgetClass": "standard",
@@ -48589,6 +49006,11 @@
       "cover": "/images/articles/sharkninja-third-quarter-results-november-2025/01-cover.webp",
       "body": []
     },
+    "sharkninja-third-quarter-results-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover.webp",
+      "body": []
+    },
     "should-shark-and-ninja-be-one-brand": {
       "budgetClass": "standard",
       "cover": "/images/insights/should-shark-and-ninja-be-one-brand-image-01.png",
@@ -48679,6 +49101,11 @@
     "stanley-black-decker-third-quarter-november-2025": {
       "budgetClass": "standard",
       "cover": "/images/articles/stanley-black-decker-third-quarter-november-2025/01-cover.webp",
+      "body": []
+    },
+    "stanley-black-decker-third-quarter-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover.webp",
       "body": []
     },
     "stanley-cam-sale-agreement-december-2025": {
@@ -48772,6 +49199,11 @@
     "tennant-p1-vac-autonomous-vacuum-october-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
+      "body": []
+    },
+    "tennant-third-quarter-2026-results": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tennant-third-quarter-2026-results/01-cover.webp",
       "body": []
     },
     "tennant-vs-nilfisk-floor-scrubbers": {
@@ -49225,6 +49657,11 @@
     "whirlpool-second-quarter-results-august-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/whirlpool-second-quarter-results-august-2026/01-cover.webp",
+      "body": []
+    },
+    "whirlpool-third-quarter-results-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover.webp",
       "body": []
     },
     "who-benefits-from-china-us-trade-war-in-vacuums": {
@@ -53616,6 +54053,15 @@
         }
       }
     },
+    "ecovacs-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:e1b58f7eec74fc76937a7fe00ca717003be602c98815e90850aa4d5275c5f966"
+        }
+      }
+    },
     "ecovacs-ultramarine-p1": {
       "files": {
         "01-cover.png": {
@@ -53749,12 +54195,30 @@
         }
       }
     },
+    "electrolux-italy-restructuring-agreement-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover.webp",
+          "hash": "sha256:60352170c7fca3df5176f42587b32ae411f4a004a0e591b419436da0165b20e9"
+        }
+      }
+    },
     "electrolux-midea-joint-venture-agreement-april-2026": {
       "files": {
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/electrolux-midea-joint-venture-agreement-april-2026/01-cover.webp",
           "hash": "sha256:685a6ca243ca2bf0a48fa5d606a400c3a2bec3373486417ec700d92bb6a367a9"
+        }
+      }
+    },
+    "electrolux-q3-2026-results-and-midea-jvs": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/electrolux-q3-2026-results-and-midea-jvs/01-cover.webp",
+          "hash": "sha256:52d5376bee3fb5074e8880b0adccf85e309af0b8c4f1a01cbdbe56de3a2403e6"
         }
       }
     },
@@ -53773,6 +54237,15 @@
           "status": "matched",
           "primary": "/images/articles/electrolux-third-quarter-results-october-2025/01-cover.webp",
           "hash": "sha256:871862b9ef6ab3889676fd26582ee568e2ea4c1a9e2f182ca8e9c1e7eedd2497"
+        }
+      }
+    },
+    "empower-brands-helen-of-troy-proposal-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/empower-brands-helen-of-troy-proposal-november-2026/01-cover.webp",
+          "hash": "sha256:3c8acf874743a6e01d1791399e46fa2bfdd4780c5ba8756ce41574f1ea00dfda"
         }
       }
     },
@@ -54100,6 +54573,15 @@
         }
       }
     },
+    "fcc-robot-conditional-approvals-reach-15-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
+          "hash": "sha256:067971463bd5a5a5d505105835191220f9a4705e4270c7088e2d345cdcb50a8b"
+        }
+      }
+    },
     "flex-history-chervon-galli": {
       "files": {
         "01-cover.jpg": {
@@ -54205,6 +54687,15 @@
           "status": "matched",
           "primary": "/images/articles/fluidra-largest-market-north-america/03-fluidra-scale-product-speed.webp",
           "hash": "sha256:096026e5f4f2defb9292347844c661a69150700104f4c8c0cc8bef2980278be2"
+        }
+      }
+    },
+    "fluidra-nine-month-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fluidra-nine-month-results-october-2026/01-cover.webp",
+          "hash": "sha256:a0c7f6ffa1345b5efea6226f0a5965a42726ebd9cbb6719104b0a3583b56e2b6"
         }
       }
     },
@@ -54721,6 +55212,15 @@
         }
       }
     },
+    "groupe-seb-nine-month-sales-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/groupe-seb-nine-month-sales-october-2026/01-cover.webp",
+          "hash": "sha256:16907a7fc88258ba17183f2228a8ba75e48ab55f4c8282d376ea5e455a2b9b94"
+        }
+      }
+    },
     "haier-first-half-results-august-2026": {
       "files": {
         "01-cover.png": {
@@ -54736,6 +55236,15 @@
           "status": "matched",
           "primary": "/images/articles/haier-smart-home-annual-results-march-2026/01-cover.webp",
           "hash": "sha256:2390e6fea53e6e9d1968f806c4250cff67e57559e68d75d3c41d46e41a387619"
+        }
+      }
+    },
+    "haier-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/haier-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:7ad34784a2752f96931c3ae83c199d652c46106e85d21d298a4b14c749a3bf8a"
         }
       }
     },
@@ -54873,6 +55382,15 @@
           "status": "matched",
           "primary": "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp",
           "hash": "sha256:eef0c790bc1c5fd4e9e8f73af8142bcd431e0d1dd5fb569f46ff62b3b939c147"
+        }
+      }
+    },
+    "hayward-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/hayward-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:8f72cd958444b37ec8c89f2f3f71d67e37574652672e449ab14f6b238425649b"
         }
       }
     },
@@ -55786,6 +56304,15 @@
         }
       }
     },
+    "karcher-ceo-europe-perfect-storm-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-ceo-europe-perfect-storm-november-2026/01-cover.webp",
+          "hash": "sha256:0255e6303fef195f79e539da93cac195668025e51c465e33f68cdc386607381f"
+        }
+      }
+    },
     "karcher-comfort-pressure-washers-october-2026": {
       "files": {
         "01-cover.jpg": {
@@ -56243,6 +56770,15 @@
         }
       }
     },
+    "makita-interim-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/makita-interim-results-october-2026/01-cover.webp",
+          "hash": "sha256:d1fbbbe96f4586256d24dd5777e998526405362085db38b869f491b0c7a05fe9"
+        }
+      }
+    },
     "mammotion-japan-shingu-distributor-september-2026": {
       "files": {
         "01-cover.jpg": {
@@ -56470,6 +57006,15 @@
           "status": "matched",
           "primary": "/images/articles/midea-supplier-summit-review/03-midea-supplier-summit-review-image-003.webp",
           "hash": "sha256:74ad8d0a593b9691d8347000140eca7f281406e8b421defb2fde7cedefe4ccd2"
+        }
+      }
+    },
+    "midea-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/midea-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:46ba85a9bac15accaa66e41070fc989ba0b787b58a9fcc1246c226d316d728bb"
         }
       }
     },
@@ -57019,6 +57564,15 @@
         }
       }
     },
+    "narwal-v50-cube-us-launch-november-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-v50-cube-us-launch-november-2026/01-cover.webp",
+          "hash": "sha256:ce8a0b8e10cd1cb3b5a400c8c4b63695f86cf2db086adfefe60c96a3d23313f3"
+        }
+      }
+    },
     "narwal-vs-ecovacs-robot-vacuums": {
       "files": {
         "01-cover.png": {
@@ -57318,6 +57872,15 @@
           "status": "matched",
           "primary": "/images/articles/papst-roborock-upc-dismissal-report-september-2026/01-cover.webp",
           "hash": "sha256:26c7820d9a605f2fb22f8c9e416a8b4ac3401581576a806080771565bdc11da8"
+        }
+      }
+    },
+    "pentair-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/pentair-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:eec2f0b4b871231bcda5fd4630cec2e82c525bf502e7ecd2e51332dbd9d08236"
         }
       }
     },
@@ -58036,6 +58599,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-saros-z70-robotic-arm-ces-january-2025/01-cover.webp",
           "hash": "sha256:3e55d8c2d781a97a50a8b0d4fbd01124fe492d8efd124590cc1ff6678622477f"
+        }
+      }
+    },
+    "roborock-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:9a7c47a25faa6320cd0bfa2d59e576bb6a340421dc5ca36d1361405dd985c8e3"
         }
       }
     },
@@ -58943,6 +59515,15 @@
         }
       }
     },
+    "sharkninja-third-quarter-results-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/sharkninja-third-quarter-results-november-2026/01-cover.webp",
+          "hash": "sha256:b9292f4645e14b49a73496456ae4f75207f383110c903a726b88b4dc1729acb2"
+        }
+      }
+    },
     "sky-001-engineering-world-model": {
       "files": {
         "01-cover.png": {
@@ -59057,6 +59638,15 @@
           "status": "matched",
           "primary": "/images/articles/stanley-black-decker-third-quarter-november-2025/01-cover.webp",
           "hash": "sha256:22455e31f5b5a5a6e486f7dd629e0a7235d269b58b780688bbc0dfa94037f5fa"
+        }
+      }
+    },
+    "stanley-black-decker-third-quarter-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/stanley-black-decker-third-quarter-november-2026/01-cover.webp",
+          "hash": "sha256:e49ef305520ec79e0943a7c218e0e36099c4fe14c07e68558b0b8e9a080e5a56"
         }
       }
     },
@@ -59194,6 +59784,15 @@
           "status": "matched",
           "primary": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
           "hash": "sha256:e964c9f79c5fb5f09d8bcaed4cc5f01ad4a6165ac1f3fc7386d23e233d09a3fa"
+        }
+      }
+    },
+    "tennant-third-quarter-2026-results": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-third-quarter-2026-results/01-cover.webp",
+          "hash": "sha256:1e4aa3e135cd621572e4dee5058b714a4f4df67e8ea0cd09b4415b07639be983"
         }
       }
     },
@@ -59958,6 +60557,15 @@
           "status": "matched",
           "primary": "/images/articles/whirlpool-second-quarter-results-august-2026/01-cover.webp",
           "hash": "sha256:50cfb0fbbdf9c4a8502eceb65062dd67acf4eaf56077056a5eea8fb1e4e012a4"
+        }
+      }
+    },
+    "whirlpool-third-quarter-results-october-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover.webp",
+          "hash": "sha256:dc21f71171d2aa8d15206c59bfa348f0660bfbdb45dd15c9d729e505c0979b5c"
         }
       }
     },

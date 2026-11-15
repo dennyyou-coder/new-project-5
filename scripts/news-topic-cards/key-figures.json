@@ -1,0 +1,206 @@
+[
+ {
+  "slug": "empower-brands-helen-of-troy-proposal-november-2026",
+  "kicker": "Deal · Helen of Troy",
+  "title": "USD 37 a share",
+  "detail": "Empower Brands raised its offer from USD 34.00. November 2026",
+  "icon": "deal",
+  "logos": [
+   "russell-hobbs"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "electrolux-q3-2026-results-and-midea-jvs",
+  "kicker": "Results · Q3 2026",
+  "title": "Electrolux sales SEK 33.9bn",
+  "detail": "+3.5% organic growth; Midea venture milestones confirmed",
+  "icon": "chart",
+  "logos": [
+   "electrolux",
+   "midea"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "ecovacs-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "ECOVACS revenue up 10.61%",
+  "detail": "Revenue CNY 4.65bn; attributable net profit down 72.43%",
+  "icon": "chart",
+  "logos": [
+   "ecovacs"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "electrolux-italy-restructuring-agreement-november-2026",
+  "kicker": "Restructuring · Electrolux Italy",
+  "title": "Job exits cut to 902",
+  "detail": "Down from 1,719 announced; all Italian plants stay open. November 2026",
+  "icon": "factory",
+  "logos": [
+   "electrolux"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "fluidra-nine-month-results-october-2026",
+  "kicker": "Results · Jan–Sep 2026",
+  "title": "Fluidra sales EUR 1.78bn",
+  "detail": "+4% at constant exchange rates; adjusted EBITDA EUR 428m",
+  "icon": "chart",
+  "logos": [
+   "fluidra"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "haier-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Haier revenue down 10.13%",
+  "detail": "Operating revenue CNY 69.70bn; attributable profit CNY 4.68bn",
+  "icon": "decline",
+  "logos": [
+   "haier-home-appliances"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "fcc-robot-conditional-approvals-reach-15-november-2026",
+  "kicker": "Regulation · U.S. FCC",
+  "title": "15 approved, none Chinese",
+  "detail": "Companies with FCC robot approvals as of November 6, 2026",
+  "icon": "scales",
+  "logos": [],
+  "layout": "logo",
+  "logoFiles": [
+   "scripts/news-topic-cards/assets/fcc-seal.svg"
+  ]
+ },
+ {
+  "slug": "groupe-seb-nine-month-sales-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Groupe SEB sales EUR 1,964m",
+  "detail": "−0.1% like-for-like; operating result up 8.7%",
+  "icon": "chart",
+  "logos": [
+   "groupe-seb"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "karcher-ceo-europe-perfect-storm-november-2026",
+  "kicker": "Interview · Kärcher",
+  "title": "\"A perfect storm\" for Europe",
+  "detail": "Turnover almost EUR 3.5bn in 2025, 86% of it abroad",
+  "icon": "person",
+  "logos": [
+   "karcher"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "hayward-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Hayward sales up 6%",
+  "detail": "Net sales USD 260.1m; North America up 9%",
+  "icon": "chart",
+  "logos": [
+   "hayward"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "makita-interim-results-october-2026",
+  "kicker": "Results · Apr–Sep 2026",
+  "title": "Makita revenue up 9.6%",
+  "detail": "Revenue JPY 414.7bn; operating profit up 23.0%",
+  "icon": "chart",
+  "logos": [
+   "makita"
+  ],
+  "layout": "logo",
+  "logoFiles": [
+   "scripts/news-topic-cards/assets/makita.svg"
+  ]
+ },
+ {
+  "slug": "midea-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Midea revenue down 4.12%",
+  "detail": "Revenue CNY 107.32bn; attributable profit up 25.93%",
+  "icon": "decline",
+  "logos": [
+   "midea"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "pentair-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Pentair pool sales down 18%",
+  "detail": "Net sales USD 976m, down 4%",
+  "icon": "decline",
+  "logos": [
+   "pentair"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "roborock-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Roborock revenue up 34.85%",
+  "detail": "Revenue CNY 5.61bn; attributable profit up 33.01%",
+  "icon": "chart",
+  "logos": [
+   "roborock"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "sharkninja-third-quarter-results-november-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "SharkNinja sales up 21.2%",
+  "detail": "Net sales USD 1.98bn; cleaning appliances up 4.1%",
+  "icon": "chart",
+  "logos": [
+   "shark"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "tennant-third-quarter-2026-results",
+  "kicker": "Results · Q3 2026",
+  "title": "Tennant robotics sales up 71%",
+  "detail": "Net sales USD 322.3m, up 6.2%",
+  "icon": "chart",
+  "logos": [
+   "tennant"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "stanley-black-decker-third-quarter-november-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Tools & Outdoor sales up 2%",
+  "detail": "Group net sales USD 3.73bn; outlook raised",
+  "icon": "chart",
+  "logos": [
+   "dewalt"
+  ],
+  "layout": "logo"
+ },
+ {
+  "slug": "whirlpool-third-quarter-results-october-2026",
+  "kicker": "Results · Q3 2026",
+  "title": "Whirlpool sales down 8.8%",
+  "detail": "Net sales USD 3.68bn; organic sales down 5.4%",
+  "icon": "decline",
+  "logos": [
+   "whirlpool",
+   "kitchenaid"
+  ],
+  "layout": "logo"
+ }
+]
