@@ -27257,6 +27257,96 @@
         "outputHash": "sha256:d508fb2e47a709f33b17632d641387f0df7e530d76b4338e9479a5da5ef97b4d"
       }
     },
+    "/images/articles/wcb-expo-2026-visitor-guide/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 103150,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d5556767041cad4cfd0419c087699fda0220350a9bbe82dd27ef03985b7d4758",
+      "outputHash": "sha256:328b3a9ae48209418826b90fd7ae6d4c763a4082199c0dccff40f20fc7ca318c",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-2026-visitor-guide/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 42230,
+        "outputHash": "sha256:f8efccb2c8f7ec69a81768aa02bce084a3123b8808b2737b449eadb912c56961"
+      }
+    },
+    "/images/articles/wcb-expo-2026-visitor-guide/02-full-supply-chain.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 57296,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:14b6328a218ee419ac3a1724f5067e782d76321518d1199a1ecda6129c283200",
+      "outputHash": "sha256:761cc18f9cc2941c28ed0f05df3329a629874509eb35d12009831766d5f300c6",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-2026-visitor-guide/02-full-supply-chain-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23802,
+        "outputHash": "sha256:d214b34ed719b76ab316da45ca9cbbd7452b410ae2c0c440896e5d95eede2d74"
+      }
+    },
+    "/images/articles/wcb-expo-2026-visitor-guide/03-who-finds-what.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 65942,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:17117236c548e56b103c0030fdb4cae2ba7abb5b35b6543b13f2dee1a24689f7",
+      "outputHash": "sha256:ab2b34d30b1801bef405df405e18bbf4fb35ba3d343bd0ed6d43026cdd10f68a",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-2026-visitor-guide/03-who-finds-what-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26808,
+        "outputHash": "sha256:f605e59437b2e17efe998d084c4449110cbb8555c4f0f4fe891ee69043160640"
+      }
+    },
+    "/images/articles/wcb-expo-2026-visitor-guide/04-forum-speakers.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 67758,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f29baaa06b4819ecdef39bafb9b7aca03cbb18114b971434d94b76c9a1684ed6",
+      "outputHash": "sha256:a43e3fc57ee7aa35fff019854c63c8500502871b09eb39f7b2fe06246f94af29",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-2026-visitor-guide/04-forum-speakers-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26378,
+        "outputHash": "sha256:0b8b17ea776a38e0cf705760ce9a91276a081d7cc15a48e84e1fe326405b4912"
+      }
+    },
+    "/images/articles/wcb-expo-2026-visitor-guide/05-shenzhen-expo-march-2026.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 113362,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6c46de59f2bab2c63b7c79201becc3d56213f2873fc73d051ec47e060216126e",
+      "outputHash": "sha256:ed1c54da6712cdc05b3eca75c2c20ac7832bde38024e1e9d133eb518c9de57c6",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-2026-visitor-guide/05-shenzhen-expo-march-2026-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43614,
+        "outputHash": "sha256:bf2da1ecb1dc8fffa1fc3cdce057eb5b923c679a9ce7e8b1170368678dd32824"
+      }
+    },
     "/images/articles/wcb-expo-programme/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -49611,6 +49701,16 @@
         "/images/blog/floor-scrubber-delivered-productivity-check.webp"
       ]
     },
+    "wcb-expo-2026-visitor-guide": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/wcb-expo-2026-visitor-guide/01-cover.webp",
+      "body": [
+        "/images/articles/wcb-expo-2026-visitor-guide/02-full-supply-chain.webp",
+        "/images/articles/wcb-expo-2026-visitor-guide/03-who-finds-what.webp",
+        "/images/articles/wcb-expo-2026-visitor-guide/04-forum-speakers.webp",
+        "/images/articles/wcb-expo-2026-visitor-guide/05-shenzhen-expo-march-2026.webp"
+      ]
+    },
     "wcb-expo-programme": {
       "pageRoute": "/wcb-expo",
       "budgetClass": "standard",
@@ -60506,6 +60606,35 @@
           "status": "matched",
           "primary": "/images/articles/vs-industry-dyson-bissell-supplier-shift/01-cover.webp",
           "hash": "sha256:6b477b789901312f0b29d5925cffce8c62149509d096fe47f2b39632cf5dff45"
+        }
+      }
+    },
+    "wcb-expo-2026-visitor-guide": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-2026-visitor-guide/01-cover.webp",
+          "hash": "sha256:d5556767041cad4cfd0419c087699fda0220350a9bbe82dd27ef03985b7d4758"
+        },
+        "02-full-supply-chain.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-2026-visitor-guide/02-full-supply-chain.webp",
+          "hash": "sha256:14b6328a218ee419ac3a1724f5067e782d76321518d1199a1ecda6129c283200"
+        },
+        "03-who-finds-what.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-2026-visitor-guide/03-who-finds-what.webp",
+          "hash": "sha256:17117236c548e56b103c0030fdb4cae2ba7abb5b35b6543b13f2dee1a24689f7"
+        },
+        "04-forum-speakers.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-2026-visitor-guide/04-forum-speakers.webp",
+          "hash": "sha256:f29baaa06b4819ecdef39bafb9b7aca03cbb18114b971434d94b76c9a1684ed6"
+        },
+        "05-shenzhen-expo-march-2026.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-2026-visitor-guide/05-shenzhen-expo-march-2026.webp",
+          "hash": "sha256:6c46de59f2bab2c63b7c79201becc3d56213f2873fc73d051ec47e060216126e"
         }
       }
     },
