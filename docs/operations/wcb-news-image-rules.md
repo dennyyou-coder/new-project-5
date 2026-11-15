@@ -25,3 +25,7 @@ Use the first one that exists:
 - Image files enter the site only through `npm run prepare:article-images`. 16:9 in lists; product shots on white with `fit: "contain"`, never cropped.
 - New stories: each daily news candidate comes with its proposed image; Denny confirms the text and the image together.
 - Older stories: backfill from newest to oldest, about 24 stories per preview PR, merged only after Denny says "可以，合并". Scope for now: the last three months. Older stories keep their current pictures until decided otherwise.
+
+## WCB topic card
+
+1600×900, light blue-grey background, blue top band; kicker (IBM Plex Mono, uppercase), title (Archivo 800, at most three lines), one detail line, company logo tiles, a line icon in a white circle, "WORLD CLEAN BIZ" footer. Render with `scripts/news-topic-cards/render.py` (card text in a JSON file, e.g. `batch-1.json`), then prepare as `kind: "chart"`. In `lib/newsVisuals.ts` use `kind: "coverage"`, `label: "WCB topic card"`, caption ending "Card: World Clean Biz."
