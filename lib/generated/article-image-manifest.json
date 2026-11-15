@@ -26231,6 +26231,78 @@
         "outputHash": "sha256:7da24d4e30be082d114239475c47d62189a6a0683e1b7b1145425067b5a97f89"
       }
     },
+    "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 51710,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e10727c346c6cb0062eb8a0be55238eb32cf13153d047316862d3b9bfcbb822c",
+      "outputHash": "sha256:8e973e99cf023dcb3f2b644786ae44691e788d267b20a0fc460af14cc2060a80",
+      "mobile": {
+        "src": "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20740,
+        "outputHash": "sha256:5b0809e85074482c3ca56971f717327912ab8f427177374686d0db37ff0567b1"
+      }
+    },
+    "/images/articles/tti-sues-chervon-galli-trade-secrets/02-timeline.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 95778,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c264ee18dc92256d3888d04846d95bbcd5f7808d1a1c2bf4582ce532c934b2e6",
+      "outputHash": "sha256:6ef0d0fb51a76bf256c9d79ed57b3eee345b4a8df848800c3cca0f2aec78c781",
+      "mobile": {
+        "src": "/images/articles/tti-sues-chervon-galli-trade-secrets/02-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36860,
+        "outputHash": "sha256:a2191bd59bc986a2b06bb4dcae6cd562600b59281562c59ba7838e916d8c3efb"
+      }
+    },
+    "/images/articles/tti-sues-chervon-galli-trade-secrets/03-messages.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 64426,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ab3c27f9110cfb14dd3abe665c60728ef09241541fbf734d408975f46619e009",
+      "outputHash": "sha256:7e2a05020df59d461e906a58397754bf76f63f06884dd0f420d9a54eeba2486a",
+      "mobile": {
+        "src": "/images/articles/tti-sues-chervon-galli-trade-secrets/03-messages-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25634,
+        "outputHash": "sha256:37ee0c4645bc9168c0028960f861b4d2801c7b2f3c82ed586966f61af5309e5d"
+      }
+    },
+    "/images/articles/tti-sues-chervon-galli-trade-secrets/04-hires-by-function.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 91310,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2471d1820cd8fe466da239b7c6f7f0354bfc2046bc6bd37e500b9df058dedfc9",
+      "outputHash": "sha256:143b90708f3ade7af03d675ffd0b11e7576b15def912b159aeef71ce755fdffc",
+      "mobile": {
+        "src": "/images/articles/tti-sues-chervon-galli-trade-secrets/04-hires-by-function-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36102,
+        "outputHash": "sha256:65583c02d00eecc7d9a672744108c7f1a765ac0defd3174004736848f9859591"
+      }
+    },
     "/images/articles/upc-ecovacs-roborock-evidence-appeal-march-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -49519,6 +49591,15 @@
         "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png"
       ]
     },
+    "tti-sues-chervon-galli-trade-secrets": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover.webp",
+      "body": [
+        "/images/articles/tti-sues-chervon-galli-trade-secrets/02-timeline.webp",
+        "/images/articles/tti-sues-chervon-galli-trade-secrets/03-messages.webp",
+        "/images/articles/tti-sues-chervon-galli-trade-secrets/04-hires-by-function.webp"
+      ]
+    },
     "two-sides-of-dyson": {
       "budgetClass": "standard",
       "cover": "/images/insights/two-sides-of-dyson-cover.jpg",
@@ -60312,6 +60393,30 @@
           "status": "matched",
           "primary": "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png",
           "hash": "sha256:c106a7030396ce7fd901c415490958441897939fe734b9fd656bd3e96cd1636b"
+        }
+      }
+    },
+    "tti-sues-chervon-galli-trade-secrets": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover.webp",
+          "hash": "sha256:e10727c346c6cb0062eb8a0be55238eb32cf13153d047316862d3b9bfcbb822c"
+        },
+        "02-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets/02-timeline.webp",
+          "hash": "sha256:c264ee18dc92256d3888d04846d95bbcd5f7808d1a1c2bf4582ce532c934b2e6"
+        },
+        "03-messages.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets/03-messages.webp",
+          "hash": "sha256:ab3c27f9110cfb14dd3abe665c60728ef09241541fbf734d408975f46619e009"
+        },
+        "04-hires-by-function.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets/04-hires-by-function.webp",
+          "hash": "sha256:2471d1820cd8fe466da239b7c6f7f0354bfc2046bc6bd37e500b9df058dedfc9"
         }
       }
     },
