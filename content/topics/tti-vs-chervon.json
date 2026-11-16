@@ -1,0 +1,175 @@
+{
+  "slug": "tti-vs-chervon",
+  "title": "TTI vs Chervon: Milwaukee and RYOBI against EGO, FLEX and SKIL",
+  "shortLabel": "TTI vs Chervon",
+  "seoTitle": "TTI vs Chervon: Brands, Results and the Galli Move Compared",
+  "dek": "Two Hong Kong-listed cordless groups, one former CEO. How Techtronic Industries and Chervon compare on size, brands, retail channels and results, and what Joe Galli's move to Chervon changes.",
+  "description": "WCB's running comparison of Techtronic Industries (TTI) and Chervon: Milwaukee, RYOBI and Hoover against EGO, FLEX and SKIL, with 2025 and first-half 2026 results, retail channels, ownership and the September 2026 appointment of former TTI chief Joseph Galli as Chervon CEO.",
+  "coverImage": "/images/topics/tti-vs-chervon/cover.webp",
+  "coverCredit": {
+    "text": "Card: World Clean Biz, using the TTI and Chervon company logos",
+    "url": "https://worldcleanbiz.com/topics/tti-vs-chervon"
+  },
+  "updated": "2026-11-15",
+  "status": {
+    "label": "Galli's first months at Chervon",
+    "text": "Joseph Galli, TTI's chief executive from 2008 to 2024, has run Chervon since 10 September 2026 and has already hired several former TTI and Milwaukee managers. Both are expected to report full-year 2026 results in March 2027."
+  },
+  "summary": [
+    "TTI and Chervon are both Hong Kong-listed groups built on cordless battery platforms, both manufacture in their own factories in Asia, and North America is the largest market for both. The difference is scale. TTI reported USD 8.29 billion of revenue in the first half of 2026; Chervon reported USD 1.03 billion, about one eighth as much.",
+    "Their brands meet head to head. Milwaukee competes with FLEX for professional tradespeople, and RYOBI competes with EGO and SKIL for homeowners, especially in battery outdoor equipment. TTI also owns a floorcare business, Hoover in North America, Vax, Oreck and Dirt Devil, which Chervon has no equivalent of. In US home centres the two lean on different retailers: RYOBI's main US retailer is The Home Depot, while Lowe's helped launch EGO, FLEX and SKIL as nationwide home-centre exclusives in 2021.",
+    "2026 has narrowed the story more than the numbers. Chervon returned to growth in the first half, with revenue up 12.8% and gross margin up six points to 39.3%, while TTI grew 5.9% with Milwaukee up 10.5% in local currencies. Then in September Chervon's founder Pan Longquan handed the CEO job to Joseph Galli, the man who led TTI for sixteen years. Whether his playbook from Milwaukee can be repeated at FLEX is the question this file follows."
+  ],
+  "chart": {
+    "type": "bars",
+    "title": "First-half 2026 revenue",
+    "unit": "USD m",
+    "note": "Six months to 30 June 2026, as each company reported. Chervon's business is weighted towards outdoor equipment, which sells mostly in the first half.",
+    "rows": [
+      { "label": "TTI", "segments": [8292], "display": "USD 8.29bn, +5.9%", "href": "/news/tti-interim-results-august-2026" },
+      { "label": "Chervon", "segments": [1029], "display": "USD 1.03bn, +12.8%", "href": "/news/chervon-first-half-results-august-2026" }
+    ]
+  },
+  "keyFacts": [
+    { "label": "Listing", "value": "TTI: Hong Kong, stock code 669, listed 1990. Chervon: Hong Kong, stock code 2285, listed 30 Dec 2021" },
+    { "label": "Control", "value": "TTI: Pudwill family largest shareholder (Horst Pudwill about 21.9%). Chervon: founder Pan Longquan controlling shareholder (50.92% of votes, March 2026)" },
+    { "label": "Main brands", "value": "TTI: Milwaukee, RYOBI (licensed), AEG (licensed), Hoover (North America), Vax, Oreck, Dirt Devil. Chervon: EGO, FLEX, SKIL, DEVON" },
+    { "label": "2025 results", "value": "TTI revenue USD 15.26bn (+4.4%), net profit USD 1.20bn. Chervon revenue USD 1.63bn (−8.2%), profit USD 97.7m" },
+    { "label": "H1 2026 results", "value": "TTI USD 8.29bn (+5.9%), profit USD 738m (+17.5%), gross margin 42.9%. Chervon USD 1.03bn (+12.8%), profit USD 106.3m (+11.6%), gross margin 39.3%" },
+    { "label": "Leadership", "value": "TTI: chairman Horst Pudwill. Chervon: chairman Pan Longquan, CEO Joseph Galli since 10 Sep 2026" }
+  ],
+  "callout": {
+    "title": "Results side by side",
+    "text": "Both companies' latest reported figures, with sources, are in the WCB results tracker alongside the rest of the industry.",
+    "href": "/rankings"
+  },
+  "timeline": [
+    {
+      "date": "2021-03-18",
+      "title": "FLEX launches at Lowe's",
+      "text": "Lowe's and Chervon launch FLEX's 24V professional tools as a nationwide home-centre exclusive in the US.",
+      "href": "/blog/who-owns-flex-tools-chervon-lowes"
+    },
+    {
+      "date": "2021-12-30",
+      "title": "Chervon lists in Hong Kong",
+      "text": "Chervon Holdings begins trading under stock code 2285, joining TTI on the Hong Kong exchange.",
+      "href": "/blog/who-owns-chervon-ego-flex-skil"
+    },
+    {
+      "date": "2026-03-03",
+      "title": "TTI reports 2025 revenue of USD 15.26 billion",
+      "text": "Milwaukee grows 7.9% in local currencies; floorcare and cleaning falls 9.7%.",
+      "href": "/news/tti-annual-results-march-2026"
+    },
+    {
+      "date": "2026-03-25",
+      "title": "Chervon's 2025 revenue falls 8.2%",
+      "text": "Power-tool revenue falls 18.3% as US customers buy cautiously amid tariff uncertainty; outdoor equipment is flat.",
+      "href": "/news/chervon-annual-results-march-2026"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "TTI first half: USD 8.29 billion",
+      "text": "Profit rises 17.5% to USD 738 million; TTI switches to Professional and Consumer reporting segments.",
+      "href": "/news/tti-interim-results-august-2026"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "Chervon returns to growth",
+      "text": "First-half revenue rises 12.8% to USD 1.03 billion and gross margin rises to 39.3%.",
+      "href": "/news/chervon-first-half-results-august-2026"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Former TTI chief Joseph Galli becomes Chervon CEO",
+      "text": "Founder Pan Longquan stays on as chairman.",
+      "href": "/news/joseph-galli-becomes-chervon-ceo-september-2026"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Galli's new team takes shape",
+      "text": "Seven outside hires and one promotion, several from TTI and Milwaukee, cover sales, professional channels and FLEX product development.",
+      "href": "/blog/galli-chervon-new-team"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Which is bigger, TTI or Chervon?",
+      "a": "TTI, by a wide margin. TTI reported 2025 revenue of USD 15.26 billion against Chervon's USD 1.63 billion, and USD 8.29 billion against USD 1.03 billion in the first half of 2026. Chervon grew faster in that half, 12.8% against 5.9%, but from a 2025 base that had fallen 8.2%."
+    },
+    {
+      "q": "Which brands compete with each other?",
+      "a": "Milwaukee and FLEX both target professional tradespeople. RYOBI competes with EGO in battery outdoor equipment and with SKIL in home power tools. TTI's floorcare brands, Hoover in North America, Vax, Oreck and Dirt Devil, have no counterpart among Chervon's own brands."
+    },
+    {
+      "q": "Why does Joseph Galli's move matter?",
+      "a": "Galli ran TTI from 2008 to 2024, the years in which Milwaukee became one of the leading professional tool brands. Since becoming Chervon's CEO on 10 September 2026 he has hired managers from TTI and Milwaukee and put a former Milwaukee product manager in charge of FLEX professional product development, which points to FLEX as Chervon's main bet against Milwaukee."
+    },
+    {
+      "q": "Who owns the two companies?",
+      "a": "Both are listed in Hong Kong. TTI describes the Pudwill family as its largest shareholder; executive chairman Horst Pudwill reported interests of about 21.86% at the end of 2025. Chervon's founder Pan Longquan held 50.92% of voting shares in March 2026 and remains chairman."
+    },
+    {
+      "q": "Where are their products made?",
+      "a": "Both groups make most products in their own Asian factories. TTI reports manufacturing in China and Vietnam as well as Mexico and the United States; Chervon reports major production in Nanjing, China, and in Vietnam, and FLEX keeps operations in Germany. The factory for a specific model still has to be read from its label."
+    }
+  ],
+  "insights": [
+    "pan-longquan-joe-galli-chervon",
+    "galli-chervon-new-team",
+    "joseph-galli-chervon-dewalt-milwaukee",
+    "flex-history-chervon-galli",
+    "who-owns-chervon-ego-flex-skil",
+    "who-owns-ego-power-plus-chervon-manufacturing",
+    "who-owns-flex-tools-chervon-lowes",
+    "who-owns-skil-tools-chervon",
+    "ego-vs-greenworks-battery-outdoor-tools",
+    "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck",
+    "horst-pudwill-man-who-built-tti",
+    "steve-richman-milwaukee-growth",
+    "milwaukee-next-stop-20-billion",
+    "who-owns-milwaukee-tools-tti-manufacturing",
+    "who-owns-ryobi-tti-kyocera",
+    "tti-hong-kong-manufacturer-global-tool-brands",
+    "global-power-tool-companies",
+    "global-power-tool-brands-reshaping-portfolios",
+    "power-tools-new-cycle-cordless-specialization"
+  ],
+  "news": [
+    "joseph-galli-becomes-chervon-ceo-september-2026",
+    "chervon-first-half-results-august-2026",
+    "tti-interim-results-august-2026",
+    "milwaukee-pipeline-products-august-2026",
+    "chervon-annual-results-march-2026",
+    "tti-annual-results-march-2026",
+    "ego-aura-r2-march-availability-february-2026",
+    "tti-floorcare-office-move-october-2025"
+  ],
+  "sources": [
+    {
+      "title": "TTI 2026 interim results: financial highlights",
+      "url": "https://www.ttigroup.com/documents/interim-results-2026/files/TTI-2026IR-Financial_Highlights-en.pdf"
+    },
+    {
+      "title": "Techtronic Industries delivers solid performance in 2025 (PR Newswire)",
+      "url": "https://www.prnewswire.com/apac/news-releases/techtronic-industries-delivers-solid-performance-in-2025-302702496.html"
+    },
+    {
+      "title": "Chervon interim results announcement 2026 (HKEX)",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0817/2026081700744.pdf"
+    },
+    {
+      "title": "Chervon appoints Joseph Galli Jr. as Chief Executive Officer (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/chervon-appoints-joseph-galli-jr-as-chief-executive-officer-to-lead-next-stage-of-global-growth-302874813.html"
+    },
+    {
+      "title": "Lowe's launches FLEX cordless power tools (Lowe's newsroom, March 2021)",
+      "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-launch-new-cordless-power-tool-innovation-pros-exclusive-flex-offering-03-18-21"
+    },
+    {
+      "title": "TTI company profile",
+      "url": "https://www.ttigroup.com/company"
+    }
+  ]
+}
