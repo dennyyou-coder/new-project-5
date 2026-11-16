@@ -21,6 +21,30 @@ export type TopicChart =
   /** Revenue growth for the latest reported quarter, from the results tracker. */
   | { type: "results-growth"; title: string; note?: string };
 
+/** A table on a topic page; on phones each row becomes a card labelled by its column names. */
+export type TopicTable = {
+  columns: string[];
+  rows: { cells: string[]; href?: string }[];
+  note?: string;
+};
+
+/**
+ * An extra section of a topic page: key facts, a table, small charts side by side and links.
+ * `position` places it after the summary (default) or after the timeline.
+ */
+export type TopicSection = {
+  id: string;
+  title: string;
+  position?: "after-summary" | "after-timeline";
+  /** Shown as a highlighted case box instead of a plain section. */
+  highlight?: boolean;
+  intro?: string;
+  facts?: TopicFact[];
+  table?: TopicTable;
+  charts?: TopicChart[];
+  links?: { title: string; href: string }[];
+};
+
 export type Topic = {
   slug: string;
   title: string;
@@ -38,6 +62,7 @@ export type Topic = {
   keyFacts: TopicFact[];
   callout?: { title: string; text: string; href?: string };
   chart?: TopicChart;
+  sections?: TopicSection[];
   timeline: TopicEvent[];
   questions: TopicQuestion[];
   insights: string[];

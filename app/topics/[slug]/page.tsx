@@ -8,6 +8,7 @@ import { getPublishedBrandProfiles } from "@/lib/brands";
 import { buildBrandMarkIndex } from "@/lib/brandMarks";
 import { CompanyMark } from "@/components/ui/CompanyMark";
 import { TopicChart } from "@/components/topics/TopicChart";
+import { TopicSection } from "@/components/topics/TopicSection";
 import { ShareBar } from "@/components/share/ShareBar";
 import { compareKeyBrands } from "@/lib/keyBrands";
 import { seoDescription, seoTitle } from "@/lib/seo";
@@ -204,6 +205,10 @@ export default async function TopicPage({ params }: { params: PageParams }) {
             </aside>
           ) : null}
 
+          {topic.sections?.filter((section) => section.position !== "after-timeline").map((section) => (
+            <TopicSection key={section.id} section={section} />
+          ))}
+
           <section aria-labelledby="topic-timeline">
             <h2 id="topic-timeline">Timeline</h2>
             {topic.timeline.length > TIMELINE_OPEN ? (
@@ -218,6 +223,10 @@ export default async function TopicPage({ params }: { params: PageParams }) {
               ))}
             </ol>
           </section>
+
+          {topic.sections?.filter((section) => section.position === "after-timeline").map((section) => (
+            <TopicSection key={section.id} section={section} />
+          ))}
 
           <section aria-labelledby="topic-questions">
             <h2 id="topic-questions">Key questions</h2>
