@@ -31608,6 +31608,78 @@
         "outputHash": "sha256:bcf7f07bbeafcfcd8cc66cc9014c025920b2fd4d5eea65204be893216a77fa6d"
       }
     },
+    "/images/articles/why-suzhou-wcb-expo/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 47016,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2591fd66a62758048c34226ab456f63eab02a88217644e494ab774ce07a66f22",
+      "outputHash": "sha256:18e2f4580884d77f367bd09bb61b1e4933b5035857c52968366108fdf927b03f",
+      "mobile": {
+        "src": "/images/articles/why-suzhou-wcb-expo/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20260,
+        "outputHash": "sha256:28775ce10884039dea6cc99e86c1d6aeebd7a3e95de2e412917db766717b2dbb"
+      }
+    },
+    "/images/articles/why-suzhou-wcb-expo/02-suzhou-category-leaders.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 66012,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8b364ab357206daf44fe7d3d00686a27a265d02d0955a0b2b15cb2e20a649ad1",
+      "outputHash": "sha256:72e49b184bd1ffa592b0094e5c4afd50b229c546252a1db9c9e46578634857af",
+      "mobile": {
+        "src": "/images/articles/why-suzhou-wcb-expo/02-suzhou-category-leaders-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26986,
+        "outputHash": "sha256:47a2a87c0f628882a21cebf68a11b0402fd694b985a64890b2768d815c1a8204"
+      }
+    },
+    "/images/articles/why-suzhou-wcb-expo/03-cluster-flywheel.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38490,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d19fdee053521a0fc1455da8ebcbd261afb7153ca283f3c2c71ce40b306be6fb",
+      "outputHash": "sha256:a2482be1cb3e94720e1b7057668c0fdf9b77c6f338f86bf98b36197028052cfc",
+      "mobile": {
+        "src": "/images/articles/why-suzhou-wcb-expo/03-cluster-flywheel-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16116,
+        "outputHash": "sha256:3a02bbce37c85f756a23a1a15bc1992f5082fd695ab1d49cde2002b50d59d44f"
+      }
+    },
+    "/images/articles/why-suzhou-wcb-expo/04-yangtze-delta-reach.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 54522,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ebc3a32ef3905921d38d8f7fca0ac307eab25fb4ad0c71e11bce3ad8b4ac8c27",
+      "outputHash": "sha256:ff09a81194dc38fc7d9d6a23a8882dc5fb2d2d71e92013b9593d7e1fcbef7bd9",
+      "mobile": {
+        "src": "/images/articles/why-suzhou-wcb-expo/04-yangtze-delta-reach-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23046,
+        "outputHash": "sha256:9942fa7cb7516f916f3b91be37aa5a6d7582d7be6a66b38388ab04dfdf9844e5"
+      }
+    },
     "/images/articles/worx-landroid-vision-cloud-4wd-wr344/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -50951,6 +51023,15 @@
         "/images/articles/why-i-am-committing-to-wcb-expo/02-buyer-matchmaking.webp"
       ]
     },
+    "why-suzhou-wcb-expo": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/why-suzhou-wcb-expo/01-cover.webp",
+      "body": [
+        "/images/articles/why-suzhou-wcb-expo/02-suzhou-category-leaders.webp",
+        "/images/articles/why-suzhou-wcb-expo/03-cluster-flywheel.webp",
+        "/images/articles/why-suzhou-wcb-expo/04-yangtze-delta-reach.webp"
+      ]
+    },
     "world-class-denny-or-world-class-bragging": {
       "budgetClass": "standard",
       "cover": "/images/insights/world-class-denny-or-world-class-bragging-cover.jpg",
@@ -62591,6 +62672,30 @@
           "status": "matched",
           "primary": "/images/articles/why-i-am-committing-to-wcb-expo/02-buyer-matchmaking.webp",
           "hash": "sha256:dc9de7c7357b8e00fab1eec5f2e8beabc6bc3f9d98dd54cf20c873aee5aa1d2c"
+        }
+      }
+    },
+    "why-suzhou-wcb-expo": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/why-suzhou-wcb-expo/01-cover.webp",
+          "hash": "sha256:2591fd66a62758048c34226ab456f63eab02a88217644e494ab774ce07a66f22"
+        },
+        "02-suzhou-category-leaders.png": {
+          "status": "matched",
+          "primary": "/images/articles/why-suzhou-wcb-expo/02-suzhou-category-leaders.webp",
+          "hash": "sha256:8b364ab357206daf44fe7d3d00686a27a265d02d0955a0b2b15cb2e20a649ad1"
+        },
+        "03-cluster-flywheel.png": {
+          "status": "matched",
+          "primary": "/images/articles/why-suzhou-wcb-expo/03-cluster-flywheel.webp",
+          "hash": "sha256:d19fdee053521a0fc1455da8ebcbd261afb7153ca283f3c2c71ce40b306be6fb"
+        },
+        "04-yangtze-delta-reach.png": {
+          "status": "matched",
+          "primary": "/images/articles/why-suzhou-wcb-expo/04-yangtze-delta-reach.webp",
+          "hash": "sha256:ebc3a32ef3905921d38d8f7fca0ac307eab25fb4ad0c71e11bce3ad8b4ac8c27"
         }
       }
     },
