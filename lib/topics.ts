@@ -26,6 +26,8 @@ export type TopicTable = {
   columns: string[];
   rows: { cells: string[]; href?: string }[];
   note?: string;
+  /** "cards": the first column becomes a date rail and the other columns stack as labelled lines. */
+  layout?: "table" | "cards";
 };
 
 /**

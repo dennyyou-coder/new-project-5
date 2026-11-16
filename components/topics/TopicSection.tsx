@@ -31,7 +31,7 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
 
       {section.table ? (
         <div className="topic-table-wrap">
-          <table className="topic-table">
+          <table className={`topic-table${section.table.layout === "cards" ? " is-cards" : ""}`}>
             <thead>
               <tr>
                 {section.table.columns.map((column) => <th key={column} scope="col">{column}</th>)}

@@ -198,3 +198,22 @@
   .topic-table td:first-child { white-space: normal; }
   .topic-table td[data-label]:not(:first-child)::before { content: attr(data-label) ": "; color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 }
+
+/* Card layout for long tables (e.g. court cases): date rail, stacked labelled lines */
+.topic-table.is-cards, .topic-table.is-cards tbody { display: block; }
+.topic-table.is-cards thead { display: none; }
+.topic-table.is-cards tr { display: grid; grid-template-columns: 110px minmax(0, 1fr); column-gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.topic-table.is-cards td { display: block; grid-column: 2; padding: 0; border: 0; font-size: 15px; line-height: 1.55; }
+.topic-table.is-cards td:first-child { grid-column: 1; grid-row: 1 / span 6; font-size: 13px; }
+.topic-table.is-cards td:nth-child(3) { order: -1; font-size: 17px; font-weight: 800; line-height: 1.35; }
+.topic-table.is-cards td:nth-child(2) { color: var(--muted); font-size: 13px; font-weight: 650; }
+.topic-table.is-cards td:nth-child(2), .topic-table.is-cards td:nth-child(3) { margin-bottom: 4px; }
+.topic-table.is-cards td:nth-child(5) { margin-top: 6px; }
+.topic-table.is-cards td:nth-child(5)::before { content: "Outcome: "; color: var(--ink); font-weight: 800; }
+.topic-table.is-cards td.topic-table-link { margin-top: 6px; font-size: 14px; }
+@media (max-width: 640px) {
+  .topic-table.is-cards tr { grid-template-columns: minmax(0, 1fr); }
+  .topic-table.is-cards td, .topic-table.is-cards td:first-child { grid-column: 1; grid-row: auto; }
+  .topic-table.is-cards td[data-label]:not(:first-child)::before { content: none; }
+  .topic-table.is-cards td:nth-child(5)::before { content: "Outcome: "; color: var(--ink); font-size: inherit; letter-spacing: 0; text-transform: none; }
+}
