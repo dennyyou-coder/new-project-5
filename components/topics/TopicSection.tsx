@@ -29,6 +29,12 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
         </dl>
       ) : null}
 
+      {section.charts?.length ? (
+        <div className={`topic-section-charts${section.charts.length > 1 ? " is-pair" : ""}`}>
+          {section.charts.map((chart) => <TopicChart key={chart.title} chart={chart} />)}
+        </div>
+      ) : null}
+
       {section.table ? (
         <div className="topic-table-wrap">
           <table className={`topic-table${section.table.layout === "cards" ? " is-cards" : ""}`}>
@@ -55,11 +61,6 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
         </div>
       ) : null}
 
-      {section.charts?.length ? (
-        <div className={`topic-section-charts${section.charts.length > 1 ? " is-pair" : ""}`}>
-          {section.charts.map((chart) => <TopicChart key={chart.title} chart={chart} />)}
-        </div>
-      ) : null}
 
       {section.links?.length ? (
         <ul className="topic-section-links">
