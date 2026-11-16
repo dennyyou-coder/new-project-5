@@ -1,10 +1,10 @@
 {
   "slug": "tti-vs-chervon",
-  "title": "TTI vs Chervon: Milwaukee and RYOBI against EGO, FLEX and SKIL",
+  "title": "TTI vs Chervon: The Lawsuit, the Rivalry and the Numbers",
   "shortLabel": "TTI vs Chervon",
-  "seoTitle": "TTI vs Chervon: Brands, Results and the Galli Move Compared",
-  "dek": "Two Hong Kong-listed cordless groups, one former CEO. How Techtronic Industries and Chervon compare on size, brands, retail channels and results, and what Joe Galli's move to Chervon changes.",
-  "description": "WCB's running comparison of Techtronic Industries (TTI) and Chervon: Milwaukee, RYOBI and Hoover against EGO, FLEX and SKIL, with 2025 and first-half 2026 results, retail channels, ownership and the September 2026 appointment of former TTI chief Joseph Galli as Chervon CEO.",
+  "seoTitle": "TTI vs Chervon: Lawsuit, Court History and Results",
+  "dek": "TTI has sued Chervon and its new CEO, TTI's own former chief Joe Galli, over trade secrets and a wave of hires. WCB's file on the case, twenty years of litigation between the two groups, and how their businesses compare.",
+  "description": "WCB's running file on TTI v. Chervon and Joe Galli (N.D. Ill. 1:26-cv-13942): the trade-secrets complaint, every earlier patent case between TTI, Milwaukee and Chervon since 2005, a timeline of Galli's move and hires, and five years of revenue for both companies.",
   "coverImage": "/images/topics/tti-vs-chervon/cover.webp",
   "coverCredit": {
     "text": "Card: World Clean Biz, using the TTI and Chervon company logos",
@@ -12,110 +12,121 @@
   },
   "updated": "2026-11-15",
   "status": {
-    "label": "Galli's first months at Chervon",
-    "text": "Joseph Galli, TTI's chief executive from 2008 to 2024, has run Chervon since 10 September 2026 and has already hired several former TTI and Milwaukee managers. Both are expected to report full-year 2026 results in March 2027."
+    "label": "Case filed 9 Nov 2026 · no response yet",
+    "text": "As of 15 November the docket shows only the complaint and three routine filings. TTI has not moved for a preliminary injunction, and neither Chervon nor Galli has responded in public."
   },
   "summary": [
-    "TTI and Chervon are both Hong Kong-listed groups built on cordless battery platforms, both manufacture in their own factories in Asia, and North America is the largest market for both. The difference is scale. TTI reported USD 8.29 billion of revenue in the first half of 2026; Chervon reported USD 1.03 billion, about one eighth as much.",
-    "Their brands meet head to head. Milwaukee competes with FLEX for professional tradespeople, and RYOBI competes with EGO and SKIL for homeowners, especially in battery outdoor equipment. TTI also owns a floorcare business, Hoover in North America, Vax, Oreck and Dirt Devil, which Chervon has no equivalent of. In US home centres the two lean on different retailers: RYOBI's main US retailer is The Home Depot, while Lowe's helped launch EGO, FLEX and SKIL as nationwide home-centre exclusives in 2021.",
-    "2026 has narrowed the story more than the numbers. Chervon returned to growth in the first half, with revenue up 12.8% and gross margin up six points to 39.3%, while TTI grew 5.9% with Milwaukee up 10.5% in local currencies. Then in September Chervon's founder Pan Longquan handed the CEO job to Joseph Galli, the man who led TTI for sixteen years. Whether his playbook from Milwaukee can be repeated at FLEX is the question this file follows."
+    "On 9 November 2026, TTI North America, Milwaukee Tool and TTI's sales company R&B sued Chervon North America, Chervon Holdings and Joe Galli in federal court in Chicago. The complaint says Galli, TTI's chief executive from 2008 to 2024, kept a 'covert channel' to a serving TTI sales executive who passed him confidential sales and financial information, and that after Galli became Chervon's CEO in September the company hired at least 30 former TTI employees in seven weeks. TTI brings eight counts, led by trade-secret misappropriation. These are allegations; the court has not ruled.",
+    "It is not the first time the two groups have met in court. TTI won a preliminary injunction against a Chervon-made laser level in 2005, and Milwaukee sued Chervon over lithium-ion battery patents in 2014. Since 2019 the traffic has run the other way: Chervon sued TTI over EGO lawn-mower patents, and in February 2025 a Delaware jury found that TTI had wilfully infringed five of them.",
+    "Behind the lawsuits is a fight for the same customers. TTI is far larger, with 2025 revenue of USD 15.26 billion against Chervon's USD 1.63 billion, but the brands meet head to head: Milwaukee against FLEX for professionals, RYOBI against EGO and SKIL for homeowners, The Home Depot against Lowe's on the shelf. The people TTI says Chervon hired are the sales, recruiting and product managers who built Milwaukee's lead."
   ],
-  "chart": {
-    "type": "bars",
-    "title": "First-half 2026 revenue",
-    "unit": "USD m",
-    "note": "Six months to 30 June 2026, as each company reported. Chervon's business is weighted towards outdoor equipment, which sells mostly in the first half.",
-    "rows": [
-      { "label": "TTI", "segments": [8292], "display": "USD 8.29bn, +5.9%", "href": "/news/tti-interim-results-august-2026" },
-      { "label": "Chervon", "segments": [1029], "display": "USD 1.03bn, +12.8%", "href": "/news/chervon-first-half-results-august-2026" }
-    ]
-  },
   "keyFacts": [
-    { "label": "Listing", "value": "TTI: Hong Kong, stock code 669, listed 1990. Chervon: Hong Kong, stock code 2285, listed 30 Dec 2021" },
-    { "label": "Control", "value": "TTI: Pudwill family largest shareholder (Horst Pudwill about 21.9%). Chervon: founder Pan Longquan controlling shareholder (50.92% of votes, March 2026)" },
-    { "label": "Main brands", "value": "TTI: Milwaukee, RYOBI (licensed), AEG (licensed), Hoover (North America), Vax, Oreck, Dirt Devil. Chervon: EGO, FLEX, SKIL, DEVON" },
-    { "label": "2025 results", "value": "TTI revenue USD 15.26bn (+4.4%), net profit USD 1.20bn. Chervon revenue USD 1.63bn (−8.2%), profit USD 97.7m" },
-    { "label": "H1 2026 results", "value": "TTI USD 8.29bn (+5.9%), profit USD 738m (+17.5%), gross margin 42.9%. Chervon USD 1.03bn (+12.8%), profit USD 106.3m (+11.6%), gross margin 39.3%" },
-    { "label": "Leadership", "value": "TTI: chairman Horst Pudwill. Chervon: chairman Pan Longquan, CEO Joseph Galli since 10 Sep 2026" }
+    {
+      "label": "Listing",
+      "value": "TTI: Hong Kong, stock code 669, listed 1990. Chervon: Hong Kong, stock code 2285, listed 30 Dec 2021"
+    },
+    {
+      "label": "Control",
+      "value": "TTI: Pudwill family largest shareholder (Horst Pudwill about 21.9%). Chervon: founder Pan Longquan controlling shareholder (50.92% of votes, March 2026)"
+    },
+    {
+      "label": "Main brands",
+      "value": "TTI: Milwaukee, RYOBI (licensed), AEG (licensed), Hoover (North America), Vax, Oreck, Dirt Devil. Chervon: EGO, FLEX, SKIL, DEVON"
+    },
+    {
+      "label": "2025 results",
+      "value": "TTI revenue USD 15.26bn (+4.4%), net profit USD 1.20bn. Chervon revenue USD 1.63bn (−8.2%), profit USD 97.7m"
+    },
+    {
+      "label": "H1 2026 results",
+      "value": "TTI USD 8.29bn (+5.9%), profit USD 738m (+17.5%), gross margin 42.9%. Chervon USD 1.03bn (+12.8%), profit USD 106.3m (+11.6%), gross margin 39.3%"
+    },
+    {
+      "label": "Leadership",
+      "value": "TTI: chairman Horst Pudwill. Chervon: chairman Pan Longquan, CEO Joseph Galli since 10 Sep 2026"
+    }
   ],
-  "callout": {
-    "title": "Results side by side",
-    "text": "Both companies' latest reported figures, with sources, are in the WCB results tracker alongside the rest of the industry.",
-    "href": "/rankings"
-  },
   "timeline": [
     {
-      "date": "2021-03-18",
-      "title": "FLEX launches at Lowe's",
-      "text": "Lowe's and Chervon launch FLEX's 24V professional tools as a nationwide home-centre exclusive in the US.",
-      "href": "/blog/who-owns-flex-tools-chervon-lowes"
+      "date": "2024-05",
+      "title": "Galli retires from TTI",
+      "text": "His non-solicitation clause runs for two years, to around May 2026.",
+      "href": "/blog/tti-sues-chervon-galli-trade-secrets"
     },
     {
-      "date": "2021-12-30",
-      "title": "Chervon lists in Hong Kong",
-      "text": "Chervon Holdings begins trading under stock code 2285, joining TTI on the Hong Kong exchange.",
-      "href": "/blog/who-owns-chervon-ego-flex-skil"
+      "date": "2025-06-22",
+      "title": "The alleged 'covert channel' begins",
+      "text": "According to the complaint, Galli asks TTI sales SVP Daniel Abbott for the best stores of a large distributor so he can visit them privately.",
+      "href": "/blog/tti-sues-chervon-galli-trade-secrets"
     },
     {
-      "date": "2026-03-03",
-      "title": "TTI reports 2025 revenue of USD 15.26 billion",
-      "text": "Milwaukee grows 7.9% in local currencies; floorcare and cleaning falls 9.7%.",
-      "href": "/news/tti-annual-results-march-2026"
-    },
-    {
-      "date": "2026-03-25",
-      "title": "Chervon's 2025 revenue falls 8.2%",
-      "text": "Power-tool revenue falls 18.3% as US customers buy cautiously amid tariff uncertainty; outdoor equipment is flat.",
-      "href": "/news/chervon-annual-results-march-2026"
-    },
-    {
-      "date": "2026-08-04",
-      "title": "TTI first half: USD 8.29 billion",
-      "text": "Profit rises 17.5% to USD 738 million; TTI switches to Professional and Consumer reporting segments.",
-      "href": "/news/tti-interim-results-august-2026"
-    },
-    {
-      "date": "2026-08-17",
-      "title": "Chervon returns to growth",
-      "text": "First-half revenue rises 12.8% to USD 1.03 billion and gross margin rises to 39.3%.",
-      "href": "/news/chervon-first-half-results-august-2026"
+      "date": "2026-02-11",
+      "title": "TTI fires Abbott",
+      "text": "Days after Galli repeated information shared with only three people; R&B sues Abbott in California on 10 March.",
+      "href": "/blog/tti-sues-chervon-galli-trade-secrets"
     },
     {
       "date": "2026-09-10",
-      "title": "Former TTI chief Joseph Galli becomes Chervon CEO",
+      "title": "Galli becomes Chervon's CEO",
       "text": "Founder Pan Longquan stays on as chairman.",
       "href": "/news/joseph-galli-becomes-chervon-ceo-september-2026"
     },
     {
-      "date": "2026-10-05",
-      "title": "Galli's new team takes shape",
-      "text": "Seven outside hires and one promotion, several from TTI and Milwaukee, cover sales, professional channels and FLEX product development.",
+      "date": "2026-09-14",
+      "title": "Former TTI sales chief Matthew DeFeo joins Chervon",
+      "text": "He leads sales, training and recruiting, reporting to Galli.",
       "href": "/blog/galli-chervon-new-team"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Four more hires, including Abbott",
+      "text": "Abbott, fired by TTI in February, becomes Chervon's director of sales for the western division.",
+      "href": "/blog/galli-chervon-new-team"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "At least 30 former TTI staff now at Chervon",
+      "text": "The complaint's count: 18 of Chervon's 19 announced external hires since 1 September came from TTI.",
+      "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "TTI files suit in Chicago",
+      "text": "Eight counts against Chervon North America, Chervon Holdings and Galli.",
+      "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Chervon shares fall more than 9%",
+      "text": "The first market reaction in Hong Kong; no response from Chervon yet.",
+      "href": "/blog/tti-strikes-back-chervon-lawsuit-analysis"
     }
   ],
   "questions": [
     {
+      "q": "What is TTI accusing Chervon and Galli of?",
+      "a": "Misappropriating trade secrets and inducing TTI employees to break their contracts. The complaint says Galli received confidential TTI sales and financial information from a serving sales executive between June 2025 and February 2026, and that Chervon hired at least 30 former TTI staff in seven weeks without any screen to keep TTI information out. These are allegations the court has not ruled on."
+    },
+    {
+      "q": "Has Chervon beaten TTI in court before?",
+      "a": "Yes. In February 2025 a Delaware jury found that TTI wilfully infringed five Chervon lawn-mower patents and awarded just under USD 4 million as a reasonable royalty. Earlier, TTI won a preliminary injunction against a Chervon-made laser level in 2005, and Milwaukee sued Chervon over battery patents in 2014."
+    },
+    {
+      "q": "Why can't TTI just enforce Galli's non-compete?",
+      "a": "Galli's two-year non-solicitation clause ran out around May 2026, before he joined Chervon. TTI says it is not suing on his agreements and instead relies on trade-secret law and on other employees' own covenants, many of which carry 12-month restrictions, some naming Chervon as a competitor."
+    },
+    {
+      "q": "What could happen next?",
+      "a": "Most trade-secret cases settle. The near-term signs to watch are whether TTI asks for a preliminary injunction, whether Chervon challenges the Illinois court's jurisdiction over Chervon Holdings and Galli, and whether Chervon makes a Hong Kong disclosure. WCB's analysis sets out four possible endings."
+    },
+    {
       "q": "Which is bigger, TTI or Chervon?",
-      "a": "TTI, by a wide margin. TTI reported 2025 revenue of USD 15.26 billion against Chervon's USD 1.63 billion, and USD 8.29 billion against USD 1.03 billion in the first half of 2026. Chervon grew faster in that half, 12.8% against 5.9%, but from a 2025 base that had fallen 8.2%."
-    },
-    {
-      "q": "Which brands compete with each other?",
-      "a": "Milwaukee and FLEX both target professional tradespeople. RYOBI competes with EGO in battery outdoor equipment and with SKIL in home power tools. TTI's floorcare brands, Hoover in North America, Vax, Oreck and Dirt Devil, have no counterpart among Chervon's own brands."
-    },
-    {
-      "q": "Why does Joseph Galli's move matter?",
-      "a": "Galli ran TTI from 2008 to 2024, the years in which Milwaukee became one of the leading professional tool brands. Since becoming Chervon's CEO on 10 September 2026 he has hired managers from TTI and Milwaukee and put a former Milwaukee product manager in charge of FLEX professional product development, which points to FLEX as Chervon's main bet against Milwaukee."
-    },
-    {
-      "q": "Who owns the two companies?",
-      "a": "Both are listed in Hong Kong. TTI describes the Pudwill family as its largest shareholder; executive chairman Horst Pudwill reported interests of about 21.86% at the end of 2025. Chervon's founder Pan Longquan held 50.92% of voting shares in March 2026 and remains chairman."
-    },
-    {
-      "q": "Where are their products made?",
-      "a": "Both groups make most products in their own Asian factories. TTI reports manufacturing in China and Vietnam as well as Mexico and the United States; Chervon reports major production in Nanjing, China, and in Vietnam, and FLEX keeps operations in Germany. The factory for a specific model still has to be read from its label."
+      "a": "TTI, by about nine times: USD 15.26 billion of revenue in 2025 against Chervon's USD 1.63 billion. Chervon grew faster in the first half of 2026, 12.8% against 5.9%, after a weak 2025."
     }
   ],
   "insights": [
+    "tti-sues-chervon-galli-trade-secrets",
+    "tti-strikes-back-chervon-lawsuit-analysis",
     "pan-longquan-joe-galli-chervon",
     "galli-chervon-new-team",
     "joseph-galli-chervon-dewalt-milwaukee",
@@ -148,12 +159,36 @@
   ],
   "sources": [
     {
-      "title": "TTI 2026 interim results: financial highlights",
-      "url": "https://www.ttigroup.com/documents/interim-results-2026/files/TTI-2026IR-Financial_Highlights-en.pdf"
+      "title": "Complaint and docket: Techtronic Industries North America v. Chervon North America, No. 1:26-cv-13942 (N.D. Ill.)",
+      "url": "https://www.pacermonitor.com/public/case/67816835/Techtronic_Industries_North_America,_Inc_et_al_v_Chervon_North_America,_Inc_et_al"
     },
     {
-      "title": "Techtronic Industries delivers solid performance in 2025 (PR Newswire)",
-      "url": "https://www.prnewswire.com/apac/news-releases/techtronic-industries-delivers-solid-performance-in-2025-302702496.html"
+      "title": "Bloomberg Law: Techtronic sues former CEO, rival tool maker over trade secrets",
+      "url": "https://news.bloomberglaw.com/ip-law/techtronic-sues-former-ceo-rival-tool-maker-over-trade-secrets"
+    },
+    {
+      "title": "Techtronic Industries Co. v. Chervon Holdings, 395 F. Supp. 2d 720 (N.D. Ill. 2005)",
+      "url": "https://case-law.vlex.com/vid/techtronic-industries-co-v-894917784"
+    },
+    {
+      "title": "Chervon North America v. Milwaukee Electric Tool, IPR2015-00597 (Patexia)",
+      "url": "https://services.patexia.com/lawsuits/shorturl-id-60613"
+    },
+    {
+      "title": "One World Technologies v. Chervon (HK), Fed. Cir. No. 22-1320 (2023)",
+      "url": "https://hallapproved.com/us/cases/cafc/2023/9390377/"
+    },
+    {
+      "title": "Law360: Jury awards nearly $4M in lawnmower patent trial (Feb 2025)",
+      "url": "https://law360.com/articles/2298418"
+    },
+    {
+      "title": "TTI 2025 annual report: financial summary",
+      "url": "https://www.ttigroup.com/documents/annual-report-2025/assets/files/en/tti-annual-report-2025-financial-summary.pdf"
+    },
+    {
+      "title": "Chervon 2023 annual results announcement (HKEX)",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0327/2024032700590.pdf"
     },
     {
       "title": "Chervon interim results announcement 2026 (HKEX)",
@@ -164,12 +199,392 @@
       "url": "https://www.prnewswire.com/news-releases/chervon-appoints-joseph-galli-jr-as-chief-executive-officer-to-lead-next-stage-of-global-growth-302874813.html"
     },
     {
-      "title": "Lowe's launches FLEX cordless power tools (Lowe's newsroom, March 2021)",
+      "title": "Lowe's launches FLEX cordless power tools (March 2021)",
       "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-launch-new-cordless-power-tool-innovation-pros-exclusive-flex-offering-03-18-21"
+    }
+  ],
+  "sections": [
+    {
+      "id": "latest-case",
+      "title": "Latest: TTI sues Chervon and Joe Galli",
+      "highlight": true,
+      "intro": "Techtronic Industries North America, Inc. et al. v. Chervon North America, Inc. et al. Everything below is as alleged in the complaint.",
+      "facts": [
+        {
+          "label": "Filed",
+          "value": "9 November 2026, US District Court for the Northern District of Illinois (Chicago), case 1:26-cv-13942, jury trial demanded"
+        },
+        {
+          "label": "Parties",
+          "value": "TTI North America, Milwaukee Electric Tool and R&B Sales & Marketing v. Chervon North America, Chervon Holdings and Joseph Galli Jr."
+        },
+        {
+          "label": "Claims",
+          "value": "Eight counts: federal and Illinois trade-secret misappropriation, tortious interference with contract (three counts), unfair competition, aiding and abetting breach of fiduciary duty, unjust enrichment"
+        },
+        {
+          "label": "Core allegations",
+          "value": "From June 2025 to February 2026 a TTI sales SVP sent Galli store, sales and customer information and Milwaukee CFO slides; Chervon hired at least 30 former TTI staff between 10 Sep and 3 Nov 2026"
+        },
+        {
+          "label": "Relief sought",
+          "value": "Damages and lost profits, disgorgement, punitive damages, return of property, and injunctions on using TTI information and hiring TTI staff still under covenants; no amount stated"
+        },
+        {
+          "label": "Since filing",
+          "value": "Chervon's Hong Kong shares fell more than 9% intraday on 12 Nov. No injunction motion and no public response as of 15 Nov"
+        }
+      ],
+      "links": [
+        {
+          "title": "The complaint, told in order: one text message and a 'covert channel'",
+          "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+        },
+        {
+          "title": "Analysis: where TTI's lawsuit against Chervon and Galli could go",
+          "href": "/blog/tti-strikes-back-chervon-lawsuit-analysis"
+        },
+        {
+          "title": "Court docket (PacerMonitor)",
+          "href": "https://www.pacermonitor.com/public/case/67816835/Techtronic_Industries_North_America,_Inc_et_al_v_Chervon_North_America,_Inc_et_al"
+        }
+      ]
     },
     {
-      "title": "TTI company profile",
-      "url": "https://www.ttigroup.com/company"
+      "id": "court-history",
+      "title": "Twenty years in court",
+      "intro": "The cases between TTI (including Milwaukee and its US company One World Technologies) and Chervon that WCB has found in public records, oldest first.",
+      "table": {
+        "columns": [
+          "Date",
+          "Court and case",
+          "Who v. who",
+          "What it was about",
+          "Outcome"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Oct 2005",
+              "N.D. Ill., 05-C-4370",
+              "TTI v. Chervon",
+              "A laser level Chervon made for Sears' Craftsman range, said to infringe a patent behind RYOBI's AIRgrip",
+              "Preliminary injunction granted to TTI, 6 Oct 2005"
+            ],
+            "href": "https://case-law.vlex.com/vid/techtronic-industries-co-v-894917784"
+          },
+          {
+            "cells": [
+              "2014",
+              "E.D. Wis., 2:14-cv-1289",
+              "Milwaukee v. Chervon North America",
+              "Milwaukee's lithium-ion battery-pack patents; Hilti, Positec and Snap-on were sued in parallel cases",
+              "Defendants answered with Patent Office challenges (next row)"
+            ],
+            "href": "https://services.patexia.com/lawsuits/shorturl-id-60613"
+          },
+          {
+            "cells": [
+              "2015–2018",
+              "Patent Trial and Appeal Board; Federal Circuit",
+              "Chervon and four other companies v. Milwaukee",
+              "Twelve inter partes reviews of Milwaukee's battery-pack patents",
+              "Mixed at the Board; Milwaukee's counsel says the Federal Circuit upheld the challenged battery claims in 2018"
+            ],
+            "href": "https://services.patexia.com/lawsuits/shorturl-id-60613"
+          },
+          {
+            "cells": [
+              "Jul 2019",
+              "D. Del., 1:19-cv-01293",
+              "Chervon v. TTI (One World Technologies)",
+              "Nine patents on EGO lawn-mower features",
+              "Went to trial in 2025"
+            ],
+            "href": "https://ocr.docketalarm.com/cases/PTAB/IPR2020-00885/Inter_Partes_Review_of_U.S._Pat._9648805/09-03-2020-Petitioner/Exhibit-1037-24-Original_Complaint,_Chervon_HK_Limited,_Chervon_North_America_Inc_v_One_World_Technologies,_Inc,_et_al/"
+          },
+          {
+            "cells": [
+              "2020–2023",
+              "Patent Trial and Appeal Board; Federal Circuit 22-1320",
+              "TTI (One World) v. Chervon",
+              "TTI's challenges to Chervon mower patents",
+              "One review not instituted; Federal Circuit affirmed without opinion, 10 Apr 2023"
+            ],
+            "href": "https://hallapproved.com/us/cases/cafc/2023/9390377/"
+          },
+          {
+            "cells": [
+              "Feb 2025",
+              "D. Del., 1:19-cv-01293",
+              "Chervon v. TTI",
+              "Jury trial on the EGO mower patents",
+              "Jury found TTI wilfully infringed five Chervon patents; just under USD 4 million as a reasonable royalty, no lost profits"
+            ],
+            "href": "https://law360.com/articles/2298418"
+          },
+          {
+            "cells": [
+              "Mar 2026",
+              "C.D. Cal., 5:26-cv-01118",
+              "R&B (TTI) v. Daniel Abbott",
+              "Former TTI sales SVP accused of passing information to Galli",
+              "Stipulated injunction in aid of arbitration"
+            ],
+            "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+          },
+          {
+            "cells": [
+              "Nov 2026",
+              "N.D. Ill., 1:26-cv-13942",
+              "TTI, Milwaukee and R&B v. Chervon and Galli",
+              "Trade secrets and the hiring of at least 30 TTI staff",
+              "Pending"
+            ],
+            "href": "https://www.pacermonitor.com/public/case/67816835/Techtronic_Industries_North_America,_Inc_et_al_v_Chervon_North_America,_Inc_et_al"
+          }
+        ],
+        "note": "Compiled from court opinions, Patent Office records, docket services and legal press. Post-trial motions and appeals in the Delaware case were not found in public sources; the 2025 award is as reported by Law360.",
+        "layout": "cards"
+      }
+    },
+    {
+      "id": "results",
+      "title": "How the two businesses compare",
+      "position": "after-timeline",
+      "intro": "Revenue as each company reported it, in US dollars. The two charts use different scales: TTI is roughly nine times Chervon's size.",
+      "charts": [
+        {
+          "type": "bars",
+          "title": "TTI revenue",
+          "unit": "",
+          "rows": [
+            {
+              "label": "2021",
+              "segments": [
+                13.2
+              ],
+              "display": "USD 13.20bn"
+            },
+            {
+              "label": "2022",
+              "segments": [
+                13.25
+              ],
+              "display": "USD 13.25bn"
+            },
+            {
+              "label": "2023",
+              "segments": [
+                13.73
+              ],
+              "display": "USD 13.73bn"
+            },
+            {
+              "label": "2024",
+              "segments": [
+                14.62
+              ],
+              "display": "USD 14.62bn"
+            },
+            {
+              "label": "2025",
+              "segments": [
+                15.26
+              ],
+              "display": "USD 15.26bn"
+            }
+          ]
+        },
+        {
+          "type": "bars",
+          "title": "Chervon revenue",
+          "unit": "",
+          "rows": [
+            {
+              "label": "2021",
+              "segments": [
+                1758
+              ],
+              "display": "USD 1.76bn"
+            },
+            {
+              "label": "2022",
+              "segments": [
+                1989
+              ],
+              "display": "USD 1.99bn"
+            },
+            {
+              "label": "2023",
+              "segments": [
+                1375
+              ],
+              "display": "USD 1.37bn"
+            },
+            {
+              "label": "2024",
+              "segments": [
+                1774
+              ],
+              "display": "USD 1.77bn"
+            },
+            {
+              "label": "2025",
+              "segments": [
+                1628
+              ],
+              "display": "USD 1.63bn"
+            }
+          ]
+        }
+      ],
+      "table": {
+        "columns": [
+          "Measure",
+          "TTI",
+          "Chervon"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "2025 revenue",
+              "USD 15.26bn, +4.4%",
+              "USD 1.63bn, −8.2%"
+            ]
+          },
+          {
+            "cells": [
+              "2025 profit",
+              "USD 1.20bn",
+              "USD 97.7m"
+            ]
+          },
+          {
+            "cells": [
+              "H1 2026 revenue",
+              "USD 8.29bn, +5.9%",
+              "USD 1.03bn, +12.8%"
+            ],
+            "href": "/news/tti-interim-results-august-2026"
+          },
+          {
+            "cells": [
+              "H1 2026 profit",
+              "USD 738m, +17.5%",
+              "USD 106.3m, +11.6%"
+            ],
+            "href": "/news/chervon-first-half-results-august-2026"
+          },
+          {
+            "cells": [
+              "H1 2026 gross margin",
+              "42.9%",
+              "39.3%"
+            ]
+          },
+          {
+            "cells": [
+              "Business mix",
+              "Professional about 71%, Consumer about 29% (H1 2026)",
+              "Outdoor equipment flat and power tools −18.3% in 2025"
+            ]
+          },
+          {
+            "cells": [
+              "Growth engine",
+              "Milwaukee +10.5% in local currencies (H1 2026)",
+              "EGO outdoor equipment; FLEX is the professional bet"
+            ]
+          },
+          {
+            "cells": [
+              "Worst recent year",
+              "2023: profit fell to USD 976m",
+              "2023: revenue −30.9%, loss of USD 37.2m as customers cut stock"
+            ]
+          }
+        ],
+        "note": "TTI figures from its 2025 annual report financial summary and 2026 interim results; Chervon figures from its HKEX results announcements for 2021 to 2025 and H1 2026."
+      },
+      "links": [
+        {
+          "title": "TTI 2025 annual report: five-year financial summary (PDF)",
+          "href": "https://www.ttigroup.com/documents/annual-report-2025/assets/files/en/tti-annual-report-2025-financial-summary.pdf"
+        },
+        {
+          "title": "TTI 2026 interim results: financial highlights (PDF)",
+          "href": "https://www.ttigroup.com/documents/interim-results-2026/files/TTI-2026IR-Financial_Highlights-en.pdf"
+        },
+        {
+          "title": "Chervon 2023 annual results, with 2022 comparatives (HKEX, PDF)",
+          "href": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0327/2024032700590.pdf"
+        },
+        {
+          "title": "Chervon 2026 interim results (HKEX, PDF)",
+          "href": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0817/2026081700744.pdf"
+        },
+        {
+          "title": "WCB results tracker: every company's latest figures",
+          "href": "/rankings"
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "title": "Brand against brand",
+      "position": "after-timeline",
+      "table": {
+        "columns": [
+          "Market",
+          "TTI",
+          "Chervon"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Professional power tools",
+              "Milwaukee (M18, M12)",
+              "FLEX (24V)"
+            ]
+          },
+          {
+            "cells": [
+              "Home power tools",
+              "RYOBI ONE+ 18V (licensed brand)",
+              "SKIL (PWRCORE 12 and 20)"
+            ]
+          },
+          {
+            "cells": [
+              "Battery outdoor equipment",
+              "RYOBI 18V and 40V",
+              "EGO (56V)"
+            ]
+          },
+          {
+            "cells": [
+              "Floorcare",
+              "Hoover (North America), Vax, Oreck, Dirt Devil",
+              "None among its own brands"
+            ]
+          },
+          {
+            "cells": [
+              "Main US home centre",
+              "The Home Depot",
+              "Lowe's, which launched EGO, FLEX and SKIL as home-centre exclusives in 2021"
+            ]
+          },
+          {
+            "cells": [
+              "Other channels",
+              "Trade distributors and Milwaukee's jobsite sales teams",
+              "Hardware co-operatives and dealers; John Deere dealers for EGO since 2023"
+            ]
+          }
+        ]
+      }
     }
   ]
 }
