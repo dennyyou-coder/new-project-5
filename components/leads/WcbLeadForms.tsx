@@ -91,7 +91,7 @@ function Done({ title, children }: { title: string; children: ReactNode }) {
 const honeypotValue = (form: HTMLFormElement) => (form.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "";
 
 /* 1. Subscribe: email first, then an optional profile in the same form. */
-export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB weekly brief" }: { ctaLocation: string; reportId?: string; heading?: string }) {
+export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB weekly brief", note }: { ctaLocation: string; reportId?: string; heading?: string; note?: string }) {
   const { status, setStatus, submit } = useLeadSubmit("subscribe", ctaLocation);
   const [step, setStep] = useState<"email" | "profile">("email");
   const [email, setEmail] = useState("");
@@ -125,7 +125,7 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
     return (
       <form className="wcb-lead-form" onSubmit={next} noValidate>
         <p className="wcb-lead-title">{report?.file ? `Get the free report: ${report.title}` : heading}</p>
-        <p className="wcb-lead-note">{report?.file ? "We'll email you the PDF link right away, then the WCB weekly brief every Friday. Free, and you can unsubscribe any time." : "Five stories and one analysis every Friday. Free, and you can unsubscribe any time."}</p>
+        <p className="wcb-lead-note">{report?.file ? "We'll email you the PDF link right away, then the WCB weekly brief every Friday. Free, and you can unsubscribe any time." : note ?? "Five stories and one analysis every Friday. Free, and you can unsubscribe any time."}</p>
         <div className="wcb-lead-row">
           <label className="wcb-lead-sr" htmlFor={`sub-email-${ctaLocation}`}>Work email</label>
           <input id={`sub-email-${ctaLocation}`} type="email" autoComplete="email" placeholder="name@company.com" value={email} onChange={(event) => setEmail(event.target.value)} aria-invalid={status.field === "email"} />

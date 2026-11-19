@@ -176,7 +176,7 @@
 .topic-table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5; }
 .topic-table th { padding: 10px 10px 10px 0; border-bottom: 2px solid var(--ink); color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .06em; text-align: left; text-transform: uppercase; vertical-align: bottom; }
 .topic-table td { padding: 12px 10px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
-.topic-table td:first-child { color: var(--accent); font-weight: 800; white-space: nowrap; }
+.topic-table td:first-child { min-width: 110px; color: var(--accent); font-weight: 800; }
 .topic-table-link a { color: var(--accent); font-weight: 750; white-space: nowrap; }
 .topic-section-charts.is-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .topic-section-charts.is-pair .topic-chart { margin: 8px 0 0; }
@@ -199,21 +199,26 @@
   .topic-table td[data-label]:not(:first-child)::before { content: attr(data-label) ": "; color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 }
 
-/* Card layout for long tables (e.g. court cases): date rail, stacked labelled lines */
+/* Card layout for long tables: column 1 is a date rail, column 2 the bold title, column 3 a muted line, later columns labelled lines */
 .topic-table.is-cards, .topic-table.is-cards tbody { display: block; }
 .topic-table.is-cards thead { display: none; }
 .topic-table.is-cards tr { display: grid; grid-template-columns: 110px minmax(0, 1fr); column-gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .topic-table.is-cards td { display: block; grid-column: 2; padding: 0; border: 0; font-size: 15px; line-height: 1.55; }
 .topic-table.is-cards td:first-child { grid-column: 1; grid-row: 1 / span 6; font-size: 13px; }
-.topic-table.is-cards td:nth-child(3) { order: -1; font-size: 17px; font-weight: 800; line-height: 1.35; }
-.topic-table.is-cards td:nth-child(2) { color: var(--muted); font-size: 13px; font-weight: 650; }
-.topic-table.is-cards td:nth-child(2), .topic-table.is-cards td:nth-child(3) { margin-bottom: 4px; }
-.topic-table.is-cards td:nth-child(5) { margin-top: 6px; }
-.topic-table.is-cards td:nth-child(5)::before { content: "Outcome: "; color: var(--ink); font-weight: 800; }
+.topic-table.is-cards td:nth-child(2) { margin-bottom: 2px; font-size: 17px; font-weight: 800; line-height: 1.35; }
+.topic-table.is-cards td:nth-child(3) { margin-bottom: 4px; color: var(--muted); font-size: 13px; font-weight: 650; }
+.topic-table.is-cards td:nth-child(n+4)[data-label] { margin-top: 4px; }
+.topic-table.is-cards td:nth-child(n+4)[data-label]::before { content: attr(data-label) ": "; color: var(--ink); font-weight: 800; }
 .topic-table.is-cards td.topic-table-link { margin-top: 6px; font-size: 14px; }
 @media (max-width: 640px) {
   .topic-table.is-cards tr { grid-template-columns: minmax(0, 1fr); }
   .topic-table.is-cards td, .topic-table.is-cards td:first-child { grid-column: 1; grid-row: auto; }
-  .topic-table.is-cards td[data-label]:not(:first-child)::before { content: none; }
-  .topic-table.is-cards td:nth-child(5)::before { content: "Outcome: "; color: var(--ink); font-size: inherit; letter-spacing: 0; text-transform: none; }
+  .topic-table.is-cards td:nth-child(2)::before, .topic-table.is-cards td:nth-child(3)::before { content: none; }
+  .topic-table.is-cards td:nth-child(n+4)[data-label]::before { content: attr(data-label) ": "; color: var(--ink); font-size: inherit; letter-spacing: 0; text-transform: none; }
 }
+
+/* Follow-this-topic signup (topic page and its articles/news) */
+.topic-follow { margin: 32px 0 0; padding: 22px 22px 18px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 4px; background: var(--soft, #f4f7fc); }
+.topic-follow .wcb-lead-form { margin: 0; padding: 0; border: 0; background: transparent; box-shadow: none; }
+.topic-follow > .wcb-lead-title { margin: 0 0 6px; font-size: 18px; font-weight: 800; }
+.topic-follow > .wcb-lead-note { margin: 0 0 12px; color: var(--muted); font-size: 15px; line-height: 1.6; }

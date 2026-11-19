@@ -53,6 +53,17 @@ export const newsStoryVisuals: Record<string, NewsVisual> = {
     "fit": "cover",
     "prepared": true
   },
+  "tti-sues-chervon-galli-trade-secrets-november-2026": {
+    "src": "/images/articles/tti-sues-chervon-galli-trade-secrets-november-2026/01-cover.webp",
+    "alt": "WCB topic card: Trade secrets lawsuit. TTI and Milwaukee sue Chervon and its CEO, Joe Galli. Chicago, 9 Nov 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Lawsuit: TTI v. Chervon. TTI and Milwaukee sue Chervon and its CEO, Joe Galli, in Chicago, 9 Nov 2026. Card: World Clean Biz.",
+    "sourceUrl": "https://www.pacermonitor.com/public/case/67816835/Techtronic_Industries_North_America,_Inc_et_al_v_Chervon_North_America,_Inc_et_al",
+    "sourceLabel": "Story source: court docket, N.D. Ill. 1:26-cv-13942",
+    "fit": "cover",
+    "prepared": true
+  },
   "electrolux-italy-restructuring-agreement-november-2026": {
     "src": "/images/articles/electrolux-italy-restructuring-agreement-november-2026/01-cover.webp",
     "alt": "WCB topic card: Job exits cut to 902. Down from 1,719 announced; all Italian plants stay open. November 2026",

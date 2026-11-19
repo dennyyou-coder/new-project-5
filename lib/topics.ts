@@ -47,6 +47,9 @@ export type TopicSection = {
   links?: { title: string; href: string }[];
 };
 
+/** A "follow this topic" signup shown on the topic page and on its articles and news. */
+export type TopicFollow = { heading: string; note: string };
+
 export type Topic = {
   slug: string;
   title: string;
@@ -65,6 +68,7 @@ export type Topic = {
   callout?: { title: string; text: string; href?: string };
   chart?: TopicChart;
   sections?: TopicSection[];
+  follow?: TopicFollow;
   timeline: TopicEvent[];
   questions: TopicQuestion[];
   insights: string[];
