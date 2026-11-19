@@ -10777,6 +10777,24 @@
         "outputHash": "sha256:f6fa3ca4423e76b8386052c1c1156ea40e92f77602945c48fee90c5626b2faec"
       }
     },
+    "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69496,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4fb50f03e5e7313b76d5da80123b8efc8fe1b1c55d131ac1a4db1b98173467cf",
+      "outputHash": "sha256:83a99c8ec1d31b3df38665285969e216b1abcca7b436af68497def233fca6f57",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29526,
+        "outputHash": "sha256:b8965ced89f9a0cf73b064955f7860759413e19880d69a71b71c791a20546968"
+      }
+    },
     "/images/articles/flex-history-chervon-galli/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -46478,6 +46496,11 @@
       "cover": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
       "body": []
     },
+    "fcc-robot-conditional-approvals-reach-17-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover.webp",
+      "body": []
+    },
     "fcc-robot-vacuum-lawn-mower-restrictions": {
       "budgetClass": "standard",
       "cover": "/images/blog/fcc-robot-restriction-cover.webp",
@@ -54945,6 +54968,15 @@
           "status": "matched",
           "primary": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
           "hash": "sha256:067971463bd5a5a5d505105835191220f9a4705e4270c7088e2d345cdcb50a8b"
+        }
+      }
+    },
+    "fcc-robot-conditional-approvals-reach-17-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover.webp",
+          "hash": "sha256:4fb50f03e5e7313b76d5da80123b8efc8fe1b1c55d131ac1a4db1b98173467cf"
         }
       }
     },

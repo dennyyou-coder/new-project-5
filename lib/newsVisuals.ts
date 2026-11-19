@@ -97,6 +97,17 @@ export const newsStoryVisuals: Record<string, NewsVisual> = {
     "fit": "cover",
     "prepared": true
   },
+  "fcc-robot-conditional-approvals-reach-17-november-2026": {
+    "src": "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover.webp",
+    "alt": "WCB topic card: 17 approved, one robot vacuum. Companies with FCC robot approvals as of 18 November 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Regulation: U.S. FCC. Companies with FCC robot approvals as of 18 November 2026. FCC seal: public domain. Card: World Clean Biz.",
+    "sourceUrl": "https://docs.fcc.gov/public/attachments/DA-26-1243A1.pdf",
+    "sourceLabel": "Story source: FCC Public Notice DA 26-1243 (November 18, 2026)",
+    "fit": "cover",
+    "prepared": true
+  },
   "fcc-robot-conditional-approvals-reach-15-november-2026": {
     "src": "/images/articles/fcc-robot-conditional-approvals-reach-15-november-2026/01-cover.webp",
     "alt": "WCB topic card: 15 approved, none Chinese. Companies with FCC robot approvals as of November 6, 2026",
