@@ -10,10 +10,10 @@
     "text": "FCC Chairman Brendan Carr, official portrait, 2025. Federal Communications Commission, public domain",
     "url": "https://commons.wikimedia.org/wiki/File:Brendan_Carr,_official_portrait_2025.jpg"
   },
-  "updated": "2026-11-09",
+  "updated": "2026-11-19",
   "status": {
-    "label": "In force since 28 July 2026",
-    "text": "New foreign-produced advanced robotic devices cannot receive FCC equipment authorization unless the Department of War grants Conditional Approval. Fifteen producers had been approved by 6 November 2026. Only two make cleaning or lawn products, Husqvarna and Matic, and none is Chinese."
+    "label": "In force since 28 July 2026 · 17 producers approved",
+    "text": "New foreign-produced advanced robotic devices cannot receive FCC equipment authorization unless the Department of War grants Conditional Approval. By 18 November 2026, 17 producers had been approved. Only two make cleaning or lawn products, Husqvarna and Matic; no Chinese robot vacuum or mower maker is among them."
   },
   "summary": [
     "On 28 July 2026 the US Federal Communications Commission added foreign-produced advanced robotic devices to its Covered List, following a national-security determination by an executive-branch interagency body. Equipment on the list cannot receive FCC equipment authorization, and most electronic devices need that authorization before they can be imported, marketed or sold in the United States.",
@@ -23,7 +23,7 @@
   "chart": {
     "type": "bars",
     "title": "Producers granted Conditional Approval, by date",
-    "note": "Each approval covers named models or product classes only. Previously authorized models of any brand can still be sold. Source: FCC Covered List, updated 6 November 2026.",
+    "note": "Each approval covers named models or product classes only. Previously authorized models of any brand can still be sold. Source: FCC Public Notice DA 26-1243, Covered List updated 18 November 2026.",
     "rows": [
       {
         "label": "9 Sep",
@@ -81,6 +81,13 @@
           2
         ],
         "display": "ABB Robotics · Pantograph"
+      },
+      {
+        "label": "18 Nov",
+        "segments": [
+          2
+        ],
+        "display": "Syncrobotic · Bluepath Robotics"
       }
     ]
   },
@@ -103,11 +110,15 @@
     },
     {
       "label": "Exempted so far",
-      "value": "15 producers by 6 Nov 2026, including Husqvarna (4 mower platforms) and Matic (floor robot and dock); none Chinese"
+      "value": "17 producers by 18 Nov 2026, including Husqvarna (4 mower platforms) and Matic (floor robot and dock); no Chinese robot vacuum or mower maker"
     },
     {
       "label": "Explicitly excluded",
       "value": "Fixed industrial arms, medical robots, connected vehicles, drones, rail vehicles and uncrewed underwater vehicles"
+    },
+    {
+      "label": "How long approvals last",
+      "value": "No end date for robots, as long as the onshoring plan is followed; router approvals run about 18 months"
     }
   ],
   "timeline": [
@@ -116,6 +127,11 @@
       "title": "Drones go first",
       "text": "The FCC adds foreign-produced uncrewed aircraft systems to the Covered List, the template for the later robot action.",
       "href": "/news/fcc-foreign-uas-covered-list-december-2025"
+    },
+    {
+      "date": "2026-03-23",
+      "title": "Routers follow",
+      "text": "Foreign-produced routers are added to the Covered List with the same Conditional Approval route; Netgear and eero are among the first approved, in April."
     },
     {
       "date": "2026-07-28",
@@ -155,12 +171,22 @@
       "title": "Approvals reach 15, none Chinese",
       "text": "ABB Robotics and Pantograph are added. Husqvarna and Matic remain the only lawn or cleaning producers approved.",
       "href": "/news/fcc-robot-conditional-approvals-reach-15-november-2026"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Approvals reach 17",
+      "text": "Syncrobotic's quadruped robots and Bluepath Robotics' warehouse AMRs are added. Matic is still the only robot vacuum maker approved.",
+      "href": "/news/fcc-robot-conditional-approvals-reach-17-november-2026"
     }
   ],
   "questions": [
     {
       "q": "Are robot vacuums banned in the United States?",
       "a": "No. Models the FCC authorized before 28 July 2026 can still be imported, marketed and sold, and owners can keep using them. The restriction stops new foreign-produced models from receiving FCC authorization unless they win Conditional Approval."
+    },
+    {
+      "q": "Has any robot vacuum been approved?",
+      "a": "One. Matic, a US company that assembles its robot in California, was approved on 2 October 2026 for its robotic floor cleaner and dock. No other robot vacuum maker had been approved by 18 November 2026."
     },
     {
       "q": "Does moving production from China to Vietnam, Malaysia or Mexico help?",
@@ -177,9 +203,14 @@
     {
       "q": "How does a company get an exemption?",
       "a": "Producers apply for Conditional Approval, which the Department of War grants after reviewing ownership, supply chain and manufacturing information, together with a plan to establish or expand US production. Most approvals name specific models; one, for T-Robotics, covers its entire class of automated guided vehicles."
+    },
+    {
+      "q": "Do approvals expire?",
+      "a": "Robot approvals carry no end date as long as the company follows the onshoring plan in its application and passes updated vetting. Breaking the plan or a false statement can put the products back on the Covered List. Router approvals, by contrast, run for about 18 months."
     }
   ],
   "insights": [
+    "fcc-robot-ban-paths-chinese-robot-vacuums-mowers",
     "fcc-robot-vacuum-lawn-mower-restrictions",
     "husqvarna-fcc-exemption-robotic-mowers",
     "fcc-eu-anti-dumping-robotic-mower-market-2027",
@@ -189,6 +220,7 @@
     "compliance-certification-cleaning-appliances-china"
   ],
   "news": [
+    "fcc-robot-conditional-approvals-reach-17-november-2026",
     "fcc-robot-conditional-approvals-reach-15-november-2026",
     "matic-fcc-conditional-approval-october-2026",
     "husqvarna-fcc-mower-conditional-approval-september-2026",
@@ -196,6 +228,10 @@
     "fcc-foreign-uas-covered-list-december-2025"
   ],
   "sources": [
+    {
+      "title": "FCC Public Notice DA 26-1243: Conditional Approvals, updated 18 November 2026",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-1243A1.pdf"
+    },
     {
       "title": "FCC fact sheet: Covered List update for advanced robotic devices and power inverters (28 July 2026)",
       "url": "https://docs.fcc.gov/public/attachments/DOC-423682A1.pdf"
@@ -220,5 +256,464 @@
       "title": "FCC Covered List and Conditional Approvals (updated 6 November 2026)",
       "url": "https://www.fcc.gov/supplychain/coveredlist"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "what-next",
+      "title": "What to watch next",
+      "table": {
+        "columns": [
+          "Step",
+          "Status"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "A second robot vacuum maker after Matic is approved",
+              "Not yet (18 Nov)"
+            ]
+          },
+          {
+            "cells": [
+              "The first approval for a Chinese robot vacuum or mower maker",
+              "None so far"
+            ]
+          },
+          {
+            "cells": [
+              "Big US brands with Asian production, such as SharkNinja, announce US assembly for robots",
+              "No announcement found"
+            ]
+          },
+          {
+            "cells": [
+              "The FCC clarifies whether consumer pool robots fall outside the rule",
+              "No ruling yet"
+            ]
+          },
+          {
+            "cells": [
+              "A legal challenge or petition against the robot listing",
+              "None found"
+            ]
+          },
+          {
+            "cells": [
+              "EU anti-dumping duties on Chinese robotic mowers take effect",
+              "Final decision due by 19 January 2027"
+            ]
+          }
+        ]
+      },
+      "links": [
+        {
+          "title": "Related topic: EU anti-dumping duties on robotic mowers",
+          "href": "/topics/eu-robotic-mower-anti-dumping"
+        }
+      ]
+    },
+    {
+      "id": "what-is-covered",
+      "title": "What counts as an advanced robotic device",
+      "intro": "The category is set by what a robot does and where it is produced, not by the brand's nationality.",
+      "table": {
+        "columns": [
+          "Test",
+          "What it means for cleaning and lawn products"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Produced outside the United States",
+              "Covered whether the brand is Chinese, American or European; moving assembly from China to Vietnam, Malaysia or Mexico does not help"
+            ]
+          },
+          {
+            "cells": [
+              "Moves over the ground on its own",
+              "Robot vacuums, robotic mowers and commercial floor-cleaning robots"
+            ]
+          },
+          {
+            "cells": [
+              "Navigates or avoids obstacles",
+              "LiDAR, camera, RTK and vision navigation all qualify"
+            ]
+          },
+          {
+            "cells": [
+              "Carries environmental sensors and network connectivity",
+              "Wi-Fi, app control or cloud mapping; almost every current model"
+            ]
+          },
+          {
+            "cells": [
+              "Weighs more than about 2 kg (4.4 lb) with its dock",
+              "Nearly every robot vacuum with a base station; small toy robots may fall below"
+            ]
+          },
+          {
+            "cells": [
+              "Explicitly excluded",
+              "Fixed industrial arms, medical robots, connected vehicles, drones (on their own list), rail vehicles and uncrewed underwater vehicles"
+            ]
+          }
+        ],
+        "note": "Summarized from the FCC fact sheet and Public Notice DA 26-786 (28 July 2026). The FCC has not ruled on consumer pool robots specifically."
+      }
+    },
+    {
+      "id": "approvals",
+      "title": "All 17 approvals so far",
+      "intro": "Every foreign-produced robot the Department of War has cleared, newest first. All dates are 2026.",
+      "table": {
+        "layout": "cards",
+        "columns": [
+          "Approved",
+          "Company",
+          "Models",
+          "Segment"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "18 Nov",
+              "Bluepath Robotics, Inc.",
+              "O1000 platform AMR and OM1500 tunnel AMR",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "18 Nov",
+              "Syncrobotic Co., Ltd.",
+              "\"Jeff\" and \"Adventure\" quadruped robotic platforms",
+              "Legged robots"
+            ]
+          },
+          {
+            "cells": [
+              "6 Nov",
+              "ABB Robotics, LLC",
+              "AMMR G0540 and G1240 mobile manipulators; P204V mobile robot",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "6 Nov",
+              "Pantograph Industries, PBC",
+              "Pandroid robot hardware",
+              "Humanoid and research"
+            ]
+          },
+          {
+            "cells": [
+              "30 Oct",
+              "ARAPL RaaS Private Limited",
+              "Maia2000 autonomous pallet truck; Atlas AC2000 counterbalance forklift",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "30 Oct",
+              "ATI Motors, Inc.",
+              "Sherpa 3K and 10K, FlexFork 1500 and 3000, Sherpa Mecha",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "30 Oct",
+              "Lightberry Holdings, Inc.",
+              "Lumi interactive mobile robots",
+              "Service and home"
+            ]
+          },
+          {
+            "cells": [
+              "30 Oct",
+              "SunScout Holdings, Inc.",
+              "SunScout Eco, Pro and Promax platforms; Solar Shelter",
+              "Solar and outdoor sites"
+            ]
+          },
+          {
+            "cells": [
+              "30 Oct",
+              "Swap Robotics Canada Inc.",
+              "V7 robot",
+              "Solar and outdoor sites"
+            ]
+          },
+          {
+            "cells": [
+              "30 Oct",
+              "OMRON Holdings, Inc.",
+              "LD-150 and LD-300 robotic platforms",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "23 Oct",
+              "Haystack Robotics, Inc.",
+              "Violet AI robotic device",
+              "Service and home"
+            ]
+          },
+          {
+            "cells": [
+              "23 Oct",
+              "T-Robotics Co., Ltd.",
+              "Entire product class of automated guided vehicles",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "21 Oct",
+              "Vulcan Robotics Inc.",
+              "Sourccey mobile robotic platform",
+              "Service and home"
+            ]
+          },
+          {
+            "cells": [
+              "16 Oct",
+              "Volley Automation, Inc.",
+              "AGVs and AMRs",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "2 Oct",
+              "Matic Robots, Inc.",
+              "Robotic floor cleaner 4MA0001 and charging dock 4DK0008",
+              "Floor cleaning"
+            ],
+            "href": "/news/matic-fcc-conditional-approval-october-2026"
+          },
+          {
+            "cells": [
+              "18 Sep",
+              "ANSCER Robotics",
+              "AR250, AR650 and AR1250 robotic platforms",
+              "Warehouse and factory"
+            ]
+          },
+          {
+            "cells": [
+              "9 Sep",
+              "Husqvarna AB",
+              "Automower 305V, 310V, 420V and 440V iQ",
+              "Robotic mowing"
+            ],
+            "href": "/news/husqvarna-fcc-mower-conditional-approval-september-2026"
+          }
+        ],
+        "note": "From the appendix to FCC Public Notice DA 26-1243, updated 18 November 2026. Approvals cover only the models named; T-Robotics' covers its whole AGV class."
+      },
+      "links": [
+        {
+          "title": "FCC Public Notice DA 26-1243 (PDF)",
+          "href": "https://docs.fcc.gov/public/attachments/DA-26-1243A1.pdf"
+        },
+        {
+          "title": "FCC Covered List and Conditional Approvals",
+          "href": "https://www.fcc.gov/supplychain/coveredlist"
+        }
+      ]
+    },
+    {
+      "id": "other-lists",
+      "title": "How robots compare with drones and routers",
+      "intro": "Robots are the third product group the FCC has put on the Covered List with a Conditional Approval route. The earlier groups show how the process tends to run.",
+      "table": {
+        "columns": [
+          "Product group",
+          "Added to Covered List",
+          "Approvals by 18 Nov 2026",
+          "How long approvals last"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Drones (UAS)",
+              "22 Dec 2025",
+              "23",
+              "No end date while the onshoring plan is followed (extended in July 2026)"
+            ]
+          },
+          {
+            "cells": [
+              "Routers",
+              "23 Mar 2026",
+              "27 entries, including ASUS, MSI, Netgear, eero and Starlink",
+              "About 18 months from approval"
+            ]
+          },
+          {
+            "cells": [
+              "Advanced robotic devices",
+              "28 Jul 2026",
+              "17",
+              "No end date while the onshoring plan is followed"
+            ]
+          },
+          {
+            "cells": [
+              "Power inverters",
+              "28 Jul 2026",
+              "7",
+              "Not stated"
+            ]
+          }
+        ],
+        "note": "Counts from the appendix to FCC Public Notice DA 26-1243. Router approvals have gone to several Taiwanese makers, which shows that 'foreign-produced' is not a bar in itself; each approval rests on an onshoring plan."
+      }
+    },
+    {
+      "id": "fcc-filings",
+      "title": "Who is still getting FCC grants",
+      "position": "after-timeline",
+      "intro": "The last FCC equipment grant WCB found for each robot maker it tracks. A grant can be for any product, not only a robot, so a recent date does not mean a new robot was approved.",
+      "table": {
+        "layout": "cards",
+        "columns": [
+          "Last grant",
+          "Company",
+          "Grants since 28 Jul",
+          "Note"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "9 Nov 2026",
+              "Aiper",
+              "1",
+              "Pool robots; underwater devices are excluded from the robot category"
+            ]
+          },
+          {
+            "cells": [
+              "16 Sep 2026",
+              "Brain Corp",
+              "2",
+              "US company"
+            ]
+          },
+          {
+            "cells": [
+              "17 Aug 2026",
+              "Husqvarna",
+              "1",
+              "Approved for four Automower platforms on 9 Sep"
+            ]
+          },
+          {
+            "cells": [
+              "5 Aug 2026",
+              "Dyson",
+              "1",
+              "Grant may cover non-robot products"
+            ]
+          },
+          {
+            "cells": [
+              "28 Jul 2026",
+              "Ecovacs",
+              "1",
+              "Granted on the day the rule took effect; none since"
+            ]
+          },
+          {
+            "cells": [
+              "25 Jul 2026",
+              "Positec (Worx)",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "17 Jul 2026",
+              "Roborock",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "9 Jul 2026",
+              "Pudu Robotics",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "23 Jun 2026",
+              "Sunseeker",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "17 Jun 2026",
+              "Mammotion",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "5 Jun 2026",
+              "Segway-Ninebot",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "5 Jun 2026",
+              "SharkNinja",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "22 May 2026",
+              "Keenon Robotics",
+              "0",
+              "None since the rule"
+            ]
+          },
+          {
+            "cells": [
+              "16 Apr 2026",
+              "Wybotics (WYBOT)",
+              "0",
+              "Pool robots"
+            ]
+          }
+        ],
+        "note": "From WCB's FCC filings tracker (data to 10 November 2026). Dreame and Narwal file under other company names and are not yet matched."
+      },
+      "links": [
+        {
+          "title": "WCB launch radar: every tracked FCC filing",
+          "href": "/launch-radar"
+        }
+      ]
+    }
+  ],
+  "follow": {
+    "heading": "Follow the FCC robot rules",
+    "note": "Get each new approval, FCC filing and rule change in the WCB weekly brief, every Friday. Free, and you can unsubscribe any time."
+  }
 }
