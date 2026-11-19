@@ -1,5 +1,5 @@
 import { authorFor, authorHref } from "@/lib/authors";
-import { TopicLinks } from "@/components/topics/TopicLinks";
+import { TopicFollowFor, TopicLinks } from "@/components/topics/TopicLinks";
 import { getTopicsFor } from "@/lib/topics";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -47,6 +47,7 @@ export default async function NewsArticlePage({ params }: Props) {
       <NewsKeyFigures figures={article.keyFigures} usdRate={article.usdRate} />
       <TopicLinks topics={getTopicsFor("news", article.slug)} />
       <div className="article-prose news-prose" dangerouslySetInnerHTML={{ __html: markdownToHtml(article.content) }} />
+      <TopicFollowFor topics={getTopicsFor("news", article.slug)} />
       {brands.length || products.length || articles.length ? <section className="news-context" aria-labelledby="news-context-title"><p className="news-eyebrow">Explore The Story</p><h2 id="news-context-title">Related companies &amp; products</h2>{brands.length ? <div><h3>Company &amp; brand profiles</h3><div className="news-context-cards">{brands.map((brand) => <Link href={`/brands/${brand.slug}`} key={brand.slug}><img className="news-context-logo" src={brand.logoImage} alt={brand.logoImageAlt} width={96} height={64} loading="lazy" decoding="async" /><div>{brand.name}<span>Company &amp; brand profile</span></div></Link>)}</div></div> : null}{products.length ? <div><h3>Products mentioned</h3><div className="news-context-cards">{products.map((product) => <Link href={`/products/${product.slug}`} key={product.slug}><img {...responsiveImageProps(productCover(product.slug), "card")} alt={product.name} /><div>{product.name}<span>View product profile</span></div></Link>)}</div></div> : null}{articles.length ? <div><h3>Related analysis &amp; guides</h3><NewsReadingCards articles={articles} /></div> : null}</section> : null}
       {moreNews.length ? <section className="news-context news-more" aria-labelledby="news-more-title"><p className="news-eyebrow">Keep Reading</p><h2 id="news-more-title">More news</h2><div className="news-context-links">{moreNews.map((item) => <Link href={`/news/${item.slug}`} key={item.slug}>{item.title}<span>{newsDate(item.eventDate)}</span></Link>)}</div></section> : null}
       {adjacent.newer || adjacent.older ? <nav className="news-adjacent" aria-label="Previous and next news">{adjacent.older ? <Link href={`/news/${adjacent.older.slug}`} rel="prev"><span>Earlier story</span>{adjacent.older.title}</Link> : <span />}{adjacent.newer ? <Link href={`/news/${adjacent.newer.slug}`} rel="next"><span>Later story</span>{adjacent.newer.title}</Link> : null}</nav> : null}

@@ -1,5 +1,5 @@
 import { authorFor, authorHref } from "@/lib/authors";
-import { TopicLinks } from "@/components/topics/TopicLinks";
+import { TopicFollowFor, TopicLinks } from "@/components/topics/TopicLinks";
 import { getTopicsFor } from "@/lib/topics";
 import { ArticleProductLinks, ArticleVideoLinks } from "@/components/editorial/EditorialConnections";
 import { TallyButton } from "@/components/LeadForms";
@@ -332,6 +332,8 @@ export default async function InsightDetailPage({ params }: Props) {
             <TopicLinks topics={getTopicsFor("insight", article.slug)} />
 
             <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
+
+            <TopicFollowFor topics={getTopicsFor("insight", article.slug)} />
 
             {isGuide && article.industryView.length ? (
               <section className="blog-industry-view" aria-labelledby="blog-industry-view-title">
