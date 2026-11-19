@@ -9,6 +9,7 @@ import { buildBrandMarkIndex } from "@/lib/brandMarks";
 import { CompanyMark } from "@/components/ui/CompanyMark";
 import { TopicChart } from "@/components/topics/TopicChart";
 import { TopicSection } from "@/components/topics/TopicSection";
+import { TopicFollow } from "@/components/topics/TopicFollow";
 import { ShareBar } from "@/components/share/ShareBar";
 import { compareKeyBrands } from "@/lib/keyBrands";
 import { seoDescription, seoTitle } from "@/lib/seo";
@@ -239,6 +240,8 @@ export default async function TopicPage({ params }: { params: PageParams }) {
               ))}
             </div>
           </section>
+
+          {topic.follow ? <TopicFollow follow={topic.follow} ctaLocation={`topic_follow_${topic.slug}`} /> : null}
         </div>
 
         <aside className="topic-side">

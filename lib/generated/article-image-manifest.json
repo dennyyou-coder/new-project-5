@@ -26285,6 +26285,24 @@
         "outputHash": "sha256:dae4f7c60514afa3cc477685d4f69e2c0dfabd3c06bd1aae9c7857366f707e11"
       }
     },
+    "/images/articles/tti-sues-chervon-galli-trade-secrets-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36564,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:aca6b8808b1e03f104066a4d75dd4a2d6a3e7fd4fe40b4dcde088a7736f99c5d",
+      "outputHash": "sha256:8f3d70f3131b1bb4ca839f23c055795f243c81ff8c61b86722104720c467bb11",
+      "mobile": {
+        "src": "/images/articles/tti-sues-chervon-galli-trade-secrets-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17328,
+        "outputHash": "sha256:fe51a4431249570b56ce2f042864c31dbbfa878f54d8c5e70c23682f384f417b"
+      }
+    },
     "/images/articles/tti-sues-chervon-galli-trade-secrets/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -49734,6 +49752,11 @@
         "/images/articles/tti-sues-chervon-galli-trade-secrets/04-hires-by-function.webp"
       ]
     },
+    "tti-sues-chervon-galli-trade-secrets-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tti-sues-chervon-galli-trade-secrets-november-2026/01-cover.webp",
+      "body": []
+    },
     "two-sides-of-dyson": {
       "budgetClass": "standard",
       "cover": "/images/insights/two-sides-of-dyson-cover.jpg",
@@ -60579,6 +60602,15 @@
           "status": "matched",
           "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets/04-hires-by-function.webp",
           "hash": "sha256:2471d1820cd8fe466da239b7c6f7f0354bfc2046bc6bd37e500b9df058dedfc9"
+        }
+      }
+    },
+    "tti-sues-chervon-galli-trade-secrets-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets-november-2026/01-cover.webp",
+          "hash": "sha256:aca6b8808b1e03f104066a4d75dd4a2d6a3e7fd4fe40b4dcde088a7736f99c5d"
         }
       }
     },

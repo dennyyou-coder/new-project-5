@@ -10,14 +10,14 @@
     "text": "Card: World Clean Biz, using the TTI and Chervon company logos",
     "url": "https://worldcleanbiz.com/topics/tti-vs-chervon"
   },
-  "updated": "2026-11-15",
+  "updated": "2026-11-19",
   "status": {
     "label": "Case filed 9 Nov 2026 · no response yet",
-    "text": "As of 15 November the docket shows only the complaint and three routine filings. TTI has not moved for a preliminary injunction, and neither Chervon nor Galli has responded in public."
+    "text": "As of 19 November the docket still shows only the complaint and three routine filings from 9 November. TTI has not moved for a preliminary injunction, and neither Chervon nor Galli has responded in public."
   },
   "summary": [
     "On 9 November 2026, TTI North America, Milwaukee Tool and TTI's sales company R&B sued Chervon North America, Chervon Holdings and Joe Galli in federal court in Chicago. The complaint says Galli, TTI's chief executive from 2008 to 2024, kept a 'covert channel' to a serving TTI sales executive who passed him confidential sales and financial information, and that after Galli became Chervon's CEO in September the company hired at least 30 former TTI employees in seven weeks. TTI brings eight counts, led by trade-secret misappropriation. These are allegations; the court has not ruled.",
-    "It is not the first time the two groups have met in court. TTI won a preliminary injunction against a Chervon-made laser level in 2005, and Milwaukee sued Chervon over lithium-ion battery patents in 2014. Since 2019 the traffic has run the other way: Chervon sued TTI over EGO lawn-mower patents, and in February 2025 a Delaware jury found that TTI had wilfully infringed five of them.",
+    "It is not the first time the two groups have met in court. TTI won a preliminary injunction against a Chervon-made laser level in 2005, and Milwaukee sued Chervon over lithium-ion battery patents in 2014. Since 2019 the traffic has run the other way: Chervon sued TTI over EGO lawn-mower patents, and on 14 February 2025 a Delaware jury found that TTI had wilfully infringed five of them and awarded Chervon USD 3.99 million.",
     "Behind the lawsuits is a fight for the same customers. TTI is far larger, with 2025 revenue of USD 15.26 billion against Chervon's USD 1.63 billion, but the brands meet head to head: Milwaukee against FLEX for professionals, RYOBI against EGO and SKIL for homeowners, The Home Depot against Lowe's on the shelf. The people TTI says Chervon hired are the sales, recruiting and product managers who built Milwaukee's lead."
   ],
   "keyFacts": [
@@ -93,7 +93,7 @@
       "date": "2026-11-09",
       "title": "TTI files suit in Chicago",
       "text": "Eight counts against Chervon North America, Chervon Holdings and Galli.",
-      "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+      "href": "/news/tti-sues-chervon-galli-trade-secrets-november-2026"
     },
     {
       "date": "2026-11-12",
@@ -109,7 +109,7 @@
     },
     {
       "q": "Has Chervon beaten TTI in court before?",
-      "a": "Yes. In February 2025 a Delaware jury found that TTI wilfully infringed five Chervon lawn-mower patents and awarded just under USD 4 million as a reasonable royalty. Earlier, TTI won a preliminary injunction against a Chervon-made laser level in 2005, and Milwaukee sued Chervon over battery patents in 2014."
+      "a": "Yes. On 14 February 2025 a Delaware jury found that TTI wilfully infringed five Chervon lawn-mower patents and awarded USD 3.99 million as a reasonable royalty. Earlier, TTI won a preliminary injunction against a Chervon-made laser level in 2005, and Milwaukee sued Chervon over battery patents in 2014."
     },
     {
       "q": "Why can't TTI just enforce Galli's non-compete?",
@@ -148,6 +148,7 @@
     "power-tools-new-cycle-cordless-specialization"
   ],
   "news": [
+    "tti-sues-chervon-galli-trade-secrets-november-2026",
     "joseph-galli-becomes-chervon-ceo-september-2026",
     "chervon-first-half-results-august-2026",
     "tti-interim-results-august-2026",
@@ -179,10 +180,6 @@
       "url": "https://hallapproved.com/us/cases/cafc/2023/9390377/"
     },
     {
-      "title": "Law360: Jury awards nearly $4M in lawnmower patent trial (Feb 2025)",
-      "url": "https://law360.com/articles/2298418"
-    },
-    {
       "title": "TTI 2025 annual report: financial summary",
       "url": "https://www.ttigroup.com/documents/annual-report-2025/assets/files/en/tti-annual-report-2025-financial-summary.pdf"
     },
@@ -201,6 +198,10 @@
     {
       "title": "Lowe's launches FLEX cordless power tools (March 2021)",
       "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-launch-new-cordless-power-tool-innovation-pros-exclusive-flex-offering-03-18-21"
+    },
+    {
+      "title": "Bloomberg Law: Techtronic owes $4 million in lawnmower-tech patents verdict (Feb 2025)",
+      "url": "https://news.bloomberglaw.com/ip-law/techtronic-owes-4-million-in-lawnmower-tech-patents-verdict"
     }
   ],
   "sections": [
@@ -232,7 +233,7 @@
         },
         {
           "label": "Since filing",
-          "value": "Chervon's Hong Kong shares fell more than 9% intraday on 12 Nov. No injunction motion and no public response as of 15 Nov"
+          "value": "Chervon's Hong Kong shares fell more than 9% intraday on 12 Nov. No injunction motion and no public response as of 19 Nov"
         }
       ],
       "links": [
@@ -251,23 +252,72 @@
       ]
     },
     {
+      "id": "what-next",
+      "title": "What to watch next",
+      "intro": "WCB updates this list as each step happens.",
+      "table": {
+        "columns": [
+          "Step",
+          "Status"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "TTI asks the court for a preliminary injunction",
+              "Not yet (19 Nov)"
+            ]
+          },
+          {
+            "cells": [
+              "Chervon and Galli respond, or challenge the Illinois court's jurisdiction",
+              "Not yet; no answer is due until after formal service"
+            ]
+          },
+          {
+            "cells": [
+              "Chervon makes a Hong Kong exchange announcement about the case",
+              "None found (19 Nov)"
+            ]
+          },
+          {
+            "cells": [
+              "More former TTI employees are added as defendants, or sued separately",
+              "Possible; the complaint says it may be amended"
+            ]
+          },
+          {
+            "cells": [
+              "Chervon's hiring from TTI continues or stops",
+              "The complaint says recruiting was continuing at filing"
+            ]
+          },
+          {
+            "cells": [
+              "Both companies discuss the case in their 2026 annual results",
+              "Expected March 2027"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "court-history",
       "title": "Twenty years in court",
       "intro": "The cases between TTI (including Milwaukee and its US company One World Technologies) and Chervon that WCB has found in public records, oldest first.",
       "table": {
         "columns": [
           "Date",
-          "Court and case",
           "Who v. who",
-          "What it was about",
+          "Court and case",
+          "Issue",
           "Outcome"
         ],
         "rows": [
           {
             "cells": [
               "Oct 2005",
-              "N.D. Ill., 05-C-4370",
               "TTI v. Chervon",
+              "N.D. Ill., 05-C-4370",
               "A laser level Chervon made for Sears' Craftsman range, said to infringe a patent behind RYOBI's AIRgrip",
               "Preliminary injunction granted to TTI, 6 Oct 2005"
             ],
@@ -276,8 +326,8 @@
           {
             "cells": [
               "2014",
-              "E.D. Wis., 2:14-cv-1289",
               "Milwaukee v. Chervon North America",
+              "E.D. Wis., 2:14-cv-1289",
               "Milwaukee's lithium-ion battery-pack patents; Hilti, Positec and Snap-on were sued in parallel cases",
               "Defendants answered with Patent Office challenges (next row)"
             ],
@@ -286,8 +336,8 @@
           {
             "cells": [
               "2015–2018",
-              "Patent Trial and Appeal Board; Federal Circuit",
               "Chervon and four other companies v. Milwaukee",
+              "Patent Trial and Appeal Board; Federal Circuit",
               "Twelve inter partes reviews of Milwaukee's battery-pack patents",
               "Mixed at the Board; Milwaukee's counsel says the Federal Circuit upheld the challenged battery claims in 2018"
             ],
@@ -296,8 +346,8 @@
           {
             "cells": [
               "Jul 2019",
-              "D. Del., 1:19-cv-01293",
               "Chervon v. TTI (One World Technologies)",
+              "D. Del., 1:19-cv-01293",
               "Nine patents on EGO lawn-mower features",
               "Went to trial in 2025"
             ],
@@ -306,8 +356,8 @@
           {
             "cells": [
               "2020–2023",
-              "Patent Trial and Appeal Board; Federal Circuit 22-1320",
               "TTI (One World) v. Chervon",
+              "Patent Trial and Appeal Board; Federal Circuit 22-1320",
               "TTI's challenges to Chervon mower patents",
               "One review not instituted; Federal Circuit affirmed without opinion, 10 Apr 2023"
             ],
@@ -315,19 +365,19 @@
           },
           {
             "cells": [
-              "Feb 2025",
-              "D. Del., 1:19-cv-01293",
+              "14 Feb 2025",
               "Chervon v. TTI",
-              "Jury trial on the EGO mower patents",
-              "Jury found TTI wilfully infringed five Chervon patents; just under USD 4 million as a reasonable royalty, no lost profits"
+              "D. Del., 1:19-cv-01293, Judge Gregory B. Williams",
+              "Jury trial on five EGO mower patents (US 9,060,463; 9,596,806; 9,826,686; 10,070,588; 10,485,176) and certain TTI battery-powered mowers",
+              "Jury found the patents valid and wilfully infringed; USD 3.99 million as a reasonable royalty, no lost profits"
             ],
-            "href": "https://law360.com/articles/2298418"
+            "href": "https://news.bloomberglaw.com/ip-law/techtronic-owes-4-million-in-lawnmower-tech-patents-verdict"
           },
           {
             "cells": [
               "Mar 2026",
-              "C.D. Cal., 5:26-cv-01118",
               "R&B (TTI) v. Daniel Abbott",
+              "C.D. Cal., 5:26-cv-01118",
               "Former TTI sales SVP accused of passing information to Galli",
               "Stipulated injunction in aid of arbitration"
             ],
@@ -336,17 +386,200 @@
           {
             "cells": [
               "Nov 2026",
-              "N.D. Ill., 1:26-cv-13942",
               "TTI, Milwaukee and R&B v. Chervon and Galli",
+              "N.D. Ill., 1:26-cv-13942",
               "Trade secrets and the hiring of at least 30 TTI staff",
               "Pending"
             ],
             "href": "https://www.pacermonitor.com/public/case/67816835/Techtronic_Industries_North_America,_Inc_et_al_v_Chervon_North_America,_Inc_et_al"
           }
         ],
-        "note": "Compiled from court opinions, Patent Office records, docket services and legal press. Post-trial motions and appeals in the Delaware case were not found in public sources; the 2025 award is as reported by Law360.",
+        "note": "Compiled from court opinions, Patent Office records, docket services and legal press (Bloomberg Law, Law360). Post-trial rulings in the Delaware case were not found in public sources.",
         "layout": "cards"
       }
+    },
+    {
+      "id": "who-moved",
+      "title": "Who moved from TTI to Chervon",
+      "intro": "The 20 people named in TTI's complaint, by the date they joined Chervon. Roles are as described in the complaint and Chervon's announcements; the complaint says at least 30 former TTI staff joined between 10 September and 3 November 2026.",
+      "table": {
+        "layout": "cards",
+        "columns": [
+          "Joined",
+          "Name",
+          "Chervon role",
+          "Previously"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "14 Sep",
+              "Matthew DeFeo",
+              "SVP sales, training and recruiting, reporting to Galli",
+              "TTI group president of sales; left April 2025"
+            ]
+          },
+          {
+            "cells": [
+              "28 Sep",
+              "Trevor Bithrey",
+              "VP pro end-user marketing and research, Canada",
+              "VP end-user marketing, TTI Canada"
+            ]
+          },
+          {
+            "cells": [
+              "28 Sep",
+              "David Reguidel",
+              "Working for Chervon, on information and belief",
+              "National account manager, TTI Canada; the complaint says he copied files to an external drive before leaving"
+            ]
+          },
+          {
+            "cells": [
+              "5 Oct",
+              "Neil Harrison",
+              "VP sales and marketing, managing director Canada",
+              "National field sales manager, TTI Canada"
+            ]
+          },
+          {
+            "cells": [
+              "5 Oct",
+              "Claudio Chiappetta",
+              "VP retail sales, Canada",
+              "Introduced Milwaukee cordless products in Canada"
+            ]
+          },
+          {
+            "cells": [
+              "5 Oct",
+              "Peter Carlson",
+              "Director of sales, strategic accounts",
+              "National sales manager, Milwaukee"
+            ]
+          },
+          {
+            "cells": [
+              "5 Oct",
+              "Daniel Abbott",
+              "Director of sales, western division",
+              "SVP sales, western division at TTI's R&B; fired by TTI in February 2026"
+            ]
+          },
+          {
+            "cells": [
+              "12 Oct",
+              "Thomas Kentouris",
+              "VP field sales",
+              "SVP sales, southern division at TTI; left August 2025"
+            ]
+          },
+          {
+            "cells": [
+              "12 Oct",
+              "Randall Durkan",
+              "VP supply chain, North America",
+              "SVP supply chain, TTI"
+            ]
+          },
+          {
+            "cells": [
+              "12 Oct",
+              "Charlie Harte",
+              "Director of field sales and recruiting, Canada",
+              "Sales director at a large TTI distributor"
+            ]
+          },
+          {
+            "cells": [
+              "19 Oct",
+              "Devin Murray",
+              "Director of sales, northern division",
+              "Reported to Kentouris at TTI"
+            ]
+          },
+          {
+            "cells": [
+              "19 Oct",
+              "Krystle Adams",
+              "Director of sales recruiting",
+              "Ran TTI's national and campus recruiting and internships"
+            ]
+          },
+          {
+            "cells": [
+              "20 Oct",
+              "Stephen Sarnocinski",
+              "President, end-user research, sales and service for commercial landscaping equipment",
+              "SVP, Milwaukee Job Site Solutions"
+            ]
+          },
+          {
+            "cells": [
+              "c. 21 Oct",
+              "Emma Scarito",
+              "Director of training",
+              "Director of training development, Team TTI"
+            ]
+          },
+          {
+            "cells": [
+              "26 Oct",
+              "Joel Petersheim",
+              "VP end-user research and sales, commercial outdoor equipment (US)",
+              "VP industrial channel sales, Milwaukee"
+            ]
+          },
+          {
+            "cells": [
+              "26 Oct",
+              "Maggie Jones",
+              "Director of national field sales operations",
+              "Managed about 140 store-coverage representatives at TTI"
+            ]
+          },
+          {
+            "cells": [
+              "26 Oct",
+              "Parker Wesley Clary",
+              "Director of field sales, southern division",
+              "Reported to Kentouris at TTI"
+            ]
+          },
+          {
+            "cells": [
+              "26 Oct",
+              "Jose Castellanos",
+              "Joined Chervon (role not stated)",
+              "Equipment specialist, Milwaukee"
+            ]
+          },
+          {
+            "cells": [
+              "c. 2 Nov",
+              "Thomas Scherer",
+              "VP organizational development",
+              "VP human resources, Team TTI"
+            ]
+          },
+          {
+            "cells": [
+              "c. 2 Nov",
+              "Jody Grimsley",
+              "Senior national account manager",
+              "Same role at Milwaukee; left TTI 1 July 2026"
+            ]
+          }
+        ],
+        "note": "All 2026. Names and roles come from the public complaint (N.D. Ill. 1:26-cv-13942) and Chervon's own appointment announcements; what each person did is an allegation the court has not ruled on."
+      },
+      "links": [
+        {
+          "title": "The full story of the hires, in the complaint's order",
+          "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+        }
+      ]
     },
     {
       "id": "results",
@@ -586,5 +819,9 @@
         ]
       }
     }
-  ]
+  ],
+  "follow": {
+    "heading": "Follow TTI v. Chervon",
+    "note": "Get each court step, filing and company response in the WCB weekly brief, every Friday. Free, and you can unsubscribe any time."
+  }
 }
