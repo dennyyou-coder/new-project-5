@@ -10,8 +10,73 @@ function format(value: number, unit = "") {
   return `${rounded}${unit}`;
 }
 
+/** "2005-10" or "2026-11-09" → a fractional year. */
+function yearOf(value: string) {
+  const parts = value.split("-").map(Number);
+  if (parts.length === 1) return parts[0] + 0.5;
+  const [year, month = 1, day = 15] = parts;
+  return year + (month - 1) / 12 + (day - 1) / 365;
+}
+
+/** Events on one year axis, one lane per side. */
+function LanesChart({ chart }: { chart: Extract<TopicChartData, { type: "lanes" }> }) {
+  const span = chart.end - chart.start;
+  const at = (value: string) => Math.min(100, Math.max(0, ((yearOf(value) - chart.start) / span) * 100));
+  const ticks: number[] = [];
+  for (let year = Math.ceil(chart.start / 5) * 5; year <= chart.end; year += 5) ticks.push(year);
+  return (
+    <figure className="topic-chart topic-lanes">
+      <figcaption className="topic-chart-title">{chart.title}</figcaption>
+      <ol className="topic-lanes-rows">
+        {chart.lanes.map((lane, laneIndex) => {
+          // Markers close to their neighbour split up and down so both stay readable.
+          const lefts = lane.items.map((item) => at(item.date));
+          const place = lefts.map(() => "");
+          lefts.forEach((left, index) => {
+            if (index > 0 && left - lefts[index - 1] < 6 && !place[index - 1]) {
+              place[index - 1] = " is-low";
+              place[index] = " is-high";
+            }
+          });
+          return (
+            <li key={lane.label} className={`is-${laneIndex}`}>
+              <span className="topic-lanes-label">{lane.label}</span>
+              <span className="topic-lanes-track">
+                {lane.items.map((item, index) => {
+                  const left = lefts[index];
+                  const title = `${item.n ? `${item.n}. ` : ""}${item.label}`;
+                  return item.end ? (
+                    <span key={title} className="topic-lanes-span" style={{ left: `${left}%`, width: `${at(item.end) - left}%` }} title={title}>
+                      <b>{item.n}</b>
+                    </span>
+                  ) : (
+                    <span key={title} className={`topic-lanes-dot${place[index]}`} style={{ left: `${left}%` }} title={title}>
+                      {item.n}
+                    </span>
+                  );
+                })}
+              </span>
+            </li>
+          );
+        })}
+      </ol>
+      <div className="topic-lanes-axis" aria-hidden="true">
+        <span />
+        <span className="topic-lanes-ticks">
+          {ticks.map((year) => <span key={year} style={{ left: `${((year - chart.start) / span) * 100}%` }}>{year}</span>)}
+        </span>
+      </div>
+      <ol className="sr-only">
+        {chart.lanes.flatMap((lane) => lane.items.map((item) => <li key={`${lane.label}-${item.label}`}>{lane.label}: {item.label}</li>))}
+      </ol>
+      {chart.note ? <p className="topic-chart-note">{chart.note}</p> : null}
+    </figure>
+  );
+}
+
 /** Horizontal bars drawn from data in the topic file; negative values extend left of a zero line. */
 export function TopicChart({ chart }: { chart: TopicChartData }) {
+  if (chart.type === "lanes") return <LanesChart chart={chart} />;
   let rows: Row[];
   let legend: string[] | undefined;
   if (chart.type === "results-growth") {

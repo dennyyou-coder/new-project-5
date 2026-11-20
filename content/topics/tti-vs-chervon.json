@@ -206,6 +206,36 @@
   ],
   "sections": [
     {
+      "id": "at-a-glance",
+      "title": "At a glance",
+      "stats": [
+        {
+          "value": "8",
+          "label": "court cases and patent challenges between the two sides since 2005"
+        },
+        {
+          "value": "30+",
+          "label": "former TTI staff hired by Chervon, 10 Sep to 3 Nov 2026"
+        },
+        {
+          "value": "USD 3.99m",
+          "label": "jury award to Chervon over EGO mower patents, Feb 2025"
+        },
+        {
+          "value": "8 counts",
+          "label": "in TTI's November 2026 complaint, led by trade-secret theft"
+        },
+        {
+          "value": "9.4×",
+          "label": "TTI's 2025 revenue compared with Chervon's"
+        },
+        {
+          "value": ">9%",
+          "label": "Chervon's intraday share fall in Hong Kong, 12 Nov 2026"
+        }
+      ]
+    },
+    {
       "id": "latest-case",
       "title": "Latest: TTI sues Chervon and Joe Galli",
       "highlight": true,
@@ -248,6 +278,36 @@
         {
           "title": "Court docket (PacerMonitor)",
           "href": "https://www.pacermonitor.com/public/case/67816835/Techtronic_Industries_North_America,_Inc_et_al_v_Chervon_North_America,_Inc_et_al"
+        }
+      ],
+      "people": [
+        {
+          "side": "Chervon",
+          "name": "Joseph Galli Jr.",
+          "role": "Chervon CEO since 10 Sep 2026; TTI CEO 2008–2024. Named defendant",
+          "image": "/images/brands/chervon/leader-joseph-galli.webp",
+          "credit": "TTI 2018 Annual Report (Galli, before he joined Chervon)"
+        },
+        {
+          "side": "Chervon",
+          "name": "Pan Longquan",
+          "role": "Founder and chairman, controlling shareholder",
+          "image": "/images/brands/chervon/leader-pan-longquan.webp",
+          "credit": "Jiangsu Development Conference, 2023 (Pan)"
+        },
+        {
+          "side": "TTI",
+          "name": "Horst Pudwill",
+          "role": "Founder and executive chairman",
+          "image": "/images/brands/tti/leader-horst-pudwill.webp",
+          "credit": "TTI Annual Report 2025 (Pudwill, Richman)"
+        },
+        {
+          "side": "TTI",
+          "name": "Steven Richman",
+          "role": "Chief executive officer",
+          "image": "/images/brands/tti/leader-steven-richman.webp",
+          "credit": "TTI Annual Report 2025 (Pudwill, Richman)"
         }
       ]
     },
@@ -395,8 +455,73 @@
           }
         ],
         "note": "Compiled from court opinions, Patent Office records, docket services and legal press (Bloomberg Law, Law360). Post-trial rulings in the Delaware case were not found in public sources.",
-        "layout": "cards"
-      }
+        "layout": "cards",
+        "numbered": true
+      },
+      "charts": [
+        {
+          "type": "lanes",
+          "title": "Who took whom to court, 2005–2026",
+          "start": 2004,
+          "end": 2027,
+          "note": "Numbers match the case list below. Bars are cases that ran for several years. Case 7 is TTI's suit against a former employee, linked to the Chervon case.",
+          "lanes": [
+            {
+              "label": "TTI side brings the case",
+              "items": [
+                {
+                  "date": "2005-10",
+                  "n": 1,
+                  "label": "Oct 2005: TTI v. Chervon, laser level patent; injunction for TTI"
+                },
+                {
+                  "date": "2014",
+                  "n": 2,
+                  "label": "2014: Milwaukee v. Chervon, battery-pack patents"
+                },
+                {
+                  "date": "2020",
+                  "end": "2023-04",
+                  "n": 5,
+                  "label": "2020–2023: TTI challenges Chervon mower patents; Federal Circuit affirms for Chervon"
+                },
+                {
+                  "date": "2026-03",
+                  "n": 7,
+                  "label": "Mar 2026: R&B (TTI) v. Daniel Abbott"
+                },
+                {
+                  "date": "2026-11-09",
+                  "n": 8,
+                  "label": "Nov 2026: TTI, Milwaukee and R&B v. Chervon and Galli"
+                }
+              ]
+            },
+            {
+              "label": "Chervon side brings the case",
+              "items": [
+                {
+                  "date": "2015",
+                  "end": "2018",
+                  "n": 3,
+                  "label": "2015–2018: Chervon and others challenge Milwaukee battery patents"
+                },
+                {
+                  "date": "2019-07",
+                  "end": "2025-02",
+                  "n": 4,
+                  "label": "Jul 2019: Chervon v. TTI, EGO mower patents, Delaware"
+                },
+                {
+                  "date": "2025-02-14",
+                  "n": 6,
+                  "label": "Feb 2025: jury finds wilful infringement, USD 3.99m to Chervon"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "who-moved",
@@ -578,6 +703,75 @@
         {
           "title": "The full story of the hires, in the complaint's order",
           "href": "/blog/tti-sues-chervon-galli-trade-secrets"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bars",
+          "title": "Named TTI people at Chervon, week by week",
+          "legend": [
+            "Already joined",
+            "Joined that week"
+          ],
+          "rows": [
+            {
+              "label": "w/c 14 Sep",
+              "segments": [
+                0,
+                1
+              ],
+              "display": "1 (+1)"
+            },
+            {
+              "label": "w/c 28 Sep",
+              "segments": [
+                1,
+                2
+              ],
+              "display": "3 (+2)"
+            },
+            {
+              "label": "w/c 5 Oct",
+              "segments": [
+                3,
+                4
+              ],
+              "display": "7 (+4)"
+            },
+            {
+              "label": "w/c 12 Oct",
+              "segments": [
+                7,
+                3
+              ],
+              "display": "10 (+3)"
+            },
+            {
+              "label": "w/c 19 Oct",
+              "segments": [
+                10,
+                4
+              ],
+              "display": "14 (+4)"
+            },
+            {
+              "label": "w/c 26 Oct",
+              "segments": [
+                14,
+                4
+              ],
+              "display": "18 (+4)"
+            },
+            {
+              "label": "w/c 2 Nov",
+              "segments": [
+                18,
+                2
+              ],
+              "display": "20 (+2)"
+            }
+          ],
+          "note": "The 20 people named in TTI's complaint, by the week they joined Chervon. The complaint says at least 30 joined in all."
         }
       ]
     },
@@ -817,7 +1011,62 @@
             ]
           }
         ]
-      }
+      },
+      "lineup": [
+        {
+          "name": "TTI",
+          "slug": "tti",
+          "brands": [
+            {
+              "name": "Milwaukee",
+              "slug": "milwaukee"
+            },
+            {
+              "name": "RYOBI",
+              "slug": "ryobi"
+            },
+            {
+              "name": "AEG"
+            },
+            {
+              "name": "Hoover",
+              "slug": "hoover"
+            },
+            {
+              "name": "Vax",
+              "slug": "vax"
+            },
+            {
+              "name": "Oreck",
+              "slug": "oreck"
+            },
+            {
+              "name": "Dirt Devil",
+              "slug": "dirt-devil"
+            }
+          ]
+        },
+        {
+          "name": "Chervon",
+          "slug": "chervon",
+          "brands": [
+            {
+              "name": "EGO"
+            },
+            {
+              "name": "FLEX",
+              "slug": "flex"
+            },
+            {
+              "name": "SKIL",
+              "slug": "skil"
+            },
+            {
+              "name": "DEVON"
+            }
+          ]
+        }
+      ]
     }
   ],
   "follow": {

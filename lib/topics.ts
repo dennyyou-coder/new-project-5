@@ -19,7 +19,19 @@ export type TopicChart =
       rows: { label: string; segments: number[]; display?: string; href?: string }[];
     }
   /** Revenue growth for the latest reported quarter, from the results tracker. */
-  | { type: "results-growth"; title: string; note?: string };
+  | { type: "results-growth"; title: string; note?: string }
+  /**
+   * Events on a shared year axis, one lane per side. An item with `end` is drawn as a span;
+   * `n` is the number shown in the marker (matching a numbered table below).
+   */
+  | {
+      type: "lanes";
+      title: string;
+      note?: string;
+      start: number;
+      end: number;
+      lanes: { label: string; items: { date: string; end?: string; n?: number; label: string }[] }[];
+    };
 
 /** A table on a topic page; on phones each row becomes a card labelled by its column names. */
 export type TopicTable = {
@@ -28,7 +40,16 @@ export type TopicTable = {
   note?: string;
   /** "cards": the first column becomes a date rail and the other columns stack as labelled lines. */
   layout?: "table" | "cards";
+  /** Number the rows 1, 2, 3… so they can be matched to markers in a chart. */
+  numbered?: boolean;
 };
+
+/** A big number with a short label. */
+export type TopicStat = { value: string; label: string };
+/** A person with a portrait; `credit` is shown under the group. */
+export type TopicPerson = { name: string; role: string; image: string; credit: string; side?: string };
+/** One side of a brand line-up: the parent's logo and its brands (logo when `slug` is given, otherwise the name). */
+export type TopicBrandSide = { name: string; slug: string; brands: { name: string; slug?: string }[] };
 
 /**
  * An extra section of a topic page: key facts, a table, small charts side by side and links.
@@ -41,7 +62,10 @@ export type TopicSection = {
   /** Shown as a highlighted case box instead of a plain section. */
   highlight?: boolean;
   intro?: string;
+  stats?: TopicStat[];
+  people?: TopicPerson[];
   facts?: TopicFact[];
+  lineup?: TopicBrandSide[];
   table?: TopicTable;
   charts?: TopicChart[];
   links?: { title: string; href: string }[];
