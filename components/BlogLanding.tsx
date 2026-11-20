@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { chineseOriginalLabel } from "@/lib/originalEdition";
 import { getFeaturedSeriesLinks } from "@/lib/blogSeries";
 import { responsiveImageProps } from "@/lib/articleImages";
 import type { Insight } from "@/lib/content";
@@ -71,7 +72,7 @@ function BlogHomeCard({
         <h3>{article.title}</h3>
         <p>{article.excerpt}</p>
         <div className="insights-card-meta">
-          <span>{article.date}</span>
+          <span>{chineseOriginalLabel(article) || article.date}</span>
           <span>{article.readingTime}</span>
         </div>
       </div>

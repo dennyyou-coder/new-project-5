@@ -4,6 +4,7 @@ import { newsDate, type NewsArticle } from "@/lib/news";
 import { formatBrandDate } from "@/lib/brandDates";
 import { responsiveImageProps } from "@/lib/articleImages";
 import type { BrandTaggedArticle } from "@/lib/brands";
+import { chineseOriginalLabel } from "@/lib/originalEdition";
 
 /** Analysis cards with images, then the latest news headlines about the company. */
 export function BrandArticles({
@@ -38,7 +39,7 @@ export function BrandArticles({
                 <span className="bp-article-image"><img {...responsiveImageProps(article.coverImage, "card")} alt={article.coverAlt || ""} /></span>
               ) : null}
               <span className="bp-article-copy">
-                <small>{"category" in article && typeof article.category === "string" ? `${article.category} · ` : ""}<time dateTime={article.sortDate}>{formatBrandDate(article.sortDate)}</time></small>
+                <small>{"category" in article && typeof article.category === "string" ? `${article.category} · ` : ""}{chineseOriginalLabel(article) || <time dateTime={article.sortDate}>{formatBrandDate(article.sortDate)}</time>}</small>
                 <b>{article.title}</b>
               </span>
             </Link>

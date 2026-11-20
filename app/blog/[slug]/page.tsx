@@ -25,6 +25,7 @@ import {
   markdownToHtml,
   removeLeadingArticleTitleAndCover
 } from "@/lib/content";
+import { chineseOriginalLabel } from "@/lib/originalEdition";
 import {
   orderSeriesInsights
 } from "@/lib/insightCollections";
@@ -270,7 +271,7 @@ export default async function InsightDetailPage({ params }: Props) {
           </nav>
           <div className="signal-detail-meta">
             <span>{article.category}</span>
-            <span>{displayPublishedDate(publishedTime)}</span>
+            <span>{chineseOriginalLabel(article, "long") || displayPublishedDate(publishedTime)}</span>
             <span>{article.readingTime}</span>
           </div>
           {article.seriesTitle ? (
@@ -468,7 +469,7 @@ export default async function InsightDetailPage({ params }: Props) {
                       alt=""
                     />
                   </div>
-                  <div className="meta">{item.seriesTitle || item.category} · <time dateTime={item.publishedAt || item.date}>{displayPublishedDate(item.publishedAt || item.date)}</time></div>
+                  <div className="meta">{item.seriesTitle || item.category} · {chineseOriginalLabel(item) || <time dateTime={item.publishedAt || item.date}>{displayPublishedDate(item.publishedAt || item.date)}</time>}</div>
                   <h3>{item.title}</h3>
                   <p className="related-signal-excerpt">{item.excerpt}</p>
                   <span>{item.readingTime} · Read Article</span>

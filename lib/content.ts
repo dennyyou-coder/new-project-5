@@ -39,6 +39,10 @@ export type Insight = {
   series?: string;
   seriesTitle?: string;
   seriesEpisode?: string;
+  /** "zh" for articles first published in Chinese and translated for this site. */
+  originalLanguage?: "zh";
+  /** Year the Chinese original appeared, when it can be told from the text. */
+  originalYear?: string;
   contentClass: ContentClass;
   guideType?: GuideType;
   guidePriority: number;
@@ -174,6 +178,8 @@ function readInsights(): Insight[] {
         series: data.series ? String(data.series) : undefined,
         seriesTitle: data.series_title ? String(data.series_title) : undefined,
         seriesEpisode: data.series_episode ? String(data.series_episode) : undefined,
+        originalLanguage: data.original_language === "zh" ? ("zh" as const) : undefined,
+        originalYear: data.original_year ? String(data.original_year) : undefined,
         contentClass: String(data.content_class || "") as ContentClass,
         guideType: data.guide_type ? String(data.guide_type) as GuideType : undefined,
         guidePriority: Number(data.guide_priority || 0),

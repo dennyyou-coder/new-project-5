@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Insight } from "@/lib/content";
+import { chineseOriginalLabel } from "@/lib/originalEdition";
 import { directoryArticleImageProps } from "@/lib/contentDirectory";
 import { DirectorySeriesFeature } from "@/components/DirectorySeriesFeature";
 import {
@@ -35,6 +36,8 @@ export type DirectoryPaginationItem = {
 export type DirectoryArticle = Pick<
   Insight,
   | "slug"
+  | "originalLanguage"
+  | "originalYear"
   | "title"
   | "excerpt"
   | "date"
@@ -147,7 +150,7 @@ export function ContentDirectory({
                     <h2>{article.title}</h2>
                     <p>{article.excerpt}</p>
                     <div className="insights-card-meta">
-                      {article.date ? <span>{article.date}</span> : null}
+                      {article.date ? <span>{chineseOriginalLabel(article) || article.date}</span> : null}
                       <span>{article.readingTime}</span>
                     </div>
                     <strong>Read Article</strong>
