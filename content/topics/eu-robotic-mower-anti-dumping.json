@@ -7,8 +7,8 @@
   "description": "WCB's running file on EU anti-dumping case AD745 against Chinese robotic lawn mowers: timeline, scope, reported duty rates, the January 2027 deadline and analysis for Husqvarna, Positec, Mammotion and other brands.",
   "coverImage": "/images/topics/eu-robotic-mower-anti-dumping/cover.webp",
   "coverCredit": {
-    "text": "Berlaymont building, European Commission headquarters, Brussels. Photo: Euro Pictures, CC BY 2.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Berlaymont_building_2022.jpg"
+    "text": "Card: World Clean Biz, using company logos. Photo: Glen Instone, Husqvarna Group image gallery",
+    "url": "https://www.husqvarnagroup.com/en/image-gallery"
   },
   "updated": "2026-11-19",
   "status": {
@@ -542,5 +542,79 @@
   "follow": {
     "heading": "Follow the EU mower case",
     "note": "Get an email when the EU publishes its decision, when duty rates are confirmed and when the UK case moves."
+  },
+  "versus": {
+    "title": "The EU mower case in one picture",
+    "sides": [
+      {
+        "name": "Husqvarna",
+        "slug": "husqvarna",
+        "figure": {
+          "value": "≈50%",
+          "label": "EU robotic mower share by 2025, down from about 70% (reported)",
+          "tone": "down"
+        },
+        "facts": [
+          "Complainant, through Husqvarna Manufacturing CZ",
+          "Filed a second complaint in the UK, Nov 2026",
+          "Its Czech unit makes robotic mowers in the EU"
+        ],
+        "person": {
+          "name": "Glen Instone",
+          "role": "President and CEO, Husqvarna Group",
+          "image": "/images/brands/husqvarna/leader-glen-instone.webp"
+        }
+      },
+      {
+        "name": "Chinese makers",
+        "figure": {
+          "value": "79.2%",
+          "label": "Chinese-made share of the EU market in the investigation period (reported)"
+        },
+        "facts": [
+          "39 Chinese companies answered the questionnaire (reported)",
+          "Reported rates: Mammotion 45.6%, Positec 53.3%, others 47.0% or 53.3%",
+          "Some have moved production outside China"
+        ],
+        "brands": [
+          {
+            "name": "Mammotion"
+          },
+          {
+            "name": "Worx",
+            "slug": "worx"
+          },
+          {
+            "name": "Segway Navimow",
+            "slug": "segway-navimow"
+          },
+          {
+            "name": "Sunseeker",
+            "slug": "sunseeker"
+          }
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "label": "Oct 2025: Husqvarna complains",
+        "detail": "The Commission opens case AD745 on 19 Nov 2025"
+      },
+      {
+        "label": "Jan 2026: imports registered",
+        "detail": "Keeps retroactive duties possible; no provisional duty in June"
+      },
+      {
+        "label": "21 Oct 2026: disclosure",
+        "detail": "Proposed duties of 45.6% to 53.3% on the CIF price, as reported"
+      },
+      {
+        "label": "By 19 Jan 2027: final decision",
+        "detail": "Definitive duties, if adopted, normally run for five years",
+        "tone": "legal"
+      }
+    ],
+    "footer": "Duties follow where a mower is made, not the brand: mowers genuinely made outside China are not covered, but routing Chinese mowers through another country can be.",
+    "credit": "Disclosure figures are from press reports of a confidential Commission document and are not confirmed. Photo: Husqvarna Group image gallery (Instone)."
   }
 }

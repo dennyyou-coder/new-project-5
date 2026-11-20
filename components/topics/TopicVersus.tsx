@@ -4,10 +4,16 @@ import type { TopicVersus as TopicVersusData, TopicVersusSide } from "@/lib/topi
 function Side({ side, align }: { side: TopicVersusSide; align: "left" | "right" }) {
   return (
     <div className={`topic-vs-side is-${align}`}>
-      <Link className="topic-vs-logo" href={`/brands/${side.slug}`}>
-        <img src={`/images/brands/${side.slug}/logo.webp`} alt={side.name} />
-      </Link>
-      <p className="topic-vs-figure">
+      {side.slug ? (
+        <Link className="topic-vs-logo" href={`/brands/${side.slug}`}>
+          <img src={`/images/brands/${side.slug}/logo.webp`} alt={side.name} />
+        </Link>
+      ) : side.logo ? (
+        <span className="topic-vs-logo"><img src={side.logo} alt="" /><b>{side.name}</b></span>
+      ) : (
+        <span className="topic-vs-logo"><b>{side.name}</b></span>
+      )}
+      <p className={`topic-vs-figure${side.figure.tone ? ` is-${side.figure.tone}` : ""}`}>
         <strong>{side.figure.value}</strong>
         <span>{side.figure.label}</span>
       </p>
@@ -42,7 +48,7 @@ export function TopicVersus({ versus }: { versus: TopicVersusData }) {
         <h2 id="topic-vs-title" className="topic-vs-title">{versus.title}</h2>
         <div className="topic-vs-board">
           <Side side={left} align="left" />
-          <ol className="topic-vs-flows">
+          <ol className={`topic-vs-flows${versus.arrows === false ? " is-points" : ""}`}>
             {versus.flows.map((flow) => (
               <li key={flow.label} className={flow.tone === "legal" ? "is-legal" : undefined}>
                 {flow.image ? <img src={flow.image} alt="" width={40} height={40} /> : null}

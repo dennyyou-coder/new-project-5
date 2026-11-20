@@ -7,8 +7,8 @@
   "description": "WCB's running file on the Q3 2026 results season across the global cleaning industry, from Roborock, ECOVACS and SharkNinja to Midea, Haier, Whirlpool, Electrolux, Husqvarna, Pentair and Tennant, with reported figures and sources.",
   "coverImage": "/images/topics/q3-2026-cleaning-industry-results/cover.webp",
   "coverCredit": {
-    "text": "Sign of the New York Stock Exchange, Broad Street. Photo: Billie Grace Ward, CC0",
-    "url": "https://commons.wikimedia.org/wiki/File:Sign_of_the_New_York_Stock_Exchange,_Broad_Street.jpg"
+    "text": "Card: World Clean Biz, using company logos; growth as each company reported it",
+    "url": "https://worldcleanbiz.com/topics/q3-2026-cleaning-industry-results"
   },
   "updated": "2026-11-08",
   "status": {
@@ -196,5 +196,91 @@
       "title": "Tennant Q3 2026 results release (SEC)",
       "url": "https://www.sec.gov/Archives/edgar/data/0000097134/000009713426000027/tnc-20261102xexx991.htm"
     }
-  ]
+  ],
+  "versus": {
+    "title": "Q3 2026 in one picture: who grew and who shrank",
+    "sides": [
+      {
+        "name": "Growing",
+        "figure": {
+          "value": "+34.85%",
+          "label": "Roborock revenue, CNY 5.61bn, the fastest grower",
+          "tone": "up"
+        },
+        "facts": [
+          "SharkNinja +21.2% (cleaning only +4.1%)",
+          "ECOVACS +10.61%",
+          "Hayward +6.5%; Tennant robotics +71%"
+        ],
+        "brands": [
+          {
+            "name": "Roborock",
+            "slug": "roborock"
+          },
+          {
+            "name": "Ecovacs",
+            "slug": "ecovacs"
+          },
+          {
+            "name": "Hayward",
+            "slug": "hayward"
+          },
+          {
+            "name": "Tennant",
+            "slug": "tennant"
+          }
+        ]
+      },
+      {
+        "name": "Shrinking",
+        "figure": {
+          "value": "−10.13%",
+          "label": "Haier revenue, the steepest fall among the appliance groups",
+          "tone": "down"
+        },
+        "facts": [
+          "Whirlpool −8.8%, with a net loss",
+          "Midea −4.12%",
+          "Pentair −4.5% (pool −18%); Husqvarna −2.1% with an operating loss"
+        ],
+        "brands": [
+          {
+            "name": "Haier"
+          },
+          {
+            "name": "Whirlpool",
+            "slug": "whirlpool"
+          },
+          {
+            "name": "Midea",
+            "slug": "midea"
+          },
+          {
+            "name": "Pentair",
+            "slug": "pentair"
+          }
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "label": "Robot vacuums: growth is not profit",
+        "detail": "ECOVACS grew 10.61% but attributable net profit fell 72.43%"
+      },
+      {
+        "label": "Appliance groups: shrinking",
+        "detail": "Midea, Haier and Whirlpool all reported lower revenue"
+      },
+      {
+        "label": "Outdoor and pool: mixed",
+        "detail": "Husqvarna hurt by weak European robotic-mower demand; Pentair's pool reset ended"
+      },
+      {
+        "label": "Tariff refunds flatter US profits",
+        "detail": "IEEPA refunds: SharkNinja USD 109.6m, Stanley Black & Decker USD 180.7m in Q3"
+      }
+    ],
+    "arrows": false,
+    "credit": "Revenue growth is year on year in each company's own currency, as reported."
+  }
 }

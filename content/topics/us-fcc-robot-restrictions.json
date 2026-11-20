@@ -7,7 +7,7 @@
   "description": "WCB's running file on the US FCC Covered List for foreign-produced advanced robotic devices: scope, exemptions granted, timeline and analysis for robot vacuums, robotic mowers and pool robots.",
   "coverImage": "/images/topics/us-fcc-robot-restrictions/cover.webp",
   "coverCredit": {
-    "text": "FCC Chairman Brendan Carr, official portrait, 2025. Federal Communications Commission, public domain",
+    "text": "Card: World Clean Biz. Photo: FCC Chairman Brendan Carr, official portrait, 2025. Federal Communications Commission, public domain",
     "url": "https://commons.wikimedia.org/wiki/File:Brendan_Carr,_official_portrait_2025.jpg"
   },
   "updated": "2026-11-19",
@@ -715,5 +715,83 @@
   "follow": {
     "heading": "Follow the FCC robot rules",
     "note": "Get each new approval, FCC filing and rule change in the WCB weekly brief, every Friday. Free, and you can unsubscribe any time."
+  },
+  "versus": {
+    "title": "How the FCC rule splits the robot market",
+    "sides": [
+      {
+        "name": "Approved producers",
+        "logo": "/images/topics/us-fcc-robot-restrictions/fcc-seal.svg",
+        "figure": {
+          "value": "17",
+          "label": "producers with Conditional Approval by 18 Nov 2026"
+        },
+        "facts": [
+          "Approval goes to producers with a US onshoring plan",
+          "No end date for robots while the plan is followed",
+          "Cleaning and lawn: only Husqvarna and Matic"
+        ],
+        "brands": [
+          {
+            "name": "Husqvarna",
+            "slug": "husqvarna"
+          },
+          {
+            "name": "Matic"
+          }
+        ]
+      },
+      {
+        "name": "Chinese robot makers",
+        "figure": {
+          "value": "0",
+          "label": "Chinese robot vacuum or mower makers approved",
+          "tone": "down"
+        },
+        "facts": [
+          "Models authorized before 28 Jul can still be sold",
+          "No new FCC grants since the rule for Roborock, Mammotion, Sunseeker, Segway-Ninebot, Positec",
+          "Ecovacs: one grant, on 28 Jul itself"
+        ],
+        "brands": [
+          {
+            "name": "Roborock",
+            "slug": "roborock"
+          },
+          {
+            "name": "Ecovacs",
+            "slug": "ecovacs"
+          },
+          {
+            "name": "Mammotion"
+          },
+          {
+            "name": "Segway Navimow",
+            "slug": "segway-navimow"
+          }
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "label": "28 Jul 2026: robots join the Covered List",
+        "detail": "Foreign-produced advanced robots can no longer get FCC equipment authorization",
+        "tone": "legal"
+      },
+      {
+        "label": "Models already authorized",
+        "detail": "Can still be imported, sold and used; the rule bites on the next product cycle"
+      },
+      {
+        "label": "New models need Conditional Approval",
+        "detail": "Granted by the Department of War, applied for through the FCC"
+      },
+      {
+        "label": "Approved so far: 17 producers",
+        "detail": "Husqvarna first on 9 Sep (four Automower platforms); Matic the only robot-vacuum maker, 2 Oct"
+      }
+    ],
+    "footer": "The rule follows where a robot is made, not who owns the brand: a European or US brand making robot vacuums in China is covered too.",
+    "credit": "Sources: FCC Covered List and Public Notice DA 26-1243 (18 Nov 2026); FCC equipment authorization records checked by WCB."
   }
 }

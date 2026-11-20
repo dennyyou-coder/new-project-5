@@ -74,8 +74,10 @@ export type TopicSection = {
 /** One company in a versus overview. */
 export type TopicVersusSide = {
   name: string;
-  slug: string;
-  figure: { value: string; label: string };
+  /** Brand page and logo; without it, `logo` (an image path) or the name is shown as the heading. */
+  slug?: string;
+  logo?: string;
+  figure: { value: string; label: string; tone?: "up" | "down" };
   facts: string[];
   person?: { name: string; role: string; image: string };
   brands?: { name: string; slug?: string }[];
@@ -89,6 +91,8 @@ export type TopicVersus = {
   title: string;
   sides: [TopicVersusSide, TopicVersusSide];
   flows: { label: string; detail: string; image?: string; tone?: "legal" }[];
+  /** false: the middle column lists points without left-to-right arrows. */
+  arrows?: boolean;
   footer?: string;
   credit?: string;
 };
