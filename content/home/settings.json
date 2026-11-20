@@ -1,0 +1,4 @@
+{
+  "_note": "Homepage lead. Leave lead as null to pick the newest news story with its own picture automatically. To choose one, set lead to {\"type\": \"news\" | \"blog\" | \"topic\", \"slug\": \"...\"}.",
+  "lead": null
+}

@@ -105,6 +105,8 @@ export type Topic = {
   title: string;
   /** Two or three words shown over the topic image on the homepage, e.g. "FCC Ban". */
   shortLabel?: string;
+  /** Shown first, as the lead, in the homepage topics band. */
+  pinned?: boolean;
   seoTitle?: string;
   dek: string;
   description: string;
