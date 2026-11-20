@@ -10,7 +10,7 @@
     "text": "Card: World Clean Biz, using company logos. Photo: Glen Instone, Husqvarna Group image gallery",
     "url": "https://www.husqvarnagroup.com/en/image-gallery"
   },
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "status": {
     "label": "Final decision due by 19 January 2027 · UK case opened 18 November",
     "text": "The European Commission sent its disclosure of essential facts on 21 October 2026, and the comment period has closed. Definitive duties, if any, must be decided by 19 January 2027. On 18 November the UK Trade Remedies Authority opened a separate investigation after a complaint from Husqvarna."
@@ -228,9 +228,104 @@
     {
       "title": "Husqvarna Group statement on the UK investigation (18 November 2026)",
       "url": "https://www.husqvarnagroup.com/sites/husqvarna/files/pr/202611181295-1.pdf"
+    },
+    {
+      "title": "Reuters via Euronext: Husqvarna moves some robotic mower production from Britain to Czechia (21 Oct 2026)",
+      "url": "https://live.euronext.com/en/financial-news/husqvarna-looks-east-chinese-rivals-chip-away-robot-lawnmower-lead"
+    },
+    {
+      "title": "Husqvarna Group: global presence and manufacturing sites",
+      "url": "https://www.husqvarnagroup.com/en/global-presence"
+    },
+    {
+      "title": "STIHL: STIHL Austria, Langkampfen",
+      "url": "https://corporate.stihl.com/en/about-stihl/production-sales/stihl-austria"
+    },
+    {
+      "title": "Segway Navimow: one million units, Changzhou and Nantong bases and a Malaysia line (6 May 2026)",
+      "url": "https://retail-insider.com/retail-insider/2026/05/segway-navimow-reaches-one-million-units-in-global-production-expands-manufacturing-footprint/"
     }
   ],
   "sections": [
+    {
+      "id": "case-progress",
+      "title": "Where the EU and UK cases stand",
+      "intro": "The EU case is one vote away from a decision. The UK case has just started and will run through most of 2027.",
+      "progress": [
+        {
+          "label": "EU · case AD745",
+          "note": "Decision due by 19 January 2027",
+          "steps": [
+            {
+              "date": "6 Oct 2025",
+              "label": "Husqvarna files complaint",
+              "state": "done"
+            },
+            {
+              "date": "19 Nov 2025",
+              "label": "Investigation opened",
+              "state": "done"
+            },
+            {
+              "date": "Jan 2026",
+              "label": "Imports registered",
+              "state": "done"
+            },
+            {
+              "date": "19 Jun 2026",
+              "label": "No provisional duty",
+              "state": "done"
+            },
+            {
+              "date": "21 Oct 2026",
+              "label": "Proposed rates disclosed",
+              "state": "done"
+            },
+            {
+              "date": "5 Nov 2026",
+              "label": "Comments closed",
+              "state": "done"
+            },
+            {
+              "date": "Dec 2026 – Jan 2027",
+              "label": "Member states vote",
+              "state": "now"
+            },
+            {
+              "date": "By 19 Jan 2027",
+              "label": "Final duties decided",
+              "state": "next"
+            }
+          ]
+        },
+        {
+          "label": "UK · Trade Remedies Authority",
+          "note": "Opened 18 November 2026",
+          "steps": [
+            {
+              "date": "18 Nov 2026",
+              "label": "Investigation opened",
+              "state": "done"
+            },
+            {
+              "date": "By 3 Dec 2026",
+              "label": "Companies register to take part",
+              "state": "now"
+            },
+            {
+              "date": "2027",
+              "label": "Questionnaires, checks and economic interest test",
+              "state": "next"
+            },
+            {
+              "date": "12 to 18 months after opening",
+              "label": "Recommendation to the UK government",
+              "state": "next"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "what-next",
       "title": "What to watch next",
@@ -440,12 +535,71 @@
           }
         ],
         "note": "Rounded to the nearest euro. VAT is then charged on the duty-inclusive value, so the retail effect is larger than the duty alone."
-      }
+      },
+      "charts": [
+        {
+          "type": "bars",
+          "title": "Border value of one mower, before and after the duty",
+          "legend": [
+            "Customs value (CIF)",
+            "Anti-dumping duty"
+          ],
+          "note": "Illustrations at the reported rates, before regular customs duty and VAT. VAT is then charged on the higher value, so the shelf price rises by more.",
+          "rows": [
+            {
+              "label": "€500 mower, no duty",
+              "segments": [
+                500
+              ],
+              "display": "€500"
+            },
+            {
+              "label": "€500 at 45.6%",
+              "segments": [
+                500,
+                228
+              ],
+              "display": "€728"
+            },
+            {
+              "label": "€500 at 53.3%",
+              "segments": [
+                500,
+                267
+              ],
+              "display": "€767"
+            },
+            {
+              "label": "€800 mower, no duty",
+              "segments": [
+                800
+              ],
+              "display": "€800"
+            },
+            {
+              "label": "€800 at 45.6%",
+              "segments": [
+                800,
+                365
+              ],
+              "display": "€1,165"
+            },
+            {
+              "label": "€800 at 53.3%",
+              "segments": [
+                800,
+                426
+              ],
+              "display": "€1,226"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "who-is-exposed",
-      "title": "Who is exposed",
-      "intro": "Duties follow where a mower is made, not where the brand is based. The positions below come from company statements and press reports.",
+      "title": "Who is on each side",
+      "intro": "Duties follow where a mower is made, not where the brand is based. Click a company for its profile. Production sites are those the companies name themselves; a single model can come from elsewhere, so check its label and declaration before ordering.",
       "table": {
         "layout": "cards",
         "columns": [
@@ -494,7 +648,88 @@
             ]
           }
         ]
-      }
+      },
+      "camps": [
+        {
+          "label": "Making robotic mowers in Europe",
+          "note": "Husqvarna filed the complaint for producers with more than 25% of EU output",
+          "tone": "home",
+          "brands": [
+            {
+              "name": "Husqvarna",
+              "slug": "husqvarna",
+              "tag": "Complainant, EU and UK",
+              "made": "Czech Republic (Vrbno pod Pradědem), England (Newton Aycliffe), Poland (Mielec)"
+            },
+            {
+              "name": "STIHL",
+              "slug": "stihl",
+              "made": "Austria (STIHL Tirol, Langkampfen), where its iMOW robotic mowers are built"
+            }
+          ]
+        },
+        {
+          "label": "Chinese makers facing the proposed duties",
+          "note": "Rates reported from the disclosure, not final. Companies without their own rate get 47.0% if they cooperated, 53.3% if not.",
+          "tone": "target",
+          "brands": [
+            {
+              "name": "Mammotion",
+              "slug": "mammotion",
+              "tag": "45.6% (reported)",
+              "made": "China; factory sites not published"
+            },
+            {
+              "name": "Worx and Kress (Positec)",
+              "slug": "worx",
+              "tag": "53.3% (reported)",
+              "made": "China (Suzhou, Zhangjiagang, Kunshan) and Vietnam"
+            },
+            {
+              "name": "Segway Navimow",
+              "slug": "segway-navimow",
+              "tag": "Rate not reported",
+              "made": "China (Changzhou, Nantong); Malaysia line added in 2026"
+            },
+            {
+              "name": "Dreame",
+              "slug": "dreame",
+              "tag": "Rate not reported",
+              "made": "China (Suzhou)"
+            },
+            {
+              "name": "MOVA",
+              "slug": "mova",
+              "tag": "Rate not reported",
+              "made": "China (Suzhou), by Kutting Technology for named mower models"
+            },
+            {
+              "name": "ECOVACS (GOAT)",
+              "slug": "ecovacs",
+              "tag": "Rate not reported",
+              "made": "China, mainly in its own plants"
+            },
+            {
+              "name": "Sunseeker",
+              "slug": "sunseeker",
+              "tag": "Rate not reported",
+              "made": "China (Zhejiang)"
+            },
+            {
+              "name": "Roborock (RockMow)",
+              "slug": "roborock",
+              "tag": "Rate not reported",
+              "made": "China, from its own and outsourced production"
+            },
+            {
+              "name": "Greenworks",
+              "slug": "greenworks",
+              "tag": "Rate not reported",
+              "made": "China, Vietnam and the US (group sites)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "uk-case",
