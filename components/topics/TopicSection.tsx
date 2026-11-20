@@ -47,6 +47,26 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
         </figure>
       ) : null}
 
+      {section.progress?.length ? (
+        <div className="topic-progress">
+          {section.progress.map((track) => (
+            <div key={track.label} className="topic-progress-track">
+              <p className="topic-progress-label">{track.label}{track.note ? <small>{track.note}</small> : null}</p>
+              <ol>
+                {track.steps.map((step) => (
+                  <li key={`${step.date}-${step.label}`} className={`is-${step.state}`} aria-current={step.state === "now" ? "step" : undefined}>
+                    <span className="topic-progress-dot" aria-hidden="true" />
+                    <time>{step.date}</time>
+                    <strong>{step.label}</strong>
+                    {step.state === "now" ? <em>Now</em> : null}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
+      ) : null}
+
       {section.facts?.length ? (
         <dl className="topic-section-facts">
           {section.facts.map((fact) => (
@@ -61,6 +81,37 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
       {section.charts?.length ? (
         <div className={`topic-section-charts${section.charts.length > 1 ? " is-pair" : ""}`}>
           {section.charts.map((chart) => <TopicChart key={chart.title} chart={chart} />)}
+        </div>
+      ) : null}
+
+      {section.camps?.length ? (
+        <div className="topic-camps">
+          {section.camps.map((camp) => (
+            <div key={camp.label} className={`topic-camp${camp.tone ? ` is-${camp.tone}` : ""}`}>
+              <p className="topic-camp-label">{camp.label}{camp.note ? <small>{camp.note}</small> : null}</p>
+              <ul>
+                {camp.brands.map((brand) => {
+                  const inner = (
+                    <>
+                      <span className="topic-camp-logo">
+                        {brand.slug ? <img src={`/images/brands/${brand.slug}/logo-tile.webp`} alt="" loading="lazy" decoding="async" /> : null}
+                      </span>
+                      <span className="topic-camp-text">
+                        <strong>{brand.name}</strong>
+                        {brand.tag ? <em>{brand.tag}</em> : null}
+                        <small><b>Made in</b> {brand.made}</small>
+                      </span>
+                    </>
+                  );
+                  return (
+                    <li key={brand.name}>
+                      {brand.slug ? <Link href={`/brands/${brand.slug}`}>{inner}</Link> : <div>{inner}</div>}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
         </div>
       ) : null}
 

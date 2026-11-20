@@ -51,6 +51,13 @@ export type TopicPerson = { name: string; role: string; image: string; credit: s
 /** One side of a brand line-up: the parent's logo and its brands (logo when `slug` is given, otherwise the name). */
 export type TopicBrandSide = { name: string; slug: string; brands: { name: string; slug?: string }[] };
 
+/** A brand card in a camp: logo and name link to the brand page; `made` lists production sites. */
+export type TopicCampBrand = { name: string; slug?: string; tag?: string; made: string };
+/** A group of brands on one side of a case, e.g. complainants and companies facing duties. */
+export type TopicCamp = { label: string; note?: string; tone?: "home" | "target"; brands: TopicCampBrand[] };
+/** One procedure shown as steps; `state` marks steps done, the current one and those ahead. */
+export type TopicProgress = { label: string; note?: string; steps: { date: string; label: string; state: "done" | "now" | "next" }[] };
+
 /**
  * An extra section of a topic page: key facts, a table, small charts side by side and links.
  * `position` places it after the summary (default) or after the timeline.
@@ -66,6 +73,8 @@ export type TopicSection = {
   people?: TopicPerson[];
   facts?: TopicFact[];
   lineup?: TopicBrandSide[];
+  camps?: TopicCamp[];
+  progress?: TopicProgress[];
   table?: TopicTable;
   charts?: TopicChart[];
   links?: { title: string; href: string }[];
