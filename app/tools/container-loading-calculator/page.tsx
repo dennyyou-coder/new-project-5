@@ -5,7 +5,7 @@ import { ToolPage } from "@/components/tools/ToolPage";
 import "../../styles/tools.css";
 
 export const metadata: Metadata = {
-  title: "Container Loading Calculator: Cartons per 20GP, 40GP and 40HQ",
+  title: "Container Loading Calculator: 20GP, 40GP, 40HQ",
   description:
     "Enter your carton size and weight to see how many cartons and units fit in a 20GP, 40GP or 40HQ container, which limit binds and the sea freight per unit.",
   alternates: { canonical: "/tools/container-loading-calculator" }

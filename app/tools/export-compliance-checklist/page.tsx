@@ -5,7 +5,7 @@ import { CHECKLIST_AS_OF } from "@/lib/tools/certifications";
 import "../../styles/tools.css";
 
 export const metadata: Metadata = {
-  title: "Export Compliance Checklist: Robot Vacuums, Pool Robots and Mowers (US, EU, UK)",
+  title: "Export Compliance Checklist: US, EU and UK",
   description:
     "What a robot vacuum, cordless vacuum, pool robot or robotic mower needs to be sold in the US, EU and UK: FCC, CE and RED cybersecurity, UKCA and PSTI, batteries, WEEE and the key 2026–2027 deadlines.",
   alternates: { canonical: "/tools/export-compliance-checklist" }

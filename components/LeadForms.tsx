@@ -459,7 +459,7 @@ export function NewsletterLeadForm() {
     <div className="insights-newsletter-cta">
       <div>
         <p className="eyebrow">Blog Updates</p>
-        <h2>Get New Cleaning Industry Articles First</h2>
+        <h2>Get new cleaning industry articles first</h2>
         <p>
           Subscribe to receive new World Clean Biz articles, market signals and
           cleaning industry notes when they are published.

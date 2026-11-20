@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { month } = await params;
   const label = monthLabel(month);
   return {
-    title: `Recalls and FCC Filings, ${label}: Appliances, Cleaning and Power Tools`,
+    title: `Recalls and FCC Filings, ${label}`,
     description: `The ${label} US and EU recalls of appliances, cleaning machines and power tools, new FCC filings from robot and appliance makers, and the trade rule dates ahead.`,
     alternates: { canonical: `/radar/${month}` }
   };

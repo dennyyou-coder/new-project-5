@@ -16,7 +16,7 @@ const [received, privacy, terms, quality, footer, styles] = await Promise.all([
 
 test("inquiry received page closes the loop without claiming a submission", () => {
   assert.match(received, /title: "Inquiry Received"/);
-  assert.match(received, /Your Inquiry Is In The Right Place/);
+  assert.match(received, /Your inquiry is in the right place/);
   assert.match(received, /robots:\s*\{\s*index:\s*false,\s*follow:\s*true\s*\}/s);
   assert.match(received, /Review/);
   assert.match(received, /Route/);
@@ -45,7 +45,7 @@ test("quality page explains the five-stage responsibility model", () => {
   for (const stage of ["Define", "Evaluate", "Confirm", "Monitor", "Document"]) {
     assert.match(quality, new RegExp(stage));
   }
-  assert.match(quality, /Quality Starts With Clear Requirements/);
+  assert.match(quality, /Quality starts with clear requirements/);
   assert.match(quality, /Buyer Responsibility/);
   assert.match(quality, /ctaLocation="quality_compliance_cta"/);
   assert.match(quality, /href="\/sourcing"|form="sourcing"/);

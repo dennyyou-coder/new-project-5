@@ -5,7 +5,7 @@ import { ToolPage } from "@/components/tools/ToolPage";
 import "../../styles/tools.css";
 
 export const metadata: Metadata = {
-  title: "Lithium Battery Shipping Checker: Wh, UN3480/UN3481, Air and Sea",
+  title: "Lithium Battery Shipping Checker",
   description:
     "Work out a battery's watt-hours and what air and sea freight need for cordless vacuums, floor washers and power tools under the 2026 IATA and IMDG rules.",
   alternates: { canonical: "/tools/lithium-battery-shipping-checker" }
