@@ -71,6 +71,28 @@ export type TopicSection = {
   links?: { title: string; href: string }[];
 };
 
+/** One company in a versus overview. */
+export type TopicVersusSide = {
+  name: string;
+  slug: string;
+  figure: { value: string; label: string };
+  facts: string[];
+  person?: { name: string; role: string; image: string };
+  brands?: { name: string; slug?: string }[];
+};
+
+/**
+ * A full-width overview under the topic header: two companies and what moved between them,
+ * read left to right (top to bottom on phones).
+ */
+export type TopicVersus = {
+  title: string;
+  sides: [TopicVersusSide, TopicVersusSide];
+  flows: { label: string; detail: string; image?: string; tone?: "legal" }[];
+  footer?: string;
+  credit?: string;
+};
+
 /** A "follow this topic" signup shown on the topic page and on its articles and news. */
 export type TopicFollow = { heading: string; note: string };
 
@@ -93,6 +115,7 @@ export type Topic = {
   chart?: TopicChart;
   sections?: TopicSection[];
   follow?: TopicFollow;
+  versus?: TopicVersus;
   timeline: TopicEvent[];
   questions: TopicQuestion[];
   insights: string[];

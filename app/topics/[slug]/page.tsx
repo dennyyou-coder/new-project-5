@@ -10,6 +10,7 @@ import { CompanyMark } from "@/components/ui/CompanyMark";
 import { TopicChart } from "@/components/topics/TopicChart";
 import { TopicSection } from "@/components/topics/TopicSection";
 import { TopicFollow } from "@/components/topics/TopicFollow";
+import { TopicVersus } from "@/components/topics/TopicVersus";
 import { ShareBar } from "@/components/share/ShareBar";
 import { compareKeyBrands } from "@/lib/keyBrands";
 import { seoDescription, seoTitle } from "@/lib/seo";
@@ -168,6 +169,8 @@ export default async function TopicPage({ params }: { params: PageParams }) {
           ) : null}
         </div>
       </header>
+
+      {topic.versus ? <TopicVersus versus={topic.versus} /> : null}
 
       {companies.length ? (
         <nav className="topic-companies" aria-label="Companies in this topic">

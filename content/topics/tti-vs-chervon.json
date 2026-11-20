@@ -1051,7 +1051,8 @@
           "slug": "chervon",
           "brands": [
             {
-              "name": "EGO"
+              "name": "EGO",
+              "slug": "ego-power-plus"
             },
             {
               "name": "FLEX",
@@ -1072,5 +1073,103 @@
   "follow": {
     "heading": "Follow TTI v. Chervon",
     "note": "Get each court step, filing and company response in the WCB weekly brief, every Friday. Free, and you can unsubscribe any time."
+  },
+  "versus": {
+    "title": "What moved from TTI to Chervon, and why TTI sued",
+    "sides": [
+      {
+        "name": "TTI",
+        "slug": "tti",
+        "figure": {
+          "value": "USD 15.26bn",
+          "label": "2025 revenue, about 9× Chervon"
+        },
+        "facts": [
+          "Hong Kong listed, stock code 669",
+          "Pudwill family is the largest shareholder",
+          "Biggest US channel: The Home Depot"
+        ],
+        "brands": [
+          {
+            "name": "Milwaukee",
+            "slug": "milwaukee"
+          },
+          {
+            "name": "RYOBI",
+            "slug": "ryobi"
+          },
+          {
+            "name": "Hoover",
+            "slug": "hoover"
+          },
+          {
+            "name": "Vax",
+            "slug": "vax"
+          }
+        ],
+        "person": {
+          "name": "Horst Pudwill",
+          "role": "Founder and executive chairman",
+          "image": "/images/brands/tti/leader-horst-pudwill.webp"
+        }
+      },
+      {
+        "name": "Chervon",
+        "slug": "chervon",
+        "figure": {
+          "value": "USD 1.63bn",
+          "label": "2025 revenue"
+        },
+        "facts": [
+          "Hong Kong listed, stock code 2285",
+          "Founder Pan Longquan controls 50.92% of votes",
+          "Biggest US channel: Lowe's"
+        ],
+        "brands": [
+          {
+            "name": "EGO",
+            "slug": "ego-power-plus"
+          },
+          {
+            "name": "FLEX",
+            "slug": "flex"
+          },
+          {
+            "name": "SKIL",
+            "slug": "skil"
+          },
+          {
+            "name": "DEVON"
+          }
+        ],
+        "person": {
+          "name": "Pan Longquan",
+          "role": "Founder and chairman",
+          "image": "/images/brands/chervon/leader-pan-longquan.webp"
+        }
+      }
+    ],
+    "flows": [
+      {
+        "label": "Joe Galli",
+        "detail": "TTI CEO 2008–2024, Chervon CEO from 10 Sep 2026",
+        "image": "/images/brands/chervon/leader-joseph-galli.webp"
+      },
+      {
+        "label": "30+ TTI staff",
+        "detail": "Sales, supply chain, training, HR and recruiting leaders, 10 Sep to 3 Nov 2026"
+      },
+      {
+        "label": "Confidential data, TTI alleges",
+        "detail": "Store, sales and customer information and Milwaukee CFO slides, Jun 2025 to Feb 2026"
+      },
+      {
+        "label": "The lawsuit, 9 Nov 2026",
+        "detail": "TTI, Milwaukee and R&B sue Chervon and Galli in Chicago: 8 counts, damages and injunctions sought",
+        "tone": "legal"
+      }
+    ],
+    "footer": "Not the first fight: 8 cases and patent challenges since 2005. In Feb 2025 a Delaware jury found TTI had wilfully infringed five EGO mower patents and awarded Chervon USD 3.99m.",
+    "credit": "Allegations are from TTI's complaint and have not been tested in court. Photos: TTI Annual Reports 2018 (Galli) and 2025 (Pudwill); Jiangsu Development Conference, 2023 (Pan)."
   }
 }
