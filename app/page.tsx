@@ -15,6 +15,7 @@ import { daysUntil, upcomingRules } from "@/lib/radar/rules";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
+import { chineseOriginalLabel } from "@/lib/originalEdition";
 import { productCategoryLabel, type HubCategorySlug } from "@/lib/hubCategories";
 import { getAllHubCategoryData } from "@/lib/hubCategoryContent";
 import { getEditorialInsights, getLatestSeriesInsight } from "@/lib/insightCollections";
@@ -170,7 +171,7 @@ export default function HomePage() {
       href: `/blog/${article.slug}`,
       image: article.coverImage!,
       title: article.title,
-      meta: newsDate(article.sortDate || article.date)
+      meta: chineseOriginalLabel(article) || newsDate(article.sortDate || article.date)
     })),
     ...(latestFounderSeries
       ? [{
@@ -266,7 +267,7 @@ export default function HomePage() {
     if (!chosen) return undefined;
     if (chosen.type === "blog") {
       const article = articles.find((item) => item.slug === chosen.slug);
-      return article?.coverImage ? { href: `/blog/${article.slug}`, image: article.coverImage, kicker: `Analysis · ${newsDate(article.sortDate || article.date)}`, title: article.title, text: article.description } : undefined;
+      return article?.coverImage ? { href: `/blog/${article.slug}`, image: article.coverImage, kicker: `Analysis · ${chineseOriginalLabel(article) || newsDate(article.sortDate || article.date)}`, title: article.title, text: article.description } : undefined;
     }
     if (chosen.type === "topic") {
       const topic = topics.find((item) => item.slug === chosen.slug);

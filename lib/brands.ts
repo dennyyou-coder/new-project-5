@@ -99,6 +99,8 @@ export type BrandProfile = {
 };
 
 export type BrandTaggedArticle = {
+  originalLanguage?: string;
+  originalYear?: string;
   slug: string;
   title: string;
   excerpt: string;

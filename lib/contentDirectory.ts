@@ -19,7 +19,9 @@ export function toDirectoryArticle(article: Insight): DirectoryArticle {
     coverMobile: article.coverMobile,
     featured: article.featured,
     tags: article.tags,
-    seriesTitle: article.seriesTitle
+    seriesTitle: article.seriesTitle,
+    originalLanguage: article.originalLanguage,
+    originalYear: article.originalYear
   };
 }
 

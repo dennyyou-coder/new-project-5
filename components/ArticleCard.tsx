@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { responsiveImageProps } from "@/lib/articleImages";
 import type { Insight } from "@/lib/content";
+import { chineseOriginalLabel } from "@/lib/originalEdition";
 
 export function ArticleCard({ article }: { article: Insight }) {
   return (
@@ -16,7 +17,7 @@ export function ArticleCard({ article }: { article: Insight }) {
       </div>
       <div className="article-body">
         <div className="meta">
-          {article.category} / {article.date}
+          {article.category} / {chineseOriginalLabel(article) || article.date}
         </div>
         <h3>{article.title}</h3>
         <p>{article.excerpt}</p>
