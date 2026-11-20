@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CollectionSchema } from "@/components/seo/CollectionSchema";
 import Link from "next/link";
-import { getTopics, topicDate } from "@/lib/topics";
+import { getTopics, topicDate, topicImageSmall } from "@/lib/topics";
 
 export const metadata: Metadata = {
   title: { absolute: "Topics: Trade, Regulation and Market Shifts | World Clean Biz" },
@@ -28,6 +28,19 @@ export default function TopicsPage() {
           {topics.map((topic) => (
             <li key={topic.slug}>
               <Link href={`/topics/${topic.slug}`}>
+                {topic.coverImage ? (
+                  <img
+                    className="topic-index-cover"
+                    src={topicImageSmall(topic.coverImage)}
+                    srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1000w`}
+                    sizes="(max-width: 900px) calc(100vw - 32px), 540px"
+                    alt=""
+                    width={600}
+                    height={375}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : null}
                 <span className="topic-eyebrow">Updated {topicDate(topic.updated)}</span>
                 <strong>{topic.title}</strong>
                 <span>{topic.dek}</span>
