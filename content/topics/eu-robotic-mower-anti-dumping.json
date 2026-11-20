@@ -10,10 +10,10 @@
     "text": "Berlaymont building, European Commission headquarters, Brussels. Photo: Euro Pictures, CC BY 2.0",
     "url": "https://commons.wikimedia.org/wiki/File:Berlaymont_building_2022.jpg"
   },
-  "updated": "2026-11-07",
+  "updated": "2026-11-19",
   "status": {
-    "label": "Disclosure stage · decision due by 19 January 2027",
-    "text": "The European Commission sent its disclosure of essential facts to interested parties on 21 October 2026. Definitive duties, if any, must be decided by 19 January 2027. No measure has been published yet."
+    "label": "Final decision due by 19 January 2027 · UK case opened 18 November",
+    "text": "The European Commission sent its disclosure of essential facts on 21 October 2026, and the comment period has closed. Definitive duties, if any, must be decided by 19 January 2027. On 18 November the UK Trade Remedies Authority opened a separate investigation after a complaint from Husqvarna."
   },
   "summary": [
     "On 19 November 2025 the European Commission opened anti-dumping case AD745 into robotic lawn mowers originating in China, after a complaint lodged by Husqvarna Manufacturing CZ. The product scope covers electric robotic mowers that cut grass without direct human control, with or without charging stations and navigation equipment, and both boundary-wire and wire-free models.",
@@ -24,7 +24,7 @@
     "type": "bars",
     "title": "Proposed anti-dumping duty rates reported at disclosure",
     "unit": "%",
-    "note": "Reported by Motorist via Ideamower; not published by the European Commission and not confirmed. Final rates are due by 19 January 2027.",
+    "note": "Reported by Motorist and Leiphone from the confidential disclosure; not published by the European Commission. Final rates are due by 19 January 2027.",
     "rows": [
       {
         "label": "Mammotion",
@@ -55,28 +55,40 @@
     },
     {
       "label": "Complainant",
-      "value": "Husqvarna Manufacturing CZ"
+      "value": "Husqvarna Manufacturing CZ, for producers making more than 25% of EU output"
     },
     {
-      "label": "Scope",
-      "value": "Electric robotic lawn mowers from China, wired or wire-free, with or without docks and navigation equipment"
+      "label": "Product code",
+      "value": "CN ex 8433 11 10, TARIC 8433 11 10 10"
+    },
+    {
+      "label": "Investigation period",
+      "value": "1 Oct 2024 to 30 Sep 2025; injury examined from 1 Jan 2022"
     },
     {
       "label": "Registration",
-      "value": "Imports registered from 24 January 2026, allowing retroactive duties if legal conditions are met"
+      "value": "From 24 January 2026, for a nine-month term"
     },
     {
       "label": "Provisional duties",
-      "value": "None; the Commission continued the investigation in June 2026"
+      "value": "None; the Commission continued the investigation on 19 June 2026"
+    },
+    {
+      "label": "Proposed rates (reported)",
+      "value": "45.6% to 53.3% on the CIF border price"
     },
     {
       "label": "Decision deadline",
       "value": "19 January 2027 for definitive measures"
+    },
+    {
+      "label": "UK",
+      "value": "Separate Trade Remedies Authority case opened 18 November 2026"
     }
   ],
   "callout": {
     "title": "Reported duty rates at disclosure (unconfirmed)",
-    "text": "Trade publication Motorist, citing a Commission document dated 21 October 2026, reported proposed rates of 45.6% for Mammotion, 47% for other cooperating producers and 53.3% for Positec and other operators. The disclosure is confidential, the Commission has not published these figures, and final rates can change after parties comment.",
+    "text": "Trade publications citing the Commission's 21 October document report proposed rates of 45.6% for Mammotion, 53.3% for Positec, 47.0% for other cooperating producers and 53.3% for everyone else, charged on the CIF price at the EU border. The disclosure is confidential, the Commission has not published these figures, and final rates can change after parties comment.",
     "href": "https://ideamower.com/en/blogs/blog-1/robotic-mowers-possible-eu-duties-2027"
   },
   "timeline": [
@@ -110,6 +122,17 @@
       "href": "/news/husqvarna-eu-mower-disclosure-october-2026"
     },
     {
+      "date": "2026-11-05",
+      "title": "Comments on disclosure close",
+      "text": "The deadline for parties to answer the Commission's final disclosure, as listed in the EU trade defence register."
+    },
+    {
+      "date": "2026-11-18",
+      "title": "UK opens its own investigation",
+      "text": "The UK Trade Remedies Authority starts an anti-dumping investigation into Chinese robot lawn mowers after a complaint from Husqvarna.",
+      "href": "/news/uk-robot-lawn-mower-anti-dumping-investigation-november-2026"
+    },
+    {
       "date": "2027-01-19",
       "title": "Deadline for definitive measures",
       "text": "The statutory deadline for the Commission to decide on definitive anti-dumping duties."
@@ -118,7 +141,7 @@
   "questions": [
     {
       "q": "Are EU anti-dumping duties already being charged on Chinese robotic mowers?",
-      "a": "Not yet. No provisional duty was imposed, and as of early November 2026 no definitive measure had been published. Imports have, however, been registered since January 2026, so duties could in principle be applied retroactively to registered imports if the final decision and legal conditions allow it."
+      "a": "Not yet. No provisional duty was imposed, and as of 19 November 2026 no definitive measure had been published. Imports were registered from January 2026, but press accounts of the October disclosure say the Commission is not proposing to collect duties retroactively."
     },
     {
       "q": "Which products are covered?",
@@ -126,7 +149,7 @@
     },
     {
       "q": "How high could the duties be?",
-      "a": "The Commission has not published rates. A trade publication reported proposed rates between 45.6% and 53.3% from the October disclosure. Those figures are unconfirmed and can change before the final regulation."
+      "a": "The Commission has not published rates. Press accounts of the October disclosure report 45.6% for Mammotion, 53.3% for Positec, 47.0% for other cooperating producers and 53.3% for the rest, charged on the CIF border price. Those figures are unconfirmed and can change before the final regulation."
     },
     {
       "q": "Does production outside China avoid the duties?",
@@ -135,6 +158,22 @@
     {
       "q": "How does this connect to the US FCC restrictions?",
       "a": "They are separate measures. The EU case concerns pricing and origin, and only covers China. The US FCC Covered List concerns national security and covers robotic mowers produced anywhere outside the US. Together they squeeze China-made mowers in both of the category's largest markets at once."
+    },
+    {
+      "q": "Why are the reported rates close to 50%?",
+      "a": "Because the Commission found significant distortions in China's economy, it did not use Chinese costs to set a fair price. It built a normal value from costs in a representative country, reported to be Malaysia, and compared that with export prices to the EU. That method usually produces higher margins than a comparison with Chinese domestic prices."
+    },
+    {
+      "q": "Will duties be charged on mowers imported in 2026?",
+      "a": "Registration from 24 January 2026 made that legally possible, but press accounts of the disclosure say the Commission is not proposing retroactive collection. If that holds, duties start from the day after the definitive regulation is published."
+    },
+    {
+      "q": "Does the EU decision apply in the UK?",
+      "a": "No. The UK runs its own trade remedies system. The Trade Remedies Authority opened a separate investigation into Chinese robot lawn mowers on 18 November 2026 after a complaint from Husqvarna, with its own timetable and an extra economic interest test."
+    },
+    {
+      "q": "How much would a 47% duty add to a mower?",
+      "a": "The duty is charged on the customs value at the border, not the shop price. A mower entering the EU at €500 CIF would carry about €235 of anti-dumping duty at 47%, before regular customs duty and VAT."
     }
   ],
   "insights": [
@@ -147,6 +186,7 @@
     "robotic-lawn-mower-manufacturers-china"
   ],
   "news": [
+    "uk-robot-lawn-mower-anti-dumping-investigation-november-2026",
     "husqvarna-eu-mower-disclosure-october-2026",
     "eu-robot-mower-provisional-measures-june-2026",
     "eu-robotic-mower-import-registration-january-2026",
@@ -172,6 +212,335 @@
     {
       "title": "Ideamower: robotic mowers and possible EU duties (citing Motorist)",
       "url": "https://ideamower.com/en/blogs/blog-1/robotic-mowers-possible-eu-duties-2027"
+    },
+    {
+      "title": "EU trade defence register (TRON): AD745 case page",
+      "url": "https://tron.trade.ec.europa.eu/investigations/case-view?caseId=2830"
+    },
+    {
+      "title": "Leiphone via PEdaily: disclosure details, market share and representative country (Chinese)",
+      "url": "https://news.pedaily.cn/202611/571406.shtml"
+    },
+    {
+      "title": "UK Trade Remedies Authority: investigation into imported robot lawn mowers (18 November 2026)",
+      "url": "https://www.gov.uk/government/news/tra-investigates-imported-robot-lawn-mowers"
+    },
+    {
+      "title": "Husqvarna Group statement on the UK investigation (18 November 2026)",
+      "url": "https://www.husqvarnagroup.com/sites/husqvarna/files/pr/202611181295-1.pdf"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "what-next",
+      "title": "What to watch next",
+      "highlight": true,
+      "intro": "The investigation is in its final stretch. These are the steps between the disclosure and duties at the border, and the dates that matter for 2027 orders.",
+      "table": {
+        "layout": "cards",
+        "columns": [
+          "When",
+          "Step",
+          "What it means"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "5 Nov 2026",
+              "Comments on the disclosure closed",
+              "Producers, importers and Husqvarna answered the Commission's findings. Rates can still move, usually down for companies that win corrections."
+            ]
+          },
+          {
+            "cells": [
+              "3 Dec 2026",
+              "UK registration deadline",
+              "Companies that want a say in the UK case must register with the Trade Remedies Authority."
+            ]
+          },
+          {
+            "cells": [
+              "Dec 2026 to Jan 2027",
+              "EU member states vote",
+              "The Commission puts its draft regulation to the member-state trade defence committee before adopting it."
+            ]
+          },
+          {
+            "cells": [
+              "By 19 Jan 2027",
+              "Definitive regulation",
+              "If adopted, duties apply from the day after publication in the Official Journal, normally for five years."
+            ]
+          },
+          {
+            "cells": [
+              "Spring 2027",
+              "First season with duties",
+              "Dealer orders and retail prices for the 2027 season will show who absorbed the duty and who moved production."
+            ]
+          },
+          {
+            "cells": [
+              "After publication",
+              "Appeals and circumvention",
+              "Companies can challenge the regulation at the EU General Court. Shipments routed through other countries can be targeted by an anti-circumvention case."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "case-numbers",
+      "title": "The case in numbers",
+      "intro": "Figures from the Commission's published notices, and from press accounts of the confidential October disclosure. The disclosure figures are marked as reported.",
+      "facts": [
+        {
+          "label": "Complaint's dumping estimate",
+          "value": "21.4% to 57.4% (published in the registration regulation)"
+        },
+        {
+          "label": "Complaint's injury estimate",
+          "value": "Around 125% injury elimination level"
+        },
+        {
+          "label": "Representative country",
+          "value": "Malaysia (reported); Malaysia or Brazil were proposed at initiation"
+        },
+        {
+          "label": "Chinese companies that replied",
+          "value": "39 submitted questionnaires (reported)"
+        },
+        {
+          "label": "Chinese-made share of EU market",
+          "value": "From close to 50% in 2022 to 79.2% in the investigation period (reported)"
+        },
+        {
+          "label": "Husqvarna's EU share",
+          "value": "From a peak of about 70% to about 50% by 2025 (reported)"
+        },
+        {
+          "label": "Duty basis",
+          "value": "CIF price at the EU border, not the retail price"
+        },
+        {
+          "label": "Retroactive duties",
+          "value": "Reportedly not proposed, despite registration"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bars",
+          "title": "Chinese-made share of the EU robotic mower market",
+          "unit": "%",
+          "note": "2024–25 is the investigation period, Oct 2024 to Sep 2025. As reported by Leiphone from the Commission's disclosure; not published by the Commission.",
+          "rows": [
+            {
+              "label": "2022",
+              "segments": [
+                50
+              ],
+              "display": "≈50%"
+            },
+            {
+              "label": "2024–25",
+              "segments": [
+                79.2
+              ]
+            }
+          ]
+        },
+        {
+          "type": "bars",
+          "title": "Complaint estimate vs reported rates",
+          "unit": "%",
+          "note": "Complaint range from Regulation (EU) 2026/142. Company rates as reported from the October disclosure: Mammotion; other cooperating producers; Positec and all others.",
+          "rows": [
+            {
+              "label": "Complaint min",
+              "segments": [
+                21.4
+              ]
+            },
+            {
+              "label": "Mammotion",
+              "segments": [
+                45.6
+              ]
+            },
+            {
+              "label": "Cooperating",
+              "segments": [
+                47
+              ]
+            },
+            {
+              "label": "Positec, rest",
+              "segments": [
+                53.3
+              ]
+            },
+            {
+              "label": "Complaint max",
+              "segments": [
+                57.4
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-so-high",
+      "title": "Why the proposed rates are so high",
+      "intro": "The Commission found 'significant distortions' in China's economy, so it did not use Chinese prices and costs to work out a fair price. It built a normal value from costs in a representative third country, reported to be Malaysia, and compared that with export prices to the EU. Chinese exporters argue their EU prices are above their prices at home, but under these rules the test is the constructed value, not the Chinese domestic price. Sampled companies get their own rate; cooperating companies outside the sample get an average, and the residual rate for everyone else is usually set at the highest level found."
+    },
+    {
+      "id": "duty-maths",
+      "title": "What the duty adds per mower",
+      "intro": "Anti-dumping duty is charged on the customs value at the EU border (CIF), before regular customs duty and VAT. These examples show the extra cost per unit at the reported rates. They are illustrations, not quotes.",
+      "table": {
+        "columns": [
+          "CIF value per unit",
+          "At 45.6%",
+          "At 47.0%",
+          "At 53.3%"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "€300",
+              "€137",
+              "€141",
+              "€160"
+            ]
+          },
+          {
+            "cells": [
+              "€500",
+              "€228",
+              "€235",
+              "€267"
+            ]
+          },
+          {
+            "cells": [
+              "€800",
+              "€365",
+              "€376",
+              "€426"
+            ]
+          },
+          {
+            "cells": [
+              "€1,200",
+              "€547",
+              "€564",
+              "€640"
+            ]
+          }
+        ],
+        "note": "Rounded to the nearest euro. VAT is then charged on the duty-inclusive value, so the retail effect is larger than the duty alone."
+      }
+    },
+    {
+      "id": "who-is-exposed",
+      "title": "Who is exposed",
+      "intro": "Duties follow where a mower is made, not where the brand is based. The positions below come from company statements and press reports.",
+      "table": {
+        "layout": "cards",
+        "columns": [
+          "Company",
+          "Position",
+          "Exposure"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Husqvarna",
+              "Complainant",
+              "Its Czech unit filed the EU complaint and its UK business in Newton Aycliffe filed the UK one. Gains price protection in both markets if duties follow."
+            ],
+            "href": "/brands/husqvarna"
+          },
+          {
+            "cells": [
+              "Mammotion",
+              "Reported rate 45.6%",
+              "Lowest reported company rate. Sells LUBA and YUKA models across Europe."
+            ],
+            "href": "/brands/mammotion"
+          },
+          {
+            "cells": [
+              "Positec (Worx, Kress)",
+              "Reported rate 53.3%",
+              "Kress says much of its range is now made outside China; its Voyager and MasterSeries models are still China-made, Motorist reported."
+            ],
+            "href": "/brands/worx"
+          },
+          {
+            "cells": [
+              "Segway Navimow",
+              "Rate not reported",
+              "Ninebot told investors in June 2026 it has partly built a 'China plus overseas' supply chain and that the case could affect its business."
+            ],
+            "href": "/brands/segway-navimow"
+          },
+          {
+            "cells": [
+              "Other Chinese brands",
+              "47.0% or 53.3% (reported)",
+              "Cooperating companies outside the sample get 47.0%, others 53.3%. Which brands cooperated has not been published."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "uk-case",
+      "title": "The UK case",
+      "position": "after-timeline",
+      "intro": "The UK left the EU before this case began, so an EU duty does not apply at UK ports. Husqvarna has now started the same process in Britain.",
+      "facts": [
+        {
+          "label": "Opened",
+          "value": "18 November 2026 by the Trade Remedies Authority"
+        },
+        {
+          "label": "Applicant",
+          "value": "Husqvarna, from its site in Newton Aycliffe, County Durham"
+        },
+        {
+          "label": "Product",
+          "value": "Battery-powered autonomous robot lawn mowers from China"
+        },
+        {
+          "label": "Register to take part",
+          "value": "By 3 December 2026"
+        },
+        {
+          "label": "Extra test",
+          "value": "If dumping is found, the TRA also runs an economic interest test before recommending duties"
+        },
+        {
+          "label": "Link to the EU case",
+          "value": "Separate law and timetable; the EU decision is due by 19 January 2027"
+        }
+      ],
+      "links": [
+        {
+          "title": "TRA: investigation into imported robot lawn mowers",
+          "href": "https://www.gov.uk/government/news/tra-investigates-imported-robot-lawn-mowers"
+        },
+        {
+          "title": "Husqvarna Group statement on the UK investigation",
+          "href": "https://www.husqvarnagroup.com/sites/husqvarna/files/pr/202611181295-1.pdf"
+        }
+      ]
+    }
+  ],
+  "follow": {
+    "heading": "Follow the EU mower case",
+    "note": "Get an email when the EU publishes its decision, when duty rates are confirmed and when the UK case moves."
+  }
 }

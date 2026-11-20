@@ -97,6 +97,17 @@ export const newsStoryVisuals: Record<string, NewsVisual> = {
     "fit": "cover",
     "prepared": true
   },
+  "uk-robot-lawn-mower-anti-dumping-investigation-november-2026": {
+    "src": "/images/articles/uk-robot-lawn-mower-anti-dumping-investigation-november-2026/01-cover.webp",
+    "alt": "WCB topic card: UK opens mower case. Anti-dumping investigation into robot lawn mowers from China, 18 November 2026",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Trade: UK. Anti-dumping investigation into robot lawn mowers from China, 18 November 2026. Husqvarna logo: Husqvarna Group. Card: World Clean Biz.",
+    "sourceUrl": "https://www.gov.uk/government/news/tra-investigates-imported-robot-lawn-mowers",
+    "sourceLabel": "Story source: UK Trade Remedies Authority (November 18, 2026)",
+    "fit": "cover",
+    "prepared": true
+  },
   "fcc-robot-conditional-approvals-reach-17-november-2026": {
     "src": "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover.webp",
     "alt": "WCB topic card: 17 approved, one robot vacuum. Companies with FCC robot approvals as of 18 November 2026",

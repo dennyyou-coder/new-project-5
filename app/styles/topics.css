@@ -180,7 +180,10 @@
 .topic-table-link a { color: var(--accent); font-weight: 750; white-space: nowrap; }
 .topic-section-charts.is-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .topic-section-charts.is-pair .topic-chart { margin: 8px 0 0; }
-.topic-section-charts.is-pair .topic-chart-rows li { grid-template-columns: 64px minmax(0, 1fr) minmax(64px, auto); }
+.topic-section-charts.is-pair .topic-chart-rows li { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "label value" "track track"; gap: 6px 10px; }
+.topic-section-charts.is-pair .topic-chart-label { grid-area: label; }
+.topic-section-charts.is-pair .topic-chart-track { grid-area: track; }
+.topic-section-charts.is-pair .topic-chart-value { grid-area: value; text-align: right; }
 .topic-section-links { display: grid; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
 .topic-section-links a { color: var(--accent); font-size: 15px; font-weight: 700; }
 .topic-section-links a:hover { text-decoration: underline; }
