@@ -145,7 +145,9 @@ export default function HomePage() {
   const radarFilings = filings.filter((filing) => filing.type === "new").slice(0, 4);
   const radarRules = upcomingRules(now, 4);
   const topics = getTopics();
-  const runningStories = topics.slice(0, 4);
+  // Topics band: a pinned topic leads, then the rest by last update.
+  const bandTopics = [...topics].sort((a, b) => Number(Boolean(b.pinned)) - Number(Boolean(a.pinned))).slice(0, 5);
+  const [leadTopic, ...sideTopics] = bandTopics;
   const asOf = shortDate(now.toISOString().slice(0, 10));
 
   // One model from each product category: a key brand's newest 2026 model when there is one, else the newest.
@@ -158,8 +160,8 @@ export default function HomePage() {
     .filter((model, index, all) => all.findIndex((other) => other.category === model.category) === index)
     .slice(0, 6);
 
-  // From Denny: his newest analysis, the latest Founder's Journal episode and a video, as one row of cards.
-  const dennyAnalysis = editorial.filter((article) => article.coverImage).slice(0, latestFounderSeries ? 2 : 3);
+  // From Denny: his newest analysis leads; the next analyses, the latest Founder's Journal episode and a video are listed beside it.
+  const [dennyLead, ...dennyAnalysis] = editorial.filter((article) => article.coverImage).slice(0, latestFounderSeries ? 3 : 4);
   const dennyVideo = homeVideos[0];
   const dennyCards: { key: string; type: string; href: string; image: string; title: string; meta: string; video?: string }[] = [
     ...dennyAnalysis.map((article) => ({
@@ -378,7 +380,41 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      {/* News: a lead story, the week's list and the running stories. */}
+      {leadTopic ? (
+        <section className="ha-topics" id="topics" aria-labelledby="home-topics-title">
+          <div className="ha-wrap ha-stack">
+            <SectionHead id="home-topics-title" kicker="Topics" title="The stories WCB is following" more={{ href: "/topics", label: `All ${topics.length} topics` }} />
+            <div className="ha-topics-grid">
+              <Link className="ha-topic-lead" href={topicHref(leadTopic.slug)}>
+                {leadTopic.coverImage ? (
+                  <img src={leadTopic.coverImage} srcSet={`${topicImageSmall(leadTopic.coverImage)} 600w, ${leadTopic.coverImage} 1000w`} sizes="(max-width: 900px) calc(100vw - 32px), 720px" alt="" width={1000} height={625} loading="lazy" decoding="async" />
+                ) : null}
+                <span className="ha-topic-copy">
+                  {leadTopic.shortLabel ? <span className="ha-topic-label">{leadTopic.shortLabel}</span> : null}
+                  <span className="ha-topic-title">{leadTopic.title}</span>
+                  <span className="ha-topic-status"><strong>{leadTopic.status.label}</strong> {leadTopic.status.text}</span>
+                </span>
+              </Link>
+              <ul className="ha-topic-list">
+                {sideTopics.map((topic) => (
+                  <li key={topic.slug}>
+                    <Link href={topicHref(topic.slug)}>
+                      {topic.coverImage ? <img src={topicImageSmall(topic.coverImage)} alt="" width={600} height={375} loading="lazy" decoding="async" /> : null}
+                      <span className="ha-topic-copy">
+                        {topic.shortLabel ? <span className="ha-topic-label">{topic.shortLabel}</span> : null}
+                        <span className="ha-topic-title">{topic.title}</span>
+                        <span className="ha-topic-status">{topic.status.label}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* News: a lead story and the week's list. */}
       <section className="ha-section" id="news" aria-labelledby="home-feed-title">
         <div className="ha-wrap ha-stack">
           <SectionHead id="home-feed-title" kicker="News" title="Across the industry this week" more={{ href: "/news", label: "All news" }} />
@@ -420,25 +456,57 @@ export default function HomePage() {
               })}
             </ul>
 
-            {runningStories.length ? (
-              <div className="ha-running">
-                <p className="ha-label">Running stories</p>
-                <div className="ha-running-grid">
-                  {runningStories.map((topic) => (
-                    <Link key={topic.slug} href={topicHref(topic.slug)} className="ha-running-card">
-                      {topic.coverImage ? <img src={topicImageSmall(topic.coverImage)} alt="" width={84} height={56} loading="lazy" decoding="async" /> : null}
-                      <span>
-                        {topic.shortLabel ? <span className="ha-running-label">{topic.shortLabel}</span> : null}
-                        <span className="ha-running-title">{topic.title}</span>
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : null}
           </div>
         </div>
       </section>
+
+      {dennyLead ? (
+        <section className="ha-section ha-section--soft ha-analysis" id="analysis" aria-labelledby="home-denny-title">
+          <div className="ha-wrap ha-stack">
+            <SectionHead id="home-denny-title" kicker="Analysis" title="From Denny You" more={{ href: "/blog/archive", label: `All ${editorial.length} analyses` }} />
+            <div className="ha-denny">
+              <img src="/images/home/denny-you.webp" alt="Denny You" width={56} height={56} loading="lazy" decoding="async" />
+              <p>
+                <strong>Denny You (游丹尼)</strong> · Founder and editor of World Clean Biz. In the cleaning industry since 2006, writing about it since 2017.
+              </p>
+              <Link className="ha-more" href="/about">About Denny →</Link>
+            </div>
+            <div className="ha-analysis-grid">
+              <article className="ha-analysis-lead">
+                <Link className="ha-analysis-lead-image" href={`/blog/${dennyLead.slug}`} tabIndex={-1} aria-hidden="true">
+                  <img {...responsiveImageProps(dennyLead.coverImage!, "card")} alt="" />
+                </Link>
+                <p className="ha-card-type">Analysis · <time dateTime={dennyLead.sortDate || dennyLead.date}>{newsDate(dennyLead.sortDate || dennyLead.date)}</time>{dennyLead.readingTime ? ` · ${dennyLead.readingTime}` : ""}</p>
+                <h3><Link href={`/blog/${dennyLead.slug}`}>{dennyLead.title}</Link></h3>
+                {dennyLead.description ? <p className="ha-analysis-lead-text">{dennyLead.description}</p> : null}
+              </article>
+              <ul className="ha-analysis-list">
+                {dennyCards.map((card) => (
+                  <li key={card.key}>
+                    <Link href={card.href}>
+                      <span className={`ha-analysis-thumb${card.video ? " ha-card-image--video" : ""}`}>
+                        {card.video ? (
+                          <>
+                            <img src={card.image} alt="" loading="lazy" decoding="async" />
+                            <span className="ha-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z" /></svg></span>
+                          </>
+                        ) : (
+                          <img {...responsiveImageProps(card.image, "card")} alt="" />
+                        )}
+                      </span>
+                      <span className="ha-analysis-copy">
+                        <span className="ha-card-type">{card.type}</span>
+                        <span className="ha-analysis-title">{card.title}</span>
+                        <span className="ha-card-meta">{card.meta}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {expoUpcoming ? (
         <section className="ha-expo" id="expo" aria-labelledby="home-expo-title">
@@ -549,42 +617,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {dennyCards.length > 0 ? (
-        <section className="ha-section ha-section--tight" id="analysis" aria-labelledby="home-denny-title">
-          <div className="ha-wrap ha-stack">
-            <SectionHead id="home-denny-title" kicker="Analysis" title="From Denny You" more={{ href: "/blog/archive", label: `All ${editorial.length} analyses` }} />
-            <div className="ha-denny">
-              <img src="/images/home/denny-you.webp" alt="Denny You" width={56} height={56} loading="lazy" decoding="async" />
-              <p>
-                <strong>Denny You (游丹尼)</strong> · Founder and editor of World Clean Biz. In the cleaning industry since 2006, writing about it since 2017.
-              </p>
-              <Link className="ha-more" href="/about">About Denny →</Link>
-            </div>
-            <div className="ha-cards ha-cards--four">
-              {dennyCards.map((card) => (
-                <Link key={card.key} className="ha-card" href={card.href}>
-                  <span className={`ha-card-image${card.video ? " ha-card-image--video" : ""}`}>
-                    {card.video ? (
-                      <>
-                        <img src={card.image} alt="" loading="lazy" decoding="async" />
-                        <span className="ha-play" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z" /></svg></span>
-                        <span className="ha-duration">{card.video}</span>
-                      </>
-                    ) : (
-                      <img {...responsiveImageProps(card.image, "card")} alt="" />
-                    )}
-                  </span>
-                  <span className="ha-card-body">
-                    <span className="ha-card-type">{card.type}</span>
-                    <span className="ha-card-title">{card.title}</span>
-                    <span className="ha-card-meta">{card.meta}</span>
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
 
       {/* Directory: categories, companies, ownership and new products. */}
       <section className="ha-section ha-section--soft" id="directory" aria-labelledby="home-directory-title">
