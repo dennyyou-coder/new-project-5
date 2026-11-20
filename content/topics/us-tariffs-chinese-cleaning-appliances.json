@@ -10,10 +10,10 @@
     "text": "Card: World Clean Biz. Rates as of November 2026",
     "url": "https://worldcleanbiz.com/topics/us-tariffs-chinese-cleaning-appliances"
   },
-  "updated": "2026-11-08",
+  "updated": "2026-11-20",
   "status": {
     "label": "US–China truce runs to 10 January 2027",
-    "text": "IEEPA tariffs ended in February. Chinese-made vacuums now carry the 25% Section 301 duty plus a 12.5% Section 301 forced-labor duty in force since 24 July 2026. Some Section 301 exclusions are due to expire on 10 November."
+    "text": "IEEPA tariffs ended in February. Chinese-made vacuums now carry the 25% Section 301 duty plus a 12.5% Section 301 forced-labor duty in force since 24 July 2026. On 10 November USTR extended all 178 Section 301 exclusions to 9 January 2027, one day before the truce ends."
   },
   "summary": [
     "For a vacuum cleaner or robot vacuum made in China, the US tariff now comes almost entirely from Section 301 of the Trade Act. The ordinary duty on HTS heading 8508 is zero. The 2018–2019 Section 301 action adds 25% for Chinese-origin vacuums, and since 24 July 2026 a separate Section 301 forced-labor action adds 12.5%. Trade-law firms describe the new duty as stacking on top, which puts a typical Chinese-made robot vacuum at about 37.5% in additional duties, depending on its exact classification and any exclusion.",
@@ -152,8 +152,8 @@
     },
     {
       "date": "2026-11-10",
-      "title": "Section 301 exclusions due to expire",
-      "text": "The 178 remaining China exclusions lapse unless USTR extends them; no extension had been published as of 8 November."
+      "title": "Section 301 exclusions extended to 9 January",
+      "text": "USTR extends all 178 China exclusions, unchanged, through 11:59 pm ET on 9 January 2027, citing continuing talks with China. It made no commitment to extend them again."
     },
     {
       "date": "2027-01-10",
@@ -180,7 +180,7 @@
     },
     {
       "q": "What could change next?",
-      "a": "The 178 Section 301 exclusions are due to expire on 10 November 2026, the US–China truce runs to 10 January 2027, and the forced-labor duties and the Section 122 surcharge both face challenges at the Court of International Trade."
+      "a": "The 178 Section 301 exclusions now run to 9 January 2027 and the US–China truce to 10 January 2027, so both come up for decision in the same week. The forced-labor duties and the Section 122 surcharge also face challenges at the Court of International Trade."
     }
   ],
   "insights": [
@@ -227,6 +227,10 @@
     {
       "title": "CNBC: US–China trade truce extended, Bessent says (24 September 2026)",
       "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html"
+    },
+    {
+      "title": "USTR: Notice of Product Exclusion Extensions, China Section 301 (Federal Register 2026-22925, 10 November 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology"
     }
   ],
   "versus": {
