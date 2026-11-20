@@ -10,6 +10,18 @@ function SmartLink({ href, children }: { href: string; children: React.ReactNode
   );
 }
 
+/** Wraps content in a <details> fold when a summary is given. */
+function Fold({ summary, children }: { summary?: string; children: React.ReactNode }) {
+  return summary ? (
+    <details className="topic-fold">
+      <summary>{summary}</summary>
+      {children}
+    </details>
+  ) : (
+    <>{children}</>
+  );
+}
+
 /** An extra topic section: case box, table, charts side by side, links. */
 export function TopicSection({ section }: { section: TopicSectionData }) {
   const headingId = `topic-${section.id}`;
@@ -84,6 +96,52 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
         </div>
       ) : null}
 
+      {section.flow ? (
+        <div className="topic-flow">
+          <ol>
+            {section.flow.steps.map((step, index) => (
+              <li key={step.q}>
+                <div className="topic-flow-q">
+                  <span className="topic-flow-n">{index + 1}</span>
+                  <span>
+                    <strong>{step.q}</strong>
+                    {step.note ? <small>{step.note}</small> : null}
+                  </span>
+                </div>
+                <div className="topic-flow-out">
+                  <em>{step.exit === "yes" ? "Yes" : "No"}</em>
+                  <span>{step.out}</span>
+                </div>
+                <span className="topic-flow-next" aria-hidden="true">{step.exit === "yes" ? "No" : "Yes"}</span>
+              </li>
+            ))}
+          </ol>
+          <div className="topic-flow-result">
+            <strong>{section.flow.result.title}</strong>
+            <span>{section.flow.result.text}</span>
+          </div>
+          {section.flow.note ? <p className="topic-chart-note">{section.flow.note}</p> : null}
+        </div>
+      ) : null}
+
+      {section.groups?.length ? (
+        <div className="topic-groups">
+          {section.groups.map((group) => (
+            <div key={group.label} className={`topic-group${group.focus ? " is-focus" : ""}${group.items.length > 4 ? " is-wide" : ""}`}>
+              <p className="topic-group-head"><strong>{group.items.length}</strong>{group.label}</p>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={item.name}>
+                    {item.href ? <Link href={item.href}>{item.name}</Link> : <span>{item.name}</span>}
+                    {item.note ? <small>{item.note}</small> : null}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ) : null}
+
       {section.camps?.length ? (
         <div className="topic-camps">
           {section.camps.map((camp) => (
@@ -141,6 +199,7 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
       ) : null}
 
       {section.table ? (
+        <Fold summary={section.table.collapse}>
         <div className="topic-table-wrap">
           <table className={`topic-table${section.table.layout === "cards" ? " is-cards" : ""}${section.table.numbered ? " is-numbered" : ""}`}>
             <thead>
@@ -164,6 +223,7 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
           </table>
           {section.table.note ? <p className="topic-chart-note">{section.table.note}</p> : null}
         </div>
+        </Fold>
       ) : null}
 
 

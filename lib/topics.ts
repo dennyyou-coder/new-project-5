@@ -24,6 +24,27 @@ export type TopicChart =
    * Events on a shared year axis, one lane per side. An item with `end` is drawn as a span;
    * `n` is the number shown in the marker (matching a numbered table below).
    */
+  /** A running total that steps up on each date; `highlight` points get a label on the chart. */
+  | {
+      type: "cumulative";
+      title: string;
+      note?: string;
+      start: string;
+      end: string;
+      points: { date: string; count: number; label?: string; highlight?: boolean }[];
+      /** A short line shown big next to the title, e.g. "Chinese makers approved: 0". */
+      callout?: { value: string; label: string };
+    }
+  /** One dot per row on a date axis, with a vertical marker line; dots before the marker are shown in red. */
+  | {
+      type: "dots";
+      title: string;
+      note?: string;
+      start: string;
+      end: string;
+      marker: { date: string; label: string };
+      rows: { label: string; date: string; href?: string; note?: string }[];
+    }
   | {
       type: "lanes";
       title: string;
@@ -42,6 +63,8 @@ export type TopicTable = {
   layout?: "table" | "cards";
   /** Number the rows 1, 2, 3… so they can be matched to markers in a chart. */
   numbered?: boolean;
+  /** Fold the table behind this summary text, e.g. "Show the full list". */
+  collapse?: string;
 };
 
 /** A big number with a short label. */
@@ -57,6 +80,15 @@ export type TopicCampBrand = { name: string; slug?: string; tag?: string; made: 
 export type TopicCamp = { label: string; note?: string; tone?: "home" | "target"; brands: TopicCampBrand[] };
 /** One procedure shown as steps; `state` marks steps done, the current one and those ahead. */
 export type TopicProgress = { label: string; note?: string; steps: { date: string; label: string; state: "done" | "now" | "next" }[] };
+
+/** A yes/no check list read top to bottom; each step names the answer that takes a product out. */
+export type TopicFlow = {
+  steps: { q: string; exit: "yes" | "no"; out: string; note?: string }[];
+  result: { title: string; text: string };
+  note?: string;
+};
+/** Items sorted into labelled groups; `focus` groups are shown first and highlighted. */
+export type TopicGroup = { label: string; focus?: boolean; items: { name: string; href?: string; note?: string }[] };
 
 /**
  * An extra section of a topic page: key facts, a table, small charts side by side and links.
@@ -74,6 +106,8 @@ export type TopicSection = {
   facts?: TopicFact[];
   lineup?: TopicBrandSide[];
   camps?: TopicCamp[];
+  flow?: TopicFlow;
+  groups?: TopicGroup[];
   progress?: TopicProgress[];
   table?: TopicTable;
   charts?: TopicChart[];

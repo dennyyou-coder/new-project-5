@@ -10,7 +10,7 @@
     "text": "Card: World Clean Biz. Photo: FCC Chairman Brendan Carr, official portrait, 2025. Federal Communications Commission, public domain",
     "url": "https://commons.wikimedia.org/wiki/File:Brendan_Carr,_official_portrait_2025.jpg"
   },
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "status": {
     "label": "In force since 28 July 2026 · 17 producers approved",
     "text": "New foreign-produced advanced robotic devices cannot receive FCC equipment authorization unless the Department of War grants Conditional Approval. By 18 November 2026, 17 producers had been approved. Only two make cleaning or lawn products, Husqvarna and Matic; no Chinese robot vacuum or mower maker is among them."
@@ -21,75 +21,59 @@
     "The rule bites on the next product cycle rather than today's shelves. Models the FCC authorized before 28 July can still be imported and sold, and owners can keep using them. New models need Conditional Approval, which so far has gone only to producers with a US manufacturing or onshoring plan."
   ],
   "chart": {
-    "type": "bars",
-    "title": "Producers granted Conditional Approval, by date",
-    "note": "Each approval covers named models or product classes only. Previously authorized models of any brand can still be sold. Source: FCC Public Notice DA 26-1243, Covered List updated 18 November 2026.",
-    "rows": [
+    "type": "cumulative",
+    "title": "Producers granted Conditional Approval since the rule",
+    "start": "2026-07-28",
+    "end": "2026-11-30",
+    "callout": {
+      "value": "0",
+      "label": "Chinese robot vacuum or mower makers"
+    },
+    "points": [
       {
-        "label": "9 Sep",
-        "segments": [
-          1
-        ],
-        "display": "Husqvarna · 4 robotic mower platforms",
-        "href": "/brands/husqvarna"
+        "date": "2026-09-09",
+        "count": 1,
+        "label": "Husqvarna, the first approval",
+        "highlight": true
       },
       {
-        "label": "18 Sep",
-        "segments": [
-          1
-        ],
-        "display": "ANSCER · warehouse robots"
+        "date": "2026-09-18",
+        "count": 2
       },
       {
-        "label": "2 Oct",
-        "segments": [
-          1
-        ],
-        "display": "Matic · floor cleaner and dock"
+        "date": "2026-10-02",
+        "count": 3,
+        "label": "Matic, the only robot vacuum maker",
+        "highlight": true
       },
       {
-        "label": "16 Oct",
-        "segments": [
-          1
-        ],
-        "display": "Volley Automation · AGV/AMR"
+        "date": "2026-10-16",
+        "count": 4
       },
       {
-        "label": "21 Oct",
-        "segments": [
-          1
-        ],
-        "display": "Vulcan Robotics · mobile platform"
+        "date": "2026-10-21",
+        "count": 5
       },
       {
-        "label": "23 Oct",
-        "segments": [
-          2
-        ],
-        "display": "Haystack Robotics · T-Robotics (all AGVs)"
+        "date": "2026-10-23",
+        "count": 7
       },
       {
-        "label": "30 Oct",
-        "segments": [
-          6
-        ],
-        "display": "OMRON · ATI Motors · ARAPL · Lightberry · SunScout · Swap Robotics"
+        "date": "2026-10-30",
+        "count": 13,
+        "label": "Six approvals in one day",
+        "highlight": true
       },
       {
-        "label": "6 Nov",
-        "segments": [
-          2
-        ],
-        "display": "ABB Robotics · Pantograph"
+        "date": "2026-11-06",
+        "count": 15
       },
       {
-        "label": "18 Nov",
-        "segments": [
-          2
-        ],
-        "display": "Syncrobotic · Bluepath Robotics"
+        "date": "2026-11-18",
+        "count": 17
       }
-    ]
+    ],
+    "note": "Each approval covers named models or product classes only. Previously authorized models of any brand can still be sold. Source: FCC Public Notice DA 26-1243, Covered List updated 18 November 2026."
   },
   "keyFacts": [
     {
@@ -314,8 +298,8 @@
     },
     {
       "id": "what-is-covered",
-      "title": "What counts as an advanced robotic device",
-      "intro": "The category is set by what a robot does and where it is produced, not by the brand's nationality.",
+      "title": "Is my product covered?",
+      "intro": "Run a product through these questions from the top. It is covered only if it reaches the bottom. The test is what a robot does and where it is produced, not the brand's nationality.",
       "table": {
         "columns": [
           "Test",
@@ -359,13 +343,58 @@
             ]
           }
         ],
-        "note": "Summarized from the FCC fact sheet and Public Notice DA 26-786 (28 July 2026). The FCC has not ruled on consumer pool robots specifically."
+        "note": "Summarized from the FCC fact sheet and Public Notice DA 26-786 (28 July 2026). The FCC has not ruled on consumer pool robots specifically.",
+        "collapse": "Show the tests as a table"
+      },
+      "flow": {
+        "steps": [
+          {
+            "q": "Is it produced outside the United States?",
+            "exit": "no",
+            "out": "Made in the US",
+            "note": "Covered whether the brand is Chinese, American or European. Moving assembly to Vietnam, Malaysia or Mexico does not help."
+          },
+          {
+            "q": "Is it one of the excluded kinds?",
+            "exit": "yes",
+            "out": "Fixed industrial arms, medical robots, connected vehicles, drones (on their own list), rail vehicles, underwater vehicles",
+            "note": "The FCC has not ruled on consumer pool robots specifically."
+          },
+          {
+            "q": "Does it move over the ground on its own?",
+            "exit": "no",
+            "out": "Stick and handheld vacuums, push mowers",
+            "note": "Robot vacuums, robotic mowers and commercial floor-cleaning robots all do."
+          },
+          {
+            "q": "Does it navigate or avoid obstacles?",
+            "exit": "no",
+            "out": "Rare: almost every current cleaning robot navigates",
+            "note": "LiDAR, camera, RTK and vision navigation all qualify."
+          },
+          {
+            "q": "Does it carry environmental sensors and network connectivity?",
+            "exit": "no",
+            "out": "Rare among current models",
+            "note": "Wi-Fi, app control or cloud mapping: almost every current model."
+          },
+          {
+            "q": "Does it weigh more than about 2 kg (4.4 lb) with its dock?",
+            "exit": "no",
+            "out": "Small toy robots",
+            "note": "Nearly every robot vacuum with a base station is heavier."
+          }
+        ],
+        "result": {
+          "title": "Covered by the FCC rule",
+          "text": "A new model cannot get FCC equipment authorization without Conditional Approval. Models authorized before 28 July 2026 can still be imported and sold."
+        }
       }
     },
     {
       "id": "approvals",
-      "title": "All 17 approvals so far",
-      "intro": "Every foreign-produced robot the Department of War has cleared, newest first. All dates are 2026.",
+      "title": "Who has been approved so far",
+      "intro": "All 17 producers cleared by the Department of War, grouped by what they make. Cleaning and lawn care account for two of them. All dates are 2026.",
       "table": {
         "layout": "cards",
         "columns": [
@@ -514,7 +543,8 @@
             "href": "/news/husqvarna-fcc-mower-conditional-approval-september-2026"
           }
         ],
-        "note": "From the appendix to FCC Public Notice DA 26-1243, updated 18 November 2026. Approvals cover only the models named; T-Robotics' covers its whole AGV class."
+        "note": "From the appendix to FCC Public Notice DA 26-1243, updated 18 November 2026. Approvals cover only the models named; T-Robotics' covers its whole AGV class.",
+        "collapse": "Show the full list with dates and models"
       },
       "links": [
         {
@@ -524,6 +554,109 @@
         {
           "title": "FCC Covered List and Conditional Approvals",
           "href": "https://www.fcc.gov/supplychain/coveredlist"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Robotic mowing",
+          "focus": true,
+          "items": [
+            {
+              "name": "Husqvarna",
+              "note": "9 Sep · Automower 305V, 310V, 420V and 440V iQ",
+              "href": "/brands/husqvarna"
+            }
+          ]
+        },
+        {
+          "label": "Floor cleaning",
+          "focus": true,
+          "items": [
+            {
+              "name": "Matic Robots",
+              "note": "2 Oct · Robotic floor cleaner 4MA0001 and charging dock 4DK0008"
+            }
+          ]
+        },
+        {
+          "label": "Service and home robots",
+          "items": [
+            {
+              "name": "Lightberry",
+              "note": "30 Oct · Lumi interactive mobile robots"
+            },
+            {
+              "name": "Haystack Robotics",
+              "note": "23 Oct · Violet AI robotic device"
+            },
+            {
+              "name": "Vulcan Robotics",
+              "note": "21 Oct · Sourccey mobile robotic platform"
+            }
+          ]
+        },
+        {
+          "label": "Solar and outdoor sites",
+          "items": [
+            {
+              "name": "SunScout",
+              "note": "30 Oct · SunScout Eco, Pro and Promax platforms; Solar Shelter"
+            },
+            {
+              "name": "Swap Robotics",
+              "note": "30 Oct · V7 robot"
+            }
+          ]
+        },
+        {
+          "label": "Legged, humanoid and research",
+          "items": [
+            {
+              "name": "Syncrobotic",
+              "note": "18 Nov · \"Jeff\" and \"Adventure\" quadruped robotic platforms"
+            },
+            {
+              "name": "Pantograph Industries",
+              "note": "6 Nov · Pandroid robot hardware"
+            }
+          ]
+        },
+        {
+          "label": "Warehouse and factory",
+          "items": [
+            {
+              "name": "Bluepath Robotics",
+              "note": "18 Nov · O1000 platform AMR and OM1500 tunnel AMR"
+            },
+            {
+              "name": "ABB Robotics",
+              "note": "6 Nov · AMMR G0540 and G1240 mobile manipulators; P204V mobile robot"
+            },
+            {
+              "name": "ARAPL RaaS",
+              "note": "30 Oct · Maia2000 autonomous pallet truck; Atlas AC2000 counterbalance forklift"
+            },
+            {
+              "name": "ATI Motors",
+              "note": "30 Oct · Sherpa 3K and 10K, FlexFork 1500 and 3000, Sherpa Mecha"
+            },
+            {
+              "name": "OMRON",
+              "note": "30 Oct · LD-150 and LD-300 robotic platforms"
+            },
+            {
+              "name": "T-Robotics",
+              "note": "23 Oct · Entire product class of automated guided vehicles"
+            },
+            {
+              "name": "Volley Automation",
+              "note": "16 Oct · AGVs and AMRs"
+            },
+            {
+              "name": "ANSCER Robotics",
+              "note": "18 Sep · AR250, AR650 and AR1250 robotic platforms"
+            }
+          ]
         }
       ]
     },
@@ -702,12 +835,102 @@
             ]
           }
         ],
-        "note": "From WCB's FCC filings tracker (data to 10 November 2026). Dreame and Narwal file under other company names and are not yet matched."
+        "note": "From WCB's FCC filings tracker (data to 10 November 2026). Dreame and Narwal file under other company names and are not yet matched.",
+        "collapse": "Show the table"
       },
       "links": [
         {
           "title": "WCB launch radar: every tracked FCC filing",
           "href": "/launch-radar"
+        }
+      ],
+      "charts": [
+        {
+          "type": "dots",
+          "title": "Last FCC equipment grant for each robot maker WCB tracks",
+          "start": "2026-04-01",
+          "end": "2026-11-30",
+          "marker": {
+            "date": "2026-07-28",
+            "label": "Rule in force"
+          },
+          "rows": [
+            {
+              "label": "Aiper",
+              "date": "2026-11-09",
+              "href": "/brands/aiper",
+              "note": "Pool robots"
+            },
+            {
+              "label": "Brain Corp",
+              "date": "2026-09-16",
+              "note": "US company"
+            },
+            {
+              "label": "Husqvarna",
+              "date": "2026-08-17",
+              "href": "/brands/husqvarna",
+              "note": "Approved 9 Sep"
+            },
+            {
+              "label": "Dyson",
+              "date": "2026-08-05",
+              "href": "/brands/dyson",
+              "note": "May be non-robot"
+            },
+            {
+              "label": "Ecovacs",
+              "date": "2026-07-28",
+              "href": "/brands/ecovacs",
+              "note": "On the day"
+            },
+            {
+              "label": "Positec (Worx)",
+              "date": "2026-07-25",
+              "href": "/brands/worx"
+            },
+            {
+              "label": "Roborock",
+              "date": "2026-07-17",
+              "href": "/brands/roborock"
+            },
+            {
+              "label": "Pudu Robotics",
+              "date": "2026-07-09",
+              "href": "/brands/pudu-robotics"
+            },
+            {
+              "label": "Sunseeker",
+              "date": "2026-06-23",
+              "href": "/brands/sunseeker"
+            },
+            {
+              "label": "Mammotion",
+              "date": "2026-06-17",
+              "href": "/brands/mammotion"
+            },
+            {
+              "label": "Segway-Ninebot",
+              "date": "2026-06-05",
+              "href": "/brands/segway-navimow"
+            },
+            {
+              "label": "SharkNinja",
+              "date": "2026-06-05",
+              "href": "/brands/shark"
+            },
+            {
+              "label": "Keenon Robotics",
+              "date": "2026-05-22"
+            },
+            {
+              "label": "Wybotics (WYBOT)",
+              "date": "2026-04-16",
+              "href": "/brands/wybot",
+              "note": "Pool robots"
+            }
+          ],
+          "note": "A grant can be for any product, not only a robot. Pool robots work underwater, which the robot category excludes. Source: FCC Equipment Authorization System, checked by WCB to 18 November 2026."
         }
       ]
     }
