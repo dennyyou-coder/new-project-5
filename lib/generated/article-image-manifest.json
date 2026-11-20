@@ -2915,6 +2915,24 @@
         "outputHash": "sha256:d2999e0ab70ee0c093f8432e1ad676fb0d851702f5daf3be6ac023625a39cb7b"
       }
     },
+    "/images/articles/bissell-itc-337-investigation-against-tineco/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 48960,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:59e106b0c7c53bff9d45a7bc9237a7fffa3820a26dc9a684a0145140a1fb6340",
+      "outputHash": "sha256:c1f5d44d5f4b70393296644a31a9b406566875620849df6badc3ffd142d4970a",
+      "mobile": {
+        "src": "/images/articles/bissell-itc-337-investigation-against-tineco/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23642,
+        "outputHash": "sha256:438b2ed41675f5dbb3924eaf7660ef21b8bdaeac8bf048c7d725542e26b8cc31"
+      }
+    },
     "/images/articles/bissell-little-green-hydrosteam-vs-shark-stainstriker-hairpro/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -4194,6 +4212,82 @@
         "bytes": 81648,
         "outputHash": "sha256:40bd5e0d598abebdbe8a52a88bdf0f75cfdedbfc92d13e324f7e33100d9a7fcc"
       }
+    },
+    "/images/articles/china-premium-vacuum-brand-opportunity/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42182,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cf7920e54654d484f591ae088cb81333b659ee23d6d2d30339ce8313950068ac",
+      "outputHash": "sha256:a442630069370ac9f3688430ca7da295d9bd2d88985f21878d23049cc631870a",
+      "mobile": {
+        "src": "/images/articles/china-premium-vacuum-brand-opportunity/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20448,
+        "outputHash": "sha256:c5963a64456bc1ade8b90d7f70b4de5583567d49c5954a091642c27dc7eb16f5"
+      }
+    },
+    "/images/articles/china-premium-vacuum-brand-opportunity/02-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 923,
+      "height": 408,
+      "bytes": 50670,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bca2b8a42a8d1160c5383899e3f46f33879477ed5515c3f4e2189b8dbb557482",
+      "outputHash": "sha256:4b0e81c2a20da167f86750d804759d409539865ceba8327a3a173e451e3244c5",
+      "mobile": {
+        "src": "/images/articles/china-premium-vacuum-brand-opportunity/02-image-002-800.webp",
+        "width": 800,
+        "height": 354,
+        "bytes": 37796,
+        "outputHash": "sha256:a9223f62559efb6a83e1814a9ab8544877f66c620d33b702a6b74a32f3b96e8c"
+      }
+    },
+    "/images/articles/china-premium-vacuum-brand-opportunity/03-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 940,
+      "height": 403,
+      "bytes": 50776,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:830411a536d7c37b2d3209121d24332a310821ac00767e354b94e5c5301a2442",
+      "outputHash": "sha256:356cc1ca36fdce59c29ee827fa86d953d392e407925bdefd78834d1293d1882b",
+      "mobile": {
+        "src": "/images/articles/china-premium-vacuum-brand-opportunity/03-image-003-800.webp",
+        "width": 800,
+        "height": 343,
+        "bytes": 36612,
+        "outputHash": "sha256:b388c4857654db8fbb3151d97ff46397e37ce75e9c3c01f1695cbfd85ab5da2a"
+      }
+    },
+    "/images/articles/china-premium-vacuum-brand-opportunity/04-image-004.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 736,
+      "height": 394,
+      "bytes": 39406,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3974056d44a84922d9eb062e568db509c89a10976a71377fc23680fee0f906ca",
+      "outputHash": "sha256:eb6b07c08dc9c92ffbd43534d05b1983408b00aa4962d0705e861150a2eb1d4a"
+    },
+    "/images/articles/china-premium-vacuum-brand-opportunity/05-image-005.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 831,
+      "height": 442,
+      "bytes": 31450,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a48dd653f6aaba911645011ac2902ace8741a922fcbeb0b1a6c579fc8f423733",
+      "outputHash": "sha256:8184de16614b4cef61753e6adb0cfce58125446c5f4448159695c3006f0025fc"
     },
     "/images/articles/china-trade-in-funding-fully-allocated-september-2026/01-cover.webp": {
       "role": "cover",
@@ -5613,6 +5707,64 @@
       "quality": 84,
       "sourceHash": "sha256:eb2f78eab1e57c0ddea77752f0326ce26e4bf5949c4da3974ee889902fe75247",
       "outputHash": "sha256:043280e67f1766cf00711fc20d9c40830163cb6a80bdee974dba75d12d0aa30d"
+    },
+    "/images/articles/dji-enters-robot-vacuums/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39384,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:dc1a1376a5f3243e067b227b94c86ce5da2f5cc85a66e7dc11e377b547e16d2e",
+      "outputHash": "sha256:e197112dfd7d601762f5481513b5af825b60c7072356ba633a358562055aaa85",
+      "mobile": {
+        "src": "/images/articles/dji-enters-robot-vacuums/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19030,
+        "outputHash": "sha256:a4902ed5431387b2bff59d34aa6b86662e548dee203af334c69fb686e419b52c"
+      }
+    },
+    "/images/articles/dji-enters-robot-vacuums/02-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 642,
+      "height": 339,
+      "bytes": 19174,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:73f12b338c60e742c7127419150c44b250410a439318a8b7979030975eb4d535",
+      "outputHash": "sha256:4c4f6e8de9a4b56e9020c7731f48e14bd999633a633e59328405e18cb567c4f7"
+    },
+    "/images/articles/dji-enters-robot-vacuums/03-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 259,
+      "height": 188,
+      "bytes": 9798,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:17f53aafe762120fdc6009ae239657818669eedffdfa47d84059b67de44ca55e",
+      "outputHash": "sha256:3879a0c60c2820b0bade42110c36a8deb41d04fcf6e8e0cb2321949978eeed69"
+    },
+    "/images/articles/dji-enters-robot-vacuums/04-image-004.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1018,
+      "height": 554,
+      "bytes": 35480,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a7eaed1e969a68373dd1bbf17e7e1314ff1e1d7fb0db99a532c7884be3bbfc7d",
+      "outputHash": "sha256:3c02853d6e73ab7d73b3eabd649b021fa23d5db2ac469a7e819dc984568e2fa2",
+      "mobile": {
+        "src": "/images/articles/dji-enters-robot-vacuums/04-image-004-800.webp",
+        "width": 800,
+        "height": 435,
+        "bytes": 23134,
+        "outputHash": "sha256:4a465fc0c4efd1f57db61ef0a5a4d6a1339de3246ecd948ea5a1b7265db4fefd"
+      }
     },
     "/images/articles/dji-goes-to-the-ground-dreame-and-insta360-go-to-the-sky/01-cover.webp": {
       "role": "cover",
@@ -13046,6 +13198,35 @@
         "outputHash": "sha256:aeefcce15c5ea3fafd029d7faed2cf8f0af9753ffa370c8612abcd853974622a"
       }
     },
+    "/images/articles/hard-floor-washers-have-no-profit/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42098,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1189b167f7b6637854ea42edae2b3a47d01c891c1ebe4549f576f39115e7c3b9",
+      "outputHash": "sha256:6127f2a1162d9d894a84e947de041103384d0c434b9346075f85949c99ab0143",
+      "mobile": {
+        "src": "/images/articles/hard-floor-washers-have-no-profit/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20002,
+        "outputHash": "sha256:e06625824756f95e4de93f7b0445bb325f06bd985533ebd9db6319156122eb80"
+      }
+    },
+    "/images/articles/hard-floor-washers-have-no-profit/02-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 891,
+      "height": 322,
+      "bytes": 26330,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e6f0c24a40461d0e573571dd6242b9828b4506ba0bf3a5b163176754d81fb53c",
+      "outputHash": "sha256:e8fc76711c6982031cf3fe869703251da1d1e02061db478a741350bfaa64aba6"
+    },
     "/images/articles/hayward-jared-arrowood-accounting-officer-october-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -13128,6 +13309,46 @@
       "quality": 84,
       "sourceHash": "sha256:8ade3f31560467da617edbc103b8bbc63885ece111f2bf994e5b822cc9a0b369",
       "outputHash": "sha256:24ef278f24fac1648f37bf787543663349364671acec27ae367a911987c3a370"
+    },
+    "/images/articles/hidden-risks-in-cordless-vacuum-development/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44716,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:15497a89837f42a5a12ae740a2a49e782d23bcc2a12c7a8541561effbe0215f5",
+      "outputHash": "sha256:fe017fdd16e25c5e469edb63d5de64a37b926327e43c8edc77d55dd0a3745711",
+      "mobile": {
+        "src": "/images/articles/hidden-risks-in-cordless-vacuum-development/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21514,
+        "outputHash": "sha256:64563ac98e8a151e870297079706f38d58373f340e7f83a2d86937be8e05f742"
+      }
+    },
+    "/images/articles/hidden-risks-in-cordless-vacuum-development/02-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 682,
+      "height": 335,
+      "bytes": 30010,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0c702ea1aee841d22e70a9f29bebb145ee0465c39647b014924a696f5e328d8f",
+      "outputHash": "sha256:e1eeb81d8750b95e7931acb845b9427a2a27556c1debc8eda0d35ab2472ccc51"
+    },
+    "/images/articles/hidden-risks-in-cordless-vacuum-development/03-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 650,
+      "height": 446,
+      "bytes": 46290,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:83021f879544778b5010674c08aa242d7ad703df64dfe49a354086b1e2e3fcf5",
+      "outputHash": "sha256:6e2ba97790ed2c8600725aad49430cfdaa5bb85bf1439025042d30560abbd6ae"
     },
     "/images/articles/hilti-annual-results-march-2026/01-cover.webp": {
       "role": "cover",
@@ -15435,6 +15656,97 @@
         "bytes": 15864,
         "outputHash": "sha256:00989e8a223a4e102073e77681bc9d70d50f1bab54fc665ae6d7d8c8a64bf3f8"
       }
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45576,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:20c04f93c83bed955fb6851d1e7bb7f17427d7d59df01c79f2d2ed0f1ac46a05",
+      "outputHash": "sha256:4a8fc3613a6bcf303731dc23b2881314b4cd608ad75e836f2909745a8c4757af",
+      "mobile": {
+        "src": "/images/articles/is-kingclean-mojie-a-good-product/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21956,
+        "outputHash": "sha256:5555f9ab1c5d12eb997961d39497e3c2149019c69e854068b66d8350efb99431"
+      }
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/02-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 625,
+      "height": 266,
+      "bytes": 45130,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d26a014911a5f3863556ad6b569bfb025243d38267e639eaf38a368c9f536dc8",
+      "outputHash": "sha256:1c5b544b4dcc46deb42fd31f1e4320fa943edbe2137f03f2023d0f008361657e"
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/03-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1007,
+      "height": 274,
+      "bytes": 35974,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:372002ef995ab026cc8d0a32efb609281e22bba2d751a3a3cda994cf3f37b582",
+      "outputHash": "sha256:41d5d117b42aab7f4f09bfe9eec2639f14cb5be146258e5f215f249866d812b5",
+      "mobile": {
+        "src": "/images/articles/is-kingclean-mojie-a-good-product/03-image-003-800.webp",
+        "width": 800,
+        "height": 218,
+        "bytes": 24302,
+        "outputHash": "sha256:be862d674177c858f6b3d4522c1118b46ddbaaf9198be894348e4232bdb8ea5b"
+      }
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/04-image-004.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 742,
+      "height": 473,
+      "bytes": 32070,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:116181e3afb8a75fda26fcef9012b11f6133032c5fd98e474d532bb194217ef8",
+      "outputHash": "sha256:f16700840bd8d2653f37c30af488492b37f8ab926ddc8416911757533cff991c"
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/05-image-005.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 341,
+      "height": 430,
+      "bytes": 20136,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7b5c0eb2662dda9e6121b8613290454596cc324b5869c27023f8c1aae5bf577a",
+      "outputHash": "sha256:b7b3170ccccaf1ff253dd181cac42ddf4904b6f05543cb4736bed5d5ad88358c"
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/06-image-006.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 762,
+      "height": 506,
+      "bytes": 26562,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bb59ec719cf7317c467e8ad507b37a9f2fd4a2a2307313e1039a65d1eacce343",
+      "outputHash": "sha256:374706630cb7fa2eb7b44a2d79eed5f82d406a5aee399ae63ebf38261fefc55f"
+    },
+    "/images/articles/is-kingclean-mojie-a-good-product/07-image-007.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 766,
+      "height": 296,
+      "bytes": 16960,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:343eb8f63f5ef1cf35994e362bbdcb1e766ee95ff60e6d38fd0f3709022c0a92",
+      "outputHash": "sha256:36eb46f41b5740c8011cfc0eb25e6c6af4f586330a21fab47d8f61c13ed163a6"
     },
     "/images/articles/is-roborock-owned-by-xiaomi/01-cover.webp": {
       "role": "cover",
@@ -22251,6 +22563,115 @@
         "outputHash": "sha256:998d80d447711d6fab04011d6af8375ac4dde69728eb6a5749a596146fb2699b"
       }
     },
+    "/images/articles/robot-vacuum-industry-at-crossroads/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39502,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f56b3d99b40f0ad6427cb709bb63116bc22736a556f2bf715d013c2f81b86343",
+      "outputHash": "sha256:23fbcfabc25e5089890a66436ed5924cc75c5c44c17f0c826f24a6fd941e3902",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-industry-at-crossroads/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19146,
+        "outputHash": "sha256:027605847c0d313912e315a05a6401fa351f6cf6f0a19ce74cdd0e74eac04ec9"
+      }
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/02-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 893,
+      "height": 486,
+      "bytes": 22050,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a44529c000c91610fc20b86be98a91fc3f5357bf170eeaa326eb43dbbee7ed66",
+      "outputHash": "sha256:d39a6c37d2ee9d26efc176dc79b4c4d0a7edb6090bb36df2010fd51072cb4d73"
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/03-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 640,
+      "height": 427,
+      "bytes": 20328,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ae97affca616ffbcd52c509fc26f8a355804a83c693c27a8c97ef5a1c7cdea15",
+      "outputHash": "sha256:08785dfe9fcaef2f301c0fe3a6a022862e8187fa9591660c8126c970c2f2b567"
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/04-image-004.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 750,
+      "height": 1223,
+      "bytes": 49086,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9214fa28c5ffb0e822104f5cdd302f0e78e30fa7e06a555793910a71ad3ff3dd",
+      "outputHash": "sha256:14334308f8fd6b9eb78385eb9a4b2489d3687c0cba810fb9f5ce663775b12996",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-industry-at-crossroads/04-image-004-800.webp",
+        "width": 491,
+        "height": 800,
+        "bytes": 23900,
+        "outputHash": "sha256:ec8ffade27fcf51006c7a1bc652c361815939ea2f0f4bab25b659df9993848b6"
+      }
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/05-image-005.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 298,
+      "height": 363,
+      "bytes": 6570,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dab075d1df4316093496ad5d6d233b0d3861f1c36c37d4697e993733edf91da0",
+      "outputHash": "sha256:46a190c736498017861f1d7a4dcc5c71d26fb03538d3d28f2e76b58c66f4be1d"
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/06-image-006.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1024,
+      "height": 549,
+      "bytes": 48712,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:89098de467cb7bdd055bfe38f05b8a5d33c52dae228bab9b9d349a10a94ef5a2",
+      "outputHash": "sha256:051add50cdc6f92d4d71b1f50eced2275f931cbfa21122e9a2ffff676c460a31",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-industry-at-crossroads/06-image-006-800.webp",
+        "width": 800,
+        "height": 429,
+        "bytes": 32864,
+        "outputHash": "sha256:84682150607a6b7bce4bcd8473794ebeeffecb207edd1a3ddb36b2edf9474891"
+      }
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/07-image-007.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 792,
+      "height": 551,
+      "bytes": 27772,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0a1db618b9d185b7ad2aa5cbc6d2fc0c9b1a245260b7b86949d31221d724dd70",
+      "outputHash": "sha256:6b9ff569f3d6bbf6eb68c82c005c10c373fe881f6bf4a2e361ffcb833123a3d7"
+    },
+    "/images/articles/robot-vacuum-industry-at-crossroads/08-image-008.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 338,
+      "bytes": 13704,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:433474b8197956d78be4a386ec03d10a03aa69b24a5a70a47a1ee70686795900",
+      "outputHash": "sha256:5b4ed33cd826ec0822399a68bf66edd65dbfcc55e3eef0fca84ba771467e6957"
+    },
     "/images/articles/robot-vacuum-industry-faces-dji-wang-tao/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25707,6 +26128,53 @@
         "outputHash": "sha256:48995e15f38362a13b6d4d30e9b8c5d9ffb183421e31b369314a2038591849b9"
       }
     },
+    "/images/articles/trump-return-and-end-of-trade-war/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35476,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ca9c687ff960715b399524f40199896cd1838294ef24a1bedc124c081d503742",
+      "outputHash": "sha256:e5a8a21db1d87e9e4e21b63fea156d47e9387c3d66319e25f52cfc1f8df84d51",
+      "mobile": {
+        "src": "/images/articles/trump-return-and-end-of-trade-war/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17702,
+        "outputHash": "sha256:6fbce27f8be72b947cb1d897e503a549e21f5317c577a9e9096d1895bead733b"
+      }
+    },
+    "/images/articles/trump-return-and-end-of-trade-war/02-image-001.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 457,
+      "height": 312,
+      "bytes": 24986,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dd878e405c03eeb8bab2092eb6fd1ed8b490bfb4569c0ff824545b17bfc512b7",
+      "outputHash": "sha256:9b726fdcf9fe3cebd3da3b0dff53c59944c6ac469bc31f2d1487d8e110f8188c"
+    },
+    "/images/articles/trump-return-and-end-of-trade-war/03-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 58834,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1493c8e4667d068ff2a624f310b9443a88e639d6658f4123c262dbc07e01003e",
+      "outputHash": "sha256:5fb2b508635b9983f3e2b079d84552aa933b671e000accde535832e3e5ad3d95",
+      "mobile": {
+        "src": "/images/articles/trump-return-and-end-of-trade-war/03-image-003-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24824,
+        "outputHash": "sha256:004316a416b2a7ca26828bcdaedabc8add487957f90fba79cb47283b5e529a11"
+      }
+    },
     "/images/articles/tti-2019-interim-report/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -27185,6 +27653,24 @@
         "outputHash": "sha256:5a2daa8735ba3a281fe8d306246a6e1198319a24d757fc915414228a94316c6b"
       }
     },
+    "/images/articles/vacuum-industry-2018-review-2019-outlook/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45088,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:13c6b38ae3e5e750a75ae86017f387c62342ff49addafa0333126762c2136424",
+      "outputHash": "sha256:8fcb82d00cbcecad1a316139fa1a9651c4c31ee953e645966bdbff225bf24561",
+      "mobile": {
+        "src": "/images/articles/vacuum-industry-2018-review-2019-outlook/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23162,
+        "outputHash": "sha256:0c48e80c15014bea6e6023b41eda53c89d3e215e2cc3c2975bebf14ccf9869a7"
+      }
+    },
     "/images/articles/versuni-dreame-mira-mop-patent-dispute/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -27778,6 +28264,86 @@
         "bytes": 20750,
         "outputHash": "sha256:b227e3b239f90f0ed0ef547d7c1da2b9a0ac7c64372f580bce260f28c94b3188"
       }
+    },
+    "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43714,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3b517ad5f9b2c502c8daa85456d08deae803f68c000818d4ad919f7b71900921",
+      "outputHash": "sha256:6209bbeb2435b6aacae8e9688339dc41e16925afad7055500f3511cc33d7b1cc",
+      "mobile": {
+        "src": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21208,
+        "outputHash": "sha256:a64e30c31b6bac0d1eaff9d4a65740f4d57ddee65eb912ae2c6a1184e03b273b"
+      }
+    },
+    "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/02-image-006.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60308,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5870067ef03c603b8bd50d8e140409406344f3422be8c1b84d39d801b12c1681",
+      "outputHash": "sha256:c23f8dd5327b2d4727a42739cfb0bd38d3f678b4c16be26bafb2546b48853560",
+      "mobile": {
+        "src": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/02-image-006-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25138,
+        "outputHash": "sha256:fe566296037d9a5aae5ec06f76ae7aa6081e826277cca0c28394a7a1254c704c"
+      }
+    },
+    "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/03-image-002.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 692,
+      "height": 242,
+      "bytes": 18188,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38d84aa45d1aeba2ddf80ea53de1f2f0ef06e97bff708fa48f5d82b8ffa9c2b0",
+      "outputHash": "sha256:1d9a067b978ccce7ea8302f388b70c1d089897dcfc0cbc9bd6356542ad36592b"
+    },
+    "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/04-image-003.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 597,
+      "height": 149,
+      "bytes": 10574,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0043f4a0822bb0aa347b35061c2a57bbfd87d1da4d4dc8ebe3010acb300176be",
+      "outputHash": "sha256:450aba6515a0d4844448de4090f693c26eef71a2271f44ea9cd0cf7b3fa44e8d"
+    },
+    "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/05-image-004.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 620,
+      "height": 318,
+      "bytes": 27866,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5e00dd3614ecc5f389888dcf4d3b7fc8355bffe2ec10c51dd0cbb62bfff7f15c",
+      "outputHash": "sha256:d4da8f9963db1dcf32a9d226ec2643523f72cfd7d464b1e35af9e3ce9da2ec1b"
+    },
+    "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/06-image-005.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 632,
+      "height": 349,
+      "bytes": 20616,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ecf0d08a30f596528ea7ad3a3937cde9409e7ebe77941f6c3889bbe7a649b0f7",
+      "outputHash": "sha256:d1de53a0f8f52703b304da54345c6b315479817aef757689cbb381351fdaf02e"
     },
     "/images/articles/who-makes-aquabot-pool-cleaners-bwt-aquatron/01-cover.webp": {
       "role": "cover",
@@ -31815,6 +32381,24 @@
         "height": 450,
         "bytes": 20624,
         "outputHash": "sha256:17da9b1bb6cffd8004f430c457c623c77fcd96f33963936caf919b8936bc6ab3"
+      }
+    },
+    "/images/articles/xiaomi-ecosystem-at-a-crossroads/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 46860,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:97a6adb29db7c7acd6189e09987081b1f273ca24a41164c20732453d0367da33",
+      "outputHash": "sha256:979fd2384d4a578e76b6afa443d0b5fedcdeb5a83dc731683edec7d0e828a24b",
+      "mobile": {
+        "src": "/images/articles/xiaomi-ecosystem-at-a-crossroads/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22642,
+        "outputHash": "sha256:a1b25d87cb68a07a628ecba74b7461a82f2839b30de0046d242283ba6b0aa927"
       }
     },
     "/images/blog/above-ground-vs-in-ground-pool-robots.webp": {
@@ -38426,24 +39010,6 @@
       "sourceHash": "sha256:2915380a4dee1f356ddaf011ef8046036705120b362195e3bf55e61d9d5467ab",
       "outputHash": "sha256:759ef778cd7d0e0b009962e45d0088854dd2a67522cdc7dcaffc94e390ba4658"
     },
-    "/images/insights/bissell-vs-tineco-patent-details-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 943,
-      "height": 529,
-      "bytes": 41304,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:69d42fbf4de5eacacf44cd2e80c72f7fb960201f1b96155fc5890003e817bcbd",
-      "outputHash": "sha256:58ae936d9a9cb2dc2e0887fe51e4151b944e8caac8a5615f8dad81b5cca62d4d",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-cover-800.webp",
-        "width": 800,
-        "height": 449,
-        "bytes": 24434,
-        "outputHash": "sha256:ca75f0499556d4d88d0e6066e30baa7a56605aeec80b8393714ff349108def22"
-      }
-    },
     "/images/insights/casual-gossip-on-dji-robot-vacuum-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -39326,82 +39892,6 @@
         "outputHash": "sha256:383c6367d33ab2ba44b015161c900541c162837f2723125d4b3740f546111e69"
       }
     },
-    "/images/insights/china-premium-vacuum-brand-opportunity-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 746,
-      "height": 392,
-      "bytes": 53156,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:b9211bb616ee7da27049366cf7e2def1e86babbcc4c3194a913daf3e4b3cb360",
-      "outputHash": "sha256:aa5e78df25e272c2e99abd49ce14b8963e2d4b2eceec26e221ea942d70cd5d0f"
-    },
-    "/images/insights/china-premium-vacuum-brand-opportunity-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 923,
-      "height": 408,
-      "bytes": 67897,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:7674f9a365742ad1faba1203b4994dc52571f8e7a427948f9184f1f40c7a39a2",
-      "outputHash": "sha256:bca2b8a42a8d1160c5383899e3f46f33879477ed5515c3f4e2189b8dbb557482",
-      "mobile": {
-        "src": "/images/insights/china-premium-vacuum-brand-opportunity-image-002-800.webp",
-        "width": 800,
-        "height": 354,
-        "bytes": 39244,
-        "outputHash": "sha256:8c4939aa2e8942b846a6a0aed9c89081edc59a4619dd211ca8c03fc9d34fcc1c"
-      }
-    },
-    "/images/insights/china-premium-vacuum-brand-opportunity-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 940,
-      "height": 403,
-      "bytes": 69481,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:8819b0079f3a6c748e7d0515b58042079434d069ebd3d4ab7fc4147929d0a66f",
-      "outputHash": "sha256:830411a536d7c37b2d3209121d24332a310821ac00767e354b94e5c5301a2442",
-      "mobile": {
-        "src": "/images/insights/china-premium-vacuum-brand-opportunity-image-003-800.webp",
-        "width": 800,
-        "height": 343,
-        "bytes": 38480,
-        "outputHash": "sha256:b50c7e40965e696238906e878ff2609e1d3fb77a95b70be64ec5d67766ff07ad"
-      }
-    },
-    "/images/insights/china-premium-vacuum-brand-opportunity-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 736,
-      "height": 394,
-      "bytes": 51496,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:3e7946c2662722105954bba9c9b92e665bfd399905dd336ff22863cc3b5476cf",
-      "outputHash": "sha256:3974056d44a84922d9eb062e568db509c89a10976a71377fc23680fee0f906ca"
-    },
-    "/images/insights/china-premium-vacuum-brand-opportunity-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 831,
-      "height": 442,
-      "bytes": 41814,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:100ae09bc74761d562edec4b92351c2ceacec9f305aec4a61a5f388b60faead9",
-      "outputHash": "sha256:a48dd653f6aaba911645011ac2902ace8741a922fcbeb0b1a6c579fc8f423733",
-      "mobile": {
-        "src": "/images/insights/china-premium-vacuum-brand-opportunity-image-005-800.webp",
-        "width": 800,
-        "height": 426,
-        "bytes": 30326,
-        "outputHash": "sha256:d8b6b4b4038b43af11800d3c7e334e2cb3ab8e44b647d8a07a420c76531fc5e8"
-      }
-    },
     "/images/insights/china-us-trade-war-pause-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -39688,57 +40178,6 @@
         "outputHash": "sha256:ac7fa66de5565fdf27b387a690e2e5fed7f7ee1660f4004aa6074fd4afb077e2"
       }
     },
-    "/images/insights/dji-enters-robot-vacuums-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 700,
-      "height": 610,
-      "bytes": 49009,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:a65c2c34131c7cab9ea3cfa513c4530bec5c701af2d419ca4bc355cdb4b3b9b3",
-      "outputHash": "sha256:691ea53723308629e13f726007083b9ba2a845c03333e00297d259325267c0b8"
-    },
-    "/images/insights/dji-enters-robot-vacuums-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 642,
-      "height": 339,
-      "bytes": 25138,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:65266ce50a88bd26a4dcd91f89652bf0edbc81a1d4d23d2e30ea718f11501040",
-      "outputHash": "sha256:73f12b338c60e742c7127419150c44b250410a439318a8b7979030975eb4d535"
-    },
-    "/images/insights/dji-enters-robot-vacuums-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 259,
-      "height": 188,
-      "bytes": 12040,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e7d602fa2d8de7d4d644bd4dfced66a26ade5a0d5415175e41ebe02a7d69c5ac",
-      "outputHash": "sha256:17f53aafe762120fdc6009ae239657818669eedffdfa47d84059b67de44ca55e"
-    },
-    "/images/insights/dji-enters-robot-vacuums-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1018,
-      "height": 554,
-      "bytes": 48423,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:5a276547fc271def18dab3cd8a3c005f694b7d00201733dbdd5ae4ec0dfa8f0e",
-      "outputHash": "sha256:a7eaed1e969a68373dd1bbf17e7e1314ff1e1d7fb0db99a532c7884be3bbfc7d",
-      "mobile": {
-        "src": "/images/insights/dji-enters-robot-vacuums-image-004-800.webp",
-        "width": 800,
-        "height": 435,
-        "bytes": 23592,
-        "outputHash": "sha256:f4fcda820a4fd3a9f707923ced00a9d821938c236304ff1fe5dc89c28ee70a1a"
-      }
-    },
     "/images/insights/dji-is-running-out-of-time-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -40010,82 +40449,6 @@
         "bytes": 23750,
         "outputHash": "sha256:d0a8ce6fc1911b82ba8c9650f6ddbbf21d43629fe4a63ef75d02b11bad0de195"
       }
-    },
-    "/images/insights/hard-floor-washers-have-no-profit-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 86637,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:7e536d21b1908f2a294ca97d020a6c5e72e5c4bd451f13a2be7cdd7fa8ddf1dd",
-      "outputHash": "sha256:4882ba002d101e2512d75dbe704f0acfbf275f2abbf0f4b289a9ff0c89a67d34",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washers-have-no-profit-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 23928,
-        "outputHash": "sha256:04697e16ba13fa6b4c8b8da36c4d88abe4601f5ce484c9c2b7a289421f981aaa"
-      }
-    },
-    "/images/insights/hard-floor-washers-have-no-profit-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 891,
-      "height": 322,
-      "bytes": 36344,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:99635877e9f5181dadd47a9c26f7f0058a87971e48c1682d24c87ed6c8f747f6",
-      "outputHash": "sha256:e6f0c24a40461d0e573571dd6242b9828b4506ba0bf3a5b163176754d81fb53c",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washers-have-no-profit-image-002-800.webp",
-        "width": 800,
-        "height": 289,
-        "bytes": 22476,
-        "outputHash": "sha256:d76b4719ea883223ea1e93a51801494af4f4d580dee82901124f79db7c158887"
-      }
-    },
-    "/images/insights/hidden-risks-in-cordless-vacuum-development-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 144585,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:a65e36dad0962f208963f8365f11eee73d0510184b2e830c5f73bee321ec4158",
-      "outputHash": "sha256:c5198a924bf30a9109b5a7d431bd5c6c234f030a4578bbf33ef45c857e1c285b",
-      "mobile": {
-        "src": "/images/insights/hidden-risks-in-cordless-vacuum-development-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 42304,
-        "outputHash": "sha256:b656b99e0303dfa00023d5333ac2a1febf022d1680d52b1efdeb38d598d2266c"
-      }
-    },
-    "/images/insights/hidden-risks-in-cordless-vacuum-development-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 682,
-      "height": 335,
-      "bytes": 40497,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:a704ba5f2e4348b052d8298ac021faacdce7687154fb7e60f80c117f7b278935",
-      "outputHash": "sha256:0c702ea1aee841d22e70a9f29bebb145ee0465c39647b014924a696f5e328d8f"
-    },
-    "/images/insights/hidden-risks-in-cordless-vacuum-development-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 650,
-      "height": 446,
-      "bytes": 55389,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2241e65485ecad5de50f6accaf60be7a917671c190fffcac2318c20076c908db",
-      "outputHash": "sha256:83021f879544778b5010674c08aa242d7ad703df64dfe49a354086b1e2e3fcf5"
     },
     "/images/insights/historic-opportunities-in-the-vacuum-industry-cover.jpg": {
       "role": "cover",
@@ -41614,90 +41977,6 @@
         "outputHash": "sha256:87f69efd4864cc08492b3acab1b2bd12521e64a2c19c0e4b2cbdd14bc562b5a2"
       }
     },
-    "/images/insights/is-kingclean-mojie-a-good-product-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 640,
-      "height": 359,
-      "bytes": 25059,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2633d0e4e436c2b6962f0dc397390dbe9ff57064ffc3dc5fe74869b17ec463dc",
-      "outputHash": "sha256:7608aa1e56c64335c1a006be0adfb6e310331bacce847d21b4f671f98c2f34a6"
-    },
-    "/images/insights/is-kingclean-mojie-a-good-product-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 625,
-      "height": 266,
-      "bytes": 50953,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e84768883ac7bb3bc2eb15ab300e91e1a428b3e9eb2dbaa3e89ec0dca613337f",
-      "outputHash": "sha256:d26a014911a5f3863556ad6b569bfb025243d38267e639eaf38a368c9f536dc8"
-    },
-    "/images/insights/is-kingclean-mojie-a-good-product-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1007,
-      "height": 274,
-      "bytes": 47770,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:89e9a49e40e4dd15ebc2ed526d09eafa28c53d2fd89b22c95b294d96a2d0af51",
-      "outputHash": "sha256:372002ef995ab026cc8d0a32efb609281e22bba2d751a3a3cda994cf3f37b582",
-      "mobile": {
-        "src": "/images/insights/is-kingclean-mojie-a-good-product-image-003-800.webp",
-        "width": 800,
-        "height": 218,
-        "bytes": 24970,
-        "outputHash": "sha256:4f0233e9bd110bf23265e78a284634c38ec5e7771ba965027f7885410e419ba0"
-      }
-    },
-    "/images/insights/is-kingclean-mojie-a-good-product-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 742,
-      "height": 473,
-      "bytes": 42514,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e92e00659a265dd181f2a4c56c1228ed5df937a64fbf6c2e73e14e6cc500ffcf",
-      "outputHash": "sha256:116181e3afb8a75fda26fcef9012b11f6133032c5fd98e474d532bb194217ef8"
-    },
-    "/images/insights/is-kingclean-mojie-a-good-product-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 341,
-      "height": 430,
-      "bytes": 25097,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:113bf3be00a237e67b7f003aec186187cce4e39ec95d7d6d96fb6554975b478b",
-      "outputHash": "sha256:7b5c0eb2662dda9e6121b8613290454596cc324b5869c27023f8c1aae5bf577a"
-    },
-    "/images/insights/is-kingclean-mojie-a-good-product-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 762,
-      "height": 506,
-      "bytes": 33253,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:909754c2d2f2e68b5a38ce756254148b7173467415aa8d8552f3387b2bc20331",
-      "outputHash": "sha256:bb59ec719cf7317c467e8ad507b37a9f2fd4a2a2307313e1039a65d1eacce343"
-    },
-    "/images/insights/is-kingclean-mojie-a-good-product-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 766,
-      "height": 296,
-      "bytes": 22081,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:987fbd858c969d46940d8bc14d29579d98a93a683994c6a0909796fdb9b97826",
-      "outputHash": "sha256:343eb8f63f5ef1cf35994e362bbdcb1e766ee95ff60e6d38fd0f3709022c0a92"
-    },
     "/images/insights/jan-6-2026-yard-cleaning-and-tool-news-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -42641,122 +42920,6 @@
       "sourceHash": "sha256:016409382063d5c031c0dda42c5d8cc4ce3a0e7d0056a19e6e59f651b14104e0",
       "outputHash": "sha256:cd7e38448d9c9b70b8f03e66c4892a4143ab5822d3e26321204db7a0ed9da529"
     },
-    "/images/insights/robot-vacuum-industry-at-crossroads-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 82930,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:a2211bd957c2a8937d3394d03f9053a88c0b043aca0eb5674ba69120f8b52e13",
-      "outputHash": "sha256:9c2a2e9bd00ede2f171962ca0f88a62ce31e8a611e8afb0172b20e4002faebc8",
-      "mobile": {
-        "src": "/images/insights/robot-vacuum-industry-at-crossroads-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 19076,
-        "outputHash": "sha256:d9cfcb309b637ffd6c6350a8d7d4c7f729a46e8e6912c89943521ee16f65eb19"
-      }
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 893,
-      "height": 486,
-      "bytes": 37221,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:9e952e291bf90eb633560a959c76a3086da4cf5744b5dd693ebc678d9b512372",
-      "outputHash": "sha256:a44529c000c91610fc20b86be98a91fc3f5357bf170eeaa326eb43dbbee7ed66",
-      "mobile": {
-        "src": "/images/insights/robot-vacuum-industry-at-crossroads-image-002-800.webp",
-        "width": 800,
-        "height": 435,
-        "bytes": 18006,
-        "outputHash": "sha256:393675595ecd93aa695055f030c3324e8b647a05af27ff7f1b50d57c23f4aa6f"
-      }
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 640,
-      "height": 427,
-      "bytes": 29327,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:f8bd26fd49e7a7f337c7ae0430aa198c03e28409efc330c79981d1f0089c14d6",
-      "outputHash": "sha256:ae97affca616ffbcd52c509fc26f8a355804a83c693c27a8c97ef5a1c7cdea15"
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 750,
-      "height": 1223,
-      "bytes": 72807,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:736091340819fd47cee4cf93a182e20412e8a16f2ba4fd9cb240cbf4503cbdee",
-      "outputHash": "sha256:9214fa28c5ffb0e822104f5cdd302f0e78e30fa7e06a555793910a71ad3ff3dd",
-      "mobile": {
-        "src": "/images/insights/robot-vacuum-industry-at-crossroads-image-004-800.webp",
-        "width": 491,
-        "height": 800,
-        "bytes": 24316,
-        "outputHash": "sha256:7db37d6d1d0c3aa0a1027db13c5f696e754419b8af18c13e8e1b7a986bcdcae5"
-      }
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 298,
-      "height": 363,
-      "bytes": 10832,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:858db246ab351f4066fffec0f0783a49eba889dc0591e6d6d15cd208f46ce393",
-      "outputHash": "sha256:dab075d1df4316093496ad5d6d233b0d3861f1c36c37d4697e993733edf91da0"
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1024,
-      "height": 549,
-      "bytes": 66915,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:17785e190ed9f61e33d7c5fed038c73fe6f551cb1b3eab1d579b818f28e5240b",
-      "outputHash": "sha256:89098de467cb7bdd055bfe38f05b8a5d33c52dae228bab9b9d349a10a94ef5a2",
-      "mobile": {
-        "src": "/images/insights/robot-vacuum-industry-at-crossroads-image-006-800.webp",
-        "width": 800,
-        "height": 429,
-        "bytes": 33278,
-        "outputHash": "sha256:b72501fbca2bc86fcace7fcd618c111b645325c4e7ed29b39ae3e012de41c01a"
-      }
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 792,
-      "height": 551,
-      "bytes": 36242,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:4ecb7cd67c8bf3c0cad920721a24eeb3d98b8f6ebfac2f4aa381c309d9d6e36e",
-      "outputHash": "sha256:0a1db618b9d185b7ad2aa5cbc6d2fc0c9b1a245260b7b86949d31221d724dd70"
-    },
-    "/images/insights/robot-vacuum-industry-at-crossroads-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 600,
-      "height": 338,
-      "bytes": 21315,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:fea187e51526f5fb68be89f4584b89d5dedd9641d163be693cd40ccf820f7416",
-      "outputHash": "sha256:433474b8197956d78be4a386ec03d10a03aa69b24a5a70a47a1ee70686795900"
-    },
     "/images/insights/robot-vacuum-navigation-solution-companies-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -43674,71 +43837,6 @@
         "outputHash": "sha256:9476576cdba1e9809ee6d369d9cc997779a0930846d160dbc9074815e4f4f4c7"
       }
     },
-    "/images/insights/trump-return-and-end-of-trade-war-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 101710,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:b5593bc4039edd63a4c0ebd53724be6749d524830d86e9fde87530ce418c4ca1",
-      "outputHash": "sha256:3e947b0320d9b63e4cbe35f329169d180a791f2a7eba2e66543e7d4d3f2894cd",
-      "mobile": {
-        "src": "/images/insights/trump-return-and-end-of-trade-war-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 29116,
-        "outputHash": "sha256:61d1ef09d80a9bdf22557fb400d45d061d414e38e5e11bc2bc0741a5c0ba1522"
-      }
-    },
-    "/images/insights/trump-return-and-end-of-trade-war-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 457,
-      "height": 312,
-      "bytes": 28055,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:3930b3933b4fb534a1f319862fa627448441fe43a32557c669b4c5879c13b2fe",
-      "outputHash": "sha256:dd878e405c03eeb8bab2092eb6fd1ed8b490bfb4569c0ff824545b17bfc512b7"
-    },
-    "/images/insights/trump-return-and-end-of-trade-war-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 850,
-      "height": 465,
-      "bytes": 47710,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:1f1a7e7bf196555b33e8d56405adadfc7e0827bc0182d07eec73875252e49b57",
-      "outputHash": "sha256:7a07481bd66b1523cae578be0e69e4e2c419317d9a9890faca55b76d0d94c0b4",
-      "mobile": {
-        "src": "/images/insights/trump-return-and-end-of-trade-war-image-002-800.webp",
-        "width": 800,
-        "height": 438,
-        "bytes": 28730,
-        "outputHash": "sha256:fc32bddeb13523e79ee24464f08af6add988f69593e836f74d8ae454a79a7779"
-      }
-    },
-    "/images/insights/trump-return-and-end-of-trade-war-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 92818,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6f86c9b6a62df795e413054f8684c1ea5050fd0c7447b581cffbf7ed864c699c",
-      "outputHash": "sha256:1493c8e4667d068ff2a624f310b9443a88e639d6658f4123c262dbc07e01003e",
-      "mobile": {
-        "src": "/images/insights/trump-return-and-end-of-trade-war-image-003-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 25362,
-        "outputHash": "sha256:079bcaad68164980067b8a78bc486c849d6b146ec82ad02984d5d1da5f2c8e72"
-      }
-    },
     "/images/insights/two-sides-of-dyson-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -43936,17 +44034,6 @@
       "quality": 84,
       "sourceHash": "sha256:3eb54f9f25b68b8ab019a5b7cd9c04bfd8cc1d5316f9c741ced1afa4d34d9f2a",
       "outputHash": "sha256:a3c9fa40f44158b53a3c66997996901b44ffb7adcf022640535215f166dd1cf3"
-    },
-    "/images/insights/vacuum-industry-2018-review-2019-outlook-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 564,
-      "height": 800,
-      "bytes": 45296,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:29fe0ec2b024f016b8ecc98eca2cd4874d95a648202819a7d5aafc5cd16a4206",
-      "outputHash": "sha256:3ee7ccf16f988ce5165a09033423ae85c87522ba1403c526857f2ca8b8ebdfba"
     },
     "/images/insights/vietnam-development-and-industrial-hollowing-cover.jpg": {
       "role": "cover",
@@ -44180,79 +44267,6 @@
         "outputHash": "sha256:074ad8eaffddd43aba8aec6d7615d0c1464f4f80d50cdb5364c810c44b3576be"
       }
     },
-    "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 671,
-      "height": 337,
-      "bytes": 39028,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:c6a28ea26db5882217fc6cc2d398bca650bb8cd663e864df12194df11394e643",
-      "outputHash": "sha256:09eab50acf4b5ed27989c7daccd2386185d209f8d00cdafb83df8cebe338a045"
-    },
-    "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 692,
-      "height": 242,
-      "bytes": 26900,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6dc8e9df9f3bbe74ab336a7ffa8a00db963009b9c5a0259168d04b6b855822f8",
-      "outputHash": "sha256:38d84aa45d1aeba2ddf80ea53de1f2f0ef06e97bff708fa48f5d82b8ffa9c2b0"
-    },
-    "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 597,
-      "height": 149,
-      "bytes": 15737,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:fa8b36aad55b36594a8f87faaf1027526c4b1bf33563a97cf8da01c1c6fd57ef",
-      "outputHash": "sha256:0043f4a0822bb0aa347b35061c2a57bbfd87d1da4d4dc8ebe3010acb300176be"
-    },
-    "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 620,
-      "height": 318,
-      "bytes": 37596,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:654738ee44b869af7551859b149fcd0d042c69ca919de671469cfa2618be58b3",
-      "outputHash": "sha256:5e00dd3614ecc5f389888dcf4d3b7fc8355bffe2ec10c51dd0cbb62bfff7f15c"
-    },
-    "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 632,
-      "height": 349,
-      "bytes": 26820,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:f5d95843efd3a65cef1cc642005f34042cb866ef73499e160f36fe864f4af2d3",
-      "outputHash": "sha256:ecf0d08a30f596528ea7ad3a3937cde9409e7ebe77941f6c3889bbe7a649b0f7"
-    },
-    "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 93028,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:aa9f70cc82bb931df008bc559fc6dc91945bf9b24180f8e86fedfd4be199d4ff",
-      "outputHash": "sha256:5870067ef03c603b8bd50d8e140409406344f3422be8c1b84d39d801b12c1681",
-      "mobile": {
-        "src": "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-006-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 25748,
-        "outputHash": "sha256:60b10ff524570ac833fbdb37fc3b845f909363839fc732301e423725a9fc70f2"
-      }
-    },
     "/images/insights/who-is-china-cleaning-king-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -44404,24 +44418,6 @@
         "height": 450,
         "bytes": 44552,
         "outputHash": "sha256:b92e0538d86ae4c7285a849e018f1653c19a4498da8fac70082010545a4e3060"
-      }
-    },
-    "/images/insights/xiaomi-ecosystem-at-the-crossroads-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 640,
-      "height": 853,
-      "bytes": 61180,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:020f9bf117aa9722babafba2bb239d6806a9bb36fc01efc9b36cd7644b42d6b7",
-      "outputHash": "sha256:bca46c0123d11f079abc658e76d67cbdc3f80dbd0b41059c4a4cf1691d0bd05c",
-      "mobile": {
-        "src": "/images/insights/xiaomi-ecosystem-at-the-crossroads-cover-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 42100,
-        "outputHash": "sha256:1d8d674556cf1c4e6c62fa6a521a27e347dd3d9417c26d1c3ee5a37b0ef4e81a"
       }
     }
   },
@@ -44891,7 +44887,7 @@
     },
     "bissell-itc-337-investigation-against-tineco": {
       "budgetClass": "standard",
-      "cover": "/images/insights/bissell-vs-tineco-patent-details-cover.jpg",
+      "cover": "/images/articles/bissell-itc-337-investigation-against-tineco/01-cover.webp",
       "body": []
     },
     "bissell-little-green-hydrosteam-vs-shark-stainstriker-hairpro": {
@@ -45232,12 +45228,12 @@
     },
     "china-premium-vacuum-brand-opportunity": {
       "budgetClass": "standard",
-      "cover": "/images/insights/china-premium-vacuum-brand-opportunity-cover.jpg",
+      "cover": "/images/articles/china-premium-vacuum-brand-opportunity/01-cover.webp",
       "body": [
-        "/images/insights/china-premium-vacuum-brand-opportunity-image-002.jpg",
-        "/images/insights/china-premium-vacuum-brand-opportunity-image-003.jpg",
-        "/images/insights/china-premium-vacuum-brand-opportunity-image-004.jpg",
-        "/images/insights/china-premium-vacuum-brand-opportunity-image-005.jpg"
+        "/images/articles/china-premium-vacuum-brand-opportunity/02-image-002.webp",
+        "/images/articles/china-premium-vacuum-brand-opportunity/03-image-003.webp",
+        "/images/articles/china-premium-vacuum-brand-opportunity/04-image-004.webp",
+        "/images/articles/china-premium-vacuum-brand-opportunity/05-image-005.webp"
       ]
     },
     "china-sanctions-rba-western-supply-chain-rules": {
@@ -45580,11 +45576,11 @@
     },
     "dji-enters-robot-vacuums": {
       "budgetClass": "standard",
-      "cover": "/images/insights/dji-enters-robot-vacuums-cover.jpg",
+      "cover": "/images/articles/dji-enters-robot-vacuums/01-cover.webp",
       "body": [
-        "/images/insights/dji-enters-robot-vacuums-image-002.jpg",
-        "/images/insights/dji-enters-robot-vacuums-image-003.jpg",
-        "/images/insights/dji-enters-robot-vacuums-image-004.jpg"
+        "/images/articles/dji-enters-robot-vacuums/02-image-002.webp",
+        "/images/articles/dji-enters-robot-vacuums/03-image-003.webp",
+        "/images/articles/dji-enters-robot-vacuums/04-image-004.webp"
       ]
     },
     "dji-goes-to-the-ground-dreame-and-insta360-go-to-the-sky": {
@@ -46851,9 +46847,9 @@
     },
     "hard-floor-washers-have-no-profit": {
       "budgetClass": "standard",
-      "cover": "/images/insights/hard-floor-washers-have-no-profit-cover.jpg",
+      "cover": "/images/articles/hard-floor-washers-have-no-profit/01-cover.webp",
       "body": [
-        "/images/insights/hard-floor-washers-have-no-profit-image-002.jpg"
+        "/images/articles/hard-floor-washers-have-no-profit/02-image-002.webp"
       ]
     },
     "hayward-jared-arrowood-accounting-officer-october-2026": {
@@ -46880,10 +46876,10 @@
     },
     "hidden-risks-in-cordless-vacuum-development": {
       "budgetClass": "standard",
-      "cover": "/images/insights/hidden-risks-in-cordless-vacuum-development-cover.jpg",
+      "cover": "/images/articles/hidden-risks-in-cordless-vacuum-development/01-cover.webp",
       "body": [
-        "/images/insights/hidden-risks-in-cordless-vacuum-development-image-002.jpg",
-        "/images/insights/hidden-risks-in-cordless-vacuum-development-image-003.jpg"
+        "/images/articles/hidden-risks-in-cordless-vacuum-development/02-image-002.webp",
+        "/images/articles/hidden-risks-in-cordless-vacuum-development/03-image-003.webp"
       ]
     },
     "hilti-annual-results-march-2026": {
@@ -47438,14 +47434,14 @@
     },
     "is-kingclean-mojie-a-good-product": {
       "budgetClass": "standard",
-      "cover": "/images/insights/is-kingclean-mojie-a-good-product-cover.jpg",
+      "cover": "/images/articles/is-kingclean-mojie-a-good-product/01-cover.webp",
       "body": [
-        "/images/insights/is-kingclean-mojie-a-good-product-image-002.jpg",
-        "/images/insights/is-kingclean-mojie-a-good-product-image-003.jpg",
-        "/images/insights/is-kingclean-mojie-a-good-product-image-004.jpg",
-        "/images/insights/is-kingclean-mojie-a-good-product-image-005.jpg",
-        "/images/insights/is-kingclean-mojie-a-good-product-image-006.jpg",
-        "/images/insights/is-kingclean-mojie-a-good-product-image-007.jpg"
+        "/images/articles/is-kingclean-mojie-a-good-product/02-image-002.webp",
+        "/images/articles/is-kingclean-mojie-a-good-product/03-image-003.webp",
+        "/images/articles/is-kingclean-mojie-a-good-product/04-image-004.webp",
+        "/images/articles/is-kingclean-mojie-a-good-product/05-image-005.webp",
+        "/images/articles/is-kingclean-mojie-a-good-product/06-image-006.webp",
+        "/images/articles/is-kingclean-mojie-a-good-product/07-image-007.webp"
       ]
     },
     "is-roborock-owned-by-xiaomi": {
@@ -48806,15 +48802,15 @@
     },
     "robot-vacuum-industry-at-crossroads": {
       "budgetClass": "standard",
-      "cover": "/images/insights/robot-vacuum-industry-at-crossroads-cover.jpg",
+      "cover": "/images/articles/robot-vacuum-industry-at-crossroads/01-cover.webp",
       "body": [
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-002.jpg",
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-003.jpg",
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-004.jpg",
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-005.jpg",
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-006.jpg",
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-007.jpg",
-        "/images/insights/robot-vacuum-industry-at-crossroads-image-008.jpg"
+        "/images/articles/robot-vacuum-industry-at-crossroads/02-image-002.webp",
+        "/images/articles/robot-vacuum-industry-at-crossroads/03-image-003.webp",
+        "/images/articles/robot-vacuum-industry-at-crossroads/04-image-004.webp",
+        "/images/articles/robot-vacuum-industry-at-crossroads/05-image-005.webp",
+        "/images/articles/robot-vacuum-industry-at-crossroads/06-image-006.webp",
+        "/images/articles/robot-vacuum-industry-at-crossroads/07-image-007.webp",
+        "/images/articles/robot-vacuum-industry-at-crossroads/08-image-008.webp"
       ]
     },
     "robot-vacuum-industry-faces-dji-wang-tao": {
@@ -49694,11 +49690,10 @@
     },
     "trump-return-and-end-of-trade-war": {
       "budgetClass": "standard",
-      "cover": "/images/insights/trump-return-and-end-of-trade-war-cover.jpg",
+      "cover": "/images/articles/trump-return-and-end-of-trade-war/01-cover.webp",
       "body": [
-        "/images/insights/trump-return-and-end-of-trade-war-image-001.jpg",
-        "/images/insights/trump-return-and-end-of-trade-war-image-003.jpg",
-        "/images/insights/trump-return-and-end-of-trade-war-image-002.jpg"
+        "/images/articles/trump-return-and-end-of-trade-war/02-image-001.webp",
+        "/images/articles/trump-return-and-end-of-trade-war/03-image-003.webp"
       ]
     },
     "tti-2019-interim-report": {
@@ -49940,7 +49935,7 @@
     },
     "vacuum-industry-2018-review-2019-outlook": {
       "budgetClass": "standard",
-      "cover": "/images/insights/vacuum-industry-2018-review-2019-outlook-cover.jpg",
+      "cover": "/images/articles/vacuum-industry-2018-review-2019-outlook/01-cover.webp",
       "body": []
     },
     "versuni-dreame-mira-mop-patent-dispute": {
@@ -50069,13 +50064,13 @@
     },
     "who-benefits-from-china-us-trade-war-in-vacuums": {
       "budgetClass": "standard",
-      "cover": "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-cover.jpg",
+      "cover": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/01-cover.webp",
       "body": [
-        "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-006.jpg",
-        "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-002.jpg",
-        "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-003.jpg",
-        "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-004.jpg",
-        "/images/insights/who-benefits-from-china-us-trade-war-in-vacuums-image-005.jpg"
+        "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/02-image-006.webp",
+        "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/03-image-002.webp",
+        "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/04-image-003.webp",
+        "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/05-image-004.webp",
+        "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/06-image-005.webp"
       ]
     },
     "who-is-china-cleaning-king": {
@@ -51141,7 +51136,7 @@
     },
     "xiaomi-ecosystem-at-a-crossroads": {
       "budgetClass": "standard",
-      "cover": "/images/insights/xiaomi-ecosystem-at-the-crossroads-cover.jpg",
+      "cover": "/images/articles/xiaomi-ecosystem-at-a-crossroads/01-cover.webp",
       "body": []
     }
   },
@@ -51980,6 +51975,15 @@
         }
       }
     },
+    "bissell-itc-337-investigation-against-tineco": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-itc-337-investigation-against-tineco/01-cover.webp",
+          "hash": "sha256:59e106b0c7c53bff9d45a7bc9237a7fffa3820a26dc9a684a0145140a1fb6340"
+        }
+      }
+    },
     "bissell-little-green-hydrosteam-vs-shark-stainstriker-hairpro": {
       "files": {
         "01-cover.png": {
@@ -52439,6 +52443,35 @@
           "status": "matched",
           "primary": "/images/articles/china-cleaning-appliance-earnings-q3-2026/03-inventory.webp",
           "hash": "sha256:6be646d1ee5d689c6b795bb79a97d9ccd9c625346dadd3bf6b669d72d64800cf"
+        }
+      }
+    },
+    "china-premium-vacuum-brand-opportunity": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/china-premium-vacuum-brand-opportunity/01-cover.webp",
+          "hash": "sha256:cf7920e54654d484f591ae088cb81333b659ee23d6d2d30339ce8313950068ac"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/china-premium-vacuum-brand-opportunity/02-image-002.webp",
+          "hash": "sha256:bca2b8a42a8d1160c5383899e3f46f33879477ed5515c3f4e2189b8dbb557482"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/china-premium-vacuum-brand-opportunity/03-image-003.webp",
+          "hash": "sha256:830411a536d7c37b2d3209121d24332a310821ac00767e354b94e5c5301a2442"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/china-premium-vacuum-brand-opportunity/04-image-004.webp",
+          "hash": "sha256:3974056d44a84922d9eb062e568db509c89a10976a71377fc23680fee0f906ca"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/china-premium-vacuum-brand-opportunity/05-image-005.webp",
+          "hash": "sha256:a48dd653f6aaba911645011ac2902ace8741a922fcbeb0b1a6c579fc8f423733"
         }
       }
     },
@@ -52956,6 +52989,30 @@
           "status": "matched",
           "primary": "/images/articles/dewalts-rise-harvard-case/11-dewalts-rise-harvard-case-image-011.webp",
           "hash": "sha256:eb2f78eab1e57c0ddea77752f0326ce26e4bf5949c4da3974ee889902fe75247"
+        }
+      }
+    },
+    "dji-enters-robot-vacuums": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dji-enters-robot-vacuums/01-cover.webp",
+          "hash": "sha256:dc1a1376a5f3243e067b227b94c86ce5da2f5cc85a66e7dc11e377b547e16d2e"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-enters-robot-vacuums/02-image-002.webp",
+          "hash": "sha256:73f12b338c60e742c7127419150c44b250410a439318a8b7979030975eb4d535"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-enters-robot-vacuums/03-image-003.webp",
+          "hash": "sha256:17f53aafe762120fdc6009ae239657818669eedffdfa47d84059b67de44ca55e"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-enters-robot-vacuums/04-image-004.webp",
+          "hash": "sha256:a7eaed1e969a68373dd1bbf17e7e1314ff1e1d7fb0db99a532c7884be3bbfc7d"
         }
       }
     },
@@ -55797,6 +55854,20 @@
         }
       }
     },
+    "hard-floor-washers-have-no-profit": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/hard-floor-washers-have-no-profit/01-cover.webp",
+          "hash": "sha256:1189b167f7b6637854ea42edae2b3a47d01c891c1ebe4549f576f39115e7c3b9"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/hard-floor-washers-have-no-profit/02-image-002.webp",
+          "hash": "sha256:e6f0c24a40461d0e573571dd6242b9828b4506ba0bf3a5b163176754d81fb53c"
+        }
+      }
+    },
     "hayward-jared-arrowood-accounting-officer-october-2026": {
       "files": {
         "01-cover.png": {
@@ -55835,6 +55906,25 @@
           "status": "matched",
           "primary": "/images/articles/hesai-dreame-mower-lidar-orders-march-2026/01-cover.webp",
           "hash": "sha256:8ade3f31560467da617edbc103b8bbc63885ece111f2bf994e5b822cc9a0b369"
+        }
+      }
+    },
+    "hidden-risks-in-cordless-vacuum-development": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/hidden-risks-in-cordless-vacuum-development/01-cover.webp",
+          "hash": "sha256:15497a89837f42a5a12ae740a2a49e782d23bcc2a12c7a8541561effbe0215f5"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/hidden-risks-in-cordless-vacuum-development/02-image-002.webp",
+          "hash": "sha256:0c702ea1aee841d22e70a9f29bebb145ee0465c39647b014924a696f5e328d8f"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/hidden-risks-in-cordless-vacuum-development/03-image-003.webp",
+          "hash": "sha256:83021f879544778b5010674c08aa242d7ad703df64dfe49a354086b1e2e3fcf5"
         }
       }
     },
@@ -56638,6 +56728,45 @@
           "status": "matched",
           "primary": "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp",
           "hash": "sha256:d6bc600dfd1fd6e5820d8f88139e8ba2ded9f733849dd91c98923a3da61ff471"
+        }
+      }
+    },
+    "is-kingclean-mojie-a-good-product": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/01-cover.webp",
+          "hash": "sha256:20c04f93c83bed955fb6851d1e7bb7f17427d7d59df01c79f2d2ed0f1ac46a05"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/02-image-002.webp",
+          "hash": "sha256:d26a014911a5f3863556ad6b569bfb025243d38267e639eaf38a368c9f536dc8"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/03-image-003.webp",
+          "hash": "sha256:372002ef995ab026cc8d0a32efb609281e22bba2d751a3a3cda994cf3f37b582"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/04-image-004.webp",
+          "hash": "sha256:116181e3afb8a75fda26fcef9012b11f6133032c5fd98e474d532bb194217ef8"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/05-image-005.webp",
+          "hash": "sha256:7b5c0eb2662dda9e6121b8613290454596cc324b5869c27023f8c1aae5bf577a"
+        },
+        "06-image-006.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/06-image-006.webp",
+          "hash": "sha256:bb59ec719cf7317c467e8ad507b37a9f2fd4a2a2307313e1039a65d1eacce343"
+        },
+        "07-image-007.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/is-kingclean-mojie-a-good-product/07-image-007.webp",
+          "hash": "sha256:343eb8f63f5ef1cf35994e362bbdcb1e766ee95ff60e6d38fd0f3709022c0a92"
         }
       }
     },
@@ -59205,6 +59334,50 @@
         }
       }
     },
+    "robot-vacuum-industry-at-crossroads": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/01-cover.webp",
+          "hash": "sha256:f56b3d99b40f0ad6427cb709bb63116bc22736a556f2bf715d013c2f81b86343"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/02-image-002.webp",
+          "hash": "sha256:a44529c000c91610fc20b86be98a91fc3f5357bf170eeaa326eb43dbbee7ed66"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/03-image-003.webp",
+          "hash": "sha256:ae97affca616ffbcd52c509fc26f8a355804a83c693c27a8c97ef5a1c7cdea15"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/04-image-004.webp",
+          "hash": "sha256:9214fa28c5ffb0e822104f5cdd302f0e78e30fa7e06a555793910a71ad3ff3dd"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/05-image-005.webp",
+          "hash": "sha256:dab075d1df4316093496ad5d6d233b0d3861f1c36c37d4697e993733edf91da0"
+        },
+        "06-image-006.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/06-image-006.webp",
+          "hash": "sha256:89098de467cb7bdd055bfe38f05b8a5d33c52dae228bab9b9d349a10a94ef5a2"
+        },
+        "07-image-007.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/07-image-007.webp",
+          "hash": "sha256:0a1db618b9d185b7ad2aa5cbc6d2fc0c9b1a245260b7b86949d31221d724dd70"
+        },
+        "08-image-008.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-industry-at-crossroads/08-image-008.webp",
+          "hash": "sha256:433474b8197956d78be4a386ec03d10a03aa69b24a5a70a47a1ee70686795900"
+        }
+      }
+    },
     "robot-vacuum-keeps-getting-stuck": {
       "files": {
         "01-cover.png": {
@@ -60440,6 +60613,25 @@
         }
       }
     },
+    "trump-return-and-end-of-trade-war": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/trump-return-and-end-of-trade-war/01-cover.webp",
+          "hash": "sha256:ca9c687ff960715b399524f40199896cd1838294ef24a1bedc124c081d503742"
+        },
+        "02-image-001.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/trump-return-and-end-of-trade-war/02-image-001.webp",
+          "hash": "sha256:dd878e405c03eeb8bab2092eb6fd1ed8b490bfb4569c0ff824545b17bfc512b7"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/trump-return-and-end-of-trade-war/03-image-003.webp",
+          "hash": "sha256:1493c8e4667d068ff2a624f310b9443a88e639d6658f4123c262dbc07e01003e"
+        }
+      }
+    },
     "tti-2019-interim-report": {
       "files": {
         "01-cover.png": {
@@ -60909,6 +61101,15 @@
         }
       }
     },
+    "vacuum-industry-2018-review-2019-outlook": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-industry-2018-review-2019-outlook/01-cover.webp",
+          "hash": "sha256:13c6b38ae3e5e750a75ae86017f387c62342ff49addafa0333126762c2136424"
+        }
+      }
+    },
     "versuni-dreame-mira-mop-patent-dispute": {
       "files": {
         "01-cover.png": {
@@ -61082,6 +61283,40 @@
           "status": "matched",
           "primary": "/images/articles/whirlpool-third-quarter-results-october-2026/01-cover.webp",
           "hash": "sha256:dc21f71171d2aa8d15206c59bfa348f0660bfbdb45dd15c9d729e505c0979b5c"
+        }
+      }
+    },
+    "who-benefits-from-china-us-trade-war-in-vacuums": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/01-cover.webp",
+          "hash": "sha256:3b517ad5f9b2c502c8daa85456d08deae803f68c000818d4ad919f7b71900921"
+        },
+        "02-image-006.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/02-image-006.webp",
+          "hash": "sha256:5870067ef03c603b8bd50d8e140409406344f3422be8c1b84d39d801b12c1681"
+        },
+        "03-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/03-image-002.webp",
+          "hash": "sha256:38d84aa45d1aeba2ddf80ea53de1f2f0ef06e97bff708fa48f5d82b8ffa9c2b0"
+        },
+        "04-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/04-image-003.webp",
+          "hash": "sha256:0043f4a0822bb0aa347b35061c2a57bbfd87d1da4d4dc8ebe3010acb300176be"
+        },
+        "05-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/05-image-004.webp",
+          "hash": "sha256:5e00dd3614ecc5f389888dcf4d3b7fc8355bffe2ec10c51dd0cbb62bfff7f15c"
+        },
+        "06-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/who-benefits-from-china-us-trade-war-in-vacuums/06-image-005.webp",
+          "hash": "sha256:ecf0d08a30f596528ea7ad3a3937cde9409e7ebe77941f6c3889bbe7a649b0f7"
         }
       }
     },
@@ -62837,6 +63072,15 @@
           "status": "matched",
           "primary": "/images/articles/wybotics-renews-hong-kong-application-april-2026/01-cover.webp",
           "hash": "sha256:d31cb5a691e8be90924f801b58b90f673417547a978ed9f5121dc2feab278273"
+        }
+      }
+    },
+    "xiaomi-ecosystem-at-a-crossroads": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/xiaomi-ecosystem-at-a-crossroads/01-cover.webp",
+          "hash": "sha256:97a6adb29db7c7acd6189e09987081b1f273ca24a41164c20732453d0367da33"
         }
       }
     }
