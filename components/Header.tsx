@@ -142,7 +142,6 @@ export function Header() {
     >
       <div className="wcb-topbar">
         <div className="wcb-topbar-inner">
-          <span>Global cleaning industry news and intelligence · Updated daily</span>
           <Link href={expoNote.href} onClick={closeAll}>{expoNote.label} →</Link>
         </div>
       </div>

@@ -26,7 +26,8 @@ test("home retains a single main heading and search guides stay outside editoria
 
 test("home order: briefing hero with news, topics, From Denny, WCB Expo, radar, directory, business, subscribe", () => {
   // The A design opens with a visible heading, a search box and what WCB tracks.
-  assert.match(home, /The global cleaning industry, in one place\./);
+  assert.match(home, /<h1 id="home-title" className="ha-sr-only">/);
+  assert.doesNotMatch(home, /every story lists its sources/);
   // The hero is a daily briefing: lead story, latest news and key dates; search lives in the header.
   assert.match(home, /className="ha-brief-grid"/);
   assert.match(home, /upcomingRules\(now, 5\)/);

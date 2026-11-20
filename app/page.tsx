@@ -149,7 +149,6 @@ export default function HomePage() {
   // Topics band: a pinned topic leads, then the rest by last update.
   const bandTopics = [...topics].sort((a, b) => Number(Boolean(b.pinned)) - Number(Boolean(a.pinned))).slice(0, 5);
   const [leadTopic, ...sideTopics] = bandTopics;
-  const asOf = shortDate(now.toISOString().slice(0, 10));
 
   // One model from each product category: a key brand's newest 2026 model when there is one, else the newest.
   const thisYear = (model: (typeof featuredProductModels)[number]) => String(model.announced ?? "").startsWith("2026");
@@ -317,10 +316,7 @@ export default function HomePage() {
       {/* Hero: a daily briefing. The lead story, the latest news and the next rule deadlines. */}
       <section className="ha-hero ha-brief" aria-labelledby="home-title">
         <div className="ha-wrap">
-          <div className="ha-brief-top">
-            <h1 id="home-title">The global cleaning industry, in one place.</h1>
-            <span>Updated {asOf} · every story lists its sources</span>
-          </div>
+          <h1 id="home-title" className="ha-sr-only">World Clean Biz: news, companies and analysis for the global cleaning industry</h1>
           <div className="ha-brief-grid">
             {chosenLead ? (
               <article className="ha-lead">
