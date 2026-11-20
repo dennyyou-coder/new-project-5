@@ -7,8 +7,8 @@
   "description": "WCB's running file on US tariffs affecting cleaning appliances made in China: Section 301 duties, the 2026 Supreme Court IEEPA ruling and refunds, the Section 122 surcharge, the Section 301 forced-labor tariffs, the US–China truce and Southeast Asian alternatives.",
   "coverImage": "/images/topics/us-tariffs-chinese-cleaning-appliances/cover.webp",
   "coverCredit": {
-    "text": "Container ship being loaded in the Port of Long Beach. Photo: biofriendly, CC BY 2.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Container_ship_being_loaded_in_Long_Beach_container_port.jpg"
+    "text": "Card: World Clean Biz. Rates as of November 2026",
+    "url": "https://worldcleanbiz.com/topics/us-tariffs-chinese-cleaning-appliances"
   },
   "updated": "2026-11-08",
   "status": {
@@ -228,5 +228,57 @@
       "title": "CNBC: US–China trade truce extended, Bessent says (24 September 2026)",
       "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html"
     }
-  ]
+  ],
+  "versus": {
+    "title": "Where a vacuum is made decides its US duty",
+    "sides": [
+      {
+        "name": "Made in China",
+        "figure": {
+          "value": "≈37.5%",
+          "label": "additional US duty on a typical Chinese-made vacuum or robot vacuum",
+          "tone": "down"
+        },
+        "facts": [
+          "25% Section 301 duty (2018–2019)",
+          "12.5% Section 301 forced-labor duty since 24 Jul 2026",
+          "0% ordinary duty on HTS 8508"
+        ]
+      },
+      {
+        "name": "Made in Southeast Asia, Mexico, India",
+        "figure": {
+          "value": "10–12.5%",
+          "label": "forced-labor duty, with no China-specific 25%"
+        },
+        "facts": [
+          "Vietnam and Thailand: 12.5%",
+          "Malaysia, Indonesia, Mexico, India: 10%",
+          "Origin rules must be met; simple transshipment does not count"
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "label": "20 Feb 2026: IEEPA tariffs struck down",
+        "detail": "Supreme Court rules 6–3; collection stops 24 Feb; refunds go to importers of record",
+        "tone": "legal"
+      },
+      {
+        "label": "Feb to Jul: 10% Section 122 surcharge",
+        "detail": "A temporary replacement that lapsed after 150 days"
+      },
+      {
+        "label": "24 Jul 2026: forced-labor duties begin",
+        "detail": "12.5% or 10% depending on origin, stacked on other Section 301 duties"
+      },
+      {
+        "label": "Truce runs to 10 Jan 2027",
+        "detail": "The US–China arrangement agreed in Busan has been extended"
+      }
+    ],
+    "footer": "Moving final assembly out of China still saves roughly 25 percentage points of duty on a US-bound cleaning appliance. New robot vacuums and mowers also need FCC clearance, wherever they are made.",
+    "arrows": false,
+    "credit": "Rates as of November 2026; confirm classification and any exclusion with a customs broker."
+  }
 }
