@@ -24,6 +24,7 @@ import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
 import { getTopics, topicHref, topicImageSmall } from "@/lib/topics";
 import { compareKeyBrands, isKeyBrand } from "@/lib/keyBrands";
+import homeSettings from "@/content/home/settings.json";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 // Re-render a few times a day so counts, day counters and the expo block stay current without a deploy.
@@ -243,19 +244,40 @@ export default function HomePage() {
   // This week's news: one lead story with a picture, then a list. The picture is the story's own photo,
   // else an official image of the company it names (credited below), else the story's product shot.
   // Another article's cover or a generic industry picture never leads.
+  // Only the last week's stories can lead, so the top of the page is always current.
+  const newest = news[0]?.eventDate ?? "";
+  const weekAgo = newest ? new Date(Date.parse(newest) - 7 * 86400000).toISOString().slice(0, 10) : "";
   const recent = news.slice(0, 10);
+  const leadPool = recent.filter((item, index) => index < 3 || item.eventDate >= weekAgo);
   const leadTiers: ((visual: NonNullable<ReturnType<typeof getNewsVisual>>) => boolean)[] = [
     (visual) => !isBorrowedNewsVisual(visual) && visual.fit !== "contain",
     (visual) => visual.label === "Company image",
     (visual) => !isBorrowedNewsVisual(visual)
   ];
   // Within each picture tier, a key brand's story leads before other companies' stories.
-  const recentKeyFirst = [...recent].sort((a, b) => compareKeyBrands(a.brandSlugs.find(isKeyBrand), b.brandSlugs.find(isKeyBrand)));
+  const recentKeyFirst = [...leadPool].sort((a, b) => compareKeyBrands(a.brandSlugs.find(isKeyBrand), b.brandSlugs.find(isKeyBrand)));
   const leadNews = leadTiers
     .map((tier) => recentKeyFirst.find((item) => { const visual = getNewsVisual(item); return visual ? tier(visual) : false; }))
     .find(Boolean);
   const leadVisual = leadNews ? getNewsVisual(leadNews) : undefined;
-  const weekNews = recent.filter((item) => item.slug !== leadNews?.slug).slice(0, 6);
+  const weekNews = recent.filter((item) => item.slug !== leadNews?.slug).slice(0, 5);
+  // An editor's choice in content/home/settings.json replaces the automatic lead.
+  const chosen = homeSettings.lead as { type: "news" | "blog" | "topic"; slug: string } | null;
+  const chosenLead = (() => {
+    if (!chosen) return undefined;
+    if (chosen.type === "blog") {
+      const article = articles.find((item) => item.slug === chosen.slug);
+      return article?.coverImage ? { href: `/blog/${article.slug}`, image: article.coverImage, kicker: `Analysis · ${newsDate(article.sortDate || article.date)}`, title: article.title, text: article.description } : undefined;
+    }
+    if (chosen.type === "topic") {
+      const topic = topics.find((item) => item.slug === chosen.slug);
+      return topic?.coverImage ? { href: topicHref(topic.slug), image: topic.coverImage, kicker: `Topic · ${topic.status.label}`, title: topic.title, text: topic.dek } : undefined;
+    }
+    const item = news.find((entry) => entry.slug === chosen.slug);
+    const visual = item ? getNewsVisual(item) : undefined;
+    return item && visual ? { href: `/news/${item.slug}`, image: visual.src, kicker: `${newsTopicLabel(item.topic)} · ${newsDate(item.eventDate)}`, title: item.title, text: item.excerpt } : undefined;
+  })();
+  const keyDates = upcomingRules(now, 5);
 
   const tracked = [
     { value: brands.length, label: "company profiles", icon: ICONS.companies },
@@ -292,56 +314,78 @@ export default function HomePage() {
 
   return (
     <div className="home-a">
-      {/* Hero: what WCB is, a search box and what it tracks. */}
-      <section className="ha-hero" aria-labelledby="home-title">
+      {/* Hero: a daily briefing. The lead story, the latest news and the next rule deadlines. */}
+      <section className="ha-hero ha-brief" aria-labelledby="home-title">
         <div className="ha-wrap">
-          <div className="ha-hero-grid">
-            <div className="ha-hero-copy">
-              <p className="ha-kicker">Global cleaning industry intelligence</p>
-              <h1 id="home-title">The global cleaning industry, in one place.</h1>
-              <p className="ha-hero-lead">
-                News, company profiles, new models, recalls and trade rules across robot vacuums, floor care, pool and lawn robots and commercial cleaning. Sourced, dated and updated daily.
-              </p>
-              <form className="ha-search" action="/search" method="get" role="search">
-                <input
-                  name="q"
-                  type="search"
-                  aria-label="Search World Clean Biz"
-                  placeholder={`Search ${brands.length} companies, ${featuredProductModels.length} new models, ${news.length} stories`}
-                  autoComplete="off"
-                />
-                <button type="submit">{icon(ICONS.search, 18)}Search</button>
-              </form>
-              {topics.length ? (
-                <div className="ha-chips">
-                  <span>Running stories:</span>
-                  {topics.slice(0, 4).map((topic) => (
-                    <Link key={topic.slug} href={topicHref(topic.slug)}>{topic.shortLabel ?? topic.title}</Link>
-                  ))}
-                </div>
-              ) : null}
+          <div className="ha-brief-top">
+            <h1 id="home-title">The global cleaning industry, in one place.</h1>
+            <span>Updated {asOf} · every story lists its sources</span>
+          </div>
+          <div className="ha-brief-grid">
+            {chosenLead ? (
+              <article className="ha-lead">
+                <Link className="ha-lead-image" href={chosenLead.href} tabIndex={-1} aria-hidden="true">
+                  <img src={chosenLead.image} alt="" loading="eager" decoding="async" fetchPriority="high" />
+                </Link>
+                <p className="ha-meta">{chosenLead.kicker}</p>
+                <h2><Link href={chosenLead.href}>{chosenLead.title}</Link></h2>
+                {chosenLead.text ? <p className="ha-lead-excerpt">{chosenLead.text}</p> : null}
+              </article>
+            ) : leadNews && leadVisual ? (
+              <article className="ha-lead">
+                <Link className={`ha-lead-image${leadVisual.fit === "contain" ? " ha-lead-image--contain" : ""}`} href={`/news/${leadNews.slug}`} tabIndex={-1} aria-hidden="true">
+                  <img src={leadVisual.src} alt="" loading="eager" decoding="async" fetchPriority="high" style={leadVisual.position ? { objectPosition: leadVisual.position } : undefined} />
+                </Link>
+                {/* Credit outside the story itself; a company image is marked as a file photo, not a picture of this event. */}
+                <p className="ha-lead-credit">
+                  {[leadVisual.label === "Company image" ? "File photo" : null, leadVisual.sourceLabel ? `Photo: ${leadVisual.sourceLabel}` : null].filter(Boolean).join(" · ")}
+                  {leadVisual.license ? <> · <a href={leadVisual.license.url} rel="noopener noreferrer">{leadVisual.license.label}</a></> : null}
+                </p>
+                <p className="ha-meta">
+                  {newsTopicLabel(leadNews.topic)} · <time dateTime={leadNews.eventDate}>{newsDate(leadNews.eventDate)}</time>
+                </p>
+                <h2><Link href={`/news/${leadNews.slug}`}>{leadNews.title}</Link></h2>
+                {leadNews.excerpt ? <p className="ha-lead-excerpt">{leadNews.excerpt}</p> : null}
+              </article>
+            ) : null}
+
+            <div className="ha-brief-col" id="news">
+              <p className="ha-label" id="home-feed-title">Latest news</p>
+              <ul className="ha-stream">
+                {(chosenLead ? recent.slice(0, 5) : weekNews).map((item) => {
+                  const mark = resolveBrandMark(marks, item.brandSlugs[0]);
+                  return (
+                    <li key={item.slug}>
+                      <Link href={`/news/${item.slug}`}>
+                        <span className="ha-stream-mark">
+                          {mark?.logo ? <Logo mark={mark} /> : <span className="ha-icon-tile ha-icon-tile--sm">{icon(ICONS.news)}</span>}
+                        </span>
+                        <span className="ha-stream-copy">
+                          <span className="ha-meta">{newsTopicLabel(item.topic)} · <time dateTime={item.eventDate}>{newsDate(item.eventDate)}</time></span>
+                          <span className="ha-stream-title">{item.title}</span>
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+              <Link className="ha-more" href="/news">All news →</Link>
             </div>
 
-            <div className="ha-tracks">
-              <div className="ha-tracks-head">
-                <span>What WCB tracks</span>
-                <span>As of {asOf}</span>
-              </div>
-              <div className="ha-tracks-grid">
-                {tracked.map((item) => (
-                  <div key={item.label} className="ha-track">
-                    <div>
-                      <div className="ha-track-value">{item.value}</div>
-                      <div className="ha-track-label">{item.label}</div>
-                    </div>
-                    <span className="ha-icon-tile">{icon(item.icon)}</span>
-                  </div>
+            <div className="ha-brief-col ha-brief-dates">
+              <p className="ha-label">Key dates</p>
+              <ul>
+                {keyDates.map((rule) => (
+                  <li key={rule.id}>
+                    <span className="ha-days"><strong>{daysUntil(rule.date, now)}</strong><small>days</small></span>
+                    <span>
+                      <Link href={rule.href ?? "/rules-calendar"}>{rule.title}</Link>
+                      <span className="ha-radar-note">{rule.region} · {shortDate(rule.date)}</span>
+                    </span>
+                  </li>
                 ))}
-              </div>
-              <div className="ha-tracks-foot">
-                <span>Every story lists its sources.</span>
-                <Link href="/editorial-policy">Editorial standards →</Link>
-              </div>
+              </ul>
+              <Link className="ha-more" href="/rules-calendar">Rules calendar →</Link>
             </div>
           </div>
 
@@ -413,52 +457,6 @@ export default function HomePage() {
           </div>
         </section>
       ) : null}
-
-      {/* News: a lead story and the week's list. */}
-      <section className="ha-section" id="news" aria-labelledby="home-feed-title">
-        <div className="ha-wrap ha-stack">
-          <SectionHead id="home-feed-title" kicker="News" title="Across the industry this week" more={{ href: "/news", label: "All news" }} />
-          <div className="ha-news">
-            {leadNews && leadVisual ? (
-              <article className="ha-lead">
-                <Link className={`ha-lead-image${leadVisual.fit === "contain" ? " ha-lead-image--contain" : ""}`} href={`/news/${leadNews.slug}`} tabIndex={-1} aria-hidden="true">
-                  <img src={leadVisual.src} alt="" loading="eager" decoding="async" fetchPriority="high" style={leadVisual.position ? { objectPosition: leadVisual.position } : undefined} />
-                </Link>
-                {/* Credit outside the story itself; a company image is marked as a file photo, not a picture of this event. */}
-                <p className="ha-lead-credit">
-                  {[leadVisual.label === "Company image" ? "File photo" : null, leadVisual.sourceLabel ? `Photo: ${leadVisual.sourceLabel}` : null].filter(Boolean).join(" · ")}
-                  {leadVisual.license ? <> · <a href={leadVisual.license.url} rel="noopener noreferrer">{leadVisual.license.label}</a></> : null}
-                </p>
-                <p className="ha-meta">
-                  {newsTopicLabel(leadNews.topic)} · <time dateTime={leadNews.eventDate}>{newsDate(leadNews.eventDate)}</time>
-                </p>
-                <h3><Link href={`/news/${leadNews.slug}`}>{leadNews.title}</Link></h3>
-                {leadNews.excerpt ? <p className="ha-lead-excerpt">{leadNews.excerpt}</p> : null}
-              </article>
-            ) : null}
-
-            <ul className="ha-stream">
-              {weekNews.map((item) => {
-                const mark = resolveBrandMark(marks, item.brandSlugs[0]);
-                return (
-                  <li key={item.slug}>
-                    <Link href={`/news/${item.slug}`}>
-                      <span className="ha-stream-mark">
-                        {mark?.logo ? <Logo mark={mark} /> : <span className="ha-icon-tile ha-icon-tile--sm">{icon(ICONS.news)}</span>}
-                      </span>
-                      <span className="ha-stream-copy">
-                        <span className="ha-meta">{newsTopicLabel(item.topic)} · <time dateTime={item.eventDate}>{newsDate(item.eventDate)}</time></span>
-                        <span className="ha-stream-title">{item.title}</span>
-                      </span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-
-          </div>
-        </div>
-      </section>
 
       {dennyLead ? (
         <section className="ha-section ha-section--soft ha-analysis" id="analysis" aria-labelledby="home-denny-title">
@@ -627,6 +625,18 @@ export default function HomePage() {
             title={`${brands.length} companies and ${featuredProductModels.length} new models, each with sources`}
             more={{ href: "/brands", label: "Open the directory" }}
           />
+
+          <div className="ha-tracks" aria-label="What WCB tracks">
+            {tracked.map((item) => (
+              <div key={item.label} className="ha-track">
+                <span className="ha-icon-tile">{icon(item.icon)}</span>
+                <div>
+                  <div className="ha-track-value">{item.value}</div>
+                  <div className="ha-track-label">{item.label}</div>
+                </div>
+              </div>
+            ))}
+          </div>
 
           <SubHead id="home-categories-title" title="Browse by category" more={{ href: "/categories", label: "All categories" }} />
           <div className="ha-categories">
