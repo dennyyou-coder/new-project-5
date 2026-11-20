@@ -31,7 +31,13 @@ export type TopicChart =
       note?: string;
       start: string;
       end: string;
-      points: { date: string; count: number; label?: string; highlight?: boolean }[];
+      points: { date: string; count: number; label?: string; highlight?: boolean; place?: "left" | "right" }[];
+      /** Value at the start date (default 0). */
+      startValue?: number;
+      /** Appended to values, e.g. "%". */
+      unit?: string;
+      /** A shaded stretch at the end of the axis, e.g. an expiry window. */
+      zone?: { from: string; label: string };
       /** A short line shown big next to the title, e.g. "Chinese makers approved: 0". */
       callout?: { value: string; label: string };
     }
@@ -107,6 +113,8 @@ export type TopicSection = {
   lineup?: TopicBrandSide[];
   camps?: TopicCamp[];
   flow?: TopicFlow;
+  /** Short cards side by side, e.g. scenarios; `tag` is a small label above the title. */
+  cards?: { title: string; text: string; tag?: string }[];
   groups?: TopicGroup[];
   progress?: TopicProgress[];
   table?: TopicTable;

@@ -124,6 +124,18 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
         </div>
       ) : null}
 
+      {section.cards?.length ? (
+        <ul className="topic-cards">
+          {section.cards.map((card) => (
+            <li key={card.title}>
+              {card.tag ? <em>{card.tag}</em> : null}
+              <strong>{card.title}</strong>
+              <span>{card.text}</span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+
       {section.groups?.length ? (
         <div className="topic-groups">
           {section.groups.map((group) => (

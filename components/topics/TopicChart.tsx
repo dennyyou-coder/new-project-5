@@ -35,12 +35,15 @@ function shortDay(value: string) {
 /** Month starts between two dates, for axis ticks. */
 function monthTicks(start: string, end: string) {
   const [y0, m0] = start.split("-").map(Number);
+  // Long axes get a tick every six months, labelled with the year in January.
+  const long = dayOf(end) - dayOf(start) > 400;
   const ticks: { key: string; label: string; day: number }[] = [];
   for (let y = y0, m = m0 + 1; ; m++) {
     if (m > 12) { m = 1; y++; }
     const key = `${y}-${String(m).padStart(2, "0")}-01`;
     if (dayOf(key) > dayOf(end)) break;
-    ticks.push({ key, label: MONTHS[m - 1], day: dayOf(key) });
+    if (long && m !== 1 && m !== 7) continue;
+    ticks.push({ key, label: long && m === 1 ? String(y) : MONTHS[m - 1], day: dayOf(key) });
   }
   return ticks;
 }
@@ -49,18 +52,21 @@ function monthTicks(start: string, end: string) {
 function CumulativeChart({ chart }: { chart: Extract<TopicChartData, { type: "cumulative" }> }) {
   const d0 = dayOf(chart.start);
   const span = dayOf(chart.end) - d0 || 1;
-  const max = Math.max(1, ...chart.points.map((point) => point.count));
+  const max = Math.max(1, chart.startValue ?? 0, ...chart.points.map((point) => point.count));
   const x = (date: string) => ((dayOf(date) - d0) / span) * 100;
   const y = (count: number) => 100 - (count / max) * 100;
-  let path = `M0 100`;
-  let last = 0;
+  const unit = chart.unit ?? "";
+  const startValue = chart.startValue ?? 0;
+  let path = `M0 ${y(startValue).toFixed(2)}`;
+  let last = startValue;
   for (const point of chart.points) {
     path += ` H${x(point.date).toFixed(2)} V${y(point.count).toFixed(2)}`;
     last = point.count;
   }
   path += ` H100`;
-  const area = `${path} V100 Z`;
+  const area = `M0 100 V${y(startValue).toFixed(2)}${path.slice(path.indexOf(" "))} V100 Z`;
   const final = chart.points[chart.points.length - 1];
+  const longAxis = span > 400;
   return (
     <figure className="topic-chart topic-cumulative">
       <div className="topic-cumulative-head">
@@ -68,6 +74,9 @@ function CumulativeChart({ chart }: { chart: Extract<TopicChartData, { type: "cu
         {chart.callout ? <p className="topic-cumulative-callout"><strong>{chart.callout.value}</strong>{chart.callout.label}</p> : null}
       </div>
       <div className="topic-cumulative-plot" aria-hidden="true">
+        {chart.zone ? (
+          <span className="topic-cumulative-zone" style={{ left: `${x(chart.zone.from)}%` }}><b>{chart.zone.label}</b></span>
+        ) : null}
         <svg viewBox="0 0 100 100" preserveAspectRatio="none">
           <path d={area} className="topic-cumulative-area" />
           <path d={path} className="topic-cumulative-line" vectorEffect="non-scaling-stroke" />
@@ -76,17 +85,22 @@ function CumulativeChart({ chart }: { chart: Extract<TopicChartData, { type: "cu
           <span key={point.date} className={`topic-cumulative-dot${point.highlight ? " is-highlight" : ""}`} style={{ left: `${x(point.date)}%`, top: `${y(point.count)}%` }} />
         ))}
         {chart.points.filter((point) => point.highlight && point.label).map((point) => (
-          <span key={`l-${point.date}`} className={`topic-cumulative-label${x(point.date) > 60 ? " is-left" : ""}`} style={{ left: `${x(point.date)}%`, top: `${y(point.count)}%` }}>
-            <b>{shortDay(point.date)}</b>{point.label}
+          <span key={`l-${point.date}`} className={`topic-cumulative-label${(point.place ?? (x(point.date) > 60 ? "left" : "right")) === "left" ? " is-left" : ""}${y(point.count) < 15 ? " is-below" : ""}`} style={{ left: `${x(point.date)}%`, top: `${y(point.count)}%` }}>
+            <b>{shortDay(point.date)}{longAxis ? ` ${point.date.slice(0, 4)}` : ""} · {point.count}{unit}</b>{point.label}
           </span>
         ))}
-        {final ? <span className="topic-cumulative-total" style={{ top: `${y(last)}%` }}>{last}</span> : null}
+        {final ? <span className="topic-cumulative-total" style={{ top: `${y(last)}%` }}>{last}{unit}</span> : null}
       </div>
       <div className="topic-cumulative-axis" aria-hidden="true">
         {monthTicks(chart.start, chart.end).map((tick) => <span key={tick.key} style={{ left: `${((tick.day - d0) / span) * 100}%` }}>{tick.label}</span>)}
       </div>
+      <ol className="topic-cumulative-keys" aria-hidden="true">
+        {chart.points.filter((point) => point.highlight && point.label).map((point) => (
+          <li key={point.date}><b>{shortDay(point.date)}{longAxis ? ` ${point.date.slice(0, 4)}` : ""} · {point.count}{unit}</b> {point.label}</li>
+        ))}
+      </ol>
       <ol className="sr-only">
-        {chart.points.map((point) => <li key={point.date}>{shortDay(point.date)}: {point.count}{point.label ? ` (${point.label})` : ""}</li>)}
+        {chart.points.map((point) => <li key={point.date}>{shortDay(point.date)} {point.date.slice(0, 4)}: {point.count}{unit}{point.label ? ` (${point.label})` : ""}</li>)}
       </ol>
       {chart.note ? <p className="topic-chart-note">{chart.note}</p> : null}
     </figure>
