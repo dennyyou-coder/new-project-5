@@ -34,7 +34,8 @@
         "date": "2026-09-09",
         "count": 1,
         "label": "Husqvarna, the first approval",
-        "highlight": true
+        "highlight": true,
+        "place": "left"
       },
       {
         "date": "2026-09-18",

@@ -231,6 +231,10 @@
     {
       "title": "USTR: Notice of Product Exclusion Extensions, China Section 301 (Federal Register 2026-22925, 10 November 2026)",
       "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology"
+    },
+    {
+      "title": "WCB: the June 11 London talks and the 55% tariff question",
+      "url": "/blog/london-talks-55-percent-tariff"
     }
   ],
   "versus": {
@@ -284,5 +288,198 @@
     "footer": "Moving final assembly out of China still saves roughly 25 percentage points of duty on a US-bound cleaning appliance. New robot vacuums and mowers also need FCC clearance, wherever they are made.",
     "arrows": false,
     "credit": "Rates as of November 2026; confirm classification and any exclusion with a customs broker."
-  }
+  },
+  "sections": [
+    {
+      "id": "duty-history",
+      "title": "How the duty on a Chinese-made vacuum has moved",
+      "intro": "Section 301 has charged 25% on Chinese vacuums since May 2019. Everything above that line came and went with the 2025 tariffs, the truce and the Supreme Court ruling.",
+      "charts": [
+        {
+          "type": "cumulative",
+          "title": "Additional US duty on a Chinese-made vacuum (HTS 8508)",
+          "unit": "%",
+          "start": "2024-10-01",
+          "end": "2027-03-01",
+          "startValue": 25,
+          "callout": {
+            "value": "37.5%",
+            "label": "now"
+          },
+          "zone": {
+            "from": "2027-01-09",
+            "label": "Exclusions and truce expire"
+          },
+          "points": [
+            {
+              "date": "2025-02-04",
+              "count": 35
+            },
+            {
+              "date": "2025-03-04",
+              "count": 45
+            },
+            {
+              "date": "2025-04-10",
+              "count": 170,
+              "label": "IEEPA peak: 125% reciprocal + 20% fentanyl + 25%",
+              "highlight": true
+            },
+            {
+              "date": "2025-05-14",
+              "count": 55,
+              "label": "Geneva: reciprocal cut to 10%",
+              "highlight": true
+            },
+            {
+              "date": "2025-11-10",
+              "count": 45
+            },
+            {
+              "date": "2026-02-24",
+              "count": 35,
+              "label": "IEEPA struck down; 10% Section 122 until 24 Jul",
+              "highlight": true
+            },
+            {
+              "date": "2026-07-24",
+              "count": 37.5
+            }
+          ],
+          "note": "Additional duties on top of the 0% ordinary duty. The 25% Section 301 duty applies throughout. 2025 IEEPA steps: fentanyl duty 10% from 4 Feb and 20% from 4 Mar; reciprocal duty 125% from 10 Apr, cut to 10% from 14 May; fentanyl duty cut to 10% under the Busan truce from 10 Nov. The exact rate depends on classification and any exclusion."
+        }
+      ]
+    },
+    {
+      "id": "duty-per-unit",
+      "title": "What the duty costs per robot vacuum",
+      "intro": "US duty is charged on the customs value, normally the price paid to the factory. These examples show the extra cost per unit by country of origin at current rates. They are illustrations, not quotes.",
+      "charts": [
+        {
+          "type": "bars",
+          "title": "Customs value plus US additional duty, per unit",
+          "legend": [
+            "Customs value",
+            "US additional duty"
+          ],
+          "note": "Rates as of November 2026: China 25% + 12.5%; Vietnam and Thailand 12.5%; Malaysia, Indonesia, Mexico and India 10%. Freight, insurance and customs processing fees are not included.",
+          "rows": [
+            {
+              "label": "$200 unit, made in China",
+              "segments": [
+                200,
+                75
+              ],
+              "display": "$275"
+            },
+            {
+              "label": "$200, Vietnam or Thailand",
+              "segments": [
+                200,
+                25
+              ],
+              "display": "$225"
+            },
+            {
+              "label": "$200, Malaysia or Mexico",
+              "segments": [
+                200,
+                20
+              ],
+              "display": "$220"
+            },
+            {
+              "label": "$400 unit, made in China",
+              "segments": [
+                400,
+                150
+              ],
+              "display": "$550"
+            },
+            {
+              "label": "$400, Vietnam or Thailand",
+              "segments": [
+                400,
+                50
+              ],
+              "display": "$450"
+            },
+            {
+              "label": "$400, Malaysia or Mexico",
+              "segments": [
+                400,
+                40
+              ],
+              "display": "$440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "january",
+      "title": "What happens on 9 and 10 January",
+      "intro": "The Section 301 exclusions and the US–China truce now end in the same week. Nothing has been announced for after that.",
+      "progress": [
+        {
+          "label": "The deadlines",
+          "note": "All dates US Eastern time",
+          "steps": [
+            {
+              "date": "24 Jul 2026",
+              "label": "Forced-labor duties start",
+              "state": "done"
+            },
+            {
+              "date": "24 Sep 2026",
+              "label": "Truce extended to 10 Jan",
+              "state": "done"
+            },
+            {
+              "date": "10 Nov 2026",
+              "label": "178 exclusions extended to 9 Jan",
+              "state": "done"
+            },
+            {
+              "date": "Nov – Dec 2026",
+              "label": "US–China talks continue",
+              "state": "now"
+            },
+            {
+              "date": "9 Jan 2027",
+              "label": "Exclusions expire unless renewed",
+              "state": "next"
+            },
+            {
+              "date": "10 Jan 2027",
+              "label": "Truce ends unless renewed",
+              "state": "next"
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "tag": "If renewed",
+          "title": "Truce and exclusions are extended again",
+          "text": "The duty on a Chinese-made vacuum stays at about 37.5%, and products covered by one of the 178 exclusions keep it."
+        },
+        {
+          "tag": "If exclusions lapse",
+          "title": "The 178 exclusions end on 9 January",
+          "text": "Products that rely on an exclusion pay the full Section 301 duty again. Importers should check whether any of their lines or parts use one."
+        },
+        {
+          "tag": "If the truce ends",
+          "title": "The Busan arrangement is not renewed",
+          "text": "Measures paused under the deal, such as US port fees on Chinese ships and China's rare-earth export controls, could return. Any new tariff would need a legal basis other than IEEPA after the Supreme Court ruling."
+        },
+        {
+          "tag": "In court",
+          "title": "Challenges to the forced-labor duties",
+          "text": "The forced-labor duties and the Section 122 surcharge face cases at the Court of International Trade. If the forced-labor duty fell, a Chinese-made vacuum would be back to the 25% Section 301 duty alone."
+        }
+      ]
+    }
+  ]
 }
