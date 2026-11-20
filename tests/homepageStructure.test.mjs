@@ -24,7 +24,7 @@ test("home retains a single main heading and search guides stay outside editoria
   assert.match(home, /getEditorialInsights\(articles\)/);
 });
 
-test("home order: hero, news, WCB Expo, radar, From Denny, directory, business, subscribe", () => {
+test("home order: hero, topics, news, From Denny, WCB Expo, radar, directory, business, subscribe", () => {
   // The A design opens with a visible heading, a search box and what WCB tracks.
   assert.match(home, /The global cleaning industry, in one place\./);
   assert.match(home, /action="\/search"/);
@@ -33,10 +33,11 @@ test("home order: hero, news, WCB Expo, radar, From Denny, directory, business, 
   const body = home.slice(home.indexOf("  return (\n    <div className=\"home-a\">"));
   const order = [
     'id="home-title"',
+    'id="home-topics-title"',
     'id="home-feed-title"',
+    'id="home-denny-title"',
     'id="home-expo-title"',
     'id="home-radar-title"',
-    'id="home-denny-title"',
     'id="home-categories-title"',
     'id="home-companies-title"',
     'id="home-owners-title"',
