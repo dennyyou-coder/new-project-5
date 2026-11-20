@@ -898,5 +898,7 @@ export function buildBrandPageTitle(profile: BrandProfile): string {
   const customTitle = normalizeOptionalBrandText(profile.metaTitle);
   if (customTitle) return customTitle;
   const subject = profile.schemaEntityType === "Brand" ? "Brand" : "Corporate";
-  return `${profile.name} ${subject} Profile, Ownership, Products & Strategy`;
+  const full = `${profile.name} ${subject} Profile, Ownership, Products & Strategy`;
+  // Keep search titles readable: long company names drop the list of topics.
+  return full.length <= 70 ? full : `${profile.name} ${subject} Profile: Ownership and Products`;
 }

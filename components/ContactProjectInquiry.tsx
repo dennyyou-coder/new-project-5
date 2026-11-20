@@ -34,7 +34,7 @@ export function ContactProjectInquiry({ initialInquiry = "" }: { initialInquiry?
   return <>
     <section className="contact-choices" id="inquiry-form" aria-labelledby="contact-cooperation-title">
       <div className="container">
-        <div className="section-head"><div><p className="eyebrow">Inquiry Types</p><h2 id="contact-cooperation-title">Business Cooperation</h2><p>Four ways to work with WCB.</p></div></div>
+        <div className="section-head"><div><p className="eyebrow">Inquiry Types</p><h2 id="contact-cooperation-title">Business cooperation</h2><p>Four ways to work with WCB.</p></div></div>
         <div className="cooperation-grid" role="radiogroup" aria-label="Choose a cooperation area">
           {CONTACT_INQUIRIES.map((item, index) => <label className="cooperation-card" id={item.value} key={item.value}>
             <input type="radio" name="business-area" value={item.value} checked={area === item.value} onChange={() => setInquiry(area === item.value ? inquiry : item.value)} />

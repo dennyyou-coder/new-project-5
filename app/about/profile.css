@@ -85,7 +85,7 @@
 #denny-about .media-feature>img{object-fit:contain;background:#e8eef2}
 /* PR-16: platform first, then the founder */
 #denny-about .about-platform{background:#F3F7FC;border-bottom:1px solid #D8E3F0;padding:48px 0 40px}
-#denny-about .about-platform h1{font-size:48px;line-height:1.1;max-width:900px;color:#0B2140;margin-bottom:16px}
+#denny-about .about-platform h1{font-size:var(--h1-detail);line-height:1.1;max-width:900px;color:#0B2140;margin-bottom:16px}
 #denny-about .about-platform-lead{max-width:720px;font-size:18px}
 #denny-about .about-platform-counts{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:4px 28px}
 #denny-about .about-platform-counts a{display:inline-flex;align-items:baseline;gap:6px;min-height:44px;align-items:center;font-size:15px;color:#52677D}

@@ -6,7 +6,7 @@ import { ToolScreen } from "@/components/tools/ToolScreen";
 import "../styles/tools.css";
 
 export const metadata: Metadata = {
-  title: "Free Tools and Trackers for Appliance and Power Tool Companies",
+  title: "Free Tools for Appliance and Tool Companies",
   description:
     "Free tools for appliance and power tool companies: landed cost, container loading, retail-to-FOB pricing, battery shipping, compliance, recalls and FCC radar.",
   alternates: { canonical: "/tools" }

@@ -56,7 +56,7 @@ export default function InquiryReceivedPage() {
         <div className="container trust-hero-inner">
           <span className="trust-status-mark" aria-hidden="true">✓</span>
           <p className="eyebrow">INQUIRY RECEIVED</p>
-          <h1>Your Inquiry Is In The Right Place.</h1>
+          <h1>Your inquiry is in the right place</h1>
           <p className="trust-hero-lead">
             If you have just completed a World Clean Biz form, your information
             will be reviewed and routed according to the business objective you
@@ -95,7 +95,7 @@ export default function InquiryReceivedPage() {
         <div className="container">
           <div className="trust-section-heading">
             <p className="eyebrow">CONTINUE EXPLORING</p>
-            <h2>Use The Platform While We Review Your Request.</h2>
+            <h2>Use the platform while we review your request</h2>
           </div>
           <div className="trust-next-grid">
             {nextSteps.map((item) => (

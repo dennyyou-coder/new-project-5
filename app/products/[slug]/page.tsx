@@ -17,7 +17,7 @@ export const dynamicParams = false;
 export function generateStaticParams() { return productModels.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const model = getProduct((await params).slug);
-  return model ? buildWebsiteMetadata({ title: `${model.name}: Specs, Versions & Market Position`, description: model.summary, canonical: `/products/${model.slug}`, image: model.coverImage }) : {};
+  return model ? buildWebsiteMetadata({ title: `${model.name}: Specs and Versions`, description: model.summary, canonical: `/products/${model.slug}`, image: model.coverImage }) : {};
 }
 export default async function ProductPage({ params }: Props) {
   const model = getProduct((await params).slug);

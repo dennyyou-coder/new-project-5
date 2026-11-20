@@ -14,7 +14,7 @@ const siteUrl = "https://worldcleanbiz.com";
 const ranking = revenueGrowthRanking();
 
 export const metadata: Metadata = {
-  title: `Cleaning Industry Company Rankings: ${ranking.period} Revenue Growth`,
+  title: `Company Rankings: ${ranking.period} Revenue Growth`,
   description: `Listed cleaning appliance, pool and outdoor equipment companies ranked by ${ranking.period} revenue growth, from Roborock and ECOVACS to SharkNinja, Midea and Whirlpool, with each company's reported figures and source.`,
   alternates: { canonical: "/rankings" }
 };

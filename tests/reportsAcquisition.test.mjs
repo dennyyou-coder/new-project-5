@@ -16,7 +16,7 @@ const tallyFormsSource = await readFile(
 );
 
 test("Reports presents a clear free-report library instead of a single-report landing page", () => {
-  assert.match(reportsSource, /Free Cleaning Industry Reports/);
+  assert.match(reportsSource, /Free cleaning industry reports/);
   assert.match(reportsSource, /Choose the reports relevant to your market/);
   assert.match(reportsSource, /id="free-reports"/);
   assert.match(reportsSource, /The Next Decade of Cleaning Growth/);

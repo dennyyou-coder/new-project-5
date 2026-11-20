@@ -321,7 +321,7 @@ export function buildComponentSitemapEntries(profiles: readonly ComponentProfile
 }
 
 export function buildComponentPageTitle(profile: ComponentProfile) {
-  return `${profile.name}: Types, Specifications & Compatibility Checks`;
+  return `${profile.name}: Types, Specs and Compatibility`;
 }
 
 export function buildComponentPageSchemas(profile: ComponentProfile, siteUrl: string): object[] {

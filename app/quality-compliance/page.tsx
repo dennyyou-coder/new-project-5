@@ -63,7 +63,7 @@ export default function QualityCompliancePage() {
       <section className="trust-hero trust-quality-hero">
         <div className="container trust-hero-inner">
           <p className="eyebrow">QUALITY &amp; COMPLIANCE</p>
-          <h1>Quality Starts With Clear Requirements.</h1>
+          <h1>Quality starts with clear requirements</h1>
           <p className="trust-hero-lead">
             A reliable sourcing project begins before production. World Clean
             Biz helps turn market needs into written product requirements,
@@ -87,7 +87,7 @@ export default function QualityCompliancePage() {
         <div className="container">
           <div className="trust-section-heading">
             <p className="eyebrow">FROM REQUIREMENT TO DELIVERY</p>
-            <h2>Five Stages For A Better-Controlled Project.</h2>
+            <h2>Five stages for a better-controlled project</h2>
             <p>
               The exact scope changes by product, order and target market. The
               operating principle remains consistent: define the requirement,
@@ -110,7 +110,7 @@ export default function QualityCompliancePage() {
         <div className="container">
           <div className="trust-section-heading">
             <p className="eyebrow">RESPONSIBILITY BY ROLE</p>
-            <h2>Clear Roles Create Better Outcomes.</h2>
+            <h2>Clear roles create better outcomes</h2>
             <p>
               Quality and compliance are shared across the commercial and
               technical chain. Clear ownership reduces assumptions and makes
@@ -132,7 +132,7 @@ export default function QualityCompliancePage() {
         <div className="container trust-boundary-grid">
           <div>
             <p className="eyebrow">IMPORTANT BOUNDARY</p>
-            <h2>Requirements Depend On The Product And Market.</h2>
+            <h2>Requirements depend on the product and market</h2>
           </div>
           <div>
             <p>
@@ -154,7 +154,7 @@ export default function QualityCompliancePage() {
         <div className="container trust-cta">
           <div>
             <p className="eyebrow">START WITH THE TARGET MARKET</p>
-            <h2>Define The Requirements Before Choosing The Product.</h2>
+            <h2>Define the requirements before choosing the product</h2>
             <p>
               Share the product category, destination market and project stage.
               We will help identify the questions that need to be answered first.

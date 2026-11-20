@@ -11,7 +11,7 @@ import "../styles/tools.css";
 import "../styles/radar.css";
 
 export const metadata: Metadata = {
-  title: "Launch Radar: New FCC Filings from Robot, Appliance and Tool Makers",
+  title: "Launch Radar: New FCC Filings",
   description:
     "New FCC equipment authorizations from Roborock, Ecovacs, Dyson, SharkNinja, Mammotion, Husqvarna, Milwaukee, Whirlpool and more, and which Chinese robot makers have filed nothing since the FCC Covered List rule.",
   alternates: { canonical: "/launch-radar" }

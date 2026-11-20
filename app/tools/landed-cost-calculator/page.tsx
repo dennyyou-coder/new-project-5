@@ -6,7 +6,7 @@ import { RATES_AS_OF } from "@/lib/tools/landedCost";
 import "../../styles/tools.css";
 
 export const metadata: Metadata = {
-  title: "Landed Cost and US Tariff Calculator for Vacuums, Pool Robots and Mowers",
+  title: "Landed Cost and US Tariff Calculator",
   description:
     "Work out the landed cost of robot vacuums, pool robots and robotic mowers shipped from China or Southeast Asia to the US, EU or UK: Section 301 duties, EU and UK duty, customs fees and import VAT.",
   alternates: { canonical: "/tools/landed-cost-calculator" }

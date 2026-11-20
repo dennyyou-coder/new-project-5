@@ -5,7 +5,7 @@ import { ToolPage } from "@/components/tools/ToolPage";
 import "../../styles/tools.css";
 
 export const metadata: Metadata = {
-  title: "Retail Price to FOB Calculator for Appliances and Tools",
+  title: "Retail Price to FOB Calculator",
   description:
     "Work back from a shelf price on Amazon or in a retail chain to the highest FOB factory price that still leaves the brand its margin, or from FOB to retail.",
   alternates: { canonical: "/tools/retail-to-fob-price-calculator" }

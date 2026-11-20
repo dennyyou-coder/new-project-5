@@ -20,7 +20,7 @@ export const WCB_REPORTS: WcbReport[] = [
     cover: "/images/reports/wcb-cleaning-industry-growth-map-cover.webp",
     file: "/reports/wcb-cleaning-industry-growth-map-english-report.pdf"
   },
-  { id: "pool-robot-channels-service-costs", title: "Pool Robot Channels And Service Costs" },
+  { id: "pool-robot-channels-service-costs", title: "Pool Robot Channels and Service Costs" },
   { id: "robotic-lawn-mower-supply-chains", title: "Robotic Lawn Mower Supply Chains" },
   { id: "commercial-cleaning-robot-roi", title: "Commercial Cleaning Robot ROI Model" },
   { id: "china-cleaning-supplier-pack", title: "China Cleaning Supplier Pack" }

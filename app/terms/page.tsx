@@ -39,7 +39,7 @@ export default function TermsPage() {
           </article>
           <article>
             <span>02</span>
-            <h2>Industry Content And Estimates</h2>
+            <h2>Industry content and estimates</h2>
             <p>
               Articles, reports, market sizes, forecasts and industry views may
               draw on public information, professional discussions and World
@@ -102,7 +102,7 @@ export default function TermsPage() {
           </article>
           <article>
             <span>08</span>
-            <h2>Availability And Disclaimer</h2>
+            <h2>Availability and disclaimer</h2>
             <p>
               The website is provided on an as-available basis. We may correct,
               update, suspend or remove content and features. We do not promise
@@ -112,7 +112,7 @@ export default function TermsPage() {
           </article>
           <article>
             <span>09</span>
-            <h2>Limitation Of Responsibility</h2>
+            <h2>Limitation of responsibility</h2>
             <p>
               To the extent permitted by applicable law, World Clean Biz is not
               responsible for indirect or consequential loss arising from use
@@ -123,7 +123,7 @@ export default function TermsPage() {
           </article>
           <article>
             <span>10</span>
-            <h2>Changes And Contact</h2>
+            <h2>Changes and contact</h2>
             <p>
               These terms may be updated as the website and services develop.
               Questions about these terms can be submitted through the

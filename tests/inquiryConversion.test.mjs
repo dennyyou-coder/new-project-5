@@ -74,7 +74,7 @@ test("both pages include canonical and social metadata", () => {
 
 test("Contact explains the inquiry path with visual trust evidence", () => {
   assert.match(definitionSource, /title: "Sourcing & Supply Chain"/);
-  assert.match(contactSource, /What To Include In Your Inquiry/);
+  assert.match(contactSource, /What to include in your inquiry/);
   assert.match(contactSource, /site-refresh\/about\/about-hero-denny\.webp/);
   assert.match(contactSource, /Inside the cleaning industry since 2006/);
   assert.doesNotMatch(contactSource, /Follow-Up Depends On Fit/);

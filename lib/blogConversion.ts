@@ -15,7 +15,7 @@ const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
   sourcing: {
     type: "sourcing",
     eyebrow: "Sourcing Support",
-    title: "Turn Product Research Into A Qualified Supplier Brief",
+    title: "Turn product research into a qualified supplier brief",
     description:
       "Share your category, target market and supplier requirements with World Clean Biz.",
     buttonLabel: "Start A Sourcing Inquiry",
@@ -25,7 +25,7 @@ const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
   reports: {
     type: "reports",
     eyebrow: "Market Intelligence",
-    title: "Continue With The World Clean Biz Industry Report",
+    title: "Continue with the World Clean Biz industry report",
     description:
       "Get the current report on cleaning industry growth, categories and supplier signals.",
     buttonLabel: "Get The Report",
@@ -35,7 +35,7 @@ const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
   expo: {
     type: "expo",
     eyebrow: "WCB Expo",
-    title: "Follow The Next Cleaning Industry Platform",
+    title: "Follow the next cleaning industry platform",
     description:
       "Receive visitor registration, exhibitor, forum and business matching updates.",
     buttonLabel: "Get Expo Updates",

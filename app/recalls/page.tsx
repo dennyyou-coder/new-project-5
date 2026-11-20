@@ -11,7 +11,7 @@ import "../styles/tools.css";
 import "../styles/radar.css";
 
 export const metadata: Metadata = {
-  title: "Product Recall Tracker: Appliances, Cleaning and Power Tools (US and EU)",
+  title: "Product Recall Tracker: Appliances and Tools",
   description:
     "Every 2026 US CPSC and EU Safety Gate recall of vacuums, appliances, power tools and garden machinery, with hazards, units and country of manufacture.",
   alternates: { canonical: "/recalls" }

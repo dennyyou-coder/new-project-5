@@ -397,7 +397,7 @@ export function buildEquipmentSitemapEntries(profiles: readonly EquipmentProfile
 }
 
 export function buildEquipmentPageTitle(profile: EquipmentProfile) {
-  return `${profile.name} Technical Profile: Types, Specs, Parts & Buyer Checks`;
+  return `${profile.name}: Types, Specs and Buyer Checks`;
 }
 
 export function buildEquipmentPageSchemas(profile: EquipmentProfile, siteUrl: string): object[] {

@@ -41,7 +41,7 @@ export function BusinessServices() {
       <div className="container glacier-business-inner">
         <div className="glacier-business-intro">
           <p className="eyebrow">Work with WCB</p>
-          <h2 id="business-services-title">Business Cooperation</h2>
+          <h2 id="business-services-title">Business cooperation</h2>
           <Link className="button" href="/contact">Discuss your project</Link>
         </div>
         <div className="glacier-services-grid">

@@ -10,7 +10,7 @@ import "../styles/tools.css";
 import "../styles/radar.css";
 
 export const metadata: Metadata = {
-  title: "Trade and Product Rules Calendar for Appliances and Power Tools",
+  title: "Trade and Product Rules Calendar",
   description:
     "US tariff deadlines, the FCC robot rule and EU regulations for appliances, cleaning machines and power tools: the Machinery Regulation, Batteries Regulation, Cyber Resilience Act and more, with days to go.",
   alternates: { canonical: "/rules-calendar" }

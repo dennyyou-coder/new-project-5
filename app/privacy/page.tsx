@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>02</span>
-            <h2>Information Collected Through The Website</h2>
+            <h2>Information collected through the website</h2>
             <p>
               The website may process technical and usage information such as
               device and browser type, approximate location, referring source,
@@ -51,7 +51,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>03</span>
-            <h2>How We Use Information</h2>
+            <h2>How we use information</h2>
             <p>
               Information is used to respond to requests, provide selected
               materials, route inquiries to the appropriate workflow, improve
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>05</span>
-            <h2>Service Providers And International Processing</h2>
+            <h2>Service providers and international processing</h2>
             <p>
               We use service providers, including website hosting, Google
               Analytics, Tally and Brevo (email delivery and contact management),
@@ -86,7 +86,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>06</span>
-            <h2>How We Share Information</h2>
+            <h2>How we share information</h2>
             <p>
               World Clean Biz does not sell your personal information. We may
               share information with service providers or relevant project
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>07</span>
-            <h2>Retention And Security</h2>
+            <h2>Retention and security</h2>
             <p>
               We keep information for a reasonable period based on the purpose
               of the request, ongoing business needs and applicable obligations.
@@ -107,7 +107,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>08</span>
-            <h2>Your Choices And Requests</h2>
+            <h2>Your choices and requests</h2>
             <p>
               You may browse without submitting a form and may choose not to
               provide optional information. To ask a reasonable question about
@@ -116,7 +116,7 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>09</span>
-            <h2>Business Audience And Children</h2>
+            <h2>Business audience and children</h2>
             <p>
               World Clean Biz is intended for business and industry audiences.
               The website is not directed to children, and we do not knowingly

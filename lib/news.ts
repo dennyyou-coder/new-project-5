@@ -235,3 +235,27 @@ export function selectNews(articles: NewsArticle[], topicValue?: string, pageVal
   const page = Math.min(totalPages, Math.max(1, Number.isSafeInteger(pageNumber) ? pageNumber : 1));
   return { topic, category, page, totalPages, total: filtered.length, articles: filtered.slice((page - 1) * NEWS_PAGE_SIZE, page * NEWS_PAGE_SIZE) };
 }
+
+/**
+ * Search description for a news page. Short excerpts read as a subtitle under the headline,
+ * so when the excerpt is under 100 characters the opening sentences of the story are used.
+ */
+export function newsMetaDescription(article: Pick<NewsArticle, "excerpt" | "content">, limit = 160): string {
+  if (article.excerpt.length >= 100) return article.excerpt;
+  const lead = article.content
+    .split(/\n\s*\n/)
+    .map((block) => block.trim())
+    .find((block) => block && !/^(#|>|!\[|<|\||-\s|\*\s|\d+\.\s)/.test(block));
+  if (!lead) return article.excerpt;
+  const text = lead.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_`]/g, "").replace(/\s+/g, " ").trim();
+  // Split only where punctuation is followed by a space and a capital, so "8.2%" stays whole.
+  const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z0-9“"])/);
+  let out = "";
+  for (const sentence of sentences) {
+    const next = (out + " " + sentence.trim()).trim();
+    if (next.length > limit) break;
+    out = next;
+  }
+  if (!out) out = `${text.slice(0, limit - 1).replace(/\s+\S*$/, "")}…`;
+  return out.length > article.excerpt.length ? out : article.excerpt;
+}

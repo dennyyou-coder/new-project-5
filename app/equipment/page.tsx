@@ -25,7 +25,7 @@ export default function EquipmentDirectoryPage() {
         <div className="insights-page-container equipment-directory-hero">
           <div>
             <p className="eyebrow">Independent Technical Intelligence</p>
-            <h1>Cleaning Equipment Technical Intelligence</h1>
+            <h1>Cleaning equipment technical intelligence</h1>
             <p>Structured equipment profiles connect operating principles, performance metrics, components, representative brands and concrete buyer checks without turning unlike specifications into rankings.</p>
           </div>
           <div className="guides-hero-stat"><strong>{profiles.length}</strong><span>Published equipment profiles</span></div>

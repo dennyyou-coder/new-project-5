@@ -29,7 +29,7 @@ export default function ContactPage() {
   return (
     <div className="approved-platform contact-page">
       <section className="contact-hero mist"><div className="container">
-        <p className="eyebrow">Contact World Clean Biz</p><h1>Work With World Clean Biz</h1>
+        <p className="eyebrow">Contact World Clean Biz</p><h1>Work with World Clean Biz</h1>
         <p className="hero-intro">Choose a cooperation area and tell us about your company, market and project.</p>
       </div></section>
       <Suspense fallback={<ContactProjectInquiry initialInquiry="" />}>
@@ -42,7 +42,7 @@ export default function ContactPage() {
             <figcaption className="denny-identity"><strong>Denny You</strong><span>Founder, World Clean Biz · Organizer, WCB Expo</span><small>Inside the cleaning industry since 2006</small></figcaption>
           </figure>
           <div className="preparation-copy">
-            <p className="eyebrow">What Happens Next</p><h2 id="contact-preparation-title">What To Include In Your Inquiry</h2>
+            <p className="eyebrow">What Happens Next</p><h2 id="contact-preparation-title">What to include in your inquiry</h2>
             <p>Clear context helps World Clean Biz understand your objective and route the request correctly.</p>
             <ol className="contact-context-list"><li>Your company and target market</li><li>Product category or business objective</li><li>Current project stage and timeline</li><li>The decision, supplier or connection you need</li></ol>
             <p className="contact-response-note">World Clean Biz reviews each relevant inquiry and routes it to the relevant team based on sourcing, Expo, media, or business intent.</p>

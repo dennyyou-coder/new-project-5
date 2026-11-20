@@ -13,7 +13,7 @@ export const metadata: Metadata = buildWebsiteMetadata({
 
 const upcomingReports = [
   {
-    title: "Pool Robot Channels And Service Costs",
+    title: "Pool Robot Channels and Service Costs",
     reportId: "pool-robot-channels-service-costs",
     ctaLocation: "reports_card_pool_robots",
     image: "/images/articles/about-denny-expo-2026/11-photo-97.webp",
@@ -75,7 +75,7 @@ export default function ReportsPage() {
         <div className="reports-container reports-library-hero-grid">
           <div>
             <p className="reports-kicker">World Clean Biz Intelligence Library</p>
-            <h1>Free Cleaning Industry Reports</h1>
+            <h1>Free cleaning industry reports</h1>
             <p className="reports-library-hero-intro">
               Choose the reports relevant to your market and receive them by
               email. New category and sourcing intelligence will be added as it
@@ -92,7 +92,7 @@ export default function ReportsPage() {
           <div className="reports-library-heading">
             <div>
               <p className="reports-kicker">Choose Your Intelligence</p>
-              <h2>Free Reports For Cleaning Industry Decisions</h2>
+              <h2>Free reports for cleaning industry decisions</h2>
             </div>
             <p>
               Get the current report now or register your interest in upcoming
@@ -137,7 +137,7 @@ export default function ReportsPage() {
           <div className="reports-library-upcoming-heading">
             <div>
               <p className="reports-kicker">Coming Soon</p>
-              <h2>Register Your Interest Early</h2>
+              <h2>Register your interest early</h2>
             </div>
             <p>
               Tell us which topics matter to you. We will notify you when the
@@ -179,7 +179,7 @@ export default function ReportsPage() {
           <div className="reports-library-heading reports-library-heading-light">
             <div>
               <p className="reports-kicker">Why World Clean Biz Reports</p>
-              <h2>Intelligence Built For Better Business Decisions</h2>
+              <h2>Intelligence built for better business decisions</h2>
             </div>
             <p>
               For a decade, Denny has shared cleaning industry analysis with
@@ -210,7 +210,7 @@ export default function ReportsPage() {
       <section className="reports-library-final-cta">
         <div className="reports-container">
           <p className="reports-kicker">Build Your Report List</p>
-          <h2>Choose The Reports You Want To Receive.</h2>
+          <h2>Choose the reports you want to receive</h2>
           <p>
             Select the current report and any upcoming topics relevant to your
             business. We will use your email only for report delivery and World
