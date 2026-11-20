@@ -18,6 +18,35 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
       <h2 id={headingId}>{section.title}</h2>
       {section.intro ? <p>{section.intro}</p> : null}
 
+      {section.stats?.length ? (
+        <dl className="topic-stats">
+          {section.stats.map((stat) => (
+            <div key={stat.label}>
+              <dt>{stat.label}</dt>
+              <dd>{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
+      ) : null}
+
+      {section.people?.length ? (
+        <figure className="topic-people">
+          <ul>
+            {section.people.map((person) => (
+              <li key={person.name}>
+                <img src={person.image} alt={person.name} width={72} height={72} loading="lazy" decoding="async" />
+                <span>
+                  {person.side ? <em>{person.side}</em> : null}
+                  <strong>{person.name}</strong>
+                  <small>{person.role}</small>
+                </span>
+              </li>
+            ))}
+          </ul>
+          <figcaption>Photos: {[...new Set(section.people.map((person) => person.credit))].join("; ")}.</figcaption>
+        </figure>
+      ) : null}
+
       {section.facts?.length ? (
         <dl className="topic-section-facts">
           {section.facts.map((fact) => (
@@ -35,9 +64,34 @@ export function TopicSection({ section }: { section: TopicSectionData }) {
         </div>
       ) : null}
 
+      {section.lineup?.length ? (
+        <div className="topic-lineup">
+          {section.lineup.map((side) => (
+            <div key={side.slug} className="topic-lineup-side">
+              <Link className="topic-lineup-parent" href={`/brands/${side.slug}`}>
+                <img src={`/images/brands/${side.slug}/logo.webp`} alt={side.name} loading="lazy" decoding="async" />
+              </Link>
+              <ul>
+                {side.brands.map((brand) => (
+                  <li key={brand.name}>
+                    {brand.slug ? (
+                      <Link href={`/brands/${brand.slug}`} title={brand.name}>
+                        <img src={`/images/brands/${brand.slug}/logo-tile.webp`} alt={brand.name} loading="lazy" decoding="async" />
+                      </Link>
+                    ) : (
+                      <span>{brand.name}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ) : null}
+
       {section.table ? (
         <div className="topic-table-wrap">
-          <table className={`topic-table${section.table.layout === "cards" ? " is-cards" : ""}`}>
+          <table className={`topic-table${section.table.layout === "cards" ? " is-cards" : ""}${section.table.numbered ? " is-numbered" : ""}`}>
             <thead>
               <tr>
                 {section.table.columns.map((column) => <th key={column} scope="col">{column}</th>)}
