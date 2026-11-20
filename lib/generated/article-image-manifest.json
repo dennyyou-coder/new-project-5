@@ -26393,6 +26393,24 @@
         "outputHash": "sha256:65583c02d00eecc7d9a672744108c7f1a765ac0defd3174004736848f9859591"
       }
     },
+    "/images/articles/uk-robot-lawn-mower-anti-dumping-investigation-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39168,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7bf182edb8cad0c9e3f3bf1c2b4538e63804eea36062553b8c0153a428d40cc6",
+      "outputHash": "sha256:997ee788bc073deff7393acfee4942d9315398cc1bd3b21116f0c2173ed4458a",
+      "mobile": {
+        "src": "/images/articles/uk-robot-lawn-mower-anti-dumping-investigation-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18712,
+        "outputHash": "sha256:7d08a8ed080181ea9f1cee94ff2fcc0f592bef5338f2b98eb002e0a88d80e826"
+      }
+    },
     "/images/articles/upc-ecovacs-roborock-evidence-appeal-march-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -49791,6 +49809,11 @@
         "/images/insights/two-sides-of-dyson-image-009.jpg"
       ]
     },
+    "uk-robot-lawn-mower-anti-dumping-investigation-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/uk-robot-lawn-mower-anti-dumping-investigation-november-2026/01-cover.webp",
+      "body": []
+    },
     "ultrasonic-cleaning-market": {
       "budgetClass": "standard",
       "cover": "/images/blog/ultrasonic-cleaning-market-system-map.webp",
@@ -60643,6 +60666,15 @@
           "status": "matched",
           "primary": "/images/articles/tti-sues-chervon-galli-trade-secrets-november-2026/01-cover.webp",
           "hash": "sha256:aca6b8808b1e03f104066a4d75dd4a2d6a3e7fd4fe40b4dcde088a7736f99c5d"
+        }
+      }
+    },
+    "uk-robot-lawn-mower-anti-dumping-investigation-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/uk-robot-lawn-mower-anti-dumping-investigation-november-2026/01-cover.webp",
+          "hash": "sha256:7bf182edb8cad0c9e3f3bf1c2b4538e63804eea36062553b8c0153a428d40cc6"
         }
       }
     },
