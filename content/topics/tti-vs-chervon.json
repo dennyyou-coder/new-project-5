@@ -1073,7 +1073,9 @@
   ],
   "follow": {
     "heading": "Follow TTI v. Chervon",
-    "note": "Get each court step, filing and company response in the WCB weekly brief, every Friday. Free, and you can unsubscribe any time."
+    "note": "Get each court step, filing and company response in the WCB weekly brief, every Friday, and a separate email the day a ruling or settlement lands. Free, and you can unsubscribe any time.",
+    "short": "Follow TTI v. Chervon: each court step in your inbox every Friday",
+    "brevoListId": 13
   },
   "versus": {
     "title": "What moved from TTI to Chervon, and why TTI sued",

@@ -191,6 +191,8 @@ export default async function TopicPage({ params }: { params: PageParams }) {
 
       <div className="topic-container topic-layout">
         <div className="topic-main">
+          {topic.follow ? <TopicFollow follow={topic.follow} topic={topic.slug} compact ctaLocation={`topic_follow_top_${topic.slug}`} /> : null}
+
           <section aria-labelledby="topic-summary">
             <h2 id="topic-summary">The story so far</h2>
             {topic.summary.map((paragraph) => (
@@ -244,7 +246,7 @@ export default async function TopicPage({ params }: { params: PageParams }) {
             </div>
           </section>
 
-          {topic.follow ? <TopicFollow follow={topic.follow} ctaLocation={`topic_follow_${topic.slug}`} /> : null}
+          {topic.follow ? <TopicFollow follow={topic.follow} topic={topic.slug} ctaLocation={`topic_follow_end_${topic.slug}`} /> : null}
         </div>
 
         <aside className="topic-side">

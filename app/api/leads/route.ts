@@ -4,6 +4,7 @@ import { reportDownloadUrl } from "@/lib/reports";
 import { getEditorialInsights } from "@/lib/insightCollections";
 import { createConfirmToken } from "@/lib/leadConfirm";
 import { getNews } from "@/lib/news";
+import { getTopics } from "@/lib/topics";
 import { welcomeEmailHtml } from "@/lib/welcomeEmail";
 import { brevoAttributes, directListFor, looksAutomated, validateLead, wantsNewsletter, type Lead } from "@/lib/leads";
 
@@ -23,6 +24,13 @@ function config() {
     sender: process.env.BREVO_SENDER_EMAIL,
     notify: process.env.LEAD_NOTIFY_EMAIL
   };
+}
+
+/** The Brevo list that records followers of a topic, when the topic has one. */
+function topicListFor(slug: string | undefined) {
+  if (!slug) return undefined;
+  const id = getTopics().find((topic) => topic.slug === slug)?.follow?.brevoListId;
+  return typeof id === "number" && id > 0 ? id : undefined;
 }
 
 const escape = (value = "") => value.replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[char]!);
@@ -80,13 +88,21 @@ export async function POST(request: Request) {
     if (list) {
       await brevo(settings.key, "/contacts", { email: lead.email, attributes, listIds: [list], updateEnabled: true });
     }
+    if (lead.kind === "subscribe" && lead.profileOnly) {
+      // Second, optional step of the subscribe form: the reader is already
+      // subscribed, so only the profile details are added. No second welcome email.
+      await brevo(settings.key, "/contacts", { email: lead.email, attributes, updateEnabled: true });
+      return Response.json({ ok: true });
+    }
     if (wantsNewsletter(lead) && settings.lists.newsletter) {
       // Single opt-in: subscribed straight away, then a welcome email with real
       // content and a one-click unsubscribe link (also in List-Unsubscribe).
+      // A topic follow box also adds the reader to that topic's list.
+      const topicList = topicListFor(lead.topic);
       await brevo(settings.key, "/contacts", {
         email: lead.email,
         attributes: { ...attributes, OPT_IN: true },
-        listIds: [settings.lists.newsletter],
+        listIds: topicList ? [settings.lists.newsletter, topicList] : [settings.lists.newsletter],
         updateEnabled: true
       });
       if (settings.sender) {

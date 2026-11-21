@@ -53,6 +53,10 @@ export type Lead = {
   reportId?: string;
   sourcePage?: string;
   ctaLocation?: string;
+  /** Subscribe form: the topic the reader chose to follow (a topic slug). */
+  topic?: string;
+  /** Subscribe form, second step: only adds profile details; the contact already exists. */
+  profileOnly?: boolean;
 };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -89,7 +93,9 @@ export function validateLead(input: Record<string, unknown>): { ok: true; lead: 
     subscribe: input.subscribe === true,
     reportId: clean(input.reportId, 80),
     sourcePage: clean(input.sourcePage, 200),
-    ctaLocation: clean(input.ctaLocation, 80)
+    ctaLocation: clean(input.ctaLocation, 80),
+    topic: /^[a-z0-9-]{1,80}$/.test(clean(input.topic, 80)) ? clean(input.topic, 80) : "",
+    profileOnly: input.profileOnly === true
   };
   if (kind === "subscribe" && !lead.consent) return { ok: false, error: "Tick the box to receive WCB emails", field: "consent" };
   if (kind === "inquiry") {

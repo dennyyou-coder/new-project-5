@@ -26,7 +26,8 @@ function formTypeFor(kind: LeadKind, extra: { reportId?: string; need?: string; 
 
 type Status = { state: "idle" | "sending" | "done" | "error"; message?: string; field?: string };
 
-function useLeadSubmit(kind: LeadKind, ctaLocation: string) {
+/** `track: false` sends without analytics events (the optional profile step, so a signup counts once). */
+function useLeadSubmit(kind: LeadKind, ctaLocation: string, track = true) {
   const [status, setStatus] = useState<Status>({ state: "idle" });
   const startedAt = useRef(0);
   useEffect(() => { startedAt.current = Date.now(); }, []);
@@ -41,7 +42,7 @@ function useLeadSubmit(kind: LeadKind, ctaLocation: string) {
       inquiryType: String(fields.need ?? fields.expoRole ?? "")
     });
     setStatus({ state: "sending" });
-    trackLeadEvent("form_submit", attribution);
+    if (track) trackLeadEvent("form_submit", attribution);
     try {
       const response = await fetch("/api/leads", {
         method: "POST",
@@ -51,10 +52,10 @@ function useLeadSubmit(kind: LeadKind, ctaLocation: string) {
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data.ok) {
         setStatus({ state: "error", message: data.error || "Something went wrong. Please try again.", field: data.field });
-        trackLeadEvent("form_error", { ...attribution, error_reason: data.code || `status_${response.status}` });
+        if (track) trackLeadEvent("form_error", { ...attribution, error_reason: data.code || `status_${response.status}` });
         return false;
       }
-      trackLeadEvent("form_success", { ...attribution, conversion_value: 1 });
+      if (track) trackLeadEvent("form_success", { ...attribution, conversion_value: 1 });
       setStatus({ state: "done" });
       return true;
     } catch {
@@ -91,9 +92,10 @@ function Done({ title, children }: { title: string; children: ReactNode }) {
 const honeypotValue = (form: HTMLFormElement) => (form.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "";
 
 /* 1. Subscribe: email first, then an optional profile in the same form. */
-export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB weekly brief", note }: { ctaLocation: string; reportId?: string; heading?: string; note?: string }) {
+export function SubscribeForm({ ctaLocation, reportId, topic, compact = false, heading = "Get the WCB weekly brief", note }: { ctaLocation: string; reportId?: string; topic?: string; compact?: boolean; heading?: string; note?: string }) {
   const { status, setStatus, submit } = useLeadSubmit("subscribe", ctaLocation);
-  const [step, setStep] = useState<"email" | "profile">("email");
+  const profileSubmit = useLeadSubmit("subscribe", `${ctaLocation}_profile`, false);
+  const [step, setStep] = useState<"email" | "profile" | "done">("email");
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(true);
   const [role, setRole] = useState("");
@@ -102,19 +104,23 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
   const [company, setCompany] = useState("");
   const report = getReport(reportId);
 
-  function next(event: FormEvent<HTMLFormElement>) {
+  // The reader is subscribed as soon as the email step is sent; the profile step
+  // afterwards is optional and only adds details, so leaving it loses nothing.
+  async function next(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) return setStatus({ state: "error", message: "Enter a valid email address", field: "email" });
     if (!consent) return setStatus({ state: "error", message: "Tick the box to receive WCB emails", field: "consent" });
-    setStatus({ state: "idle" });
-    setStep("profile");
+    const ok = await submit({ email, consent, reportId, topic, website: honeypotValue(event.currentTarget) });
+    if (ok) setStep("profile");
   }
   async function finish(event: FormEvent<HTMLFormElement>, skip = false) {
     event.preventDefault();
-    await submit({ email, consent, reportId, website: honeypotValue(event.currentTarget), ...(skip ? {} : { role, interests, name, company }) });
+    if (skip || (!role && !interests.length && !name.trim() && !company.trim())) return setStep("done");
+    const ok = await profileSubmit.submit({ email, consent, profileOnly: true, website: honeypotValue(event.currentTarget), role, interests, name, company });
+    if (ok) setStep("done");
   }
 
-  if (status.state === "done") {
+  if (step === "done") {
     return (
       <Done title="You're subscribed">
         Welcome! A first email with this week&apos;s WCB stories is on its way to {email}{report?.file ? ", with your report link" : ""}.{report && !report.file ? " We'll email you when the report is ready." : ""} The brief arrives every Friday.
@@ -123,13 +129,14 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
   }
   if (step === "email") {
     return (
-      <form className="wcb-lead-form" onSubmit={next} noValidate>
+      <form className={`wcb-lead-form${compact ? " wcb-lead-form--compact" : ""}`} onSubmit={next} noValidate>
+        <Honeypot />
         <p className="wcb-lead-title">{report?.file ? `Get the free report: ${report.title}` : heading}</p>
         <p className="wcb-lead-note">{report?.file ? "We'll email you the PDF link right away, then the WCB weekly brief every Friday. Free, and you can unsubscribe any time." : note ?? "Five stories and one analysis every Friday. Free, and you can unsubscribe any time."}</p>
         <div className="wcb-lead-row">
           <label className="wcb-lead-sr" htmlFor={`sub-email-${ctaLocation}`}>Work email</label>
           <input id={`sub-email-${ctaLocation}`} type="email" autoComplete="email" placeholder="name@company.com" value={email} onChange={(event) => setEmail(event.target.value)} aria-invalid={status.field === "email"} />
-          <button className="wcb-lead-primary" type="submit">{report?.file ? "Email me the report" : "Subscribe"}</button>
+          <button className="wcb-lead-primary" type="submit" disabled={status.state === "sending"}>{status.state === "sending" ? "Sending…" : report?.file ? "Email me the report" : compact ? "Follow" : "Subscribe"}</button>
         </div>
         <FieldError status={status} field="email" />
         <label className="wcb-lead-check">
@@ -143,7 +150,7 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
   return (
     <form className="wcb-lead-form" onSubmit={(event) => finish(event)} noValidate>
       <Honeypot />
-      <p className="wcb-lead-title">One more step (optional)</p>
+      <p className="wcb-lead-title">You&apos;re subscribed. One more step (optional)</p>
       <p className="wcb-lead-note">Tell us who you are and we&apos;ll send what matters to you.</p>
       <label className="wcb-lead-label">I am a
         <select value={role} onChange={(event) => setRole(event.target.value)}>
@@ -164,10 +171,10 @@ export function SubscribeForm({ ctaLocation, reportId, heading = "Get the WCB we
         <label className="wcb-lead-label">Name<input autoComplete="name" value={name} onChange={(event) => setName(event.target.value)} /></label>
         <label className="wcb-lead-label">Company<input autoComplete="organization" value={company} onChange={(event) => setCompany(event.target.value)} /></label>
       </div>
-      <FieldError status={status} />
+      <FieldError status={profileSubmit.status} />
       <div className="wcb-lead-actions">
-        <button className="wcb-lead-primary" type="submit" disabled={status.state === "sending"}>{status.state === "sending" ? "Sending…" : "Finish"}</button>
-        <button className="wcb-lead-ghost" type="button" disabled={status.state === "sending"} onClick={(event) => finish(event as unknown as FormEvent<HTMLFormElement>, true)}>Skip</button>
+        <button className="wcb-lead-primary" type="submit" disabled={profileSubmit.status.state === "sending"}>{profileSubmit.status.state === "sending" ? "Sending…" : "Finish"}</button>
+        <button className="wcb-lead-ghost" type="button" disabled={profileSubmit.status.state === "sending"} onClick={(event) => finish(event as unknown as FormEvent<HTMLFormElement>, true)}>Skip</button>
       </div>
     </form>
   );
