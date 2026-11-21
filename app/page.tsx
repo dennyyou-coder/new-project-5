@@ -279,15 +279,6 @@ export default function HomePage() {
   })();
   const keyDates = upcomingRules(now, 5);
 
-  const tracked = [
-    { value: brands.length, label: "company profiles", icon: ICONS.companies },
-    { value: featuredProductModels.length, label: `new ${productSelectionYear} models`, icon: ICONS.models },
-    { value: news.length, label: "news stories", icon: ICONS.news },
-    { value: editorial.length, label: "analyses", icon: ICONS.analysis },
-    { value: recalls.length, label: "product recalls logged", icon: ICONS.recall },
-    { value: filings.length, label: "FCC filings logged", icon: ICONS.fcc }
-  ];
-
   const schemas = [
     {
       "@context": "https://schema.org",
@@ -534,9 +525,7 @@ export default function HomePage() {
       {/* Radar: three trackers built from official records. */}
       <section className="ha-section" id="radar" aria-labelledby="home-radar-title">
         <div className="ha-wrap ha-stack">
-          <SectionHead id="home-radar-title" kicker="Industry radar" title="Recalls, new device approvals and rule deadlines" more={{ href: "/tools", label: "All trackers" }}>
-            <p className="ha-head-text">Three trackers built from official records. They show safety problems, products on the way and rule changes before they reach the news.</p>
-          </SectionHead>
+          <SectionHead id="home-radar-title" kicker="Industry radar" title="Recalls, new device approvals and rule deadlines" more={{ href: "/tools", label: "All trackers" }} />
           <div className="ha-radar">
             <article className="ha-radar-col ha-radar-col--recall">
               <div className="ha-radar-head">
@@ -622,18 +611,6 @@ export default function HomePage() {
             title={`${brands.length} companies and ${featuredProductModels.length} new models, each with sources`}
             more={{ href: "/brands", label: "Open the directory" }}
           />
-
-          <div className="ha-tracks" aria-label="What WCB tracks">
-            {tracked.map((item) => (
-              <div key={item.label} className="ha-track">
-                <span className="ha-icon-tile">{icon(item.icon)}</span>
-                <div>
-                  <div className="ha-track-value">{item.value}</div>
-                  <div className="ha-track-label">{item.label}</div>
-                </div>
-              </div>
-            ))}
-          </div>
 
           <SubHead id="home-categories-title" title="Browse by category" more={{ href: "/categories", label: "All categories" }} />
           <div className="ha-categories">
