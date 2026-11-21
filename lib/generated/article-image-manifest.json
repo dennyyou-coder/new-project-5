@@ -4478,6 +4478,24 @@
         "outputHash": "sha256:4dbead130b4ec4f8269696e98f5f86e725700d2727510c671efdf52bc72cbf9b"
       }
     },
+    "/images/articles/complete-vacuum-cleaner-buying-guide-20221006/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 47604,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:9dd68245539f03ff55d5ccdb80ae0c1d2cf10c0a8fb7d0196ebadd682a31ca6f",
+      "outputHash": "sha256:b4ad60b3d364e9e2ae23f08b5699776b3c40d3e82a706f605966a0374ba99175",
+      "mobile": {
+        "src": "/images/articles/complete-vacuum-cleaner-buying-guide-20221006/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23250,
+        "outputHash": "sha256:745cd585d46262f4b3d05ce3adaf76bb927c6bb28b839c714c807a92c47abd4c"
+      }
+    },
     "/images/articles/conair-hair-dryers-kitchen-brands/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -9408,6 +9426,24 @@
         "height": 450,
         "bytes": 29526,
         "outputHash": "sha256:b8965ced89f9a0cf73b064955f7860759413e19880d69a71b71c791a20546968"
+      }
+    },
+    "/images/articles/first-major-industry-shift-in-2019/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41334,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0996052bc3ee703f05d24e93148bf0fd2c8f2b6200baebe9810f0058a10df65d",
+      "outputHash": "sha256:d1f3fe2e8bd5cd576d8f7ed66ae1de96362268327491c736d1e61a926361e92b",
+      "mobile": {
+        "src": "/images/articles/first-major-industry-shift-in-2019/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20284,
+        "outputHash": "sha256:a0b9383efa2827619dcfab89d3c31214afb4621e38d8cdce63cdcd2505ba6f62"
       }
     },
     "/images/articles/flex-history-chervon-galli/01-cover.webp": {
@@ -23142,6 +23178,24 @@
         "height": 450,
         "bytes": 14350,
         "outputHash": "sha256:7e958ab0a3cbcd23c61acd428f60eb9cbf522caf2f85c6c7f7ed3d9352fa8581"
+      }
+    },
+    "/images/articles/top-ten-vacuum-exporters-in-2019/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44844,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:db144af16c8751a692d948ff39831afe4517ea97ef4c1bdff4d762198ddef7de",
+      "outputHash": "sha256:a3a7bb18d8abbf5ce03f2a2b24159cda8538a1e77067539a9eaccb1cc6d2ed13",
+      "mobile": {
+        "src": "/images/articles/top-ten-vacuum-exporters-in-2019/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21984,
+        "outputHash": "sha256:32d88e682fee9c2f00195ee01e8a9b536ff78884b84c07ebb845bdd8ae63f222"
       }
     },
     "/images/articles/toro-edric-funk-takes-over-as-ceo-november-2026/01-cover.webp": {
@@ -36952,24 +37006,6 @@
         "outputHash": "sha256:28aa2f6b52b691b53d1139087c8b16b0b13b341f529880ea1acc67793ddfbd00"
       }
     },
-    "/images/insights/complete-vacuum-cleaner-buying-guide-20221006-image-01.png": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1021,
-      "height": 420,
-      "bytes": 77471,
-      "format": "png",
-      "quality": 100,
-      "sourceHash": "sha256:f64e2f9141c9372200e7631ab0ef6914f53eba61f13be87a36ef1cfae106dd3b",
-      "outputHash": "sha256:63f7bc259cad449d9c69d9a311ec76cd228f290b3ef8ef6d727b93747a5f3c1e",
-      "mobile": {
-        "src": "/images/insights/complete-vacuum-cleaner-buying-guide-20221006-image-01-800.webp",
-        "width": 800,
-        "height": 329,
-        "bytes": 41214,
-        "outputHash": "sha256:ac7fa66de5565fdf27b387a690e2e5fed7f7ee1660f4004aa6074fd4afb077e2"
-      }
-    },
     "/images/insights/dji-is-running-out-of-time-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -37189,24 +37225,6 @@
         "height": 450,
         "bytes": 24120,
         "outputHash": "sha256:b58c5fc3599854831bfbbaeb4b5806c669e89ff57a537f9bac8dd54e2a2b581e"
-      }
-    },
-    "/images/insights/first-major-industry-shift-in-2019-image-01.png": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1080,
-      "height": 400,
-      "bytes": 97766,
-      "format": "png",
-      "quality": 100,
-      "sourceHash": "sha256:ecd2c8ba017e03bf1ffac74e018ee179e1b7320be7d1920f2d5e424ec34787f3",
-      "outputHash": "sha256:e83797ec14cc85b8e69ec3e644ef902dd5846e63cfc580e5cd0e2800d80aff63",
-      "mobile": {
-        "src": "/images/insights/first-major-industry-shift-in-2019-image-01-800.webp",
-        "width": 800,
-        "height": 296,
-        "bytes": 23750,
-        "outputHash": "sha256:d0a8ce6fc1911b82ba8c9650f6ddbbf21d43629fe4a63ef75d02b11bad0de195"
       }
     },
     "/images/insights/historic-opportunities-in-the-vacuum-industry-cover.jpg": {
@@ -40378,17 +40396,6 @@
         "outputHash": "sha256:b67b2c44892e0e8c73d3dcb65462a08982f963c3505b369c50e97695570a1e59"
       }
     },
-    "/images/insights/top-ten-vacuum-exporters-in-2019-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 506,
-      "height": 348,
-      "bytes": 47408,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:1a6952e0d82d99ec6cd78176c176f7ceb11c9acb59bc1811bac90822f873bb90",
-      "outputHash": "sha256:f7241a29ea4321c667aeab010efcc6ee7ad885aa4fc39d494a979000f36edde3"
-    },
     "/images/insights/trade-war-scenario-analysis-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -41872,7 +41879,7 @@
     },
     "complete-vacuum-cleaner-buying-guide-20221006": {
       "budgetClass": "standard",
-      "cover": "/images/insights/complete-vacuum-cleaner-buying-guide-20221006-image-01.png",
+      "cover": "/images/articles/complete-vacuum-cleaner-buying-guide-20221006/01-cover.webp",
       "body": []
     },
     "compliance-certification-cleaning-appliances-china": {
@@ -42885,7 +42892,7 @@
     },
     "first-major-industry-shift-in-2019": {
       "budgetClass": "standard",
-      "cover": "/images/insights/first-major-industry-shift-in-2019-image-01.png",
+      "cover": "/images/articles/first-major-industry-shift-in-2019/01-cover.webp",
       "body": []
     },
     "flex-history-chervon-galli": {
@@ -45925,7 +45932,7 @@
     },
     "top-ten-vacuum-exporters-in-2019": {
       "budgetClass": "standard",
-      "cover": "/images/insights/top-ten-vacuum-exporters-in-2019-cover.jpg",
+      "cover": "/images/articles/top-ten-vacuum-exporters-in-2019/01-cover.webp",
       "body": []
     },
     "toro-edric-funk-takes-over-as-ceo-november-2026": {
@@ -48815,6 +48822,15 @@
         }
       }
     },
+    "complete-vacuum-cleaner-buying-guide-20221006": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/complete-vacuum-cleaner-buying-guide-20221006/01-cover.webp",
+          "hash": "sha256:9dd68245539f03ff55d5ccdb80ae0c1d2cf10c0a8fb7d0196ebadd682a31ca6f"
+        }
+      }
+    },
     "conair-hair-dryers-kitchen-brands": {
       "files": {
         "01-cover.jpg": {
@@ -50769,6 +50785,15 @@
           "status": "matched",
           "primary": "/images/articles/fcc-robot-conditional-approvals-reach-17-november-2026/01-cover.webp",
           "hash": "sha256:4fb50f03e5e7313b76d5da80123b8efc8fe1b1c55d131ac1a4db1b98173467cf"
+        }
+      }
+    },
+    "first-major-industry-shift-in-2019": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/first-major-industry-shift-in-2019/01-cover.webp",
+          "hash": "sha256:0996052bc3ee703f05d24e93148bf0fd2c8f2b6200baebe9810f0058a10df65d"
         }
       }
     },
@@ -55848,6 +55873,15 @@
           "status": "matched",
           "primary": "/images/articles/tineco-vs-shark-hydrovac-floor-washers/01-cover.webp",
           "hash": "sha256:69181851d96c612d92bef46f7f2769ecefe0388365f63c8715f1851874de6916"
+        }
+      }
+    },
+    "top-ten-vacuum-exporters-in-2019": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/top-ten-vacuum-exporters-in-2019/01-cover.webp",
+          "hash": "sha256:db144af16c8751a692d948ff39831afe4517ea97ef4c1bdff4d762198ddef7de"
         }
       }
     },
