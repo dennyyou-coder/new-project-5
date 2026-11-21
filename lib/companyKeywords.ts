@@ -66,6 +66,7 @@ export const ANALYSIS_COMPANY_KEYWORDS = [
   keyword("Ryobi", "ryobi", ["ryobi"]),
   keyword("SharkNinja / Shark / Ninja", "sharkninja", ["sharkninja", "shark", "ninja"]),
   keyword("Silver Star", "silver-star", ["silver star"]),
+  keyword("Spectrum Brands / Empower Brands", "spectrum-brands", ["spectrum brands", "empower brands"]),
   keyword("Stanley Black & Decker / BLACK+DECKER", "stanley-black-decker", ["stanley black & decker", "stanley black and decker", "black & decker", "black+decker"]),
   keyword("STIHL", "stihl", ["stihl"]),
   keyword("Sunseeker", "sunseeker", ["sunseeker"]),

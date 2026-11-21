@@ -22313,17 +22313,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 43346,
+      "bytes": 40424,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:e57d0121bb2e266542fa4c00f4a9874abdb9d0e2f2760a8c93c852fda3fd9281",
-      "outputHash": "sha256:bc861d19897287d186327d1ac5b50e3c896f2a6baba91bac1880e66815c9e642",
+      "sourceHash": "sha256:4d45d6d0e17c78907a8025f497a8064ed96257b8bcb78c3f43dc321ae4a56925",
+      "outputHash": "sha256:749bb8770a8131bea5068792628686e79e7b463e69388b7a8772914be1c27258",
       "mobile": {
         "src": "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21458,
-        "outputHash": "sha256:a6af57263034acc478344ebf0abf2a4ced0f862b6f581ad0e6eca2abb5521483"
+        "bytes": 18948,
+        "outputHash": "sha256:81b9f4529cdb9f2cecac6493f27b8875b5949b148a77dd54b9a65fab34c48b2d"
       }
     },
     "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp": {
@@ -55594,7 +55594,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover.webp",
-          "hash": "sha256:e57d0121bb2e266542fa4c00f4a9874abdb9d0e2f2760a8c93c852fda3fd9281"
+          "hash": "sha256:4d45d6d0e17c78907a8025f497a8064ed96257b8bcb78c3f43dc321ae4a56925"
         }
       }
     },

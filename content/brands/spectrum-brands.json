@@ -1,0 +1,202 @@
+{
+  "status": "published",
+  "slug": "spectrum-brands",
+  "name": "Spectrum Brands",
+  "metaTitle": "Spectrum Brands: Owner of Russell Hobbs, George Foreman and Empower Brands",
+  "aliases": [
+    "Spectrum Brands Holdings",
+    "Spectrum Brands Holdings, Inc.",
+    "SPB"
+  ],
+  "legalName": "Spectrum Brands Holdings, Inc.",
+  "legalEntityNote": "Spectrum Brands Holdings, Inc. is the NYSE-listed parent. Its Home and Personal Care business, which holds the appliance brands, trades as Empower Brands and has been jointly owned with funds managed by Oaktree Capital Management since May 2026. Regional companies such as Spectrum Brands (UK) Limited can be the seller or legal manufacturer for specific markets.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.spectrumbrands.com/",
+  "headline": "Spectrum Brands: pet care, home and garden, and the Empower Brands small-appliance business",
+  "description": "A source-backed profile of Spectrum Brands Holdings, the listed parent of Russell Hobbs, George Foreman and Remington, covering its three segments, the Empower Brands joint ownership with Oaktree, licensed and owned appliance brands, outsourced manufacturing and latest results.",
+  "metaDescription": "Spectrum Brands Holdings (NYSE: SPB) owns Russell Hobbs, George Foreman and Remington through Empower Brands, jointly owned with Oaktree since May 2026. Segments, brands, results and sourcing model.",
+  "quickAnswer": "Spectrum Brands Holdings is a US-listed consumer products group based in Middleton, Wisconsin. It owns about 73% of Empower Brands, which sells Russell Hobbs, George Foreman and Remington.",
+  "faq": [
+    {
+      "question": "What does Spectrum Brands own in small appliances?",
+      "answer": "Its Home and Personal Care business, now called Empower Brands, owns Russell Hobbs, George Foreman, PowerXL and Copper Chef, uses the Remington name for personal care under a shared-trademark agreement, and sells Black+Decker and Emeril Lagasse appliances under licence."
+    },
+    {
+      "question": "Who owns Empower Brands?",
+      "answer": "Spectrum Brands holds about 73% and funds managed by Oaktree Capital Management about 27%, following a USD 127 million investment agreed on May 1, 2026."
+    },
+    {
+      "question": "Does Spectrum Brands make its appliances itself?",
+      "answer": "No. Its fiscal 2025 annual report says substantially all Home and Personal Care products are made by third-party suppliers in the Asia-Pacific region, while the company owns most of the tooling and moulds."
+    }
+  ],
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Spectrum Brands, Empower Brands or Oaktree. Group ownership and segment disclosures do not identify the factory, importer, seller, legal manufacturer or warrantor for every product or market.",
+  "headquarters": "Middleton, Wisconsin, United States",
+  "founded": "1906 (as the French Battery Company, later Rayovac); Spectrum Brands name since 2005",
+  "logoImage": "/images/brands/spectrum-brands/logo.webp",
+  "logoImageAlt": "Spectrum Brands logo",
+  "logoSourceUrl": "https://www.spectrumbrands.com/images/SPB_Logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/spectrum-brands/group-structure.svg",
+      "alt": "Spectrum Brands Holdings with its Global Pet Care, Home & Garden and Empower Brands businesses",
+      "caption": "Spectrum Brands has three segments; its appliance business, Empower Brands, is about 27% owned by Oaktree funds."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/spectrum-brands/appliance-brand-rights.svg",
+      "alt": "Owned, licensed and shared appliance brands at Spectrum Brands",
+      "caption": "Black+Decker and Emeril Lagasse appliances are licensed, Remington is a shared trademark, and the products come from third-party suppliers in Asia-Pacific."
+    }
+  ],
+  "ownership": {
+    "summary": "Spectrum Brands Holdings, Inc. is listed on the New York Stock Exchange. It was formerly HRG Group, which merged with its majority-owned subsidiary Spectrum Brands in July 2018 and took the Spectrum Brands name. On May 1, 2026 it agreed a USD 127 million investment from funds managed by Oaktree Capital Management in its Home and Personal Care business, leaving Spectrum with about 73% and Oaktree about 27%. That business now trades as Empower Brands.",
+    "parentCompany": "Spectrum Brands Holdings, Inc. (listed, NYSE: SPB)"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Home and Personal Care (Empower Brands)",
+      "positioning": "Small kitchen appliances such as toaster ovens, coffee makers, air fryers, grills, kettles and irons, and personal care products such as hair dryers, shavers and trimmers, under Russell Hobbs, George Foreman, Black+Decker (licensed), Remington, PowerXL and other brands.",
+      "buyerRelevance": "Confirm whether the brand on the product is owned, licensed or shared in the destination market, and which regional company sells and warrants it."
+    },
+    {
+      "name": "Global Pet Care",
+      "positioning": "Companion-animal chews, grooming and clean-up products, pet food and aquatics equipment under Tetra, Nature's Miracle, FURminator, DreamBone and SmartBones.",
+      "buyerRelevance": "Not an appliance business, but it shares the group's retail relationships and supply-chain functions."
+    },
+    {
+      "name": "Home and Garden",
+      "positioning": "Household and outdoor pest control, repellents and cleaning products under Spectracide, Cutter, Hot Shot, Black Flag and Rejuvenate.",
+      "buyerRelevance": "Mostly North American and highly seasonal; weather and retailer stock levels drive orders."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "The fiscal 2025 Form 10-K says substantially all Home and Personal Care products are manufactured by third-party suppliers in the Asia-Pacific region, and that the company owns most of the tooling and moulds those suppliers use.",
+      "scope": "Home and Personal Care segment, fiscal 2025",
+      "buyerCheck": "Ask for the exact model's supplier, factory, country of origin and compliance file; group disclosures do not name factories."
+    },
+    {
+      "evidence": "Pet care and aquatics products are partly made in company plants in the US and Germany, including Tetra products in Melle, Germany.",
+      "scope": "Global Pet Care segment, fiscal 2025",
+      "buyerCheck": "Do not assume appliance products share these plants."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Home and Personal Care products are sold mainly through large retailers, e-commerce, wholesalers, distributors and warehouse clubs. Amazon and Walmart together accounted for about 42% of the segment's fiscal 2025 sales.",
+      "scope": "Home and Personal Care segment, fiscal 2025",
+      "buyerCheck": "Check seller authorisation and whether the assortment differs by retailer and region."
+    },
+    {
+      "evidence": "In the July–September 2026 quarter, North American Home and Personal Care sales fell by low double digits after distribution losses in home appliances, while organic sales in EMEA rose.",
+      "scope": "Fourth quarter of fiscal 2026",
+      "buyerCheck": "Expect range and availability changes in North American retail."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Spectrum Brands is a mid-sized appliance owner whose appliance business depends heavily on two retailers and on licensed names. The Oaktree investment and the bid for Helen of Troy show it wants Empower Brands to gain scale or stand on its own.",
+    "competitorSlugs": [
+      "hamilton-beach",
+      "shark",
+      "groupe-seb",
+      "delonghi",
+      "philips-home-appliances"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-11-12",
+      "title": "Fiscal 2026 fourth-quarter results",
+      "summary": "Net sales fell 2.8% to USD 713.2 million; Home and Personal Care fell 0.9% with North American appliance distribution losses, while its adjusted EBITDA rose 58.6%.",
+      "sourceIds": [
+        "spb-q4-2026"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Empower Brands bids USD 37 a share for Helen of Troy",
+      "summary": "The Spectrum and Oaktree business made public its unsolicited proposal after Helen of Troy's board rejected it.",
+      "sourceIds": [
+        "empower-helen-2026"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "title": "Oaktree agrees to invest USD 127 million in Home and Personal Care",
+      "summary": "USD 67 million of convertible preferred equity and a USD 60 million term loan give Oaktree funds about 27% of the business.",
+      "sourceIds": [
+        "spb-oaktree-8k"
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "title": "HRG Group merger completed",
+      "summary": "HRG Group merged with its majority-owned subsidiary and renamed itself Spectrum Brands Holdings.",
+      "sourceIds": [
+        "spb-10ka-2020"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "spb-q4-2026",
+      "title": "Spectrum Brands Holdings Reports Fiscal 2026 Fourth Quarter and Full Year Results (Form 8-K, Exhibit 99.1)",
+      "publisher": "Spectrum Brands Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000109177/000010917726000042/earningsreleaseexhibit991.htm",
+      "publishedAt": "2026-11-12",
+      "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "empower-helen-2026",
+      "title": "Empower Brands proposal to acquire Helen of Troy (Form 8-K, Exhibit 99.1)",
+      "publisher": "Spectrum Brands Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000109177/000095010326016905/dp256289_ex9901.htm",
+      "publishedAt": "2026-11-04",
+      "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "spb-oaktree-8k",
+      "title": "Form 8-K: strategic investment from Oaktree in the HPC business",
+      "publisher": "Spectrum Brands Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/109177/000010917726000013/spb-20260501.htm",
+      "publishedAt": "2026-05-04",
+      "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "spb-10k-2025",
+      "title": "Form 10-K for the Fiscal Year Ended September 30, 2025",
+      "publisher": "Spectrum Brands Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/109177/000010917725000043/spb-20250930.htm",
+      "publishedAt": "2025-11-18",
+      "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "spb-10ka-2020",
+      "title": "Form 10-K/A for the Fiscal Year Ended September 30, 2020",
+      "publisher": "Spectrum Brands Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/109177/000119312521019234/d88899d10ka.htm",
+      "publishedAt": "2021-01-28",
+      "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "spb-site",
+      "title": "Spectrum Brands",
+      "publisher": "Spectrum Brands",
+      "url": "https://www.spectrumbrands.com/",
+      "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "wikipedia-spectrum",
+      "title": "Spectrum Brands",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spectrum_Brands",
+      "accessedAt": "2026-11-21"
+    }
+  ],
+  "publishedAt": "2026-11-21T23:00:00+08:00",
+  "lastVerified": "2026-11-21",
+  "lastModified": "2026-11-21T23:00:00+08:00"
+}

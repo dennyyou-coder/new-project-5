@@ -124,7 +124,7 @@ export const newsStoryVisuals: Record<string, NewsVisual> = {
     "alt": "WCB topic card: Spectrum sales down 2.8%. Net sales USD 713.2m; home appliances lose US distribution",
     "kind": "coverage",
     "label": "WCB topic card",
-    "caption": "Results: Q4 FY2026. Net sales USD 713.2m; home appliances lose US distribution. Card: World Clean Biz.",
+    "caption": "Results: Q4 FY2026. Net sales USD 713.2m; home appliances lose US distribution. Spectrum Brands logo: Spectrum Brands. Card: World Clean Biz.",
     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000109177/000010917726000042/earningsreleaseexhibit991.htm",
     "sourceLabel": "Story source: Spectrum Brands fiscal 2026 fourth-quarter results (SEC 8-K, Exhibit 99.1)",
     "fit": "cover",

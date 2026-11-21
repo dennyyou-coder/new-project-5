@@ -703,7 +703,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the one-hundred-and-eighteen published profiles and approved article relationships", () => {
+test("the release gate validates the one-hundred-and-nineteen published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -812,6 +812,7 @@ test("the release gate validates the one-hundred-and-eighteen published profiles
     "shark",
     "sharp-appliances",
     "skil",
+    "spectrum-brands",
     "stanley-black-decker",
     "stihl",
     "sunseeker",
@@ -1077,7 +1078,7 @@ test("the release gate validates the one-hundred-and-eighteen published profiles
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), [...expectedSlugs].sort());
-  assert.equal(loadedProfiles.length, 118);
+  assert.equal(loadedProfiles.length, 119);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1143,7 +1144,7 @@ test("the release gate validates the one-hundred-and-eighteen published profiles
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 118);
+  assert.equal(profiles.length, 119);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
