@@ -181,7 +181,6 @@
 #main-content .home-a .ha-radar { display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; }
 #main-content .home-a .ha-radar-col { --tone: var(--ha-blue); --tone-bg: #EAF1FF; flex: 1 1 300px; min-width: 0; background: #FFFFFF; border: 1px solid var(--ha-line); border-radius: 4px; display: flex; flex-direction: column; }
 #main-content .home-a .ha-radar-col--recall { --tone: var(--ha-red); --tone-bg: #FCEEEC; }
-#main-content .home-a .ha-radar-col--rules { --tone: var(--ha-amber); --tone-bg: #FBF3E0; }
 #main-content .home-a .ha-radar-head { padding: 16px 18px; background: var(--tone-bg); border-top: 4px solid var(--tone); border-bottom: 1px solid var(--ha-line); border-radius: 3px 3px 0 0; display: flex; gap: 14px; align-items: flex-start; }
 #main-content .home-a .ha-radar-head > div { min-width: 0; }
 #main-content .home-a .ha-radar-head h3, #main-content .home-a .ha-events-head h3 { font-weight: 800; font-size: 20px; line-height: 1.2; letter-spacing: -0.01em; }

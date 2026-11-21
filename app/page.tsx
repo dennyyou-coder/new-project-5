@@ -35,7 +35,6 @@ const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 const founderCoverFallback = "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp";
 const EXPO_OPENS = "2026-11-18";
 
-const SECTOR_SHORT = { cleaning: "Cleaning appliances", appliances: "Home appliances", tools: "Power tools and outdoor" } as const;
 
 const sourcingLinks = [
   { label: "Robot vacuums", href: "/sourcing/robotic-vacuums" },
@@ -145,7 +144,6 @@ export default function HomePage() {
   const filings = getFccFilings();
   const radarRecalls = recalls.slice(0, 4);
   const radarFilings = filings.filter((filing) => filing.type === "new").slice(0, 4);
-  const radarRules = upcomingRules(now, 4);
   const topics = getTopics();
   // Topics band: a pinned topic leads, then the rest by last update.
   const bandTopics = [...topics].sort((a, b) => Number(Boolean(b.pinned)) - Number(Boolean(a.pinned))).slice(0, 5);
@@ -522,10 +520,10 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      {/* Radar: three trackers built from official records. */}
+      {/* Radar: recalls and FCC approvals, from official records. Rule deadlines sit in the hero. */}
       <section className="ha-section" id="radar" aria-labelledby="home-radar-title">
         <div className="ha-wrap ha-stack">
-          <SectionHead id="home-radar-title" kicker="Industry radar" title="Recalls, new device approvals and rule deadlines" more={{ href: "/tools", label: "All trackers" }} />
+          <SectionHead id="home-radar-title" kicker="Industry radar" title="Recalls and new device approvals" more={{ href: "/tools", label: "All trackers" }} />
           <div className="ha-radar">
             <article className="ha-radar-col ha-radar-col--recall">
               <div className="ha-radar-head">
@@ -575,28 +573,6 @@ export default function HomePage() {
               <Link className="ha-radar-all" href="/launch-radar">All FCC filings →</Link>
             </article>
 
-            <article className="ha-radar-col ha-radar-col--rules">
-              <div className="ha-radar-head">
-                <span className="ha-radar-icon">{icon(ICONS.rules, 24)}</span>
-                <div>
-                  <h3>Tariff and rule deadlines</h3>
-                  <p>Dates when tariffs and product rules change, counted in days.</p>
-                  <p className="ha-radar-count">Days left</p>
-                </div>
-              </div>
-              <ul className="ha-radar-list">
-                {radarRules.map((rule) => (
-                  <li key={rule.id}>
-                    <span className="ha-days">{daysUntil(rule.date, now)}</span>
-                    <span>
-                      <Link href={rule.href ?? "/rules-calendar"}>{rule.title}</Link>
-                      <span className="ha-radar-note">{rule.region} · {shortDate(rule.date)} · {rule.sectors.length === 3 ? "All sectors" : rule.sectors.map((sector) => SECTOR_SHORT[sector]).join(", ")}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <Link className="ha-radar-all" href="/rules-calendar">Full rules calendar →</Link>
-            </article>
           </div>
         </div>
       </section>
