@@ -1860,42 +1860,6 @@
         "outputHash": "sha256:5d17d5cb51a1841e68ed1d1423e6cf7b98fd9bccefeffacc9cc292e6eb2cb052"
       }
     },
-    "/images/articles/amazon-first-stop-for-backyard-robotics/02-amazon-first-stop-for-backyard-robotics-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 69584,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:7e0d0463b57cf12d97ee4789ab587191cfa8f5c57ae78057ded49c54c2c658ef",
-      "outputHash": "sha256:5b4ff3c248d48cb8b750e8997000d854b72cc2be3ca09b3c388fba6f42bc01cf",
-      "mobile": {
-        "src": "/images/articles/amazon-first-stop-for-backyard-robotics/02-amazon-first-stop-for-backyard-robotics-image-002-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 27694,
-        "outputHash": "sha256:a8c5e813b77d7c97fc48c84b82542aff1d8793f5d84b45f04c670e92069229d2"
-      }
-    },
-    "/images/articles/amazon-first-stop-for-backyard-robotics/03-amazon-first-stop-for-backyard-robotics-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 69772,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f9974e01211068dc3af207e9e76573cc3114c3493303800cf6a0f981fcb94545",
-      "outputHash": "sha256:b6a784d4745ceec1b2404821f2732359e07b2f084f0e8edfc860256bf4515a0b",
-      "mobile": {
-        "src": "/images/articles/amazon-first-stop-for-backyard-robotics/03-amazon-first-stop-for-backyard-robotics-image-003-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 25720,
-        "outputHash": "sha256:ca00a36e9cc9322267e2331a9c1a81ea8d9ce68ad8aa50898bb6569f4e7ccfe9"
-      }
-    },
     "/images/articles/amazon-first-stop-for-backyard-robotics/04-amazon-first-stop-for-backyard-robotics-image-004.webp": {
       "role": "body",
       "kind": "photo",
@@ -1912,24 +1876,6 @@
         "height": 450,
         "bytes": 36650,
         "outputHash": "sha256:23187673001ec245ce364d534a030748c28ddd915f75499c20c7b3de7eedf207"
-      }
-    },
-    "/images/articles/amazon-first-stop-for-backyard-robotics/05-amazon-first-stop-for-backyard-robotics-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 55210,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ba5d2b502006ae6627ba65f2288aa1c011ab0fe566785cd51ff5511435ba4b0e",
-      "outputHash": "sha256:fb2b3756ac7054df522bc5527ce1354db1292d62c653157b4b74836596feebd5",
-      "mobile": {
-        "src": "/images/articles/amazon-first-stop-for-backyard-robotics/05-amazon-first-stop-for-backyard-robotics-image-005-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 20326,
-        "outputHash": "sha256:de869b1e09b76e4589f136f2d74d94ec2d86fe1e1ef7e3bab873db097ec59955"
       }
     },
     "/images/articles/amazon-first-stop-for-backyard-robotics/06-amazon-first-stop-for-backyard-robotics-image-006.webp": {
@@ -5265,24 +5211,6 @@
       "sourceHash": "sha256:bf73773b2f6a306f50bb2b10a1bd5f738803f19a9fcb4b5a1da8800402808f58",
       "outputHash": "sha256:feecc34be70193c0036b783a612b05f3078c2da5742f304f57ca7d939c9aeea7"
     },
-    "/images/articles/delonghi-group-company-history-and-appliance-brands/17-delonghi-group-company-history-and-appliance-brands-image-017.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 988,
-      "height": 231,
-      "bytes": 13874,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:45e46c7474cdb0a9b9ef96c3464bf76a2a290391e84a774e01a09710303ef2b3",
-      "outputHash": "sha256:2ce51a13c2d1ef360e711fb8a290e0024661bc3c7c769d1a6a2e92bf390e0551",
-      "mobile": {
-        "src": "/images/articles/delonghi-group-company-history-and-appliance-brands/17-delonghi-group-company-history-and-appliance-brands-image-017-800.webp",
-        "width": 800,
-        "height": 187,
-        "bytes": 9796,
-        "outputHash": "sha256:b7985eeca1ef3f43f387a75cd2bef63e359e591872ce913a39d9cffb7b2dff95"
-      }
-    },
     "/images/articles/delonghi-group-company-history-and-appliance-brands/18-delonghi-group-company-history-and-appliance-brands-image-018.webp": {
       "role": "body",
       "kind": "photo",
@@ -5337,39 +5265,6 @@
         "outputHash": "sha256:4f68e6a608a6410d731f1223fe6e47f319a04ae0b9f03f41a822fe8a0cb4bf5e"
       }
     },
-    "/images/articles/dewalts-rise-harvard-case/02-dewalts-rise-harvard-case-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 699,
-      "height": 312,
-      "bytes": 21614,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1c8f9476ce533d2aafa76d8ac73f3c7c8181a65c3277f25ca37968caba2971a9",
-      "outputHash": "sha256:455aed03e54fbf8f7df204bdb5a0f5c9f81c11a85ff794c1ae53a061cb29040b"
-    },
-    "/images/articles/dewalts-rise-harvard-case/03-dewalts-rise-harvard-case-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 379,
-      "height": 306,
-      "bytes": 12236,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:644483e1c54fd67cfd3622f1018b571f8b2847e137f9d864b2fef76aae1dba24",
-      "outputHash": "sha256:697f50ca9ff5c00254feab1c265f37ed03aab103d2475f4c415ce95f1eb53146"
-    },
-    "/images/articles/dewalts-rise-harvard-case/04-dewalts-rise-harvard-case-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 663,
-      "height": 418,
-      "bytes": 26196,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6532157a4c117f32261b39fc3c006063499843e3f1b23224a500d8035371e3e3",
-      "outputHash": "sha256:0874ed6de51c2709624476fc7eb49907b9b913fe4adac600b1eda7f08652d562"
-    },
     "/images/articles/dewalts-rise-harvard-case/05-dewalts-rise-harvard-case-image-005.webp": {
       "role": "body",
       "kind": "photo",
@@ -5381,39 +5276,6 @@
       "sourceHash": "sha256:b22353d8ac4298cf79bcded05105e9167b8b19ef9a76b9bb546b32bca0c49f56",
       "outputHash": "sha256:275be4b5512a5c1e9a05bf9b48da9f3a16b51497b1445e430afb61cb27f452b3"
     },
-    "/images/articles/dewalts-rise-harvard-case/06-dewalts-rise-harvard-case-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 664,
-      "height": 163,
-      "bytes": 11192,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b62ca651458489fa77e6022689778d7afd33ccaaad393b2f1fdc38095dac789e",
-      "outputHash": "sha256:0111c49c90535ca94cf452515bba094d1846843663854fe92125afbfb0d29cb9"
-    },
-    "/images/articles/dewalts-rise-harvard-case/07-dewalts-rise-harvard-case-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 670,
-      "height": 338,
-      "bytes": 16102,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:97756c4eb1f85ce4cc88aa0e16bad69ee471269c4df33edde6bd8d8011b4a467",
-      "outputHash": "sha256:f451bea0d4621a2beb9bf0cc04d2ad493fc7e392c5a7083b74d2cf96dc8c6dc5"
-    },
-    "/images/articles/dewalts-rise-harvard-case/08-dewalts-rise-harvard-case-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 456,
-      "height": 210,
-      "bytes": 10980,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:c3c7f29a85a406eff8725bddc7374712be88fb3cae66fb68c176fe6dc16effec",
-      "outputHash": "sha256:d1bd221373f286ef5bc0eaa1c306b01b02077a063b864bf57e6448046d96a172"
-    },
     "/images/articles/dewalts-rise-harvard-case/09-dewalts-rise-harvard-case-image-009.webp": {
       "role": "body",
       "kind": "photo",
@@ -5424,17 +5286,6 @@
       "quality": 84,
       "sourceHash": "sha256:d00058fb4b35938b30e854fbfe4a2b826a01e17d17832141f85af8946721db59",
       "outputHash": "sha256:af5e132185c4042c69d7afcc3a4db31dd548791fce428611e530e55271049cc3"
-    },
-    "/images/articles/dewalts-rise-harvard-case/10-dewalts-rise-harvard-case-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 654,
-      "height": 224,
-      "bytes": 19746,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:fdcdeefb106083ec9ad9307d728bc1fbb62f94dad593bc7d147d4ff52272622d",
-      "outputHash": "sha256:bfc14137d01f67be4b3a94180fa42d55f22b852371ce49721b8b85e724c2a5c2"
     },
     "/images/articles/dewalts-rise-harvard-case/11-dewalts-rise-harvard-case-image-011.webp": {
       "role": "body",
@@ -6766,39 +6617,6 @@
       "sourceHash": "sha256:2927a843be572ca49a36229c681dfca6855970e37d8fcf46a94158d8303b403e",
       "outputHash": "sha256:5a40d36b067e67aa65f580f69b4427e2e0878fb3a4b3334b7da868a80a3aa123"
     },
-    "/images/articles/dyson-at-a-crossroads/03-dyson-at-a-crossroads-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 705,
-      "height": 221,
-      "bytes": 7572,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:0c4ea959e176a3768311bfb29999ac6ed74eda8f9e8d1d79544f1fcee5a2dfd1",
-      "outputHash": "sha256:ff6a8025c2265d7e82c582b3a5cd805129b7b92717a03192f13884805e7f96f7"
-    },
-    "/images/articles/dyson-at-a-crossroads/04-dyson-at-a-crossroads-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 687,
-      "height": 248,
-      "bytes": 7146,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4c47b76e690ad0afb797276ea2f485c5106f628972daf8b9c2e50db9b222498f",
-      "outputHash": "sha256:655a20660364595592d95d750c96ce36bce054e3ede80e817978be5e8928a3b7"
-    },
-    "/images/articles/dyson-at-a-crossroads/05-dyson-at-a-crossroads-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 640,
-      "height": 404,
-      "bytes": 25500,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:fa50919edd3349a41f1ae8a090ea51f7080726932dd240c0776cf6c707070906",
-      "outputHash": "sha256:8b3e0bc5462f094acee47182c0b7dd0efb9d30e8586b4074fbb132f84c89d5d0"
-    },
     "/images/articles/dyson-at-a-crossroads/06-dyson-at-a-crossroads-image-006.webp": {
       "role": "body",
       "kind": "photo",
@@ -6817,28 +6635,6 @@
         "outputHash": "sha256:b272d7914b8f9cdde0141a2462edaecc6631c4a21e41260926ebaeca3a330e55"
       }
     },
-    "/images/articles/dyson-at-a-crossroads/07-dyson-at-a-crossroads-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 761,
-      "height": 487,
-      "bytes": 48068,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f4790fc4be18359e7aa1991c731f5cda2463ea9b5152e909dd12140d60b05b86",
-      "outputHash": "sha256:9d257657329fc21e409a146cf00ebab903489ac486794c9235accf437439e059"
-    },
-    "/images/articles/dyson-at-a-crossroads/08-dyson-at-a-crossroads-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 746,
-      "height": 403,
-      "bytes": 26226,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1e91a55cb744ddde87d22c1650adf9af476a60e0fc7706e1720c5685087e70f7",
-      "outputHash": "sha256:d760b80ab4218868787aff4adaf10db27ce35576405d8cd5577221bb93f85d62"
-    },
     "/images/articles/dyson-at-a-crossroads/09-dyson-at-a-crossroads-image-009.webp": {
       "role": "body",
       "kind": "photo",
@@ -6849,24 +6645,6 @@
       "quality": 84,
       "sourceHash": "sha256:97b98b03fd4e5e2140e571527ea821d0193619a8857e143bbd16cea818b2ab02",
       "outputHash": "sha256:bfec9503cc27c7aa77844ccccd35c080bfaad003b5d2ebb24c45a6a2de8e9979"
-    },
-    "/images/articles/dyson-at-a-crossroads/10-dyson-at-a-crossroads-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1255,
-      "height": 370,
-      "bytes": 22282,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d08c697d0f9baa73f2fec7809fa6300301912856db289ae4f5af3e93391f879e",
-      "outputHash": "sha256:a634f07f5b52053ec45e637fefd28f23c2c1c22503649933212879bd48581038",
-      "mobile": {
-        "src": "/images/articles/dyson-at-a-crossroads/10-dyson-at-a-crossroads-image-010-800.webp",
-        "width": 800,
-        "height": 236,
-        "bytes": 11076,
-        "outputHash": "sha256:b38889bdab857f7356403f44842de9028542785f8322222ca2f72919a9afcb3b"
-      }
     },
     "/images/articles/dyson-at-a-crossroads/11-dyson-at-a-crossroads-image-011.webp": {
       "role": "body",
@@ -7189,17 +6967,6 @@
         "outputHash": "sha256:f4483059f586ce806404ccf4e831982132001212373a20576133b0cc1aef831b"
       }
     },
-    "/images/articles/dyson-hard-floor-washer-exposed/02-dyson-hard-floor-washer-exposed-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 711,
-      "height": 460,
-      "bytes": 27828,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4dc6cc0230458ba9baf24d7afc975ccbe88dae5b769c8a8012af7d3a013d8c7d",
-      "outputHash": "sha256:a45f59025f07c39cc6469485e7ee3a441ed6900a493ec38a7f76f032268b6664"
-    },
     "/images/articles/dyson-hard-floor-washer-exposed/03-dyson-hard-floor-washer-exposed-image-003.webp": {
       "role": "body",
       "kind": "photo",
@@ -7210,17 +6977,6 @@
       "quality": 84,
       "sourceHash": "sha256:21edc56e214aaaa385dca7471ca7e9fd23771b901e80a1c34b2abc992ff0ddac",
       "outputHash": "sha256:77f396edb98c9592ae86d7937dd21ae1554b93a5bca9abf794086763c59ce19c"
-    },
-    "/images/articles/dyson-hard-floor-washer-exposed/04-dyson-hard-floor-washer-exposed-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 695,
-      "height": 524,
-      "bytes": 23582,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:95352a069854a4a089df8cca7cfce56bf5c51be263a902290ddd83c921bd71c4",
-      "outputHash": "sha256:1be5a756342f03508290e3a4dc956aae8feeefc32f9b07b97b6b18f933a20e7f"
     },
     "/images/articles/dyson-hard-floor-washer-exposed/05-dyson-hard-floor-washer-exposed-image-005.webp": {
       "role": "body",
@@ -7331,17 +7087,6 @@
       "quality": 84,
       "sourceHash": "sha256:e8dad95d8a1b44f6bf26c25c68bc2dd0727f3c63f87abe436e00ec9b118177c5",
       "outputHash": "sha256:3e29a5c0147b39b408ef8dea4c5d036c86091d82c2468b5be024585c0a29b9e5"
-    },
-    "/images/articles/dyson-hard-floor-washer-exposed/15-dyson-hard-floor-washer-exposed-image-015.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 701,
-      "height": 316,
-      "bytes": 16476,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:006e5333768d219914c37d59569b067930a06745e92166f65a22c51929742b80",
-      "outputHash": "sha256:9add1c26b1128e498f54833a0841dbb525632931d1c836994aed948b55d56f33"
     },
     "/images/articles/dyson-makes-another-big-move/01-cover.webp": {
       "role": "cover",
@@ -7840,71 +7585,6 @@
         "outputHash": "sha256:60fcac6801670b21fb2a13113f5a2369790b04c14797b0c6c0cda52fcb61382d"
       }
     },
-    "/images/articles/ecovacs-2019-and-industry-landscape-shift/02-ecovacs-2019-and-industry-landscape-shift-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 933,
-      "height": 476,
-      "bytes": 20974,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ec1ced1ab85dd1a6e68861afe6b34a73e24e436cda8fec5867bba50cf1b3aeeb",
-      "outputHash": "sha256:90b60ec65ad88f1c9fd6b6d1fbc38b795997ceb7b9400d87dd4e7e2043478bea",
-      "mobile": {
-        "src": "/images/articles/ecovacs-2019-and-industry-landscape-shift/02-ecovacs-2019-and-industry-landscape-shift-image-002-800.webp",
-        "width": 800,
-        "height": 408,
-        "bytes": 15332,
-        "outputHash": "sha256:8b01ceee2856baddb7889360ac694abe59a22729fde58adcac026fd7958c11d7"
-      }
-    },
-    "/images/articles/ecovacs-2019-and-industry-landscape-shift/03-ecovacs-2019-and-industry-landscape-shift-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 957,
-      "height": 385,
-      "bytes": 59634,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1bffdac3eb52a2b484104bdd8c232010329b66ff5efce2d862ae1fe9e92b2192",
-      "outputHash": "sha256:8f7d1ddf479d02f0318e071e8b77a2056fef19d6e6298dc20d73015688184d81",
-      "mobile": {
-        "src": "/images/articles/ecovacs-2019-and-industry-landscape-shift/03-ecovacs-2019-and-industry-landscape-shift-image-003-800.webp",
-        "width": 800,
-        "height": 322,
-        "bytes": 43350,
-        "outputHash": "sha256:df3d1c2cd897efb4bb8d0eba1fd654edd2446c9a0f1e2abdad7d6a9a52647a4c"
-      }
-    },
-    "/images/articles/ecovacs-2019-and-industry-landscape-shift/04-ecovacs-2019-and-industry-landscape-shift-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 944,
-      "height": 378,
-      "bytes": 57664,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a876101ea6bb3078ce37c004569d599014c465b9a8d1947b3d6f4f94827ce055",
-      "outputHash": "sha256:882e659f37be099cd3afa8eea080656dbbf1a281ea982dc140cb708bc08b22fb",
-      "mobile": {
-        "src": "/images/articles/ecovacs-2019-and-industry-landscape-shift/04-ecovacs-2019-and-industry-landscape-shift-image-004-800.webp",
-        "width": 800,
-        "height": 320,
-        "bytes": 42320,
-        "outputHash": "sha256:fafb0cbdcffb0af8efa851c1664d63dcc47c4b842edf1454709aa4a076cdc7ee"
-      }
-    },
-    "/images/articles/ecovacs-2019-and-industry-landscape-shift/05-ecovacs-2019-and-industry-landscape-shift-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 606,
-      "height": 548,
-      "bytes": 29506,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:e8548e44d50773b9c6772a165e642e380f5602ea27db2305173e6404674c89b7",
-      "outputHash": "sha256:f635581eae1716d348bf541670e6f4b4d40136912d6431b6542e29374393b45f"
-    },
     "/images/articles/ecovacs-and-irobot-cooperation-agreement/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -8009,24 +7689,6 @@
       "quality": 84,
       "sourceHash": "sha256:af9857fe2d555564720608a735de665684b4409e3622b46221b20f905c7645b9",
       "outputHash": "sha256:f35999a3976af88283a5512ce81da7a40e3b9e241c18bd3876f5767a877f4b44"
-    },
-    "/images/articles/ecovacs-at-a-crossroads/06-ecovacs-at-a-crossroads-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 983,
-      "height": 198,
-      "bytes": 23652,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f1a351019b319e4da5f5578b7af5fa9f6ebf1b870ff2371997d414daf875a25c",
-      "outputHash": "sha256:8c793273aee93ace6aa9c6ff3e1daddc6ee0428c8e0682d501fc655b117b47bb",
-      "mobile": {
-        "src": "/images/articles/ecovacs-at-a-crossroads/06-ecovacs-at-a-crossroads-image-006-800.webp",
-        "width": 800,
-        "height": 161,
-        "bytes": 16774,
-        "outputHash": "sha256:fea3a6603bba3718e8706bc64b11186f8f879e6fe88ab86f34dac46acc306440"
-      }
     },
     "/images/articles/ecovacs-at-a-crossroads/07-ecovacs-at-a-crossroads-image-007.webp": {
       "role": "body",
@@ -13696,17 +13358,6 @@
         "outputHash": "sha256:b3e749ca1e2147b33501152944fba90f9e06a629484fb38f385853fed1621b34"
       }
     },
-    "/images/articles/irobot-at-a-crossroads/02-irobot-at-the-crossroads-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 832,
-      "height": 471,
-      "bytes": 26434,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d71ea739761ec36e5f2e8ffadaed9228b08f4a35b6ffefd9f86d38d379f40f8d",
-      "outputHash": "sha256:134b815c1c99c28199a483dacc76b833a02da9244c6f04e6dc663dc02b433117"
-    },
     "/images/articles/irobot-at-a-crossroads/03-irobot-at-the-crossroads-image-003.webp": {
       "role": "body",
       "kind": "photo",
@@ -13736,17 +13387,6 @@
       "sourceHash": "sha256:5ef49447e40265b19a939f7fab4dfd20e18d711f7d6742fc940b99fd4c3c17fa",
       "outputHash": "sha256:8a8d27f34a477fbb723ae7abac205597a63d8252d9a958e92adea7abfa74f757"
     },
-    "/images/articles/irobot-at-a-crossroads/05-irobot-at-the-crossroads-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 926,
-      "height": 468,
-      "bytes": 21690,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:33ee72db6d4315651f767e2e3c440618e49c486d513a351c5feff4c5da1e6896",
-      "outputHash": "sha256:691893b4b69bc6269d2f177ad6307b6389b8e7c57f64d268d2192b7fb57f68d1"
-    },
     "/images/articles/irobot-at-a-crossroads/06-irobot-at-the-crossroads-image-006.webp": {
       "role": "body",
       "kind": "photo",
@@ -13757,28 +13397,6 @@
       "quality": 84,
       "sourceHash": "sha256:cbc845c9537160a39f4c4127c50021b52537345f66948bae3c697c8bbde8bbbd",
       "outputHash": "sha256:8cd076f3f9f68993faadc36a76db57440bb774812f796628ff859fac8b291805"
-    },
-    "/images/articles/irobot-at-a-crossroads/07-irobot-at-the-crossroads-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 876,
-      "height": 508,
-      "bytes": 22158,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f833ab59ed5bce745f1af052e5f45f9741ea55e80e3453b848871a385a0cb767",
-      "outputHash": "sha256:7a7179600fde10b298cdaa4997d2f423dc0c390cfb7e5c6b862c4ea50d5ead8f"
-    },
-    "/images/articles/irobot-at-a-crossroads/08-irobot-at-the-crossroads-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 853,
-      "height": 442,
-      "bytes": 16266,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:7967ceb368ef4e422486c5ac86c194182691833333dedf43fd7fdcd8bd427a31",
-      "outputHash": "sha256:af188cea58c6602b9b7a86342ede27d498a29d552f9ffe5cb834990acf5557ad"
     },
     "/images/articles/irobot-at-a-crossroads/09-irobot-at-the-crossroads-image-009.webp": {
       "role": "body",
@@ -13830,39 +13448,6 @@
         "bytes": 23674,
         "outputHash": "sha256:60a2497d1fb14870d00ae0eb4353280e129e40004eeb4cdb4a36f6c8bf5a416e"
       }
-    },
-    "/images/articles/irobot-at-a-crossroads/13-irobot-at-the-crossroads-image-012.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 928,
-      "height": 197,
-      "bytes": 18748,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ca0ba146771bd3d2766c723b2178245ca29b1243d11de369139403c4e8c48957",
-      "outputHash": "sha256:47ecdb118ae89dff014c8267cb624f4a7de30fb3f32a2fb6ba47b685f6603ead"
-    },
-    "/images/articles/irobot-at-a-crossroads/14-irobot-at-the-crossroads-image-013.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 698,
-      "height": 277,
-      "bytes": 8886,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:46fe2b90b8e17f19f651ed562f33d07df9b34f52b59b1e9c1ac411f9be5259bb",
-      "outputHash": "sha256:ae27c59aa18f1e8c9ccce7a6945f81a9de1082652fb139c65c48fb9eeb705092"
-    },
-    "/images/articles/irobot-at-a-crossroads/15-irobot-at-the-crossroads-image-014.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 683,
-      "height": 250,
-      "bytes": 8454,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a9c360127243fc0397bbbc0ac928a7e673e709abb0fc55f2031151a485a320d9",
-      "outputHash": "sha256:07c21a4ffcf23f883fc8ce43cae77339a5f7918db18eb7181c95c46a82ed6b44"
     },
     "/images/articles/irobot-awe-local-market-update-april-2026/01-cover.webp": {
       "role": "cover",
@@ -15102,17 +14687,6 @@
       "sourceHash": "sha256:3cdbaa1f1d1c2a9864c2043b8b7f85688f01b4061b78eca7dd116c0406925e0c",
       "outputHash": "sha256:34ee0d0c376cac7a4630a6285dece65e5883b5a3f424ab22968ed0c32d893361"
     },
-    "/images/articles/karcher-hidden-champion-in-cleaning-appliances/15-karcher-hidden-champion-in-cleaning-appliances-image-015.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 326,
-      "height": 463,
-      "bytes": 13590,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:148d1d3ef45bce63e7028127c8e11b41ebe651d45d9cfd5af83d9fa677a10139",
-      "outputHash": "sha256:17fe54395fb85e08b3154111324b89312d689938995cf9254c204a071f07f02f"
-    },
     "/images/articles/karcher-stihl-allpro-battery-alliance-july-2026/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -15573,90 +15147,6 @@
       "quality": 90,
       "sourceHash": "sha256:ff97561ed565c37185ba70cac60e966035fd022421aeae69e495d1695c4f2c18",
       "outputHash": "sha256:f011fe25ca6789a296fdd8c259b850613224c69f7d5eb6414cf518b4ce9f9910"
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 1190,
-      "height": 602,
-      "bytes": 84938,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:808b587091b421e6e5c58c8265fd4f49961e2abca8aee35e38ab38d583ec9b92",
-      "outputHash": "sha256:d9142bdfa61d459fe52148858eb139a5ed165934c3d029084cc67f9d6a307f53",
-      "mobile": {
-        "src": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003-800.webp",
-        "width": 800,
-        "height": 405,
-        "bytes": 52938,
-        "outputHash": "sha256:d637a0600a09a2e0f249bd358d8ab57e631a5b7c8776819dd095f30c8faaf6c0"
-      }
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/04-image-004.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 438,
-      "height": 539,
-      "bytes": 47094,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:2f8db41720a77ebb2ab54bf089e60f5ccc3ca7294e868dab4e41aaba4ba126c9",
-      "outputHash": "sha256:688397f5b6d728a4b2d46a50308a684d34caa8c7c3f825eb3d4db8941c23fd85"
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/05-image-005.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 978,
-      "height": 353,
-      "bytes": 74676,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:57785f2747fa0a2a8f8781506a581707901a77e53bb85461c5ff4385bf9111eb",
-      "outputHash": "sha256:8a1c23e9825fa8cefba0a1704155e9a8e8b576672d3e036dddc01edebb062261"
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/06-image-006.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 949,
-      "height": 315,
-      "bytes": 64038,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:b39ba52a624f2736d6d858f786df4add8245f04cdfe89421b8e8445b80016cc5",
-      "outputHash": "sha256:ffb465781b3079fa451149968bbb6fb2b6dc29b92ea0fcd9888b3631862ef8c3"
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/07-image-007.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 765,
-      "height": 267,
-      "bytes": 40812,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:a35fcc162391daf1204b43d74207620ada78eef118b86baca4cfa56125eaa15a",
-      "outputHash": "sha256:a198c5a4973f52600ef64ded5a8ac365eb6f30b0be3382cdcebf2efbf330b4cd"
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/08-image-008.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 762,
-      "height": 562,
-      "bytes": 88650,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:7fef5ec81d483997eb246a375b05dd7e771af22ad2b3e60a520595d29a6e4854",
-      "outputHash": "sha256:b10ea56485f495a1c1fb4f57acd63ede3756538a9dba60f4928743dda02b0fb6"
-    },
-    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/09-image-009.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 746,
-      "height": 432,
-      "bytes": 59448,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:7ba5cd41091f8a88cf0cc8d02c537a5f9986f9adef1d7a6af3686cae467c7da5",
-      "outputHash": "sha256:e2580c2a94de8a103177fdd740e9497ece35b50a91c66e1ac63b9fa9ebfe83c8"
     },
     "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/10-image-010.webp": {
       "role": "chart",
@@ -16379,39 +15869,6 @@
       "sourceHash": "sha256:fa6fbf556b2ac3f98c3529dacdf39d5fea3153b8074364f9a0d112d2fdf31fa1",
       "outputHash": "sha256:4983f08db067a50ce9b370c5495c1a53a205c9f6bb076e2247151d0f4154a8ee"
     },
-    "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/03-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 670,
-      "height": 548,
-      "bytes": 26354,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:69f482d8396f8ebcca80c24c16ecad188baeea5dc51503b9286b510a1bb68b2b",
-      "outputHash": "sha256:e09f71d9a79b5df164fc7466a130e51344372f4139f2ffd0bbfba9e2cb1943ab"
-    },
-    "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/04-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 672,
-      "height": 456,
-      "bytes": 14754,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a9012e81e909c007a117f755fff3b387d5da25d52136ac591f136c9b7f32251a",
-      "outputHash": "sha256:c4894608e83e0dff82c1634fa5b9a8e7fb9c4aea1ec82e2cea4cb57bdf8e77b5"
-    },
-    "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/05-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 671,
-      "height": 254,
-      "bytes": 21994,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:2fd24aafeb8547d5d129b39b8dbd7a031b9e1ab28585b6217ef62be30f2bffde",
-      "outputHash": "sha256:0c3c935426d43a2cf787f4986fe2e62a0f46f29bc64db82758c66ecd7eb3457e"
-    },
     "/images/articles/midea-nine-month-results-october-2025/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -16746,28 +16203,6 @@
         "bytes": 22930,
         "outputHash": "sha256:74ef8e369e3856f9070894f49f82f53abc7231aaf586dc9bafc212dd1e9ce229"
       }
-    },
-    "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/02-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 355,
-      "height": 493,
-      "bytes": 13612,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:21012b56cf65871a889abbe3db12749507d2e7ad89fc9b1e27e5871c2c5206ed",
-      "outputHash": "sha256:d52363a6dc55f99861fe6eefc94737970615150327ba81dbbacaa2af4b90dfac"
-    },
-    "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/03-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 665,
-      "height": 554,
-      "bytes": 41982,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:85f4b1ea428cac4ab9574eb49f1f83f7c82ef9c7b87b5cb060cbe8b41e1f17d6",
-      "outputHash": "sha256:534a808c4b38450f18ce8c5e908b8c301adf74b4c943ca4ef099dc45af26e6ce"
     },
     "/images/articles/milwaukee-2761-quiet-revolution-power-tools/01-cover.webp": {
       "role": "cover",
@@ -17670,24 +17105,6 @@
       "sourceHash": "sha256:805cffbe8fab1a6ad77faf2304b78710d26201659b1f66d748fb9aefeeed50d7",
       "outputHash": "sha256:397d143e1815bb3c145a4b0a5793f7c9e7c36cbf21afa1fe8d0d6093d751f6f5"
     },
-    "/images/articles/narwal-raises-new-funding/03-narwal-raises-new-funding-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 987,
-      "height": 546,
-      "bytes": 35384,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f950d6d7aafb009cb4fc72a408d606d9ed5edb36968bf08d600bfb34bd28aa1d",
-      "outputHash": "sha256:039f96a8e3e725be1204c92d4f565d1ff41b758ebc8e90d2fed595b89d879d3f",
-      "mobile": {
-        "src": "/images/articles/narwal-raises-new-funding/03-narwal-raises-new-funding-image-003-800.webp",
-        "width": 800,
-        "height": 443,
-        "bytes": 23670,
-        "outputHash": "sha256:01114629d7682d4a9baf7fdab4cdce7be52722a5120024fc27008f5bbb962b9f"
-      }
-    },
     "/images/articles/narwal-v50-cube-us-launch-november-2026/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -18032,24 +17449,6 @@
         "height": 450,
         "bytes": 11678,
         "outputHash": "sha256:a6e74a8e78bb7aeb57817120ac6527c63b2213e2ceb7ac1bbc4755e3892515a1"
-      }
-    },
-    "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/05-nilfisk-2018-annual-report-commercial-cleaning-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 14564,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a4aab629d718d3743ee3a3b02a8a7a60d66f6254e8464be3e443515115485b8a",
-      "outputHash": "sha256:715388971609ae96ef5fd585c04af864c63f100b008e75a03d36398b6b18a1b0",
-      "mobile": {
-        "src": "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/05-nilfisk-2018-annual-report-commercial-cleaning-image-005-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 4484,
-        "outputHash": "sha256:0dd9710b4a5397b3180c4bae4ddb7ad0bab71f232799908cd3e08dc4fdb781e9"
       }
     },
     "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/06-nilfisk-2018-annual-report-commercial-cleaning-image-006.webp": {
@@ -19064,61 +18463,6 @@
         "outputHash": "sha256:3ae596a7140474beec813677f56ad32d46693ce3c962e557fd4e29d8c9c7c8a0"
       }
     },
-    "/images/articles/roborock-2019-annual-report-breakout-year/02-roborock-2019-annual-report-breakout-year-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 625,
-      "height": 292,
-      "bytes": 27512,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8fe11ba5989970515653b22fe8c4955b4f8da38d98674c7d663bc637ebeab889",
-      "outputHash": "sha256:ab8bb041cdf8a58a414ebf4a03cef90d89bad25633c433401647b9bc8d6a5c03"
-    },
-    "/images/articles/roborock-2019-annual-report-breakout-year/03-roborock-2019-annual-report-breakout-year-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 609,
-      "height": 473,
-      "bytes": 55278,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4a13534ec622c3b54d1c5139288595339deb666315260be873a2c3908eca08f3",
-      "outputHash": "sha256:e14601c0d4078a5a17e6b668b0579963c5a407f259dcbf8ad9ccdd437aade4eb"
-    },
-    "/images/articles/roborock-2019-annual-report-breakout-year/04-roborock-2019-annual-report-breakout-year-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 605,
-      "height": 273,
-      "bytes": 30948,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:61a9f59f538890e97d9324fff6b009963a8ada13a56de592af63400843601d26",
-      "outputHash": "sha256:2dd8319d714e0ea74fbbcdd2304616eae00d6c6d8c66cbc570c7cbb623b8ce32"
-    },
-    "/images/articles/roborock-2019-annual-report-breakout-year/05-roborock-2019-annual-report-breakout-year-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 612,
-      "height": 229,
-      "bytes": 17804,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8dbce7fd2cb99e4ec7c106ecfb8521d9d1d840725a04783b34779a7147d524e4",
-      "outputHash": "sha256:9f3aadd94b53cd691223c7af2f6c15d7b5a3eed1f80b60416cc0255766bf9b47"
-    },
-    "/images/articles/roborock-2019-annual-report-breakout-year/06-roborock-2019-annual-report-breakout-year-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 617,
-      "height": 141,
-      "bytes": 10828,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:87bc0c5e46ed0c58c917c1f4025c9c71591dc4d059c26c130ae402c6ae79b544",
-      "outputHash": "sha256:29cc4b06a9222d7cae2ff30a2738cdd493270ad53268cfd93f9bd353fcec2a91"
-    },
     "/images/articles/roborock-2019-annual-report-breakout-year/07-roborock-2019-annual-report-breakout-year-image-007.webp": {
       "role": "body",
       "kind": "photo",
@@ -19129,24 +18473,6 @@
       "quality": 84,
       "sourceHash": "sha256:da8f326aa2ad5bac90b76d88c6b381290e71013403bc9bab9dec69e6b105c747",
       "outputHash": "sha256:5c56d96fda5bad9f1102107274b884b374d0b60966418706a2b3518d668f728d"
-    },
-    "/images/articles/roborock-2019-annual-report-breakout-year/08-roborock-2019-annual-report-breakout-year-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1068,
-      "height": 432,
-      "bytes": 34388,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:97f99ee5c7d2fae0e499f3c04e8012731451375f920197f63b4b22742880742e",
-      "outputHash": "sha256:6bf0514bfda8cbe46d86e564079d7afd6318e2b769ccd0a2784d32a49bce7fd9",
-      "mobile": {
-        "src": "/images/articles/roborock-2019-annual-report-breakout-year/08-roborock-2019-annual-report-breakout-year-image-008-800.webp",
-        "width": 800,
-        "height": 324,
-        "bytes": 20640,
-        "outputHash": "sha256:5233117fb0f820a807527ed4dd92e604db3db7846b7017b04f61dfd836543b5f"
-      }
     },
     "/images/articles/roborock-at-a-crossroads/01-cover.webp": {
       "role": "cover",
@@ -19182,24 +18508,6 @@
         "height": 450,
         "bytes": 25270,
         "outputHash": "sha256:b567538bd504e84ea278966a84585dcdd11678fe21c461e8137e7d1c5e64d3d8"
-      }
-    },
-    "/images/articles/roborock-at-a-crossroads/03-roborock-at-the-crossroads-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 750,
-      "height": 1153,
-      "bytes": 53820,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:705d609364cbc94901fde074de822aa0d295e353d8ca9737fb6d412b4bc93232",
-      "outputHash": "sha256:ee186733def134a666db355750b09b68a8377368168acdd250787914e1299b5d",
-      "mobile": {
-        "src": "/images/articles/roborock-at-a-crossroads/03-roborock-at-the-crossroads-image-002-800.webp",
-        "width": 520,
-        "height": 800,
-        "bytes": 29070,
-        "outputHash": "sha256:bbca15e497045b90bed42aa9958055d3b8a9e9843afa2d58be80cbb8045bffc2"
       }
     },
     "/images/articles/roborock-at-a-crossroads/04-roborock-at-the-crossroads-image-003.webp": {
@@ -23735,39 +23043,6 @@
       "sourceHash": "sha256:3da1ba9113e4cecca1b0d5e3237f4c80ef8adbcd4f25e59434dd25d89307cd59",
       "outputHash": "sha256:af441c0aae9c9040797d0066ec713ff5ac67526d8851d4c7211d5462bd8877e4"
     },
-    "/images/articles/tineco-lacks-innovation/03-tineco-lacks-innovation-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 828,
-      "height": 465,
-      "bytes": 16816,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:10dbc7f1fdf3ab4399e45888367b275827e72f43488eacfd4014bcfef222bec3",
-      "outputHash": "sha256:e5a6741bd91ddba7074b887048817a1e0bc9f31ca3ee27b078061254520ba8a5"
-    },
-    "/images/articles/tineco-lacks-innovation/04-tineco-lacks-innovation-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 885,
-      "height": 248,
-      "bytes": 32218,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:595037c859f36c97114c1abb5b17cae83e7ffb90f405b4a07dac7eaafe8002ee",
-      "outputHash": "sha256:c9fda1de80c90c417e5ee939677f89e52c0a81a69a1287e6c0d617e89f66aa59"
-    },
-    "/images/articles/tineco-lacks-innovation/05-tineco-lacks-innovation-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 911,
-      "height": 398,
-      "bytes": 41324,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:7769175137ac14f40b007ca6287dc9735290a1b00560bf480bc34910103e5649",
-      "outputHash": "sha256:453c120726139b32f9c04ffe8a0d023baadc43478ac7494d33df252c684df9ee"
-    },
     "/images/articles/tineco-lacks-innovation/06-tineco-lacks-innovation-image-006.webp": {
       "role": "body",
       "kind": "photo",
@@ -23778,28 +23053,6 @@
       "quality": 84,
       "sourceHash": "sha256:97aeba9d030af0cf1326a76631d27247119b1219baf691882df946f43b9d6867",
       "outputHash": "sha256:68318083385450166c7e59a9388bd07752dfdd38ee71ac009d7d7710c4ba069f"
-    },
-    "/images/articles/tineco-lacks-innovation/07-tineco-lacks-innovation-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 890,
-      "height": 334,
-      "bytes": 32534,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a59db07139a59436e7a314770200699c0e33baa10a51ce65fcc21b203c41854e",
-      "outputHash": "sha256:6eeaa12adc2ee59c44ac4dde2ad1870e0fbef1d6fd9e586ad841a989c2b5ca4b"
-    },
-    "/images/articles/tineco-lacks-innovation/08-tineco-lacks-innovation-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 898,
-      "height": 421,
-      "bytes": 43462,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:438fc752bdf43c475a661d87490e965d25378f34b2654e8352f111ecde072e2a",
-      "outputHash": "sha256:65c17caab5c1ac7e809c4d39070428acced668fab86c5370e858f4e1da633d15"
     },
     "/images/articles/tineco-lacks-innovation/09-tineco-lacks-innovation-image-011.webp": {
       "role": "body",
@@ -23818,28 +23071,6 @@
         "bytes": 26312,
         "outputHash": "sha256:181c91bdd737d6a5122d0eaa85ba897e0f200109030f13bfce33fd363759efaa"
       }
-    },
-    "/images/articles/tineco-lacks-innovation/10-tineco-lacks-innovation-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 805,
-      "height": 547,
-      "bytes": 70006,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:012525df73f848d6f1bfd6c8d5e10c3f0adb4271cd3ffe1378700c5a0d084d2e",
-      "outputHash": "sha256:99cb5e4d1fdecf140cf660392a9eb2899ef5fbec19690442ea898c8152a78e62"
-    },
-    "/images/articles/tineco-lacks-innovation/11-tineco-lacks-innovation-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 651,
-      "height": 438,
-      "bytes": 23704,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:081455acb486466c86c805959f2b8d1f2db7110bb4b27dc5fa51d0e246df461a",
-      "outputHash": "sha256:012ec0ca8cef7781233e9dcff49df45b67e6f195d2543426ef7fc6b936d2eac1"
     },
     "/images/articles/tineco-station-view-awe-march-2026/01-cover.webp": {
       "role": "cover",
@@ -24028,17 +23259,6 @@
       "quality": 84,
       "sourceHash": "sha256:f0c4be0f93e5be25211a1f9a29944dc475d8e3e67d0ea5fc0e74b4d340519720",
       "outputHash": "sha256:75e96b7f7981f60ce1d643ba47d919e696e0b5041aa7446ee91eca5b95ee319e"
-    },
-    "/images/articles/tti-2019-interim-report/05-tti-2019-interim-report-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 843,
-      "height": 292,
-      "bytes": 14166,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:5e9e93994b554dc6ff3f4e45b042f915fc4aea68820585bd9b987b2b13dd8b02",
-      "outputHash": "sha256:e75ab9069bb084e8a159002b48744ffe50dabd18a1799fa7fdca22e7039f2f71"
     },
     "/images/articles/tti-2019-interim-report/06-tti-2019-interim-report-image-006.webp": {
       "role": "body",
@@ -29950,17 +29170,6 @@
       "quality": 84,
       "sourceHash": "sha256:d7453587884a42479b5054fd94c4c2584980bf18f6e316900875a5e5543bdb7d",
       "outputHash": "sha256:2238082e465942be7589d5f0699af3b88a81d98486e7b5c669d0c3ffe8d0b64c"
-    },
-    "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/09-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 632,
-      "height": 349,
-      "bytes": 29670,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4e41e347b7146f42e7ba04d8a3a1a426144fe93c4e0b16c400e7ccf42edd2911",
-      "outputHash": "sha256:c1d09830cd565408ed1b297e1c7f5e25518b11710bc8ed6aabd10584c42b3fb2"
     },
     "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/10-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-010.webp": {
       "role": "body",
@@ -36593,28 +35802,6 @@
         "outputHash": "sha256:0d09753feb6c85fc7969cb93cee7fc40109cdc1eb9e5d8dfe77b7c964173b26e"
       }
     },
-    "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-012.png": {
-      "role": "body",
-      "kind": "photo",
-      "width": 666,
-      "height": 110,
-      "bytes": 8177,
-      "format": "png",
-      "quality": 100,
-      "sourceHash": "sha256:1c0437fbbffdffd8e2573844f3f3e19409de34a9cf65175896631f04c31e63d6",
-      "outputHash": "sha256:c1ecb93b61012e266de1980c8ce1df30381b6e536cd49c85c5eea3e10fae3a5e"
-    },
-    "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-013.png": {
-      "role": "body",
-      "kind": "photo",
-      "width": 593,
-      "height": 356,
-      "bytes": 27769,
-      "format": "png",
-      "quality": 100,
-      "sourceHash": "sha256:2915380a4dee1f356ddaf011ef8046036705120b362195e3bf55e61d9d5467ab",
-      "outputHash": "sha256:759ef778cd7d0e0b009962e45d0088854dd2a67522cdc7dcaffc94e390ba4658"
-    },
     "/images/insights/casual-gossip-on-dji-robot-vacuum-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -37917,17 +37104,6 @@
       "sourceHash": "sha256:5d105d3f11768161acbb35a18f042061bb6eb86de133499c8818e0565ce13b78",
       "outputHash": "sha256:614e0d6cd14be807909d7e41440383f66ec677f2dd1e2369af4196926486007b"
     },
-    "/images/insights/dysons-anxiety-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 495,
-      "height": 304,
-      "bytes": 8611,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:39730d288f1cc8c6999f3a04ec2e8c11286c93fcdf8ea4f60cb4fa5b1e53760a",
-      "outputHash": "sha256:aebea61b76c1916f50f61532061eb9cf4cd137543c35ad357121fb9097bd13f7"
-    },
     "/images/insights/dysons-anxiety-image-007.jpg": {
       "role": "body",
       "kind": "photo",
@@ -37975,17 +37151,6 @@
       "sourceHash": "sha256:a2badfcb92c53d07bafee65ef0af78e55a122e907b1707c4b32a0c059eb48791",
       "outputHash": "sha256:8b80fbb51adea402e50ba9759c4eaa198e94d110bd0eeb220f0e866cdcfb356e"
     },
-    "/images/insights/dysons-anxiety-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 738,
-      "height": 381,
-      "bytes": 29755,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:41e668ebc98723e000cfae0ff37bb85ea9aff7e95d985194b11d5533473b7017",
-      "outputHash": "sha256:1e3146298486418f7931fce9c6281b3c3b332b833586369829b17bc98ffe81d0"
-    },
     "/images/insights/dysons-anxiety-image-011.jpg": {
       "role": "body",
       "kind": "photo",
@@ -38007,17 +37172,6 @@
       "quality": 84,
       "sourceHash": "sha256:f3868a023f3353ebcc9ab09574c829c920b7737477335b9e334a0151475cbbd8",
       "outputHash": "sha256:e34f328f1d488a7f1dfbe0099879b6811b5db94abaf59cf4e12c40383cad6791"
-    },
-    "/images/insights/dysons-anxiety-image-013.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 600,
-      "height": 400,
-      "bytes": 27437,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:29dcc5e116e443441c755834e33ba5aa51832bd02961c8d4447fcd87899313fb",
-      "outputHash": "sha256:9af406eb3e7fe25248486b8ad90416bbe3d07329474e052e009430b20df69145"
     },
     "/images/insights/dysons-anxiety-image-014.jpg": {
       "role": "body",
@@ -39654,17 +38808,6 @@
         "outputHash": "sha256:d63aa3bb949bf90e72e8216e8437d3640eb3ee3f3d05a66591b1c776c595d707"
       }
     },
-    "/images/insights/laifen-hard-floor-washer-entry-strategy-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 720,
-      "height": 720,
-      "bytes": 78935,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:1de15045193b1bf940d20be040543ae70a5a8445a8e855d604adfe4244996fab",
-      "outputHash": "sha256:c6104510fdf404b251e98344b46d9b6e090379a923a4c1df325d45f46c064873"
-    },
     "/images/insights/laifen-hard-floor-washer-entry-strategy-image-002.jpg": {
       "role": "body",
       "kind": "photo",
@@ -40387,17 +39530,6 @@
       "sourceHash": "sha256:8a86f9431ded472e06357d1019de9c8d38d5c0bdc1473e041e5c95d0b7c835b7",
       "outputHash": "sha256:4c602af51ebc5cf9a6adc3912f7a0453d99f9725e829d56173539936e03eeee7"
     },
-    "/images/insights/robot-vacuum-ceiling-question-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 337,
-      "height": 321,
-      "bytes": 25989,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:016409382063d5c031c0dda42c5d8cc4ce3a0e7d0056a19e6e59f651b14104e0",
-      "outputHash": "sha256:cd7e38448d9c9b70b8f03e66c4892a4143ab5822d3e26321204db7a0ed9da529"
-    },
     "/images/insights/robot-vacuum-navigation-solution-companies-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -41007,17 +40139,6 @@
         "outputHash": "sha256:9b7310028558010058044c73dd05587c003ecc7ba8c89d3366dea9cf6543d192"
       }
     },
-    "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 593,
-      "height": 417,
-      "bytes": 48823,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:f0be980e8c49817c42db8d90592bdba7e5f248918f7ed882827ea92c181dd5b5",
-      "outputHash": "sha256:113192a5bc86fcc32a4867c5d5b262e828ebdba5d7d5afb73094fbe778b80f36"
-    },
     "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-002.jpg": {
       "role": "body",
       "kind": "photo",
@@ -41064,17 +40185,6 @@
         "bytes": 5640,
         "outputHash": "sha256:73f6ad5b48f251474f485933410aff7ee497449c0c03af48480012debb691bad"
       }
-    },
-    "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 454,
-      "height": 398,
-      "bytes": 23611,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:12a4e1ade60e55a2fc02ca9e67291a667640aa9c5cca62e36947a7f2c3ec4ee6",
-      "outputHash": "sha256:4af26f1843a5cb4d4a86ddae3d4477c25d2c3489a35ef6534f32cce7fc727ea2"
     },
     "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-006.jpg": {
       "role": "body",
@@ -41392,17 +40502,6 @@
       "sourceHash": "sha256:f6e0c8c8ff1aacb7cf1b5fa5afc950befa8e67624fb6c44d62a861d84203bae0",
       "outputHash": "sha256:f4e47589e54eaa50e0db0e3d1b7b07c50d3335c359de03a032612012a1e5f140"
     },
-    "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 592,
-      "height": 308,
-      "bytes": 35505,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:357f8220148e37947ceac1d20f8d5029bacdd5acae115149d6b65b239de8fa52",
-      "outputHash": "sha256:51537e62a8856429c0bf613fd9d4d3cad02f1f400c9eb24f921954322a3c5bd3"
-    },
     "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-image-003.jpg": {
       "role": "body",
       "kind": "photo",
@@ -41690,24 +40789,6 @@
       "quality": 84,
       "sourceHash": "sha256:aed2ea8634216876d99e2778ffbee078a6d6c51a92d1a469877d128950c99755",
       "outputHash": "sha256:6e88b88621ec30bc853bdb6d223c7711ce7a7eff86fcbaab34a8462fd350defe"
-    },
-    "/images/insights/vs-industry-bissell-three-year-agreement-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 853,
-      "height": 401,
-      "bytes": 40629,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:5698630d08c12d0130ccd8fd30762b26ccc10df11e129611026cc10026c54f74",
-      "outputHash": "sha256:6bd63d8742b96d56d02094e062173bcdcefdbae6bb45d568a32f7b9ecbe71b71",
-      "mobile": {
-        "src": "/images/insights/vs-industry-bissell-three-year-agreement-image-010-800.webp",
-        "width": 800,
-        "height": 376,
-        "bytes": 23268,
-        "outputHash": "sha256:d5818c42f1e7af4230ce181854cbf0f18ae4615937cdc4dee2a1138aa7c7accf"
-      }
     },
     "/images/insights/vs-industry-bissell-three-year-agreement-image-011.jpg": {
       "role": "body",
@@ -42040,10 +41121,7 @@
       "budgetClass": "standard",
       "cover": "/images/articles/amazon-first-stop-for-backyard-robotics/01-cover.webp",
       "body": [
-        "/images/articles/amazon-first-stop-for-backyard-robotics/02-amazon-first-stop-for-backyard-robotics-image-002.webp",
-        "/images/articles/amazon-first-stop-for-backyard-robotics/03-amazon-first-stop-for-backyard-robotics-image-003.webp",
         "/images/articles/amazon-first-stop-for-backyard-robotics/04-amazon-first-stop-for-backyard-robotics-image-004.webp",
-        "/images/articles/amazon-first-stop-for-backyard-robotics/05-amazon-first-stop-for-backyard-robotics-image-005.webp",
         "/images/articles/amazon-first-stop-for-backyard-robotics/06-amazon-first-stop-for-backyard-robotics-image-006.webp",
         "/images/articles/amazon-first-stop-for-backyard-robotics/07-amazon-first-stop-for-backyard-robotics-image-007.webp"
       ]
@@ -42252,9 +41330,7 @@
         "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-008.png",
         "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-009.png",
         "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-010.png",
-        "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-011.png",
-        "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-012.png",
-        "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-013.png"
+        "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-011.png"
       ]
     },
     "bissell-crosswave-edge-cordless-4328f": {
@@ -42925,7 +42001,6 @@
         "/images/articles/delonghi-group-company-history-and-appliance-brands/14-delonghi-group-company-history-and-appliance-brands-image-014.webp",
         "/images/articles/delonghi-group-company-history-and-appliance-brands/15-delonghi-group-company-history-and-appliance-brands-image-015.webp",
         "/images/articles/delonghi-group-company-history-and-appliance-brands/16-delonghi-group-company-history-and-appliance-brands-image-016.webp",
-        "/images/articles/delonghi-group-company-history-and-appliance-brands/17-delonghi-group-company-history-and-appliance-brands-image-017.webp",
         "/images/articles/delonghi-group-company-history-and-appliance-brands/18-delonghi-group-company-history-and-appliance-brands-image-018.webp"
       ]
     },
@@ -42938,15 +42013,8 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dewalts-rise-harvard-case/01-cover.webp",
       "body": [
-        "/images/articles/dewalts-rise-harvard-case/02-dewalts-rise-harvard-case-image-002.webp",
-        "/images/articles/dewalts-rise-harvard-case/03-dewalts-rise-harvard-case-image-003.webp",
-        "/images/articles/dewalts-rise-harvard-case/04-dewalts-rise-harvard-case-image-004.webp",
         "/images/articles/dewalts-rise-harvard-case/05-dewalts-rise-harvard-case-image-005.webp",
-        "/images/articles/dewalts-rise-harvard-case/06-dewalts-rise-harvard-case-image-006.webp",
-        "/images/articles/dewalts-rise-harvard-case/07-dewalts-rise-harvard-case-image-007.webp",
-        "/images/articles/dewalts-rise-harvard-case/08-dewalts-rise-harvard-case-image-008.webp",
         "/images/articles/dewalts-rise-harvard-case/09-dewalts-rise-harvard-case-image-009.webp",
-        "/images/articles/dewalts-rise-harvard-case/10-dewalts-rise-harvard-case-image-010.webp",
         "/images/articles/dewalts-rise-harvard-case/11-dewalts-rise-harvard-case-image-011.webp"
       ]
     },
@@ -43246,14 +42314,8 @@
       "cover": "/images/articles/dyson-at-a-crossroads/01-cover.webp",
       "body": [
         "/images/articles/dyson-at-a-crossroads/02-dyson-at-a-crossroads-image-002.webp",
-        "/images/articles/dyson-at-a-crossroads/03-dyson-at-a-crossroads-image-003.webp",
-        "/images/articles/dyson-at-a-crossroads/04-dyson-at-a-crossroads-image-004.webp",
-        "/images/articles/dyson-at-a-crossroads/05-dyson-at-a-crossroads-image-005.webp",
         "/images/articles/dyson-at-a-crossroads/06-dyson-at-a-crossroads-image-006.webp",
-        "/images/articles/dyson-at-a-crossroads/07-dyson-at-a-crossroads-image-007.webp",
-        "/images/articles/dyson-at-a-crossroads/08-dyson-at-a-crossroads-image-008.webp",
         "/images/articles/dyson-at-a-crossroads/09-dyson-at-a-crossroads-image-009.webp",
-        "/images/articles/dyson-at-a-crossroads/10-dyson-at-a-crossroads-image-010.webp",
         "/images/articles/dyson-at-a-crossroads/11-dyson-at-a-crossroads-image-011.webp",
         "/images/articles/dyson-at-a-crossroads/12-dyson-at-a-crossroads-image-012.webp"
       ]
@@ -43305,9 +42367,7 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-hard-floor-washer-exposed/01-cover.webp",
       "body": [
-        "/images/articles/dyson-hard-floor-washer-exposed/02-dyson-hard-floor-washer-exposed-image-002.webp",
         "/images/articles/dyson-hard-floor-washer-exposed/03-dyson-hard-floor-washer-exposed-image-003.webp",
-        "/images/articles/dyson-hard-floor-washer-exposed/04-dyson-hard-floor-washer-exposed-image-004.webp",
         "/images/articles/dyson-hard-floor-washer-exposed/05-dyson-hard-floor-washer-exposed-image-005.webp",
         "/images/articles/dyson-hard-floor-washer-exposed/06-dyson-hard-floor-washer-exposed-image-006.webp",
         "/images/articles/dyson-hard-floor-washer-exposed/07-dyson-hard-floor-washer-exposed-image-007.webp",
@@ -43317,8 +42377,7 @@
         "/images/articles/dyson-hard-floor-washer-exposed/11-dyson-hard-floor-washer-exposed-image-011.webp",
         "/images/articles/dyson-hard-floor-washer-exposed/12-dyson-hard-floor-washer-exposed-image-012.webp",
         "/images/articles/dyson-hard-floor-washer-exposed/13-dyson-hard-floor-washer-exposed-image-013.webp",
-        "/images/articles/dyson-hard-floor-washer-exposed/14-dyson-hard-floor-washer-exposed-image-014.webp",
-        "/images/articles/dyson-hard-floor-washer-exposed/15-dyson-hard-floor-washer-exposed-image-015.webp"
+        "/images/articles/dyson-hard-floor-washer-exposed/14-dyson-hard-floor-washer-exposed-image-014.webp"
       ]
     },
     "dyson-makes-another-big-move": {
@@ -43435,15 +42494,12 @@
         "/images/insights/dysons-anxiety-image-003.jpg",
         "/images/insights/dysons-anxiety-image-004.jpg",
         "/images/insights/dysons-anxiety-image-005.jpg",
-        "/images/insights/dysons-anxiety-image-006.jpg",
         "/images/insights/dysons-anxiety-image-014.jpg",
         "/images/insights/dysons-anxiety-image-007.jpg",
         "/images/insights/dysons-anxiety-image-008.jpg",
         "/images/insights/dysons-anxiety-image-009.jpg",
-        "/images/insights/dysons-anxiety-image-010.jpg",
         "/images/insights/dysons-anxiety-image-011.jpg",
-        "/images/insights/dysons-anxiety-image-012.jpg",
-        "/images/insights/dysons-anxiety-image-013.jpg"
+        "/images/insights/dysons-anxiety-image-012.jpg"
       ]
     },
     "ecovacs-2018-annual-report-signals": {
@@ -43454,12 +42510,7 @@
     "ecovacs-2019-and-industry-landscape-shift": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-2019-and-industry-landscape-shift/01-cover.webp",
-      "body": [
-        "/images/articles/ecovacs-2019-and-industry-landscape-shift/02-ecovacs-2019-and-industry-landscape-shift-image-002.webp",
-        "/images/articles/ecovacs-2019-and-industry-landscape-shift/03-ecovacs-2019-and-industry-landscape-shift-image-003.webp",
-        "/images/articles/ecovacs-2019-and-industry-landscape-shift/04-ecovacs-2019-and-industry-landscape-shift-image-004.webp",
-        "/images/articles/ecovacs-2019-and-industry-landscape-shift/05-ecovacs-2019-and-industry-landscape-shift-image-005.webp"
-      ]
+      "body": []
     },
     "ecovacs-and-irobot-cooperation-agreement": {
       "budgetClass": "standard",
@@ -43476,7 +42527,6 @@
         "/images/articles/ecovacs-at-a-crossroads/03-ecovacs-at-a-crossroads-image-003.webp",
         "/images/articles/ecovacs-at-a-crossroads/04-ecovacs-at-a-crossroads-image-004.webp",
         "/images/articles/ecovacs-at-a-crossroads/05-ecovacs-at-a-crossroads-image-005.webp",
-        "/images/articles/ecovacs-at-a-crossroads/06-ecovacs-at-a-crossroads-image-006.webp",
         "/images/articles/ecovacs-at-a-crossroads/07-ecovacs-at-a-crossroads-image-007.webp",
         "/images/articles/ecovacs-at-a-crossroads/08-ecovacs-at-a-crossroads-image-008.webp"
       ]
@@ -44589,23 +43639,16 @@
       ]
     },
     "irobot-at-a-crossroads": {
-      "budgetClass": "deep",
+      "budgetClass": "standard",
       "cover": "/images/articles/irobot-at-a-crossroads/01-cover.webp",
       "body": [
-        "/images/articles/irobot-at-a-crossroads/02-irobot-at-the-crossroads-image-002.webp",
         "/images/articles/irobot-at-a-crossroads/03-irobot-at-the-crossroads-image-003.webp",
         "/images/articles/irobot-at-a-crossroads/04-irobot-at-the-crossroads-image-004.webp",
-        "/images/articles/irobot-at-a-crossroads/05-irobot-at-the-crossroads-image-005.webp",
         "/images/articles/irobot-at-a-crossroads/06-irobot-at-the-crossroads-image-006.webp",
-        "/images/articles/irobot-at-a-crossroads/07-irobot-at-the-crossroads-image-007.webp",
-        "/images/articles/irobot-at-a-crossroads/08-irobot-at-the-crossroads-image-008.webp",
         "/images/articles/irobot-at-a-crossroads/09-irobot-at-the-crossroads-image-009.webp",
         "/images/articles/irobot-at-a-crossroads/10-irobot-at-the-crossroads-image-010.webp",
         "/images/articles/irobot-at-a-crossroads/11-irobot-at-the-crossroads-image-011.webp",
-        "/images/articles/irobot-at-a-crossroads/12-irobot-at-the-crossroads-image-015.webp",
-        "/images/articles/irobot-at-a-crossroads/13-irobot-at-the-crossroads-image-012.webp",
-        "/images/articles/irobot-at-a-crossroads/14-irobot-at-the-crossroads-image-013.webp",
-        "/images/articles/irobot-at-a-crossroads/15-irobot-at-the-crossroads-image-014.webp"
+        "/images/articles/irobot-at-a-crossroads/12-irobot-at-the-crossroads-image-015.webp"
       ]
     },
     "irobot-awe-local-market-update-april-2026": {
@@ -44835,8 +43878,7 @@
         "/images/articles/karcher-hidden-champion-in-cleaning-appliances/11-karcher-hidden-champion-in-cleaning-appliances-image-011.webp",
         "/images/articles/karcher-hidden-champion-in-cleaning-appliances/12-karcher-hidden-champion-in-cleaning-appliances-image-012.webp",
         "/images/articles/karcher-hidden-champion-in-cleaning-appliances/13-karcher-hidden-champion-in-cleaning-appliances-image-013.webp",
-        "/images/articles/karcher-hidden-champion-in-cleaning-appliances/14-karcher-hidden-champion-in-cleaning-appliances-image-014.webp",
-        "/images/articles/karcher-hidden-champion-in-cleaning-appliances/15-karcher-hidden-champion-in-cleaning-appliances-image-015.webp"
+        "/images/articles/karcher-hidden-champion-in-cleaning-appliances/14-karcher-hidden-champion-in-cleaning-appliances-image-014.webp"
       ]
     },
     "karcher-stihl-allpro-battery-alliance-july-2026": {
@@ -44874,7 +43916,6 @@
       "budgetClass": "standard",
       "cover": "/images/insights/laifen-hard-floor-washer-entry-strategy-cover.jpg",
       "body": [
-        "/images/insights/laifen-hard-floor-washer-entry-strategy-image-001.jpg",
         "/images/insights/laifen-hard-floor-washer-entry-strategy-image-002.jpg"
       ]
     },
@@ -44922,13 +43963,6 @@
       "cover": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/01-cover.webp",
       "body": [
         "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/02-image-002.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/04-image-004.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/05-image-005.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/06-image-006.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/07-image-007.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/08-image-008.webp",
-        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/09-image-009.webp",
         "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/10-image-010.webp",
         "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/11-image-011.webp"
       ]
@@ -45118,10 +44152,7 @@
       "budgetClass": "standard",
       "cover": "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/01-cover.webp",
       "body": [
-        "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/02-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-002.webp",
-        "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/03-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-003.webp",
-        "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/04-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-004.webp",
-        "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/05-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-005.webp"
+        "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/02-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-002.webp"
       ]
     },
     "midea-nine-month-results-october-2025": {
@@ -45181,10 +44212,7 @@
     "mijia-robot-vacuum-g1-and-xiaomi-ecosystem": {
       "budgetClass": "standard",
       "cover": "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/01-cover.webp",
-      "body": [
-        "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/02-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-002.webp",
-        "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/03-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-003.webp"
-      ]
+      "body": []
     },
     "milwaukee-2761-quiet-revolution-power-tools": {
       "budgetClass": "standard",
@@ -45358,8 +44386,7 @@
       "budgetClass": "standard",
       "cover": "/images/articles/narwal-raises-new-funding/01-cover.webp",
       "body": [
-        "/images/articles/narwal-raises-new-funding/02-narwal-raises-new-funding-image-002.webp",
-        "/images/articles/narwal-raises-new-funding/03-narwal-raises-new-funding-image-003.webp"
+        "/images/articles/narwal-raises-new-funding/02-narwal-raises-new-funding-image-002.webp"
       ]
     },
     "narwal-revival-story": {
@@ -45422,7 +44449,6 @@
         "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/02-nilfisk-2018-annual-report-commercial-cleaning-image-002.webp",
         "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/03-nilfisk-2018-annual-report-commercial-cleaning-image-003.webp",
         "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/04-nilfisk-2018-annual-report-commercial-cleaning-image-004.webp",
-        "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/05-nilfisk-2018-annual-report-commercial-cleaning-image-005.webp",
         "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/06-nilfisk-2018-annual-report-commercial-cleaning-image-006.webp",
         "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/07-nilfisk-2018-annual-report-commercial-cleaning-image-007.webp",
         "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/08-nilfisk-2018-annual-report-commercial-cleaning-image-008.webp",
@@ -45643,13 +44669,7 @@
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-2019-annual-report-breakout-year/01-cover.webp",
       "body": [
-        "/images/articles/roborock-2019-annual-report-breakout-year/02-roborock-2019-annual-report-breakout-year-image-002.webp",
-        "/images/articles/roborock-2019-annual-report-breakout-year/03-roborock-2019-annual-report-breakout-year-image-003.webp",
-        "/images/articles/roborock-2019-annual-report-breakout-year/04-roborock-2019-annual-report-breakout-year-image-004.webp",
-        "/images/articles/roborock-2019-annual-report-breakout-year/05-roborock-2019-annual-report-breakout-year-image-005.webp",
-        "/images/articles/roborock-2019-annual-report-breakout-year/06-roborock-2019-annual-report-breakout-year-image-006.webp",
-        "/images/articles/roborock-2019-annual-report-breakout-year/07-roborock-2019-annual-report-breakout-year-image-007.webp",
-        "/images/articles/roborock-2019-annual-report-breakout-year/08-roborock-2019-annual-report-breakout-year-image-008.webp"
+        "/images/articles/roborock-2019-annual-report-breakout-year/07-roborock-2019-annual-report-breakout-year-image-007.webp"
       ]
     },
     "roborock-at-a-crossroads": {
@@ -45657,7 +44677,6 @@
       "cover": "/images/articles/roborock-at-a-crossroads/01-cover.webp",
       "body": [
         "/images/articles/roborock-at-a-crossroads/02-roborock-at-a-crossroads-image-005.webp",
-        "/images/articles/roborock-at-a-crossroads/03-roborock-at-the-crossroads-image-002.webp",
         "/images/articles/roborock-at-a-crossroads/04-roborock-at-the-crossroads-image-003.webp",
         "/images/articles/roborock-at-a-crossroads/05-roborock-at-the-crossroads-image-004.webp"
       ]
@@ -46022,8 +45041,7 @@
       "budgetClass": "standard",
       "cover": "/images/insights/robot-vacuum-ceiling-question-cover.jpg",
       "body": [
-        "/images/insights/robot-vacuum-ceiling-question-image-002.jpg",
-        "/images/insights/robot-vacuum-ceiling-question-image-003.jpg"
+        "/images/insights/robot-vacuum-ceiling-question-image-002.jpg"
       ]
     },
     "robot-vacuum-cleaners-from-china": {
@@ -46792,11 +45810,9 @@
       "budgetClass": "standard",
       "cover": "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-cover.jpg",
       "body": [
-        "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-001.jpg",
         "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-002.jpg",
         "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-003.jpg",
         "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-004.jpg",
-        "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-005.jpg",
         "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-006.jpg"
       ]
     },
@@ -46883,15 +45899,8 @@
       "cover": "/images/articles/tineco-lacks-innovation/01-cover.webp",
       "body": [
         "/images/articles/tineco-lacks-innovation/02-tineco-lacks-innovation-image-002.webp",
-        "/images/articles/tineco-lacks-innovation/03-tineco-lacks-innovation-image-003.webp",
-        "/images/articles/tineco-lacks-innovation/04-tineco-lacks-innovation-image-004.webp",
-        "/images/articles/tineco-lacks-innovation/05-tineco-lacks-innovation-image-005.webp",
         "/images/articles/tineco-lacks-innovation/06-tineco-lacks-innovation-image-006.webp",
-        "/images/articles/tineco-lacks-innovation/07-tineco-lacks-innovation-image-007.webp",
-        "/images/articles/tineco-lacks-innovation/08-tineco-lacks-innovation-image-008.webp",
-        "/images/articles/tineco-lacks-innovation/09-tineco-lacks-innovation-image-011.webp",
-        "/images/articles/tineco-lacks-innovation/10-tineco-lacks-innovation-image-009.webp",
-        "/images/articles/tineco-lacks-innovation/11-tineco-lacks-innovation-image-010.webp"
+        "/images/articles/tineco-lacks-innovation/09-tineco-lacks-innovation-image-011.webp"
       ]
     },
     "tineco-station-view-awe-march-2026": {
@@ -46946,7 +45955,6 @@
         "/images/articles/tti-2019-interim-report/02-tti-2019-interim-report-image-002.webp",
         "/images/articles/tti-2019-interim-report/03-tti-2019-interim-report-image-003.webp",
         "/images/articles/tti-2019-interim-report/04-tti-2019-interim-report-image-004.webp",
-        "/images/articles/tti-2019-interim-report/05-tti-2019-interim-report-image-005.webp",
         "/images/articles/tti-2019-interim-report/06-tti-2019-interim-report-image-006.webp",
         "/images/articles/tti-2019-interim-report/07-tti-2019-interim-report-image-007.webp",
         "/images/articles/tti-2019-interim-report/08-tti-2019-interim-report-image-008.webp",
@@ -47163,7 +46171,6 @@
       "budgetClass": "standard",
       "cover": "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-cover.jpg",
       "body": [
-        "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-image-002.jpg",
         "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-image-003.jpg",
         "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-image-004.jpg",
         "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-image-005.jpg",
@@ -47225,7 +46232,6 @@
         "/images/insights/vs-industry-bissell-three-year-agreement-image-007.jpg",
         "/images/insights/vs-industry-bissell-three-year-agreement-image-008.jpg",
         "/images/insights/vs-industry-bissell-three-year-agreement-image-009.jpg",
-        "/images/insights/vs-industry-bissell-three-year-agreement-image-010.jpg",
         "/images/insights/vs-industry-bissell-three-year-agreement-image-011.jpg"
       ]
     },
@@ -48306,7 +47312,6 @@
         "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/06-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-006.webp",
         "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/07-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-007.webp",
         "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/08-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-008.webp",
-        "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/09-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-009.webp",
         "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/10-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-010.webp",
         "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/11-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-011.webp",
         "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/12-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-012.webp"
@@ -48943,25 +47948,10 @@
           "primary": "/images/articles/amazon-first-stop-for-backyard-robotics/01-cover.webp",
           "hash": "sha256:e55f133fdaa2a4953848375506ff0bc9d7f216621a329ba0a8dd9c63e21025ab"
         },
-        "02-amazon-first-stop-for-backyard-robotics-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/amazon-first-stop-for-backyard-robotics/02-amazon-first-stop-for-backyard-robotics-image-002.webp",
-          "hash": "sha256:7e0d0463b57cf12d97ee4789ab587191cfa8f5c57ae78057ded49c54c2c658ef"
-        },
-        "03-amazon-first-stop-for-backyard-robotics-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/amazon-first-stop-for-backyard-robotics/03-amazon-first-stop-for-backyard-robotics-image-003.webp",
-          "hash": "sha256:f9974e01211068dc3af207e9e76573cc3114c3493303800cf6a0f981fcb94545"
-        },
         "04-amazon-first-stop-for-backyard-robotics-image-004.jpg": {
           "status": "matched",
           "primary": "/images/articles/amazon-first-stop-for-backyard-robotics/04-amazon-first-stop-for-backyard-robotics-image-004.webp",
           "hash": "sha256:c726a80ec0b267b7a9e513d35945f35eeed0478970464166c4af76f7a08830bc"
-        },
-        "05-amazon-first-stop-for-backyard-robotics-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/amazon-first-stop-for-backyard-robotics/05-amazon-first-stop-for-backyard-robotics-image-005.webp",
-          "hash": "sha256:ba5d2b502006ae6627ba65f2288aa1c011ab0fe566785cd51ff5511435ba4b0e"
         },
         "06-amazon-first-stop-for-backyard-robotics-image-006.jpg": {
           "status": "matched",
@@ -50059,11 +49049,6 @@
           "primary": "/images/articles/delonghi-group-company-history-and-appliance-brands/16-delonghi-group-company-history-and-appliance-brands-image-016.webp",
           "hash": "sha256:bf73773b2f6a306f50bb2b10a1bd5f738803f19a9fcb4b5a1da8800402808f58"
         },
-        "17-delonghi-group-company-history-and-appliance-brands-image-017.png": {
-          "status": "matched",
-          "primary": "/images/articles/delonghi-group-company-history-and-appliance-brands/17-delonghi-group-company-history-and-appliance-brands-image-017.webp",
-          "hash": "sha256:45e46c7474cdb0a9b9ef96c3464bf76a2a290391e84a774e01a09710303ef2b3"
-        },
         "18-delonghi-group-company-history-and-appliance-brands-image-018.png": {
           "status": "matched",
           "primary": "/images/articles/delonghi-group-company-history-and-appliance-brands/18-delonghi-group-company-history-and-appliance-brands-image-018.webp",
@@ -50087,50 +49072,15 @@
           "primary": "/images/articles/dewalts-rise-harvard-case/01-cover.webp",
           "hash": "sha256:648cc3507da152b82d695a6187b4a8c02f18bad01b628b291da1055eebb0d4a0"
         },
-        "02-dewalts-rise-harvard-case-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/02-dewalts-rise-harvard-case-image-002.webp",
-          "hash": "sha256:1c8f9476ce533d2aafa76d8ac73f3c7c8181a65c3277f25ca37968caba2971a9"
-        },
-        "03-dewalts-rise-harvard-case-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/03-dewalts-rise-harvard-case-image-003.webp",
-          "hash": "sha256:644483e1c54fd67cfd3622f1018b571f8b2847e137f9d864b2fef76aae1dba24"
-        },
-        "04-dewalts-rise-harvard-case-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/04-dewalts-rise-harvard-case-image-004.webp",
-          "hash": "sha256:6532157a4c117f32261b39fc3c006063499843e3f1b23224a500d8035371e3e3"
-        },
         "05-dewalts-rise-harvard-case-image-005.jpg": {
           "status": "matched",
           "primary": "/images/articles/dewalts-rise-harvard-case/05-dewalts-rise-harvard-case-image-005.webp",
           "hash": "sha256:b22353d8ac4298cf79bcded05105e9167b8b19ef9a76b9bb546b32bca0c49f56"
         },
-        "06-dewalts-rise-harvard-case-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/06-dewalts-rise-harvard-case-image-006.webp",
-          "hash": "sha256:b62ca651458489fa77e6022689778d7afd33ccaaad393b2f1fdc38095dac789e"
-        },
-        "07-dewalts-rise-harvard-case-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/07-dewalts-rise-harvard-case-image-007.webp",
-          "hash": "sha256:97756c4eb1f85ce4cc88aa0e16bad69ee471269c4df33edde6bd8d8011b4a467"
-        },
-        "08-dewalts-rise-harvard-case-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/08-dewalts-rise-harvard-case-image-008.webp",
-          "hash": "sha256:c3c7f29a85a406eff8725bddc7374712be88fb3cae66fb68c176fe6dc16effec"
-        },
         "09-dewalts-rise-harvard-case-image-009.jpg": {
           "status": "matched",
           "primary": "/images/articles/dewalts-rise-harvard-case/09-dewalts-rise-harvard-case-image-009.webp",
           "hash": "sha256:d00058fb4b35938b30e854fbfe4a2b826a01e17d17832141f85af8946721db59"
-        },
-        "10-dewalts-rise-harvard-case-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dewalts-rise-harvard-case/10-dewalts-rise-harvard-case-image-010.webp",
-          "hash": "sha256:fdcdeefb106083ec9ad9307d728bc1fbb62f94dad593bc7d147d4ff52272622d"
         },
         "11-dewalts-rise-harvard-case-image-011.jpg": {
           "status": "matched",
@@ -50680,45 +49630,15 @@
           "primary": "/images/articles/dyson-at-a-crossroads/02-dyson-at-a-crossroads-image-002.webp",
           "hash": "sha256:2927a843be572ca49a36229c681dfca6855970e37d8fcf46a94158d8303b403e"
         },
-        "03-dyson-at-a-crossroads-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-at-a-crossroads/03-dyson-at-a-crossroads-image-003.webp",
-          "hash": "sha256:0c4ea959e176a3768311bfb29999ac6ed74eda8f9e8d1d79544f1fcee5a2dfd1"
-        },
-        "04-dyson-at-a-crossroads-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-at-a-crossroads/04-dyson-at-a-crossroads-image-004.webp",
-          "hash": "sha256:4c47b76e690ad0afb797276ea2f485c5106f628972daf8b9c2e50db9b222498f"
-        },
-        "05-dyson-at-a-crossroads-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-at-a-crossroads/05-dyson-at-a-crossroads-image-005.webp",
-          "hash": "sha256:fa50919edd3349a41f1ae8a090ea51f7080726932dd240c0776cf6c707070906"
-        },
         "06-dyson-at-a-crossroads-image-006.jpg": {
           "status": "matched",
           "primary": "/images/articles/dyson-at-a-crossroads/06-dyson-at-a-crossroads-image-006.webp",
           "hash": "sha256:234c46f6e548acc25f72d8b126ae5160175de6d053d369a1c16a762f5787e960"
         },
-        "07-dyson-at-a-crossroads-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-at-a-crossroads/07-dyson-at-a-crossroads-image-007.webp",
-          "hash": "sha256:f4790fc4be18359e7aa1991c731f5cda2463ea9b5152e909dd12140d60b05b86"
-        },
-        "08-dyson-at-a-crossroads-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-at-a-crossroads/08-dyson-at-a-crossroads-image-008.webp",
-          "hash": "sha256:1e91a55cb744ddde87d22c1650adf9af476a60e0fc7706e1720c5685087e70f7"
-        },
         "09-dyson-at-a-crossroads-image-009.jpg": {
           "status": "matched",
           "primary": "/images/articles/dyson-at-a-crossroads/09-dyson-at-a-crossroads-image-009.webp",
           "hash": "sha256:97b98b03fd4e5e2140e571527ea821d0193619a8857e143bbd16cea818b2ab02"
-        },
-        "10-dyson-at-a-crossroads-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-at-a-crossroads/10-dyson-at-a-crossroads-image-010.webp",
-          "hash": "sha256:d08c697d0f9baa73f2fec7809fa6300301912856db289ae4f5af3e93391f879e"
         },
         "11-dyson-at-a-crossroads-image-011.jpg": {
           "status": "matched",
@@ -50843,20 +49763,10 @@
           "primary": "/images/articles/dyson-hard-floor-washer-exposed/01-cover.webp",
           "hash": "sha256:8bc0d2c11a9d1222abbe13e7a1bae8c226ed811bbfc8fbe8f66bd34c83ecd943"
         },
-        "02-dyson-hard-floor-washer-exposed-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-hard-floor-washer-exposed/02-dyson-hard-floor-washer-exposed-image-002.webp",
-          "hash": "sha256:4dc6cc0230458ba9baf24d7afc975ccbe88dae5b769c8a8012af7d3a013d8c7d"
-        },
         "03-dyson-hard-floor-washer-exposed-image-003.jpg": {
           "status": "matched",
           "primary": "/images/articles/dyson-hard-floor-washer-exposed/03-dyson-hard-floor-washer-exposed-image-003.webp",
           "hash": "sha256:21edc56e214aaaa385dca7471ca7e9fd23771b901e80a1c34b2abc992ff0ddac"
-        },
-        "04-dyson-hard-floor-washer-exposed-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-hard-floor-washer-exposed/04-dyson-hard-floor-washer-exposed-image-004.webp",
-          "hash": "sha256:95352a069854a4a089df8cca7cfce56bf5c51be263a902290ddd83c921bd71c4"
         },
         "05-dyson-hard-floor-washer-exposed-image-005.jpg": {
           "status": "matched",
@@ -50907,11 +49817,6 @@
           "status": "matched",
           "primary": "/images/articles/dyson-hard-floor-washer-exposed/14-dyson-hard-floor-washer-exposed-image-014.webp",
           "hash": "sha256:e8dad95d8a1b44f6bf26c25c68bc2dd0727f3c63f87abe436e00ec9b118177c5"
-        },
-        "15-dyson-hard-floor-washer-exposed-image-015.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-hard-floor-washer-exposed/15-dyson-hard-floor-washer-exposed-image-015.webp",
-          "hash": "sha256:006e5333768d219914c37d59569b067930a06745e92166f65a22c51929742b80"
         }
       }
     },
@@ -51124,26 +50029,6 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-2019-and-industry-landscape-shift/01-cover.webp",
           "hash": "sha256:04349b784fe22bb7e4d3420c091c85b95649886af1aaa60820885adc95376267"
-        },
-        "02-ecovacs-2019-and-industry-landscape-shift-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-2019-and-industry-landscape-shift/02-ecovacs-2019-and-industry-landscape-shift-image-002.webp",
-          "hash": "sha256:ec1ced1ab85dd1a6e68861afe6b34a73e24e436cda8fec5867bba50cf1b3aeeb"
-        },
-        "03-ecovacs-2019-and-industry-landscape-shift-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-2019-and-industry-landscape-shift/03-ecovacs-2019-and-industry-landscape-shift-image-003.webp",
-          "hash": "sha256:1bffdac3eb52a2b484104bdd8c232010329b66ff5efce2d862ae1fe9e92b2192"
-        },
-        "04-ecovacs-2019-and-industry-landscape-shift-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-2019-and-industry-landscape-shift/04-ecovacs-2019-and-industry-landscape-shift-image-004.webp",
-          "hash": "sha256:a876101ea6bb3078ce37c004569d599014c465b9a8d1947b3d6f4f94827ce055"
-        },
-        "05-ecovacs-2019-and-industry-landscape-shift-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-2019-and-industry-landscape-shift/05-ecovacs-2019-and-industry-landscape-shift-image-005.webp",
-          "hash": "sha256:e8548e44d50773b9c6772a165e642e380f5602ea27db2305173e6404674c89b7"
         }
       }
     },
@@ -51187,11 +50072,6 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-at-a-crossroads/05-ecovacs-at-a-crossroads-image-005.webp",
           "hash": "sha256:af9857fe2d555564720608a735de665684b4409e3622b46221b20f905c7645b9"
-        },
-        "06-ecovacs-at-a-crossroads-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-at-a-crossroads/06-ecovacs-at-a-crossroads-image-006.webp",
-          "hash": "sha256:f1a351019b319e4da5f5578b7af5fa9f6ebf1b870ff2371997d414daf875a25c"
         },
         "07-ecovacs-at-a-crossroads-image-007.jpg": {
           "status": "matched",
@@ -53328,11 +52208,6 @@
           "primary": "/images/articles/irobot-at-a-crossroads/01-cover.webp",
           "hash": "sha256:a2bb110288c3d3d6b122a08f0837597f4a6fbcfd1958d1861f3fd33436f7bcd8"
         },
-        "02-irobot-at-the-crossroads-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/02-irobot-at-the-crossroads-image-002.webp",
-          "hash": "sha256:d71ea739761ec36e5f2e8ffadaed9228b08f4a35b6ffefd9f86d38d379f40f8d"
-        },
         "03-irobot-at-the-crossroads-image-003.jpg": {
           "status": "matched",
           "primary": "/images/articles/irobot-at-a-crossroads/03-irobot-at-the-crossroads-image-003.webp",
@@ -53343,25 +52218,10 @@
           "primary": "/images/articles/irobot-at-a-crossroads/04-irobot-at-the-crossroads-image-004.webp",
           "hash": "sha256:5ef49447e40265b19a939f7fab4dfd20e18d711f7d6742fc940b99fd4c3c17fa"
         },
-        "05-irobot-at-the-crossroads-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/05-irobot-at-the-crossroads-image-005.webp",
-          "hash": "sha256:33ee72db6d4315651f767e2e3c440618e49c486d513a351c5feff4c5da1e6896"
-        },
         "06-irobot-at-the-crossroads-image-006.jpg": {
           "status": "matched",
           "primary": "/images/articles/irobot-at-a-crossroads/06-irobot-at-the-crossroads-image-006.webp",
           "hash": "sha256:cbc845c9537160a39f4c4127c50021b52537345f66948bae3c697c8bbde8bbbd"
-        },
-        "07-irobot-at-the-crossroads-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/07-irobot-at-the-crossroads-image-007.webp",
-          "hash": "sha256:f833ab59ed5bce745f1af052e5f45f9741ea55e80e3453b848871a385a0cb767"
-        },
-        "08-irobot-at-the-crossroads-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/08-irobot-at-the-crossroads-image-008.webp",
-          "hash": "sha256:7967ceb368ef4e422486c5ac86c194182691833333dedf43fd7fdcd8bd427a31"
         },
         "09-irobot-at-the-crossroads-image-009.jpg": {
           "status": "matched",
@@ -53382,21 +52242,6 @@
           "status": "matched",
           "primary": "/images/articles/irobot-at-a-crossroads/12-irobot-at-the-crossroads-image-015.webp",
           "hash": "sha256:656c2056ed8f9e3f1b07187c23b98d5dce7ca4e623cb790721ec6ef3e7c26933"
-        },
-        "13-irobot-at-the-crossroads-image-012.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/13-irobot-at-the-crossroads-image-012.webp",
-          "hash": "sha256:ca0ba146771bd3d2766c723b2178245ca29b1243d11de369139403c4e8c48957"
-        },
-        "14-irobot-at-the-crossroads-image-013.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/14-irobot-at-the-crossroads-image-013.webp",
-          "hash": "sha256:46fe2b90b8e17f19f651ed562f33d07df9b34f52b59b1e9c1ac411f9be5259bb"
-        },
-        "15-irobot-at-the-crossroads-image-014.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/irobot-at-a-crossroads/15-irobot-at-the-crossroads-image-014.webp",
-          "hash": "sha256:a9c360127243fc0397bbbc0ac928a7e673e709abb0fc55f2031151a485a320d9"
         }
       }
     },
@@ -53814,11 +52659,6 @@
           "status": "matched",
           "primary": "/images/articles/karcher-hidden-champion-in-cleaning-appliances/14-karcher-hidden-champion-in-cleaning-appliances-image-014.webp",
           "hash": "sha256:3cdbaa1f1d1c2a9864c2043b8b7f85688f01b4061b78eca7dd116c0406925e0c"
-        },
-        "15-karcher-hidden-champion-in-cleaning-appliances-image-015.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/karcher-hidden-champion-in-cleaning-appliances/15-karcher-hidden-champion-in-cleaning-appliances-image-015.webp",
-          "hash": "sha256:148d1d3ef45bce63e7028127c8e11b41ebe651d45d9cfd5af83d9fa677a10139"
         }
       }
     },
@@ -54008,41 +52848,6 @@
           "status": "matched",
           "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/02-image-002.webp",
           "hash": "sha256:ff97561ed565c37185ba70cac60e966035fd022421aeae69e495d1695c4f2c18"
-        },
-        "03-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003.webp",
-          "hash": "sha256:808b587091b421e6e5c58c8265fd4f49961e2abca8aee35e38ab38d583ec9b92"
-        },
-        "04-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/04-image-004.webp",
-          "hash": "sha256:2f8db41720a77ebb2ab54bf089e60f5ccc3ca7294e868dab4e41aaba4ba126c9"
-        },
-        "05-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/05-image-005.webp",
-          "hash": "sha256:57785f2747fa0a2a8f8781506a581707901a77e53bb85461c5ff4385bf9111eb"
-        },
-        "06-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/06-image-006.webp",
-          "hash": "sha256:b39ba52a624f2736d6d858f786df4add8245f04cdfe89421b8e8445b80016cc5"
-        },
-        "07-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/07-image-007.webp",
-          "hash": "sha256:a35fcc162391daf1204b43d74207620ada78eef118b86baca4cfa56125eaa15a"
-        },
-        "08-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/08-image-008.webp",
-          "hash": "sha256:7fef5ec81d483997eb246a375b05dd7e771af22ad2b3e60a520595d29a6e4854"
-        },
-        "09-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/09-image-009.webp",
-          "hash": "sha256:7ba5cd41091f8a88cf0cc8d02c537a5f9986f9adef1d7a6af3686cae467c7da5"
         },
         "10-image-010.jpg": {
           "status": "matched",
@@ -54345,21 +53150,6 @@
           "status": "matched",
           "primary": "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/02-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-002.webp",
           "hash": "sha256:fa6fbf556b2ac3f98c3529dacdf39d5fea3153b8074364f9a0d112d2fdf31fa1"
-        },
-        "03-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-003.png": {
-          "status": "matched",
-          "primary": "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/03-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-003.webp",
-          "hash": "sha256:69f482d8396f8ebcca80c24c16ecad188baeea5dc51503b9286b510a1bb68b2b"
-        },
-        "04-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-004.png": {
-          "status": "matched",
-          "primary": "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/04-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-004.webp",
-          "hash": "sha256:a9012e81e909c007a117f755fff3b387d5da25d52136ac591f136c9b7f32251a"
-        },
-        "05-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-005.png": {
-          "status": "matched",
-          "primary": "/images/articles/midea-group-and-the-possible-philips-domestic-appliances-acquisition/05-midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-005.webp",
-          "hash": "sha256:2fd24aafeb8547d5d129b39b8dbd7a031b9e1ab28585b6217ef62be30f2bffde"
         }
       }
     },
@@ -54487,16 +53277,6 @@
           "status": "matched",
           "primary": "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/01-cover.webp",
           "hash": "sha256:8452141f6fe2d47ec10c48d7053150bf15d6ac5b2dbde3c76cc103a4af773144"
-        },
-        "02-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/02-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-002.webp",
-          "hash": "sha256:21012b56cf65871a889abbe3db12749507d2e7ad89fc9b1e27e5871c2c5206ed"
-        },
-        "03-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/mijia-robot-vacuum-g1-and-xiaomi-ecosystem/03-mijia-robot-vacuum-g1-and-xiaomi-ecosystem-image-003.webp",
-          "hash": "sha256:85f4b1ea428cac4ab9574eb49f1f83f7c82ef9c7b87b5cb060cbe8b41e1f17d6"
         }
       }
     },
@@ -54865,11 +53645,6 @@
           "status": "matched",
           "primary": "/images/articles/narwal-raises-new-funding/02-narwal-raises-new-funding-image-002.webp",
           "hash": "sha256:805cffbe8fab1a6ad77faf2304b78710d26201659b1f66d748fb9aefeeed50d7"
-        },
-        "03-narwal-raises-new-funding-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-raises-new-funding/03-narwal-raises-new-funding-image-003.webp",
-          "hash": "sha256:f950d6d7aafb009cb4fc72a408d606d9ed5edb36968bf08d600bfb34bd28aa1d"
         }
       }
     },
@@ -55002,11 +53777,6 @@
           "status": "matched",
           "primary": "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/04-nilfisk-2018-annual-report-commercial-cleaning-image-004.webp",
           "hash": "sha256:7b453ada975332850eb9e379643087a242460cc8d5c91d044d309ee3e35de1cb"
-        },
-        "05-nilfisk-2018-annual-report-commercial-cleaning-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/nilfisk-2018-annual-report-commercial-cleaning/05-nilfisk-2018-annual-report-commercial-cleaning-image-005.webp",
-          "hash": "sha256:a4aab629d718d3743ee3a3b02a8a7a60d66f6254e8464be3e443515115485b8a"
         },
         "06-nilfisk-2018-annual-report-commercial-cleaning-image-006.jpg": {
           "status": "matched",
@@ -55352,40 +54122,10 @@
           "primary": "/images/articles/roborock-2019-annual-report-breakout-year/01-cover.webp",
           "hash": "sha256:fae9a5c889e76668b872bb729ad8cd137658113945c944680047e4a7970eecc1"
         },
-        "02-roborock-2019-annual-report-breakout-year-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-2019-annual-report-breakout-year/02-roborock-2019-annual-report-breakout-year-image-002.webp",
-          "hash": "sha256:8fe11ba5989970515653b22fe8c4955b4f8da38d98674c7d663bc637ebeab889"
-        },
-        "03-roborock-2019-annual-report-breakout-year-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-2019-annual-report-breakout-year/03-roborock-2019-annual-report-breakout-year-image-003.webp",
-          "hash": "sha256:4a13534ec622c3b54d1c5139288595339deb666315260be873a2c3908eca08f3"
-        },
-        "04-roborock-2019-annual-report-breakout-year-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-2019-annual-report-breakout-year/04-roborock-2019-annual-report-breakout-year-image-004.webp",
-          "hash": "sha256:61a9f59f538890e97d9324fff6b009963a8ada13a56de592af63400843601d26"
-        },
-        "05-roborock-2019-annual-report-breakout-year-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-2019-annual-report-breakout-year/05-roborock-2019-annual-report-breakout-year-image-005.webp",
-          "hash": "sha256:8dbce7fd2cb99e4ec7c106ecfb8521d9d1d840725a04783b34779a7147d524e4"
-        },
-        "06-roborock-2019-annual-report-breakout-year-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-2019-annual-report-breakout-year/06-roborock-2019-annual-report-breakout-year-image-006.webp",
-          "hash": "sha256:87bc0c5e46ed0c58c917c1f4025c9c71591dc4d059c26c130ae402c6ae79b544"
-        },
         "07-roborock-2019-annual-report-breakout-year-image-007.jpg": {
           "status": "matched",
           "primary": "/images/articles/roborock-2019-annual-report-breakout-year/07-roborock-2019-annual-report-breakout-year-image-007.webp",
           "hash": "sha256:da8f326aa2ad5bac90b76d88c6b381290e71013403bc9bab9dec69e6b105c747"
-        },
-        "08-roborock-2019-annual-report-breakout-year-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-2019-annual-report-breakout-year/08-roborock-2019-annual-report-breakout-year-image-008.webp",
-          "hash": "sha256:97f99ee5c7d2fae0e499f3c04e8012731451375f920197f63b4b22742880742e"
         }
       }
     },
@@ -55400,11 +54140,6 @@
           "status": "matched",
           "primary": "/images/articles/roborock-at-a-crossroads/02-roborock-at-a-crossroads-image-005.webp",
           "hash": "sha256:cf48cfad38fd9052e87ffbe5b404cc245561e482dcad0ded725aa15c14bac31b"
-        },
-        "03-roborock-at-the-crossroads-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/roborock-at-a-crossroads/03-roborock-at-the-crossroads-image-002.webp",
-          "hash": "sha256:705d609364cbc94901fde074de822aa0d295e353d8ca9737fb6d412b4bc93232"
         },
         "04-roborock-at-the-crossroads-image-003.jpg": {
           "status": "matched",
@@ -57068,50 +55803,15 @@
           "primary": "/images/articles/tineco-lacks-innovation/02-tineco-lacks-innovation-image-002.webp",
           "hash": "sha256:3da1ba9113e4cecca1b0d5e3237f4c80ef8adbcd4f25e59434dd25d89307cd59"
         },
-        "03-tineco-lacks-innovation-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/03-tineco-lacks-innovation-image-003.webp",
-          "hash": "sha256:10dbc7f1fdf3ab4399e45888367b275827e72f43488eacfd4014bcfef222bec3"
-        },
-        "04-tineco-lacks-innovation-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/04-tineco-lacks-innovation-image-004.webp",
-          "hash": "sha256:595037c859f36c97114c1abb5b17cae83e7ffb90f405b4a07dac7eaafe8002ee"
-        },
-        "05-tineco-lacks-innovation-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/05-tineco-lacks-innovation-image-005.webp",
-          "hash": "sha256:7769175137ac14f40b007ca6287dc9735290a1b00560bf480bc34910103e5649"
-        },
         "06-tineco-lacks-innovation-image-006.jpg": {
           "status": "matched",
           "primary": "/images/articles/tineco-lacks-innovation/06-tineco-lacks-innovation-image-006.webp",
           "hash": "sha256:97aeba9d030af0cf1326a76631d27247119b1219baf691882df946f43b9d6867"
         },
-        "07-tineco-lacks-innovation-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/07-tineco-lacks-innovation-image-007.webp",
-          "hash": "sha256:a59db07139a59436e7a314770200699c0e33baa10a51ce65fcc21b203c41854e"
-        },
-        "08-tineco-lacks-innovation-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/08-tineco-lacks-innovation-image-008.webp",
-          "hash": "sha256:438fc752bdf43c475a661d87490e965d25378f34b2654e8352f111ecde072e2a"
-        },
         "09-tineco-lacks-innovation-image-011.jpg": {
           "status": "matched",
           "primary": "/images/articles/tineco-lacks-innovation/09-tineco-lacks-innovation-image-011.webp",
           "hash": "sha256:dcfea01160096dd38d0a5413263ef0af2d733b1eebaa705eab4d268360f3397d"
-        },
-        "10-tineco-lacks-innovation-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/10-tineco-lacks-innovation-image-009.webp",
-          "hash": "sha256:012525df73f848d6f1bfd6c8d5e10c3f0adb4271cd3ffe1378700c5a0d084d2e"
-        },
-        "11-tineco-lacks-innovation-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tineco-lacks-innovation/11-tineco-lacks-innovation-image-010.webp",
-          "hash": "sha256:081455acb486466c86c805959f2b8d1f2db7110bb4b27dc5fa51d0e246df461a"
         }
       }
     },
@@ -57200,11 +55900,6 @@
           "status": "matched",
           "primary": "/images/articles/tti-2019-interim-report/04-tti-2019-interim-report-image-004.webp",
           "hash": "sha256:f0c4be0f93e5be25211a1f9a29944dc475d8e3e67d0ea5fc0e74b4d340519720"
-        },
-        "05-tti-2019-interim-report-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/tti-2019-interim-report/05-tti-2019-interim-report-image-005.webp",
-          "hash": "sha256:5e9e93994b554dc6ff3f4e45b042f915fc4aea68820585bd9b987b2b13dd8b02"
         },
         "06-tti-2019-interim-report-image-006.jpg": {
           "status": "matched",
@@ -59516,11 +58211,6 @@
           "status": "matched",
           "primary": "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/08-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-008.webp",
           "hash": "sha256:d7453587884a42479b5054fd94c4c2584980bf18f6e316900875a5e5543bdb7d"
-        },
-        "09-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era/09-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-009.webp",
-          "hash": "sha256:4e41e347b7146f42e7ba04d8a3a1a426144fe93c4e0b16c400e7ccf42edd2911"
         },
         "10-who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era-image-010.png": {
           "status": "matched",
