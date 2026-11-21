@@ -27,17 +27,23 @@ After acquiring Sakti3, Dyson’s three core technologies in the era of wireless
 
 1. Dust bucket cyclone technology (Cyclone) technology
 
-![Dust bucket cyclone technology (Cyclone) technology](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-002.jpg)
+> 14 concentric cyclones generate more than 79,000 g of centrifugal force, flinging pollen, bacteria and other microscopic particles into the bin. The cyclones are arranged precisely around the centre of the machine to improve airflow efficiency, accelerating air from 45 mph to 120 mph to separate dust. (Dyson V10 product page, translated)
 
-![Dust bucket cyclone technology (Cyclone) technology](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-003.jpg)
+> Dyson's patented V10 digital motor is the smallest, lightest and most powerful cordless vacuum motor Dyson has made. The impeller is moved from the front of the motor to the back, and the motor spins at up to 125,000 rpm to produce strong suction. (Dyson V10 product page, translated)
 
-![Dust bucket cyclone technology (Cyclone) technology](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-004.jpg)
+> One charge, strong suction, up to 60 minutes of run time. We wanted lasting suction from one battery so you do not need to swap batteries mid-clean. A 7-cell, 525 W lithium-ion pack gives longer run time while reducing heat and weight, and updated electronics and battery management deliver the power needed. (Dyson V10 product page, translated)
 
 Among them, the cyclone technology patent has been the core of Dyson vacuum cleaners from the beginning, and the latest V10 digital motor is the core of current wireless vacuum cleaners. It is precisely because of the high-speed digital motor that the performance of wireless vacuum cleaners is close to the level of ordinary corded vacuum cleaners. However, many people may have overlooked that lithium batteries and Battery Management System (BMS) are also the core of wireless vacuum cleaners.
 
 Due to the huge energy consumption of high-speed digital motors, battery life is criticized by consumers. Only when using the latest lithium batteries and BMS, the high-end model can be used for 8 minutes and the maximum time can be 60 minutes. If it were not for the popularity of lithium batteries, the arrival of the era of cordless vacuum cleaners would have been delayed.
 
-![Due to the huge energy consumption of high-speed digital motors, battery life is criticized by consumers](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-005.jpg)
+| Cleaning mode | Run time | Use |
+|---|---|---|
+| Max | Up to 8 minutes | Deep cleaning |
+| Medium | Up to 30 minutes | Everyday cleaning |
+| Eco | Up to 60 minutes | Quieter and longer |
+
+The machine ships in Max mode, so the listing reminds buyers to pick a mode before the first clean. (Dyson V10 product page, translated)
 
 So before using lithium batteries, what kind of batteries were used in vacuum cleaners? Let’s briefly review the batteries used in vacuum cleaners:
 
@@ -65,7 +71,7 @@ Currently, Tesla electric vehicles use more than 7,000 Panasonic 18650 batteries
 
 ![Currently, Tesla electric vehicles use more than 7,000 Panasonic 18650 batteries connected in series and parallel](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-010.jpg)
 
-![Currently, Tesla electric vehicles use more than 7,000 Panasonic 18650 batteries connected in series and parallel](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-011.jpg)
+A single 18650 cell × n makes a cell brick; bricks × n make a battery module; modules × n make the battery pack. Insulating tape separates the cells in the pack.
 
 2. Square lithium battery
 
@@ -77,13 +83,11 @@ In addition, because the single battery cells are larger, the consistency of pri
 
 However, due to the high degree of customization, there are currently thousands of models on the market, and the process is difficult to unify.
 
-![However, due to the high degree of customization, there are currently thousands of models on the market, and the…](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-012.jpg)
-
 3. Soft pack lithium battery (polymer lithium battery).
 
 Soft-packed lithium batteries are also called polymer lithium batteries. They are a polymer shell placed on a liquid lithium-ion battery. Soft packaging materials are usually divided into three layers, including an outer resistance layer (usually an outer protective layer composed of BOPA or PET), a barrier layer (aluminum foil in the middle layer) and an inner layer (multifunctional high barrier).
 
-![Soft-packed lithium batteries are also called polymer lithium batteries](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-013.jpg)
+A pouch cell has a positive tab and a negative tab on top; inside the outer shell, layers of positive electrode, separator and negative electrode sit in the electrolyte.
 
 **The most commonly used cylindrical battery in vacuum cleaners and power tools is 18650 lithium battery, where 18 means 18mm in diameter, 65 means 65mm in length, and 0 means cylindrical battery.**
 
@@ -131,7 +135,29 @@ From a sales perspective, a unified battery platform makes the batteries of diff
 
 ![Battery platform value chain from lithium cells and BMS to shared packs, tools and repeat platform purchases](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-021.jpg)
 
-![From a sales perspective, a unified battery platform makes the batteries of different power tools interchangeable](/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-016.jpg)
+| Protection | Test item | Symbol | Condition | Min | Typical | Max | Unit |
+|---|---|---|---|---|---|---|---|
+| Overcharge | Overcharge protection voltage | Vc1 | At charge off | 4.20 | 4.25 | 4.30 | V |
+| Overcharge | Overcharge protection delay | Tc1 | | 0.5 | 1.0 | 1.5 | s |
+| Overcharge | Overcharge release voltage | Vc2 | | 4.10 | 4.15 | 4.20 | V |
+| Charge current | Normal charge current | Ioc | | 1 | 2 | 3 | A |
+| Charge current | Charge overcurrent protection current | Icp | | 17 | 20 | 23 | A |
+| Over-discharge | Over-discharge protection voltage | Vd1 | At discharge off | 2.60 | 2.70 | 2.80 | V |
+| Over-discharge | Over-discharge protection delay | Td1 | | 0.5 | 1.0 | 1.5 | s |
+| Over-discharge | Over-discharge release voltage | Vd2 | | 2.90 | 3.00 | 3.10 | V |
+| Overcurrent | Overcurrent 1 protection current | Ioc1 | Pack voltage 18 V | 10 | 15 | 20 | A |
+| Overcurrent | Overcurrent 1 protection delay | Toc1 | Pack voltage 18 V | 10 | 20 | 80 | ms |
+| Overcurrent release | Recovery condition | | | Disconnect load for 2 s, then charge | | | |
+| Discharge current | Maximum continuous discharge current | Ioc | | | | 3 | A |
+| Discharge over-temperature | Protection temperature | | Pack voltage 18 V | 70 | 75 | 80 | °C |
+| Discharge over-temperature | Release temperature | | Pack voltage 18 V | 45 | 55 | 65 | °C |
+| Short circuit | Short-circuit protection current | Ishort | Pack voltage 18 V | | 80 | | A |
+| Short circuit | Short-circuit protection delay | Tshort | Pack voltage 18 V | 200 | 400 | 600 | µs |
+| Short circuit | Recovery | | | Disconnect load for 3 s, then charge | | | |
+| Internal resistance | Discharge circuit resistance | Ron1 | Pack voltage 18 V | | 10 | 30 | mΩ |
+| Self-consumption | Operating mode | Icc1 | Pack voltage 18 V | | 30 | 150 | µA |
+
+Example protection specification for an 18 V tool battery BMS.
 
 It is also out of this consideration that Bosch released a cordless vacuum cleaner Unlimited, which uses an 18V battery. One of the core selling points is that the batteries of vacuum cleaners and power tools can be used interchangeably. For details, you can read this article (article link). However, due to the variability in the shape of vacuum cleaner products, it is not easy to match multiple models with one battery like power tools.
 
