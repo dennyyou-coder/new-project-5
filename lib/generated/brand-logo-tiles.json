@@ -394,6 +394,10 @@
     "src": "/images/brands/skil/logo-tile.webp",
     "ratio": 2.687
   },
+  "spectrum-brands": {
+    "src": "/images/brands/spectrum-brands/logo-tile.webp",
+    "ratio": 7.048
+  },
   "stanley-black-decker": {
     "src": "/images/brands/stanley-black-decker/logo-tile.webp",
     "ratio": 5.537
