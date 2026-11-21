@@ -484,19 +484,7 @@
   color: var(--chrome-muted);
 }
 
-/* ---- A design (white): top bar, wordmark, flat menus, open footer ---- */
-
-/* The top bar scrolls away; the main header row stays pinned. */
-.wcb-header { top: -34px; }
-.wcb-topbar { background: var(--chrome-soft); border-bottom: 1px solid var(--chrome-line); }
-.wcb-topbar-inner {
-  max-width: 1280px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); height: 34px;
-  display: flex; gap: 24px; justify-content: flex-end; align-items: center;
-  font-family: var(--chrome-mono); font-size: 12px; color: var(--chrome-muted); box-sizing: border-box;
-}
-.wcb-topbar-inner > * { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.wcb-header .wcb-topbar-inner a { color: var(--chrome-accent); }
-.wcb-header .wcb-topbar-inner a:hover { color: var(--chrome-accent-dark); }
+/* ---- A design (white): wordmark, flat menus, open footer ---- */
 
 .wcb-header-inner { padding: 12px clamp(16px, 4vw, 40px); gap: 32px; }
 .wcb-header-brand { align-items: baseline; gap: 10px; }
@@ -526,9 +514,6 @@
   .wcb-header .wcb-header-expo { border-radius: 4px; }
   .wcb-header .wcb-nav-link[aria-current="page"],
   .wcb-header .wcb-nav-button[data-current="true"] { box-shadow: none; }
-}
-@media (max-width: 640px) {
-  .wcb-topbar-inner { justify-content: center; padding: 0 16px; font-size: 11px; }
 }
 @media (max-width: 420px) {
   .wcb-header-name { font-size: 10px; letter-spacing: 0.12em; }
