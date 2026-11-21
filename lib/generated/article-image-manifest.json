@@ -2681,132 +2681,6 @@
         "outputHash": "sha256:4cf4cfb511e18c1a6587b57fe895cf6b6b3290e0d8b2154e82d2b4b5a19f085f"
       }
     },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/02-bissell-crosswave-hard-floor-washer-logic-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 21142,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f2736ad0a32ef689de3a00132c3497a657cefb0ba1369bcfac0a5dab2ddd9932",
-      "outputHash": "sha256:d6c8f142da3eeed46cce524dc52eb7bc3b40dfc06f8b28598ce94961497544af",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/02-bissell-crosswave-hard-floor-washer-logic-image-002-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 7816,
-        "outputHash": "sha256:8f184530003134ffc375bdd942c63721d1899782698104ec350c94750b30ede3"
-      }
-    },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/03-bissell-crosswave-hard-floor-washer-logic-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 31980,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:7288c21793808282810c05a7d7eb4881431b1382030f6023e7e56ef4f8df16f2",
-      "outputHash": "sha256:a1ba03338f12df8e194c09539efd394e6aa0b96406cd4688fafcf7785799ff06",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/03-bissell-crosswave-hard-floor-washer-logic-image-003-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 10878,
-        "outputHash": "sha256:96225c8d571bd10ac73687b357428569ada484c3da70d501191fdb977769c279"
-      }
-    },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/04-bissell-crosswave-hard-floor-washer-logic-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 29510,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:94325c598783750a74e5efe4052d5c105dddb4ff8960b258b8b7718689f9445a",
-      "outputHash": "sha256:e06f568dc47d555fa536271e5100282d1f9a7461c27a56baec3a3112a7ffc74c",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/04-bissell-crosswave-hard-floor-washer-logic-image-004-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 9418,
-        "outputHash": "sha256:5fcb06c285da1633d6901472b04a57359127e86e098a4a35d37cabb1eee5099a"
-      }
-    },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/05-bissell-crosswave-hard-floor-washer-logic-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 27330,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ea3d8b2a6b0fa42a873e979d0ba9371699bbc0ca879d60b3118cef5a82b50072",
-      "outputHash": "sha256:cd8401e8d27e057d4def82ebde000fe0acbaf2cc6c7fd036b6802546825b74cc",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/05-bissell-crosswave-hard-floor-washer-logic-image-005-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8672,
-        "outputHash": "sha256:02b85af5b6d4ff6040d08177b1b389b5bee003d5ecc19cacd4b3574355622d28"
-      }
-    },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/06-bissell-crosswave-hard-floor-washer-logic-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 19300,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:3674cbe746bf9c775ae77226b33ad612b6f6d644a24307c5a6327a827a82f14d",
-      "outputHash": "sha256:8ea3697ac2e75f28115e03542aeb8b7f17eaa4fd834bf338f2a53c551118e1dd",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/06-bissell-crosswave-hard-floor-washer-logic-image-006-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 6490,
-        "outputHash": "sha256:050ee2d19b18c828294b9311ed7a94a41b40e148ded004b2e897e7e08c0dce58"
-      }
-    },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/07-bissell-crosswave-hard-floor-washer-logic-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 18420,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4b0e1e0d7b6e8b83aa0b02b9e5599fe951cf53772ca0e944e782ac8f17e4ce79",
-      "outputHash": "sha256:6325d2f4582542331137d15573f50688912e4256a3c2319debb64f9846c763db",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/07-bissell-crosswave-hard-floor-washer-logic-image-007-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5912,
-        "outputHash": "sha256:82021ea8200e526923316077ca50003111f14df775f1520cf2940403f2b34b57"
-      }
-    },
-    "/images/articles/bissell-crosswave-hard-floor-washer-logic/08-bissell-crosswave-hard-floor-washer-logic-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 36692,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:77f0b5d5416ebe8c10be5e7f74ecf667ce96a69fe77162fe49d4542d7c5b376e",
-      "outputHash": "sha256:02a1852f4ddc26012581d13c01526db97163e3bf0531808a409dd56f6c9a54c5",
-      "mobile": {
-        "src": "/images/articles/bissell-crosswave-hard-floor-washer-logic/08-bissell-crosswave-hard-floor-washer-logic-image-008-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 12444,
-        "outputHash": "sha256:7d7b36d82308b2408f814047862ea7484e4099e4cad7c03f96f969a3b744f96e"
-      }
-    },
     "/images/articles/bissell-crosswave-hard-floor-washer-logic/09-bissell-crosswave-hard-floor-washer-logic-image-009.webp": {
       "role": "body",
       "kind": "photo",
@@ -3022,141 +2896,6 @@
         "bytes": 9442,
         "outputHash": "sha256:d4d5206d36da3a64bfa7087aebd5ea5d6d4ab8a6480272a0ef39b054ecadd9ef"
       }
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/02-image-002.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 847,
-      "height": 479,
-      "bytes": 76228,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:bf419cd8937e0e39795745f11c7e94eab20390f31a7714686fc00f05f4958374",
-      "outputHash": "sha256:e2c342ae1bbb4789dce3f488d90996a107aebc104ba702f9c08b80534be30179"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/03-image-003.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 414,
-      "height": 454,
-      "bytes": 11294,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:2bad1bb43a01087f48cb207fb290440f8eea050612b1bab5c123191eebd1600f",
-      "outputHash": "sha256:3534b34dee835ac6f00fc4c4f9ebab463da0adf076c9946368e8f991a0c16afb"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/04-image-004.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 890,
-      "height": 530,
-      "bytes": 47216,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:cd063ed0bd6a34eedefe16fe4a2993c03113cec07f876250695cca01dcd23a37",
-      "outputHash": "sha256:f0c41f222839b2d880425289d0d367ddb132290b682e2fbd20387eee0db6fab6"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/05-image-005.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 879,
-      "height": 479,
-      "bytes": 105996,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:0dff25958c47a995174f639f8652a89fc1f52d5ca67105d7a9524b0a25608c59",
-      "outputHash": "sha256:45a44dac2cdc8cabee59d1208e0fc0961ac6bc9925ad3327172d3ab3d5ba8e57"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/06-image-006.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 1065,
-      "height": 540,
-      "bytes": 53040,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:1bf7ec1ba2cbb32f95db0b7bf945378781a2a4b2d2f889aa5946b13d7bfed2aa",
-      "outputHash": "sha256:8b158d0b0aedfd2ff364543d210fac7a1c8474f9014e75ed64111ba519509839",
-      "mobile": {
-        "src": "/images/articles/bissell-vs-tineco-patent-details/06-image-006-800.webp",
-        "width": 800,
-        "height": 406,
-        "bytes": 34670,
-        "outputHash": "sha256:87986feafc424a4cd3245d117e05e918b25866c415b735c5a5ed58ea43793379"
-      }
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/07-image-007.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 850,
-      "height": 453,
-      "bytes": 32966,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:29116e02945427f313272afea76f9e2c2bb6f8f1f5105921c8fdcf925af7c4bb",
-      "outputHash": "sha256:697313659ca3480dfa24bab44cb05b9d2a5f2176b3e5071875b1dba73ef3654a"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/08-image-008.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 1158,
-      "height": 443,
-      "bytes": 106612,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:eb9a4c4291658b17b48e8bc3f694f120904031bfb9657dc5f8dd95717d480e51",
-      "outputHash": "sha256:314fdc3fc731d28c2c9aea09233de67da605f9e88d04b26fb9f3555530b1b748",
-      "mobile": {
-        "src": "/images/articles/bissell-vs-tineco-patent-details/08-image-008-800.webp",
-        "width": 800,
-        "height": 306,
-        "bytes": 61396,
-        "outputHash": "sha256:cf5de338a2d85683c39d80252e76b900e5977a020e8b9d0430055e4851fca495"
-      }
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/09-image-009.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 512,
-      "height": 487,
-      "bytes": 15596,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:6982d41d3bff3172c8a25a878c4ec87d5ea0c8c077ae592ca1ca51d712cde6d2",
-      "outputHash": "sha256:99c7b42d104e558bca847dc7e0f9062aadcaf165811992c8619bd6f37fa49021"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/10-image-010.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 882,
-      "height": 518,
-      "bytes": 40970,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:4292274da49fc6be493176f3e57caafd234d6ac3f738149a60487d8e710c5923",
-      "outputHash": "sha256:a4b8e700177b4445ab3758d5475364713212e70271acba780481e598d725b6fc"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/11-image-011.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 799,
-      "height": 362,
-      "bytes": 42784,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:d65e281352a436c8360895705755c5bcadfbf98bfa51d9302e4c64a399648344",
-      "outputHash": "sha256:f0af57c5a721e93ed438fcd8915101678b3c83dc5a19ff32cb5c6ce749a2c03d"
-    },
-    "/images/articles/bissell-vs-tineco-patent-details/12-image-012.webp": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 905,
-      "height": 378,
-      "bytes": 64464,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:a9bd72b8f68dd10ee9ac87b42b54e38be8b59045f795cfc108b470d8b9b340fe",
-      "outputHash": "sha256:24e509d605156aea801d4ad75dfa7130a0df5cf5415e8f66296122615e0f4496"
     },
     "/images/articles/bissell-vs-tineco-patent-details/13-image-013.webp": {
       "role": "chart",
@@ -6396,17 +6135,6 @@
         "outputHash": "sha256:cdfa2c61e16492871dfda55fe896dd2ce69151de33c9d040d032597efe6fcc54"
       }
     },
-    "/images/articles/dreame-new-disruptor-in-vacuums/02-dreame-new-disruptor-in-vacuums-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 881,
-      "height": 409,
-      "bytes": 25264,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:db4a24f68b1139f4c8386aaafe70e98936de6098581a33bf836ece0bd53dbc70",
-      "outputHash": "sha256:76b1d3d7a18c18b85bcccb8f3708772752c494f38427343090d17f32696e30f3"
-    },
     "/images/articles/dreame-new-disruptor-in-vacuums/03-dreame-new-disruptor-in-vacuums-image-003.webp": {
       "role": "body",
       "kind": "photo",
@@ -6423,97 +6151,6 @@
         "height": 518,
         "bytes": 11238,
         "outputHash": "sha256:fba27eff15d747392eb621ef47f3daf614ff49b0468a0b569669c10cfe785108"
-      }
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/04-dreame-new-disruptor-in-vacuums-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 623,
-      "height": 472,
-      "bytes": 34010,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:433a24b5348ae127e109d0a41c57d1d6f2a72666868817dc5c68d81e9436220a",
-      "outputHash": "sha256:0cc6c742604441ab1b3a17788a58e4278c0ac6f3df7031887e8aa9d42d91625d"
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/05-dreame-new-disruptor-in-vacuums-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 848,
-      "height": 470,
-      "bytes": 36290,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:3aa14f114ebd784154607d08923ed93f74a2b654bb23c7c7aa05f07a91ed3ab3",
-      "outputHash": "sha256:83202377b5473d6f9dcc5b68ab844a05fd06ed0e0f0f3fcc9112ad417b4adfc2"
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/06-dreame-new-disruptor-in-vacuums-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 837,
-      "height": 214,
-      "bytes": 16314,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:288b68388ee240a8b1973f6b73e4ab2409e8adf3edc020ab20d4c2c5bb215bcb",
-      "outputHash": "sha256:21d53ec00dfc28c2c8ebebc05e9c2d4be3910fe42a4bc6bc4b17e91dfce451e5"
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/07-dreame-new-disruptor-in-vacuums-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 840,
-      "height": 464,
-      "bytes": 23752,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:9776585a4fb17aff1e60d7ca398bed204e3e935066f258a5bffd10b98d8dc767",
-      "outputHash": "sha256:1e9d4427f0306f5a316b29bd932ed70cb5c51f044ae527fa2e1db81855e7176c"
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/08-dreame-new-disruptor-in-vacuums-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 630,
-      "height": 334,
-      "bytes": 21558,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4c87bb530e632a123b211f60eec7c9c330b09d548ef87d5aa7ef3fe232743add",
-      "outputHash": "sha256:2bac72f9f4f70007550f2ca4139ea9501de448186a28b6994492706b843399dc"
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/09-dreame-new-disruptor-in-vacuums-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 993,
-      "height": 527,
-      "bytes": 45706,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:28cfe7e34350fda64c457d368bd52be590c5f833397e57c4e8f877d73693fd20",
-      "outputHash": "sha256:5fe74fed1da79dad2566afed2a9c32c6837addae8eba8521e0167e17d9940b10",
-      "mobile": {
-        "src": "/images/articles/dreame-new-disruptor-in-vacuums/09-dreame-new-disruptor-in-vacuums-image-009-800.webp",
-        "width": 800,
-        "height": 425,
-        "bytes": 31632,
-        "outputHash": "sha256:398baf4253e9f75c9b1eabdfd7089c74f78ef86fde96a76e201214c890288dc1"
-      }
-    },
-    "/images/articles/dreame-new-disruptor-in-vacuums/10-dreame-new-disruptor-in-vacuums-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1141,
-      "height": 555,
-      "bytes": 37798,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8d25ea6b53e4d761c2c1286144e6728e4355a4e45c4cefe6c3662361bcd39fb1",
-      "outputHash": "sha256:2b9a1b54965467f64178ff46856394a8487a5da3c00891f425949c37ece3bb69",
-      "mobile": {
-        "src": "/images/articles/dreame-new-disruptor-in-vacuums/10-dreame-new-disruptor-in-vacuums-image-010-800.webp",
-        "width": 800,
-        "height": 389,
-        "bytes": 21294,
-        "outputHash": "sha256:6753cdb3c0912c5b1162b2b72d780eba669d6ecb7c8880c29cfdd5d954018765"
       }
     },
     "/images/articles/dreame-rise-to-10-billion-in-five-years/01-cover.webp": {
@@ -7724,123 +7361,6 @@
         "outputHash": "sha256:7b94ddd95d4c636f956bc581463bcbd0d4ed5ef44196c6a86978d139646c3029"
       }
     },
-    "/images/articles/dyson-makes-another-big-move/02-dyson-makes-another-big-move-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 793,
-      "height": 281,
-      "bytes": 15332,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:233e40fd1f49736ec81ae246ea9d30a2afd73357b3818885c423ec9e6fa60e68",
-      "outputHash": "sha256:6e9e4ff4e2c9a085947753231d345bb0083b099d7ea7cd4a9b22e0a79ac91018"
-    },
-    "/images/articles/dyson-makes-another-big-move/03-dyson-makes-another-big-move-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 687,
-      "height": 486,
-      "bytes": 22588,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d4ffce7709a0d83eedffe6b308d73bcbcc0e97fcb37b27f769ad268a0afb1489",
-      "outputHash": "sha256:d36243108c15190482774416bcf6c5d2107efd65f4d11065f2105324894bfe8c"
-    },
-    "/images/articles/dyson-makes-another-big-move/04-dyson-makes-another-big-move-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 625,
-      "height": 194,
-      "bytes": 12068,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d3913925b15fe6ae6aa2ffa3d257944facf3a5e6ea898d8162845d0ecfa17323",
-      "outputHash": "sha256:4aa6ee75c45aff9f2790b94ea9f8169d87fe286a9c2f0bdf1e68f70416f6cd48"
-    },
-    "/images/articles/dyson-makes-another-big-move/05-dyson-makes-another-big-move-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 633,
-      "height": 346,
-      "bytes": 28766,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:dc46863ab791744a8f56a050af5874ea5c0ce9ce43f64dd27e67fb878858b8cb",
-      "outputHash": "sha256:4a95b57c4d2259badbf65e7723136b92ac0a0a778cfeeecdc891872922a5e4c1"
-    },
-    "/images/articles/dyson-makes-another-big-move/06-dyson-makes-another-big-move-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 638,
-      "height": 264,
-      "bytes": 18332,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:2bbd423e792504bf686f0b7137c531643d0e91fa0fcd43c1442399cbd9736efd",
-      "outputHash": "sha256:b37b69319629857350d130dd6928bc67ce2fe21ff05d9f7b4b901042cf18670b"
-    },
-    "/images/articles/dyson-makes-another-big-move/07-dyson-makes-another-big-move-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 602,
-      "height": 289,
-      "bytes": 14438,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a31c0738346fff6f18e33449eb1613715a3b87b5a94fbac50859c456bb3ff09b",
-      "outputHash": "sha256:175777a4e787d56870249b1d5d4925b4a3f32dc39552e3e95f65f689bbee04e1"
-    },
-    "/images/articles/dyson-makes-another-big-move/08-dyson-makes-another-big-move-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 594,
-      "height": 490,
-      "bytes": 21634,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:01247d94b50f683e15b2383859e92f828e05bf8f58a71f48650dc8f404d073cc",
-      "outputHash": "sha256:6a23c5446dbb24a83c4aa0a441ff40dcb199cb8ca05e3220a42813bd50eb7ef9"
-    },
-    "/images/articles/dyson-makes-another-big-move/09-dyson-makes-another-big-move-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 607,
-      "height": 489,
-      "bytes": 24510,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:97513fd5f055eddefe651d89d04dbaaf379f29dd0710be5bbba019e46746b6bf",
-      "outputHash": "sha256:097e49bbbea96eda658bd1463982f105cbe69daa4ca8d8b4e432c4d7c30f36ab"
-    },
-    "/images/articles/dyson-makes-another-big-move/10-dyson-makes-another-big-move-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 547,
-      "height": 486,
-      "bytes": 19088,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ff04cf066a60b365440f598ec9578c5483ae00dcbc0ff74a1422d80b2062d586",
-      "outputHash": "sha256:04d754817da8547391b9339c79aa9c1ca0b8f652304d23067661564f473d5eb3"
-    },
-    "/images/articles/dyson-makes-another-big-move/11-dyson-makes-another-big-move-image-011.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 800,
-      "height": 1200,
-      "bytes": 37770,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:5905c73bd32d465718aefe809dd295ac1449b1c60180d566e24f156a074f588c",
-      "outputHash": "sha256:7c4c4dda1e47f602fbb323c5150e83b9e29dd82989b2361437ef366fd002802c",
-      "mobile": {
-        "src": "/images/articles/dyson-makes-another-big-move/11-dyson-makes-another-big-move-image-011-800.webp",
-        "width": 533,
-        "height": 800,
-        "bytes": 20768,
-        "outputHash": "sha256:1295d3733087bcfe7b3e468658e9d53dd190a0a6ff02c8baf0b90297aa8b71ce"
-      }
-    },
     "/images/articles/dyson-makes-another-big-move/12-dyson-makes-another-big-move-image-012.webp": {
       "role": "body",
       "kind": "photo",
@@ -7886,115 +7406,6 @@
         "height": 450,
         "bytes": 3772,
         "outputHash": "sha256:6b4391ed9eceff5c8118cdfcba505b2587feb553ba8f7974d6736fed5b884803"
-      }
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/02-dyson-nautik-is-not-a-real-hard-floor-washer-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1013,
-      "height": 454,
-      "bytes": 37304,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:cded5c1eee5b817906f57d7b078499558d2f51b7ff9cdc758fa19762a08393b8",
-      "outputHash": "sha256:7b2f28a397fd643ec8b842b6c7ff39f9265dd520de5a9263034f4898fd3ea33d",
-      "mobile": {
-        "src": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/02-dyson-nautik-is-not-a-real-hard-floor-washer-image-002-800.webp",
-        "width": 800,
-        "height": 359,
-        "bytes": 25088,
-        "outputHash": "sha256:e43caf2190c2ad4cc08ea87efd5ef3d25b816a3a4b38651d59a067e5deb278ec"
-      }
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/03-dyson-nautik-is-not-a-real-hard-floor-washer-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 695,
-      "height": 503,
-      "bytes": 31660,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b1d8b9cdae7605bd105d5f1aefd06ec4f616f7d1a78bcd5a5268ab19038301db",
-      "outputHash": "sha256:85e4d5f70984d25d6d1521418caadb1ffddf2c828d85275a5bd259157fb48930"
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/04-dyson-nautik-is-not-a-real-hard-floor-washer-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 549,
-      "height": 570,
-      "bytes": 42598,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:80404d4ae89757fc60c0840e882776f276e19d73c64a33240674e1bffef2462b",
-      "outputHash": "sha256:2d3ac6e81974722ac70e83f51323f41ebe8cf4fa6ad8216d13dd85d3bef0e973"
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/05-dyson-nautik-is-not-a-real-hard-floor-washer-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 733,
-      "height": 377,
-      "bytes": 28484,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:3105b7fdeade719923cc8df33ffd38e0647b1df5ab7f5e4922cc8e92a9e4693f",
-      "outputHash": "sha256:64e181f67617a16177630838b2f9b8331a4183325b80b5cb603259b666c52698"
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/06-dyson-nautik-is-not-a-real-hard-floor-washer-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 690,
-      "height": 520,
-      "bytes": 26044,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6b9310aa639684eb1d4dd401789f60a48af4566af427cafbe9d924132f613e70",
-      "outputHash": "sha256:b2fdf8650138b2e3d47b40ee0749bfd48a2a4be1e7dd67aad20eff77ee1add1c"
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/07-dyson-nautik-is-not-a-real-hard-floor-washer-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 635,
-      "height": 315,
-      "bytes": 27928,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:5187fac2509617aa9c0b50321e085cb8b53a5e15f334ce2eda9648eee46f2c39",
-      "outputHash": "sha256:b01f72d3f0326c0729bcbb9b0a6671413cc760bf07de67b67e0e541005246f24"
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/08-dyson-nautik-is-not-a-real-hard-floor-washer-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1024,
-      "height": 429,
-      "bytes": 67058,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:82ec3394479899131935d9d8e37873005c1b5259142022837c45eef0ebd33417",
-      "outputHash": "sha256:262cc3ec6bcb77d41bee0f2544bf3413f7113e73d9afb67d6c7b1b4bb96444d5",
-      "mobile": {
-        "src": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/08-dyson-nautik-is-not-a-real-hard-floor-washer-image-008-800.webp",
-        "width": 800,
-        "height": 335,
-        "bytes": 42274,
-        "outputHash": "sha256:2f69524a6b4d82dc7447677c87c81abb1e19597a0ebf77347cef35ed30438e3f"
-      }
-    },
-    "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/09-dyson-nautik-is-not-a-real-hard-floor-washer-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 739,
-      "height": 1600,
-      "bytes": 74360,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ff128cc1258e2b390ee08e2144ce1ccc30fafa34654b86113d0cb3e40139d2d6",
-      "outputHash": "sha256:ef46713c6843ca3f18d6170f5b94b26ce1b2f2bebc27735ed21c17d0f9524b4c",
-      "mobile": {
-        "src": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/09-dyson-nautik-is-not-a-real-hard-floor-washer-image-009-800.webp",
-        "width": 370,
-        "height": 800,
-        "bytes": 27336,
-        "outputHash": "sha256:06383d2951e9230109e98f0da30023c73709d923e07e1a1fbb14368d5269b6d9"
       }
     },
     "/images/articles/dyson-new-product-push-premium-innovation/01-cover.webp": {
@@ -8866,112 +8277,6 @@
         "bytes": 5798,
         "outputHash": "sha256:4c7e830269df425cc6df3e8511c0166c8caf0202d4ffdab0484b1a0a616187b0"
       }
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/02-ecovacs-mid-year-report-reading-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 666,
-      "height": 173,
-      "bytes": 21950,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:77fcebf18dc4b0ef3bb62ee36fc4042013baaac0f5cdbe720869c76cccb756a9",
-      "outputHash": "sha256:d07375a32146206156becabe5f84a92bdceb148d36e04c98a95e5d2705e45342"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/03-ecovacs-mid-year-report-reading-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 609,
-      "height": 178,
-      "bytes": 19362,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:3457664081527e0f4c0c817956aedc476e8444a74a98e29b3e1fe52db4515cba",
-      "outputHash": "sha256:e079436bf2c860b862cdb2de08b43339bc4b598fa9ef9379929d9735a36f8eaa"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/04-ecovacs-mid-year-report-reading-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 553,
-      "height": 278,
-      "bytes": 11042,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:5068fdc22bc61cf5a9039bfd7dee83acddfcdb85a59d65d70a620513d6280db6",
-      "outputHash": "sha256:e5aef823c4469f3e1a340d42a0fb5f2795714308e33a757d14e1362000ed7886"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/05-ecovacs-mid-year-report-reading-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 942,
-      "height": 602,
-      "bytes": 103370,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:72ecebf4659d0b5f504324a59287e7dcb86a7cf972dfcd3af6d631684617b405",
-      "outputHash": "sha256:c0bf0899ac8e5723792c301629dde70ab3471f8c4fc9547e94831c551b03ac5a",
-      "mobile": {
-        "src": "/images/articles/ecovacs-mid-year-report-reading/05-ecovacs-mid-year-report-reading-image-005-800.webp",
-        "width": 800,
-        "height": 511,
-        "bytes": 75850,
-        "outputHash": "sha256:622d54a4609ec8903b3315d87f5c6f4a922c7fb8872bdbf51b133f06ce3772d7"
-      }
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/06-ecovacs-mid-year-report-reading-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 621,
-      "height": 205,
-      "bytes": 25990,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:0d3a693d4fbcaa576f1b1096d360f739d63aa731843738a78ca66dc8eb739a5a",
-      "outputHash": "sha256:b5e9256735fc89378ecb759816a447c4dcf8eb4fb2a553bc15ec25685c7b6e93"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/07-ecovacs-mid-year-report-reading-image-007.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 625,
-      "height": 312,
-      "bytes": 43170,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b6d931663582abdb8f53c8d2d570dd3dd2f7de0e9d8e198d17e95b43146c13cd",
-      "outputHash": "sha256:ef4fa31ff52449cec644be5caed5867a89fc34b42a38d18be984645e36e30ec3"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/08-ecovacs-mid-year-report-reading-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 950,
-      "height": 407,
-      "bytes": 72650,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1a94c834a8e47e93e4863fadc840f74ab85279aff071ab3ad74615933011a7f4",
-      "outputHash": "sha256:0a2e4bdd7f475bf8570422fbe21aac8ccd99c2b11b1865b0bde1fb0e32df87f2"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/09-ecovacs-mid-year-report-reading-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 877,
-      "height": 495,
-      "bytes": 42856,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:c0c156cbb59b495332fb9f3ca3e8e727a597d9c034bffbddd671ea384258394f",
-      "outputHash": "sha256:bfc89a4f082f205807ec41ab4958da093956f6574ae4bbd91fbdcadd5d3799fd"
-    },
-    "/images/articles/ecovacs-mid-year-report-reading/10-ecovacs-mid-year-report-reading-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 876,
-      "height": 497,
-      "bytes": 42902,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d0b65fada59d1413a45a261a03e0f742acc51f2e7f9851f377a6623431d7f2e3",
-      "outputHash": "sha256:a7b935d8024587a9ed84ddbf5a187207f9d590a8e15d89b19dea0ac3b6b1bad6"
     },
     "/images/articles/ecovacs-nine-month-results-october-2025/01-cover.webp": {
       "role": "cover",
@@ -18199,204 +17504,6 @@
         "outputHash": "sha256:0d9806b17ca625792531cd3d674f001de1f4986dcfd782a985a16b98833ccdbb"
       }
     },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/17-narwal-and-the-self-cleaning-robot-vacuum-image-017.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 108048,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b54e8314e651b91bdc9b67de9cfb57a586459e76a355733ebb8cf5ded19b9490",
-      "outputHash": "sha256:fed336ffd3da06d018ac3bab2db2b5f29df721c5eea92ba5b88fc9cfca1f0714",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/17-narwal-and-the-self-cleaning-robot-vacuum-image-017-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 30930,
-        "outputHash": "sha256:280478e615d3e8b0c5b8caf60dbca56b69f60c13316e3da5c5f1b00a08040c1c"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/18-narwal-and-the-self-cleaning-robot-vacuum-image-018.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 19552,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6eed2b39e5b0be76059c399d0c3d51a7c5816cf6306d3ca69ca4ffa4b26036de",
-      "outputHash": "sha256:b955d111c01e1d98b9b6c7fff986ea1b35768c69afdf6b0ee0721f441702687e",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/18-narwal-and-the-self-cleaning-robot-vacuum-image-018-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5740,
-        "outputHash": "sha256:fda16e08e9bed835a41b39fee54e67a63ecea30b6c3b9db92ecd69b6a66dbb3d"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/19-narwal-and-the-self-cleaning-robot-vacuum-image-019.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 28688,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:272178ee8e2a956f5f5723e2a5ae3b9fa7082c99cae68187df605122894c81b0",
-      "outputHash": "sha256:32dc43382d7b0b36351769c168a789512f4839c7edeb7dd31cef33a3415a7dfe",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/19-narwal-and-the-self-cleaning-robot-vacuum-image-019-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 9038,
-        "outputHash": "sha256:2bf930a19c7b819573a856d44cb566162751761544560c3293c1f055cf613bf8"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/20-narwal-and-the-self-cleaning-robot-vacuum-image-020.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 30220,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:e666fe325e307e3ca311ff708eec45a49820b58b24047644a6118f22b5df98e2",
-      "outputHash": "sha256:d43062260744597096e69fe48625466d42d28b788e27eee444b96112ba274bb6",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/20-narwal-and-the-self-cleaning-robot-vacuum-image-020-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8952,
-        "outputHash": "sha256:23d1ca8b6fe65fb4bdb503cd076f7ef4c55b57d2c4582137b12e64d3e002a259"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/21-narwal-and-the-self-cleaning-robot-vacuum-image-021.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 27686,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:15be3d14e8f8e0ae1f776ddd069851dd20ff94e8d07dd7ef108624508653b9c3",
-      "outputHash": "sha256:2165432a1914d740f245ce345d8e387ff456ff4e2044be010a8c5331b9b2cafc",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/21-narwal-and-the-self-cleaning-robot-vacuum-image-021-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8278,
-        "outputHash": "sha256:722370d76b39bdbc7c608a8a5cba055a64c050ed20eb04a7aa44389d60ca3b53"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/22-narwal-and-the-self-cleaning-robot-vacuum-image-022.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 30252,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:7de88ccadfaea6728e6e55e4d4e2f30cef7dd9d249b5a6ed42451821bbcf7d64",
-      "outputHash": "sha256:c7a7e5834582186ceb29114a038b0a502122bb2fcc07a878d146c6f118c6853b",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/22-narwal-and-the-self-cleaning-robot-vacuum-image-022-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8764,
-        "outputHash": "sha256:636ac4ec349a259fec6b29a3404dc2a0ff5eb7970bce2dd9d80772b93ba46099"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/23-narwal-and-the-self-cleaning-robot-vacuum-image-023.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 29290,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:a2024e8a3fb379744793c1dbe3dedfc0bf5e2227bcaf427a9991bea8b885ad59",
-      "outputHash": "sha256:98ccd55df9c8b9edec3113725d6b01349fc14be0e0b862c2639d5c902923559e",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/23-narwal-and-the-self-cleaning-robot-vacuum-image-023-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 9110,
-        "outputHash": "sha256:9cb818b729fe4276cf4f55d4281e14645bf4f797c2965ab678101697bd7bff04"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/24-narwal-and-the-self-cleaning-robot-vacuum-image-024.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 27690,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:077449d34076ce0da02ca08a21000ebe6467f50af3094a00c7f9fe185cfce913",
-      "outputHash": "sha256:6496c4f995e2c0c924a0f47b11d6402be3c26ea1284f073607f91d526dd10467",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/24-narwal-and-the-self-cleaning-robot-vacuum-image-024-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8084,
-        "outputHash": "sha256:75c07bb9130f21140cec5b416f0c57c796a9e2ae97026f1cf3affbd4326a447b"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/25-narwal-and-the-self-cleaning-robot-vacuum-image-025.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 27582,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:e585148cc09f0ddadaa4977292a6a0baf1a16daac39395a58bc81c7dd9d96285",
-      "outputHash": "sha256:61349eed5f1af4ff05405a2f649fa16b6dd7c4c34255547456f82d3f0c62e9ab",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/25-narwal-and-the-self-cleaning-robot-vacuum-image-025-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8132,
-        "outputHash": "sha256:a549d2dfc70ca10d31edff76bbdf59b683241061de6a277f45827b4737c1cd56"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/26-narwal-and-the-self-cleaning-robot-vacuum-image-026.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 29210,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6abc5912f96bc3cb51ac4da5af228a89d7cf424ee7439bbbc91fdd6cd4396fc7",
-      "outputHash": "sha256:ebe5eb4390acda45ff871e8aa46164984d41de5891748211fcb2006c92bcdac5",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/26-narwal-and-the-self-cleaning-robot-vacuum-image-026-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 8802,
-        "outputHash": "sha256:a5a74b55e4c1a0548f9addf14926b15fa34fd6be51574327182a2551610754c0"
-      }
-    },
-    "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/27-narwal-and-the-self-cleaning-robot-vacuum-image-027.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 19586,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d8de29198bd5d094b51342fce3bd10aa7f31cbaba89ab2b1edfd33d12267f729",
-      "outputHash": "sha256:ff99f5751c96397d027fe6fe77871bffcbbadf0da27813b1e706835d91f7e155",
-      "mobile": {
-        "src": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/27-narwal-and-the-self-cleaning-robot-vacuum-image-027-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5830,
-        "outputHash": "sha256:c1b0e2c8467be5e251d4cf016fe0461e4806cd58416efef2d24db74556a65cfe"
-      }
-    },
     "/images/articles/narwal-ceo-acquisition-denial-december-2025/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -24498,89 +23605,6 @@
         "outputHash": "sha256:59dbe602fcbdc5301612d6d04a22f03d4eea3b99e2050a0769abba3ba336bf07"
       }
     },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/02-thoughts-on-mijia-mite-removal-vacuum-image-002.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 517,
-      "height": 1120,
-      "bytes": 37008,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:20fab0bfe3dd082d33ef11e5649ce92ec634f4c1462969e82556cbc4313caef5",
-      "outputHash": "sha256:d37314946e6ea07b4e95dee77c733e46ea589231970ee9b9601492de56f9f725",
-      "mobile": {
-        "src": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/02-thoughts-on-mijia-mite-removal-vacuum-image-002-800.webp",
-        "width": 369,
-        "height": 800,
-        "bytes": 21992,
-        "outputHash": "sha256:f553f700484878bd66da6549f3186d4e1f2f44e62e4d95bf0172c18e97896f85"
-      }
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/03-thoughts-on-mijia-mite-removal-vacuum-image-003.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 517,
-      "height": 1120,
-      "bytes": 32748,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:130bf84c6c145cb2bdf0d2d468de7fa7cf938ea2a2459c7a6712bcbe8b9b32b0",
-      "outputHash": "sha256:8b2b371419680fa0b75bcbd55b80ae6fa0d46a16fc30815162c871f806757c92",
-      "mobile": {
-        "src": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/03-thoughts-on-mijia-mite-removal-vacuum-image-003-800.webp",
-        "width": 369,
-        "height": 800,
-        "bytes": 18296,
-        "outputHash": "sha256:242cdf35b41e2508f16c8feee0f31cf9739119e4d453a66b611eba039d34972f"
-      }
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/04-thoughts-on-mijia-mite-removal-vacuum-image-004.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 517,
-      "height": 1120,
-      "bytes": 50532,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4b3dfc99d9917dd68ab4a78625a4988a6e97c47b2e46b2a6019f1c168ae677b4",
-      "outputHash": "sha256:d7b184b5ed36ff917cfec3f6a58bb151f2bb6736194813c138876ff0e81bbcb0",
-      "mobile": {
-        "src": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/04-thoughts-on-mijia-mite-removal-vacuum-image-004-800.webp",
-        "width": 369,
-        "height": 800,
-        "bytes": 30330,
-        "outputHash": "sha256:51d6d5a4b14309105abce48d99e13a86778a8df3ed57a00e4e8cd4213f318be7"
-      }
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/05-thoughts-on-mijia-mite-removal-vacuum-image-005.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 288,
-      "height": 483,
-      "bytes": 14396,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:2b595d4310dd297b7ed20074534b0abdbf671c2bc4c82dc9ca611c526698fc5b",
-      "outputHash": "sha256:99785796aafdc95bab9b056c194fce1cbe60192fcfe76a8f92bdfa624d307b71"
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/06-thoughts-on-mijia-mite-removal-vacuum-image-006.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 517,
-      "height": 1120,
-      "bytes": 25820,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:614a917bac1f5cf663eb2bdcd24e3ca3e7b65b8c25526ea578639225b4fe7a0a",
-      "outputHash": "sha256:78e6f096dbfe95c4d9c0aaf01f4018f1147703c99033c2fd4e86136d053fed09",
-      "mobile": {
-        "src": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/06-thoughts-on-mijia-mite-removal-vacuum-image-006-800.webp",
-        "width": 369,
-        "height": 800,
-        "bytes": 16496,
-        "outputHash": "sha256:0a5d709ceedae9ba8f2255b28b03f985f15d7c74261270666052cf770c517c85"
-      }
-    },
     "/images/articles/thoughts-on-mijia-mite-removal-vacuum/07-thoughts-on-mijia-mite-removal-vacuum-image-007.webp": {
       "role": "body",
       "kind": "photo",
@@ -24591,75 +23615,6 @@
       "quality": 84,
       "sourceHash": "sha256:eb7ab97976e7d94934726c5451028512a16948a7ea8f148dfc2f8b1575a3f834",
       "outputHash": "sha256:edff702b6aa7c73f872c4203b81b777706075e2fce02e19016a3f3281222c65d"
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/08-thoughts-on-mijia-mite-removal-vacuum-image-008.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 936,
-      "height": 362,
-      "bytes": 54962,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ad60e9882c50d2c54c1192c093ae039438f0aaf6baea700468ab1e89b2addd70",
-      "outputHash": "sha256:851ac4737fbb53f33c2338efa0899b85ded2740a989ed4ff8e6e0f1e6ac49d60",
-      "mobile": {
-        "src": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/08-thoughts-on-mijia-mite-removal-vacuum-image-008-800.webp",
-        "width": 800,
-        "height": 309,
-        "bytes": 40670,
-        "outputHash": "sha256:4d04c27df345a835599a4852633f71c737e5630416b2b33579f568d369174159"
-      }
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/09-thoughts-on-mijia-mite-removal-vacuum-image-009.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 930,
-      "height": 565,
-      "bytes": 120400,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8fe5f6c14416d7e6c09129a33ebede12e3c52d2d43bf43d8d39221fd5788322b",
-      "outputHash": "sha256:c19624253db03a70cf924452462be8e70f47d2e706f9b391e76e1f02cab12453",
-      "mobile": {
-        "src": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/09-thoughts-on-mijia-mite-removal-vacuum-image-009-800.webp",
-        "width": 800,
-        "height": 486,
-        "bytes": 87824,
-        "outputHash": "sha256:3af054d25fa9ea186ca1e16298ecd2f87dbcac969784498df2823536434ccee2"
-      }
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/10-thoughts-on-mijia-mite-removal-vacuum-image-010.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 573,
-      "height": 505,
-      "bytes": 27624,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1dac42f3b4f6fb54ae920f93785339ae0b91b143485b83c7750099405e43bed5",
-      "outputHash": "sha256:899c4968322a1e0ee08f6cc46812a8ec44cc2d225b8fa6d5bd3a9aa2b6bc5984"
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/11-thoughts-on-mijia-mite-removal-vacuum-image-011.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 553,
-      "height": 366,
-      "bytes": 25394,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6e8eeb152e0b55ea439c49c9c0bd95a540b799ac8699594e27a4e95ceea4c811",
-      "outputHash": "sha256:d1c6bcfb06ec9040b405e4f0c6dd6b69532e94e4b03d6dae0aab452bb7432797"
-    },
-    "/images/articles/thoughts-on-mijia-mite-removal-vacuum/12-thoughts-on-mijia-mite-removal-vacuum-image-012.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 548,
-      "height": 548,
-      "bytes": 44038,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:dcc8894ecca2daff63a05d4805897ed90749c72342b5ca1e89fc37d5aba56fc7",
-      "outputHash": "sha256:e7342e08f3a1b0fa81a21f7f235f03f37b0dcd94c4a91c77a7ba36f4949c2b2e"
     },
     "/images/articles/tineco-floor-one-i7-fold/01-cover.webp": {
       "role": "cover",
@@ -36634,17 +35589,6 @@
       "sourceHash": "sha256:886079cf6e34330ac099c74afa11c2275d4caf0675a256e147d0cf2acbd22d49",
       "outputHash": "sha256:886079cf6e34330ac099c74afa11c2275d4caf0675a256e147d0cf2acbd22d49"
     },
-    "/images/blog/wcb-episode-04-cctv-floor-washer-review-investigation.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 882,
-      "height": 506,
-      "bytes": 76288,
-      "format": "webp",
-      "quality": 100,
-      "sourceHash": "sha256:113873eaf138bec423439493b41734db9c91cc34053052dce14c783ee93eea3f",
-      "outputHash": "sha256:113873eaf138bec423439493b41734db9c91cc34053052dce14c783ee93eea3f"
-    },
     "/images/blog/wcb-episode-04-dechang-fujia-ipo.webp": {
       "role": "body",
       "kind": "photo",
@@ -36655,17 +35599,6 @@
       "quality": 100,
       "sourceHash": "sha256:2b43d10b465a90692cbafd3ef9fde351b2bf0ad5642ebcf8930d20fac6469ff3",
       "outputHash": "sha256:2b43d10b465a90692cbafd3ef9fde351b2bf0ad5642ebcf8930d20fac6469ff3"
-    },
-    "/images/blog/wcb-episode-04-denny-floor-washer-review-account.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 739,
-      "height": 1600,
-      "bytes": 164734,
-      "format": "webp",
-      "quality": 100,
-      "sourceHash": "sha256:7818c502a6ca5c47268a4f2bd0a2224fd7b673c5cff8b26e90956865039f6eee",
-      "outputHash": "sha256:7818c502a6ca5c47268a4f2bd0a2224fd7b673c5cff8b26e90956865039f6eee"
     },
     "/images/blog/wcb-episode-04-dreame-floor-washer-lineup.webp": {
       "role": "body",
@@ -37094,138 +36027,6 @@
         "outputHash": "sha256:a460c89e4bbdd06f23c1700ee6a6151bbbef8797d45237021c6f8bc496fe0999"
       }
     },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 720,
-      "height": 332,
-      "bytes": 27728,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e087fe055d72bf369e536cf01f1112efaad0f9b4e80044767980b6556e9b99d9",
-      "outputHash": "sha256:85151063d7141dd49f5f39ec19c5b2a11854bf64ed672c94fdd6cd65b5354f5a"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 720,
-      "height": 332,
-      "bytes": 25731,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:b607f155bc292ebbc7511d3f262227e5b2b4ee3798925e34f111302142699a32",
-      "outputHash": "sha256:1a226d6f72cfae91fc626a43d128ff7a3210fea040584a7a82c95eacecdc6370"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 720,
-      "height": 332,
-      "bytes": 19354,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:4e5a9ab59c40503b2510905ff0d2ab0e8e5d8284ce7aa0803325f094d3b85b2d",
-      "outputHash": "sha256:22be54712e04087dcc2f4a4218591d5bb726cc33e1f7ca597d94ba9dba36ee20"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 610,
-      "height": 332,
-      "bytes": 20949,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:d5641de9fd500a3fa775a37d3eb0c7a18a2ab3f1cc67d33601d1e2dda032bd4d",
-      "outputHash": "sha256:e47c3f910fbeb7d50b4d080219475cb953f0064e3bce4f2dac8aafb4c1151c54"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 604,
-      "height": 333,
-      "bytes": 20868,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:0c0c97831542858079885e225ec412ef03b1f9a9a1a5f5cf245b2e3c299eeabe",
-      "outputHash": "sha256:777ff8409a5a8a8f02c9322f07db965432d3a08a3d224c3fd30a69400b7f7acd"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 598,
-      "height": 334,
-      "bytes": 18819,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:87ffcfecee1077d4266bc538964e6551a523a554a0dea3c76d1415bf8dc68562",
-      "outputHash": "sha256:ee968a2d21a2d7b4cc59a979b8d10cee3089507b360326f546756e164751680a"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 533,
-      "height": 251,
-      "bytes": 11818,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:177f5a03b489112881e647920aba63963a04f0ed9a3734a42e4b6bee81ecce0f",
-      "outputHash": "sha256:5a8ed976a899e473361b1d7094ada93e34e502c57ce51ea9840c19c65ad7d392"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-009.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 594,
-      "height": 330,
-      "bytes": 32926,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:499688e8858509ea110a242e90816bd95403d1059a39d9db8eed502999a3b654",
-      "outputHash": "sha256:342719d6f8cf32549f6050eac723436ce9118eb4a9988fc38318e47c8531f324"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 603,
-      "height": 337,
-      "bytes": 34102,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:d97991e80729451ab95c91956b691ee183db7494f252067ea8c8a20ba7915b46",
-      "outputHash": "sha256:54f9615276b1968189fea75d8624cd9cf17f783c4452a40e7738804964658a4f"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-011.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 611,
-      "height": 333,
-      "bytes": 35469,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:3177e241b2a5a2a570539e6e444990dd0ae3f07439bc96c9c22d81e5bd7a59b8",
-      "outputHash": "sha256:82283135077b1aba90baa83784c4539bcbd2e9fc2383dd027c54118be3f04a5a"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-012.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 609,
-      "height": 338,
-      "bytes": 36302,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2b49b2add7b9cb3406eb1c8eb15fa7624dd2b83848a0c260e99bb191de80f135",
-      "outputHash": "sha256:f8cfac58a5503bf40d413d5fd2cb4bb6b2f8dab20b22bce7edb45af1c319fd58"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-013.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 596,
-      "height": 330,
-      "bytes": 30805,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:b90369cc25ea61dd44c96d73ea0112fe6abf8b5615b89921f77ec9cde3f573bb",
-      "outputHash": "sha256:1abc798cb84258d3c54537111e8b58c8685a68b54abe4e89e199c69c9829a971"
-    },
     "/images/insights/american-factory-and-manufacturing-transfer-image-014.jpg": {
       "role": "body",
       "kind": "photo",
@@ -37237,28 +36038,6 @@
       "sourceHash": "sha256:bc19930a23d949a4bc26258030ea55542e53779863144ea428786d49c0867a3b",
       "outputHash": "sha256:f92db0dd7a4505b4fa06cbb2b51cb4351dafcbf0be618861876a8dec983055a4"
     },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-015.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 604,
-      "height": 341,
-      "bytes": 37006,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:9cd208adf13aabe39e887835b46c9d58a9d47ace9f59d7e63764603dc688780c",
-      "outputHash": "sha256:676abbc3b9c9704ec66d8477344148aa50500e4b0449f4ea835e24568d1c170f"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-016.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 596,
-      "height": 332,
-      "bytes": 19862,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:cd949740afd0af95bd4428ab53720157383fdccc54182993703ded2ba1345fab",
-      "outputHash": "sha256:990da590b5b4dc05644aba88677514b36f1b487b3819ff5f45ddd8c56e359663"
-    },
     "/images/insights/american-factory-and-manufacturing-transfer-image-017.jpg": {
       "role": "body",
       "kind": "photo",
@@ -37269,28 +36048,6 @@
       "quality": 84,
       "sourceHash": "sha256:001e5e3815a1c4ed284f019c5a6998a4ad030fc0e447add9564b16e4bda37c92",
       "outputHash": "sha256:90becc6b62e6d1d0df75ab4a1284c8b2676a7b9f5467548360f18309d4b1676f"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-018.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 593,
-      "height": 327,
-      "bytes": 31688,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:b48e88a0fdafb4e02f6d4011f40a9cde4967a810e94210d56170e7ac70aad9f7",
-      "outputHash": "sha256:ca56ce0cf60cf50a97e10ed4590760fa68946071f8e16592bf9322aa1d471d44"
-    },
-    "/images/insights/american-factory-and-manufacturing-transfer-image-019.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 720,
-      "height": 443,
-      "bytes": 40875,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:5535a66ebbdbc42b98508b9c33123b2d4cdb41fcd282e0391862ee55ed53a7ee",
-      "outputHash": "sha256:012a3edd5e1d729fb5e0a7392a2332c4dc30ce0ad2715c286fab38ff15db0941"
     },
     "/images/insights/american-factory-and-manufacturing-transfer-image-020.jpg": {
       "role": "body",
@@ -40195,24 +38952,6 @@
       "sourceHash": "sha256:9eed8bc59f689a9479e152bf801b81a8d0088553954b380a9b209caad3e5c420",
       "outputHash": "sha256:4ca61459dd85d7ed81dbbd29f32c67a65d199502fac982157d3b4d8052959627"
     },
-    "/images/insights/hundred-years-of-cleaning-appliance-history-image-069.jpg": {
-      "role": "body",
-      "kind": "graphic",
-      "width": 913,
-      "height": 391,
-      "bytes": 31146,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:684fce87fbc21a963e0daa6b506fc0b388f27806bd068caac4c7939b50dd033b",
-      "outputHash": "sha256:ee68fa4748a536d4bad32eae5d6bee825b1dd094280abe63c54820858ab7dbef",
-      "mobile": {
-        "src": "/images/insights/hundred-years-of-cleaning-appliance-history-image-069-800.webp",
-        "width": 800,
-        "height": 343,
-        "bytes": 23196,
-        "outputHash": "sha256:a6b54825c3c9be10198bd51c0cda9a2d21a6a5fd334fdd1f825298393d646894"
-      }
-    },
     "/images/insights/hundred-years-of-cleaning-appliance-history-image-070.jpg": {
       "role": "body",
       "kind": "graphic",
@@ -41038,71 +39777,6 @@
         "outputHash": "sha256:ab1f2c8a7e88ac13186c0d4173ac186175d8be63dcfd539b884015bd37047eba"
       }
     },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 964,
-      "height": 433,
-      "bytes": 42789,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:675e07403a54eeab44b12ae83449473b55c04ec1389982a30532d980c7a6ad0a",
-      "outputHash": "sha256:e9573595366ef872882e37d7343f04b79148335b64b47014dbfeac5862cac9d1",
-      "mobile": {
-        "src": "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-002-800.webp",
-        "width": 800,
-        "height": 359,
-        "bytes": 26028,
-        "outputHash": "sha256:536f235c1d8cc840c7f003c930fb5360235bc64b8c8ca6ac4bc4c4f1d7db19b2"
-      }
-    },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 879,
-      "height": 525,
-      "bytes": 30347,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6f28ef7cea817ff7a245ad67086639af2038d49a1f550809cd27fa1877d36587",
-      "outputHash": "sha256:83d7965d0edf45d38b43970ec1492bdc2f47c6555a5e8d9dcc12b10c4632f609",
-      "mobile": {
-        "src": "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-003-800.webp",
-        "width": 800,
-        "height": 478,
-        "bytes": 21196,
-        "outputHash": "sha256:da54eba946dea4ab67f6e3d201665783858ed356de691286779400011af13d01"
-      }
-    },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 919,
-      "height": 489,
-      "bytes": 47829,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:c9668956d94eff5b3503ae2c4ed72ca2045046f0d59afe10f9551818e081dcf5",
-      "outputHash": "sha256:a2b7777a0efcb6aece20ffb78ecb66ad8aa9f37c1814e60db3466379595d5804",
-      "mobile": {
-        "src": "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-004-800.webp",
-        "width": 800,
-        "height": 426,
-        "bytes": 29396,
-        "outputHash": "sha256:ab0cd2c878c0192a041e25e0f1d2ffc1d01d33a6a8cb9b173cacca99c6a25fc7"
-      }
-    },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 762,
-      "height": 526,
-      "bytes": 38174,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:95ace2e73b762f1d8594b92594a5dda4f7a133ba874aaaed44de4ddfa4eee88e",
-      "outputHash": "sha256:8afc8ee8ccf6d9981e631eaedd6c993c64dbaf9fa9eb06ae6d0c89f2f1c986dc"
-    },
     "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-006.jpg": {
       "role": "body",
       "kind": "photo",
@@ -41158,39 +39832,6 @@
       "sourceHash": "sha256:e011a2c8652f454ce68fd52387748f93e1ae623ec6988bec8672f07c234fbb0a",
       "outputHash": "sha256:a8d86d0e700f424ea02f4204a011e5190b2878299ef3e1e46a4bc7be3c3a4797"
     },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-011.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 795,
-      "height": 527,
-      "bytes": 57844,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:4109fd58371bf046858ef24e01d383da2bfd01b0b37f2ff789d587838a85eda7",
-      "outputHash": "sha256:08d7734ca58a93271851208b319d95b13dfd6c25e32a4b912894a1dc733afa80"
-    },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-012.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 140,
-      "height": 140,
-      "bytes": 1904,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:63c39f2af296d0d26d8fc907cda821722978d27d8c907cfb2cc98615f95d3157",
-      "outputHash": "sha256:9a95534ad54550044aef82c546cab911125c5193da94da1d9401230581066851"
-    },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-013.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 351,
-      "height": 320,
-      "bytes": 9903,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6fef1aabd76c55a0d21c5e9c6e3010b54d7edfdfcbbb0d538d7dab3d19201048",
-      "outputHash": "sha256:ab6404a9aa78fae8ed5b726af0e58247993d9b9d0ea69cf5bd198d0370da67c1"
-    },
     "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-014.jpg": {
       "role": "body",
       "kind": "photo",
@@ -41212,17 +39853,6 @@
       "quality": 84,
       "sourceHash": "sha256:d76093d60618993630379ebf507273ecc6be4b03baae0ace6280752d2203bd73",
       "outputHash": "sha256:a1baa77d619b0be969a1eee5412d18fcbb1bd61be29fe75effe86e0e24a80a78"
-    },
-    "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-016.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 740,
-      "height": 603,
-      "bytes": 71932,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6809ee6f7d4eaf34db0032e54a35608e3be202eb14eaf99fffced7a25b3b6799",
-      "outputHash": "sha256:fdd351b183bf578c5283ac6f944b2f178295deaa002398faeff13991b49ed933"
     },
     "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-017.jpg": {
       "role": "body",
@@ -43166,72 +41796,6 @@
         "outputHash": "sha256:e5cf309bd041cd9ce755fad3275b8cfbd874f3e8dce20e97060c6eb38a0fe327"
       }
     },
-    "/images/insights/who-is-china-cleaning-king-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 633,
-      "height": 220,
-      "bytes": 39022,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:ccd1efd6bbcc2ac8fc6967c754dda8bd41268d600cc227994de06674f1b838d7",
-      "outputHash": "sha256:5dc71b375ac26960795059dc3c49eb5b5bfdd97860f20452ce32307c5b73d5e8"
-    },
-    "/images/insights/who-is-china-cleaning-king-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 617,
-      "height": 361,
-      "bytes": 45080,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:5e66ec8a1b1e760adaa17f58535b2be9d9924e055a3ee187f5286c718661eb24",
-      "outputHash": "sha256:6f7410f453818dc42c5fbb4a230c04fa4ff380d3083d2db6be6ec1cb3c93aff9"
-    },
-    "/images/insights/who-is-china-cleaning-king-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 635,
-      "height": 268,
-      "bytes": 33694,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:22df2353c6852d676f0ed13664b653ff72284139156676811dcdd54aa258e714",
-      "outputHash": "sha256:f8221bc965a28a58f846b0e7a4459da7a6a01c0a818b311231ed271c339703ee"
-    },
-    "/images/insights/who-is-china-cleaning-king-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 530,
-      "height": 444,
-      "bytes": 53069,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e58553828a8521f47fddf492d41c0bc387cb9ed61a2b9dae15565f2d52f9e7f5",
-      "outputHash": "sha256:c3b6fdf93596cb0f2883299d8012c9f81528e1cbead57e891880bce25806128c"
-    },
-    "/images/insights/who-is-china-cleaning-king-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 349,
-      "height": 486,
-      "bytes": 33620,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:d85da72935991869c7353c05f11291107d52d14b35dc258d32d16eb1d39d52d2",
-      "outputHash": "sha256:bbb6547958a6bbcc1fb4e9d6e203b29360c10a147bd8831f672b593767390462"
-    },
-    "/images/insights/who-is-china-cleaning-king-image-009.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 654,
-      "height": 448,
-      "bytes": 43947,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:9416684199f90032a6d8ba8dd6b1a08789741a7b780eaac94f2f8a231bd8f6ac",
-      "outputHash": "sha256:eb976841b42f502071561e155c4713da8043c593aabb99800c2ceceead89609b"
-    },
     "/images/insights/why-china-needs-a-cleaning-appliance-ifa-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -43488,24 +42052,8 @@
       "budgetClass": "standard",
       "cover": "/images/insights/american-factory-and-manufacturing-transfer-cover.jpg",
       "body": [
-        "/images/insights/american-factory-and-manufacturing-transfer-image-002.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-003.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-004.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-005.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-006.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-007.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-008.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-009.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-010.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-011.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-012.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-013.jpg",
         "/images/insights/american-factory-and-manufacturing-transfer-image-014.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-015.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-016.jpg",
         "/images/insights/american-factory-and-manufacturing-transfer-image-017.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-018.jpg",
-        "/images/insights/american-factory-and-manufacturing-transfer-image-019.jpg",
         "/images/insights/american-factory-and-manufacturing-transfer-image-020.jpg"
       ]
     },
@@ -43718,13 +42266,6 @@
       "budgetClass": "standard",
       "cover": "/images/articles/bissell-crosswave-hard-floor-washer-logic/01-cover.webp",
       "body": [
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/02-bissell-crosswave-hard-floor-washer-logic-image-002.webp",
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/03-bissell-crosswave-hard-floor-washer-logic-image-003.webp",
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/04-bissell-crosswave-hard-floor-washer-logic-image-004.webp",
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/05-bissell-crosswave-hard-floor-washer-logic-image-005.webp",
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/06-bissell-crosswave-hard-floor-washer-logic-image-006.webp",
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/07-bissell-crosswave-hard-floor-washer-logic-image-007.webp",
-        "/images/articles/bissell-crosswave-hard-floor-washer-logic/08-bissell-crosswave-hard-floor-washer-logic-image-008.webp",
         "/images/articles/bissell-crosswave-hard-floor-washer-logic/09-bissell-crosswave-hard-floor-washer-logic-image-009.webp",
         "/images/articles/bissell-crosswave-hard-floor-washer-logic/10-bissell-crosswave-hard-floor-washer-logic-image-010.webp",
         "/images/articles/bissell-crosswave-hard-floor-washer-logic/11-bissell-crosswave-hard-floor-washer-logic-image-011.webp",
@@ -43767,17 +42308,6 @@
       "budgetClass": "standard",
       "cover": "/images/articles/bissell-vs-tineco-patent-details/01-cover.webp",
       "body": [
-        "/images/articles/bissell-vs-tineco-patent-details/02-image-002.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/03-image-003.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/04-image-004.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/05-image-005.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/06-image-006.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/07-image-007.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/08-image-008.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/09-image-009.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/10-image-010.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/11-image-011.webp",
-        "/images/articles/bissell-vs-tineco-patent-details/12-image-012.webp",
         "/images/articles/bissell-vs-tineco-patent-details/13-image-013.webp"
       ]
     },
@@ -43876,8 +42406,6 @@
         "/images/blog/wcb-episode-04-hizero-diisea-cleaning-routes.webp",
         "/images/blog/wcb-episode-04-bobot-electric-mop.webp",
         "/images/blog/wcb-episode-04-dechang-fujia-ipo.webp",
-        "/images/blog/wcb-episode-04-denny-floor-washer-review-account.webp",
-        "/images/blog/wcb-episode-04-cctv-floor-washer-review-investigation.webp",
         "/images/blog/wcb-episode-04-amazon-logistics-center.webp"
       ]
     },
@@ -44587,15 +43115,7 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-new-disruptor-in-vacuums/01-cover.webp",
       "body": [
-        "/images/articles/dreame-new-disruptor-in-vacuums/02-dreame-new-disruptor-in-vacuums-image-002.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/03-dreame-new-disruptor-in-vacuums-image-003.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/04-dreame-new-disruptor-in-vacuums-image-004.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/05-dreame-new-disruptor-in-vacuums-image-005.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/06-dreame-new-disruptor-in-vacuums-image-006.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/07-dreame-new-disruptor-in-vacuums-image-007.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/08-dreame-new-disruptor-in-vacuums-image-008.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/09-dreame-new-disruptor-in-vacuums-image-009.webp",
-        "/images/articles/dreame-new-disruptor-in-vacuums/10-dreame-new-disruptor-in-vacuums-image-010.webp"
+        "/images/articles/dreame-new-disruptor-in-vacuums/03-dreame-new-disruptor-in-vacuums-image-003.webp"
       ]
     },
     "dreame-rise-to-10-billion-in-five-years": {
@@ -44805,16 +43325,6 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-makes-another-big-move/01-cover.webp",
       "body": [
-        "/images/articles/dyson-makes-another-big-move/02-dyson-makes-another-big-move-image-002.webp",
-        "/images/articles/dyson-makes-another-big-move/03-dyson-makes-another-big-move-image-003.webp",
-        "/images/articles/dyson-makes-another-big-move/04-dyson-makes-another-big-move-image-004.webp",
-        "/images/articles/dyson-makes-another-big-move/05-dyson-makes-another-big-move-image-005.webp",
-        "/images/articles/dyson-makes-another-big-move/06-dyson-makes-another-big-move-image-006.webp",
-        "/images/articles/dyson-makes-another-big-move/07-dyson-makes-another-big-move-image-007.webp",
-        "/images/articles/dyson-makes-another-big-move/08-dyson-makes-another-big-move-image-008.webp",
-        "/images/articles/dyson-makes-another-big-move/09-dyson-makes-another-big-move-image-009.webp",
-        "/images/articles/dyson-makes-another-big-move/10-dyson-makes-another-big-move-image-010.webp",
-        "/images/articles/dyson-makes-another-big-move/11-dyson-makes-another-big-move-image-011.webp",
         "/images/articles/dyson-makes-another-big-move/12-dyson-makes-another-big-move-image-012.webp"
       ]
     },
@@ -44826,16 +43336,7 @@
     "dyson-nautik-is-not-a-real-hard-floor-washer": {
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/01-cover.webp",
-      "body": [
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/02-dyson-nautik-is-not-a-real-hard-floor-washer-image-002.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/03-dyson-nautik-is-not-a-real-hard-floor-washer-image-003.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/04-dyson-nautik-is-not-a-real-hard-floor-washer-image-004.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/05-dyson-nautik-is-not-a-real-hard-floor-washer-image-005.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/06-dyson-nautik-is-not-a-real-hard-floor-washer-image-006.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/07-dyson-nautik-is-not-a-real-hard-floor-washer-image-007.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/08-dyson-nautik-is-not-a-real-hard-floor-washer-image-008.webp",
-        "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/09-dyson-nautik-is-not-a-real-hard-floor-washer-image-009.webp"
-      ]
+      "body": []
     },
     "dyson-new-product-push-premium-innovation": {
       "budgetClass": "standard",
@@ -45050,17 +43551,7 @@
     "ecovacs-mid-year-report-reading": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-mid-year-report-reading/01-cover.webp",
-      "body": [
-        "/images/articles/ecovacs-mid-year-report-reading/02-ecovacs-mid-year-report-reading-image-002.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/03-ecovacs-mid-year-report-reading-image-003.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/04-ecovacs-mid-year-report-reading-image-004.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/05-ecovacs-mid-year-report-reading-image-005.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/06-ecovacs-mid-year-report-reading-image-006.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/07-ecovacs-mid-year-report-reading-image-007.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/08-ecovacs-mid-year-report-reading-image-008.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/09-ecovacs-mid-year-report-reading-image-009.webp",
-        "/images/articles/ecovacs-mid-year-report-reading/10-ecovacs-mid-year-report-reading-image-010.webp"
-      ]
+      "body": []
     },
     "ecovacs-nine-month-results-october-2025": {
       "budgetClass": "standard",
@@ -45871,7 +44362,6 @@
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-066.jpg",
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-067.jpg",
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-068.jpg",
-        "/images/insights/hundred-years-of-cleaning-appliance-history-image-069.jpg",
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-070.jpg",
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-071.jpg",
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-072.jpg",
@@ -46476,22 +44966,14 @@
       "cover": "/images/insights/lithium-batteries-in-vacuums-and-power-tools-cover.jpg",
       "body": [
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-001.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-002.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-003.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-004.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-005.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-006.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-007.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-008.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-009.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-010.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-011.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-012.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-013.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-014.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-015.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-021.jpg",
-        "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-016.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-017.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-018.jpg"
       ]
@@ -46824,18 +45306,7 @@
         "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/13-narwal-and-the-self-cleaning-robot-vacuum-image-013.webp",
         "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/14-narwal-and-the-self-cleaning-robot-vacuum-image-014.webp",
         "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/15-narwal-and-the-self-cleaning-robot-vacuum-image-015.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/16-narwal-and-the-self-cleaning-robot-vacuum-image-016.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/17-narwal-and-the-self-cleaning-robot-vacuum-image-017.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/18-narwal-and-the-self-cleaning-robot-vacuum-image-018.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/19-narwal-and-the-self-cleaning-robot-vacuum-image-019.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/20-narwal-and-the-self-cleaning-robot-vacuum-image-020.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/21-narwal-and-the-self-cleaning-robot-vacuum-image-021.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/22-narwal-and-the-self-cleaning-robot-vacuum-image-022.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/23-narwal-and-the-self-cleaning-robot-vacuum-image-023.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/24-narwal-and-the-self-cleaning-robot-vacuum-image-024.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/25-narwal-and-the-self-cleaning-robot-vacuum-image-025.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/26-narwal-and-the-self-cleaning-robot-vacuum-image-026.webp",
-        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/27-narwal-and-the-self-cleaning-robot-vacuum-image-027.webp"
+        "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/16-narwal-and-the-self-cleaning-robot-vacuum-image-016.webp"
       ]
     },
     "narwal-ceo-acquisition-denial-december-2025": {
@@ -48379,20 +46850,10 @@
       ]
     },
     "thoughts-on-mijia-mite-removal-vacuum": {
-      "budgetClass": "deep",
+      "budgetClass": "standard",
       "cover": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/01-cover.webp",
       "body": [
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/02-thoughts-on-mijia-mite-removal-vacuum-image-002.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/03-thoughts-on-mijia-mite-removal-vacuum-image-003.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/04-thoughts-on-mijia-mite-removal-vacuum-image-004.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/05-thoughts-on-mijia-mite-removal-vacuum-image-005.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/06-thoughts-on-mijia-mite-removal-vacuum-image-006.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/07-thoughts-on-mijia-mite-removal-vacuum-image-007.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/08-thoughts-on-mijia-mite-removal-vacuum-image-008.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/09-thoughts-on-mijia-mite-removal-vacuum-image-009.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/10-thoughts-on-mijia-mite-removal-vacuum-image-010.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/11-thoughts-on-mijia-mite-removal-vacuum-image-011.webp",
-        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/12-thoughts-on-mijia-mite-removal-vacuum-image-012.webp"
+        "/images/articles/thoughts-on-mijia-mite-removal-vacuum/07-thoughts-on-mijia-mite-removal-vacuum-image-007.webp"
       ]
     },
     "tineco-floor-one-i7-fold": {
@@ -48861,13 +47322,7 @@
       "body": [
         "/images/insights/who-is-china-cleaning-king-image-001.jpg",
         "/images/insights/who-is-china-cleaning-king-image-002.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-003.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-004.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-005.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-006.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-007.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-008.jpg",
-        "/images/insights/who-is-china-cleaning-king-image-009.jpg"
+        "/images/insights/who-is-china-cleaning-king-image-003.jpg"
       ]
     },
     "who-makes-amana-appliances-whirlpool-hvac-split": {
@@ -50690,41 +49145,6 @@
           "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/01-cover.webp",
           "hash": "sha256:6a5aa2bf1a0a37bca3ec83ab385b875008e4709c85e968ca4a48e6fdc6771756"
         },
-        "02-bissell-crosswave-hard-floor-washer-logic-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/02-bissell-crosswave-hard-floor-washer-logic-image-002.webp",
-          "hash": "sha256:f2736ad0a32ef689de3a00132c3497a657cefb0ba1369bcfac0a5dab2ddd9932"
-        },
-        "03-bissell-crosswave-hard-floor-washer-logic-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/03-bissell-crosswave-hard-floor-washer-logic-image-003.webp",
-          "hash": "sha256:7288c21793808282810c05a7d7eb4881431b1382030f6023e7e56ef4f8df16f2"
-        },
-        "04-bissell-crosswave-hard-floor-washer-logic-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/04-bissell-crosswave-hard-floor-washer-logic-image-004.webp",
-          "hash": "sha256:94325c598783750a74e5efe4052d5c105dddb4ff8960b258b8b7718689f9445a"
-        },
-        "05-bissell-crosswave-hard-floor-washer-logic-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/05-bissell-crosswave-hard-floor-washer-logic-image-005.webp",
-          "hash": "sha256:ea3d8b2a6b0fa42a873e979d0ba9371699bbc0ca879d60b3118cef5a82b50072"
-        },
-        "06-bissell-crosswave-hard-floor-washer-logic-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/06-bissell-crosswave-hard-floor-washer-logic-image-006.webp",
-          "hash": "sha256:3674cbe746bf9c775ae77226b33ad612b6f6d644a24307c5a6327a827a82f14d"
-        },
-        "07-bissell-crosswave-hard-floor-washer-logic-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/07-bissell-crosswave-hard-floor-washer-logic-image-007.webp",
-          "hash": "sha256:4b0e1e0d7b6e8b83aa0b02b9e5599fe951cf53772ca0e944e782ac8f17e4ce79"
-        },
-        "08-bissell-crosswave-hard-floor-washer-logic-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/08-bissell-crosswave-hard-floor-washer-logic-image-008.webp",
-          "hash": "sha256:77f0b5d5416ebe8c10be5e7f74ecf667ce96a69fe77162fe49d4542d7c5b376e"
-        },
         "09-bissell-crosswave-hard-floor-washer-logic-image-009.jpg": {
           "status": "matched",
           "primary": "/images/articles/bissell-crosswave-hard-floor-washer-logic/09-bissell-crosswave-hard-floor-washer-logic-image-009.webp",
@@ -50808,61 +49228,6 @@
           "status": "matched",
           "primary": "/images/articles/bissell-vs-tineco-patent-details/01-cover.webp",
           "hash": "sha256:a4671c5d50be10842e9896a5ecef579e0b0dbef648509a2c4ab8c284c1e41635"
-        },
-        "02-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/02-image-002.webp",
-          "hash": "sha256:bf419cd8937e0e39795745f11c7e94eab20390f31a7714686fc00f05f4958374"
-        },
-        "03-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/03-image-003.webp",
-          "hash": "sha256:2bad1bb43a01087f48cb207fb290440f8eea050612b1bab5c123191eebd1600f"
-        },
-        "04-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/04-image-004.webp",
-          "hash": "sha256:cd063ed0bd6a34eedefe16fe4a2993c03113cec07f876250695cca01dcd23a37"
-        },
-        "05-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/05-image-005.webp",
-          "hash": "sha256:0dff25958c47a995174f639f8652a89fc1f52d5ca67105d7a9524b0a25608c59"
-        },
-        "06-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/06-image-006.webp",
-          "hash": "sha256:1bf7ec1ba2cbb32f95db0b7bf945378781a2a4b2d2f889aa5946b13d7bfed2aa"
-        },
-        "07-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/07-image-007.webp",
-          "hash": "sha256:29116e02945427f313272afea76f9e2c2bb6f8f1f5105921c8fdcf925af7c4bb"
-        },
-        "08-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/08-image-008.webp",
-          "hash": "sha256:eb9a4c4291658b17b48e8bc3f694f120904031bfb9657dc5f8dd95717d480e51"
-        },
-        "09-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/09-image-009.webp",
-          "hash": "sha256:6982d41d3bff3172c8a25a878c4ec87d5ea0c8c077ae592ca1ca51d712cde6d2"
-        },
-        "10-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/10-image-010.webp",
-          "hash": "sha256:4292274da49fc6be493176f3e57caafd234d6ac3f738149a60487d8e710c5923"
-        },
-        "11-image-011.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/11-image-011.webp",
-          "hash": "sha256:d65e281352a436c8360895705755c5bcadfbf98bfa51d9302e4c64a399648344"
-        },
-        "12-image-012.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/bissell-vs-tineco-patent-details/12-image-012.webp",
-          "hash": "sha256:a9bd72b8f68dd10ee9ac87b42b54e38be8b59045f795cfc108b470d8b9b340fe"
         },
         "13-image-013.jpg": {
           "status": "matched",
@@ -52042,50 +50407,10 @@
           "primary": "/images/articles/dreame-new-disruptor-in-vacuums/01-cover.webp",
           "hash": "sha256:21fb4230e427ee52f9a09f2221045a548ac1470f8070e2485333ee1852775fa7"
         },
-        "02-dreame-new-disruptor-in-vacuums-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/02-dreame-new-disruptor-in-vacuums-image-002.webp",
-          "hash": "sha256:db4a24f68b1139f4c8386aaafe70e98936de6098581a33bf836ece0bd53dbc70"
-        },
         "03-dreame-new-disruptor-in-vacuums-image-003.jpg": {
           "status": "matched",
           "primary": "/images/articles/dreame-new-disruptor-in-vacuums/03-dreame-new-disruptor-in-vacuums-image-003.webp",
           "hash": "sha256:c26f17fed9b397fd37ff65b8b7af31d8886a16f880a12c8013ce16aa05da8924"
-        },
-        "04-dreame-new-disruptor-in-vacuums-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/04-dreame-new-disruptor-in-vacuums-image-004.webp",
-          "hash": "sha256:433a24b5348ae127e109d0a41c57d1d6f2a72666868817dc5c68d81e9436220a"
-        },
-        "05-dreame-new-disruptor-in-vacuums-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/05-dreame-new-disruptor-in-vacuums-image-005.webp",
-          "hash": "sha256:3aa14f114ebd784154607d08923ed93f74a2b654bb23c7c7aa05f07a91ed3ab3"
-        },
-        "06-dreame-new-disruptor-in-vacuums-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/06-dreame-new-disruptor-in-vacuums-image-006.webp",
-          "hash": "sha256:288b68388ee240a8b1973f6b73e4ab2409e8adf3edc020ab20d4c2c5bb215bcb"
-        },
-        "07-dreame-new-disruptor-in-vacuums-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/07-dreame-new-disruptor-in-vacuums-image-007.webp",
-          "hash": "sha256:9776585a4fb17aff1e60d7ca398bed204e3e935066f258a5bffd10b98d8dc767"
-        },
-        "08-dreame-new-disruptor-in-vacuums-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/08-dreame-new-disruptor-in-vacuums-image-008.webp",
-          "hash": "sha256:4c87bb530e632a123b211f60eec7c9c330b09d548ef87d5aa7ef3fe232743add"
-        },
-        "09-dreame-new-disruptor-in-vacuums-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/09-dreame-new-disruptor-in-vacuums-image-009.webp",
-          "hash": "sha256:28cfe7e34350fda64c457d368bd52be590c5f833397e57c4e8f877d73693fd20"
-        },
-        "10-dreame-new-disruptor-in-vacuums-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dreame-new-disruptor-in-vacuums/10-dreame-new-disruptor-in-vacuums-image-010.webp",
-          "hash": "sha256:8d25ea6b53e4d761c2c1286144e6728e4355a4e45c4cefe6c3662361bcd39fb1"
         }
       }
     },
@@ -52597,56 +50922,6 @@
           "primary": "/images/articles/dyson-makes-another-big-move/01-cover.webp",
           "hash": "sha256:1647e06a02adb05de5912b98fd972efed405fd7b7bad8502f3705fcb75c43e6a"
         },
-        "02-dyson-makes-another-big-move-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/02-dyson-makes-another-big-move-image-002.webp",
-          "hash": "sha256:233e40fd1f49736ec81ae246ea9d30a2afd73357b3818885c423ec9e6fa60e68"
-        },
-        "03-dyson-makes-another-big-move-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/03-dyson-makes-another-big-move-image-003.webp",
-          "hash": "sha256:d4ffce7709a0d83eedffe6b308d73bcbcc0e97fcb37b27f769ad268a0afb1489"
-        },
-        "04-dyson-makes-another-big-move-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/04-dyson-makes-another-big-move-image-004.webp",
-          "hash": "sha256:d3913925b15fe6ae6aa2ffa3d257944facf3a5e6ea898d8162845d0ecfa17323"
-        },
-        "05-dyson-makes-another-big-move-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/05-dyson-makes-another-big-move-image-005.webp",
-          "hash": "sha256:dc46863ab791744a8f56a050af5874ea5c0ce9ce43f64dd27e67fb878858b8cb"
-        },
-        "06-dyson-makes-another-big-move-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/06-dyson-makes-another-big-move-image-006.webp",
-          "hash": "sha256:2bbd423e792504bf686f0b7137c531643d0e91fa0fcd43c1442399cbd9736efd"
-        },
-        "07-dyson-makes-another-big-move-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/07-dyson-makes-another-big-move-image-007.webp",
-          "hash": "sha256:a31c0738346fff6f18e33449eb1613715a3b87b5a94fbac50859c456bb3ff09b"
-        },
-        "08-dyson-makes-another-big-move-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/08-dyson-makes-another-big-move-image-008.webp",
-          "hash": "sha256:01247d94b50f683e15b2383859e92f828e05bf8f58a71f48650dc8f404d073cc"
-        },
-        "09-dyson-makes-another-big-move-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/09-dyson-makes-another-big-move-image-009.webp",
-          "hash": "sha256:97513fd5f055eddefe651d89d04dbaaf379f29dd0710be5bbba019e46746b6bf"
-        },
-        "10-dyson-makes-another-big-move-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/10-dyson-makes-another-big-move-image-010.webp",
-          "hash": "sha256:ff04cf066a60b365440f598ec9578c5483ae00dcbc0ff74a1422d80b2062d586"
-        },
-        "11-dyson-makes-another-big-move-image-011.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-makes-another-big-move/11-dyson-makes-another-big-move-image-011.webp",
-          "hash": "sha256:5905c73bd32d465718aefe809dd295ac1449b1c60180d566e24f156a074f588c"
-        },
         "12-dyson-makes-another-big-move-image-012.jpg": {
           "status": "matched",
           "primary": "/images/articles/dyson-makes-another-big-move/12-dyson-makes-another-big-move-image-012.webp",
@@ -52669,46 +50944,6 @@
           "status": "matched",
           "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/01-cover.webp",
           "hash": "sha256:54d892e2c82a06ee764d2106f3ceba289a4cd28295c7118f500ebb4c70283ab0"
-        },
-        "02-dyson-nautik-is-not-a-real-hard-floor-washer-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/02-dyson-nautik-is-not-a-real-hard-floor-washer-image-002.webp",
-          "hash": "sha256:cded5c1eee5b817906f57d7b078499558d2f51b7ff9cdc758fa19762a08393b8"
-        },
-        "03-dyson-nautik-is-not-a-real-hard-floor-washer-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/03-dyson-nautik-is-not-a-real-hard-floor-washer-image-003.webp",
-          "hash": "sha256:b1d8b9cdae7605bd105d5f1aefd06ec4f616f7d1a78bcd5a5268ab19038301db"
-        },
-        "04-dyson-nautik-is-not-a-real-hard-floor-washer-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/04-dyson-nautik-is-not-a-real-hard-floor-washer-image-004.webp",
-          "hash": "sha256:80404d4ae89757fc60c0840e882776f276e19d73c64a33240674e1bffef2462b"
-        },
-        "05-dyson-nautik-is-not-a-real-hard-floor-washer-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/05-dyson-nautik-is-not-a-real-hard-floor-washer-image-005.webp",
-          "hash": "sha256:3105b7fdeade719923cc8df33ffd38e0647b1df5ab7f5e4922cc8e92a9e4693f"
-        },
-        "06-dyson-nautik-is-not-a-real-hard-floor-washer-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/06-dyson-nautik-is-not-a-real-hard-floor-washer-image-006.webp",
-          "hash": "sha256:6b9310aa639684eb1d4dd401789f60a48af4566af427cafbe9d924132f613e70"
-        },
-        "07-dyson-nautik-is-not-a-real-hard-floor-washer-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/07-dyson-nautik-is-not-a-real-hard-floor-washer-image-007.webp",
-          "hash": "sha256:5187fac2509617aa9c0b50321e085cb8b53a5e15f334ce2eda9648eee46f2c39"
-        },
-        "08-dyson-nautik-is-not-a-real-hard-floor-washer-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/08-dyson-nautik-is-not-a-real-hard-floor-washer-image-008.webp",
-          "hash": "sha256:82ec3394479899131935d9d8e37873005c1b5259142022837c45eef0ebd33417"
-        },
-        "09-dyson-nautik-is-not-a-real-hard-floor-washer-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/dyson-nautik-is-not-a-real-hard-floor-washer/09-dyson-nautik-is-not-a-real-hard-floor-washer-image-009.webp",
-          "hash": "sha256:ff128cc1258e2b390ee08e2144ce1ccc30fafa34654b86113d0cb3e40139d2d6"
         }
       }
     },
@@ -53098,51 +51333,6 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-mid-year-report-reading/01-cover.webp",
           "hash": "sha256:820d8d1001b8c8f1a2e6191eec2c51acf6586a88e7a13422729372dec4358d30"
-        },
-        "02-ecovacs-mid-year-report-reading-image-002.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/02-ecovacs-mid-year-report-reading-image-002.webp",
-          "hash": "sha256:77fcebf18dc4b0ef3bb62ee36fc4042013baaac0f5cdbe720869c76cccb756a9"
-        },
-        "03-ecovacs-mid-year-report-reading-image-003.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/03-ecovacs-mid-year-report-reading-image-003.webp",
-          "hash": "sha256:3457664081527e0f4c0c817956aedc476e8444a74a98e29b3e1fe52db4515cba"
-        },
-        "04-ecovacs-mid-year-report-reading-image-004.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/04-ecovacs-mid-year-report-reading-image-004.webp",
-          "hash": "sha256:5068fdc22bc61cf5a9039bfd7dee83acddfcdb85a59d65d70a620513d6280db6"
-        },
-        "05-ecovacs-mid-year-report-reading-image-005.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/05-ecovacs-mid-year-report-reading-image-005.webp",
-          "hash": "sha256:72ecebf4659d0b5f504324a59287e7dcb86a7cf972dfcd3af6d631684617b405"
-        },
-        "06-ecovacs-mid-year-report-reading-image-006.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/06-ecovacs-mid-year-report-reading-image-006.webp",
-          "hash": "sha256:0d3a693d4fbcaa576f1b1096d360f739d63aa731843738a78ca66dc8eb739a5a"
-        },
-        "07-ecovacs-mid-year-report-reading-image-007.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/07-ecovacs-mid-year-report-reading-image-007.webp",
-          "hash": "sha256:b6d931663582abdb8f53c8d2d570dd3dd2f7de0e9d8e198d17e95b43146c13cd"
-        },
-        "08-ecovacs-mid-year-report-reading-image-008.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/08-ecovacs-mid-year-report-reading-image-008.webp",
-          "hash": "sha256:1a94c834a8e47e93e4863fadc840f74ab85279aff071ab3ad74615933011a7f4"
-        },
-        "09-ecovacs-mid-year-report-reading-image-009.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/09-ecovacs-mid-year-report-reading-image-009.webp",
-          "hash": "sha256:c0c156cbb59b495332fb9f3ca3e8e727a597d9c034bffbddd671ea384258394f"
-        },
-        "10-ecovacs-mid-year-report-reading-image-010.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/ecovacs-mid-year-report-reading/10-ecovacs-mid-year-report-reading-image-010.webp",
-          "hash": "sha256:d0b65fada59d1413a45a261a03e0f742acc51f2e7f9851f377a6623431d7f2e3"
         }
       }
     },
@@ -56589,61 +54779,6 @@
           "status": "matched",
           "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/16-narwal-and-the-self-cleaning-robot-vacuum-image-016.webp",
           "hash": "sha256:c49e0bfb992a4d3d57e8792749fd22a7abbbd4edef4ff029cb5ae109f4cab0ee"
-        },
-        "17-narwal-and-the-self-cleaning-robot-vacuum-image-017.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/17-narwal-and-the-self-cleaning-robot-vacuum-image-017.webp",
-          "hash": "sha256:b54e8314e651b91bdc9b67de9cfb57a586459e76a355733ebb8cf5ded19b9490"
-        },
-        "18-narwal-and-the-self-cleaning-robot-vacuum-image-018.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/18-narwal-and-the-self-cleaning-robot-vacuum-image-018.webp",
-          "hash": "sha256:6eed2b39e5b0be76059c399d0c3d51a7c5816cf6306d3ca69ca4ffa4b26036de"
-        },
-        "19-narwal-and-the-self-cleaning-robot-vacuum-image-019.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/19-narwal-and-the-self-cleaning-robot-vacuum-image-019.webp",
-          "hash": "sha256:272178ee8e2a956f5f5723e2a5ae3b9fa7082c99cae68187df605122894c81b0"
-        },
-        "20-narwal-and-the-self-cleaning-robot-vacuum-image-020.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/20-narwal-and-the-self-cleaning-robot-vacuum-image-020.webp",
-          "hash": "sha256:e666fe325e307e3ca311ff708eec45a49820b58b24047644a6118f22b5df98e2"
-        },
-        "21-narwal-and-the-self-cleaning-robot-vacuum-image-021.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/21-narwal-and-the-self-cleaning-robot-vacuum-image-021.webp",
-          "hash": "sha256:15be3d14e8f8e0ae1f776ddd069851dd20ff94e8d07dd7ef108624508653b9c3"
-        },
-        "22-narwal-and-the-self-cleaning-robot-vacuum-image-022.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/22-narwal-and-the-self-cleaning-robot-vacuum-image-022.webp",
-          "hash": "sha256:7de88ccadfaea6728e6e55e4d4e2f30cef7dd9d249b5a6ed42451821bbcf7d64"
-        },
-        "23-narwal-and-the-self-cleaning-robot-vacuum-image-023.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/23-narwal-and-the-self-cleaning-robot-vacuum-image-023.webp",
-          "hash": "sha256:a2024e8a3fb379744793c1dbe3dedfc0bf5e2227bcaf427a9991bea8b885ad59"
-        },
-        "24-narwal-and-the-self-cleaning-robot-vacuum-image-024.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/24-narwal-and-the-self-cleaning-robot-vacuum-image-024.webp",
-          "hash": "sha256:077449d34076ce0da02ca08a21000ebe6467f50af3094a00c7f9fe185cfce913"
-        },
-        "25-narwal-and-the-self-cleaning-robot-vacuum-image-025.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/25-narwal-and-the-self-cleaning-robot-vacuum-image-025.webp",
-          "hash": "sha256:e585148cc09f0ddadaa4977292a6a0baf1a16daac39395a58bc81c7dd9d96285"
-        },
-        "26-narwal-and-the-self-cleaning-robot-vacuum-image-026.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/26-narwal-and-the-self-cleaning-robot-vacuum-image-026.webp",
-          "hash": "sha256:6abc5912f96bc3cb51ac4da5af228a89d7cf424ee7439bbbc91fdd6cd4396fc7"
-        },
-        "27-narwal-and-the-self-cleaning-robot-vacuum-image-027.jpg": {
-          "status": "matched",
-          "primary": "/images/articles/narwal-and-the-self-cleaning-robot-vacuum/27-narwal-and-the-self-cleaning-robot-vacuum-image-027.webp",
-          "hash": "sha256:d8de29198bd5d094b51342fce3bd10aa7f31cbaba89ab2b1edfd33d12267f729"
         }
       }
     },
@@ -58873,60 +57008,10 @@
           "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/01-cover.webp",
           "hash": "sha256:4a5fc71d35d279550b43dbe18b420001160f8232874b3579ef220ae9baaff091"
         },
-        "02-thoughts-on-mijia-mite-removal-vacuum-image-002.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/02-thoughts-on-mijia-mite-removal-vacuum-image-002.webp",
-          "hash": "sha256:20fab0bfe3dd082d33ef11e5649ce92ec634f4c1462969e82556cbc4313caef5"
-        },
-        "03-thoughts-on-mijia-mite-removal-vacuum-image-003.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/03-thoughts-on-mijia-mite-removal-vacuum-image-003.webp",
-          "hash": "sha256:130bf84c6c145cb2bdf0d2d468de7fa7cf938ea2a2459c7a6712bcbe8b9b32b0"
-        },
-        "04-thoughts-on-mijia-mite-removal-vacuum-image-004.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/04-thoughts-on-mijia-mite-removal-vacuum-image-004.webp",
-          "hash": "sha256:4b3dfc99d9917dd68ab4a78625a4988a6e97c47b2e46b2a6019f1c168ae677b4"
-        },
-        "05-thoughts-on-mijia-mite-removal-vacuum-image-005.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/05-thoughts-on-mijia-mite-removal-vacuum-image-005.webp",
-          "hash": "sha256:2b595d4310dd297b7ed20074534b0abdbf671c2bc4c82dc9ca611c526698fc5b"
-        },
-        "06-thoughts-on-mijia-mite-removal-vacuum-image-006.webp": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/06-thoughts-on-mijia-mite-removal-vacuum-image-006.webp",
-          "hash": "sha256:614a917bac1f5cf663eb2bdcd24e3ca3e7b65b8c25526ea578639225b4fe7a0a"
-        },
         "07-thoughts-on-mijia-mite-removal-vacuum-image-007.png": {
           "status": "matched",
           "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/07-thoughts-on-mijia-mite-removal-vacuum-image-007.webp",
           "hash": "sha256:eb7ab97976e7d94934726c5451028512a16948a7ea8f148dfc2f8b1575a3f834"
-        },
-        "08-thoughts-on-mijia-mite-removal-vacuum-image-008.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/08-thoughts-on-mijia-mite-removal-vacuum-image-008.webp",
-          "hash": "sha256:ad60e9882c50d2c54c1192c093ae039438f0aaf6baea700468ab1e89b2addd70"
-        },
-        "09-thoughts-on-mijia-mite-removal-vacuum-image-009.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/09-thoughts-on-mijia-mite-removal-vacuum-image-009.webp",
-          "hash": "sha256:8fe5f6c14416d7e6c09129a33ebede12e3c52d2d43bf43d8d39221fd5788322b"
-        },
-        "10-thoughts-on-mijia-mite-removal-vacuum-image-010.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/10-thoughts-on-mijia-mite-removal-vacuum-image-010.webp",
-          "hash": "sha256:1dac42f3b4f6fb54ae920f93785339ae0b91b143485b83c7750099405e43bed5"
-        },
-        "11-thoughts-on-mijia-mite-removal-vacuum-image-011.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/11-thoughts-on-mijia-mite-removal-vacuum-image-011.webp",
-          "hash": "sha256:6e8eeb152e0b55ea439c49c9c0bd95a540b799ac8699594e27a4e95ceea4c811"
-        },
-        "12-thoughts-on-mijia-mite-removal-vacuum-image-012.png": {
-          "status": "matched",
-          "primary": "/images/articles/thoughts-on-mijia-mite-removal-vacuum/12-thoughts-on-mijia-mite-removal-vacuum-image-012.webp",
-          "hash": "sha256:dcc8894ecca2daff63a05d4805897ed90749c72342b5ca1e89fc37d5aba56fc7"
         }
       }
     },
