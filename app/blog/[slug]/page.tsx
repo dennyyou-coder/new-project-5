@@ -331,6 +331,7 @@ export default async function InsightDetailPage({ params }: Props) {
             ) : null}
 
             <TopicLinks topics={getTopicsFor("insight", article.slug)} />
+            <TopicFollowFor topics={getTopicsFor("insight", article.slug)} placement="top" />
 
             <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
 
@@ -376,7 +377,7 @@ export default async function InsightDetailPage({ params }: Props) {
                   <Link href="/about">About Denny &amp; World Clean Biz</Link>
                 </div>
               </div>
-              {ctaForm !== "newsletter" ? (
+              {ctaForm !== "newsletter" && !getTopicsFor("insight", article.slug).some((topic) => topic.follow) ? (
                 <div className="blog-subscribe-bar">
                   <p><strong>Industry updates by email.</strong> New products, company moves and supply chain news from World Clean Biz.</p>
                   <TallyButton className="blog-subscribe-button" ctaLocation="article_subscribe_bar" form="newsletter">Subscribe</TallyButton>

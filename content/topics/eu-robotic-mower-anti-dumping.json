@@ -775,8 +775,10 @@
     }
   ],
   "follow": {
-    "heading": "Follow the EU mower case",
-    "note": "Get an email when the EU publishes its decision, when duty rates are confirmed and when the UK case moves."
+    "heading": "Follow the EU and UK mower cases",
+    "note": "Get each step of the EU and UK cases in the WCB weekly brief, every Friday, and a separate email the day the EU decides or duty rates are confirmed. Free, and you can unsubscribe any time.",
+    "short": "Follow the EU and UK mower cases: updates every Friday",
+    "brevoListId": 15
   },
   "versus": {
     "title": "The EU mower case in one picture",

@@ -112,6 +112,12 @@
     "text": "Duty depends on the exact HTS line, origin and any exclusion. Rates here are for vacuum cleaners under heading 8508 and should be confirmed with a customs broker before pricing a shipment. The FCC Covered List is a separate requirement covered in its own WCB topic.",
     "href": "/topics/us-fcc-robot-restrictions"
   },
+  "follow": {
+    "heading": "Follow US tariffs on Chinese appliances",
+    "short": "Follow US tariffs on Chinese appliances: changes every Friday",
+    "note": "Get each tariff change, exclusion and deadline in the WCB weekly brief, every Friday, and a separate email the day a rate or deadline changes. Free, and you can unsubscribe any time.",
+    "brevoListId": 16
+  },
   "timeline": [
     {
       "date": "2019-05",

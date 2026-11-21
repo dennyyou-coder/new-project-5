@@ -938,7 +938,9 @@
   ],
   "follow": {
     "heading": "Follow the FCC robot rules",
-    "note": "Get each new approval, FCC filing and rule change in the WCB weekly brief, every Friday. Free, and you can unsubscribe any time."
+    "note": "Get each new approval, FCC filing and rule change in the WCB weekly brief, every Friday, and a separate email the day the rules change. Free, and you can unsubscribe any time.",
+    "short": "Follow the FCC robot rules: new approvals and filings every Friday",
+    "brevoListId": 14
   },
   "versus": {
     "title": "How the FCC rule splits the robot market",

@@ -515,6 +515,11 @@ export function markdownToHtml(markdown: string) {
     } else if (/^\d+\.\s/.test(trimmed)) {
       openList("ol");
       html.push(`<li>${inline(trimmed.replace(/^\d+\.\s/, ""))}</li>`);
+    } else if (/^\*[^*\s](?:.*[^*\s])?\*$/.test(trimmed)) {
+      // A whole line in single asterisks is a note (sources, chart notes, credits):
+      // set it as a small italic note instead of showing the asterisks.
+      closeList();
+      html.push(`<p class="article-note"><em>${inline(trimmed.slice(1, -1))}</em></p>`);
     } else {
       closeList();
       html.push(`<p>${inline(trimmed)}</p>`);

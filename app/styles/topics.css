@@ -521,3 +521,12 @@
   .topic-cumulative-label { display: none; }
   .topic-cumulative-keys { display: block; }
 }
+
+/* One-line "follow this topic" near the top of an article or topic page. */
+.topic-follow--compact { margin: 20px 0 24px; padding: 14px 16px 12px; }
+.topic-follow--compact .wcb-lead-form--compact { gap: 8px; }
+.topic-follow--compact .wcb-lead-title { font-size: 16px; line-height: 1.35; }
+.topic-follow--compact .wcb-lead-note:empty { display: none; }
+.topic-follow--compact .wcb-lead-check { font-size: 12px; }
+.topic-follow--compact input:not([type="checkbox"]) { min-height: 40px; }
+.topic-follow--compact .wcb-lead-primary { min-height: 40px; }

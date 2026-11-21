@@ -84,3 +84,12 @@ test("unsubscribe works by POST only, so mail scanners cannot unsubscribe reader
   const lead = await readFile(new URL("../app/api/leads/route.ts", import.meta.url), "utf8");
   assert.match(lead, /List-Unsubscribe-Post/);
 });
+
+test("topic follow: a valid topic slug and the profile-only flag are kept, anything else is dropped", () => {
+  const follow = validateLead({ kind: "subscribe", email: "a@b.co", consent: true, topic: "tti-vs-chervon" });
+  assert.equal(follow.ok && follow.lead.topic, "tti-vs-chervon");
+  const bad = validateLead({ kind: "subscribe", email: "a@b.co", consent: true, topic: "../x y" });
+  assert.equal(bad.ok && bad.lead.topic, "");
+  const profile = validateLead({ kind: "subscribe", email: "a@b.co", consent: true, profileOnly: true, name: "Ann" });
+  assert.equal(profile.ok && profile.lead.profileOnly, true);
+});

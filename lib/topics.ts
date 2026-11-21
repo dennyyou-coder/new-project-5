@@ -148,8 +148,12 @@ export type TopicVersus = {
   credit?: string;
 };
 
-/** A "follow this topic" signup shown on the topic page and on its articles and news. */
-export type TopicFollow = { heading: string; note: string };
+/**
+ * A "follow this topic" signup shown on the topic page and on its articles and news.
+ * `short` is the one-line version near the top of an article; `brevoListId` is the
+ * Brevo list that records who follows the topic (updates go out in the Friday brief).
+ */
+export type TopicFollow = { heading: string; note: string; short?: string; brevoListId?: number };
 
 export type Topic = {
   slug: string;

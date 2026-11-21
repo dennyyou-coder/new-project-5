@@ -14,8 +14,19 @@ export function TopicLinks({ topics }: { topics: Topic[] }) {
   );
 }
 
-/** The follow signup of the first topic that has one; placed after an article's body. */
-export function TopicFollowFor({ topics }: { topics: Topic[] }) {
+/**
+ * The follow signup of the first topic that has one. "top" is the one-line version
+ * under the article's opening; "end" is the full box after the body.
+ */
+export function TopicFollowFor({ topics, placement = "end" }: { topics: Topic[]; placement?: "top" | "end" }) {
   const followed = topics.find((topic) => topic.follow);
-  return followed?.follow ? <TopicFollow follow={followed.follow} ctaLocation={`topic_follow_${followed.slug}`} /> : null;
+  if (!followed?.follow) return null;
+  return (
+    <TopicFollow
+      follow={followed.follow}
+      topic={followed.slug}
+      compact={placement === "top"}
+      ctaLocation={`topic_follow_${placement}_${followed.slug}`}
+    />
+  );
 }
