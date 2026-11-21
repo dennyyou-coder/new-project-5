@@ -10,7 +10,7 @@
     "text": "Card: World Clean Biz, using company logos; growth as each company reported it",
     "url": "https://worldcleanbiz.com/topics/q3-2026-cleaning-industry-results"
   },
-  "updated": "2026-11-08",
+  "updated": "2026-11-21",
   "status": {
     "label": "Results season · 16 companies reported",
     "text": "Fourteen listed companies have reported July–September 2026, plus Fluidra's nine-month and Makita's half-year figures. Robot-vacuum specialists grew fastest; large appliance groups shrank; tariff refunds lifted several US profits."
@@ -122,6 +122,12 @@
       "title": "SharkNinja and Stanley Black & Decker close the season",
       "text": "SharkNinja grows 21.2% and raises its outlook; both companies book IEEPA tariff refunds.",
       "href": "/news/sharkninja-third-quarter-results-november-2026"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Spectrum Brands: home appliances lose US distribution",
+      "text": "July–September sales fall 2.8%; Home & Personal Care, owner of Russell Hobbs, falls 0.9% with North America down by low double digits.",
+      "href": "/news/spectrum-brands-fourth-quarter-results-november-2026"
     }
   ],
   "questions": [
@@ -155,6 +161,7 @@
     "global-power-tool-brands-reshaping-portfolios"
   ],
   "news": [
+    "spectrum-brands-fourth-quarter-results-november-2026",
     "sharkninja-third-quarter-results-november-2026",
     "stanley-black-decker-third-quarter-november-2026",
     "tennant-third-quarter-2026-results",
@@ -195,6 +202,10 @@
     {
       "title": "Tennant Q3 2026 results release (SEC)",
       "url": "https://www.sec.gov/Archives/edgar/data/0000097134/000009713426000027/tnc-20261102xexx991.htm"
+    },
+    {
+      "title": "Spectrum Brands fiscal 2026 fourth-quarter results (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000109177/000010917726000042/earningsreleaseexhibit991.htm"
     }
   ],
   "versus": {

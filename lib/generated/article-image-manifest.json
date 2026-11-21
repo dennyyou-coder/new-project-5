@@ -2292,6 +2292,24 @@
         "outputHash": "sha256:0be6dabb5c4137cb73a6c26504f22f9d41ed904625d7558bc253cb7d1acee425"
       }
     },
+    "/images/articles/beatbot-aquasense-3-sora-neo-r-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 57662,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0d0e3a04076b4f07f6bdd9be63f0a7c5d01f450660e4f4b36ca2c019b49a75fd",
+      "outputHash": "sha256:d680847d4e667d17404eb46a7a6d61de65773cdbc6b1c6ee0bf076e5a0737c56",
+      "mobile": {
+        "src": "/images/articles/beatbot-aquasense-3-sora-neo-r-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19926,
+        "outputHash": "sha256:9bf4d8d62009d4b24f9e6a580e36260c98f12b2ff93889238482c4071352ebcc"
+      }
+    },
     "/images/articles/beatbot-aquasense-x/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -15624,6 +15642,17 @@
         "outputHash": "sha256:7af3aed6e4f124c2861cea0478fb7b64d90b369b7f134a732721ee2cf6068d2f"
       }
     },
+    "/images/articles/maytronics-dolphin-2027-line-up-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 790,
+      "height": 444,
+      "bytes": 39444,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c0712796790723859824b18921945014e0a4c87357799dc1ed151ebb3a6c942d",
+      "outputHash": "sha256:02d3cba3db3aebc37a1cc642d950c314f1fdf1f8c777bf0d37019ea8204c5372"
+    },
     "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -22277,6 +22306,24 @@
         "height": 450,
         "bytes": 15080,
         "outputHash": "sha256:2483cb79734f46fb3bd3f14a03c4e3fe00d4b72fdcb1f51a5d2cc3fb84ae3d88"
+      }
+    },
+    "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43346,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e57d0121bb2e266542fa4c00f4a9874abdb9d0e2f2760a8c93c852fda3fd9281",
+      "outputHash": "sha256:bc861d19897287d186327d1ac5b50e3c896f2a6baba91bac1880e66815c9e642",
+      "mobile": {
+        "src": "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21458,
+        "outputHash": "sha256:a6af57263034acc478344ebf0abf2a4ced0f862b6f581ad0e6eca2abb5521483"
       }
     },
     "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp": {
@@ -41260,6 +41307,11 @@
       "cover": "/images/articles/beatbot-aquasense-2-series-ces-january-2025/01-cover.webp",
       "body": []
     },
+    "beatbot-aquasense-3-sora-neo-r-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-aquasense-3-sora-neo-r-november-2026/01-cover.webp",
+      "body": []
+    },
     "beatbot-aquasense-x": {
       "budgetClass": "standard",
       "cover": "/images/articles/beatbot-aquasense-x/01-cover.webp",
@@ -44111,6 +44163,11 @@
       "cover": "/images/articles/maytronics-australia-papageorgiou-departure-october-2026/01-cover.webp",
       "body": []
     },
+    "maytronics-dolphin-2027-line-up-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/maytronics-dolphin-2027-line-up-november-2026/01-cover.webp",
+      "body": []
+    },
     "maytronics-fimi-sale-pool-robot-leader": {
       "budgetClass": "standard",
       "cover": "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp",
@@ -45677,6 +45734,11 @@
         "/images/blog/cleaning-appliance-category-spare-parts-map.webp",
         "/images/blog/spare-parts-warranty-cleaning-appliances-checklist.webp"
       ]
+    },
+    "spectrum-brands-fourth-quarter-results-november-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover.webp",
+      "body": []
     },
     "spoga-gafa-2026-chinese-robotic-mowers": {
       "budgetClass": "standard",
@@ -48023,6 +48085,15 @@
           "status": "matched",
           "primary": "/images/articles/beatbot-aquasense-2-series-ces-january-2025/01-cover.webp",
           "hash": "sha256:a8713ec6030f5c65c463e3c027603aa6d0d30f692ceed214ded8a00a84f43a8c"
+        }
+      }
+    },
+    "beatbot-aquasense-3-sora-neo-r-november-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-aquasense-3-sora-neo-r-november-2026/01-cover.webp",
+          "hash": "sha256:0d0e3a04076b4f07f6bdd9be63f0a7c5d01f450660e4f4b36ca2c019b49a75fd"
         }
       }
     },
@@ -53090,6 +53161,15 @@
         }
       }
     },
+    "maytronics-dolphin-2027-line-up-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-dolphin-2027-line-up-november-2026/01-cover.webp",
+          "hash": "sha256:c0712796790723859824b18921945014e0a4c87357799dc1ed151ebb3a6c942d"
+        }
+      }
+    },
     "maytronics-fimi-sale-pool-robot-leader": {
       "files": {
         "01-cover.png": {
@@ -55506,6 +55586,15 @@
           "status": "matched",
           "primary": "/images/articles/sky-001-engineering-world-model/06-official-founder.webp",
           "hash": "sha256:d30e61e5fcc1b82a52756418c7020fea0e6d667237a81f54289391b4357738b4"
+        }
+      }
+    },
+    "spectrum-brands-fourth-quarter-results-november-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover.webp",
+          "hash": "sha256:e57d0121bb2e266542fa4c00f4a9874abdb9d0e2f2760a8c93c852fda3fd9281"
         }
       }
     },

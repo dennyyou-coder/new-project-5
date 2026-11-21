@@ -97,6 +97,39 @@ export const newsStoryVisuals: Record<string, NewsVisual> = {
     "fit": "cover",
     "prepared": true
   },
+  "beatbot-aquasense-3-sora-neo-r-november-2026": {
+    "src": "/images/articles/beatbot-aquasense-3-sora-neo-r-november-2026/01-cover.webp",
+    "alt": "Beatbot AquaSense 3 and Sora Neo R robotic pool cleaners side by side on water",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Beatbot AquaSense 3 (left) and Sora Neo R. Official image from Beatbot's November 19, 2026 release, cropped.",
+    "sourceUrl": "https://technode.global/prnasia/beatbot-unveils-worlds-first-in-pool-sense-to-act-pool-cleaner-alongside-a-segment-exclusive-dual-pump-cleaner-with-autonomous-surface-return/",
+    "sourceLabel": "Beatbot release via PR Newswire",
+    "fit": "cover",
+    "prepared": true
+  },
+  "maytronics-dolphin-2027-line-up-november-2026": {
+    "src": "/images/articles/maytronics-dolphin-2027-line-up-november-2026/01-cover.webp",
+    "alt": "Dolphin EON 120d pool robot at the poolside with the DualPower Hybrid Kit power unit",
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "Dolphin EON 120d with the DualPower Hybrid Kit. Official image from Maytronics' November 17, 2026 release, cropped.",
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/17/3404299/0/en/maytronics-unveils-its-dolphin-pool-care-line-up-for-2027.html",
+    "sourceLabel": "Maytronics release via GlobeNewswire",
+    "fit": "cover",
+    "prepared": true
+  },
+  "spectrum-brands-fourth-quarter-results-november-2026": {
+    "src": "/images/articles/spectrum-brands-fourth-quarter-results-november-2026/01-cover.webp",
+    "alt": "WCB topic card: Spectrum sales down 2.8%. Net sales USD 713.2m; home appliances lose US distribution",
+    "kind": "coverage",
+    "label": "WCB topic card",
+    "caption": "Results: Q4 FY2026. Net sales USD 713.2m; home appliances lose US distribution. Card: World Clean Biz.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000109177/000010917726000042/earningsreleaseexhibit991.htm",
+    "sourceLabel": "Story source: Spectrum Brands fiscal 2026 fourth-quarter results (SEC 8-K, Exhibit 99.1)",
+    "fit": "cover",
+    "prepared": true
+  },
   "uk-robot-lawn-mower-anti-dumping-investigation-november-2026": {
     "src": "/images/articles/uk-robot-lawn-mower-anti-dumping-investigation-november-2026/01-cover.webp",
     "alt": "WCB topic card: UK opens mower case. Anti-dumping investigation into robot lawn mowers from China, 18 November 2026",
